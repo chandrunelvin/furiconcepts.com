@@ -7,11 +7,11 @@ const LOGO = {
 };
 
 /**
- * Brand lockup. `variant` picks the artwork: the wordmark (default, with the
- * tagline set in type beneath it), the full lockup (tagline baked into the
- * artwork), or the "F" mark on its own.
+ * Brand lockup. `variant` picks the artwork: the full lockup (default, tagline
+ * baked into the artwork), the wordmark on its own (tagline can be set in type
+ * beneath it), or the "F" mark.
  */
-export function Logo({ variant = 'wordmark', tagline = true, className = '' }) {
+export function Logo({ variant = 'full', tagline = false, className = '' }) {
   const showTagline = tagline && variant === 'wordmark';
   return (
     <a className={`logo ${className}`.trim()} href="#top" aria-label="Furniconcepts — home">

@@ -252,7 +252,7 @@
 .home2 .lifestyle-inner{
   position:relative;z-index:2;width:100%;
   display:grid;grid-template-columns:1.4fr 1fr;gap:40px;align-items:center;
-  padding:70px 0;
+  padding-block:70px;
 }
 @media(max-width:900px){ .home2 .lifestyle-inner{grid-template-columns:1fr;} }
 .home2 .lifestyle h2{font-size:clamp(28px,3.4vw,42px);font-weight:600;letter-spacing:-.5px;line-height:1.15;margin-bottom:18px;}
@@ -495,7 +495,7 @@
     rgba(15,38,32,.97) 62%, #16332a 100%);
 }
 .home2 .lifestyle-inner{
-  grid-template-columns:0.85fr 1.25fr 0.7fr; gap:0; align-items:center; padding:74px 0;
+  grid-template-columns:0.85fr 1.25fr 0.7fr; gap:0; align-items:center; padding-block:74px;
 }
 @media(max-width:900px){
   .home2 .lifestyle-inner{ grid-template-columns:1fr; gap:34px; }
@@ -600,9 +600,9 @@
     rgba(15,38,32,.30) 72%, rgba(15,38,32,.34) 100%);
 }
 @media(max-width:900px){ .home2 .lifestyle .overlay{ background:rgba(15,38,32,.84); } }
-.home2 .lifestyle-inner{ grid-template-columns:3fr 1.15fr 1fr; padding:86px 0; }
+.home2 .lifestyle-inner{ grid-template-columns:3fr 1.15fr 1fr; padding-block:86px; }
 @media(max-width:1100px){ .home2 .lifestyle-inner{ grid-template-columns:1.4fr 1.3fr 1fr; } }
-@media(max-width:900px){ .home2 .lifestyle-inner{ grid-template-columns:1fr; padding:56px 0; } }
+@media(max-width:900px){ .home2 .lifestyle-inner{ grid-template-columns:1fr; padding-block:56px; } }
 
 .home2 .lifestyle h2{
   font-family:'Fraunces', Georgia, serif; font-weight:400; letter-spacing:-.5px;
@@ -675,3 +675,34 @@
 .home2 header.scrolled{
   background:rgba(250,249,246,.92); backdrop-filter:blur(10px);
 }
+
+/* ---------- phones ---------- */
+@media(max-width:640px){
+  /* the header only has room for the brand and the menu: the CTA lives in the panel */
+  .home2 .nav-inner{ height:66px; }
+  .home2 .nav-right{ gap:16px; }
+  .home2 .nav-right .cta{ display:none; }
+  .home2 .logo img{ width:126px; }
+  .home2 .logo .sub{ font-size:6.5px; letter-spacing:.16em; }
+  .home2 .menu-panel{ padding:22px 22px 28px; }
+
+  .home2 .hero-caption{ display:none; }
+  .home2 .watch-story{ bottom:24px; right:22px; }
+  .home2 .watch-story span{ font-size:12px; }
+
+  /* portrait crop puts the copy over the brighter half of the photo */
+  .home2 .hero::after{
+    background:linear-gradient(180deg, rgba(10,20,16,.62) 0%, rgba(10,20,16,.42) 45%, rgba(10,20,16,.5) 72%, rgba(10,20,16,.72) 100%);
+  }
+
+  .home2 .features{ padding:44px 0; }
+  .home2 .features .wrap{ grid-template-columns:1fr; gap:24px; }
+
+  /* a sliver of the next card shows the row is still moving */
+  .home2 .coll-viewport{ --pv:1.25; }
+  .home2 .spaces-viewport{ --pv:1.25; }
+
+  .home2 .footer-top{ grid-template-columns:1fr; row-gap:30px; }
+  .home2 .footer-bottom{ flex-direction:column; align-items:flex-start; gap:14px; }
+}
+

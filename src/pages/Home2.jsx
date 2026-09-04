@@ -106,8 +106,7 @@ const SocialRow = () => (
 function Logo() {
   return (
     <Link to="/home2" className="logo" aria-label="Furniconcepts — home">
-      <img src="/images/furni-logo-wordmark.png" alt="Furniconcepts" />
-      <span className="sub">Furniture Designed With Style</span>
+      <img src="/images/furni-logo.png" alt="Furniconcepts — furniture designed with style" />
     </Link>
   );
 }

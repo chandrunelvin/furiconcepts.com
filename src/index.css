@@ -103,9 +103,9 @@ html{scroll-behavior:smooth;}
   padding:34px 26px 30px; border-right:1px solid var(--line);
 }
 .site .logo{ display:block; line-height:1.05; width:fit-content; }
-.site .logo-img{ height:auto; object-fit:contain; }
+.site .logo-img{ height:auto; max-width:100%; object-fit:contain; }
 .site .logo-wordmark{ width:172px; }
-.site .logo-full{ width:200px; }
+.site .logo-full{ width:176px; }
 .site .logo-mark{ width:34px; }
 .site .logo-tag{
   display:block; font-size:7.5px; letter-spacing:0.185em; text-transform:uppercase;
@@ -164,7 +164,7 @@ html{scroll-behavior:smooth;}
   transform:translateX(100%); transition:transform .4s var(--ease);
 }
 .site .drawer.open{ transform:translateX(0); }
-.site .drawer .drawer-head .logo-wordmark{ width:150px; }
+.site .drawer .drawer-head .logo-img{ width:150px; }
 .site .drawer .drawer-head{ display:flex; justify-content:space-between; align-items:flex-start; }
 .site .drawer nav{ display:flex; flex-direction:column; gap:18px; margin-top:8px; }
 .site .drawer nav a{ font-size:15px; color:var(--ink-soft); }
@@ -365,7 +365,7 @@ section.story{ background:var(--stone); border-radius:24px; padding:0; overflow:
 footer{ margin-top:var(--section-space); padding:0 0 34px; }
 .site .foot-grid{ display:grid; grid-template-columns:1.4fr repeat(4,1fr); gap:40px; padding-bottom:50px; border-bottom:1px solid var(--line); }
 @media (max-width:900px){ .site .foot-grid{ grid-template-columns:1fr 1fr; row-gap:34px; } }
-.site footer .logo-wordmark{ width:196px; }
+.site footer .logo-img{ width:196px; }
 .site footer .foot-tag{ font-size:13.5px; color:var(--ink-soft); max-width:30ch; margin:12px 0 18px; }
 .site footer h5{ font-size:12.5px; letter-spacing:0.05em; color:var(--ink); margin-bottom:16px; font-weight:600; }
 .site footer ul{ list-style:none; }
@@ -384,3 +384,37 @@ footer{ margin-top:var(--section-space); padding:0 0 34px; }
 .site .office .addr{ font-size:13px; color:var(--ink-soft); margin-top:8px; max-width:28ch; }
 .site .cta-band{ align-items:flex-start; }
 .site .cta-top{ display:flex; justify-content:space-between; align-items:center; gap:30px; flex-wrap:wrap; width:100%; }
+
+/* ---------- small screens ---------- */
+/* the brand only appears in the top bar once the sidebar is gone */
+.site .topbar-logo{ display:none; }
+@media (max-width:980px){
+  .site .topbar-logo{ display:block; margin-right:auto; }
+  .site .topbar-logo .logo-img{ width:140px; }
+}
+@media (max-width:700px){
+  /* portrait hero: the slide counter moves out of the caption's way */
+  .site .hero-slide-ui{ top:22px; bottom:auto; right:22px; }
+  /* and the scrim runs top-to-bottom so the copy keeps its contrast */
+  .site .hero::after{
+    background:linear-gradient(180deg, rgba(12,20,17,.5) 0%, rgba(12,20,17,.34) 26%, rgba(12,20,17,.62) 58%, rgba(12,20,17,.84) 100%);
+  }
+  .site .hero-copy{ left:26px; right:26px; bottom:26px; max-width:none; }
+  .site .watch-row{ margin-top:20px; }
+
+  /* stacked stats drop the column rules that separated them */
+  .site .stats-row{ gap:18px; }
+  .site .stat{ padding-right:0; margin-right:0; border-right:none; }
+
+  /* two sector cards per row leaves little space for the label */
+  .site .space-item .row{ gap:8px; }
+  .site .space-item .row span{ font-size:13px; line-height:1.25; }
+  .site .space-item .circle-btn{ flex-shrink:0; }
+}
+@media (max-width:560px){
+  .site .topbar{ gap:8px; }
+  /* the drawer carries the same link, so the pill can go */
+  .site .topbar .pill-dark{ display:none; }
+  .site .foot-grid{ grid-template-columns:1fr; row-gap:28px; }
+}
+

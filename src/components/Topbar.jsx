@@ -1,8 +1,11 @@
 import { Search, Heart, Menu } from './Icons.jsx';
+import { Logo } from './Common.jsx';
 
 export default function Topbar({ onOpenMenu }) {
   return (
     <div className="topbar">
+      {/* the sidebar is hidden below 980px, so the brand rides in the top bar */}
+      <Logo className="topbar-logo" tagline={false} />
       <button className="circle-btn" aria-label="Search"><Search /></button>
       <button className="circle-btn" aria-label="Wishlist"><Heart /></button>
       <a href="#contact" className="pill pill-dark">Get in touch</a>
