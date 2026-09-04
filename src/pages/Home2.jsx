@@ -130,11 +130,61 @@ function useParallax(speed) {
   return ref;
 }
 
+/**
+ * Blocks fade up the first time they scroll into view. One observer walks a
+ * list of selectors instead of wrapping every block, so the markup stays flat;
+ * siblings inside a group get a short cascade.
+ */
+const REVEAL_GROUPS = [
+  '.features .feature',
+  '#collections .split-intro, #collections .coll-viewport',
+  '.lifestyle-copy, .lifestyle .stat',
+  '.crafted-band .crafted-media, .crafted-band .detail-card',
+  '#spaces .split-intro, #spaces .spaces-viewport',
+  '.journal-media, .journal-panel',
+  '.newsletter-media, .newsletter-body',
+  'footer .footer-brand, footer .footer-col, footer .footer-bottom',
+];
+
+function useReveal() {
+  useEffect(() => {
+    const root = document.querySelector('.home2');
+    if (!root) return undefined;
+
+    const targets = REVEAL_GROUPS.flatMap((group) => [...root.querySelectorAll(group)]);
+    if (!targets.length) return undefined;
+
+    if (prefersReducedMotion() || typeof IntersectionObserver === 'undefined') {
+      targets.forEach((el) => el.classList.add('is-in'));
+      return undefined;
+    }
+
+    targets.forEach((el) => el.classList.add('reveal'));
+
+    const io = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (!entry.isIntersecting) return;
+          entry.target.classList.add('is-in');
+          io.unobserve(entry.target);
+        });
+      },
+      { threshold: 0.12, rootMargin: '0px 0px -8% 0px' }
+    );
+    targets.forEach((el) => io.observe(el));
+
+    // failsafe: content must never be left invisible
+    const t = setTimeout(() => targets.forEach((el) => el.classList.add('is-in')), 2500);
+    return () => { io.disconnect(); clearTimeout(t); };
+  }, []);
+}
+
 export default function Home2() {
   const [scrolled, setScrolled] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
   const [slide, setSlide] = useState(0);
   const [email, setEmail] = useState('');
+  useReveal();
   const heroLayer = useParallax(0.25);
   const bannerLayer = useParallax(0.35);
   const journalLayer = useParallax(0.2);

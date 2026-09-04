@@ -706,3 +706,19 @@
   .home2 .footer-bottom{ flex-direction:column; align-items:flex-start; gap:14px; }
 }
 
+/* ---------- scroll reveal ---------- */
+.home2 .reveal{
+  opacity:0; transform:translateY(26px);
+  transition:opacity .85s cubic-bezier(.2,.8,.2,1), transform .85s cubic-bezier(.2,.8,.2,1);
+  will-change:opacity, transform;
+}
+.home2 .reveal.is-in{ opacity:1; transform:none; will-change:auto; }
+/* a sibling cascade so a row arrives as a group, not all at once */
+.home2 .reveal:nth-child(2){ transition-delay:.08s; }
+.home2 .reveal:nth-child(3){ transition-delay:.16s; }
+.home2 .reveal:nth-child(4){ transition-delay:.24s; }
+.home2 .reveal:nth-child(n+5){ transition-delay:.3s; }
+@media(prefers-reduced-motion:reduce){
+  .home2 .reveal{ opacity:1; transform:none; transition:none; }
+}
+
