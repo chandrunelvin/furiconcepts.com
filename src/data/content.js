@@ -26,6 +26,7 @@ export const NAV_LINKS = [
 ];
 
 export const HERO_SLIDES = [
+  { src: '/images/common/hero1.webp', alt: 'Furniconcepts interior with contemporary seating' },
   { src: cav('project-lounge'), alt: 'Branch lounge furnished with modular Cavaletti seating' },
   { src: cav('project-branch'), alt: 'Green branch interior with Cavaletti task seating' },
   { src: img('1489599849927-2ee91cede3ba', 1800), alt: 'Rows of auditorium seating' },
