@@ -3,6 +3,7 @@ import { Arrow, SiteFooter, SiteHeader } from '../components/Home2Chrome.jsx';
 import { CLIENTS } from '../data/clients.js';
 import { TESTIMONIALS } from '../data/testimonials.js';
 import { LEADERSHIP, TEAM } from '../data/team.js';
+import { useReveal } from '../lib/reveal.js';
 import { prefersReducedMotion } from '../lib/scroll.js';
 import { Link } from '../router.jsx';
 import '../styles/home2.css';
@@ -33,8 +34,22 @@ const NUMBERS = [
 /** Leadership first, then the rest of the team — one continuous row. */
 const PEOPLE = [...LEADERSHIP, ...TEAM];
 
+/** Blocks that fade up as they arrive; siblings in a group cascade. */
+const REVEAL_GROUPS = [
+  '.about-hero .crumbs, .about-hero .eyebrow, .about-hero h1, .about-hero p',
+  '.about-story-media, .about-story-copy > *',
+  '.about-numbers .num-cell',
+  '.vision-panel .vision-body, .mission-panel .vision-body',
+  '.about-team .team-head, .about-team .team-row',
+  '.about-clients .team-head, .about-clients .client-viewport',
+  '.testimonials-side, .quote-stage',
+  '.about-cta-copy > *',
+];
+
 /** Company page, built to the About Us comp: story, numbers, vision, team, brands. */
 export default function About() {
+  useReveal(REVEAL_GROUPS);
+
   return (
     <div className="home2 about-page">
       <SiteHeader onHome={false} active="About Us" />
