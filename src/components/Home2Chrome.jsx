@@ -9,7 +9,7 @@ import { Link } from '../router.jsx';
 
 export const NAV = [
   { label: 'Home', href: '#top' },
-  { label: 'About Us', href: '#about' },
+  { label: 'About Us', href: '#about', path: '/about' },
   { label: 'Categories', href: '#collections' },
   { label: 'Sectors', href: '#spaces' },
   { label: 'Catalogs', href: '#catalogs' },
@@ -60,7 +60,8 @@ export function Logo() {
  * The nav is a list of in-page anchors. Away from the home page those sections
  * do not exist, so the links point back at the home page's anchor instead.
  */
-const navHref = (href, onHome) => (onHome ? href : `/${href}`);
+const navHref = (item, onHome) =>
+  item.path ?? (onHome ? item.href : `/${item.href}`);
 
 export function SiteHeader({ onHome = true, active = 'Home' }) {
   const [scrolled, setScrolled] = useState(false);
@@ -93,7 +94,7 @@ export function SiteHeader({ onHome = true, active = 'Home' }) {
             <ul>
               {NAV.map((item) => (
                 <li key={item.label}>
-                  <a href={navHref(item.href, onHome)} className={item.label === active ? 'active' : undefined}>
+                  <a href={navHref(item, onHome)} className={item.label === active ? 'active' : undefined}>
                     {item.label}
                   </a>
                 </li>
@@ -104,7 +105,7 @@ export function SiteHeader({ onHome = true, active = 'Home' }) {
             <svg className="icon-btn" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8">
               <circle cx="11" cy="11" r="7" /><path d="M21 21l-4.3-4.3" />
             </svg>
-            <a href={navHref('#contact', onHome)} className="cta">Get in Touch <Arrow size={14} /></a>
+            <a href={navHref({ href: '#contact' }, onHome)} className="cta">Get in Touch <Arrow size={14} /></a>
             <button className="menu-toggle" aria-label="Open menu" aria-expanded={menuOpen} onClick={() => setMenuOpen(true)}>
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round">
                 <path d="M4 7h16M4 12h16M4 17h16" />
@@ -130,13 +131,13 @@ export function SiteHeader({ onHome = true, active = 'Home' }) {
         </div>
         <nav className="menu-nav">
           {NAV.map((item) => (
-            <a key={item.label} href={navHref(item.href, onHome)} onClick={() => setMenuOpen(false)}>
+            <a key={item.label} href={navHref(item, onHome)} onClick={() => setMenuOpen(false)}>
               {item.label} <Arrow size={14} />
             </a>
           ))}
         </nav>
         <div className="menu-foot">
-          <a href={navHref('#contact', onHome)} className="cta" onClick={() => setMenuOpen(false)}>Get in Touch <Arrow size={14} /></a>
+          <a href={navHref({ href: '#contact' }, onHome)} className="cta" onClick={() => setMenuOpen(false)}>Get in Touch <Arrow size={14} /></a>
           <div className="menu-tagline">One stop solutions to all your furniture needs.</div>
           <SocialRow />
         </div>
