@@ -57,11 +57,27 @@ export function Logo() {
 }
 
 /**
- * The nav is a list of in-page anchors. Away from the home page those sections
+ * Most nav entries are in-page anchors; away from the home page those sections
  * do not exist, so the links point back at the home page's anchor instead.
+ * Entries carrying a `path` are real pages and route client-side.
  */
 const navHref = (item, onHome) =>
   item.path ?? (onHome ? item.href : `/${item.href}`);
+
+function NavLink({ item, onHome, className, onClick, children }) {
+  if (item.path) {
+    return (
+      <Link to={item.path} className={className} onClick={onClick}>
+        {children}
+      </Link>
+    );
+  }
+  return (
+    <a href={navHref(item, onHome)} className={className} onClick={onClick}>
+      {children}
+    </a>
+  );
+}
 
 export function SiteHeader({ onHome = true, active = 'Home' }) {
   const [scrolled, setScrolled] = useState(false);
@@ -94,9 +110,9 @@ export function SiteHeader({ onHome = true, active = 'Home' }) {
             <ul>
               {NAV.map((item) => (
                 <li key={item.label}>
-                  <a href={navHref(item, onHome)} className={item.label === active ? 'active' : undefined}>
+                  <NavLink item={item} onHome={onHome} className={item.label === active ? 'active' : undefined}>
                     {item.label}
-                  </a>
+                  </NavLink>
                 </li>
               ))}
             </ul>
@@ -131,9 +147,9 @@ export function SiteHeader({ onHome = true, active = 'Home' }) {
         </div>
         <nav className="menu-nav">
           {NAV.map((item) => (
-            <a key={item.label} href={navHref(item, onHome)} onClick={() => setMenuOpen(false)}>
+            <NavLink key={item.label} item={item} onHome={onHome} onClick={() => setMenuOpen(false)}>
               {item.label} <Arrow size={14} />
-            </a>
+            </NavLink>
           ))}
         </nav>
         <div className="menu-foot">
