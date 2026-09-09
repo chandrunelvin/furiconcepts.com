@@ -169,8 +169,48 @@ const FOOTER_COLUMNS = [
   { heading: 'Legal', links: ['Privacy Policy', 'Terms & Conditions'] },
 ];
 
+/**
+ * The newsletter band sits directly above the footer, so it ships with it and
+ * appears on every page rather than only on the home page.
+ */
+export function Newsletter() {
+  const [email, setEmail] = useState('');
+
+  const subscribe = (e) => {
+    e.preventDefault();
+    setEmail('Subscribed!');
+  };
+
+  return (
+    <section className="newsletter" id="contact">
+      <div className="newsletter-media" aria-hidden="true">
+        <img src="/images/common/cornerimage-footer.webp" alt="" loading="lazy" />
+      </div>
+      <div className="newsletter-body">
+        <div>
+          <div className="eyebrow">Let&apos;s Stay Connected</div>
+          <h2>Get Inspired, Every Month</h2>
+          <p>Subscribe to our newsletter for the latest collections, ideas and exclusive offers.</p>
+        </div>
+        <form className="sub-form" onSubmit={subscribe}>
+          <input
+            type="email"
+            placeholder="Your email address"
+            value={email}
+            onChange={(e) => setEmail(e.target.value)}
+            required
+          />
+          <button type="submit">Subscribe <Arrow size={14} /></button>
+        </form>
+      </div>
+    </section>
+  );
+}
+
 export function SiteFooter() {
   return (
+    <>
+    <Newsletter />
     <footer>
       <div className="wrap">
         <div className="footer-top">
@@ -205,5 +245,6 @@ export function SiteFooter() {
         </div>
       </div>
     </footer>
+    </>
   );
 }

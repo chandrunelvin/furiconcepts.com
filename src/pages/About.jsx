@@ -1,12 +1,11 @@
-import { useCallback, useEffect, useRef } from 'react';
+import { useCallback, useEffect, useRef, useState } from 'react';
 import { Arrow, SiteFooter, SiteHeader } from '../components/Home2Chrome.jsx';
 import { CLIENTS } from '../data/clients.js';
+import { TESTIMONIALS } from '../data/testimonials.js';
 import { LEADERSHIP, TEAM } from '../data/team.js';
 import { prefersReducedMotion } from '../lib/scroll.js';
 import { Link } from '../router.jsx';
 import '../styles/home2.css';
-
-const cav = (name) => `/images/cavaletti/${name}.jpg`;
 
 const NUMBERS = [
   {
@@ -43,7 +42,7 @@ export default function About() {
       {/* ---- hero: full-bleed photography with the header floating over it ---- */}
       <section className="about-hero">
         <div className="about-hero-media">
-          <img src="/images/common/more-then-furniture-bg.webp" alt="" />
+          <img src="/images/about-us/about-hero-bg.webp" alt="" />
         </div>
         <div className="overlay" />
         <div className="wrap about-hero-inner">
@@ -52,9 +51,9 @@ export default function About() {
             <span aria-hidden="true">/</span>
             <span className="current">About Us</span>
           </nav>
-          <div className="eyebrow">About Furniconcepts</div>
+          <div className="eyebrow">About Furniconcepts — ISO 9001:2015 Certified</div>
           <h1>More Than a<br />Furniture <span className="accent">Brand.</span></h1>
-          <p>We represent sixteen international manufacturers and deliver complete furniture packages across the UAE, India and Singapore — specified, supplied and installed by one team.</p>
+          <p>We&apos;re more than just a furniture brand — we&apos;re creators of captivating spaces, with a footprint spanning India, Singapore and the Middle East.</p>
         </div>
       </section>
 
@@ -63,8 +62,12 @@ export default function About() {
         <div className="wrap about-story-inner">
           <div className="about-story-copy">
             <div className="eyebrow">About Us</div>
-            <h2>Designing<br />Better Living<br />Since Day One</h2>
-            <p>Furniconcepts is a contract furniture specialist committed to functional, elegant and durable solutions for workplaces, hospitality, healthcare and public venues. We represent sixteen international manufacturers and blend timeless design with modern craftsmanship to bring comfort, style and purpose into everyday spaces.</p>
+            <h2>Crafting Elegance,<br />Inspiring Spaces</h2>
+            <p>At Furniconcepts, we&apos;re more than just a furniture brand — we&apos;re creators of captivating spaces. With a footprint spanning India and key Middle Eastern countries such as UAE, Saudi Arabia, Qatar, and beyond, we specialize in curating exquisite furniture solutions that seamlessly blend elegance with functionality. From timeless classics to cutting-edge designs, each piece in our collection is a testament to our commitment to craftsmanship and quality.</p>
+            <p>Driven by a passion for design and dedication to sustainability, we&apos;re on a mission to redefine the way you experience furniture. Our team of skilled artisans and design experts work tirelessly to bring your vision to life, offering personalized solutions tailored to your unique style and needs. Step into the world of Furniconcepts and unlock the potential to transform your living and working spaces into extraordinary realms of comfort and beauty.</p>
+            <blockquote className="pull-quote">
+              Furniconcepts is not a furniture company — it is a multi-country workspace brand with scalable potential.
+            </blockquote>
             <a href="/#catalogs" className="btn-primary">Learn More <Arrow /></a>
           </div>
           <div className="about-story-media">
@@ -99,23 +102,23 @@ export default function About() {
       {/* ---- vision + mission ---- */}
       <section className="vision-band">
         <div className="vision-panel">
-          <img src={cav('material-wall')} alt="" aria-hidden="true" />
+          <img src="/images/about-us/bg-vision-image.webp" alt="" aria-hidden="true" />
           <div className="vision-body">
             <svg className="vision-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
               <path d="M2 12s3.6-6 10-6 10 6 10 6-3.6 6-10 6-10-6-10-6z" /><circle cx="12" cy="12" r="2.6" />
             </svg>
             <h3>Our Vision</h3>
-            <p>To be the region&apos;s most trusted furniture partner, known for spaces that work harder, last longer and feel better to be in.</p>
+            <p>At Furniconcepts, our vision is to inspire and elevate lifestyles through exceptional furniture solutions. We envision creating spaces that exude timeless elegance and unparalleled comfort, enriching the lives of our customers and communities alike.</p>
           </div>
         </div>
         <div className="mission-panel">
-          <img src={cav('showroom-lounge')} alt="" aria-hidden="true" />
+          <img src="/images/about-us/bg-mission-image.webp" alt="" aria-hidden="true" />
           <div className="vision-body">
             <svg className="vision-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
               <circle cx="12" cy="12" r="9" /><circle cx="12" cy="12" r="5" /><circle cx="12" cy="12" r="1.4" fill="currentColor" />
             </svg>
             <h3>Our Mission</h3>
-            <p>To deliver high-quality, functional and sustainable furniture packages — specified, supplied and installed by one team, on programme and without surprises.</p>
+            <p>Our mission at Furniconcepts is to craft furniture that transcends mere functionality, embodying the perfect fusion of aesthetics and utility. With a focus on innovation, sustainability, and customer satisfaction, we strive to be the foremost choice for individuals and businesses seeking premium quality furniture in India, Singapore and the Middle East. Through our commitment to excellence and passion for design, we aim to transform spaces into showcases of sophistication and style, leaving a lasting impression on every environment we touch.</p>
           </div>
         </div>
       </section>
@@ -146,15 +149,20 @@ export default function About() {
             </div>
             <a href="/#catalogs" className="link-arrow">View Our Brands <Arrow /></a>
           </div>
-          <div className="client-wall">
-            {CLIENTS.map((client) => (
-              <div className="client-tile" key={client.src}>
-                <img src={client.src} alt={client.name} title={client.name} loading="lazy" />
-              </div>
-            ))}
+          <div className="client-viewport">
+            <div className="client-track" style={{ '--n': CLIENTS.length }}>
+              {[...CLIENTS, ...CLIENTS].map((client, i) => (
+                <div className="client-tile" key={`${client.src}-${i}`} aria-hidden={i >= CLIENTS.length}>
+                  <img src={client.src} alt={i >= CLIENTS.length ? '' : client.name} title={client.name} loading="lazy" />
+                </div>
+              ))}
+            </div>
           </div>
         </div>
       </section>
+
+      {/* ---- testimonials ---- */}
+      <Testimonials />
 
       {/* ---- closing cta ---- */}
       <section className="about-cta" id="offices">
@@ -238,6 +246,72 @@ function TeamRow({ people }) {
         </button>
       </div>
     </div>
+  );
+}
+
+/**
+ * One quote at a time on the dark band, stepped by the arrows or by the
+ * numbered marks — the same rhythm as the hero's slide dots.
+ */
+function Testimonials() {
+  const [index, setIndex] = useState(0);
+  const current = TESTIMONIALS[index];
+
+  const go = useCallback((dir) => {
+    setIndex((i) => (i + dir + TESTIMONIALS.length) % TESTIMONIALS.length);
+  }, []);
+
+  useEffect(() => {
+    if (prefersReducedMotion()) return undefined;
+    const t = setInterval(() => go(1), 7000);
+    return () => clearInterval(t);
+  }, [go, index]);
+
+  return (
+    <section className="testimonials">
+      <div className="wrap testimonials-inner">
+        <div className="testimonials-side">
+          <div className="eyebrow">Testimonials</div>
+          <h2>What Our<br />Clients Say</h2>
+          <div className="quote-count">
+            <span className="now">{String(index + 1).padStart(2, '0')}</span>
+            <span className="of">/ {String(TESTIMONIALS.length).padStart(2, '0')}</span>
+          </div>
+          <div className="quote-nav">
+            <button type="button" aria-label="Previous testimonial" onClick={() => go(-1)}>
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round">
+                <path d="M19 12H5M11 18l-6-6 6-6" />
+              </svg>
+            </button>
+            <button type="button" aria-label="Next testimonial" onClick={() => go(1)}>
+              <Arrow size={15} width={2.2} />
+            </button>
+          </div>
+        </div>
+
+        <figure className="quote-stage" aria-live="polite">
+          <svg className="quote-mark" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+            <path d="M9.5 5C6.5 6.6 5 9.2 5 12.8V19h6v-6.2H8.3c0-2.2.9-3.7 2.7-4.6L9.5 5zm9 0c-3 1.6-4.5 4.2-4.5 7.8V19h6v-6.2h-2.7c0-2.2.9-3.7 2.7-4.6L18.5 5z" />
+          </svg>
+          <blockquote key={current.company}>{current.quote}</blockquote>
+          <figcaption>
+            <span className="quote-name">{current.name}</span>
+            <span className="quote-company">{current.company}</span>
+          </figcaption>
+          <div className="quote-marks">
+            {TESTIMONIALS.map((item, i) => (
+              <button
+                key={item.company}
+                type="button"
+                className={`quote-tick ${i === index ? 'active' : ''}`.trim()}
+                aria-label={`Show testimonial ${i + 1}: ${item.company}`}
+                onClick={() => setIndex(i)}
+              />
+            ))}
+          </div>
+        </figure>
+      </div>
+    </section>
   );
 }
 

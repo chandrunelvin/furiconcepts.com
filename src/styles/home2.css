@@ -991,10 +991,14 @@
   padding:150px 0 70px;color:#fff;overflow:hidden;
 }
 .home2 .about-hero-media{ position:absolute;inset:0;z-index:0; }
-.home2 .about-hero-media img{ width:100%;height:100%;object-fit:cover;object-position:50% 35%; }
+.home2 .about-hero-media img{ width:100%;height:100%;object-fit:cover;object-position:30% 55%; }
 .home2 .about-hero .overlay{
+  /* the artwork is bright and daylit, so the copy needs a scrim that is
+     heaviest at the bottom-left corner it sits in */
   position:absolute;inset:0;z-index:1;
-  background:linear-gradient(180deg,rgba(10,20,16,.62) 0%,rgba(10,20,16,.30) 40%,rgba(10,20,16,.78) 100%);
+  background:
+    linear-gradient(90deg,rgba(8,18,14,.80) 0%,rgba(8,18,14,.52) 42%,rgba(8,18,14,.16) 100%),
+    linear-gradient(180deg,rgba(8,18,14,.42) 0%,rgba(8,18,14,.10) 34%,rgba(8,18,14,.62) 100%);
 }
 .home2 .about-hero-inner{ position:relative;z-index:2;width:100%; }
 .home2 .about-hero .crumbs{ color:rgba(255,255,255,.72); }
@@ -1049,8 +1053,17 @@
 .home2 .mission-panel img{ position:absolute;inset:0;width:100%;height:100%;object-fit:cover; }
 .home2 .vision-panel::after,
 .home2 .mission-panel::after{ content:"";position:absolute;inset:0;z-index:1; }
-.home2 .vision-panel::after{ background:rgba(18,71,52,.92); }
-.home2 .mission-panel::after{ background:rgba(250,249,246,.93); }
+.home2 .vision-panel::after{
+  /* the artwork is already a dark green wall — the plant reads on the right,
+     so the scrim only has to deepen the side the copy sits on */
+  background:linear-gradient(90deg,rgba(13,44,32,.86) 0%,rgba(13,44,32,.68) 55%,rgba(13,44,32,.42) 100%);
+}
+.home2 .vision-panel img{ transform:scaleX(-1); }
+.home2 .mission-panel::after{
+  /* the plant sits on the right of this frame, so the scrim only lifts the
+     left half where the copy sits */
+  background:linear-gradient(90deg,rgba(250,249,246,.90) 0%,rgba(250,249,246,.72) 55%,rgba(250,249,246,.34) 100%);
+}
 .home2 .vision-body{
   position:relative;z-index:2;margin-top:auto;padding:56px 52px;max-width:52ch;
 }
@@ -1100,17 +1113,19 @@
   transition:background .2s, border-color .2s, color .2s;
 }
 .home2 .team-nav button:hover{ background:var(--green);border-color:var(--green);color:#fff; }
+/* cards live inside a horizontal scroller, so a hover lift would be clipped
+   by the rail's overflow — the border and the arrow carry the hover instead */
 .home2 .team-card{
   border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;background:var(--cream);
-  display:flex;flex-direction:column;transition:border-color .2s, transform .2s;
+  display:flex;flex-direction:column;transition:border-color .2s;
 }
-.home2 .team-card:hover{ border-color:var(--green);transform:translateY(-3px); }
+.home2 .team-card:hover{ border-color:var(--green); }
 .home2 .team-photo{ aspect-ratio:1/1.04;overflow:hidden;background:var(--card); }
+/* portraits are framed tightly, so hovering must not scale them — a zoom
+   crops the top of the head */
 .home2 .team-photo img{
-  width:100%;height:100%;object-fit:cover;object-position:50% 20%;
-  transition:transform .6s cubic-bezier(.22,.61,.36,1);
+  width:100%;height:100%;object-fit:cover;object-position:50% 18%;
 }
-.home2 .team-card:hover .team-photo img{ transform:scale(1.04); }
 .home2 .team-bar{
   display:flex;align-items:center;justify-content:space-between;gap:12px;
   padding:14px 14px 16px;
@@ -1126,15 +1141,26 @@
 .home2 .team-card:hover .team-arrow{ background:var(--green);border-color:var(--green);color:#fff; }
 
 /* ---- client logo wall ---- */
-.home2 .client-wall{ display:grid;grid-template-columns:repeat(6,1fr);gap:14px; }
+/* one continuous row; the duplicated half hides the reset */
+.home2 .client-viewport{ --pv:6;--gap:14px;overflow:hidden; }
+.home2 .client-track{
+  display:flex;gap:var(--gap);
+  animation:home2-marquee calc(var(--n,6) * 1.7s) linear infinite;
+}
+.home2 .client-viewport:hover .client-track{ animation-play-state:paused; }
+.home2 .client-tile{
+  flex:0 0 calc((100% - (var(--pv) - 1) * var(--gap)) / var(--pv));
+}
+@media(prefers-reduced-motion:reduce){
+  .home2 .client-track{ animation:none; }
+  .home2 .client-viewport{ overflow-x:auto; }
+}
 .home2 .client-tile{
   border:1px solid var(--line);border-radius:var(--radius);background:#fff;
   min-height:104px;display:flex;align-items:center;justify-content:center;padding:18px 20px;
-  transition:border-color .2s, transform .2s, box-shadow .2s;
+  transition:border-color .2s;
 }
-.home2 .client-tile:hover{
-  border-color:var(--green);transform:translateY(-2px);box-shadow:0 10px 24px -16px rgba(15,38,32,.5);
-}
+.home2 .client-tile:hover{ border-color:var(--green); }
 .home2 .client-tile img{
   width:100%;height:100%;max-height:56px;object-fit:contain;
   filter:grayscale(1);opacity:.72;transition:filter .3s, opacity .3s;
@@ -1160,7 +1186,7 @@
 /* ---- about page: smaller screens ---- */
 @media(max-width:1100px){
   .home2 .team-rail{ --pv:4; }
-  .home2 .client-wall{ grid-template-columns:repeat(4,1fr); }
+  .home2 .client-viewport{ --pv:4; }
 }
 @media(max-width:900px){
   .home2 .about-hero{ min-height:0;padding:120px 0 48px; }
@@ -1178,7 +1204,7 @@
 }
 @media(max-width:700px){
   .home2 .team-rail{ --pv:2;--gap:12px; }
-  .home2 .client-wall{ grid-template-columns:repeat(3,1fr);gap:10px; }
+  .home2 .client-viewport{ --pv:2.4;--gap:10px; }
   .home2 .client-tile{ min-height:84px;padding:14px; }
   .home2 .about-hero{ padding:104px 0 40px; }
   .home2 .about-story-media{ aspect-ratio:4/3; }
@@ -1189,6 +1215,65 @@
   .home2 .team-role{ font-size:11px; }
   .home2 .team-arrow{ width:24px;height:24px; }
 }
-@media(prefers-reduced-motion:reduce){
-  .home2 .team-photo img{ transition:none; }
+
+/* ---- testimonials: one quote at a time on the dark band ---- */
+.home2 .testimonials{ background:var(--green-darker);color:#fff;padding:96px 0; }
+@media(max-width:900px){ .home2 .testimonials{ padding:60px 0; } }
+.home2 .testimonials-inner{ display:grid;grid-template-columns:.72fr 1.28fr;gap:56px;align-items:start; }
+.home2 .testimonials .eyebrow{ color:rgba(255,255,255,.6); }
+.home2 .testimonials-side h2{
+  font-family:'Fraunces', Georgia, serif;font-weight:400;letter-spacing:-.02em;
+  font-size:clamp(25px,3.4vw,40px);line-height:1.1;
 }
+.home2 .quote-count{ display:flex;align-items:baseline;gap:7px;margin:30px 0 22px; }
+.home2 .quote-count .now{
+  font-family:'Fraunces', Georgia, serif;font-size:30px;line-height:1;color:var(--green);
+}
+.home2 .quote-count .of{ font-size:13px;color:rgba(255,255,255,.55);letter-spacing:1px; }
+.home2 .quote-nav{ display:flex;gap:10px; }
+.home2 .quote-nav button{
+  width:44px;height:44px;border-radius:50%;border:1px solid rgba(255,255,255,.3);color:#fff;
+  display:flex;align-items:center;justify-content:center;
+  transition:background .2s, border-color .2s, color .2s;
+}
+.home2 .quote-nav button:hover{ background:#fff;border-color:#fff;color:var(--green-darker); }
+
+.home2 .quote-stage{ display:flex;flex-direction:column;align-items:flex-start; }
+.home2 .quote-mark{ width:34px;height:34px;color:var(--green);margin-bottom:22px; }
+.home2 .quote-stage blockquote{
+  font-family:'Fraunces', Georgia, serif;font-weight:400;letter-spacing:-.01em;
+  font-size:clamp(19px,2.5vw,30px);line-height:1.45;max-width:34ch;
+  animation:home2-quote-in .5s ease both;
+}
+@keyframes home2-quote-in{ from{ opacity:0;transform:translateY(10px); } to{ opacity:1;transform:none; } }
+.home2 .quote-stage figcaption{ display:flex;flex-direction:column;gap:4px;margin-top:28px; }
+.home2 .quote-name{ font-size:15px;font-weight:600; }
+.home2 .quote-company{
+  font-size:11.5px;letter-spacing:2px;text-transform:uppercase;color:var(--green);
+}
+.home2 .quote-marks{ display:flex;flex-wrap:wrap;gap:8px;margin-top:34px; }
+.home2 .quote-tick{
+  width:26px;height:2px;background:rgba(255,255,255,.28);
+  transition:background .2s, transform .2s;
+}
+.home2 .quote-tick:hover{ background:rgba(255,255,255,.6); }
+.home2 .quote-tick.active{ background:var(--green);transform:scaleY(2); }
+
+@media(max-width:900px){
+  .home2 .testimonials-inner{ grid-template-columns:1fr;gap:30px; }
+  .home2 .quote-count{ margin:20px 0 16px; }
+  .home2 .quote-stage blockquote{ max-width:none; }
+  .home2 .quote-mark{ width:28px;height:28px;margin-bottom:16px; }
+}
+@media(prefers-reduced-motion:reduce){
+  .home2 .quote-stage blockquote{ animation:none; }
+}
+
+/* the about-us pull quote */
+.home2 .pull-quote{
+  font-family:'Fraunces', Georgia, serif;font-weight:400;font-style:italic;
+  font-size:clamp(16px,2.1vw,20px);line-height:1.45;letter-spacing:-.01em;
+  border-left:2px solid var(--green);padding:4px 0 4px 22px;margin:4px 0 28px;
+  max-width:46ch;
+}
+@media(max-width:900px){ .home2 .pull-quote{ padding-left:16px;margin-bottom:24px; } }

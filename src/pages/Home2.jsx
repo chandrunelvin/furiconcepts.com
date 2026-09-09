@@ -131,7 +131,6 @@ function useReveal() {
 
 export default function Home2() {
   const [slide, setSlide] = useState(0);
-  const [email, setEmail] = useState('');
   useReveal();
   const heroLayer = useParallax(0.25);
   const bannerLayer = useParallax(0.35);
@@ -143,11 +142,6 @@ export default function Home2() {
     const t = setInterval(() => setSlide((i) => (i + 1) % HERO_SLIDES.length), 6000);
     return () => clearInterval(t);
   }, [slide]);
-
-  const subscribe = (e) => {
-    e.preventDefault();
-    setEmail('Subscribed!');
-  };
 
   return (
     <div className="home2">
@@ -421,29 +415,6 @@ export default function Home2() {
               ))}
             </div>
           </div>
-        </div>
-      </section>
-
-      <section className="newsletter" id="contact">
-        <div className="newsletter-media" aria-hidden="true">
-          <img src="/images/common/cornerimage-footer.webp" alt="" loading="lazy" />
-        </div>
-        <div className="newsletter-body">
-          <div>
-            <div className="eyebrow">Let&apos;s Stay Connected</div>
-            <h2>Get Inspired, Every Month</h2>
-            <p>Subscribe to our newsletter for the latest collections, ideas and exclusive offers.</p>
-          </div>
-          <form className="sub-form" onSubmit={subscribe}>
-            <input
-              type="email"
-              placeholder="Your email address"
-              value={email}
-              onChange={(e) => setEmail(e.target.value)}
-              required
-            />
-            <button type="submit">Subscribe <Arrow size={14} /></button>
-          </form>
         </div>
       </section>
 
