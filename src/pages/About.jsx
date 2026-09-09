@@ -1,6 +1,7 @@
 import { Arrow, SiteFooter, SiteHeader } from '../components/Home2Chrome.jsx';
 import { CATALOGS } from '../data/catalogs.js';
 import { OFFICES } from '../data/content.js';
+import { LEADERSHIP, TEAM } from '../data/team.js';
 import { Link } from '../router.jsx';
 import '../styles/home2.css';
 
@@ -149,6 +150,42 @@ export default function About() {
               </li>
             ))}
           </ul>
+        </div>
+      </section>
+
+      <section className="section about-team" id="team">
+        <div className="wrap">
+          <div className="head-row">
+            <div>
+              <div className="eyebrow">Our Team</div>
+              <h2>The people behind the projects</h2>
+            </div>
+            <p>Sales, design, estimation, IT and installation — across the UAE, Saudi Arabia, India and Singapore.</p>
+          </div>
+
+          <div className="team-grid team-lead">
+            {LEADERSHIP.map((person) => (
+              <figure className="team-card" key={person.name}>
+                <div className="team-photo"><img src={person.src} alt={person.name} loading="lazy" /></div>
+                <figcaption>
+                  <div className="team-name">{person.name}</div>
+                  <div className="team-role">{person.role}</div>
+                </figcaption>
+              </figure>
+            ))}
+          </div>
+
+          <div className="team-grid">
+            {TEAM.map((person) => (
+              <figure className="team-card" key={person.name}>
+                <div className="team-photo"><img src={person.src} alt={person.name} loading="lazy" /></div>
+                <figcaption>
+                  <div className="team-name">{person.name}</div>
+                  <div className="team-role">{person.role}</div>
+                </figcaption>
+              </figure>
+            ))}
+          </div>
         </div>
       </section>
 
