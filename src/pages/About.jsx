@@ -1,77 +1,46 @@
+import { useCallback, useEffect, useRef } from 'react';
 import { Arrow, SiteFooter, SiteHeader } from '../components/Home2Chrome.jsx';
-import { CATALOGS } from '../data/catalogs.js';
-import { OFFICES } from '../data/content.js';
+import { CLIENTS } from '../data/clients.js';
 import { LEADERSHIP, TEAM } from '../data/team.js';
+import { prefersReducedMotion } from '../lib/scroll.js';
 import { Link } from '../router.jsx';
 import '../styles/home2.css';
 
 const cav = (name) => `/images/cavaletti/${name}.jpg`;
 
 const NUMBERS = [
-  { num: '12', label: 'Furniture Categories' },
-  { num: '16+', label: 'Global Partner Brands' },
-  { num: '3', label: 'Offices Worldwide' },
-  { num: '15+', label: 'Years of Experience' },
-];
-
-/** What a Furniconcepts engagement covers, start to finish. */
-const SERVICE_STEPS = [
   {
-    num: '01',
-    title: 'Specify',
-    body: 'We read the drawings, the headcount and the acoustics, then put forward ranges that fit the brief and the budget.',
+    num: '12',
+    label: 'Furniture Categories',
+    icon: <><rect x="3" y="3" width="7" height="7" rx="1.5" /><rect x="14" y="3" width="7" height="7" rx="1.5" /><rect x="3" y="14" width="7" height="7" rx="1.5" /><rect x="14" y="14" width="7" height="7" rx="1.5" /></>,
   },
   {
-    num: '02',
-    title: 'Sample',
-    body: 'Finishes, fabrics and full working samples reach your office or showroom before a single order is placed.',
+    num: '16+',
+    label: 'Global Partner Brands',
+    icon: <><circle cx="12" cy="8" r="5" /><path d="M8.5 12.5L7 21l5-2.5L17 21l-1.5-8.5" /></>,
   },
   {
-    num: '03',
-    title: 'Supply',
-    body: 'Consolidated shipping from sixteen factories, tracked against your programme so the floor is never waiting.',
+    num: '15+',
+    label: 'Years of Experience',
+    icon: <><circle cx="12" cy="12" r="9" /><path d="M12 7v5l3.5 2" /></>,
   },
   {
-    num: '04',
-    title: 'Install & Support',
-    body: 'Our own teams install, snag and hand over — then stay reachable for spares, warranty and later phases.',
+    num: '3',
+    label: 'Offices Worldwide',
+    icon: <><circle cx="12" cy="12" r="9" /><path d="M3 12h18M12 3c2.5 3 2.5 15 0 18M12 3c-2.5 3-2.5 15 0 18" /></>,
   },
 ];
 
-const VALUES = [
-  {
-    title: 'One partner, every category',
-    body: 'Task seating, acoustics, auditorium, healthcare, hospitality and outdoor come from one contact and one delivery schedule.',
-  },
-  {
-    title: 'Specification you can defend',
-    body: 'Test reports, warranties and technical drawings are supplied up front, so approvals move without a second round.',
-  },
-  {
-    title: 'Built for contract use',
-    body: 'Every brand we represent is chosen for cycle-tested hardware and finishes that survive a public floor.',
-  },
-  {
-    title: 'Three offices, one standard',
-    body: 'The UAE, India and Singapore work to the same programme, pricing and aftercare commitments.',
-  },
-];
+/** Leadership first, then the rest of the team — one continuous row. */
+const PEOPLE = [...LEADERSHIP, ...TEAM];
 
-const SECTORS = [
-  { name: 'Workplace', src: cav('office-green') },
-  { name: 'Hospitality', src: cav('canteen') },
-  { name: 'Healthcare', src: cav('chair-family') },
-  { name: 'Public Venues', src: cav('auditorium') },
-  { name: 'Education', src: cav('stacking-chairs') },
-  { name: 'Aviation', src: cav('beam-seating') },
-];
-
-/** Company page: who Furniconcepts is, how a project runs, where the offices are. */
+/** Company page, built to the About Us comp: story, numbers, vision, team, brands. */
 export default function About() {
   return (
     <div className="home2 about-page">
       <SiteHeader onHome={false} active="About Us" />
 
+      {/* ---- hero: full-bleed photography with the header floating over it ---- */}
       <section className="about-hero">
         <div className="about-hero-media">
           <img src="/images/common/more-then-furniture-bg.webp" alt="" />
@@ -89,176 +58,200 @@ export default function About() {
         </div>
       </section>
 
+      {/* ---- our story ---- */}
+      <section className="section about-story" id="story">
+        <div className="wrap about-story-inner">
+          <div className="about-story-copy">
+            <div className="eyebrow">About Us</div>
+            <h2>Designing<br />Better Living<br />Since Day One</h2>
+            <p>Furniconcepts is a contract furniture specialist committed to functional, elegant and durable solutions for workplaces, hospitality, healthcare and public venues. We represent sixteen international manufacturers and blend timeless design with modern craftsmanship to bring comfort, style and purpose into everyday spaces.</p>
+            <a href="/#catalogs" className="btn-primary">Learn More <Arrow /></a>
+          </div>
+          <div className="about-story-media">
+            <img src="/images/common/crafted-precision.jpg" alt="Lounge seating in a daylit interior" loading="lazy" />
+            <a href="#" className="watch-story">
+              <span className="circle">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z" /></svg>
+              </span>
+              <span>Watch<br />Our Story</span>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      {/* ---- numbers ---- */}
       <section className="about-numbers">
         <div className="wrap">
           {NUMBERS.map((item) => (
-            <div className="fact" key={item.label}>
-              <div className="fact-num">{item.num}</div>
-              <div className="fact-label">{item.label}</div>
+            <div className="num-cell" key={item.label}>
+              <svg className="num-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
+                {item.icon}
+              </svg>
+              <div>
+                <div className="num-value">{item.num}</div>
+                <div className="num-label">{item.label}</div>
+              </div>
             </div>
           ))}
         </div>
       </section>
 
-      <section className="section about-story">
-        <div className="wrap about-story-inner">
-          <div className="about-story-media">
-            <img src={cav('showroom')} alt="Showroom displaying the seating ranges Furniconcepts supplies" loading="lazy" />
+      {/* ---- vision + mission ---- */}
+      <section className="vision-band">
+        <div className="vision-panel">
+          <img src={cav('material-wall')} alt="" aria-hidden="true" />
+          <div className="vision-body">
+            <svg className="vision-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
+              <path d="M2 12s3.6-6 10-6 10 6 10 6-3.6 6-10 6-10-6-10-6z" /><circle cx="12" cy="12" r="2.6" />
+            </svg>
+            <h3>Our Vision</h3>
+            <p>To be the region&apos;s most trusted furniture partner, known for spaces that work harder, last longer and feel better to be in.</p>
           </div>
-          <div className="about-story-copy">
-            <div className="eyebrow">Our Story</div>
-            <h2>Creators of captivating spaces</h2>
-            <p>Furniconcepts began as a seating specialist and grew into a single source for everything a space needs to open — desking and task chairs, acoustic pods, auditorium and stadium seating, healthcare and hospitality ranges, outdoor shading.</p>
-            <p>That breadth is deliberate. Fit-outs stall when six suppliers each own a slice of the schedule, so we carry the whole package: one specification, one order, one installation team, one point of contact for the life of the furniture.</p>
-            <a href="/#catalogs" className="btn-primary">Browse Our Catalogs <Arrow /></a>
+        </div>
+        <div className="mission-panel">
+          <img src={cav('showroom-lounge')} alt="" aria-hidden="true" />
+          <div className="vision-body">
+            <svg className="vision-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
+              <circle cx="12" cy="12" r="9" /><circle cx="12" cy="12" r="5" /><circle cx="12" cy="12" r="1.4" fill="currentColor" />
+            </svg>
+            <h3>Our Mission</h3>
+            <p>To deliver high-quality, functional and sustainable furniture packages — specified, supplied and installed by one team, on programme and without surprises.</p>
           </div>
         </div>
       </section>
 
-      <section className="section about-process">
-        <div className="wrap">
-          <div className="head-row">
-            <div>
-              <div className="eyebrow">How We Work</div>
-              <h2>From brief to handover</h2>
-            </div>
-            <p>Four stages, run by the same people from the first drawing to the last snag.</p>
-          </div>
-          <div className="step-grid">
-            {SERVICE_STEPS.map((step) => (
-              <div className="step-card" key={step.num}>
-                <div className="step-num">{step.num}</div>
-                <h3>{step.title}</h3>
-                <p>{step.body}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      <section className="about-values">
-        <div className="wrap about-values-inner">
-          <div className="about-values-head">
-            <div className="eyebrow">Why Furniconcepts</div>
-            <h2>What clients keep coming back for</h2>
-          </div>
-          <ul className="value-list">
-            {VALUES.map((value) => (
-              <li key={value.title}>
-                <h4>{value.title}</h4>
-                <p>{value.body}</p>
-              </li>
-            ))}
-          </ul>
-        </div>
-      </section>
-
+      {/* ---- team ---- */}
       <section className="section about-team" id="team">
         <div className="wrap">
-          <div className="head-row">
+          <div className="team-head">
             <div>
               <div className="eyebrow">Our Team</div>
-              <h2>The people behind the projects</h2>
+              <h2>The People<br />Behind Furniconcepts</h2>
+              <p>Sales, design, estimation, IT and installation — across the UAE, Saudi Arabia, India and Singapore, all working towards one goal: better spaces.</p>
             </div>
-            <p>Sales, design, estimation, IT and installation — across the UAE, Saudi Arabia, India and Singapore.</p>
+            <a href="#offices" className="link-arrow">Explore Careers <Arrow /></a>
           </div>
-
-          <div className="team-grid team-lead">
-            {LEADERSHIP.map((person) => (
-              <figure className="team-card" key={person.name}>
-                <div className="team-photo"><img src={person.src} alt={person.name} loading="lazy" /></div>
-                <figcaption>
-                  <div className="team-name">{person.name}</div>
-                  <div className="team-role">{person.role}</div>
-                </figcaption>
-              </figure>
-            ))}
-          </div>
-
-          <div className="team-grid">
-            {TEAM.map((person) => (
-              <figure className="team-card" key={person.name}>
-                <div className="team-photo"><img src={person.src} alt={person.name} loading="lazy" /></div>
-                <figcaption>
-                  <div className="team-name">{person.name}</div>
-                  <div className="team-role">{person.role}</div>
-                </figcaption>
-              </figure>
-            ))}
-          </div>
+          <TeamRow people={PEOPLE} />
         </div>
       </section>
 
-      <section className="section about-sectors">
+      {/* ---- clients ---- */}
+      <section className="section about-clients" id="clients">
         <div className="wrap">
-          <div className="head-row">
+          <div className="team-head">
             <div>
-              <div className="eyebrow">Sectors</div>
-              <h2>Where our furniture lands</h2>
+              <div className="eyebrow">Our Clients</div>
+              <h2>Trusted by Teams<br />Across the Region</h2>
+              <p>Airlines, universities, hospitals, hotels, automotive groups and government departments — furnished, fitted out and supported by Furniconcepts.</p>
             </div>
-            <a href="/#spaces" className="link-arrow">See All Sectors <Arrow /></a>
+            <a href="/#catalogs" className="link-arrow">View Our Brands <Arrow /></a>
           </div>
-          <div className="sector-grid">
-            {SECTORS.map((sector) => (
-              <div className="sector-tile" key={sector.name}>
-                <img src={sector.src} alt={sector.name} loading="lazy" />
-                <span className="sector-name">{sector.name}</span>
+          <div className="client-wall">
+            {CLIENTS.map((client) => (
+              <div className="client-tile" key={client.src}>
+                <img src={client.src} alt={client.name} title={client.name} loading="lazy" />
               </div>
             ))}
           </div>
         </div>
       </section>
 
-      <section className="section about-brands">
-        <div className="wrap">
-          <div className="head-row">
-            <div>
-              <div className="eyebrow">Our Partners</div>
-              <h2>The brands we represent</h2>
-            </div>
-            <a href="/#catalogs" className="link-arrow">All Catalogues <Arrow /></a>
-          </div>
-          <div className="brand-chips">
-            {CATALOGS.map((item) => (
-              <Link to={`/catalogs/${item.slug}`} className="brand-chip-link" key={item.slug}>
-                <span className="chip-thumb"><img src={item.cover} alt="" loading="lazy" /></span>
-                <span className="chip-text">
-                  <span className="chip-brand">{item.brand}</span>
-                  <span className="chip-title">{item.title}</span>
-                </span>
-                <Arrow size={13} />
-              </Link>
-            ))}
-          </div>
+      {/* ---- closing cta ---- */}
+      <section className="about-cta" id="offices">
+        <div className="about-cta-media">
+          <img src="/images/common/more-then-furniture-bg.webp" alt="" aria-hidden="true" />
         </div>
-      </section>
-
-      <section className="section about-offices" id="offices">
-        <div className="wrap">
-          <div className="head-row">
-            <div>
-              <div className="eyebrow">Find Us</div>
-              <h2>Three offices, one standard</h2>
-            </div>
-            <a href="mailto:letstalk@furniconcepts.com" className="link-arrow">letstalk@furniconcepts.com <Arrow /></a>
-          </div>
-          <div className="office-grid">
-            {OFFICES.map((office) => (
-              <div className="office-card" key={office.country}>
-                <h3>{office.country}</h3>
-                <p className="office-address">{office.address}</p>
-                <div className="office-phones">
-                  {office.phones.map((phone) => (
-                    <a href={phone.href} key={phone.label}>{phone.label}</a>
-                  ))}
-                </div>
-              </div>
-            ))}
+        <div className="overlay" />
+        <div className="wrap about-cta-inner">
+          <div className="about-cta-copy">
+            <h2>Let&apos;s Create<br />Better Spaces Together</h2>
+            <p>Get in touch with our team to know more about our collections, partner brands or project enquiries.</p>
+            <a href="mailto:letstalk@furniconcepts.com" className="btn-primary">Get in Touch <Arrow /></a>
           </div>
         </div>
       </section>
 
       <SiteFooter />
     </div>
+  );
+}
+
+/**
+ * The team runs as one row that steps a single card at a time — arrows for
+ * deliberate browsing, and a slow auto-advance that pauses on hover or focus.
+ */
+function TeamRow({ people }) {
+  const railRef = useRef(null);
+
+  const step = useCallback((dir) => {
+    const rail = railRef.current;
+    if (!rail) return;
+    const card = rail.querySelector('.team-card');
+    if (!card) return;
+    const gap = parseFloat(getComputedStyle(rail).columnGap || '0') || 0;
+    const distance = card.getBoundingClientRect().width + gap;
+    const atEnd = rail.scrollLeft + rail.clientWidth >= rail.scrollWidth - 2;
+    if (dir > 0 && atEnd) {
+      rail.scrollTo({ left: 0, behavior: 'smooth' });
+      return;
+    }
+    if (dir < 0 && rail.scrollLeft <= 2) {
+      rail.scrollTo({ left: rail.scrollWidth, behavior: 'smooth' });
+      return;
+    }
+    rail.scrollBy({ left: distance * dir, behavior: 'smooth' });
+  }, []);
+
+  useEffect(() => {
+    const rail = railRef.current;
+    if (!rail || prefersReducedMotion()) return undefined;
+
+    let paused = false;
+    const pause = () => { paused = true; };
+    const resume = () => { paused = false; };
+    ['pointerenter', 'focusin', 'touchstart'].forEach((e) => rail.addEventListener(e, pause));
+    ['pointerleave', 'focusout', 'touchend'].forEach((e) => rail.addEventListener(e, resume));
+
+    const timer = setInterval(() => { if (!paused) step(1); }, 3200);
+    return () => {
+      clearInterval(timer);
+      ['pointerenter', 'focusin', 'touchstart'].forEach((e) => rail.removeEventListener(e, pause));
+      ['pointerleave', 'focusout', 'touchend'].forEach((e) => rail.removeEventListener(e, resume));
+    };
+  }, [step]);
+
+  return (
+    <div className="team-row">
+      <div className="team-rail" ref={railRef}>
+        {people.map((person) => (
+          <TeamCard person={person} key={person.name} />
+        ))}
+      </div>
+      <div className="team-nav">
+        <button type="button" aria-label="Previous team member" onClick={() => step(-1)}>
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round">
+            <path d="M19 12H5M11 18l-6-6 6-6" />
+          </svg>
+        </button>
+        <button type="button" aria-label="Next team member" onClick={() => step(1)}>
+          <Arrow size={15} width={2.2} />
+        </button>
+      </div>
+    </div>
+  );
+}
+
+function TeamCard({ person }) {
+  return (
+    <figure className="team-card">
+      <div className="team-photo"><img src={person.src} alt={person.name} loading="lazy" /></div>
+      <figcaption className="team-bar">
+        <span className="team-text">
+          <span className="team-name">{person.name}</span>
+          <span className="team-role">{person.role}</span>
+        </span>
+        <span className="team-arrow"><Arrow size={13} /></span>
+      </figcaption>
+    </figure>
   );
 }

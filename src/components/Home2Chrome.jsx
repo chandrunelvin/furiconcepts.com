@@ -191,7 +191,7 @@ export function SiteFooter() {
           ))}
         </div>
         <div className="footer-bottom">
-          <span>© 2024 Furniconcepts. All rights reserved.</span>
+          <span>© {new Date().getFullYear()} Furniconcepts. All rights reserved.</span>
           <a
             href="#"
             className="back-top-link"
