@@ -1,4 +1,5 @@
 import { useEffect, useRef, useState } from 'react';
+import { useMarquee } from '../lib/marquee.js';
 import { onScrollFrame, prefersReducedMotion } from '../lib/scroll.js';
 import { Arrow, Diagonal, SiteFooter, SiteHeader, SocialRow } from '../components/Home2Chrome.jsx';
 import { CATALOGS } from '../data/catalogs.js';
@@ -136,6 +137,9 @@ export default function Home2() {
   const bannerLayer = useParallax(0.35);
   const journalLayer = useParallax(0.2);
   const craftedLayer = useParallax(0.18);
+  const collRail = useMarquee({ speed: 40 });
+  const spacesRail = useMarquee({ speed: 40 });
+  const catalogRail = useMarquee({ speed: 46 });
 
   useEffect(() => {
     if (prefersReducedMotion()) return undefined;
@@ -243,7 +247,7 @@ export default function Home2() {
               <p>Explore our curated range of furniture crafted for contemporary spaces. From elegant sofas to functional workspaces, find pieces that inspire.</p>
               <a href="#" className="link-arrow">View All Collections <Arrow /></a>
             </div>
-            <div className="coll-viewport">
+            <div className="coll-viewport" ref={collRail}>
               <div className="coll-track" style={{ '--n': COLLECTIONS.length }}>
                 {[...COLLECTIONS, ...COLLECTIONS].map((item, i) => (
                   <div className="coll-card" key={`${item.name}-${i}`} aria-hidden={i >= COLLECTIONS.length}>
@@ -325,7 +329,7 @@ export default function Home2() {
               <p>Whether it&apos;s your home, office or hospitality space, our furniture creates environments that feel as good as they look.</p>
               <a href="#" className="link-arrow">Explore All Spaces <Arrow /></a>
             </div>
-            <div className="spaces-viewport">
+            <div className="spaces-viewport" ref={spacesRail}>
               <div className="spaces-track" style={{ '--n': SPACES.length }}>
                 {[...SPACES, ...SPACES].map((space, i) => (
                   <div className="space-card" key={`${space.name}-${i}`} aria-hidden={i >= SPACES.length}>
@@ -348,7 +352,7 @@ export default function Home2() {
             </div>
             <p>Sixteen partner brands, one place. Open a brand to see its ranges and download the current edition.</p>
           </div>
-          <div className="catalog-viewport">
+          <div className="catalog-viewport" ref={catalogRail}>
             <div className="catalog-track" style={{ '--n': CATALOGS.length }}>
               {[...CATALOGS, ...CATALOGS].map((item, i) => (
                 <Link

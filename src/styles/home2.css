@@ -214,12 +214,8 @@
 .home2 .link-arrow:hover svg{transform:translateX(4px);}
 
 /* collections scroll continuously: --pv cards stay in view, the track never stops */
-.home2 .coll-viewport{--pv:4;--gap:22px;overflow:hidden;}
-.home2 .coll-track{
-  display:flex;gap:var(--gap);
-  animation:home2-marquee calc(var(--n,4) * 3.4s) linear infinite;
-}
-.home2 .coll-viewport:hover .coll-track{animation-play-state:paused;}
+.home2 .coll-viewport{--pv:4;--gap:22px;}
+.home2 .coll-track{ display:flex;gap:var(--gap); }
 .home2 .coll-card{
   flex:0 0 calc((100% - (var(--pv) - 1) * var(--gap)) / var(--pv));
   display:flex;flex-direction:column;gap:14px;
@@ -320,22 +316,31 @@
 .home2 .detail-card:hover .detail-arrow{transform:rotate(45deg);}
 
 /* sectors scroll continuously: --pv cards stay in view, the track never stops */
-.home2 .spaces-viewport{--pv:4;--gap:22px;overflow:hidden;}
-.home2 .spaces-track{
-  display:flex;gap:var(--gap);
-  animation:home2-marquee calc(var(--n,4) * 3.4s) linear infinite;
-}
-.home2 .spaces-viewport:hover .spaces-track{animation-play-state:paused;}
+.home2 .spaces-viewport{--pv:4;--gap:22px;}
+.home2 .spaces-track{ display:flex;gap:var(--gap); }
 
-/* one full pass over the original cards; the duplicated half hides the reset */
-@keyframes home2-marquee{
-  from{transform:translateX(0);}
-  to{transform:translateX(calc(var(--n,4) * -1 * ((100% + var(--gap)) / var(--pv))));}
+/* the four auto-scrolling rows are real scrollers: hovering stops them and the
+   reader can then wheel, swipe or drag back to a card that has gone past */
+.home2 .coll-viewport,
+.home2 .spaces-viewport,
+.home2 .catalog-viewport,
+.home2 .client-viewport{
+  overflow-x:auto;overflow-y:hidden;
+  scrollbar-width:none;-ms-overflow-style:none;
+  cursor:grab;overscroll-behavior-x:contain;
 }
-@media(prefers-reduced-motion:reduce){
-  .home2 .coll-track,
-  .home2 .spaces-track{animation:none;}
-}
+.home2 .coll-viewport::-webkit-scrollbar,
+.home2 .spaces-viewport::-webkit-scrollbar,
+.home2 .catalog-viewport::-webkit-scrollbar,
+.home2 .client-viewport::-webkit-scrollbar{ display:none; }
+.home2 .coll-viewport.is-dragging,
+.home2 .spaces-viewport.is-dragging,
+.home2 .catalog-viewport.is-dragging,
+.home2 .client-viewport.is-dragging{ cursor:grabbing;user-select:none; }
+.home2 .coll-viewport.is-dragging a,
+.home2 .spaces-viewport.is-dragging a,
+.home2 .catalog-viewport.is-dragging a,
+.home2 .client-viewport.is-dragging a{ pointer-events:none; }
 .home2 .space-card{
   flex:0 0 calc((100% - (var(--pv) - 1) * var(--gap)) / var(--pv));
   display:flex;flex-direction:column;gap:14px;
@@ -745,20 +750,11 @@
 
 /* ---------- catalogs ---------- */
 .home2 .catalogs{ background:var(--cream); }
-.home2 .catalog-viewport{ --pv:4;--gap:22px;overflow:hidden; }
-.home2 .catalog-track{
-  display:flex;gap:var(--gap);
-  animation:home2-marquee calc(var(--n,4) * 3.4s) linear infinite;
-}
-.home2 .catalog-viewport:hover .catalog-track,
-.home2 .catalog-viewport:focus-within .catalog-track{ animation-play-state:paused; }
+.home2 .catalog-viewport{ --pv:4;--gap:22px; }
+.home2 .catalog-track{ display:flex;gap:var(--gap); }
 @media(max-width:1000px){ .home2 .catalog-viewport{--pv:3;--gap:18px;} }
 @media(max-width:760px){ .home2 .catalog-viewport{--pv:2;} }
 @media(max-width:520px){ .home2 .catalog-viewport{--pv:1.25;} }
-@media(prefers-reduced-motion:reduce){
-  .home2 .catalog-track{ animation:none; }
-  .home2 .catalog-viewport{ overflow-x:auto; }
-}
 
 .home2 .catalog-card{
   flex:0 0 calc((100% - (var(--pv) - 1) * var(--gap)) / var(--pv));
@@ -1158,18 +1154,10 @@
 
 /* ---- client logo wall ---- */
 /* one continuous row; the duplicated half hides the reset */
-.home2 .client-viewport{ --pv:6;--gap:14px;overflow:hidden; }
-.home2 .client-track{
-  display:flex;gap:var(--gap);
-  animation:home2-marquee calc(var(--n,6) * 1.7s) linear infinite;
-}
-.home2 .client-viewport:hover .client-track{ animation-play-state:paused; }
+.home2 .client-viewport{ --pv:6;--gap:14px; }
+.home2 .client-track{ display:flex;gap:var(--gap); }
 .home2 .client-tile{
   flex:0 0 calc((100% - (var(--pv) - 1) * var(--gap)) / var(--pv));
-}
-@media(prefers-reduced-motion:reduce){
-  .home2 .client-track{ animation:none; }
-  .home2 .client-viewport{ overflow-x:auto; }
 }
 .home2 .client-tile{
   border:1px solid var(--line);border-radius:var(--radius);background:#fff;

@@ -3,6 +3,7 @@ import { Arrow, SiteFooter, SiteHeader } from '../components/Home2Chrome.jsx';
 import { CLIENTS } from '../data/clients.js';
 import { TESTIMONIALS } from '../data/testimonials.js';
 import { LEADERSHIP, TEAM } from '../data/team.js';
+import { useMarquee } from '../lib/marquee.js';
 import { useReveal } from '../lib/reveal.js';
 import { prefersReducedMotion } from '../lib/scroll.js';
 import { Link } from '../router.jsx';
@@ -49,6 +50,7 @@ const REVEAL_GROUPS = [
 /** Company page, built to the About Us comp: story, numbers, vision, team, brands. */
 export default function About() {
   useReveal(REVEAL_GROUPS);
+  const clientRail = useMarquee({ speed: 46 });
 
   return (
     <div className="home2 about-page">
@@ -173,7 +175,7 @@ export default function About() {
             </div>
             <a href="/#catalogs" className="link-arrow">View Our Brands <Arrow /></a>
           </div>
-          <div className="client-viewport">
+          <div className="client-viewport" ref={clientRail}>
             <div className="client-track" style={{ '--n': CLIENTS.length }}>
               {[...CLIENTS, ...CLIENTS].map((client, i) => (
                 <div className="client-tile" key={`${client.src}-${i}`} aria-hidden={i >= CLIENTS.length}>
