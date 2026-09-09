@@ -15,7 +15,7 @@ const NUMBERS = [
   },
   {
     num: '16+',
-    label: 'Global Partner Brands',
+    label: 'Core Partner Brands',
     icon: <><circle cx="12" cy="8" r="5" /><path d="M8.5 12.5L7 21l5-2.5L17 21l-1.5-8.5" /></>,
   },
   {
@@ -25,7 +25,7 @@ const NUMBERS = [
   },
   {
     num: '3',
-    label: 'Offices Worldwide',
+    label: 'Cities Worldwide',
     icon: <><circle cx="12" cy="12" r="9" /><path d="M3 12h18M12 3c2.5 3 2.5 15 0 18M12 3c-2.5 3-2.5 15 0 18" /></>,
   },
 ];
@@ -45,6 +45,9 @@ export default function About() {
           <img src="/images/about-us/about-hero-bg.webp" alt="" />
         </div>
         <div className="overlay" />
+        <ul className="hero-keywords" aria-hidden="true">
+          <li>Spaces</li><li>People</li><li>Sustainability</li><li>A Brighter Tomorrow</li>
+        </ul>
         <div className="wrap about-hero-inner">
           <nav className="crumbs" aria-label="Breadcrumb">
             <Link to="/">Home</Link>
@@ -105,7 +108,11 @@ export default function About() {
           <img src="/images/about-us/bg-vision-image.webp" alt="" aria-hidden="true" />
           <div className="vision-body">
             <svg className="vision-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
-              <path d="M2 12s3.6-6 10-6 10 6 10 6-3.6 6-10 6-10-6-10-6z" /><circle cx="12" cy="12" r="2.6" />
+              <rect x="3.2" y="8.4" width="6.4" height="11.4" rx="3.2" />
+              <rect x="14.4" y="8.4" width="6.4" height="11.4" rx="3.2" />
+              <path d="M4.9 8.4V5.7a1.6 1.6 0 011.6-1.6h1a1.6 1.6 0 011.6 1.6v2.7" />
+              <path d="M16.1 8.4V5.7a1.6 1.6 0 011.6-1.6h1a1.6 1.6 0 011.6 1.6v2.7" />
+              <path d="M9.6 12.2h4.8M9.6 15.6h4.8" />
             </svg>
             <h3>Our Vision</h3>
             <p>At Furniconcepts, our vision is to inspire and elevate lifestyles through exceptional furniture solutions. We envision creating spaces that exude timeless elegance and unparalleled comfort, enriching the lives of our customers and communities alike.</p>
@@ -115,7 +122,9 @@ export default function About() {
           <img src="/images/about-us/bg-mission-image.webp" alt="" aria-hidden="true" />
           <div className="vision-body">
             <svg className="vision-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
-              <circle cx="12" cy="12" r="9" /><circle cx="12" cy="12" r="5" /><circle cx="12" cy="12" r="1.4" fill="currentColor" />
+              <circle cx="12" cy="12" r="9" />
+              <path d="M15.6 8.4l-2 5.2-5.2 2 2-5.2z" />
+              <circle cx="12" cy="12" r="1" fill="currentColor" stroke="none" />
             </svg>
             <h3>Our Mission</h3>
             <p>Our mission at Furniconcepts is to craft furniture that transcends mere functionality, embodying the perfect fusion of aesthetics and utility. With a focus on innovation, sustainability, and customer satisfaction, we strive to be the foremost choice for individuals and businesses seeking premium quality furniture in India, Singapore and the Middle East. Through our commitment to excellence and passion for design, we aim to transform spaces into showcases of sophistication and style, leaving a lasting impression on every environment we touch.</p>
@@ -167,7 +176,7 @@ export default function About() {
       {/* ---- closing cta ---- */}
       <section className="about-cta" id="offices">
         <div className="about-cta-media">
-          <img src="/images/common/more-then-furniture-bg.webp" alt="" aria-hidden="true" />
+          <img src="/images/about-us/bg-create.webp" alt="" aria-hidden="true" />
         </div>
         <div className="overlay" />
         <div className="wrap about-cta-inner">
@@ -269,6 +278,10 @@ function Testimonials() {
 
   return (
     <section className="testimonials">
+      <div className="testimonials-media" aria-hidden="true">
+        <img src="/images/about-us/bg-client-testimonial.webp" alt="" loading="lazy" />
+      </div>
+      <div className="overlay" />
       <div className="wrap testimonials-inner">
         <div className="testimonials-side">
           <div className="eyebrow">Testimonials</div>
@@ -295,8 +308,13 @@ function Testimonials() {
           </svg>
           <blockquote key={current.company}>{current.quote}</blockquote>
           <figcaption>
-            <span className="quote-name">{current.name}</span>
-            <span className="quote-company">{current.company}</span>
+            <span className="quote-logo">
+              <img src={current.logo} alt={current.company} />
+            </span>
+            <span className="quote-who">
+              <span className="quote-name">{current.name}</span>
+              <span className="quote-company">{current.company}</span>
+            </span>
           </figcaption>
           <div className="quote-marks">
             {TESTIMONIALS.map((item, i) => (

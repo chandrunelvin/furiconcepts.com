@@ -58,7 +58,6 @@ export const CLIENTS = [
   { src: logo('emerson-logo-compressed-data-5576584.png'), name: "Emerson" },
   { src: logo('sodexo-logotype-blue.png'), name: "Sodexo" },
   { src: logo('al.png'), name: "Furniconcepts client" },
-  { src: logo('os.png'), name: "Furniconcepts client" },
   { src: logo('volvo.jpg'), name: "Volvo" },
   { src: logo('vit.png'), name: "VIT" },
   { src: logo('c.png'), name: "Furniconcepts client" },

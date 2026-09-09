@@ -1001,6 +1001,17 @@
     linear-gradient(180deg,rgba(8,18,14,.42) 0%,rgba(8,18,14,.10) 34%,rgba(8,18,14,.62) 100%);
 }
 .home2 .about-hero-inner{ position:relative;z-index:2;width:100%; }
+/* the keyword stack the comp sets against the top-right corner */
+.home2 .hero-keywords{
+  position:absolute;top:96px;right:56px;z-index:2;text-align:right;
+  display:flex;flex-direction:column;gap:6px;
+  font-size:11px;letter-spacing:2.4px;text-transform:uppercase;
+  color:rgba(255,255,255,.86);text-shadow:0 2px 12px rgba(0,0,0,.4);
+}
+/* below the desktop layout the keywords would sit on top of the hero
+   paragraph, so they step aside rather than overlap */
+@media(max-width:1100px){ .home2 .hero-keywords{ top:auto;bottom:24px;right:24px;font-size:10px;letter-spacing:1.8px; } }
+@media(max-width:900px){ .home2 .hero-keywords{ display:none; } }
 .home2 .about-hero .crumbs{ color:rgba(255,255,255,.72); }
 .home2 .about-hero .crumbs .current{ color:#fff; }
 .home2 .about-hero .crumbs a:hover{ color:var(--green); }
@@ -1016,7 +1027,7 @@
 
 /* ---- our story ---- */
 .home2 .about-story-inner{
-  display:grid;grid-template-columns:.92fr 1.08fr;gap:56px;align-items:center;
+  display:grid;grid-template-columns:.92fr 1.08fr;gap:56px;align-items:stretch;
 }
 .home2 .about-story-copy h2{
   font-family:'Fraunces', Georgia, serif;font-weight:400;letter-spacing:-.02em;
@@ -1026,9 +1037,12 @@
   font-size:clamp(14px,1.6vw,15px);color:var(--ink-soft);line-height:1.75;
   max-width:48ch;margin-bottom:28px;
 }
+/* the photograph runs the full height of the copy beside it */
 .home2 .about-story-media{
-  position:relative;aspect-ratio:16/10;overflow:hidden;border-radius:var(--radius);background:var(--card);
+  position:relative;overflow:hidden;border-radius:var(--radius);background:var(--card);
+  min-height:100%;
 }
+.home2 .about-story-media img{ position:absolute;inset:0;width:100%;height:100%;object-fit:cover; }
 .home2 .about-story-media .watch-story{ bottom:26px;right:26px; }
 
 /* ---- numbers ---- */
@@ -1064,8 +1078,10 @@
      left half where the copy sits */
   background:linear-gradient(90deg,rgba(250,249,246,.90) 0%,rgba(250,249,246,.72) 55%,rgba(250,249,246,.34) 100%);
 }
+/* both panels start at the top so the icons and headings line up, however
+   different the two statements are in length */
 .home2 .vision-body{
-  position:relative;z-index:2;margin-top:auto;padding:56px 52px;max-width:52ch;
+  position:relative;z-index:2;padding:56px 52px;max-width:52ch;
 }
 @media(max-width:900px){ .home2 .vision-body{ padding:40px 24px; } }
 .home2 .vision-icon{ width:32px;height:32px;margin-bottom:20px; }
@@ -1170,10 +1186,13 @@
 /* ---- closing cta ---- */
 .home2 .about-cta{ position:relative;min-height:420px;display:flex;align-items:center;overflow:hidden; }
 .home2 .about-cta-media{ position:absolute;inset:0;z-index:0; }
-.home2 .about-cta-media img{ width:100%;height:100%;object-fit:cover; }
+.home2 .about-cta-media img{ width:100%;height:100%;object-fit:cover;object-position:35% 55%; }
 .home2 .about-cta .overlay{
+  /* bright, sunlit artwork: the scrim deepens toward the right, where the
+     white copy sits, and leaves the window and planting readable */
   position:absolute;inset:0;z-index:1;
-  background:linear-gradient(90deg,rgba(10,20,16,.30) 0%,rgba(10,20,16,.55) 46%,rgba(10,20,16,.78) 100%);
+  background:linear-gradient(90deg,
+    rgba(8,18,14,.18) 0%, rgba(8,18,14,.42) 38%, rgba(8,18,14,.72) 68%, rgba(8,18,14,.84) 100%);
 }
 .home2 .about-cta-inner{ position:relative;z-index:2;width:100%;display:flex;justify-content:flex-end; }
 .home2 .about-cta-copy{ max-width:46ch;color:#fff;padding:80px 0; }
@@ -1191,6 +1210,7 @@
 @media(max-width:900px){
   .home2 .about-hero{ min-height:0;padding:120px 0 48px; }
   .home2 .about-story-inner{ grid-template-columns:1fr;gap:30px; }
+  .home2 .about-story-media{ position:relative;aspect-ratio:16/11;min-height:0; }
   .home2 .about-story-copy p{ max-width:none; }
   .home2 .about-numbers .wrap{ grid-template-columns:repeat(2,1fr); }
   .home2 .num-cell{ padding:24px 0 24px 22px; }
@@ -1217,7 +1237,19 @@
 }
 
 /* ---- testimonials: one quote at a time on the dark band ---- */
-.home2 .testimonials{ background:var(--green-darker);color:#fff;padding:96px 0; }
+.home2 .testimonials{
+  position:relative;background:var(--green-darker);color:#fff;padding:96px 0;overflow:hidden;
+}
+.home2 .testimonials-media{ position:absolute;inset:0;z-index:0; }
+.home2 .testimonials-media img{ width:100%;height:100%;object-fit:cover;object-position:60% 50%; }
+.home2 .testimonials .overlay{
+  /* the artwork is already a dark green wall — a light scrim is enough to
+     hold the text, and it lifts toward the armchair on the right */
+  position:absolute;inset:0;z-index:1;
+  background:linear-gradient(90deg,
+    rgba(12,38,29,.86) 0%, rgba(12,38,29,.74) 45%, rgba(12,38,29,.52) 75%, rgba(12,38,29,.34) 100%);
+}
+.home2 .testimonials-inner{ position:relative;z-index:2; }
 @media(max-width:900px){ .home2 .testimonials{ padding:60px 0; } }
 .home2 .testimonials-inner{ display:grid;grid-template-columns:.72fr 1.28fr;gap:56px;align-items:start; }
 .home2 .testimonials .eyebrow{ color:rgba(255,255,255,.6); }
@@ -1246,7 +1278,13 @@
   animation:home2-quote-in .5s ease both;
 }
 @keyframes home2-quote-in{ from{ opacity:0;transform:translateY(10px); } to{ opacity:1;transform:none; } }
-.home2 .quote-stage figcaption{ display:flex;flex-direction:column;gap:4px;margin-top:28px; }
+.home2 .quote-stage figcaption{ display:flex;align-items:center;gap:16px;margin-top:30px; }
+.home2 .quote-logo{
+  width:74px;height:52px;flex:none;border-radius:var(--radius);background:#fff;
+  display:flex;align-items:center;justify-content:center;padding:8px 10px;
+}
+.home2 .quote-logo img{ width:100%;height:100%;object-fit:contain; }
+.home2 .quote-who{ display:flex;flex-direction:column;gap:3px; }
 .home2 .quote-name{ font-size:15px;font-weight:600; }
 .home2 .quote-company{
   font-size:11.5px;letter-spacing:2px;text-transform:uppercase;color:var(--green);
@@ -1277,3 +1315,12 @@
   max-width:46ch;
 }
 @media(max-width:900px){ .home2 .pull-quote{ padding-left:16px;margin-bottom:24px; } }
+
+/* team and clients sit on the same cream ground, so their 100px paddings
+   stack into a 200px gap — halve the pair that meet in the middle */
+.home2 .about-team{ padding-bottom:58px; }
+.home2 .about-clients{ padding-top:58px; }
+@media(max-width:900px){
+  .home2 .about-team{ padding-bottom:36px; }
+  .home2 .about-clients{ padding-top:36px; }
+}
