@@ -143,7 +143,7 @@ export const CONTACT_CTA = {
   text:
     'Our team will help you choose the right products, create a tailored workspace plan, and provide the best quotation for your requirements.',
   cta: { label: 'Request a Quotation', href: '#get-in-touch' },
-  image: cav('boardroom'),
+  image: '/images/contact-us/reaquest-qoute-image.webp',
 };
 
 export const COUNTRIES = ['United Arab Emirates', 'India', 'Singapore', 'Oman', 'Saudi Arabia', 'Qatar', 'Other'];

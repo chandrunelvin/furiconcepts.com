@@ -2086,13 +2086,12 @@
 .home2 .map-frame iframe{ position:absolute;inset:0;width:100%;height:100%;border:0; }
 
 /* ---- quotation band ---- */
-.home2 .contact-cta{ position:relative;overflow:hidden;background:var(--card); }
+.home2 .contact-cta{ position:relative;overflow:hidden;background:var(--cream); }
 .home2 .contact-cta-media{ position:absolute;inset:0;z-index:0; }
 .home2 .contact-cta-media .img-parallax{ position:absolute;inset:-12% 0;will-change:transform; }
-.home2 .contact-cta::after{
-  content:'';position:absolute;inset:0;z-index:1;pointer-events:none;
-  background:linear-gradient(90deg,var(--cream) 0%,rgba(250,249,246,.95) 34%,rgba(250,249,246,.55) 54%,rgba(250,249,246,0) 76%);
-}
+/* the artwork carries its own pale field on the left for the copy to sit on,
+   so it needs no scrim over it — only the narrow crop below does */
+.home2 .contact-cta-media img{ object-position:50% 50%; }
 .home2 .contact-cta-inner{ position:relative;z-index:2;padding-block:84px; }
 .home2 .contact-cta-copy{ max-width:520px; }
 .home2 .contact-cta-copy h2{
@@ -2132,7 +2131,12 @@
   .home2 .office-grid{ grid-template-columns:1fr; }
   .home2 .map-panel{ padding:34px 24px; }
   .home2 .map-stats{ gap:22px; }
-  .home2 .contact-cta::after{ background:rgba(250,249,246,.92); }
+  /* stacked, the crop loses the pale left field and the copy would land on
+     the photography, so a flat wash goes back over it here */
+  .home2 .contact-cta::after{
+    content:'';position:absolute;inset:0;z-index:1;pointer-events:none;
+    background:rgba(250,249,246,.9);
+  }
   .home2 .contact-cta-inner{ padding-block:56px; }
   .home2 .contact-feature{ border-left:none !important; }
 }

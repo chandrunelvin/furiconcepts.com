@@ -66,6 +66,7 @@ const lines = (text) =>
 /** A brand showcase page — hero, story, product explorer, applications and FAQ. */
 export default function Brand({ slug }) {
   const brand = getBrand(slug);
+  const products = brand?.products;
 
   const [category, setCategory] = useState('all');
   const [query, setQuery] = useState('');
@@ -117,8 +118,6 @@ export default function Brand({ slug }) {
   const heroLayer = useParallax(0.25);
   const whyLayer = useParallax(0.2);
   const faqLayer = useParallax(0.2);
-
-  const products = brand?.products;
 
   const visible = useMemo(() => {
     if (!products) return [];
