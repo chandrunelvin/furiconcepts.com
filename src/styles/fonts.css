@@ -1,0 +1,51 @@
+/* ---------------------------------------------------------------------------
+   Brand typefaces.
+
+   Primary   — Euclid Circular A  (headings, navigation, buttons)
+   Secondary — Montserrat         (body copy, labels, supporting text)
+
+   Euclid Circular A is a licensed face (Swiss Typefaces) and is not served by
+   any public CDN, so the woff2 files have to be dropped into /public/fonts/
+   under the site's licence. Until they are, the stack falls through to
+   Montserrat, which is already loaded, so nothing renders in a system font.
+   --------------------------------------------------------------------------- */
+
+@font-face{
+  font-family:'Euclid Circular A';
+  src:url('/fonts/EuclidCircularA-Regular.woff2') format('woff2');
+  font-weight:400; font-style:normal; font-display:swap;
+}
+@font-face{
+  font-family:'Euclid Circular A';
+  src:url('/fonts/EuclidCircularA-Medium.woff2') format('woff2');
+  font-weight:500; font-style:normal; font-display:swap;
+}
+@font-face{
+  font-family:'Euclid Circular A';
+  src:url('/fonts/EuclidCircularA-SemiBold.woff2') format('woff2');
+  font-weight:600; font-style:normal; font-display:swap;
+}
+@font-face{
+  font-family:'Euclid Circular A';
+  src:url('/fonts/EuclidCircularA-Bold.woff2') format('woff2');
+  font-weight:700; font-style:normal; font-display:swap;
+}
+
+:root{
+  --font-primary:'Euclid Circular A','Montserrat',system-ui,-apple-system,sans-serif;
+  --font-secondary:'Montserrat',system-ui,-apple-system,sans-serif;
+}
+
+/* ---------------------------------------------------------------------------
+   Apparent size.
+
+   Every size on this site was set against Inter, whose x-height is 0.545 of
+   the em — unusually tall, because it is drawn for interfaces. Montserrat sits
+   at 0.517 and Euclid Circular A at roughly the same, so the identical px size
+   renders about 5% smaller and the whole page reads shrunken.
+
+   font-size-adjust pins the x-height instead of the em, so text occupies the
+   space it was designed for whichever of the two faces is actually loaded.
+   Browsers without support simply ignore it and fall back to the raw px size.
+   --------------------------------------------------------------------------- */
+:root{ --x-height:0.545; }

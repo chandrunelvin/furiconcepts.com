@@ -39,7 +39,7 @@ export const NAV = [
   { label: 'Categories', href: '#collections' },
   { label: 'Catalogs', href: '#catalogs' },
   { label: 'Projects', href: '#journal' },
-  { label: 'Contact', href: '#contact' },
+  { label: 'Contact', href: '#contact', path: '/contact' },
 ];
 
 export const Arrow = ({ size = 15, width = 2.4 }) => (

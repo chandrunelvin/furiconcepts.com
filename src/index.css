@@ -30,13 +30,14 @@ html{scroll-behavior:smooth;}
 .site{
   background:var(--cream);
   color:var(--ink);
-  font-family:'Inter', sans-serif;
+  font-family:var(--font-secondary);
   font-size:16px;
+  font-size-adjust:var(--x-height);
   line-height:1.6;
   -webkit-font-smoothing:antialiased;
 }
 @media (prefers-reduced-motion: reduce){ .site *{animation-duration:.01ms !important; transition-duration:.01ms !important;} }
-.site h1, .site h2, .site h3{ font-family:'Fraunces', serif; font-weight:440; letter-spacing:-0.01em; color:var(--ink); }
+.site h1, .site h2, .site h3, .site h4, .site h5{ font-family:var(--font-primary); font-weight:500; letter-spacing:-0.01em; color:var(--ink); }
 .site a{ color:inherit; text-decoration:none; }
 .site img{ display:block; width:100%; height:100%; object-fit:cover; }
 .site button{ font-family:inherit; border:none; background:none; cursor:pointer; }
@@ -126,7 +127,7 @@ html{scroll-behavior:smooth;}
 
 .site .sidebar-bottom .divider{ width:30px; height:1px; background:var(--line); margin-bottom:20px; }
 .site .sidebar-bottom .tagline{
-  font-family:'Fraunces', serif; font-style:italic; font-size:18px; line-height:1.35; color:var(--ink);
+  font-family:var(--font-primary); font-style:italic; font-size:18px; line-height:1.35; color:var(--ink);
   margin-bottom:24px;
 }
 .site .social-row{ display:flex; gap:10px; }
@@ -289,7 +290,7 @@ section{ padding:0; margin-top:var(--section-space); }
 .site .brands-band .marquee-track{ gap:14px; }
 .site .brand-chip{
   flex:0 0 auto; border:1px solid rgba(255,255,255,0.5); border-radius:100px; padding:11px 26px;
-  font-family:'Fraunces', serif; font-size:17px; color:#FFFFFF; white-space:nowrap;
+  font-family:var(--font-primary); font-size:17px; color:#FFFFFF; white-space:nowrap;
   transition:background .3s var(--ease), border-color .3s var(--ease);
 }
 .site .brand-chip:hover{ background:rgba(255,255,255,0.12); border-color:rgba(255,255,255,0.6); }
@@ -309,7 +310,7 @@ section.story{ background:var(--stone); border-radius:24px; padding:0; overflow:
 .site .stats-row{ display:flex; gap:0; margin-top:38px; border-top:1px solid var(--line); padding-top:26px; flex-wrap:wrap; }
 .site .stat{ padding-right:26px; margin-right:26px; border-right:1px solid var(--line); }
 .site .stat:last-child{ border-right:none; }
-.site .stat .n{ font-family:'Fraunces', serif; font-size:26px; color:var(--brand); }
+.site .stat .n{ font-family:var(--font-primary); font-size:26px; color:var(--brand); }
 .site .stat .l{ font-size:12px; color:var(--ink-soft); margin-top:4px; }
 
 .site /* ---------- spaces ---------- */
