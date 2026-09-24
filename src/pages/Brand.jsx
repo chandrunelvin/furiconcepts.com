@@ -74,6 +74,44 @@ export default function Brand({ slug }) {
   const [showAll, setShowAll] = useState(false);
   const [enquiry, setEnquiry] = useState(null);
   const urlSynced = useRef(false);
+  const [narrow, setNarrow] = useState(false);
+  const tabsRef = useRef(null);
+  const [tabScroll, setTabScroll] = useState({ prev: false, next: false });
+
+  // the filter row is tight on a phone, so the search takes a shorter prompt
+  useEffect(() => {
+    const mq = window.matchMedia('(max-width: 560px)');
+    const sync = () => setNarrow(mq.matches);
+    sync();
+    mq.addEventListener('change', sync);
+    return () => mq.removeEventListener('change', sync);
+  }, []);
+
+  // the category rail scrolls on narrow screens, where only a couple of tabs
+  // fit — the arrows only appear on the side there is more to reveal
+  useEffect(() => {
+    const el = tabsRef.current;
+    if (!el) return undefined;
+    const sync = () => {
+      const scrollable = el.scrollWidth - el.clientWidth > 4;
+      setTabScroll({
+        prev: scrollable && el.scrollLeft > 4,
+        next: scrollable && el.scrollLeft < el.scrollWidth - el.clientWidth - 4,
+      });
+    };
+    sync();
+    el.addEventListener('scroll', sync, { passive: true });
+    window.addEventListener('resize', sync);
+    return () => {
+      el.removeEventListener('scroll', sync);
+      window.removeEventListener('resize', sync);
+    };
+  }, [products]);
+
+  const scrollTabs = (dir) => {
+    const el = tabsRef.current;
+    if (el) el.scrollBy({ left: dir * el.clientWidth * 0.8, behavior: 'smooth' });
+  };
 
   useReveal(REVEAL_GROUPS);
   const heroLayer = useParallax(0.25);
@@ -262,20 +300,46 @@ export default function Brand({ slug }) {
             </Link>
           </div>
 
-          <div className="brand-tabs" role="tablist" aria-label="Product categories">
-            {products.categories.map((c) => (
-              <button
-                key={c.key}
-                type="button"
-                role="tab"
-                aria-selected={category === c.key}
-                className={`brand-tab ${category === c.key ? 'active' : ''}`.trim()}
-                onClick={() => setCategory(c.key)}
-              >
-                <BrandIcon name={c.icon} size={17} width={1.7} />
-                {c.label}
-              </button>
-            ))}
+          <div className="brand-tabs-rail">
+            <button
+              type="button"
+              className="tab-nav prev"
+              aria-label="Scroll categories left"
+              hidden={!tabScroll.prev}
+              onClick={() => scrollTabs(-1)}
+            >
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round">
+                <path d="M15 6l-6 6 6 6" />
+              </svg>
+            </button>
+
+            <div className="brand-tabs" role="tablist" aria-label="Product categories" ref={tabsRef}>
+              {products.categories.map((c) => (
+                <button
+                  key={c.key}
+                  type="button"
+                  role="tab"
+                  aria-selected={category === c.key}
+                  className={`brand-tab ${category === c.key ? 'active' : ''}`.trim()}
+                  onClick={() => setCategory(c.key)}
+                >
+                  <BrandIcon name={c.icon} size={17} width={1.7} />
+                  {c.label}
+                </button>
+              ))}
+            </div>
+
+            <button
+              type="button"
+              className="tab-nav next"
+              aria-label="Scroll categories right"
+              hidden={!tabScroll.next}
+              onClick={() => scrollTabs(1)}
+            >
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round">
+                <path d="M9 6l6 6-6 6" />
+              </svg>
+            </button>
           </div>
 
           <div className="brand-filters">
@@ -286,7 +350,7 @@ export default function Brand({ slug }) {
               </svg>
               <input
                 type="search"
-                placeholder="Search products..."
+                placeholder={narrow ? 'Search\u2026' : 'Search products\u2026'}
                 value={query}
                 onChange={(e) => setQuery(e.target.value)}
                 aria-label="Search products"
