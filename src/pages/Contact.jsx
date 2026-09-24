@@ -209,16 +209,7 @@ export default function Contact() {
                 <div className="office-media">
                   {/* the heading names the city directly below, so the photo is
                       decorative; an alt here would just read the city twice */}
-                  <img
-                    src={o.image}
-                    alt=""
-                    loading="lazy"
-                    onError={(e) => {
-                      if (e.currentTarget.dataset.fellBack) return;
-                      e.currentTarget.dataset.fellBack = '1';
-                      e.currentTarget.src = o.imageFallback;
-                    }}
-                  />
+                  <img src={o.image} alt="" loading="lazy" />
                 </div>
                 <div className="office-body">
                   <h3>

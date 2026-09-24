@@ -280,7 +280,8 @@ export default function Brand({ slug }) {
 
           <div className="brand-filters">
             <div className="brand-search">
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.9" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.7"
+                   strokeLinecap="round" aria-hidden="true">
                 <circle cx="11" cy="11" r="7" /><path d="M21 21l-4.3-4.3" />
               </svg>
               <input
@@ -292,6 +293,10 @@ export default function Brand({ slug }) {
               />
             </div>
             <label className="brand-sort">
+              <svg className="sort-glyph" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                   strokeWidth="1.7" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                <path d="M4 7h11M4 12h7M4 17h4M16 15l3 3 3-3M19 18V8" />
+              </svg>
               <span>Sort by:</span>
               <select value={sort} onChange={(e) => setSort(e.target.value)} aria-label="Sort products">
                 <option value="featured">Featured</option>

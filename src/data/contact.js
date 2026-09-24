@@ -6,12 +6,8 @@
  * regional enquiry line until Furniconcepts supplies one.
  */
 const cav = (name) => `/images/cavaletti/${name}.jpg`;
-/**
- * Office card photography — a shot of each city or of the office itself.
- * Drop the files in as /public/images/offices/<id>.webp and they appear;
- * until a file exists the card falls back to the project photo beside it.
- */
-const place = (id) => `/images/offices/${id}.webp`;
+/** Office card photography — the city each office sits in. */
+const place = (file) => `/images/contact-us/${file}-address-image.webp`;
 
 export const CONTACT_HERO = {
   eyebrow: 'Contact Us',
@@ -79,8 +75,7 @@ export const OFFICES = [
     company: 'Furniconcepts Middle East Furniture Trading LLC',
     address: 'Studio 3A, Street 6A, Al Quoz 1, P.O. Box 10237, Dubai, U.A.E.',
     phone: '+971 4 257 9447',
-    image: place('dubai'),
-    imageFallback: cav('project-branch'),
+    image: place('uae'),
     embed: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3611.8573578183396!2d55.22276720000001!3d25.1405129!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f139eb4f9c08b%3A0xb282251ec57518de!2sFurniconcepts%20Middle%20East%20Furniture%20Trading%20LLC!5e0!3m2!1sen!2sae!4v1790234608778!5m2!1sen!2sae',
     coords: '25.1405129,55.2227672',
   },
@@ -91,8 +86,7 @@ export const OFFICES = [
     address:
       'The Southern India Chamber of Commerce and Industry, Esplanade Rd, George Town, Chennai, Tamil Nadu 600104, India',
     phone: '+91 93636 07900',
-    image: place('chennai'),
-    imageFallback: cav('canteen'),
+    image: place('india'),
     embed: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3886.203653595101!2d80.28188997524728!3d13.086275887239706!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x35932b2c5f8a43b%3A0xccd80a6ead89fdc!2sZTOA%20FURNICONCEPTS%20INDIA%20PRIVATE%20LIMITED!5e0!3m2!1sen!2sin!4v1771926550069!5m2!1sen!2sin',
     coords: '13.086275887239706,80.28188997524728',
   },
@@ -103,7 +97,6 @@ export const OFFICES = [
     address: '450 Yishun Ring Road, Floor 6, Unit 112, Singapore 760450',
     phone: '+65 8235 2565',
     image: place('singapore'),
-    imageFallback: cav('showroom'),
     embed: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.832692900309!2d103.8441005!3d1.4220879!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31da1513a3c61c53%3A0xc531a37504eacf19!2sFURNICONCEPTS%20PTE.%20LTD.!5e0!3m2!1sen!2sin!4v1716712744696!5m2!1sen!2sin',
     coords: '1.4220879,103.8441005',
   },
@@ -113,8 +106,7 @@ export const OFFICES = [
     company: 'Furniconcepts Oman',
     address: 'PC 112, P.O. Box 543, Muscat, Sultanate of Oman',
     phone: '+971 50 378 2215',
-    image: place('muscat'),
-    imageFallback: cav('showroom-lounge'),
+    image: place('omen'),
     /* the address is a PO box, so the pin covers the postal district */
     embed: 'https://maps.google.com/maps?q=Muscat%20PC%20112%2C%20Oman&z=12&output=embed',
     coords: 'Muscat PC 112, Oman',

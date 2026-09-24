@@ -1501,7 +1501,7 @@
   border:1px solid var(--line);background:#fff;border-radius:var(--radius);padding:0 16px;height:46px;
   color:var(--ink-soft);
 }
-.home2 .brand-search svg{ flex:none; }
+.home2 .brand-search svg{ flex:0 0 17px;width:17px;height:17px; }
 .home2 .brand-search input{
   flex:1;border:none;outline:none;background:none;font-family:inherit;font-size:14px;color:var(--ink);
 }
@@ -1514,7 +1514,8 @@
   appearance:none;border:none;outline:none;background:none;font-family:inherit;
   font-size:14px;color:var(--ink);font-weight:500;padding-right:4px;cursor:pointer;
 }
-.home2 .brand-sort > svg{ pointer-events:none; }
+.home2 .brand-sort > svg{ flex:none;pointer-events:none; }
+.home2 .brand-sort .sort-glyph{ display:none;width:17px;height:17px;color:var(--green); }
 
 .home2 .brand-grid{ display:grid;grid-template-columns:repeat(5,1fr);gap:26px 18px; }
 /* built like the collections and sectors tiles: a cream thumb with a white
@@ -1652,8 +1653,18 @@
   .home2 .brand-feature{ border-left:none !important; }
   .home2 .brand-grid{ grid-template-columns:repeat(2,1fr);gap:22px 14px; }
   .home2 .brand-apps-grid{ grid-template-columns:repeat(2,1fr); }
-  .home2 .brand-filters{ flex-direction:column;align-items:stretch; }
-  .home2 .brand-sort{ justify-content:space-between; }
+  /* search and sort stay side by side; the sort drops its "Sort by:" label for
+     a glyph so both fit a phone row without stacking */
+  .home2 .brand-filters{ gap:10px;align-items:stretch; }
+  .home2 .brand-search{ flex:1 1 auto;min-width:0;height:48px;padding:0 14px;gap:9px; }
+  .home2 .brand-sort{ flex:0 0 auto;height:48px;padding:0 12px;gap:7px; }
+  .home2 .brand-sort span{ display:none; }
+  .home2 .brand-sort .sort-glyph{ display:block; }
+  .home2 .brand-sort select{ padding-right:2px; }
+  /* iOS zooms the page when a focused field is under 16px */
+  .home2 .brand-search input,
+  .home2 .brand-sort select{ font-size:16px; }
+  .home2 .brand-search input::placeholder{ font-size:14.5px; }
   .home2 .brand-download{ width:100%;justify-content:center; }
   /* the tab rail scrolls edge to edge rather than being boxed in by the wrap */
   .home2 .brand-tabs{
@@ -1684,6 +1695,13 @@
 /* narrow phones: two product columns still work, but the label chip and the
    feature strip need their padding back */
 @media(max-width:420px){
+  /* on a 360px screen the sort control was leaving the search barely 110px of
+     typing room — trim its padding and type so the field keeps the width */
+  .home2 .brand-filters{ gap:8px; }
+  .home2 .brand-search{ padding:0 12px;gap:8px; }
+  .home2 .brand-sort{ padding:0 10px;gap:6px; }
+  .home2 .brand-sort select{ font-size:15px; }
+  .home2 .brand-sort .sort-glyph{ width:16px;height:16px; }
   .home2 .brand-grid{ gap:18px 10px; }
   .home2 .brand-card-label{ margin:-22px 6px 0;padding:10px 11px;gap:7px; }
   .home2 .brand-card-name{ font-size:12.5px; }
@@ -2077,6 +2095,15 @@
   .home2 .contact-form-side,
   .home2 .contact-info-side{ padding:30px 22px; }
   .home2 .field-row{ grid-template-columns:1fr; }
+  /* same iOS focus-zoom guard as the product filters */
+  .home2 .contact-form input,
+  .home2 .contact-form select,
+  .home2 .contact-form textarea{ font-size:16px;padding:13px 15px; }
+  .home2 .contact-form select{ padding-right:38px; }
+  .home2 .contact-form .btn-primary{ width:100%;justify-content:center; }
+  .home2 .contact-methods a{ padding:11px 6px;gap:12px; }
+  .home2 .method-icon{ width:38px;height:38px; }
+  .home2 .method-label{ font-size:13.5px;word-break:break-word; }
   .home2 .office-grid{ grid-template-columns:1fr; }
   .home2 .map-panel{ padding:34px 24px; }
   .home2 .map-stats{ gap:22px; }
