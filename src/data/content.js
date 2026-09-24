@@ -130,7 +130,7 @@ export const FOOTER_COLUMNS = [
     heading: 'CATEGORIES',
     links: ['Office Furniture', 'Acoustic Pods', 'Lounge Seating', 'Auditorium', 'Hotel Furniture', 'Hospital'],
   },
-  { heading: 'COMPANY', links: ['About Us', 'Download Profiles', 'Brands', 'Shops', 'Completed Projects', 'Clients'] },
+  { heading: 'COMPANY', links: ['About Us', 'Brands', 'Shops', 'Clients'] },
   { heading: 'SUPPORT', links: ['Contact Us', 'Request a Quote', 'Delivery & Installation', 'Warranty'] },
   { heading: 'LEGAL', links: ['Privacy Policy', 'Terms & Conditions'] },
 ];

@@ -7,11 +7,36 @@ import { Link } from '../router.jsx';
  * page using it must render inside an element with the `home2` class.
  */
 
+/**
+ * The brand list carried over from the old site's Brands dropdown
+ * (furniconcepts.com/brands-view.php), in the same order. Cavaletti has a full
+ * brand page; the rest point at their catalogue page until theirs is built.
+ * Safe Lockers has neither yet, so it falls back to the catalogues section.
+ */
+export const BRAND_MENU = [
+  { label: 'Cavaletti', path: '/brands/cavaletti' },
+  { label: 'Gebbwork', path: '/catalogs/gebb-work' },
+  { label: 'Leadcom', path: '/catalogs/leadcom' },
+  { label: 'Forma5', path: '/catalogs/forma5' },
+  { label: 'Broad Power', path: '/catalogs/broad-power' },
+  { label: 'Musepod', path: '/catalogs/musepod' },
+  { label: 'Zumbooth', path: '/catalogs/zumbooth' },
+  { label: 'Libero Italy', path: '/catalogs/libero-italy' },
+  { label: 'Nitrocare', path: '/catalogs/nitrocare' },
+  { label: 'Jwesys', path: '/catalogs/jwesys' },
+  { label: 'Audia Italia', path: '/catalogs/audia-italia' },
+  { label: 'Scab Italy', path: '/catalogs/scab-italy' },
+  { label: 'Markant', path: '/catalogs/markant' },
+  { label: 'Worklyffe', path: '/catalogs/worklyffe' },
+  { label: 'Parin', path: '/catalogs/parin' },
+  { label: 'Safe Lockers', href: '#catalogs' },
+];
+
 export const NAV = [
   { label: 'Home', href: '#top' },
   { label: 'About Us', href: '#about', path: '/about' },
+  { label: 'Brands', path: '/brands/cavaletti', children: BRAND_MENU },
   { label: 'Categories', href: '#collections' },
-  { label: 'Sectors', href: '#spaces' },
   { label: 'Catalogs', href: '#catalogs' },
   { label: 'Projects', href: '#journal' },
   { label: 'Contact', href: '#contact' },
@@ -82,6 +107,7 @@ function NavLink({ item, onHome, className, onClick, children }) {
 export function SiteHeader({ onHome = true, active = 'Home' }) {
   const [scrolled, setScrolled] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
+  const [openGroup, setOpenGroup] = useState(null);
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 10);
@@ -109,10 +135,24 @@ export function SiteHeader({ onHome = true, active = 'Home' }) {
           <nav className="main-nav">
             <ul>
               {NAV.map((item) => (
-                <li key={item.label}>
+                <li key={item.label} className={item.children ? 'has-sub' : undefined}>
                   <NavLink item={item} onHome={onHome} className={item.label === active ? 'active' : undefined}>
                     {item.label}
+                    {item.children && (
+                      <svg className="sub-caret" width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.6" aria-hidden="true">
+                        <path d="M6 9l6 6 6-6" />
+                      </svg>
+                    )}
                   </NavLink>
+                  {item.children && (
+                    <ul className="sub-menu">
+                      {item.children.map((child) => (
+                        <li key={child.label}>
+                          <NavLink item={child} onHome={onHome}>{child.label}</NavLink>
+                        </li>
+                      ))}
+                    </ul>
+                  )}
                 </li>
               ))}
             </ul>
@@ -146,11 +186,36 @@ export function SiteHeader({ onHome = true, active = 'Home' }) {
           </button>
         </div>
         <nav className="menu-nav">
-          {NAV.map((item) => (
-            <NavLink key={item.label} item={item} onHome={onHome} onClick={() => setMenuOpen(false)}>
-              {item.label} <Arrow size={14} />
-            </NavLink>
-          ))}
+          {NAV.map((item) =>
+            item.children ? (
+              <div className={`menu-group ${openGroup === item.label ? 'open' : ''}`.trim()} key={item.label}>
+                <button
+                  type="button"
+                  className="menu-group-toggle"
+                  aria-expanded={openGroup === item.label}
+                  onClick={() => setOpenGroup(openGroup === item.label ? null : item.label)}
+                >
+                  {item.label}
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2" aria-hidden="true">
+                    <path d="M6 9l6 6 6-6" />
+                  </svg>
+                </button>
+                {openGroup === item.label && (
+                  <div className="menu-group-links">
+                    {item.children.map((child) => (
+                      <NavLink key={child.label} item={child} onHome={onHome} onClick={() => setMenuOpen(false)}>
+                        {child.label} <Arrow size={13} />
+                      </NavLink>
+                    ))}
+                  </div>
+                )}
+              </div>
+            ) : (
+              <NavLink key={item.label} item={item} onHome={onHome} onClick={() => setMenuOpen(false)}>
+                {item.label} <Arrow size={14} />
+              </NavLink>
+            )
+          )}
         </nav>
         <div className="menu-foot">
           <a href={navHref({ href: '#contact' }, onHome)} className="cta" onClick={() => setMenuOpen(false)}>Get in Touch <Arrow size={14} /></a>

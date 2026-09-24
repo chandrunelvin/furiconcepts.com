@@ -1329,3 +1329,344 @@
   .home2 .about-team{ padding-bottom:36px; }
   .home2 .about-clients{ padding-top:36px; }
 }
+
+/* =======================================================================
+   Brand showcase page (/brands/:slug)
+   Full-bleed dark hero, feature strip, product explorer, applications, FAQ.
+   ======================================================================= */
+
+.home2.brand-page{ padding-top:0; }
+
+/* ---- hero ---- */
+.home2 .brand-hero{
+  position:relative;min-height:min(760px,92vh);display:flex;align-items:center;
+  overflow:hidden;background:var(--green-darker);
+}
+.home2 .brand-hero-media{ position:absolute;inset:0;z-index:0; }
+/* the banner is a wide 2048x768 with the chair centre-right and the copy
+   sitting over the planting on the left, so it holds its own centre */
+.home2 .brand-hero-media img{ object-position:50% 50%; }
+.home2 .brand-hero::after{
+  content:'';position:absolute;inset:0;z-index:1;pointer-events:none;
+  background:
+    linear-gradient(180deg,rgba(8,18,14,.62) 0%,rgba(8,18,14,.14) 26%,rgba(8,18,14,0) 48%),
+    linear-gradient(90deg,rgba(8,18,14,.86) 0%,rgba(8,18,14,.58) 34%,rgba(8,18,14,.10) 68%,rgba(8,18,14,0) 100%);
+}
+.home2 .brand-hero-inner{ position:relative;z-index:2;width:100%;padding-block:120px 96px; }
+.home2 .brand-hero .eyebrow{ color:rgba(255,255,255,.82);text-transform:uppercase; }
+.home2 .brand-hero h1{
+  font-family:'Fraunces', Georgia, serif;font-weight:400;color:#fff;
+  font-size:clamp(46px,8vw,104px);line-height:.98;letter-spacing:-.03em;margin-bottom:18px;
+}
+.home2 .brand-hero-tagline{
+  font-family:'Fraunces', Georgia, serif;font-weight:400;color:#fff;
+  font-size:clamp(20px,2.6vw,32px);line-height:1.22;letter-spacing:-.01em;margin-bottom:22px;
+}
+.home2 .brand-hero-tagline .line{ display:block; }
+.home2 .brand-hero p{
+  font-size:clamp(14px,1.6vw,15.5px);color:rgba(255,255,255,.86);
+  max-width:42ch;line-height:1.7;margin-bottom:32px;
+}
+
+.home2 .brand-video{
+  position:absolute;right:56px;bottom:56px;z-index:3;
+  display:flex;align-items:center;gap:14px;color:#fff;
+}
+.home2 .brand-video-play{
+  width:46px;height:46px;border-radius:50%;flex:none;
+  border:1px solid rgba(255,255,255,.7);
+  display:flex;align-items:center;justify-content:center;
+  transition:background .2s, color .2s, transform .2s;
+}
+.home2 .brand-video-play svg{ width:18px;height:18px;margin-left:2px; }
+.home2 .brand-video:hover .brand-video-play{ background:#fff;color:var(--ink);transform:scale(1.06); }
+.home2 .brand-video-label{ font-size:13px;line-height:1.3;font-weight:500; }
+.home2 .brand-video-label .line{ display:block; }
+
+/* ---- feature strip ---- */
+.home2 .brand-features{ background:var(--cream);border-bottom:1px solid var(--line); }
+.home2 .brand-features-inner{
+  display:grid;grid-template-columns:repeat(6,1fr);
+  padding-block:42px;text-align:center;
+}
+.home2 .brand-feature{
+  display:flex;flex-direction:column;align-items:center;gap:12px;
+  padding:0 14px;color:var(--green);
+}
+.home2 .brand-feature + .brand-feature{ border-left:1px solid var(--line); }
+.home2 .brand-feature-label{
+  font-size:12.5px;line-height:1.4;color:var(--ink);font-weight:500;
+}
+.home2 .brand-feature-label .line{ display:block; }
+
+/* ---- about ---- */
+.home2 .brand-about-inner{
+  display:grid;grid-template-columns:1fr 1.15fr;gap:64px;align-items:center;
+}
+.home2 .brand-about-copy h2{
+  font-family:'Fraunces', Georgia, serif;font-weight:400;letter-spacing:-.02em;
+  font-size:clamp(28px,3.6vw,42px);line-height:1.12;margin-bottom:22px;
+}
+.home2 .brand-about-copy h2 .line{ display:block; }
+.home2 .brand-about-copy p{
+  font-size:clamp(14px,1.6vw,15px);color:var(--ink-soft);line-height:1.75;
+  max-width:52ch;margin-bottom:30px;
+}
+.home2 .brand-about-media{
+  aspect-ratio:16/10;border-radius:var(--radius);overflow:hidden;background:var(--card);
+}
+
+/* ---- why choose ---- */
+.home2 .brand-why{ position:relative;overflow:hidden;background:var(--green-darker);color:#fff; }
+.home2 .brand-why-media{ position:absolute;inset:0;z-index:0; }
+.home2 .brand-why-media img{ object-position:60% 50%; }
+.home2 .brand-why::after{
+  content:'';position:absolute;inset:0;z-index:1;pointer-events:none;
+  background:linear-gradient(90deg,
+    rgba(11,32,25,.97) 0%,rgba(11,32,25,.92) 30%,rgba(11,32,25,.55) 58%,rgba(11,32,25,.72) 100%);
+}
+.home2 .brand-why-inner{
+  position:relative;z-index:2;
+  display:grid;grid-template-columns:1.25fr .75fr;gap:56px;align-items:center;
+  padding-block:88px;
+}
+.home2 .brand-why .eyebrow{ color:rgba(255,255,255,.7);text-transform:uppercase; }
+.home2 .brand-why h2{
+  font-family:'Fraunces', Georgia, serif;font-weight:400;letter-spacing:-.02em;
+  font-size:clamp(26px,3.4vw,40px);line-height:1.14;margin-bottom:20px;
+}
+.home2 .brand-why h2 .line{ display:block; }
+.home2 .brand-why p{ font-size:14.5px;color:rgba(255,255,255,.82);max-width:52ch;line-height:1.75; }
+.home2 .brand-why-points{ display:flex;flex-direction:column;gap:26px; }
+.home2 .brand-why-points li{ display:flex;align-items:center;gap:16px;font-size:15px;font-weight:500; }
+.home2 .brand-why-points svg{ flex:none;color:#fff;opacity:.9; }
+
+/* ---- product explorer ---- */
+.home2 .brand-products{ background:var(--cream); }
+.home2 .brand-products-head{
+  display:flex;align-items:flex-start;justify-content:space-between;gap:32px;margin-bottom:34px;
+}
+.home2 .brand-products-head h2{
+  font-family:'Fraunces', Georgia, serif;font-weight:400;letter-spacing:-.02em;
+  font-size:clamp(27px,3.6vw,42px);line-height:1.12;margin-bottom:12px;
+}
+.home2 .brand-products-head p{ font-size:15px;color:var(--ink-soft);max-width:62ch; }
+.home2 .brand-download{ flex:none; }
+
+.home2 .brand-tabs{ display:flex;flex-wrap:wrap;gap:10px;margin-bottom:22px; }
+.home2 .brand-tab{
+  display:inline-flex;align-items:center;gap:9px;
+  padding:12px 20px;border-radius:var(--radius);
+  border:1px solid var(--line);background:#fff;color:var(--ink);
+  font-size:13.5px;font-weight:500;
+  transition:background .2s, color .2s, border-color .2s;
+}
+.home2 .brand-tab svg{ color:var(--green);transition:color .2s; }
+.home2 .brand-tab:hover{ border-color:var(--green);color:var(--green); }
+.home2 .brand-tab.active{ background:var(--green-dark);border-color:var(--green-dark);color:#fff; }
+.home2 .brand-tab.active svg{ color:#fff; }
+
+.home2 .brand-filters{ display:flex;gap:14px;align-items:center;margin-bottom:26px; }
+.home2 .brand-search{
+  flex:1;display:flex;align-items:center;gap:10px;
+  border:1px solid var(--line);background:#fff;border-radius:var(--radius);padding:0 16px;height:46px;
+  color:var(--ink-soft);
+}
+.home2 .brand-search svg{ flex:none; }
+.home2 .brand-search input{
+  flex:1;border:none;outline:none;background:none;font-family:inherit;font-size:14px;color:var(--ink);
+}
+.home2 .brand-sort{
+  position:relative;display:flex;align-items:center;gap:8px;flex:none;
+  border:1px solid var(--line);background:#fff;border-radius:var(--radius);
+  padding:0 16px;height:46px;font-size:14px;color:var(--ink-soft);
+}
+.home2 .brand-sort select{
+  appearance:none;border:none;outline:none;background:none;font-family:inherit;
+  font-size:14px;color:var(--ink);font-weight:500;padding-right:4px;cursor:pointer;
+}
+.home2 .brand-sort > svg{ pointer-events:none; }
+
+.home2 .brand-grid{ display:grid;grid-template-columns:repeat(5,1fr);gap:34px 24px; }
+/* the cards sit on the page rather than in boxes — the same editorial
+   treatment as the sector and journal tiles */
+.home2 .brand-card{ display:flex;flex-direction:column; }
+.home2 .brand-card-media{
+  display:block;position:relative;aspect-ratio:4/5;overflow:hidden;
+  background:#fff;border:1px solid var(--line);border-radius:var(--radius);
+  transition:border-color .25s;
+}
+/* the product shots are cut out on white, so they want a white field and a
+   little breathing room rather than a full-bleed crop */
+.home2 .brand-card-media img{ object-fit:contain;padding:14px;transition:transform .5s ease; }
+.home2 .brand-card:hover .brand-card-media{ border-color:var(--green); }
+.home2 .brand-card:hover .brand-card-media img{ transform:scale(1.05); }
+.home2 .brand-card-body{ padding:15px 2px 0; }
+.home2 .brand-card-type{
+  font-size:10.5px;letter-spacing:1.6px;text-transform:uppercase;
+  color:var(--ink-soft);margin-bottom:7px;
+}
+.home2 .brand-card-body h3{
+  font-family:'Fraunces', Georgia, serif;font-weight:400;letter-spacing:-.01em;
+  font-size:18px;line-height:1.2;margin-bottom:10px;transition:color .2s;
+}
+.home2 .brand-card:hover .brand-card-body h3{ color:var(--green); }
+.home2 .brand-card-body .link-arrow{ font-size:12.5px;color:var(--green); }
+
+.home2 .brand-empty{
+  border:1px dashed var(--line);border-radius:var(--radius);background:#fff;
+  padding:44px 24px;text-align:center;font-size:14.5px;color:var(--ink-soft);
+}
+.home2 .brand-empty a{ color:var(--green);font-weight:600; }
+.home2 .brand-grid-foot{ display:flex;justify-content:center;margin-top:36px; }
+
+/* ---- applications ---- */
+.home2 .brand-apps{ background:var(--cream);padding-top:0; }
+.home2 .brand-apps h2{
+  font-family:'Fraunces', Georgia, serif;font-weight:400;letter-spacing:-.02em;
+  font-size:clamp(26px,3.4vw,40px);line-height:1.12;margin-bottom:30px;
+}
+.home2 .brand-apps-grid{ display:grid;grid-template-columns:repeat(5,1fr);gap:22px; }
+.home2 .brand-app-media{
+  aspect-ratio:16/10;border-radius:var(--radius);overflow:hidden;background:var(--card);margin-bottom:14px;
+}
+.home2 .brand-app-media img{ transition:transform .5s ease; }
+.home2 .brand-app:hover .brand-app-media img{ transform:scale(1.05); }
+.home2 .brand-app h3{ font-size:14.5px;font-weight:600;margin-bottom:6px; }
+.home2 .brand-app-row{ display:flex;align-items:flex-end;justify-content:space-between;gap:14px; }
+.home2 .brand-app-row p{ font-size:12.5px;color:var(--ink-soft);line-height:1.5; }
+.home2 .brand-app-row svg{ flex:none;color:var(--ink-soft);margin-bottom:2px;transition:transform .2s, color .2s; }
+.home2 .brand-app:hover .brand-app-row svg{ color:var(--green);transform:translateX(3px); }
+
+/* ---- faq ---- */
+.home2 .brand-faq{ position:relative;overflow:hidden;background:var(--green-darker);color:#fff; }
+.home2 .brand-faq-media{ position:absolute;inset:0;z-index:0; }
+/* the artwork is a dark green wall on the left with planting and a chair on
+   the right — hold that right edge so the greenery stays in frame */
+.home2 .brand-faq-media img{ object-position:100% 50%; }
+/* the wall carries the heading on its own, so the scrim only has to build
+   toward the right where the accordion sits over the busier half */
+.home2 .brand-faq::after{
+  content:'';position:absolute;inset:0;z-index:1;pointer-events:none;
+  background:linear-gradient(90deg,
+    rgba(11,32,25,.90) 0%,rgba(11,32,25,.84) 34%,rgba(11,32,25,.76) 62%,rgba(11,32,25,.66) 100%);
+}
+.home2 .brand-faq-inner{
+  position:relative;z-index:2;
+  display:grid;grid-template-columns:.85fr 1.15fr;gap:56px;padding-block:88px;
+}
+.home2 .brand-faq .eyebrow{ color:rgba(255,255,255,.65);text-transform:uppercase; }
+.home2 .brand-faq h2{
+  font-family:'Fraunces', Georgia, serif;font-weight:400;letter-spacing:-.02em;
+  font-size:clamp(30px,4vw,48px);line-height:1.08;margin-bottom:20px;
+}
+.home2 .brand-faq-copy p{ font-size:14.5px;color:rgba(255,255,255,.76);max-width:40ch;line-height:1.75; }
+.home2 .brand-faq-list{ display:flex;flex-direction:column;gap:10px; }
+.home2 .brand-faq-item{
+  background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.12);
+  border-radius:var(--radius);transition:background .2s, border-color .2s;
+}
+.home2 .brand-faq-item:hover{ background:rgba(255,255,255,.1); }
+.home2 .brand-faq-item.open{ background:rgba(255,255,255,.1);border-color:rgba(255,255,255,.22); }
+.home2 .brand-faq-item button{
+  width:100%;display:flex;align-items:center;justify-content:space-between;gap:20px;
+  padding:16px 20px;text-align:left;color:#fff;font-size:14px;font-weight:500;
+}
+.home2 .brand-faq-item svg{ flex:none;opacity:.8;transition:transform .25s; }
+.home2 .brand-faq-item.open svg{ transform:rotate(135deg); }
+.home2 .brand-faq-item > p{
+  padding:0 20px 18px;font-size:13.5px;line-height:1.75;color:rgba(255,255,255,.76);max-width:70ch;
+}
+
+/* ---- responsive ---- */
+@media(max-width:1200px){
+  .home2 .brand-grid{ grid-template-columns:repeat(4,1fr); }
+  .home2 .brand-apps-grid{ grid-template-columns:repeat(3,1fr); }
+}
+@media(max-width:1000px){
+  .home2 .brand-features-inner{ grid-template-columns:repeat(3,1fr);gap:28px 0;padding-block:34px; }
+  .home2 .brand-feature:nth-child(3n+1){ border-left:none; }
+  .home2 .brand-about-inner{ grid-template-columns:1fr;gap:34px; }
+  .home2 .brand-why-inner{ grid-template-columns:1fr;gap:34px;padding-block:64px; }
+  .home2 .brand-faq-inner{ grid-template-columns:1fr;gap:32px;padding-block:64px; }
+  .home2 .brand-products-head{ flex-direction:column; }
+  .home2 .brand-grid{ grid-template-columns:repeat(3,1fr); }
+}
+@media(max-width:760px){
+  .home2 .brand-hero{ min-height:0; }
+  .home2 .brand-hero-inner{ padding-block:120px 110px; }
+  .home2 .brand-hero p{ max-width:none; }
+  .home2 .brand-video{ right:24px;bottom:24px; }
+  .home2 .brand-features-inner{ grid-template-columns:repeat(2,1fr); }
+  .home2 .brand-feature{ border-left:none !important; }
+  .home2 .brand-why-points{ display:grid;grid-template-columns:repeat(2,1fr);gap:18px; }
+  .home2 .brand-grid{ grid-template-columns:repeat(2,1fr);gap:26px 16px; }
+  .home2 .brand-apps-grid{ grid-template-columns:repeat(2,1fr); }
+  .home2 .brand-filters{ flex-direction:column;align-items:stretch; }
+  .home2 .brand-tabs{ flex-wrap:nowrap;overflow-x:auto;padding-bottom:6px;-webkit-overflow-scrolling:touch; }
+  .home2 .brand-tab{ flex:none; }
+  .home2 .brand-download{ width:100%;justify-content:center; }
+}
+@media(max-width:460px){
+  .home2 .brand-apps-grid{ grid-template-columns:1fr; }
+}
+
+/* ---- brands dropdown in the header (carried over from the old site's nav) ---- */
+.home2 nav.main-nav li.has-sub{ position:relative; }
+.home2 nav.main-nav li.has-sub > a{ display:inline-flex;align-items:center;gap:5px; }
+.home2 nav.main-nav .sub-caret{ transition:transform .2s;margin-top:-1px; }
+.home2 nav.main-nav li.has-sub:hover .sub-caret{ transform:rotate(180deg); }
+.home2 nav.main-nav .sub-menu{
+  position:absolute;top:100%;left:-18px;z-index:120;
+  display:grid;grid-template-columns:repeat(2,minmax(150px,1fr));
+  gap:2px 10px;padding:16px 18px;margin-top:14px;
+  background:var(--cream);border:1px solid var(--line);border-radius:var(--radius);
+  box-shadow:0 24px 48px -24px rgba(15,38,32,.45);
+  opacity:0;visibility:hidden;transform:translateY(6px);
+  transition:opacity .2s ease, transform .2s ease, visibility .2s;
+}
+/* the gap between the link and the panel would drop the hover, so the li
+   keeps an invisible bridge across it */
+.home2 nav.main-nav li.has-sub::after{
+  content:'';position:absolute;top:100%;left:0;right:0;height:16px;
+}
+.home2 nav.main-nav li.has-sub:hover .sub-menu,
+.home2 nav.main-nav li.has-sub:focus-within .sub-menu{
+  opacity:1;visibility:visible;transform:translateY(0);
+}
+.home2 nav.main-nav .sub-menu a{
+  display:block;padding:7px 10px;border-radius:var(--radius);
+  font-size:13.5px;font-weight:500;color:var(--ink);white-space:nowrap;
+  transition:background .15s, color .15s;
+}
+.home2 nav.main-nav .sub-menu a::after{ display:none; }
+.home2 nav.main-nav .sub-menu a:hover{ background:var(--card);color:var(--green); }
+/* over a dark hero the trigger goes white, but the panel stays on cream */
+.home2 header:not(.scrolled) nav.main-nav .sub-menu a{ color:var(--ink); }
+.home2 header:not(.scrolled) nav.main-nav .sub-menu a:hover{ color:var(--green); }
+
+/* ---- the same group inside the slide-out panel ---- */
+.home2 .menu-group-toggle{
+  display:flex;align-items:center;justify-content:space-between;width:100%;
+  padding:15px 0;border-bottom:1px solid var(--line);
+  font-family:inherit;font-size:16px;font-weight:500;color:var(--ink);text-align:left;
+  transition:color .2s;
+}
+.home2 .menu-group-toggle:hover{ color:var(--green); }
+.home2 .menu-group.open .menu-group-toggle svg{ transform:rotate(180deg); }
+.home2 .menu-group-toggle svg{ transition:transform .2s;flex:none; }
+.home2 .menu-group-links{ display:flex;flex-direction:column;padding-left:14px; }
+.home2 .menu-group-links a{ font-size:14px;padding:11px 0;color:var(--ink-soft); }
+.home2 .menu-group-links a:hover{ color:var(--green); }
+
+/* the four benefit lines and the pull quote under the About copy */
+.home2 .brand-about-points{ display:flex;flex-direction:column;gap:11px;margin-bottom:24px; }
+.home2 .brand-about-points li{
+  display:flex;align-items:center;gap:11px;font-size:14.5px;color:var(--ink);
+}
+.home2 .brand-about-points svg{ flex:none;color:var(--green); }
+.home2 .brand-about-quote{
+  border-left:2px solid var(--green);padding-left:18px;margin-bottom:30px;
+  font-family:'Fraunces', Georgia, serif;font-size:15.5px;line-height:1.6;
+  color:var(--ink);max-width:48ch;
+}
