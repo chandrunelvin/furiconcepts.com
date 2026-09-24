@@ -9,14 +9,17 @@ import { onScrollFrame, prefersReducedMotion } from '../lib/scroll.js';
 import { Link } from '../router.jsx';
 import '../styles/home2.css';
 
+/* Blocks that fade up as they scroll into view, in document order. Siblings
+   inside one selector cascade off the .reveal:nth-child delays. */
 const REVEAL_GROUPS = [
   '.contact-hero .eyebrow, .contact-hero h1, .contact-hero p',
   '.contact-panel',
   '.contact-feature',
   '.offices-intro > *',
-  '.offices-gallery',
+  '.offices-shot',
   '.office-card',
   '.map-panel-body > *',
+  '.map-frame',
   '.contact-cta-copy > *',
   '.newsletter-media, .newsletter-body',
   'footer .footer-brand, footer .footer-col, footer .footer-bottom',
