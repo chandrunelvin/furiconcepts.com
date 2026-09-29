@@ -11,7 +11,7 @@ export default function App() {
   if (path === '/home-old') return <Home />;
   if (path === '/about') return <About />;
   if (path === '/contact') return <Contact />;
-  if (path.startsWith('/brands/')) return <Brand slug={path.slice('/brands/'.length)} />;
-  if (path.startsWith('/catalogs/')) return <Catalog slug={path.slice('/catalogs/'.length)} />;
+  if (path.startsWith('/brands/')) return <Brand key={path} slug={path.slice('/brands/'.length)} />;
+  if (path.startsWith('/catalogs/')) return <Catalog key={path} slug={path.slice('/catalogs/'.length)} />;
   return <Home2 />;
 }

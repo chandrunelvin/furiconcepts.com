@@ -45,6 +45,7 @@ const REVEAL_GROUPS = [
   '.about-clients .team-head, .about-clients .client-viewport',
   '.testimonials-side, .quote-stage',
   '.about-cta-copy > *',
+  'footer .footer-brand, footer .footer-col, footer .footer-bottom',
 ];
 
 /** Company page, built to the About Us comp: story, numbers, vision, team, brands. */

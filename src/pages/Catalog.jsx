@@ -1,11 +1,26 @@
 import { Arrow, SiteFooter, SiteHeader } from '../components/Home2Chrome.jsx';
 import { CATALOGS, getCatalog } from '../data/catalogs.js';
+import { useReveal } from '../lib/reveal.js';
 import { Link } from '../router.jsx';
 import '../styles/home2.css';
+
+/* Blocks that fade up as they scroll into view, in document order. Siblings
+   inside one selector cascade off the .reveal:nth-child delays. */
+const REVEAL_GROUPS = [
+  '.catalog-hero-copy > *, .catalog-missing .wrap > *',
+  '.catalog-hero-cover',
+  '.catalog-facts .fact',
+  '.catalog-ranges .head-row, .catalog-more .head-row',
+  '.range-list li',
+  '.gallery-tile',
+  '.brand-chip-link',
+  'footer .footer-brand, footer .footer-col, footer .footer-bottom',
+];
 
 /** One brand's catalogue page, reached from the Catalogs section on the home page. */
 export default function Catalog({ slug }) {
   const item = getCatalog(slug);
+  useReveal(REVEAL_GROUPS);
 
   if (!item) {
     return (
