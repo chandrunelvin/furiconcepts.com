@@ -1,4 +1,6 @@
 import About from './pages/About.jsx';
+import Blog from './pages/Blog.jsx';
+import BlogPost from './pages/BlogPost.jsx';
 import Brand from './pages/Brand.jsx';
 import Catalog from './pages/Catalog.jsx';
 import Contact from './pages/Contact.jsx';
@@ -11,6 +13,8 @@ export default function App() {
   if (path === '/home-old') return <Home />;
   if (path === '/about') return <About />;
   if (path === '/contact') return <Contact />;
+  if (path === '/blog') return <Blog key={window.location.search} />;
+  if (path.startsWith('/blog/')) return <BlogPost key={path} slug={path.slice('/blog/'.length)} />;
   if (path.startsWith('/brands/')) return <Brand key={path} slug={path.slice('/brands/'.length)} />;
   if (path.startsWith('/catalogs/')) return <Catalog key={path} slug={path.slice('/catalogs/'.length)} />;
   return <Home2 />;
