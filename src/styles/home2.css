@@ -1366,7 +1366,7 @@
 /* ---- feature strip ---- */
 .home2 .brand-features{ background:var(--cream);border-bottom:1px solid var(--line); }
 .home2 .brand-features-inner{
-  display:grid;grid-template-columns:repeat(6,1fr);
+  display:grid;grid-template-columns:repeat(var(--n,6),1fr);
   padding-block:42px;text-align:center;
 }
 .home2 .brand-feature{
@@ -1541,6 +1541,13 @@
 .home2 .brand-app-row p{ font-size:12.5px;color:var(--ink-soft);line-height:1.5; }
 .home2 .brand-app-row svg{ flex:none;color:var(--ink-soft);margin-bottom:2px;transition:transform .2s, color .2s; }
 .home2 .brand-app:hover .brand-app-row svg{ color:var(--green);transform:translateX(3px); }
+.home2 .brand-app[role="button"]{ cursor:pointer; }
+/* collection cards show a cut-out product shot, so it sits whole on the tile */
+.home2 .brand-apps.contain .brand-app-media{ background:#fff;border:1px solid var(--line); }
+.home2 .brand-apps.contain .brand-app-media img{ object-fit:contain;padding:14px; }
+/* without a banner photo the about panel shows the lead product uncropped */
+.home2 .brand-about-media.contain{ background:#fff;border:1px solid var(--line);min-height:380px; }
+.home2 .brand-about-media.contain img{ object-fit:contain;object-position:50% 50%;padding:32px; }
 
 /* ---- faq ---- */
 .home2 .brand-faq{ position:relative;overflow:hidden;background:var(--green-darker);color:#fff; }
@@ -1612,6 +1619,9 @@
    padding halves, so the page switches to its narrow arrangement here */
 @media(max-width:900px){
   .home2 .brand-hero{ min-height:0; }
+  /* stacked, the copy spans the full width of the photo, so the whole banner
+     takes an even wash instead of the left-to-right fade */
+  .home2 .brand-hero::after{ background:linear-gradient(180deg,rgba(8,18,14,.72),rgba(8,18,14,.6)); }
   .home2 .brand-hero-inner{ padding-block:124px 104px; }
   .home2 .brand-hero p{ max-width:none; }
   .home2 .brand-features-inner{ grid-template-columns:repeat(2,1fr); }

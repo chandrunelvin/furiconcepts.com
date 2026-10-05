@@ -9,32 +9,31 @@ import { Link } from '../router.jsx';
 
 /**
  * The brand list carried over from the old site's Brands dropdown
- * (furniconcepts.com/brands-view.php), in the same order. Cavaletti has a full
- * brand page; the rest point at their catalogue page until theirs is built.
- * Safe Lockers has neither yet, so it falls back to the catalogues section.
+ * (furniconcepts.com/brands-view.php), in the same order, plus Bestuhl and
+ * Merryfair. Each one opens its brand page (/brands/<slug>).
  * Logos are the ones furniconcepts.sg uses for the same brands.
  */
 const logo = (file) => `/images/brand-logo/${file}`;
 
 export const BRAND_MENU = [
   { label: 'Cavaletti', path: '/brands/cavaletti', logo: logo('cavaletti-cadeiras-profissionais-seeklogo.png') },
-  { label: 'Gebbwork', path: '/catalogs/gebb-work', logo: logo('gebbwork-logo.png') },
-  { label: 'Leadcom', path: '/catalogs/leadcom', logo: logo('leadcom-logo.png') },
-  { label: 'Forma5', path: '/catalogs/forma5', logo: logo('forma5-logo.png') },
-  { label: 'Broad Power', path: '/catalogs/broad-power', logo: logo('broad-power-logo.png') },
-  { label: 'Musepod', path: '/catalogs/musepod', logo: logo('musepod-logo.jpeg') },
-  { label: 'Zumbooth', path: '/catalogs/zumbooth', logo: logo('zumbooth-logo.png') },
-  { label: 'Libero Italy', path: '/catalogs/libero-italy', logo: logo('libero-logo.png') },
-  { label: 'Nitrocare', path: '/catalogs/nitrocare', logo: logo('nitrocare-logo.jpeg') },
-  { label: 'Jwesys', path: '/catalogs/jwesys', logo: logo('jwesys-logo.png') },
-  { label: 'Audia Italia', path: '/catalogs/audia-italia', logo: logo('audia-logo.png') },
-  { label: 'Scab Italy', path: '/catalogs/scab-italy', logo: logo('scab-logo.webp') },
-  { label: 'Markant', path: '/catalogs/markant', logo: logo('markant-logo.webp') },
-  { label: 'Worklyffe', path: '/catalogs/worklyffe', logo: logo('worklyffe-logo.png') },
-  { label: 'Parin', path: '/catalogs/parin', logo: logo('PARIN_LOGO.png') },
-  { label: 'Bestuhl', path: '/catalogs/bestuhl', logo: logo('bestuhl-logo.webp') },
-  { label: 'Merryfair', path: '/catalogs/merryfair', logo: logo('merryfair_logo.png') },
-  { label: 'Safe Lockers', href: '#catalogs', logo: logo('vssafebox-safe-lockers-logo.png') },
+  { label: 'Gebbwork', path: '/brands/gebbwork', logo: logo('gebbwork-logo.png') },
+  { label: 'Leadcom', path: '/brands/leadcom', logo: logo('leadcom-logo.png') },
+  { label: 'Forma5', path: '/brands/forma5', logo: logo('forma5-logo.png') },
+  { label: 'Broad Power', path: '/brands/broad-power', logo: logo('broad-power-logo.png') },
+  { label: 'Musepod', path: '/brands/musepod', logo: logo('musepod-logo.jpeg') },
+  { label: 'Zumbooth', path: '/brands/zumbooth', logo: logo('zumbooth-logo.png') },
+  { label: 'Libero Italy', path: '/brands/libero-italy', logo: logo('libero-logo.png') },
+  { label: 'Nitrocare', path: '/brands/nitrocare', logo: logo('nitrocare-logo.jpeg') },
+  { label: 'Jwesys', path: '/brands/jwesys', logo: logo('jwesys-logo.png') },
+  { label: 'Audia Italia', path: '/brands/audia-italia', logo: logo('audia-logo.png') },
+  { label: 'Scab Italy', path: '/brands/scab-italy', logo: logo('scab-logo.webp') },
+  { label: 'Markant', path: '/brands/markant', logo: logo('markant-logo.webp') },
+  { label: 'Worklyffe', path: '/brands/worklyffe', logo: logo('worklyffe-logo.png') },
+  { label: 'Parin', path: '/brands/parin', logo: logo('PARIN_LOGO.png') },
+  { label: 'Bestuhl', path: '/brands/bestuhl', logo: logo('bestuhl-logo.webp') },
+  { label: 'Merryfair', path: '/brands/merryfair', logo: logo('merryfair_logo.png') },
+  { label: 'Safe Lockers', path: '/brands/safe-lockers', logo: logo('vssafebox-safe-lockers-logo.png') },
 ];
 
 /** A brand's logo by name; spacing and case are ignored ("Gebb Work" = "Gebbwork"). */
@@ -67,7 +66,8 @@ export const Diagonal = () => (
 /** One source for the social links, shared by the menu drawer and the footer. */
 const SOCIALS = [
   { label: 'Instagram', path: <><rect x="3" y="3" width="18" height="18" rx="5" /><circle cx="12" cy="12" r="4" /><circle cx="17.5" cy="6.5" r="1" /></> },
-  { label: 'Pinterest', path: <><circle cx="12" cy="12" r="9" /><path d="M9 17c1-3 1.5-6 2-9m2 0c2 0 4 1.4 4 4 0 3-2 5-4.5 5-.8 0-1.5-.3-2-.8" /></> },
+  // the Pinterest "P" is a filled mark, scaled down to sit level with the outlined icons
+  { label: 'Pinterest', path: <path transform="translate(1.8 1.8) scale(.85)" fill="currentColor" stroke="none" d="M12.017 0C5.396 0 .029 5.367.029 11.987c0 5.079 3.158 9.417 7.618 11.162-.105-.949-.199-2.403.041-3.439.219-.937 1.406-5.957 1.406-5.957s-.359-.72-.359-1.781c0-1.663.967-2.911 2.168-2.911 1.024 0 1.518.769 1.518 1.688 0 1.029-.653 2.567-.992 3.992-.285 1.193.6 2.165 1.775 2.165 2.128 0 3.768-2.245 3.768-5.487 0-2.861-2.063-4.869-5.008-4.869-3.41 0-5.409 2.562-5.409 5.199 0 1.033.394 2.143.889 2.741.099.12.112.225.085.345-.09.375-.293 1.199-.334 1.363-.053.225-.172.271-.401.165-1.495-.69-2.433-2.878-2.433-4.646 0-3.776 2.748-7.252 7.92-7.252 4.158 0 7.392 2.967 7.392 6.923 0 4.135-2.607 7.462-6.233 7.462-1.214 0-2.354-.629-2.758-1.379l-.749 2.848c-.269 1.045-1.004 2.352-1.498 3.146 1.123.345 2.306.535 3.55.535 6.607 0 11.985-5.365 11.985-11.987C23.97 5.39 18.592.026 11.985.026L12.017 0z" /> },
   { label: 'Facebook', path: <path d="M15 8h2V5h-2a4 4 0 00-4 4v2H9v3h2v6h3v-6h2.5l.5-3H14V9a1 1 0 011-1z" /> },
   { label: 'LinkedIn', path: <><rect x="3" y="3" width="18" height="18" rx="3" /><path d="M7.5 10v6M7.5 7.5v.01M11.5 16v-3.5c0-1.4 1-2.3 2.3-2.3 1.3 0 2.2.9 2.2 2.3V16" /></> },
   { label: 'YouTube', path: <><rect x="2" y="6" width="20" height="12" rx="4" /><path d="M10 9.5v5l5-2.5z" fill="currentColor" stroke="none" /></> },

@@ -173,6 +173,13 @@ export default function Brand({ slug }) {
 
   const shown = showAll ? visible : visible.slice(0, PREVIEW_COUNT);
 
+  /** A collection card filters the product grid to its range and scrolls to it. */
+  const showCategory = (key) => {
+    setCategory(key);
+    setQuery('');
+    document.getElementById('products')?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  };
+
   if (!brand) {
     return (
       <div className="home2 catalog-page">
@@ -196,11 +203,13 @@ export default function Brand({ slug }) {
 
       {/* ---- hero ---- */}
       <section className="brand-hero">
-        <div className="brand-hero-media" aria-hidden="true">
-          <div className="img-parallax" ref={heroLayer}>
-            <img src={brand.heroImage} alt="" />
+        {brand.heroImage && (
+          <div className="brand-hero-media" aria-hidden="true">
+            <div className="img-parallax" ref={heroLayer}>
+              <img src={brand.heroImage} alt="" />
+            </div>
           </div>
-        </div>
+        )}
         <div className="wrap brand-hero-inner">
           <div className="eyebrow">{brand.eyebrow}</div>
           {brandLogo(brand.name) && (
@@ -217,7 +226,7 @@ export default function Brand({ slug }) {
 
       {/* ---- feature strip ---- */}
       <section className="brand-features">
-        <div className="wrap brand-features-inner">
+        <div className="wrap brand-features-inner" style={{ '--n': brand.features.length }}>
           {brand.features.map((f) => (
             <div className="brand-feature" key={f.label}>
               <BrandIcon name={f.icon} />
@@ -249,19 +258,21 @@ export default function Brand({ slug }) {
               {brand.about.cta.label} <Arrow />
             </a>
           </div>
-          <div className="brand-about-media">
-            <img src={brand.about.image} alt={`${brand.name} seating in a meeting room`} loading="lazy" />
+          <div className={`brand-about-media ${brand.about.contain ? 'contain' : ''}`.trim()}>
+            <img src={brand.about.image} alt={brand.name} loading="lazy" />
           </div>
         </div>
       </section>
 
       {/* ---- why choose ---- */}
       <section className="brand-why">
-        <div className="brand-why-media" aria-hidden="true">
-          <div className="img-parallax" ref={whyLayer}>
-            <img src={brand.why.image} alt="" loading="lazy" />
+        {brand.why.image && (
+          <div className="brand-why-media" aria-hidden="true">
+            <div className="img-parallax" ref={whyLayer}>
+              <img src={brand.why.image} alt="" loading="lazy" />
+            </div>
           </div>
-        </div>
+        )}
         <div className="wrap brand-why-inner">
           <div className="brand-why-copy">
             <div className="eyebrow">{brand.why.eyebrow}</div>
@@ -405,13 +416,19 @@ export default function Brand({ slug }) {
       </section>
 
       {/* ---- applications ---- */}
-      <section className="section brand-apps">
+      {brand.applications && (
+      <section className={`section brand-apps ${brand.applications.contain ? 'contain' : ''}`.trim()}>
         <div className="wrap">
           <div className="eyebrow">{brand.applications.eyebrow}</div>
           <h2>{brand.applications.title}</h2>
           <div className="brand-apps-grid">
             {brand.applications.items.map((a) => (
-              <article className="brand-app" key={a.title}>
+              <article
+                className="brand-app"
+                key={a.title}
+                {...(a.category ? { role: 'button', tabIndex: 0, onClick: () => showCategory(a.category),
+                  onKeyDown: (e) => { if (e.key === 'Enter') showCategory(a.category); } } : {})}
+              >
                 <div className="brand-app-media">
                   <img src={a.image} alt={a.title} loading="lazy" />
                 </div>
@@ -425,14 +442,18 @@ export default function Brand({ slug }) {
           </div>
         </div>
       </section>
+      )}
 
       {/* ---- faq ---- */}
+      {brand.faq && (
       <section className="brand-faq">
-        <div className="brand-faq-media" aria-hidden="true">
-          <div className="img-parallax" ref={faqLayer}>
-            <img src={brand.faq.image} alt="" loading="lazy" />
+        {brand.faq.image && (
+          <div className="brand-faq-media" aria-hidden="true">
+            <div className="img-parallax" ref={faqLayer}>
+              <img src={brand.faq.image} alt="" loading="lazy" />
+            </div>
           </div>
-        </div>
+        )}
         <div className="wrap brand-faq-inner">
           <div className="brand-faq-copy">
             <div className="eyebrow">{brand.faq.eyebrow}</div>
@@ -459,6 +480,7 @@ export default function Brand({ slug }) {
           </div>
         </div>
       </section>
+      )}
 
       {enquiry && (
         <div className="brand-modal" role="dialog" aria-modal="true" aria-labelledby="enquiry-title">
@@ -484,7 +506,7 @@ export default function Brand({ slug }) {
               <dl className="brand-modal-spec">
                 <div><dt>Type</dt><dd>{enquiry.type}</dd></div>
                 <div><dt>Brand</dt><dd>{brand.name}</dd></div>
-                <div><dt>Origin</dt><dd>Brazil</dd></div>
+                <div><dt>Origin</dt><dd>{brand.origin}</dd></div>
               </dl>
 
               <p className="brand-modal-note">{products.enquiryNote}</p>

@@ -3,7 +3,12 @@
  *
  * Cavaletti's copy, product list and FAQ are taken from the live page at
  * furniconcepts.com/cavaletti.php so the revamp carries the same wording.
+ * Every other brand is built from brand-source.json (the furniconcepts.sg
+ * brand data) by buildBrand below, into the same shape Cavaletti uses.
  */
+import { CATALOGS } from './catalogs.js';
+import SOURCE from './brand-source.json';
+
 const img = (name) => `/images/cavaletti/${name}.jpg`;
 /** Product shots pulled from the live Cavaletti page (furniconcepts.com/cavaletti.php). */
 const product = (name) => `/images/cavaletti/products/${name}.jpg`;
@@ -12,6 +17,7 @@ export const BRANDS = {
   cavaletti: {
     slug: 'cavaletti',
     name: 'Cavaletti',
+    origin: 'Brazil',
     eyebrow: 'Our Brands',
     tagline: 'Office Chairs & Ergonomic Seating\nin Dubai, India, Singapore & Oman',
     heroText:
@@ -249,5 +255,161 @@ export const BRANDS = {
     },
   },
 };
+
+/** Banner photos from the old furniconcepts.com brand pages. Parin, Safe
+    Lockers, Bestuhl and Merryfair have none usable yet, so their hero falls
+    back to the plain green band. */
+const HERO = new Set([
+  'audia-italia', 'broad-power', 'forma5', 'gebbwork', 'jwesys', 'leadcom', 'libero-italy',
+  'markant', 'musepod', 'nitrocare', 'scab-italy', 'worklyffe', 'zumbooth',
+]);
+
+/** Brand slugs whose catalogue page lives under a different slug. */
+const CATALOG_SLUG = { gebbwork: 'gebb-work' };
+
+/** Some source URLs arrive already percent-encoded; decode first so they aren't encoded twice. */
+const imageUrl = (url) => encodeURI(decodeURI(url));
+
+const slugify = (text) =>
+  text.toLowerCase().replace(/&/g, ' and ').replace(/[^a-z0-9]+/g, '-').replace(/^-+|-+$/g, '');
+
+/** First matching keyword wins; anything unmatched cycles through the fallbacks. */
+const pickIcon = (text, rules, fallback, i) =>
+  rules.find(([re]) => re.test(text))?.[1] ?? fallback[i % fallback.length];
+
+const CATEGORY_ICONS = [
+  [/auditorium|cinema|theat|arena|stadium|row|beam|public|waiting/i, 'audience'],
+  [/stool|barstool/i, 'stool'],
+  [/sofa|lounge|armchair|pouf|soft/i, 'sofa'],
+  [/executive|director|vip|luxury|signature/i, 'crown'],
+  [/pod|booth|cabin|focus|privacy|safe|vault|locker|storage/i, 'box'],
+  [/desk|table|workstation|system|power|module|monitor|accessor/i, 'grid'],
+  [/education|student|training|lecture|school/i, 'person'],
+  [/chair|seating|task/i, 'chair'],
+];
+const FEATURE_ICONS = [
+  [/ergonom|posture|comfort/i, 'posture'],
+  [/award|design|aesthetic|finish/i, 'trophy'],
+  [/global|international|export|countr/i, 'globe'],
+  [/sustain|eco|green|recycl|emission/i, 'leaf'],
+  [/quality|durab|certif|warrant|tested|fire/i, 'gem'],
+  [/team|people|collab|care|patient/i, 'people'],
+  [/acoustic|sound|quiet|privacy/i, 'box'],
+  [/modular|flexib|smart|custom/i, 'gear'],
+];
+
+/** Maps one furniconcepts.sg brand record onto the Cavaletti page shape. */
+function buildBrand(src) {
+  const ed = src.editorial ?? {};
+  const heroImage = HERO.has(src.slug) ? `/images/brands/${src.slug}.jpg` : null;
+  const catalog = CATALOGS.find((c) => c.slug === (CATALOG_SLUG[src.slug] ?? src.slug));
+
+  const seen = new Map();
+  const items = src.groups.flatMap((g) =>
+    g.items.map((item) => {
+      const base = slugify(item.name) || 'product';
+      const n = (seen.get(base) ?? 0) + 1;
+      seen.set(base, n);
+      return {
+        id: n > 1 ? `${base}-${n}` : base,
+        name: item.name,
+        type: g.title,
+        category: slugify(g.title),
+        image: imageUrl(item.img),
+        caption: item.caption ?? `${item.name} – ${src.name} ${g.title}`,
+        description:
+          item.description ??
+          `The ${item.name} is part of the ${src.name} ${g.title} range. Available in Dubai, India, Singapore and Oman through FurniConcepts.`,
+      };
+    })
+  );
+
+  const points = ed.atAGlance?.length
+    ? ed.atAGlance.map((a) => `${a.label}: ${a.value}`)
+    : src.highlights.map((h) => h.text);
+
+  return {
+    slug: src.slug,
+    name: src.name,
+    origin: src.origin,
+    eyebrow: 'Our Brands',
+    tagline: src.tagline,
+    heroText: src.description[0],
+    heroImage,
+    heroCta: { label: `Explore ${src.name}`, href: '#products' },
+
+    features: src.highlights.map((h, i) => ({
+      icon: pickIcon(`${h.title} ${h.text}`, FEATURE_ICONS, ['gear', 'trophy', 'globe', 'gem'], i),
+      label: h.title,
+    })),
+
+    about: {
+      eyebrow: `About ${src.name}`,
+      title: (ed.heading ?? src.tagline).replace(/^[^:]*:\s*/, ''),
+      body: ed.opening ?? src.summary ?? src.description[1],
+      points,
+      quote: ed.background ?? src.description[1],
+      cta: { label: 'View Products', href: '#products' },
+      // without a banner the about panel shows the lead product, uncropped
+      image: heroImage ?? items[0]?.image,
+      contain: !heroImage,
+    },
+
+    why: {
+      eyebrow: `Why Choose ${src.name}?`,
+      title: ed.cta?.heading ?? `Why ${src.name}?`,
+      body: ed.whyWeRecommend ?? src.description[1],
+      image: null,
+      points: src.highlights.map((h, i) => ({
+        icon: pickIcon(`${h.title} ${h.text}`, FEATURE_ICONS, ['sparkle', 'gem', 'people', 'globe'], i),
+        label: h.title,
+      })),
+    },
+
+    products: {
+      eyebrow: `${src.name} Products`,
+      title: `Explore the Complete ${src.name} Collection`,
+      intro: src.summary ?? src.tagline,
+      download: catalog
+        ? { label: 'Download Catalogue', href: `/catalogs/${catalog.slug}` }
+        : { label: 'Request Catalogue', href: '/contact' },
+      whatsapp: '971503782215',
+      enquiryNote: 'Send us an enquiry now, we will get back to you asap.',
+      viewAll: { label: `View All ${src.name} Products`, href: '#products' },
+      categories: [
+        { key: 'all', label: 'All Products', icon: 'grid' },
+        ...src.groups.map((g, i) => ({
+          key: slugify(g.title),
+          label: g.title,
+          icon: pickIcon(g.title, CATEGORY_ICONS, ['chair', 'grid', 'box'], i),
+        })),
+      ],
+      items,
+    },
+
+    // with more than one range, the cards below the grid jump to each range
+    applications: src.groups.length > 1 ? {
+      eyebrow: 'Collections',
+      title: `${src.name} Collections`,
+      contain: true,
+      items: src.groups.slice(0, 5).map((g) => ({
+        title: g.title,
+        text: `${g.items.length} product${g.items.length === 1 ? '' : 's'}`,
+        image: imageUrl(g.items[0].img),
+        category: slugify(g.title),
+      })),
+    } : null,
+
+    faq: ed.faq?.length ? {
+      eyebrow: 'FAQ',
+      title: 'Frequently Asked Questions',
+      intro: `Find answers to common questions about ${src.name} products, supply and installation.`,
+      image: '/images/cavaletti/faq-bg.webp',
+      items: ed.faq,
+    } : null,
+  };
+}
+
+for (const src of SOURCE) BRANDS[src.slug] = buildBrand(src);
 
 export const getBrand = (slug) => BRANDS[slug];
