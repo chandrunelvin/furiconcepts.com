@@ -18,7 +18,6 @@ export const BRANDS = {
       'FurniConcepts brings world-class ergonomic seating from Cavaletti, a globally recognized manufacturer of professional office chairs and collaborative seating systems. With a legacy since 1974, Cavaletti combines design excellence, ergonomics and durability.',
     heroImage: '/images/cavaletti/calvatti-banner-image.webp',
     heroCta: { label: 'Explore Cavaletti', href: '#products' },
-    video: { label: 'Watch\nBrand Video', href: '#' },
 
     features: [
       { icon: 'gear', label: 'Advanced\nErgonomics' },

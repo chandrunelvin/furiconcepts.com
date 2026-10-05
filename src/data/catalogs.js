@@ -232,6 +232,34 @@ export const CATALOGS = [
     cover: cav('showroom-chairs'),
     gallery: [cav('task-chair'), cav('office-green'), cav('boardroom'), cav('showroom-samples')],
   },
+  {
+    slug: 'bestuhl',
+    brand: 'Bestuhl',
+    origin: 'South Korea',
+    title: 'Office & Education Seating',
+    focus: 'Certified low-emission office and education chairs from Korea.',
+    intro:
+      'Bestuhl is the export brand of Booho Chair-One, manufactured in Daegu, South Korea. Its office and education chairs are ANSI/BIFMA and ISO 9001 certified, with Korea Eco-Label certification across 118 products.',
+    ranges: ['P1 Chairs', 'S15 Chairs'],
+    year: '2025',
+    pages: 48,
+    cover: cav('stacking-chairs'),
+    gallery: [cav('task-chair'), cav('office-green'), cav('canteen'), cav('showroom-chairs')],
+  },
+  {
+    slug: 'merryfair',
+    brand: 'Merryfair',
+    origin: 'Malaysia',
+    title: 'Office Seating',
+    focus: 'Task, executive and contract seating, manufactured since 1974.',
+    intro:
+      'Merryfair has manufactured office chairs in Malaysia since 1974 and sold more than 5 million chairs to over 100 countries — from task and executive seating to stacking, education and auditorium ranges.',
+    ranges: ['Task Chairs', 'Executive Chairs', 'Lounge Seating', 'Stacking Chairs', 'Education Seating', 'Row & Beam Seating'],
+    year: '2025',
+    pages: 96,
+    cover: cav('executive-chairs'),
+    gallery: [cav('task-chair'), cav('boardroom'), cav('lounge-chair'), cav('beam-seating')],
+  },
 ];
 
 export const getCatalog = (slug) => CATALOGS.find((c) => c.slug === slug);

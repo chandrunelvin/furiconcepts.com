@@ -5,7 +5,6 @@
  * footer. The Muscat entry has no published address yet, so it carries the
  * regional enquiry line until Furniconcepts supplies one.
  */
-const cav = (name) => `/images/cavaletti/${name}.jpg`;
 /** Office card photography — the city each office sits in. */
 const place = (file) => `/images/contact-us/${file}-address-image.webp`;
 
@@ -64,7 +63,6 @@ export const OFFICES_INTRO = {
   title: 'Global Presence,\nLocal Support',
   text:
     'Furniconcepts is proudly present across UAE, India, Singapore and Oman, bringing world-class furniture solutions to businesses of all sizes.',
-  gallery: [cav('boardroom'), cav('office-green'), cav('showroom-lounge'), cav('project-lounge')],
 };
 
 export const OFFICES = [
@@ -122,19 +120,6 @@ export const ITALSEAT = {
   phone: '+971 4 257 9447',
   embed: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3615.8246921739546!2d55.1219251!3d25.0060722!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f13ebdb496077%3A0x75efff34aaddee6!2sITALSEAT%20FURNITURE%20FACTORY!5e0!3m2!1sen!2sin!4v1743504544652!5m2!1sen!2sin',
   coords: '25.0060722,55.1219251',
-};
-
-export const MAP_PANEL = {
-  eyebrow: 'Our Locations',
-  image: '/images/contact-us/bg-for-contactusmap.webp',
-  title: 'Find Us\nAround the World',
-  text: 'Explore our global locations. Select an office to see its address and get directions.',
-  cta: { label: 'View All Locations', href: '#offices' },
-  stats: [
-    { num: '4', label: 'Countries' },
-    { num: '4', label: 'Offices' },
-    { num: 'Global', label: 'Support' },
-  ],
 };
 
 export const CONTACT_CTA = {

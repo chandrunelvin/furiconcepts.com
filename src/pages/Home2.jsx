@@ -188,12 +188,6 @@ export default function Home2() {
               />
             ))}
           </div>
-          <a href="#" className="watch-story">
-            <span className="circle">
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z" /></svg>
-            </span>
-            <span>Watch<br />Our Story</span>
-          </a>
         </div>
       </section>
 
@@ -277,7 +271,6 @@ export default function Home2() {
               thoughtfully designed <span className="accent">to bring comfort</span>, style and functionality
               to your everyday life.
             </p>
-            <a href="#" className="btn-light">Our Story <Arrow size={14} /></a>
           </div>
           <div className="stats">
             {STATS.map((stat) => (

@@ -1,4 +1,4 @@
-import { Arrow, SiteFooter, SiteHeader } from '../components/Home2Chrome.jsx';
+import { Arrow, SiteFooter, SiteHeader, brandLogo } from '../components/Home2Chrome.jsx';
 import { CATALOGS, getCatalog } from '../data/catalogs.js';
 import { useReveal } from '../lib/reveal.js';
 import { Link } from '../router.jsx';
@@ -25,7 +25,7 @@ export default function Catalog({ slug }) {
   if (!item) {
     return (
       <div className="home2 catalog-page">
-        <SiteHeader onHome={false} active="Catalogs" />
+        <SiteHeader onHome={false} active="Brands" />
         <section className="catalog-missing">
           <div className="wrap">
             <div className="eyebrow">Not Found</div>
@@ -45,7 +45,7 @@ export default function Catalog({ slug }) {
 
   return (
     <div className="home2 catalog-page">
-      <SiteHeader onHome={false} active="Catalogs" />
+      <SiteHeader onHome={false} active="Brands" />
 
       <section className="catalog-hero">
         <div className="wrap catalog-hero-inner">
@@ -58,6 +58,9 @@ export default function Catalog({ slug }) {
               <span className="current">{item.brand}</span>
             </nav>
             <div className="eyebrow">{item.origin} — Partner Brand</div>
+            {brandLogo(item.brand) && (
+              <div className="hero-brand-logo"><img src={brandLogo(item.brand)} alt={`${item.brand} logo`} /></div>
+            )}
             <h1>{item.brand}</h1>
             <div className="catalog-hero-sub">{item.title}</div>
             <p>{item.intro}</p>

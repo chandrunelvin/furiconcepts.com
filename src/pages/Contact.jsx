@@ -2,7 +2,7 @@ import { useEffect, useRef, useState } from 'react';
 import { Arrow, SiteFooter, SiteHeader } from '../components/Home2Chrome.jsx';
 import {
   CONTACT_CTA, CONTACT_FEATURES, CONTACT_HERO, CONTACT_METHODS,
-  COUNTRIES, MAP_PANEL, OFFICES, OFFICES_INTRO, SUBJECTS,
+  COUNTRIES, OFFICES, OFFICES_INTRO, SUBJECTS,
 } from '../data/contact.js';
 import { useReveal } from '../lib/reveal.js';
 import { onScrollFrame, prefersReducedMotion } from '../lib/scroll.js';
@@ -16,9 +16,8 @@ const REVEAL_GROUPS = [
   '.contact-panel',
   '.contact-feature',
   '.offices-intro > *',
-  '.offices-shot',
   '.office-card',
-  '.map-panel-body > *',
+  '.map-tabs',
   '.map-frame',
   '.contact-cta-copy > *',
   '.newsletter-media, .newsletter-body',
@@ -72,13 +71,13 @@ export default function Contact() {
 
   const [sent, setSent] = useState(false);
   const [active, setActive] = useState(OFFICES[0].id);
-  const galleryRef = useRef(null);
 
   const office = OFFICES.find((o) => o.id === active) ?? OFFICES[0];
 
-  const scrollGallery = (dir) => {
-    const el = galleryRef.current;
-    if (el) el.scrollBy({ left: dir * (el.clientWidth * 0.6), behavior: 'smooth' });
+  /** Switches the map to an office and brings the map into view. */
+  const showOnMap = (id) => {
+    setActive(id);
+    document.getElementById('locations')?.scrollIntoView({ behavior: 'smooth', block: 'start' });
   };
 
   return (
@@ -187,28 +186,15 @@ export default function Contact() {
               <h2>{lines(OFFICES_INTRO.title)}</h2>
               <p>{OFFICES_INTRO.text}</p>
             </div>
-            <div className="offices-gallery">
-              <div className="offices-rail" ref={galleryRef}>
-                {OFFICES_INTRO.gallery.map((src, i) => (
-                  <div className="offices-shot" key={src + i}>
-                    <img src={src} alt="" loading="lazy" />
-                  </div>
-                ))}
-              </div>
-              <div className="offices-nav">
-                <button type="button" aria-label="Previous" onClick={() => scrollGallery(-1)}>
-                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2"><path d="M19 12H5M11 18l-6-6 6-6" /></svg>
-                </button>
-                <button type="button" aria-label="Next" onClick={() => scrollGallery(1)}>
-                  <Arrow size={15} />
-                </button>
-              </div>
-            </div>
           </div>
 
           <div className="office-grid">
             {OFFICES.map((o) => (
-              <article className={`office-card ${o.id === active ? 'active' : ''}`.trim()} key={o.id}>
+              <article
+                className={`office-card ${o.id === active ? 'active' : ''}`.trim()}
+                key={o.id}
+                onClick={() => showOnMap(o.id)}
+              >
                 <div className="office-media">
                   {/* the heading names the city directly below, so the photo is
                       decorative; an alt here would just read the city twice */}
@@ -225,11 +211,11 @@ export default function Contact() {
                   </p>
                   <p className="office-line">
                     <Icon name="phone" />
-                    <a href={`tel:${o.phone.replace(/\s/g, '')}`}>{o.phone}</a>
+                    <a href={`tel:${o.phone.replace(/\s/g, '')}`} onClick={(e) => e.stopPropagation()}>{o.phone}</a>
                   </p>
-                  <button type="button" className="link-arrow" onClick={() => {
-                    setActive(o.id);
-                    document.getElementById('locations')?.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                  <button type="button" className="link-arrow" onClick={(e) => {
+                    e.stopPropagation();
+                    showOnMap(o.id);
                   }}>
                     Get Directions <Arrow size={13} />
                   </button>
@@ -242,44 +228,20 @@ export default function Contact() {
 
       {/* ---- map ---- */}
       <section className="locations" id="locations">
-        <div className="wrap locations-inner">
-          <div className="map-panel">
-            <div className="map-panel-media" aria-hidden="true">
-              <img src={MAP_PANEL.image} alt="" loading="lazy" />
-            </div>
-            <div className="map-panel-body">
-            <div className="eyebrow">{MAP_PANEL.eyebrow}</div>
-            <h2>{lines(MAP_PANEL.title)}</h2>
-            <p>{MAP_PANEL.text}</p>
-            <div className="map-office-chips">
-              {OFFICES.map((o) => (
-                <button
-                  key={o.id}
-                  type="button"
-                  className={o.id === active ? 'active' : undefined}
-                  onClick={() => setActive(o.id)}
-                >
-                  {o.city}
-                </button>
-              ))}
-            </div>
-            <a
-              className="btn-light"
-              href={`https://www.google.com/maps/dir/?api=1&destination=${encodeURIComponent(office.coords)}`}
-              target="_blank"
-              rel="noreferrer"
-            >
-              {MAP_PANEL.cta.label} <Arrow size={14} />
-            </a>
-            <div className="map-stats">
-              {MAP_PANEL.stats.map((s) => (
-                <div key={s.label}>
-                  <div className="map-stat-num">{s.num}</div>
-                  <div className="map-stat-label">{s.label}</div>
-                </div>
-              ))}
-            </div>
-            </div>
+        <div className="wrap">
+          <div className="map-tabs" role="tablist" aria-label="Office locations">
+            {OFFICES.map((o) => (
+              <button
+                key={o.id}
+                type="button"
+                role="tab"
+                aria-selected={o.id === active}
+                className={o.id === active ? 'active' : undefined}
+                onClick={() => setActive(o.id)}
+              >
+                {o.city}
+              </button>
+            ))}
           </div>
           <div className="map-frame">
             <iframe

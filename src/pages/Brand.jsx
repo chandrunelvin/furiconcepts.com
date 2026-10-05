@@ -1,6 +1,6 @@
 import { useEffect, useMemo, useRef, useState } from 'react';
 import BrandIcon from '../components/BrandIcons.jsx';
-import { Arrow, SiteFooter, SiteHeader } from '../components/Home2Chrome.jsx';
+import { Arrow, SiteFooter, SiteHeader, brandLogo } from '../components/Home2Chrome.jsx';
 import { getBrand } from '../data/brands.js';
 import { useReveal } from '../lib/reveal.js';
 import { onScrollFrame, prefersReducedMotion } from '../lib/scroll.js';
@@ -176,7 +176,7 @@ export default function Brand({ slug }) {
   if (!brand) {
     return (
       <div className="home2 catalog-page">
-        <SiteHeader onHome={false} active="Catalogs" />
+        <SiteHeader onHome={false} active="Brands" />
         <section className="catalog-missing">
           <div className="wrap">
             <div className="eyebrow">Not Found</div>
@@ -192,7 +192,7 @@ export default function Brand({ slug }) {
 
   return (
     <div className="home2 brand-page">
-      <SiteHeader onHome={false} active="Catalogs" />
+      <SiteHeader onHome={false} active="Brands" />
 
       {/* ---- hero ---- */}
       <section className="brand-hero">
@@ -203,6 +203,9 @@ export default function Brand({ slug }) {
         </div>
         <div className="wrap brand-hero-inner">
           <div className="eyebrow">{brand.eyebrow}</div>
+          {brandLogo(brand.name) && (
+            <div className="hero-brand-logo"><img src={brandLogo(brand.name)} alt={`${brand.name} logo`} /></div>
+          )}
           <h1>{brand.name}</h1>
           <div className="brand-hero-tagline">{lines(brand.tagline)}</div>
           <p>{brand.heroText}</p>
@@ -210,12 +213,6 @@ export default function Brand({ slug }) {
             {brand.heroCta.label} <Arrow />
           </a>
         </div>
-        <a href={brand.video.href} className="brand-video">
-          <span className="brand-video-play">
-            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M9 6.5v11l9-5.5-9-5.5z" /></svg>
-          </span>
-          <span className="brand-video-label">{lines(brand.video.label)}</span>
-        </a>
       </section>
 
       {/* ---- feature strip ---- */}
@@ -392,7 +389,7 @@ export default function Brand({ slug }) {
           ) : (
             <p className="brand-empty">
               Nothing in this category yet — tell us what you need and we&apos;ll source it.{' '}
-              <a href="/#contact">Get in touch</a>.
+              <Link to="/contact">Get in touch</Link>.
             </p>
           )}
 

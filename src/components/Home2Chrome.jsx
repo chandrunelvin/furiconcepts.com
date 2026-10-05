@@ -12,25 +12,35 @@ import { Link } from '../router.jsx';
  * (furniconcepts.com/brands-view.php), in the same order. Cavaletti has a full
  * brand page; the rest point at their catalogue page until theirs is built.
  * Safe Lockers has neither yet, so it falls back to the catalogues section.
+ * Logos are the ones furniconcepts.sg uses for the same brands.
  */
+const logo = (file) => `/images/brand-logo/${file}`;
+
 export const BRAND_MENU = [
-  { label: 'Cavaletti', path: '/brands/cavaletti' },
-  { label: 'Gebbwork', path: '/catalogs/gebb-work' },
-  { label: 'Leadcom', path: '/catalogs/leadcom' },
-  { label: 'Forma5', path: '/catalogs/forma5' },
-  { label: 'Broad Power', path: '/catalogs/broad-power' },
-  { label: 'Musepod', path: '/catalogs/musepod' },
-  { label: 'Zumbooth', path: '/catalogs/zumbooth' },
-  { label: 'Libero Italy', path: '/catalogs/libero-italy' },
-  { label: 'Nitrocare', path: '/catalogs/nitrocare' },
-  { label: 'Jwesys', path: '/catalogs/jwesys' },
-  { label: 'Audia Italia', path: '/catalogs/audia-italia' },
-  { label: 'Scab Italy', path: '/catalogs/scab-italy' },
-  { label: 'Markant', path: '/catalogs/markant' },
-  { label: 'Worklyffe', path: '/catalogs/worklyffe' },
-  { label: 'Parin', path: '/catalogs/parin' },
-  { label: 'Safe Lockers', href: '#catalogs' },
+  { label: 'Cavaletti', path: '/brands/cavaletti', logo: logo('cavaletti-cadeiras-profissionais-seeklogo.png') },
+  { label: 'Gebbwork', path: '/catalogs/gebb-work', logo: logo('gebbwork-logo.png') },
+  { label: 'Leadcom', path: '/catalogs/leadcom', logo: logo('leadcom-logo.png') },
+  { label: 'Forma5', path: '/catalogs/forma5', logo: logo('forma5-logo.png') },
+  { label: 'Broad Power', path: '/catalogs/broad-power', logo: logo('broad-power-logo.png') },
+  { label: 'Musepod', path: '/catalogs/musepod', logo: logo('musepod-logo.jpeg') },
+  { label: 'Zumbooth', path: '/catalogs/zumbooth', logo: logo('zumbooth-logo.png') },
+  { label: 'Libero Italy', path: '/catalogs/libero-italy', logo: logo('libero-logo.png') },
+  { label: 'Nitrocare', path: '/catalogs/nitrocare', logo: logo('nitrocare-logo.jpeg') },
+  { label: 'Jwesys', path: '/catalogs/jwesys', logo: logo('jwesys-logo.png') },
+  { label: 'Audia Italia', path: '/catalogs/audia-italia', logo: logo('audia-logo.png') },
+  { label: 'Scab Italy', path: '/catalogs/scab-italy', logo: logo('scab-logo.webp') },
+  { label: 'Markant', path: '/catalogs/markant', logo: logo('markant-logo.webp') },
+  { label: 'Worklyffe', path: '/catalogs/worklyffe', logo: logo('worklyffe-logo.png') },
+  { label: 'Parin', path: '/catalogs/parin', logo: logo('PARIN_LOGO.png') },
+  { label: 'Bestuhl', path: '/catalogs/bestuhl', logo: logo('bestuhl-logo.webp') },
+  { label: 'Merryfair', path: '/catalogs/merryfair', logo: logo('merryfair_logo.png') },
+  { label: 'Safe Lockers', href: '#catalogs', logo: logo('vssafebox-safe-lockers-logo.png') },
 ];
+
+/** A brand's logo by name; spacing and case are ignored ("Gebb Work" = "Gebbwork"). */
+const brandKey = (name) => name.toLowerCase().replace(/\s+/g, '');
+export const brandLogo = (name) =>
+  BRAND_MENU.find((b) => brandKey(b.label) === brandKey(name))?.logo;
 
 export const NAV = [
   { label: 'Home', href: '#top' },
@@ -40,7 +50,6 @@ export const NAV = [
   { label: 'Catalogs', href: '#catalogs' },
   { label: 'Projects', href: '#journal' },
   { label: 'Blog', path: '/blog' },
-  { label: 'Contact', href: '#contact', path: '/contact' },
 ];
 
 export const Arrow = ({ size = 15, width = 2.4 }) => (
@@ -149,7 +158,9 @@ export function SiteHeader({ onHome = true, active = 'Home' }) {
                     <ul className="sub-menu">
                       {item.children.map((child) => (
                         <li key={child.label}>
-                          <NavLink item={child} onHome={onHome}>{child.label}</NavLink>
+                          <NavLink item={child} onHome={onHome} className={child.logo ? 'sub-logo' : undefined}>
+                            {child.logo ? <img src={child.logo} alt={child.label} loading="lazy" /> : child.label}
+                          </NavLink>
                         </li>
                       ))}
                     </ul>
@@ -162,7 +173,7 @@ export function SiteHeader({ onHome = true, active = 'Home' }) {
             <svg className="icon-btn" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8">
               <circle cx="11" cy="11" r="7" /><path d="M21 21l-4.3-4.3" />
             </svg>
-            <a href={navHref({ href: '#contact' }, onHome)} className="cta">Get in Touch <Arrow size={14} /></a>
+            <Link to="/contact" className="cta">Get in Touch <Arrow size={14} /></Link>
             <button className="menu-toggle" aria-label="Open menu" aria-expanded={menuOpen} onClick={() => setMenuOpen(true)}>
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round">
                 <path d="M4 7h16M4 12h16M4 17h16" />
@@ -202,10 +213,12 @@ export function SiteHeader({ onHome = true, active = 'Home' }) {
                   </svg>
                 </button>
                 {openGroup === item.label && (
-                  <div className="menu-group-links">
+                  <div className={`menu-group-links ${item.children.some((c) => c.logo) ? 'logos' : ''}`.trim()}>
                     {item.children.map((child) => (
                       <NavLink key={child.label} item={child} onHome={onHome} onClick={() => setMenuOpen(false)}>
-                        {child.label} <Arrow size={13} />
+                        {child.logo
+                          ? <img src={child.logo} alt={child.label} loading="lazy" />
+                          : <>{child.label} <Arrow size={13} /></>}
                       </NavLink>
                     ))}
                   </div>
@@ -219,7 +232,7 @@ export function SiteHeader({ onHome = true, active = 'Home' }) {
           )}
         </nav>
         <div className="menu-foot">
-          <a href={navHref({ href: '#contact' }, onHome)} className="cta" onClick={() => setMenuOpen(false)}>Get in Touch <Arrow size={14} /></a>
+          <Link to="/contact" className="cta" onClick={() => setMenuOpen(false)}>Get in Touch <Arrow size={14} /></Link>
           <div className="menu-tagline">One stop solutions to all your furniture needs.</div>
           <SocialRow />
         </div>

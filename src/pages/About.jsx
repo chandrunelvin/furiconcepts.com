@@ -93,12 +93,6 @@ export default function About() {
           </div>
           <div className="about-story-media">
             <img src="/images/common/crafted-precision.jpg" alt="Lounge seating in a daylit interior" loading="lazy" />
-            <a href="#" className="watch-story">
-              <span className="circle">
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z" /></svg>
-              </span>
-              <span>Watch<br />Our Story</span>
-            </a>
           </div>
         </div>
       </section>
@@ -201,7 +195,7 @@ export default function About() {
           <div className="about-cta-copy">
             <h2>Let&apos;s Create<br />Better Spaces Together</h2>
             <p>Get in touch with our team to know more about our collections, partner brands or project enquiries.</p>
-            <a href="mailto:letstalk@furniconcepts.com" className="btn-primary">Get in Touch <Arrow /></a>
+            <Link to="/contact" className="btn-primary">Get in Touch <Arrow /></Link>
           </div>
         </div>
       </section>
