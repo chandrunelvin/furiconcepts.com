@@ -6,12 +6,11 @@
  * Every other brand is built from brand-source.json (the furniconcepts.sg
  * brand data) by buildBrand below, into the same shape Cavaletti uses.
  */
-import { CATALOGS } from './catalogs.js';
 import SOURCE from './brand-source.json';
 
 const img = (name) => `/images/cavaletti/${name}.jpg`;
 /** Product shots pulled from the live Cavaletti page (furniconcepts.com/cavaletti.php). */
-const product = (name) => `/images/cavaletti/products/${name}.jpg`;
+const product = (name) => `/images/cavaletti/products/${name}.webp`;
 
 export const BRANDS = {
   cavaletti: {
@@ -71,7 +70,7 @@ export const BRANDS = {
       title: 'Explore the Complete Cavaletti Collection',
       intro:
         'Ergonomic task chairs, executive chairs, lounge seating, training chairs and collaborative seating systems.',
-      download: { label: 'Download Catalogue', href: '/catalogs/cavaletti' },
+      download: { label: 'Download Catalogue', href: '/download-profiles/cavaletti' },
       /* the enquiry modal's WhatsApp hand-off, matching the live site's number
          and message format */
       whatsapp: '971503782215',
@@ -264,8 +263,25 @@ const HERO = new Set([
   'markant', 'musepod', 'nitrocare', 'scab-italy', 'worklyffe', 'zumbooth',
 ]);
 
-/** Brand slugs whose catalogue page lives under a different slug. */
-const CATALOG_SLUG = { gebbwork: 'gebb-work' };
+/**
+ * Where each brand's "Download Catalogue" button leads: its Download Profiles
+ * page, or the Furniconcepts collection that carries its PDFs. Brands with no
+ * PDFs offer "Request Catalogue" instead.
+ */
+const DOWNLOADS = {
+  gebbwork: 'gebbwork',
+  leadcom: 'leadcom',
+  nitrocare: 'nitrocare',
+  jwesys: 'jwesys',
+  'audia-italia': 'audia-italia',
+  'scab-italy': 'scab',
+  markant: 'markant',
+  worklyffe: 'worklyffe',
+  parin: 'parin',
+  'broad-power': 'furniconcepts/power-modules',
+  musepod: 'furniconcepts/phone-booth',
+  zumbooth: 'furniconcepts/phone-booth',
+};
 
 /** Some source URLs arrive already percent-encoded; decode first so they aren't encoded twice. */
 const imageUrl = (url) => encodeURI(decodeURI(url));
@@ -302,7 +318,7 @@ const FEATURE_ICONS = [
 function buildBrand(src) {
   const ed = src.editorial ?? {};
   const heroImage = HERO.has(src.slug) ? `/images/brands/${src.slug}.jpg` : null;
-  const catalog = CATALOGS.find((c) => c.slug === (CATALOG_SLUG[src.slug] ?? src.slug));
+  const downloads = DOWNLOADS[src.slug];
 
   const seen = new Map();
   const items = src.groups.flatMap((g) =>
@@ -370,8 +386,8 @@ function buildBrand(src) {
       eyebrow: `${src.name} Products`,
       title: `Explore the Complete ${src.name} Collection`,
       intro: src.summary ?? src.tagline,
-      download: catalog
-        ? { label: 'Download Catalogue', href: `/catalogs/${catalog.slug}` }
+      download: downloads
+        ? { label: 'Download Catalogue', href: `/download-profiles/${downloads}` }
         : { label: 'Request Catalogue', href: '/contact' },
       whatsapp: '971503782215',
       enquiryNote: 'Send us an enquiry now, we will get back to you asap.',
@@ -387,18 +403,7 @@ function buildBrand(src) {
       items,
     },
 
-    // with more than one range, the cards below the grid jump to each range
-    applications: src.groups.length > 1 ? {
-      eyebrow: 'Collections',
-      title: `${src.name} Collections`,
-      contain: true,
-      items: src.groups.slice(0, 5).map((g) => ({
-        title: g.title,
-        text: `${g.items.length} product${g.items.length === 1 ? '' : 's'}`,
-        image: imageUrl(g.items[0].img),
-        category: slugify(g.title),
-      })),
-    } : null,
+    applications: null,
 
     faq: ed.faq?.length ? {
       eyebrow: 'FAQ',
