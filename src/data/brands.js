@@ -418,3 +418,19 @@ function buildBrand(src) {
 for (const src of SOURCE) BRANDS[src.slug] = buildBrand(src);
 
 export const getBrand = (slug) => BRANDS[slug];
+
+/**
+ * The quotation band closing every brand page (it used to close the contact
+ * page), worded for the brand.
+ */
+export const quoteCta = (brand) => ({
+  eyebrow: "Let's Create Your Ideal Workspace",
+  title: `Need a Custom\n${brand.name} Solution?`,
+  text:
+    `Our team will help you choose the right ${brand.name} products, plan a workspace tailored to your project, ` +
+    'and send you the best quotation for your requirements across the UAE, India and Singapore.',
+  cta: { label: 'Request a Quotation', href: '/contact' },
+  // brands without PDFs only offer "Request Catalogue", which the quotation button already covers
+  secondary: brand.products?.download?.href !== '/contact' ? brand.products?.download : null,
+  image: '/images/contact-us/reaquest-qoute-image.webp',
+});

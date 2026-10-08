@@ -1,7 +1,7 @@
 import { useEffect, useMemo, useRef, useState } from 'react';
 import BrandIcon from '../components/BrandIcons.jsx';
 import { Arrow, SiteFooter, SiteHeader, brandLogo } from '../components/Home2Chrome.jsx';
-import { getBrand } from '../data/brands.js';
+import { getBrand, quoteCta } from '../data/brands.js';
 import { useReveal } from '../lib/reveal.js';
 import { onScrollFrame, prefersReducedMotion } from '../lib/scroll.js';
 import { Link } from '../router.jsx';
@@ -46,6 +46,7 @@ const REVEAL_GROUPS = [
   '.brand-app',
   '.brand-faq-copy > *',
   '.brand-faq-item',
+  '.contact-cta-copy > *',
   '.newsletter-media, .newsletter-body',
   'footer .footer-brand, footer .footer-col, footer .footer-bottom',
 ];
@@ -118,6 +119,7 @@ export default function Brand({ slug }) {
   const heroLayer = useParallax(0.25);
   const whyLayer = useParallax(0.2);
   const faqLayer = useParallax(0.2);
+  const ctaLayer = useParallax(0.18);
 
   const visible = useMemo(() => {
     if (!products) return [];
@@ -481,6 +483,37 @@ export default function Brand({ slug }) {
         </div>
       </section>
       )}
+
+      {/* ---- quotation band ---- */}
+      {(() => {
+        const cta = quoteCta(brand);
+        return (
+          <section className="contact-cta brand-cta">
+            <div className="contact-cta-media" aria-hidden="true">
+              <div className="img-parallax" ref={ctaLayer}>
+                <img src={cta.image} alt="" loading="lazy" />
+              </div>
+            </div>
+            <div className="wrap contact-cta-inner">
+              <div className="contact-cta-copy">
+                <div className="eyebrow">{cta.eyebrow}</div>
+                <h2>{lines(cta.title)}</h2>
+                <p>{cta.text}</p>
+                <div className="brand-cta-actions">
+                  <Link to={cta.cta.href} className="btn-primary">
+                    {cta.cta.label} <Arrow size={14} />
+                  </Link>
+                  {cta.secondary && (
+                    <Link to={cta.secondary.href} className="btn-ghost">
+                      {cta.secondary.label} <Arrow size={14} />
+                    </Link>
+                  )}
+                </div>
+              </div>
+            </div>
+          </section>
+        );
+      })()}
 
       {enquiry && (
         <div className="brand-modal" role="dialog" aria-modal="true" aria-labelledby="enquiry-title">

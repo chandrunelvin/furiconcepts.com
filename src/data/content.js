@@ -115,7 +115,7 @@ export const OFFICES = [
       { label: '+65 8235 2565', href: 'tel:+6582352565' },
       { label: '+65 8093 3197', href: 'tel:+6580933197' },
     ],
-    address: '450 Yishun Ring Road, Floor 6, Unit 112',
+    address: '2 Venture Dr, #12-11B, Singapore 608526',
   },
 ];
 

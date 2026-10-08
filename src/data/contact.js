@@ -33,7 +33,7 @@ export const CONTACT_METHODS = [
   {
     icon: 'pin',
     label: 'Furniconcepts Global',
-    note: 'UAE  |  India  |  Singapore  |  Oman',
+    note: 'UAE  |  India  |  Singapore',
     href: '#offices',
   },
   {
@@ -55,14 +55,14 @@ export const CONTACT_FEATURES = [
   { icon: 'clock', title: 'Quick Response', text: 'We reply within 24 hours' },
   { icon: 'people', title: 'Expert Support', text: 'Get advice from our specialists' },
   { icon: 'doc', title: 'Project Consultation', text: 'From planning to execution' },
-  { icon: 'globe', title: 'Global Presence', text: 'Serving across UAE, India, Singapore & Oman' },
+  { icon: 'globe', title: 'Global Presence', text: 'Serving across UAE, India & Singapore' },
 ];
 
 export const OFFICES_INTRO = {
   eyebrow: 'Our Offices',
   title: 'Global Presence,\nLocal Support',
   text:
-    'Furniconcepts is proudly present across UAE, India, Singapore and Oman, bringing world-class furniture solutions to businesses of all sizes.',
+    'Furniconcepts is proudly present across UAE, India and Singapore, with our own factory in Dubai, bringing world-class furniture solutions to businesses of all sizes.',
 };
 
 export const OFFICES = [
@@ -91,45 +91,26 @@ export const OFFICES = [
   {
     id: 'singapore',
     city: 'Singapore',
-    company: 'Furniconcepts PTE Limited',
-    address: '450 Yishun Ring Road, Floor 6, Unit 112, Singapore 760450',
+    company: 'FURNICONCEPTS PTE. LTD',
+    address: '2 Venture Dr, #12-11B, Singapore 608526',
     phone: '+65 8235 2565',
     image: place('singapore'),
     embed: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.832692900309!2d103.8441005!3d1.4220879!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31da1513a3c61c53%3A0xc531a37504eacf19!2sFURNICONCEPTS%20PTE.%20LTD.!5e0!3m2!1sen!2sin!4v1716712744696!5m2!1sen!2sin',
     coords: '1.4220879,103.8441005',
   },
   {
-    id: 'muscat',
-    city: 'Oman – Muscat',
-    company: 'Furniconcepts Oman',
-    address: 'PC 112, P.O. Box 543, Muscat, Sultanate of Oman',
-    phone: '+971 50 378 2215',
-    image: place('omen'),
-    /* the address is a PO box, so the pin covers the postal district */
-    embed: 'https://maps.google.com/maps?q=Muscat%20PC%20112%2C%20Oman&z=12&output=embed',
-    coords: 'Muscat PC 112, Oman',
+    id: 'factory',
+    city: 'Libero Factory UAE',
+    tag: 'Factory',
+    company: 'Italseat Furniture Factory',
+    address: 'Mina Jebel Ali - Jabal Ali Industrial First - Dubai - United Arab Emirates',
+    phone: '+971 50 378 2215, +971 4 257 9447',
+    email: 'letstalk@furniconcepts.com',
+    image: place('factory'),
+    embed: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3615.8254486764286!2d55.1217724!3d25.006046499999997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f13ebdb496077%3A0x75efff34aaddee6!2sITALSEAT%20FURNITURE%20FACTORY!5e0!3m2!1sen!2sin!4v1791457854975!5m2!1sen!2sin',
+    coords: '25.0060465,55.1217724',
   },
 ];
-
-export const ITALSEAT = {
-  id: 'italseat',
-  city: 'UAE \u2013 Jebel Ali',
-  tag: 'Factory',
-  company: 'Italseat Furniture Factory',
-  address: 'Mina Jebel Ali, Jabal Ali Industrial First, Dubai, United Arab Emirates',
-  phone: '+971 4 257 9447',
-  embed: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3615.8246921739546!2d55.1219251!3d25.0060722!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f13ebdb496077%3A0x75efff34aaddee6!2sITALSEAT%20FURNITURE%20FACTORY!5e0!3m2!1sen!2sin!4v1743504544652!5m2!1sen!2sin',
-  coords: '25.0060722,55.1219251',
-};
-
-export const CONTACT_CTA = {
-  eyebrow: "Let's Create Your Ideal Workspace",
-  title: 'Need a Custom\nWorkspace Solution?',
-  text:
-    'Our team will help you choose the right products, create a tailored workspace plan, and provide the best quotation for your requirements.',
-  cta: { label: 'Request a Quotation', href: '#get-in-touch' },
-  image: '/images/contact-us/reaquest-qoute-image.webp',
-};
 
 export const COUNTRIES = ['United Arab Emirates', 'India', 'Singapore', 'Oman', 'Saudi Arabia', 'Qatar', 'Other'];
 

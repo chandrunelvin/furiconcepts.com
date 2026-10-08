@@ -33,9 +33,10 @@ export function SocialRow({ networks = ['instagram', 'pinterest', 'linkedin'] })
   return (
     <div className="social-row">
       {networks.map((key) => {
-        const { label, Icon } = SOCIALS[key];
+        const { label, Icon, href } = SOCIALS[key];
         return (
-          <a key={key} href="#" aria-label={label}>
+          <a key={key} href={href} aria-label={label}
+             {...(href !== '#' && { target: '_blank', rel: 'noopener noreferrer' })}>
             <Icon />
           </a>
         );

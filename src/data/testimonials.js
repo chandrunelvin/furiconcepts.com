@@ -33,9 +33,9 @@ export const ENTITIES = [
     phones: [{ label: '+91 93636 07900', href: 'tel:+919363607900' }],
   },
   {
-    name: 'Furniconcepts PTE Limited',
+    name: 'FURNICONCEPTS PTE. LTD',
     place: 'Singapore',
-    address: '450 Yishun Ring Road, Floor 6, Unit 112, Singapore 760450',
+    address: '2 Venture Dr, #12-11B, Singapore 608526',
     phones: [
       { label: '+65 8235 2565', href: 'tel:+6582352565' },
       { label: '+65 8093 3197', href: 'tel:+6580933197' },

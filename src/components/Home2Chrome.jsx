@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import { Link } from '../router.jsx';
+import { Link, usePath } from '../router.jsx';
 
 /**
  * Header, slide-out menu and footer shared by the Home2 page and the brand
@@ -63,7 +63,18 @@ export const Diagonal = () => (
   </svg>
 );
 
-/** One source for the social links, shared by the menu drawer and the footer. */
+/**
+ * One source for the social links, shared by the menu drawer and the footer.
+ * URLs are the ones furniconcepts.com/home.html links to.
+ */
+export const SOCIAL_URLS = {
+  Instagram: 'https://www.instagram.com/furniconcepts_/',
+  Pinterest: 'https://in.pinterest.com/furniconcepts/',
+  Facebook: 'https://www.facebook.com/profile.php?id=61550794511232',
+  LinkedIn: 'https://www.linkedin.com/company/furniconcepts/',
+  YouTube: 'https://www.youtube.com/@FurniconceptsOfficial',
+};
+
 const SOCIALS = [
   { label: 'Instagram', path: <><rect x="3" y="3" width="18" height="18" rx="5" /><circle cx="12" cy="12" r="4" /><circle cx="17.5" cy="6.5" r="1" /></> },
   // the Pinterest "P" is a filled mark, scaled down to sit level with the outlined icons
@@ -76,7 +87,8 @@ const SOCIALS = [
 export const SocialRow = () => (
   <div className="socials">
     {SOCIALS.map((s) => (
-      <a href="#" key={s.label} aria-label={s.label}>
+      <a href={SOCIAL_URLS[s.label]} key={s.label} aria-label={s.label}
+         {...(SOCIAL_URLS[s.label] !== '#' && { target: '_blank', rel: 'noopener noreferrer' })}>
         <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">{s.path}</svg>
       </a>
     ))}
@@ -99,10 +111,10 @@ export function Logo() {
 const navHref = (item, onHome) =>
   item.path ?? (onHome ? item.href : `/${item.href}`);
 
-function NavLink({ item, onHome, className, onClick, children }) {
+function NavLink({ item, onHome, className, onClick, children, current }) {
   if (item.path) {
     return (
-      <Link to={item.path} className={className} onClick={onClick}>
+      <Link to={item.path} className={className} onClick={onClick} aria-current={current ? 'page' : undefined}>
         {children}
       </Link>
     );
@@ -114,7 +126,12 @@ function NavLink({ item, onHome, className, onClick, children }) {
   );
 }
 
+/** Class for a dropdown entry: logo tiles, and the page the reader is on. */
+const childClass = (child, path) =>
+  [child.logo && 'sub-logo', child.path === path && 'is-current'].filter(Boolean).join(' ') || undefined;
+
 export function SiteHeader({ onHome = true, active = 'Home' }) {
+  const path = usePath();
   const [scrolled, setScrolled] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
   const [openGroup, setOpenGroup] = useState(null);
@@ -158,7 +175,7 @@ export function SiteHeader({ onHome = true, active = 'Home' }) {
                     <ul className="sub-menu">
                       {item.children.map((child) => (
                         <li key={child.label}>
-                          <NavLink item={child} onHome={onHome} className={child.logo ? 'sub-logo' : undefined}>
+                          <NavLink item={child} onHome={onHome} className={childClass(child, path)} current={child.path === path}>
                             {child.logo ? <img src={child.logo} alt={child.label} loading="lazy" /> : child.label}
                           </NavLink>
                         </li>
@@ -215,7 +232,8 @@ export function SiteHeader({ onHome = true, active = 'Home' }) {
                 {openGroup === item.label && (
                   <div className={`menu-group-links ${item.children.some((c) => c.logo) ? 'logos' : ''}`.trim()}>
                     {item.children.map((child) => (
-                      <NavLink key={child.label} item={child} onHome={onHome} onClick={() => setMenuOpen(false)}>
+                      <NavLink key={child.label} item={child} onHome={onHome} onClick={() => setMenuOpen(false)}
+                               className={child.path === path ? 'is-current' : undefined} current={child.path === path}>
                         {child.logo
                           ? <img src={child.logo} alt={child.label} loading="lazy" />
                           : <>{child.label} <Arrow size={13} /></>}

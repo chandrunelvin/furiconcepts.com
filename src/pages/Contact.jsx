@@ -1,7 +1,7 @@
 import { useEffect, useRef, useState } from 'react';
 import { Arrow, SiteFooter, SiteHeader } from '../components/Home2Chrome.jsx';
 import {
-  CONTACT_CTA, CONTACT_FEATURES, CONTACT_HERO, CONTACT_METHODS,
+  CONTACT_FEATURES, CONTACT_HERO, CONTACT_METHODS,
   COUNTRIES, OFFICES, OFFICES_INTRO, SUBJECTS,
 } from '../data/contact.js';
 import { useReveal } from '../lib/reveal.js';
@@ -17,9 +17,7 @@ const REVEAL_GROUPS = [
   '.contact-feature',
   '.offices-intro > *',
   '.office-card',
-  '.map-tabs',
   '.map-frame',
-  '.contact-cta-copy > *',
   '.newsletter-media, .newsletter-body',
   'footer .footer-brand, footer .footer-col, footer .footer-bottom',
 ];
@@ -67,7 +65,6 @@ const Icon = ({ name }) => {
 export default function Contact() {
   useReveal(REVEAL_GROUPS);
   const heroLayer = useParallax(0.25);
-  const ctaLayer = useParallax(0.18);
 
   const [sent, setSent] = useState(false);
   const [active, setActive] = useState(OFFICES[0].id);
@@ -142,7 +139,7 @@ export default function Contact() {
             <aside className="contact-info-side">
               <div className="eyebrow">Contact Information</div>
               <h2>We&apos;re Here to Help</h2>
-              <p>Get in touch with our offices across UAE, India, Singapore and Oman.</p>
+              <p>Get in touch with our offices across UAE, India and Singapore.</p>
               <ul className="contact-methods">
                 {CONTACT_METHODS.map((m) => (
                   <li key={m.label}>
@@ -211,8 +208,21 @@ export default function Contact() {
                   </p>
                   <p className="office-line">
                     <Icon name="phone" />
-                    <a href={`tel:${o.phone.replace(/\s/g, '')}`} onClick={(e) => e.stopPropagation()}>{o.phone}</a>
+                    <span>
+                      {o.phone.split(/,\s*/).map((tel, i) => (
+                        <span key={tel}>
+                          {i > 0 && ', '}
+                          <a href={`tel:${tel.replace(/\s/g, '')}`} onClick={(e) => e.stopPropagation()}>{tel}</a>
+                        </span>
+                      ))}
+                    </span>
                   </p>
+                  {o.email && (
+                    <p className="office-line">
+                      <Icon name="mail" />
+                      <a href={`mailto:${o.email}`} onClick={(e) => e.stopPropagation()}>{o.email}</a>
+                    </p>
+                  )}
                   <button type="button" className="link-arrow" onClick={(e) => {
                     e.stopPropagation();
                     showOnMap(o.id);
@@ -226,23 +236,9 @@ export default function Contact() {
         </div>
       </section>
 
-      {/* ---- map ---- */}
+      {/* ---- map: the office cards above choose which office it shows ---- */}
       <section className="locations" id="locations">
         <div className="wrap">
-          <div className="map-tabs" role="tablist" aria-label="Office locations">
-            {OFFICES.map((o) => (
-              <button
-                key={o.id}
-                type="button"
-                role="tab"
-                aria-selected={o.id === active}
-                className={o.id === active ? 'active' : undefined}
-                onClick={() => setActive(o.id)}
-              >
-                {o.city}
-              </button>
-            ))}
-          </div>
           <div className="map-frame">
             <iframe
               title={`Map of the ${office.city} office`}
@@ -250,25 +246,6 @@ export default function Contact() {
               loading="lazy"
               referrerPolicy="no-referrer-when-downgrade"
             />
-          </div>
-        </div>
-      </section>
-
-      {/* ---- quotation cta ---- */}
-      <section className="contact-cta">
-        <div className="contact-cta-media" aria-hidden="true">
-          <div className="img-parallax" ref={ctaLayer}>
-            <img src={CONTACT_CTA.image} alt="" loading="lazy" />
-          </div>
-        </div>
-        <div className="wrap contact-cta-inner">
-          <div className="contact-cta-copy">
-            <div className="eyebrow">{CONTACT_CTA.eyebrow}</div>
-            <h2>{lines(CONTACT_CTA.title)}</h2>
-            <p>{CONTACT_CTA.text}</p>
-            <a href={CONTACT_CTA.cta.href} className="btn-primary">
-              {CONTACT_CTA.cta.label} <Arrow size={14} />
-            </a>
           </div>
         </div>
       </section>

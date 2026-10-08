@@ -52,8 +52,8 @@ export const Facebook = () => (
 );
 
 export const SOCIALS = {
-  instagram: { label: 'Instagram', Icon: Instagram },
-  facebook: { label: 'Facebook', Icon: Facebook },
-  pinterest: { label: 'Pinterest', Icon: Pinterest },
-  linkedin: { label: 'LinkedIn', Icon: LinkedIn },
+  instagram: { label: 'Instagram', Icon: Instagram, href: 'https://www.instagram.com/furniconcepts_/' },
+  facebook: { label: 'Facebook', Icon: Facebook, href: 'https://www.facebook.com/profile.php?id=61550794511232' },
+  pinterest: { label: 'Pinterest', Icon: Pinterest, href: 'https://in.pinterest.com/furniconcepts/' },
+  linkedin: { label: 'LinkedIn', Icon: LinkedIn, href: 'https://www.linkedin.com/company/furniconcepts/' },
 };

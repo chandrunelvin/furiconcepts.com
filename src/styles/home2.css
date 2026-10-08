@@ -1862,6 +1862,19 @@
   box-shadow:0 10px 20px -14px rgba(15,38,32,.5);
 }
 .home2 nav.main-nav .sub-menu a.sub-logo img{ width:100%;height:100%;object-fit:contain; }
+/* the brand page the reader is on */
+.home2 nav.main-nav .sub-menu a.sub-logo.is-current,
+.home2 .menu-group-links.logos a.is-current{
+  position:relative;border-color:var(--green);background:#f1f8f4;
+  box-shadow:inset 0 0 0 1px var(--green);
+}
+.home2 nav.main-nav .sub-menu a.sub-logo.is-current::before,
+.home2 .menu-group-links.logos a.is-current::before{
+  content:'';position:absolute;top:-6px;right:-6px;width:18px;height:18px;border-radius:50%;
+  background:var(--green) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='white' stroke-width='3.2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M6 12.5l4 4 8-9'/%3E%3C/svg%3E") center/11px no-repeat;
+  box-shadow:0 0 0 2px #fff;
+}
+.home2 .menu-group-links a.is-current{ color:var(--green);font-weight:600; }
 
 /* ---- the same group inside the slide-out panel ---- */
 .home2 .menu-group-toggle{
@@ -2132,14 +2145,6 @@
 .home2 .locations{ padding:0 0 100px; }
 @media(max-width:900px){ .home2 .locations{ padding-bottom:64px; } }
 .home2 .locations{ scroll-margin-top:96px; }
-.home2 .map-tabs{ display:flex;flex-wrap:wrap;gap:10px;margin-bottom:22px; }
-.home2 .map-tabs button{
-  font-family:inherit;font-size:13.5px;font-weight:500;color:var(--ink-soft);
-  background:#fff;border:1px solid var(--line);border-radius:30px;padding:10px 20px;cursor:pointer;
-  transition:background .2s, border-color .2s, color .2s;
-}
-.home2 .map-tabs button:hover{ border-color:var(--green);color:var(--green); }
-.home2 .map-tabs button.active{ background:var(--green);border-color:var(--green);color:#fff; }
 .home2 .map-frame{
   position:relative;height:520px;background:var(--card);
   border-radius:var(--radius);overflow:hidden;box-shadow:0 30px 60px -40px rgba(11,32,25,.45);
@@ -2161,6 +2166,8 @@
 }
 .home2 .contact-cta-copy h2 .line{ display:block; }
 .home2 .contact-cta-copy p{ font-size:14.5px;color:var(--ink-soft);line-height:1.7;margin-bottom:26px; }
+.home2 .brand-cta-actions{ display:flex;flex-wrap:wrap;gap:12px; }
+.home2 .brand-cta .btn-ghost{ background:rgba(250,249,246,.85); }
 
 /* ---- responsive ---- */
 @media(max-width:1100px){
@@ -2188,8 +2195,7 @@
   .home2 .method-label{ font-size:13.5px;word-break:break-word; }
   .home2 .office-grid{ grid-template-columns:1fr; }
   .home2 .map-frame{ height:360px; }
-  .home2 .map-tabs button{ padding:9px 15px;font-size:12.5px; }
-  /* stacked, the crop loses the pale left field and the copy would land on
+    /* stacked, the crop loses the pale left field and the copy would land on
      the photography, so a flat wash goes back over it here */
   .home2 .contact-cta::after{
     content:'';position:absolute;inset:0;z-index:1;pointer-events:none;
