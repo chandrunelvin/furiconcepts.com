@@ -47,7 +47,7 @@ export const NAV = [
   { label: 'Brands', path: '/brands/cavaletti', children: BRAND_MENU },
   { label: 'Categories', href: '#collections' },
   { label: 'Catalogs', href: '#catalogs' },
-  { label: 'Projects', href: '#journal' },
+  { label: 'Projects', path: '/projects' },
   { label: 'Blog', path: '/blog' },
 ];
 
