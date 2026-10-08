@@ -119,27 +119,33 @@ export default function About() {
         <div className="vision-panel">
           <img src="/images/about-us/bg-vision-image.webp" alt="" aria-hidden="true" />
           <div className="vision-body">
-            <svg className="vision-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
-              <rect x="3.2" y="8.4" width="6.4" height="11.4" rx="3.2" />
-              <rect x="14.4" y="8.4" width="6.4" height="11.4" rx="3.2" />
-              <path d="M4.9 8.4V5.7a1.6 1.6 0 011.6-1.6h1a1.6 1.6 0 011.6 1.6v2.7" />
-              <path d="M16.1 8.4V5.7a1.6 1.6 0 011.6-1.6h1a1.6 1.6 0 011.6 1.6v2.7" />
-              <path d="M9.6 12.2h4.8M9.6 15.6h4.8" />
-            </svg>
+            <span className="vision-icon" aria-hidden="true">
+              {/* an eye: looking ahead */}
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round">
+                <path d="M2.5 12S6 5.5 12 5.5 21.5 12 21.5 12 18 18.5 12 18.5 2.5 12 2.5 12z" />
+                <circle cx="12" cy="12" r="3.4" />
+                <circle cx="13.2" cy="10.8" r=".9" fill="currentColor" stroke="none" />
+              </svg>
+            </span>
             <h3>Our Vision</h3>
-            <p>At Furniconcepts, our vision is to inspire and elevate lifestyles through exceptional furniture solutions. We envision creating spaces that exude timeless elegance and unparalleled comfort, enriching the lives of our customers and communities alike.</p>
+            <p>To be the trusted furniture solutions partner for enterprises across every sector.</p>
           </div>
         </div>
         <div className="mission-panel">
           <img src="/images/about-us/bg-mission-image.webp" alt="" aria-hidden="true" />
           <div className="vision-body">
-            <svg className="vision-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
-              <circle cx="12" cy="12" r="9" />
-              <path d="M15.6 8.4l-2 5.2-5.2 2 2-5.2z" />
-              <circle cx="12" cy="12" r="1" fill="currentColor" stroke="none" />
-            </svg>
+            <span className="vision-icon" aria-hidden="true">
+              {/* a target with an arrow in it: the goal, hit on time and on budget */}
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round">
+                <circle cx="11" cy="13" r="8" />
+                <circle cx="11" cy="13" r="4.4" />
+                <circle cx="11" cy="13" r=".9" fill="currentColor" stroke="none" />
+                <path d="M11 13l8.5-8.5" />
+                <path d="M17 4.5l2.5-.5-.5 2.5M19.5 4h1.5M20 4v-1.5" />
+              </svg>
+            </span>
             <h3>Our Mission</h3>
-            <p>Our mission at Furniconcepts is to craft furniture that transcends mere functionality, embodying the perfect fusion of aesthetics and utility. With a focus on innovation, sustainability, and customer satisfaction, we strive to be the foremost choice for individuals and businesses seeking premium quality furniture in India, Singapore and the Middle East. Through our commitment to excellence and passion for design, we aim to transform spaces into showcases of sophistication and style, leaving a lasting impression on every environment we touch.</p>
+            <p>RELIABLE, DURABLE, SUSTAINABLE furniture, delivered on time and on budget.</p>
           </div>
         </div>
       </section>
