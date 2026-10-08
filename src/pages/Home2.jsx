@@ -2,6 +2,8 @@ import { useEffect, useRef, useState } from 'react';
 import { useMarquee } from '../lib/marquee.js';
 import { onScrollFrame, prefersReducedMotion } from '../lib/scroll.js';
 import { Arrow, Diagonal, SiteFooter, SiteHeader, SocialRow } from '../components/Home2Chrome.jsx';
+import { formatDate } from '../components/BlogParts.jsx';
+import { ARTICLES as BLOG_ARTICLES } from '../data/blog.js';
 import { CATALOGS } from '../data/catalogs.js';
 import { Link } from '../router.jsx';
 import '../styles/home2.css';
@@ -53,11 +55,8 @@ const STATS = [
   { num: '50k+', label: 'Happy Customers' },
 ];
 
-const ARTICLES = [
-  { date: 'May 20, 2024', title: 'How to Choose the Perfect Sofa for Your Space', src: cav('showroom-lounge') },
-  { date: 'May 15, 2024', title: 'Outdoor Furniture Trends for 2024', src: cav('boardroom') },
-  { date: 'May 10, 2024', title: 'Sustainable Materials in Modern Furniture', src: cav('auditorium') },
-];
+/** The journal shows the newest posts from the blog. */
+const JOURNAL = BLOG_ARTICLES.slice(0, 3);
 
 /** Moves its layer against the scroll, matching the original data-speed script. */
 function useParallax(speed) {
@@ -393,20 +392,17 @@ export default function Home2() {
             <div className="eyebrow">Journal —</div>
             <h2>Ideas &amp; Inspiration</h2>
             <p>Discover design trends, expert tips and real spaces that inspire a more beautiful way of living.</p>
-            <a href="#" className="link-arrow">View All Articles <Arrow /></a>
+            <Link to="/blogs.php" className="link-arrow">View All Articles <Arrow /></Link>
             <div className="articles">
-              {ARTICLES.map((article) => (
-                <div className="article-card" key={article.title}>
-                  <div
-                    className="article-thumb"
-                    style={article.src ? undefined : { background: 'linear-gradient(135deg,#3c5c46,#16281d)' }}
-                  >
-                    {article.src && <img src={article.src} alt={article.title} loading="lazy" />}
+              {JOURNAL.map((article) => (
+                <div className="article-card" key={article.slug}>
+                  <div className="article-thumb">
+                    <img src={article.image} alt={article.title} loading="lazy" />
                   </div>
                   <div className="article-body">
-                    <div className="article-date">{article.date}</div>
+                    <div className="article-date">{formatDate(article.date)}</div>
                     <div className="article-title">{article.title}</div>
-                    <a href="#" className="link-arrow">Read <Arrow size={12} width={2.6} /></a>
+                    <Link to={article.path} className="link-arrow">Read <Arrow size={12} width={2.6} /></Link>
                   </div>
                 </div>
               ))}

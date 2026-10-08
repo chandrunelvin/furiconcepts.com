@@ -2787,3 +2787,95 @@
   .home2 .proj-lightbox-media video{ max-width:100vw;max-height:calc(100vh - 160px);border-radius:0; }
   .home2 .proj-lightbox-nav{ top:auto;bottom:24px;transform:none; }
 }
+
+/* =======================================================================
+   Blog article body: the old site's article markup, cleaned at import
+   ======================================================================= */
+.home2 .post-body{ font-size:15px;line-height:1.8;color:var(--ink-soft);overflow-wrap:break-word; }
+.home2 .post-body > :first-child{ margin-top:0; }
+.home2 .post-body p{ margin:0 0 16px; }
+.home2 .post-body h2{
+  font-family:var(--font-primary);font-weight:500;color:var(--ink);letter-spacing:-.02em;
+  font-size:clamp(22px,2.4vw,28px);line-height:1.2;margin:44px 0 16px;
+}
+.home2 .post-body h3{ font-size:clamp(17px,1.8vw,20px);font-weight:600;color:var(--ink);line-height:1.3;margin:30px 0 12px; }
+.home2 .post-body h4,
+.home2 .post-body h5{ font-size:15.5px;font-weight:600;color:var(--ink);margin:24px 0 8px; }
+.home2 .post-body strong,
+.home2 .post-body b{ color:var(--ink);font-weight:600; }
+.home2 .post-body a{ color:var(--green-dark);font-weight:600;text-decoration:underline;text-decoration-color:rgba(47,158,110,.4);text-underline-offset:3px; }
+.home2 .post-body a:hover{ color:var(--green);text-decoration-color:var(--green); }
+.home2 .post-body ul,
+.home2 .post-body ol{ margin:0 0 20px;padding-left:0;list-style:none; }
+.home2 .post-body ol{ counter-reset:post-ol; }
+.home2 .post-body li{ position:relative;padding-left:26px;margin-bottom:8px; }
+.home2 .post-body ul > li::before{
+  content:'';position:absolute;left:4px;top:.72em;width:7px;height:7px;border-radius:50%;background:var(--green);
+}
+.home2 .post-body ol > li{ counter-increment:post-ol; }
+.home2 .post-body ol > li::before{
+  content:counter(post-ol) '.';position:absolute;left:0;top:0;color:var(--green);font-weight:700;
+}
+.home2 .post-body hr{ border:0;border-top:1px solid var(--line);margin:34px 0; }
+.home2 .post-body blockquote{ border-left:3px solid var(--green);padding:6px 0 6px 18px;margin:0 0 20px;color:var(--ink); }
+
+/* tables scroll sideways on small screens rather than squeezing */
+.home2 .post-body .table-responsive,
+.home2 .post-body .as-table-wrap{
+  overflow-x:auto;margin:6px 0 26px;border:1px solid var(--line);border-radius:var(--radius);background:#fff;
+}
+.home2 .post-body table{ width:100%;border-collapse:collapse;font-size:14px;line-height:1.5;min-width:520px; }
+.home2 .post-body th{
+  background:var(--green-darker);color:#fff;font-weight:600;text-align:left;padding:13px 16px;white-space:nowrap;
+}
+.home2 .post-body td{ padding:12px 16px;border-top:1px solid var(--line);color:var(--ink-soft);vertical-align:top; }
+.home2 .post-body tbody tr:nth-child(even) td{ background:var(--cream); }
+.home2 .post-body td:first-child{ color:var(--ink);font-weight:600; }
+.home2 .post-body > table{ margin:6px 0 26px;border:1px solid var(--line); }
+
+/* the old site's cards, panels and grids */
+.home2 .post-body .as-card-grid,
+.home2 .post-body .as-stat-grid,
+.home2 .post-body .as-hero-stats{
+  display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px;margin:8px 0 26px;
+}
+.home2 .post-body .as-stack{ display:flex;flex-direction:column;gap:14px;margin:8px 0 26px; }
+.home2 .post-body .as-card,
+.home2 .post-body .as-panel,
+.home2 .post-body .as-faq-card,
+.home2 .post-body .as-app-item,
+.home2 .post-body .as-stat-card{
+  background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:20px 22px;margin-bottom:14px;
+}
+.home2 .post-body .as-card-grid > *,
+.home2 .post-body .as-stat-grid > *,
+.home2 .post-body .as-stack > *{ margin-bottom:0; }
+.home2 .post-body .as-card > :first-child,
+.home2 .post-body .as-panel > :first-child,
+.home2 .post-body .as-faq-card > :first-child,
+.home2 .post-body .choice-box > :first-child{ margin-top:0; }
+.home2 .post-body .as-card > :last-child,
+.home2 .post-body .as-panel > :last-child,
+.home2 .post-body .as-faq-card > :last-child,
+.home2 .post-body .choice-box > :last-child{ margin-bottom:0; }
+.home2 .post-body .as-stat-card{ text-align:center; }
+.home2 .post-body .choice-box{
+  background:rgba(47,158,110,.08);border-left:3px solid var(--green);border-radius:var(--radius);
+  padding:18px 22px;margin:8px 0 22px;
+}
+.home2 .post-body .text-center{ text-align:center; }
+
+/* the old "Talk to Furniconcepts" style buttons */
+.home2 .post-body a.post-cta{
+  display:inline-flex;align-items:center;gap:10px;margin:18px 0 6px;
+  background:var(--green);color:#fff;text-decoration:none;
+  padding:14px 26px;border-radius:32px;font-size:14px;font-weight:600;
+  transition:background .2s,transform .2s;
+}
+.home2 .post-body a.post-cta:hover{ background:#26875c;color:#fff;transform:translateY(-1px); }
+.home2 .post-loading{ min-height:40vh;opacity:.6; }
+
+@media(max-width:700px){
+  .home2 .post-body{ font-size:14.5px; }
+  .home2 .post-body h2{ margin-top:34px; }
+}

@@ -48,7 +48,7 @@ export const NAV = [
   { label: 'Categories', href: '#collections' },
   { label: 'Catalogs', href: '#catalogs' },
   { label: 'Projects', path: '/projects' },
-  { label: 'Blog', path: '/blog' },
+  { label: 'Blog', path: '/blogs.php' },
 ];
 
 export const Arrow = ({ size = 15, width = 2.4 }) => (

@@ -6,6 +6,7 @@ import { Arrow, SiteFooter, SiteHeader } from '../components/Home2Chrome.jsx';
 import {
   ARTICLES, BLOG_CATEGORIES, BLOG_HERO, BLOG_NEWSLETTER,
 } from '../data/blog.js';
+import { loadBlogContent, useSeo } from '../lib/head.js';
 import { useReveal } from '../lib/reveal.js';
 import { prefersReducedMotion } from '../lib/scroll.js';
 import { Link } from '../router.jsx';
@@ -60,6 +61,10 @@ function pageItems(current, total) {
 
 export default function Blog() {
   useReveal(REVEAL_GROUPS);
+  // the old /blogs.php title, description and social tags
+  const [seo, setSeo] = useState(null);
+  useEffect(() => { loadBlogContent('_index').then((d) => setSeo(d.seo)).catch(() => {}); }, []);
+  useSeo(seo);
   const heroLayer = useParallax(0.25);
   const listRef = useRef(null);
   const catsRef = useRef(null);

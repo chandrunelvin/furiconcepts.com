@@ -60,7 +60,10 @@ export const formatDate = (iso) => dateFmt.format(new Date(iso));
 
 export const categoryLabel = (id) => BLOG_CATEGORIES.find((c) => c.id === id)?.label ?? id;
 
-export const articlePath = (a) => `/blog/${a.slug}`;
+/** Articles keep their old furniconcepts.com URLs, e.g. /how-to-soundproof-office.php. */
+export const articlePath = (a) => a.path;
+
+export const BLOG_PATH = '/blogs.php';
 
 const COUNTS = ARTICLES.reduce(
   (c, a) => ({ ...c, [a.category]: (c[a.category] ?? 0) + 1 }),

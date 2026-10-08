@@ -34,5 +34,4 @@ export const TEAM = [
   { name: 'Afzal', role: 'Projects & Sales Head, Saudi Arabia', src: photo('afzal') },
   { name: 'Veerappan', role: 'Sr Technician & Installer', src: photo('veerappan') },
   { name: 'Selva Kumar', role: 'Technical Supervisor', src: photo('selva') },
-  { name: 'Joyce', role: 'Furniture Designer and Estimator', src: photo('joyce') },
 ];
