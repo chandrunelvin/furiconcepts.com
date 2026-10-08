@@ -6,6 +6,7 @@ import Catalog from './pages/Catalog.jsx';
 import Contact from './pages/Contact.jsx';
 import Home from './pages/Home.jsx';
 import Home2 from './pages/Home2.jsx';
+import ProfileLibrary from './pages/ProfileLibrary.jsx';
 import { usePath } from './router.jsx';
 
 export default function App() {
@@ -13,6 +14,10 @@ export default function App() {
   if (path === '/home-old') return <Home />;
   if (path === '/about') return <About />;
   if (path === '/contact') return <Contact />;
+  if (path === '/download-profiles' || path.startsWith('/download-profiles/')) {
+    const [brand, collection] = path.slice('/download-profiles/'.length).split('/');
+    return <ProfileLibrary key={path} brand={brand || undefined} collection={collection} />;
+  }
   if (path === '/blog') return <Blog key={window.location.search} />;
   if (path.startsWith('/blog/')) return <BlogPost key={path} slug={path.slice('/blog/'.length)} />;
   if (path.startsWith('/brands/')) return <Brand key={path} slug={path.slice('/brands/'.length)} />;

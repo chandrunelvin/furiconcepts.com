@@ -243,7 +243,16 @@ export function SiteHeader({ onHome = true, active = 'Home' }) {
 
 const FOOTER_COLUMNS = [
   { heading: 'Collections', links: ['Sofas', 'Dining', 'Bedroom', 'Office', 'Outdoor'] },
-  { heading: 'Company', links: ['About Us', 'Our Story', 'Careers', 'Contact Us'] },
+  {
+    heading: 'Company',
+    links: [
+      { label: 'About Us', path: '/about' },
+      'Our Story',
+      'Careers',
+      { label: 'Download Profiles', path: '/download-profiles' },
+      { label: 'Contact Us', path: '/contact' },
+    ],
+  },
   { heading: 'Support', links: ['FAQs', 'Shipping & Delivery', 'Returns', 'Warranty'] },
   { heading: 'Legal', links: ['Privacy Policy', 'Terms & Conditions'] },
 ];
@@ -312,9 +321,11 @@ export function SiteFooter({ newsletter }) {
             <div className="footer-col" key={col.heading}>
               <h5>{col.heading}</h5>
               <ul>
-                {col.links.map((link) => (
-                  <li key={link}><a href="#">{link}</a></li>
-                ))}
+                {col.links.map((link) =>
+                  typeof link === 'string'
+                    ? <li key={link}><a href="#">{link}</a></li>
+                    : <li key={link.label}><Link to={link.path}>{link.label}</Link></li>
+                )}
               </ul>
             </div>
           ))}
