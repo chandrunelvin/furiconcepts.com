@@ -266,7 +266,7 @@ export default function Brand({ slug }) {
         </div>
       </section>
 
-      {/* ---- why choose ---- */}
+      {/* ---- why choose ---- hidden for now; remove this comment wrapper to show it again
       <section className="brand-why">
         {brand.why.image && (
           <div className="brand-why-media" aria-hidden="true">
@@ -291,6 +291,7 @@ export default function Brand({ slug }) {
           </ul>
         </div>
       </section>
+      */}
 
       {/* ---- product explorer ---- */}
       <section className="section brand-products" id="products">
