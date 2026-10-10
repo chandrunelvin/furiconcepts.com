@@ -493,7 +493,7 @@ export default function Home2() {
           </div>
           <div className="catalog-note">
             <p>Looking for a brand or product not listed here? We will send the current edition straight to your inbox.</p>
-            <Link to="/contact" className="link-arrow">Request a Catalogue <Arrow /></Link>
+            <Link to="/download-profiles" className="link-arrow">Request a Catalogue <Arrow /></Link>
           </div>
         </div>
       </section>

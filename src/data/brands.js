@@ -266,7 +266,7 @@ const HERO = new Set([
 /**
  * Where each brand's "Download Catalogue" button leads: its Download Profiles
  * page, or the Furniconcepts collection that carries its PDFs. Brands with no
- * PDFs offer "Request Catalogue" instead.
+ * PDFs offer "Request Catalogue", which opens the full Download Profiles page.
  */
 const DOWNLOADS = {
   gebbwork: 'gebbwork',
@@ -388,7 +388,7 @@ function buildBrand(src) {
       intro: src.summary ?? src.tagline,
       download: downloads
         ? { label: 'Download Catalogue', href: `/download-profiles/${downloads}` }
-        : { label: 'Request Catalogue', href: '/contact' },
+        : { label: 'Request Catalogue', href: '/download-profiles' },
       whatsapp: '971503782215',
       enquiryNote: 'Send us an enquiry now, we will get back to you asap.',
       viewAll: { label: `View All ${src.name} Products`, href: '#products' },
@@ -431,6 +431,6 @@ export const quoteCta = (brand) => ({
     'and send you the best quotation for your requirements across the UAE, India and Singapore.',
   cta: { label: 'Request a Quotation', href: '/contact' },
   // brands without PDFs only offer "Request Catalogue", which the quotation button already covers
-  secondary: brand.products?.download?.href !== '/contact' ? brand.products?.download : null,
+  secondary: brand.products?.download?.label === 'Download Catalogue' ? brand.products.download : null,
   image: '/images/contact-us/reaquest-qoute-image.webp',
 });
