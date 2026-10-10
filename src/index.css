@@ -4,6 +4,9 @@
 html, body{ margin:0; padding:0; }
 body{ -webkit-font-smoothing:antialiased; background:#F4F5F5; }
 #root{ min-height:100vh; }
+/* page changes crossfade (see navigate() in router.jsx) */
+::view-transition-old(root),
+::view-transition-new(root){ animation-duration:.28s; animation-timing-function:ease; }
 .site{ min-height:100vh; }
 
 .site{

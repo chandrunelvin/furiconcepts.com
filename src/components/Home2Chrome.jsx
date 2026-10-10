@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react';
+import { CATEGORY_PAGES } from '../data/categories.js';
 import { Link, usePath } from '../router.jsx';
 
 /**
@@ -45,7 +46,7 @@ export const NAV = [
   { label: 'Home', href: '#top' },
   { label: 'About Us', href: '#about', path: '/about' },
   { label: 'Brands', path: '/brands/cavaletti', children: BRAND_MENU },
-  { label: 'Categories', href: '#collections' },
+  { label: 'Categories', href: '#collections', children: CATEGORY_PAGES.map((c) => ({ label: c.name, path: c.path })) },
   { label: 'Projects', path: '/projects' },
   { label: 'Blog', path: '/blogs.php' },
 ];

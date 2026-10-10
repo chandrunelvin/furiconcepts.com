@@ -3,12 +3,14 @@ import Blog from './pages/Blog.jsx';
 import BlogPost from './pages/BlogPost.jsx';
 import Brand from './pages/Brand.jsx';
 import Catalog from './pages/Catalog.jsx';
+import Category from './pages/Category.jsx';
 import Contact from './pages/Contact.jsx';
 import Home from './pages/Home.jsx';
 import Home2 from './pages/Home2.jsx';
 import ProfileLibrary from './pages/ProfileLibrary.jsx';
 import Projects from './pages/Projects.jsx';
 import { getArticleByPath } from './data/blog.js';
+import { getCategoryByPath } from './data/categories.js';
 import { usePath } from './router.jsx';
 
 export default function App() {
@@ -25,6 +27,8 @@ export default function App() {
   // the blog keeps the old site's URLs: /blogs.php and /<article>.php
   if (path === '/blogs.php' || path === '/blog') return <Blog key={window.location.search} />;
   if (path.endsWith('.php')) {
+    const category = getCategoryByPath(path);
+    if (category) return <Category key={path} category={category} />;
     const article = getArticleByPath(decodeURI(path));
     if (article) return <BlogPost key={path} article={article} />;
   }

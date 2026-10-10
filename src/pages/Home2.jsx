@@ -1,9 +1,10 @@
 import { useEffect, useRef, useState } from 'react';
 import { useMarquee } from '../lib/marquee.js';
 import { onScrollFrame, prefersReducedMotion } from '../lib/scroll.js';
-import { Arrow, Diagonal, SiteFooter, SiteHeader, SocialRow } from '../components/Home2Chrome.jsx';
+import { Arrow, BRAND_MENU, Diagonal, SiteFooter, SiteHeader, SocialRow } from '../components/Home2Chrome.jsx';
 import { formatDate } from '../components/BlogParts.jsx';
 import { ARTICLES as BLOG_ARTICLES } from '../data/blog.js';
+import { getBrand } from '../data/brands.js';
 import { CATALOGS } from '../data/catalogs.js';
 import { Link } from '../router.jsx';
 import '../styles/home2.css';
@@ -22,19 +23,21 @@ const HERO_SLIDES = [
   { src: cav('office-green'), alt: 'Open-plan workplace with Cavaletti task seating' },
 ];
 
-const COLLECTIONS = [
-  { name: 'Lounge Seating', src: cav('lounge-chair') },
-  { name: 'Dining', src: cav('canteen') },
-  { name: 'Meeting', src: cav('boardroom') },
-  { name: 'Office', src: cav('task-chair') },
-  { name: 'Phone Booth', src: cav('showroom') },
-  { name: 'Auditorium', src: cav('auditorium') },
-  { name: 'Beam Seating', src: cav('beam-seating-dark') },
-  { name: 'Stacking Chairs', src: cav('stacking-chairs') },
-  { name: 'Executive', src: cav('executive-chairs') },
-  { name: 'Reception', src: cav('project-lounge') },
-  { name: 'Materials', src: cav('material-wall') },
-];
+/**
+ * The partner brands, in the Brands menu order. Each card shows the brand's
+ * banner photo, or — for brands without one — its lead product on white.
+ */
+const BRAND_CARDS = BRAND_MENU.map((m) => {
+  const brand = getBrand(m.path.split('/').pop());
+  const photo = brand?.heroImage;
+  return {
+    name: m.label,
+    path: m.path,
+    logo: m.logo,
+    src: photo ?? brand?.products.items[0]?.image,
+    contain: !photo,
+  };
+});
 
 const SPACES = [
   { name: 'Workplace', src: cav('office-green') },
@@ -235,18 +238,27 @@ export default function Home2() {
         <div className="wrap">
           <div className="split">
             <div className="split-intro">
-              <div className="eyebrow">Featured Collections</div>
-              <h2>Modern Living Collections</h2>
-              <p>Explore our curated range of furniture crafted for contemporary spaces. From elegant sofas to functional workspaces, find pieces that inspire.</p>
-              <a href="#" className="link-arrow">View All Collections <Arrow /></a>
+              <div className="eyebrow">Our Brands</div>
+              <h2>Brands We Represent</h2>
+              <p>Furniconcepts is the regional partner for {BRAND_CARDS.length} specialist furniture brands, from ergonomic seating and acoustic pods to auditorium, hospital and hospitality furniture.</p>
+              <Link to={BRAND_CARDS[0].path} className="link-arrow">Explore Our Brands <Arrow /></Link>
             </div>
             <div className="coll-viewport" ref={collRail}>
-              <div className="coll-track" style={{ '--n': COLLECTIONS.length }}>
-                {[...COLLECTIONS, ...COLLECTIONS].map((item, i) => (
-                  <div className="coll-card" key={`${item.name}-${i}`} aria-hidden={i >= COLLECTIONS.length}>
-                    <div className="coll-thumb"><img src={item.src} alt={item.name} loading="lazy" /></div>
-                    <div className="coll-label">{item.name} <Arrow /></div>
-                  </div>
+              <div className="coll-track" style={{ '--n': BRAND_CARDS.length }}>
+                {[...BRAND_CARDS, ...BRAND_CARDS].map((brand, i) => (
+                  <Link
+                    to={brand.path}
+                    className="coll-card brand-coll-card"
+                    key={`${brand.name}-${i}`}
+                    aria-hidden={i >= BRAND_CARDS.length}
+                    tabIndex={i >= BRAND_CARDS.length ? -1 : undefined}
+                  >
+                    <div className={`coll-thumb ${brand.contain ? 'contain' : ''}`.trim()}>
+                      {brand.src && <img src={brand.src} alt={`${brand.name} furniture`} loading="lazy" />}
+                      {brand.logo && <span className="brand-coll-logo"><img src={brand.logo} alt="" loading="lazy" /></span>}
+                    </div>
+                    <div className="coll-label">{brand.name} <Arrow /></div>
+                  </Link>
                 ))}
               </div>
             </div>
