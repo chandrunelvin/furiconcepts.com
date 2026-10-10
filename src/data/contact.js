@@ -37,12 +37,6 @@ export const CONTACT_METHODS = [
     href: '#offices',
   },
   {
-    icon: 'doc',
-    label: 'Download Catalogue',
-    note: 'Explore our latest collections',
-    href: '/#catalogs',
-  },
-  {
     icon: 'whatsapp',
     label: 'Chat on WhatsApp',
     note: 'Get quick support from our team',
@@ -79,7 +73,7 @@ export const OFFICES = [
   },
   {
     id: 'chennai',
-    city: 'India – Chennai',
+    city: 'IN – Chennai',
     company: 'ZtoA Furniconcepts India Private Limited',
     address:
       'The Southern India Chamber of Commerce and Industry, Esplanade Rd, George Town, Chennai, Tamil Nadu 600104, India',
@@ -90,7 +84,7 @@ export const OFFICES = [
   },
   {
     id: 'singapore',
-    city: 'Singapore',
+    city: 'SG – Singapore',
     company: 'FURNICONCEPTS PTE. LTD',
     address: '2 Venture Dr, #12-11B, Singapore 608526',
     phone: '+65 8235 2565',
@@ -100,12 +94,11 @@ export const OFFICES = [
   },
   {
     id: 'factory',
-    city: 'Libero Factory UAE',
+    city: 'UAE – Libero Factory',
     tag: 'Factory',
     company: 'Italseat Furniture Factory',
     address: 'Mina Jebel Ali - Jabal Ali Industrial First - Dubai - United Arab Emirates',
     phone: '+971 50 378 2215, +971 4 257 9447',
-    email: 'letstalk@furniconcepts.com',
     image: place('factory'),
     embed: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3615.8254486764286!2d55.1217724!3d25.006046499999997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f13ebdb496077%3A0x75efff34aaddee6!2sITALSEAT%20FURNITURE%20FACTORY!5e0!3m2!1sen!2sin!4v1791457854975!5m2!1sen!2sin',
     coords: '25.0060465,55.1217724',
