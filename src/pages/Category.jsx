@@ -467,6 +467,8 @@ function Section({ blocks, alt, eyebrow, name, hero }) {
  *  - "Choose Your Region" (links to region pages not on this site yet)
  *  - "Nitrocare Awards" on the hospital page
  *  - "Classroom Layouts Supported" on the school page
+ *  - "Global Brands, Local Expertise" and "Our Specialized Seating Solutions"
+ *    on the telescopic page
  */
 const isHidden = (blocks, i, opensOnIntro) => {
   const title = blocks[0]?.type === 'heading' ? blocks[0].title : '';
@@ -475,6 +477,8 @@ const isHidden = (blocks, i, opensOnIntro) => {
   if (title === 'Choose Your Region') return true;
   if (title === 'Nitrocare Awards') return true;
   if (title === 'Classroom Layouts Supported') return true;
+  if (title === 'Global Brands, Local Expertise') return true;
+  if (title === 'Our Specialized Seating Solutions') return true;
   return false;
 };
 

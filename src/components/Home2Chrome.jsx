@@ -259,20 +259,37 @@ export function SiteHeader({ onHome = true, active = 'Home' }) {
   );
 }
 
+/** Footer links, every one a real page on this site. */
 const FOOTER_COLUMNS = [
-  { heading: 'Collections', links: ['Sofas', 'Dining', 'Bedroom', 'Office', 'Outdoor'] },
+  {
+    heading: 'Categories',
+    links: ['/office-furniture.php', '/acoustic-pods.php', '/auditorium-seating.php',
+      '/hotel-furniture-manufacturers.php', '/hospital-furniture.php', '/school-furniture.php']
+      .map((path) => ({ label: CATEGORY_PAGES.find((c) => c.path === path).name, path })),
+  },
+  {
+    heading: 'Brands',
+    links: ['Cavaletti', 'Leadcom', 'Musepod', 'Nitrocare', 'Libero Italy']
+      .map((label) => ({ label, path: BRAND_MENU.find((b) => b.label === label).path })),
+  },
   {
     heading: 'Company',
     links: [
       { label: 'About Us', path: '/about' },
-      'Our Story',
-      'Careers',
+      { label: 'Projects', path: '/projects' },
+      { label: 'Blog', path: '/blogs.php' },
       { label: 'Download Profiles', path: '/download-profiles' },
-      { label: 'Contact Us', path: '/contact' },
     ],
   },
-  { heading: 'Support', links: ['FAQs', 'Shipping & Delivery', 'Returns', 'Warranty'] },
-  { heading: 'Legal', links: ['Privacy Policy', 'Terms & Conditions'] },
+  {
+    heading: 'Get in Touch',
+    links: [
+      { label: 'Contact Us', path: '/contact' },
+      { label: 'Request a Quote', path: '/contact' },
+      { label: 'WhatsApp Us', href: 'https://api.whatsapp.com/send?phone=971503782215' },
+      { label: 'letstalk@furniconcepts.com', href: 'mailto:letstalk@furniconcepts.com' },
+    ],
+  },
 ];
 
 /**
@@ -339,11 +356,13 @@ export function SiteFooter({ newsletter }) {
             <div className="footer-col" key={col.heading}>
               <h5>{col.heading}</h5>
               <ul>
-                {col.links.map((link) =>
-                  typeof link === 'string'
-                    ? <li key={link}><a href="#">{link}</a></li>
-                    : <li key={link.label}><Link to={link.path}>{link.label}</Link></li>
-                )}
+                {col.links.map((link) => (
+                  <li key={link.label}>
+                    {link.path
+                      ? <Link to={link.path}>{link.label}</Link>
+                      : <a href={link.href} {...(link.href.startsWith('http') ? { target: '_blank', rel: 'noopener noreferrer' } : {})}>{link.label}</a>}
+                  </li>
+                ))}
               </ul>
             </div>
           ))}

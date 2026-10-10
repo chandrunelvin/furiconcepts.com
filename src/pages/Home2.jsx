@@ -393,25 +393,31 @@ export default function Home2() {
             <div className="overlay" />
             <div className="crafted-text">
               <h3>Crafted<br />With Precision</h3>
-              <p>From carefully selected materials to thoughtful design, every detail is made to last. Experience furniture that blends beauty, functionality and sustainability.</p>
-              <a href="#" className="btn-outline">Learn More <Arrow size={13} /></a>
+              <p>We only partner with manufacturers who design, test and certify to international standards — so every chair, desk and pod we supply is built for years of daily use, and installed by our own team.</p>
+              <Link to="/about" className="btn-outline">Learn More About Us <Arrow size={13} /></Link>
             </div>
           </div>
           <div className="crafted-side">
-            <div className="detail-card wood">
-              <img src={common('quality-detail')} alt="Close-up of a mitred oak joint" loading="lazy" />
+            <Link to="/projects" className="detail-card wood">
+              <img src={common('quality-detail')} alt="" loading="lazy" />
               <div className="detail-row">
-                <h4>Quality in Every Detail</h4>
+                <div>
+                  <h4>Quality in Every Detail</h4>
+                  <p className="detail-sub">ISO 9001:2015 certified, with BIFMA-standard partner ranges. See it in our completed projects.</p>
+                </div>
                 <span className="detail-arrow"><Diagonal /></span>
               </div>
-            </div>
-            <div className="detail-card fabric">
-              <img src={common('sustainable')} alt="Close-up of green upholstery fabric" loading="lazy" />
+            </Link>
+            <Link to="/acoustic-pods.php" className="detail-card fabric">
+              <img src={common('sustainable')} alt="" loading="lazy" />
               <div className="detail-row">
-                <h4>Sustainable for a Greener Tomorrow</h4>
+                <div>
+                  <h4>Sustainable for a Greener Tomorrow</h4>
+                  <p className="detail-sub">GREENGUARD-certified pods, FSC-certified boards and recycled-content ranges.</p>
+                </div>
                 <span className="detail-arrow"><Diagonal /></span>
               </div>
-            </div>
+            </Link>
           </div>
       </section>
 
@@ -451,18 +457,15 @@ export default function Home2() {
               <div className="eyebrow">Brand Catalogues</div>
               <h2>Catalogs From Every Brand We Represent</h2>
             </div>
-            <div className="catalog-head-side">
-              <p>{DOWNLOADS.length} brands, one place. Open a brand to browse and download its current catalogues and profiles.</p>
-              <div className="rail-nav">
-                <button type="button" aria-label="Previous catalogue" onClick={catalogRail.prev}>
-                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round"><path d="M15 6l-6 6 6 6" /></svg>
-                </button>
-                <button type="button" aria-label="Next catalogue" onClick={catalogRail.next}>
-                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round"><path d="M9 6l6 6-6 6" /></svg>
-                </button>
-              </div>
-            </div>
+            <p>{DOWNLOADS.length} brands, one place. Open a brand to browse and download its current catalogues and profiles.</p>
           </div>
+          <div className="catalog-rail">
+          <button type="button" className="rail-arrow prev" aria-label="Previous catalogue" onClick={catalogRail.prev}>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round"><path d="M15 6l-6 6 6 6" /></svg>
+          </button>
+          <button type="button" className="rail-arrow next" aria-label="Next catalogue" onClick={catalogRail.next}>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round"><path d="M9 6l6 6-6 6" /></svg>
+          </button>
           <div className="catalog-viewport is-stepped" ref={catalogRail.ref}>
             <div className="catalog-track">
               {DOWNLOADS.map((item) => (
@@ -486,6 +489,7 @@ export default function Home2() {
                 </Link>
               ))}
             </div>
+          </div>
           </div>
           <div className="catalog-note">
             <p>Looking for a brand or product not listed here? We will send the current edition straight to your inbox.</p>
