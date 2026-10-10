@@ -62,7 +62,10 @@ export function navigate(to) {
   window.history.pushState({}, '', to);
   transition(() => {
     window.dispatchEvent(new Event('app:navigate'));
-    window.scrollTo({ top: 0 });
+    // 'instant', not the stylesheet's smooth scrolling: a smooth scroll from
+    // deep in a page is cut short by the page change and strands the reader
+    // halfway down the new page
+    window.scrollTo({ top: 0, behavior: 'instant' });
   });
 }
 

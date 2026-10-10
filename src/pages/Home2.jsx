@@ -1,11 +1,15 @@
 import { useEffect, useRef, useState } from 'react';
 import { useMarquee } from '../lib/marquee.js';
+import { useStepRail } from '../lib/stepRail.js';
 import { onScrollFrame, prefersReducedMotion } from '../lib/scroll.js';
 import { Arrow, BRAND_MENU, Diagonal, SiteFooter, SiteHeader, SocialRow } from '../components/Home2Chrome.jsx';
 import { formatDate } from '../components/BlogParts.jsx';
 import { ARTICLES as BLOG_ARTICLES } from '../data/blog.js';
 import { getBrand } from '../data/brands.js';
-import { CATALOGS } from '../data/catalogs.js';
+import { CATEGORY_PAGES } from '../data/categories.js';
+import { BRAND_FILES } from '../data/brandProfiles.js';
+import { FC_COLLECTIONS } from '../data/fcProfiles.js';
+import { PROFILES } from '../data/profiles.js';
 import { Link } from '../router.jsx';
 import '../styles/home2.css';
 
@@ -24,33 +28,48 @@ const HERO_SLIDES = [
 ];
 
 /**
- * The partner brands, in the Brands menu order. Each card shows the brand's
- * banner photo, or — for brands without one — its lead product on white.
+ * The Download Profiles brands, each card led by its chosen image (profiles.js
+ * `card`) and opening that brand's downloads page.
  */
-const BRAND_CARDS = BRAND_MENU.map((m) => {
-  const brand = getBrand(m.path.split('/').pop());
-  const photo = brand?.heroImage;
-  return {
-    name: m.label,
-    path: m.path,
-    logo: m.logo,
-    src: photo ?? brand?.products.items[0]?.image,
-    contain: !photo,
-  };
+const DOWNLOADS = PROFILES.map((p) => {
+  const slug = p.path.split('/').pop();
+  const files = slug === 'furniconcepts'
+    ? FC_COLLECTIONS.flatMap((c) => c.files)
+    : BRAND_FILES[slug]?.files ?? [];
+  return { name: p.name, title: p.title, path: p.path, cover: p.card ?? files[0]?.cover ?? p.cover, count: files.length };
 });
 
-const SPACES = [
-  { name: 'Workplace', src: cav('office-green') },
-  { name: 'Hospitality', src: cav('canteen') },
-  { name: 'Showroom', src: cav('showroom-chairs') },
-  { name: 'Auditorium', src: cav('auditorium') },
-  { name: 'Boardroom', src: cav('boardroom') },
-  { name: 'Education', src: cav('stacking-chairs') },
-  { name: 'Reception', src: cav('project-lounge') },
-  { name: 'Executive', src: cav('executive-chairs') },
-  { name: 'Co-working', src: cav('beam-seating') },
-  { name: 'Healthcare', src: cav('chair-family') },
-];
+/** The partner brands, in the Brands menu order, each shown by its lead product. */
+const BRAND_CARDS = BRAND_MENU.map((m) => {
+  const brand = getBrand(m.path.split('/').pop());
+  return { name: m.label, path: m.path, logo: trimmedLogo(m.logo), src: brand?.products.items[0]?.image };
+});
+
+/** The same logo with its empty margin cropped off (see /images/brand-logo/trim). */
+function trimmedLogo(src) {
+  if (!src) return src;
+  const file = src.split('/').pop().replace(/\.\w+$/, '.png');
+  return `/images/brand-logo/trim/${file}`;
+}
+
+/**
+ * Logos come in every shape, so a fixed height makes wide ones look huge and
+ * square ones tiny. Sizing each to the same area evens out their visual weight.
+ */
+const LOGO_AREA = 2400;
+/** Heavy, solid-black wordmarks read larger than their area, so they get a nudge down. */
+const LOGO_WEIGHT = { 'libero-logo.png': 0.82 };
+const fitLogo = (e) => {
+  const img = e.currentTarget;
+  const ratio = img.naturalWidth / img.naturalHeight || 1;
+  const weight = LOGO_WEIGHT[img.src.split('/').pop()] ?? 1;
+  let height = Math.min(34, Math.sqrt(LOGO_AREA / ratio)) * weight;
+  if (height * ratio > 120) height = 120 / ratio;
+  img.style.height = `${height.toFixed(1)}px`;
+};
+
+/** The category pages, in the Categories menu order, each led by its hero photo. */
+const SPACES = CATEGORY_PAGES.map((c) => ({ name: c.name, path: c.path, src: c.hero }));
 
 const STATS = [
   { num: '200+', label: 'Curated Collections' },
@@ -59,7 +78,75 @@ const STATS = [
 ];
 
 /** The journal shows the newest posts from the blog. */
-const JOURNAL = BLOG_ARTICLES.slice(0, 3);
+/** The latest articles for the journal slider, newest first. */
+const JOURNAL = [...BLOG_ARTICLES].sort((a, b) => b.date.localeCompare(a.date)).slice(0, 12);
+
+/**
+ * The journal's article rail: a native scroller (swipe, drag, wheel) that
+ * snaps card by card, with arrows that page it and a position counter.
+ */
+function JournalSlider({ articles }) {
+  const rail = useRef(null);
+  const [state, setState] = useState({ first: 1, prev: false, next: true });
+
+  useEffect(() => {
+    const el = rail.current;
+    if (!el) return undefined;
+    const sync = () => {
+      const card = el.firstElementChild;
+      const step = card ? card.getBoundingClientRect().width + 16 : el.clientWidth;
+      setState({
+        first: Math.round(el.scrollLeft / step) + 1,
+        prev: el.scrollLeft > 4,
+        next: el.scrollLeft < el.scrollWidth - el.clientWidth - 4,
+      });
+    };
+    sync();
+    el.addEventListener('scroll', sync, { passive: true });
+    window.addEventListener('resize', sync);
+    return () => {
+      el.removeEventListener('scroll', sync);
+      window.removeEventListener('resize', sync);
+    };
+  }, []);
+
+  const page = (dir) => {
+    const el = rail.current;
+    if (el) el.scrollBy({ left: dir * el.clientWidth, behavior: prefersReducedMotion() ? 'auto' : 'smooth' });
+  };
+  const pad = (n) => String(n).padStart(2, '0');
+
+  return (
+    <>
+      <div className="journal-controls">
+        <Link to="/blogs.php" className="link-arrow">View All Articles <Arrow /></Link>
+        <div className="journal-nav">
+          <span className="journal-count">{pad(state.first)} <span>/ {pad(articles.length)}</span></span>
+          <button type="button" aria-label="Previous articles" disabled={!state.prev} onClick={() => page(-1)}>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round"><path d="M15 6l-6 6 6 6" /></svg>
+          </button>
+          <button type="button" aria-label="Next articles" disabled={!state.next} onClick={() => page(1)}>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round"><path d="M9 6l6 6-6 6" /></svg>
+          </button>
+        </div>
+      </div>
+      <div className="articles" ref={rail}>
+        {articles.map((article) => (
+          <Link to={article.path} className="article-card" key={article.slug}>
+            <div className="article-thumb">
+              <img src={article.image} alt="" loading="lazy" />
+            </div>
+            <div className="article-body">
+              <div className="article-date">{formatDate(article.date)}</div>
+              <div className="article-title">{article.title}</div>
+              <span className="link-arrow">Read <Arrow size={12} width={2.6} /></span>
+            </div>
+          </Link>
+        ))}
+      </div>
+    </>
+  );
+}
 
 /** Moves its layer against the scroll, matching the original data-speed script. */
 function useParallax(speed) {
@@ -141,7 +228,7 @@ export default function Home2() {
   const craftedLayer = useParallax(0.18);
   const collRail = useMarquee({ speed: 40 });
   const spacesRail = useMarquee({ speed: 40 });
-  const catalogRail = useMarquee({ speed: 46 });
+  const catalogRail = useStepRail({ interval: 3500 });
 
   useEffect(() => {
     if (prefersReducedMotion()) return undefined;
@@ -253,11 +340,15 @@ export default function Home2() {
                     aria-hidden={i >= BRAND_CARDS.length}
                     tabIndex={i >= BRAND_CARDS.length ? -1 : undefined}
                   >
-                    <div className={`coll-thumb ${brand.contain ? 'contain' : ''}`.trim()}>
-                      {brand.src && <img src={brand.src} alt={`${brand.name} furniture`} loading="lazy" />}
-                      {brand.logo && <span className="brand-coll-logo"><img src={brand.logo} alt="" loading="lazy" /></span>}
+                    <div className="coll-thumb">
+                      {brand.src && <img src={brand.src} alt={`${brand.name} product`} loading="lazy" />}
                     </div>
-                    <div className="coll-label">{brand.name} <Arrow /></div>
+                    <div className="coll-label">
+                      {brand.logo
+                        ? <img className="brand-coll-name" src={brand.logo} alt={brand.name} loading="lazy" onLoad={fitLogo} />
+                        : brand.name}
+                      <Arrow />
+                    </div>
                   </Link>
                 ))}
               </div>
@@ -328,18 +419,24 @@ export default function Home2() {
         <div className="wrap">
           <div className="split">
             <div className="split-intro">
-              <div className="eyebrow">Spaces by Purpose</div>
-              <h2>Designed for Every Space</h2>
-              <p>Whether it&apos;s your home, office or hospitality space, our furniture creates environments that feel as good as they look.</p>
-              <a href="#" className="link-arrow">Explore All Spaces <Arrow /></a>
+              <div className="eyebrow">Our Categories</div>
+              <h2>Furniture for Every Space</h2>
+              <p>From offices and acoustic pods to auditoriums, hospitals, hotels and schools — explore the {SPACES.length} categories we supply across the UAE, India and Singapore.</p>
+              <Link to={SPACES[0].path} className="link-arrow">Explore Categories <Arrow /></Link>
             </div>
             <div className="spaces-viewport" ref={spacesRail}>
               <div className="spaces-track" style={{ '--n': SPACES.length }}>
                 {[...SPACES, ...SPACES].map((space, i) => (
-                  <div className="space-card" key={`${space.name}-${i}`} aria-hidden={i >= SPACES.length}>
+                  <Link
+                    to={space.path}
+                    className="space-card"
+                    key={`${space.name}-${i}`}
+                    aria-hidden={i >= SPACES.length}
+                    tabIndex={i >= SPACES.length ? -1 : undefined}
+                  >
                     <div className="space-thumb"><img src={space.src} alt={space.name} loading="lazy" /></div>
                     <div className="coll-label">{space.name} <Arrow /></div>
-                  </div>
+                  </Link>
                 ))}
               </div>
             </div>
@@ -354,32 +451,36 @@ export default function Home2() {
               <div className="eyebrow">Brand Catalogues</div>
               <h2>Catalogs From Every Brand We Represent</h2>
             </div>
-            <p>Sixteen partner brands, one place. Open a brand to see its ranges and download the current edition.</p>
+            <div className="catalog-head-side">
+              <p>{DOWNLOADS.length} brands, one place. Open a brand to browse and download its current catalogues and profiles.</p>
+              <div className="rail-nav">
+                <button type="button" aria-label="Previous catalogue" onClick={catalogRail.prev}>
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round"><path d="M15 6l-6 6 6 6" /></svg>
+                </button>
+                <button type="button" aria-label="Next catalogue" onClick={catalogRail.next}>
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round"><path d="M9 6l6 6-6 6" /></svg>
+                </button>
+              </div>
+            </div>
           </div>
-          <div className="catalog-viewport" ref={catalogRail}>
-            <div className="catalog-track" style={{ '--n': CATALOGS.length }}>
-              {[...CATALOGS, ...CATALOGS].map((item, i) => (
-                <Link
-                  to={`/catalogs/${item.slug}`}
-                  className="catalog-card"
-                  key={`${item.slug}-${i}`}
-                  aria-hidden={i >= CATALOGS.length}
-                  tabIndex={i >= CATALOGS.length ? -1 : undefined}
-                >
+          <div className="catalog-viewport is-stepped" ref={catalogRail.ref}>
+            <div className="catalog-track">
+              {DOWNLOADS.map((item) => (
+                <Link to={item.path} className="catalog-card" key={item.path}>
                   <div className="catalog-cover">
-                    <img src={item.cover} alt={`${item.brand} ${item.title} catalogue cover`} loading="lazy" />
+                    <img src={item.cover} alt={`${item.name} catalogue cover`} loading="lazy" />
                     <span className="catalog-badge">PDF</span>
                     <span className="catalog-hover">
-                      <span className="catalog-dl">View Catalog <Arrow size={14} /></span>
+                      <span className="catalog-dl">View Catalogues <Arrow size={14} /></span>
                     </span>
                   </div>
                   <div className="catalog-body">
-                    <div className="catalog-brand">{item.brand}</div>
+                    <div className="catalog-brand">{item.name}</div>
                     <div className="catalog-title">{item.title}</div>
                     <div className="catalog-meta">
-                      <span>{item.origin}</span>
+                      <span>{item.count ? `${item.count} ${item.count === 1 ? 'catalogue' : 'catalogues'}` : 'Brand page'}</span>
                       <span className="dot" aria-hidden="true" />
-                      <span>{item.pages} pages</span>
+                      <span>Free download</span>
                     </div>
                   </div>
                 </Link>
@@ -388,7 +489,7 @@ export default function Home2() {
           </div>
           <div className="catalog-note">
             <p>Looking for a brand or product not listed here? We will send the current edition straight to your inbox.</p>
-            <a href="#contact" className="link-arrow">Request a Catalogue <Arrow /></a>
+            <Link to="/contact" className="link-arrow">Request a Catalogue <Arrow /></Link>
           </div>
         </div>
       </section>
@@ -404,21 +505,7 @@ export default function Home2() {
             <div className="eyebrow">Journal —</div>
             <h2>Ideas &amp; Inspiration</h2>
             <p>Discover design trends, expert tips and real spaces that inspire a more beautiful way of living.</p>
-            <Link to="/blogs.php" className="link-arrow">View All Articles <Arrow /></Link>
-            <div className="articles">
-              {JOURNAL.map((article) => (
-                <div className="article-card" key={article.slug}>
-                  <div className="article-thumb">
-                    <img src={article.image} alt={article.title} loading="lazy" />
-                  </div>
-                  <div className="article-body">
-                    <div className="article-date">{formatDate(article.date)}</div>
-                    <div className="article-title">{article.title}</div>
-                    <Link to={article.path} className="link-arrow">Read <Arrow size={12} width={2.6} /></Link>
-                  </div>
-                </div>
-              ))}
-            </div>
+            <JournalSlider articles={JOURNAL} />
           </div>
         </div>
       </section>
