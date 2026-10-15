@@ -19,6 +19,8 @@ export default function App() {
   const path = usePath();
   if (path === '/home-old') return <Home />;
   if (path === '/about') return <About />;
+  // the old certificates page is now a section of About
+  if (path === '/certificates.php') return <About section="certificates" />;
   if (path === '/contact') return <Contact />;
   if (path === '/download-profiles' || path.startsWith('/download-profiles/')) {
     const [brand, collection] = path.slice('/download-profiles/'.length).split('/');

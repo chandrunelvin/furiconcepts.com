@@ -3264,3 +3264,13 @@
 .home2 .contact-sent a{ text-decoration:underline; }
 .home2 .career-perks li > span.method-icon{ margin-top:2px; }
 .home2 .career-perks > li:not(:has(a)){ display:flex;align-items:flex-start;gap:14px;padding:12px 10px; }
+
+/* ---------- about: certificates ---------- */
+.home2 .about-certs .team-head{ margin-bottom:26px; }
+.home2 .about-cert-tabs{ margin-bottom:34px; }
+.home2 .about-certs .blog-tag{ white-space:normal;line-height:1.4; }
+@media(max-width:760px){
+  .home2 .about-cert-tabs{ flex-wrap:nowrap;overflow-x:auto;scrollbar-width:none;margin:0 -24px 28px;padding:0 24px 4px; }
+  .home2 .about-cert-tabs::-webkit-scrollbar{ display:none; }
+  .home2 .about-cert-tabs .brand-tab{ flex:none; }
+}

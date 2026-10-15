@@ -1,5 +1,6 @@
 import { useCallback, useEffect, useRef, useState } from 'react';
 import { Arrow, SiteFooter, SiteHeader } from '../components/Home2Chrome.jsx';
+import { CERTIFICATES, CERT_GROUPS } from '../data/certificates.js';
 import { CLIENTS } from '../data/clients.js';
 import { TESTIMONIALS } from '../data/testimonials.js';
 import { LEADERSHIP, TEAM } from '../data/team.js';
@@ -7,6 +8,7 @@ import { useMarquee } from '../lib/marquee.js';
 import { useReveal } from '../lib/reveal.js';
 import { prefersReducedMotion } from '../lib/scroll.js';
 import { Link } from '../router.jsx';
+import { DownloadIcon, PdfViewer } from './ProfileLibrary.jsx';
 import '../styles/home2.css';
 
 const NUMBERS = [
@@ -43,14 +45,25 @@ const REVEAL_GROUPS = [
   '.vision-panel .vision-body, .mission-panel .vision-body',
   '.about-team .team-head, .about-team .team-row',
   '.about-clients .team-head, .about-clients .client-viewport',
+  '.about-certs .team-head > *, .about-certs .brand-tabs',
+  '.about-certs .profile-card',
   '.testimonials-side, .quote-stage',
   '.about-cta-copy > *',
   'footer .footer-brand, footer .footer-col, footer .footer-bottom',
 ];
 
 /** Company page, built to the About Us comp: story, numbers, vision, team, brands. */
-export default function About() {
+export default function About({ section }) {
   useReveal(REVEAL_GROUPS);
+  // opened at a section's old URL (e.g. /certificates.php): jump straight to it,
+  // and again once images above it have loaded and pushed it down
+  useEffect(() => {
+    if (!section) return undefined;
+    const go = () => document.getElementById(section)?.scrollIntoView({ block: 'start', behavior: 'instant' });
+    go();
+    window.addEventListener('load', go, { once: true });
+    return () => window.removeEventListener('load', go);
+  }, [section]);
   const clientRail = useMarquee({ speed: 46 });
 
   return (
@@ -159,7 +172,7 @@ export default function About() {
               <h2>The People<br />Behind Furniconcepts</h2>
               <p>Sales, design, estimation, IT and installation — across the UAE, Saudi Arabia, India and Singapore, all working towards one goal: better spaces.</p>
             </div>
-            <a href="#offices" className="link-arrow">Explore Careers <Arrow /></a>
+            <Link to="/career.php" className="link-arrow">Explore Careers <Arrow /></Link>
           </div>
           <TeamRow people={PEOPLE} />
         </div>
@@ -188,6 +201,9 @@ export default function About() {
         </div>
       </section>
 
+      {/* ---- certificates ---- */}
+      <Certificates />
+
       {/* ---- testimonials ---- */}
       <Testimonials />
 
@@ -215,6 +231,77 @@ export default function About() {
  * The team runs as one row that steps a single card at a time — arrows for
  * deliberate browsing, and a slow auto-advance that pauses on hover or focus.
  */
+/**
+ * ISO, safety, trademark and compliance documents, filtered by tab. On wide
+ * screens a document opens in the Download Profiles viewer; phones follow the
+ * link to the file instead.
+ */
+function Certificates() {
+  const [group, setGroup] = useState('all');
+  const [open, setOpen] = useState(null);
+  const shown = CERTIFICATES.filter((c) => group === 'all' || c.group === group);
+  const close = useCallback(() => setOpen(null), []);
+
+  const view = (e, cert) => {
+    if (window.matchMedia('(max-width: 760px)').matches) return;
+    e.preventDefault();
+    setOpen(cert);
+  };
+
+  return (
+    <section className="section about-certs" id="certificates">
+      <div className="wrap">
+        <div className="team-head">
+          <div>
+            <div className="eyebrow">Certificates</div>
+            <h2>Certified Quality,<br />Trusted Compliance</h2>
+            <p>ISO-certified for quality, environment and safety, with a registered trademark and UAE In-Country Value certification. View or download any document for your records.</p>
+          </div>
+        </div>
+        <div className="brand-tabs about-cert-tabs" role="tablist" aria-label="Certificate type">
+          {CERT_GROUPS.map((g) => (
+            <button
+              type="button"
+              role="tab"
+              aria-selected={g.key === group}
+              className={`brand-tab ${g.key === group ? 'active' : ''}`.trim()}
+              onClick={() => setGroup(g.key)}
+              key={g.key}
+            >
+              {g.label}
+            </button>
+          ))}
+        </div>
+        <div className="profiles-grid" key={group}>
+          {shown.map((c) => (
+            <article className="blog-card profile-card" key={c.pdf}>
+              <a href={c.pdf} target="_blank" rel="noopener" onClick={(e) => view(e, c)}
+                 className="blog-card-media profile-media doc-media" tabIndex={-1} aria-hidden="true">
+                <img src={c.cover} alt="" loading="lazy" />
+                <span className="profile-badge">{CERT_GROUPS.find((g) => g.key === c.group).label.toUpperCase()}</span>
+              </a>
+              <div className="blog-card-body">
+                <span className="blog-tag">{c.meta}</span>
+                <h3><a href={c.pdf} target="_blank" rel="noopener" onClick={(e) => view(e, c)}>{c.title}</a></h3>
+                <p>{c.text}</p>
+                <div className="profile-actions">
+                  <a href={c.pdf} target="_blank" rel="noopener" onClick={(e) => view(e, c)} className="link-arrow">
+                    {c.cta ?? 'View Certificate'} <Arrow size={13} />
+                  </a>
+                  <a href={c.pdf} download className="profile-download" aria-label={`Download ${c.title}`}>
+                    <DownloadIcon />
+                  </a>
+                </div>
+              </div>
+            </article>
+          ))}
+        </div>
+      </div>
+      {open && <PdfViewer file={open} onClose={close} />}
+    </section>
+  );
+}
+
 function TeamRow({ people }) {
   const railRef = useRef(null);
 
