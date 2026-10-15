@@ -9,8 +9,8 @@
  * Rich text is either a string or a list of strings and {label, href} links.
  *
  * A page with a `parent` (e.g. the Dubai / India / Singapore umbrella pages)
- * sits under that category: it is routed, but left out of the menus. `seo`
- * optionally sets the page's <title>, meta description and canonical link.
+ * sits under that category: it is routed, but left out of the menus. Head
+ * tags for every page live in data/seo.json (see lib/seo.js).
  */
 export const CATEGORY_PAGES = [
   {
@@ -2157,16 +2157,6 @@ export const CATEGORY_PAGES = [
     "titleAccent": "in Dubai",
     "eyebrow": "Dubai Umbrella Solutions",
     "summary": "Dubai projects demand umbrella systems that combine premium visual quality with strong outdoor performance. Furniconcepts supplies commercial umbrella solutions for hotels, restaurants, hospitals, and lifestyle environments across Dubai and the wider UAE.",
-    "seo": {
-      "title": "Outdoor Umbrella Supplier Dubai | Commercial Shade Solutions UAE",
-      "meta": [
-        {
-          "name": "description",
-          "content": "Premium outdoor and indoor umbrella supplier in Dubai for hotels, restaurants, hospitals, and luxury commercial spaces with custom shade systems."
-        }
-      ],
-      "canonical": "https://furniconcepts.com/outdoor-indoor-umbrella-supplier-dubai.php"
-    },
     "stats": [
       {
         "value": "Heat Ready",
@@ -2614,16 +2604,6 @@ export const CATEGORY_PAGES = [
     "titleAccent": "in India",
     "eyebrow": "India Umbrella Solutions",
     "summary": "India projects need umbrella systems that handle varied climates, commercial practicality, and different budget levels. Furniconcepts supplies outdoor and indoor commercial umbrellas for hospitality, healthcare, education, dining, and business environments across India.",
-    "seo": {
-      "title": "Outdoor Umbrella Supplier India | Commercial Shade Solutions",
-      "meta": [
-        {
-          "name": "description",
-          "content": "Commercial outdoor and indoor umbrella supplier in India for hotels, hospitals, restaurants, campuses, and business spaces with durable and customizable shade systems."
-        }
-      ],
-      "canonical": "https://furniconcepts.com/outdoor-indoor-umbrella-supplier-india.php"
-    },
     "stats": [
       {
         "value": "Climate Fit",
@@ -3071,16 +3051,6 @@ export const CATEGORY_PAGES = [
     "titleAccent": "in Singapore",
     "eyebrow": "Singapore Umbrella Solutions",
     "summary": "Singapore projects demand commercial umbrella solutions that balance compact planning, premium presentation, and reliable weather performance. Furniconcepts supplies outdoor and indoor umbrella systems designed for hospitality, healthcare, dining, and modern commercial environments.",
-    "seo": {
-      "title": "Outdoor Umbrella Supplier Singapore | Commercial Shade Solutions",
-      "meta": [
-        {
-          "name": "description",
-          "content": "Premium outdoor and indoor umbrella supplier in Singapore for hotels, cafes, clinics, and commercial spaces with compact, custom, and design-led shade solutions."
-        }
-      ],
-      "canonical": "https://furniconcepts.com/outdoor-indoor-umbrella-supplier-singapore.php"
-    },
     "stats": [
       {
         "value": "Compact Ready",

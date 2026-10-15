@@ -1,0 +1,5772 @@
+{
+ "/": {
+  "live": "/",
+  "title": "Office Furniture Supplier in Dubai, India & Singapore",
+  "meta": [
+   {
+    "name": "description",
+    "content": "Furniconcepts provides premium office furniture including ergonomic seating, desks & workstations across Dubai, India & Singapore."
+   },
+   {
+    "property": "og:title",
+    "content": "Modern Office Furniture Suppliers UAE | Furniconcepts"
+   },
+   {
+    "property": "og:description",
+    "content": "Discover Modern Office Furniture Suppliers UAE by Furniconcepts – modern office furniture solutions in Dubai & UAE."
+   },
+   {
+    "property": "og:type",
+    "content": "website"
+   }
+  ],
+  "jsonld": [
+   {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "name": "Modern Office Furniture Suppliers UAE",
+    "url": "https://furniconcepts.com/"
+   }
+  ]
+ },
+ "/about": {
+  "live": "/about.php",
+  "title": "About Furniconcepts – Crafting Elegant & Functional Furniture Solutions",
+  "meta": [
+   {
+    "name": "description",
+    "content": "Discover Furniconcepts, a leading furniture brand delivering elegant, functional, and sustainable furniture solutions across India, UAE, Saudi Arabia, Qatar, and more. Explore our vision, mission, and craftsmanship excellence."
+   },
+   {
+    "property": "og:title",
+    "content": "About Furniconcepts | Furniconcepts"
+   },
+   {
+    "property": "og:description",
+    "content": "Discover About Furniconcepts by Furniconcepts – modern office furniture solutions in Dubai & UAE."
+   },
+   {
+    "property": "og:type",
+    "content": "website"
+   }
+  ],
+  "jsonld": [
+   {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "About Furniconcepts",
+    "url": "https://furniconcepts.com/about.php"
+   }
+  ]
+ },
+ "/acoustic-pods.php": {
+  "live": "/acoustic-pods.php",
+  "title": "Acoustic Pods & Sound Solutions Suppliers in Dubai, India & Singapore | Furniconcepts",
+  "meta": [
+   {
+    "name": "description",
+    "content": "Musepod and Zumbooth acoustic pods and phone booths, plus acoustic wall and ceiling panels, in Dubai, India and Singapore. Up to 30dB noise reduction and GREENGUARD-certified smart booths."
+   },
+   {
+    "name": "keywords",
+    "content": "acoustic pods dubai, office phone booth india, acoustic pods singapore, silent pods uae, meeting pods, acoustic wall panels, acoustic ceiling panels, musepod, zumbooth"
+   },
+   {
+    "name": "robots",
+    "content": "index, follow"
+   },
+   {
+    "property": "og:type",
+    "content": "website"
+   },
+   {
+    "property": "og:title",
+    "content": "Acoustic Pods & Sound Solutions Suppliers in Dubai, India & Singapore | Furniconcepts"
+   },
+   {
+    "property": "og:description",
+    "content": "Musepod and Zumbooth acoustic pods and phone booths, plus acoustic panels for the wider floor."
+   },
+   {
+    "property": "og:site_name",
+    "content": "Furniconcepts"
+   },
+   {
+    "name": "twitter:card",
+    "content": "summary_large_image"
+   },
+   {
+    "name": "twitter:title",
+    "content": "Acoustic Pods & Sound Solutions Suppliers in Dubai, India & Singapore | Furniconcepts"
+   },
+   {
+    "name": "twitter:description",
+    "content": "Acoustic pods, phone booths and panels from Musepod and Zumbooth across Dubai, India and Singapore."
+   }
+  ],
+  "jsonld": [
+   {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+     {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://furniconcepts.com/"
+     },
+     {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Solutions"
+     },
+     {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Acoustic Pods & Solutions",
+      "item": "https://furniconcepts.com/acoustic-pods.php"
+     }
+    ]
+   },
+   {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+     {
+      "@type": "Question",
+      "name": "Musepod or Zumbooth?",
+      "acceptedAnswer": {
+       "@type": "Answer",
+       "text": "Musepod leads on sustainable materials and flexible sizes. Zumbooth leads on smart sensors and certified air quality."
+      }
+     },
+     {
+      "@type": "Question",
+      "name": "How much noise do pods block?",
+      "acceptedAnswer": {
+       "@type": "Answer",
+       "text": "Musepod blocks up to 30dB."
+      }
+     },
+     {
+      "@type": "Question",
+      "name": "Are they eco-certified?",
+      "acceptedAnswer": {
+       "@type": "Answer",
+       "text": "Yes. Zumbooth is GREENGUARD certified, and Musepod uses FSC-certified boards."
+      }
+     },
+     {
+      "@type": "Question",
+      "name": "Pod or panel?",
+      "acceptedAnswer": {
+       "@type": "Answer",
+       "text": "A pod gives full privacy. Panels reduce noise across the room at a lower cost."
+      }
+     },
+     {
+      "@type": "Question",
+      "name": "Do pods have ventilation?",
+      "acceptedAnswer": {
+       "@type": "Answer",
+       "text": "Zumbooth has sensor-controlled ventilation."
+      }
+     },
+     {
+      "@type": "Question",
+      "name": "How many pods does an office need?",
+      "acceptedAnswer": {
+       "@type": "Answer",
+       "text": "It depends on headcount and how often people take calls. We'll help you size it."
+      }
+     },
+     {
+      "@type": "Question",
+      "name": "Can pods be moved later?",
+      "acceptedAnswer": {
+       "@type": "Answer",
+       "text": "Musepod's modular design allows reconfiguration."
+      }
+     }
+    ]
+   }
+  ]
+ },
+ "/acoustic-solutions.php": {
+  "live": "/acoustic-solutions.php",
+  "title": "Acoustic Solutions UAE | Furniconcepts",
+  "meta": [
+   {
+    "name": "description",
+    "content": "Explore acoustic solutions including silent pods, office phone booths and acoustic wall & ceiling panels in Dubai, India and Singapore."
+   },
+   {
+    "name": "keywords",
+    "content": "acoustic solutions dubai, silent pods uae, office phone booth india, acoustic wall panels india, acoustic ceiling panels dubai, acoustic solutions singapore, office pods and booths"
+   },
+   {
+    "name": "robots",
+    "content": "index, follow"
+   },
+   {
+    "property": "og:type",
+    "content": "website"
+   },
+   {
+    "property": "og:title",
+    "content": "Acoustic Solutions | Silent Pods, Phone Booths & Acoustic Panels UAE, India, Singapore"
+   },
+   {
+    "property": "og:description",
+    "content": "Discover acoustic pods, office phone booths, wall panels, and ceiling panels for workplaces and commercial projects across Dubai, India, and Singapore."
+   },
+   {
+    "property": "og:site_name",
+    "content": "Furniconcepts"
+   },
+   {
+    "name": "twitter:card",
+    "content": "summary_large_image"
+   },
+   {
+    "name": "twitter:title",
+    "content": "Acoustic Solutions | Silent Pods, Phone Booths & Acoustic Panels UAE, India, Singapore"
+   },
+   {
+    "name": "twitter:description",
+    "content": "Explore acoustic solutions for privacy, focus, and better sound control with silent pods, phone booths, and acoustic panels."
+   }
+  ],
+  "jsonld": [
+   {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+     {
+      "@type": "Question",
+      "name": "What is an acoustic pod?",
+      "acceptedAnswer": {
+       "@type": "Answer",
+       "text": "An acoustic pod is a sound-insulated enclosure used for focused work, calls, or meetings inside larger shared spaces."
+      }
+     },
+     {
+      "@type": "Question",
+      "name": "Are office phone booths soundproof?",
+      "acceptedAnswer": {
+       "@type": "Answer",
+       "text": "Office phone booths reduce external noise significantly and improve privacy, though performance depends on the booth design and acoustic specification."
+      }
+     },
+     {
+      "@type": "Question",
+      "name": "What is the cost of acoustic pods in Dubai?",
+      "acceptedAnswer": {
+       "@type": "Answer",
+       "text": "Acoustic pod pricing in Dubai commonly ranges from AED 15,000 to AED 80,000 or more depending on size, finish, and features."
+      }
+     },
+     {
+      "@type": "Question",
+      "name": "Do acoustic panels reduce noise?",
+      "acceptedAnswer": {
+       "@type": "Answer",
+       "text": "Yes, acoustic panels reduce echo and improve sound quality, but they do not provide the same enclosed privacy as pods or booths."
+      }
+     },
+     {
+      "@type": "Question",
+      "name": "Which is better: pods or panels?",
+      "acceptedAnswer": {
+       "@type": "Answer",
+       "text": "Pods are better for privacy and enclosed work, while panels are better for broader ambient noise control and speech clarity."
+      }
+     }
+    ]
+   }
+  ]
+ },
+ "/airport-seating.php": {
+  "live": "/airport-seating.php",
+  "title": "Airport Seating Categories | Dubai, India & Singapore",
+  "meta": [
+   {
+    "name": "description",
+    "content": "Explore airport seating supplier pages for Dubai, India, and Singapore with airport chairs, waiting area seating, and terminal furniture solutions."
+   }
+  ],
+  "jsonld": []
+ },
+ "/auditorium-seating.php": {
+  "live": "/auditorium-seating.php",
+  "title": "Auditorium Seating Suppliers in Dubai, India & Singapore | Furniconcepts",
+  "meta": [
+   {
+    "name": "description",
+    "content": "Fixed, retractable and custom VIP auditorium seating in Dubai, India and Singapore. Leadcom and Audia Italia distributor with 3D layout planning, installation and 7-day delivery from Dubai stock."
+   },
+   {
+    "name": "keywords",
+    "content": "auditorium seating dubai, auditorium seating suppliers india, auditorium seating singapore, retractable seating, telescopic seating dubai, fixed auditorium chairs, vip theatre seating, leadcom, audia italia"
+   },
+   {
+    "name": "robots",
+    "content": "index, follow"
+   },
+   {
+    "property": "og:type",
+    "content": "website"
+   },
+   {
+    "property": "og:title",
+    "content": "Auditorium Seating Suppliers in Dubai, India & Singapore | Furniconcepts"
+   },
+   {
+    "property": "og:description",
+    "content": "Fixed, retractable and custom VIP auditorium seating from Leadcom and Audia Italia, with 3D planning, BIFMA-standard construction and on-site installation."
+   },
+   {
+    "property": "og:site_name",
+    "content": "Furniconcepts"
+   },
+   {
+    "name": "twitter:card",
+    "content": "summary_large_image"
+   },
+   {
+    "name": "twitter:title",
+    "content": "Auditorium Seating Suppliers in Dubai, India & Singapore | Furniconcepts"
+   },
+   {
+    "name": "twitter:description",
+    "content": "Fixed, retractable and custom VIP auditorium seating with 3D layout planning and 7-day delivery from Dubai stock."
+   }
+  ],
+  "jsonld": [
+   {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+     {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://www.furniconcepts.com/"
+     },
+     {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Solutions"
+     },
+     {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Auditorium Seating",
+      "item": "https://www.furniconcepts.com/auditorium-seating.php"
+     }
+    ]
+   },
+   {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+     {
+      "@type": "Question",
+      "name": "Fixed or retractable, which do I need?",
+      "acceptedAnswer": {
+       "@type": "Answer",
+       "text": "Fixed seating gives you maximum capacity and durability. Retractable seating lets one room do many jobs, with a more involved installation."
+      }
+     },
+     {
+      "@type": "Question",
+      "name": "What is telescopic seating?",
+      "acceptedAnswer": {
+       "@type": "Answer",
+       "text": "Seating mounted on platforms that fold and stack against a wall, turning a seated hall into open floor space."
+      }
+     },
+     {
+      "@type": "Question",
+      "name": "What seat pitch do you use?",
+      "acceptedAnswer": {
+       "@type": "Answer",
+       "text": "22 inches centre to centre, to get the most seats within legal spacing."
+      }
+     },
+     {
+      "@type": "Question",
+      "name": "How long does it take?",
+      "acceptedAnswer": {
+       "@type": "Answer",
+       "text": "Retractable systems take 40–45 days, or 15–18 days for premium UAE projects."
+      }
+     },
+     {
+      "@type": "Question",
+      "name": "Can you supply seating for an opening date?",
+      "acceptedAnswer": {
+       "@type": "Answer",
+       "text": "Yes. Dubai warehouse stock supports 7-day delivery."
+      }
+     },
+     {
+      "@type": "Question",
+      "name": "Is installation included?",
+      "acceptedAnswer": {
+       "@type": "Answer",
+       "text": "Yes. We handle 3D planning, manufacturing, delivery and on-site installation."
+      }
+     },
+     {
+      "@type": "Question",
+      "name": "Can seating be customised?",
+      "acceptedAnswer": {
+       "@type": "Answer",
+       "text": "Yes. Audia Italia is fully tailored per venue, and Leadcom offers tablet arms, continental layouts and reinforced backs."
+      }
+     },
+     {
+      "@type": "Question",
+      "name": "Do you work outside the UAE?",
+      "acceptedAnswer": {
+       "@type": "Answer",
+       "text": "Yes, across Dubai, India and Singapore."
+      }
+     }
+    ]
+   }
+  ]
+ },
+ "/brands/audia-italia": {
+  "live": "/audiaitalia.php",
+  "title": "Audia Italia Auditorium & Theatre Seating in Dubai | Furniconcepts",
+  "meta": [
+   {
+    "name": "description",
+    "content": "Italian auditorium and theatre seating, planned in 3D before production. Fire-resistant, quiet and made to your spec. Dubai, India & Singapore."
+   },
+   {
+    "property": "og:type",
+    "content": "website"
+   },
+   {
+    "property": "og:title",
+    "content": "Audia Italia Auditorium & Theatre Seating in Dubai | Furniconcepts"
+   },
+   {
+    "property": "og:description",
+    "content": "Italian auditorium and theatre seating, planned in 3D before production. Fire-resistant, quiet and made to your spec. Dubai, India & Singapore."
+   },
+   {
+    "name": "twitter:card",
+    "content": "summary_large_image"
+   },
+   {
+    "name": "twitter:title",
+    "content": "Audia Italia Auditorium & Theatre Seating in Dubai | Furniconcepts"
+   },
+   {
+    "name": "twitter:description",
+    "content": "Italian auditorium and theatre seating, planned in 3D before production. Fire-resistant, quiet and made to your spec. Dubai, India & Singapore."
+   }
+  ],
+  "jsonld": [
+   {
+    "@context": "https://schema.org",
+    "@type": "Brand",
+    "name": "Audia Italia",
+    "url": "https://www.furniconcepts.com/audiaitalia.php",
+    "description": "Italian auditorium and theatre seating, planned in 3D before production. Fire-resistant, quiet and made to your spec. Supplied by Furniconcepts in Dubai, India & Singapore.",
+    "logo": "https://furniconcepts.com/dist/img/logo.png"
+   },
+   {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+     {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://www.furniconcepts.com/"
+     },
+     {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Brands",
+      "item": "https://www.furniconcepts.com/brands.php"
+     },
+     {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Audia Italia",
+      "item": "https://www.furniconcepts.com/audiaitalia.php"
+     }
+    ]
+   },
+   {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+     {
+      "@type": "Question",
+      "name": "Which Audia Italia collection is best for a university lecture hall?",
+      "acceptedAnswer": {
+       "@type": "Answer",
+       "text": "Ateneo was designed for academic auditoriums. If the hall also hosts events, Antea gives you more seat options within the same look."
+      }
+     },
+     {
+      "@type": "Question",
+      "name": "Can the seating follow curved rows or fit into corners?",
+      "acceptedAnswer": {
+       "@type": "Answer",
+       "text": "Yes. The Vesta collection includes corner (Angolare) and recessed (Pozzetto) versions for irregular layouts."
+      }
+     },
+     {
+      "@type": "Question",
+      "name": "Is Audia Italia seating fire-resistant?",
+      "acceptedAnswer": {
+       "@type": "Answer",
+       "text": "Yes. The upholstery materials are fire-resistant, which helps venues meet safety requirements."
+      }
+     },
+     {
+      "@type": "Question",
+      "name": "Will I see the layout before placing an order?",
+      "acceptedAnswer": {
+       "@type": "Answer",
+       "text": "Yes. We prepare a 3D layout plan so you can review spacing and sightlines first."
+      }
+     },
+     {
+      "@type": "Question",
+      "name": "Do you install the seating?",
+      "acceptedAnswer": {
+       "@type": "Answer",
+       "text": "Yes. Our team manages delivery, installation and after-sales service."
+      }
+     },
+     {
+      "@type": "Question",
+      "name": "Is Audia Italia available in Singapore?",
+      "acceptedAnswer": {
+       "@type": "Answer",
+       "text": "Yes, directly through our Singapore office."
+      }
+     }
+    ]
+   }
+  ]
+ },
+ "/brands/bestuhl": {
+  "live": "/bestuhl.php",
+  "title": "Bestuhl Ergonomic Office Chairs in Dubai & India | Furniconcepts",
+  "meta": [
+   {
+    "name": "description",
+    "content": "Long days at the desk? Bestuhl's award-winning Korean chairs adjust to you, with a 3-year warranty and 30-day free returns. Available in Dubai & India."
+   },
+   {
+    "property": "og:title",
+    "content": "Bestuhl Ergonomic Office Chairs in Dubai & India | Furniconcepts"
+   },
+   {
+    "property": "og:description",
+    "content": "Long days at the desk? Bestuhl's award-winning Korean chairs adjust to you, with a 3-year warranty and 30-day free returns. Available in Dubai & India."
+   },
+   {
+    "property": "og:type",
+    "content": "website"
+   },
+   {
+    "property": "og:site_name",
+    "content": "FurniConcepts"
+   },
+   {
+    "name": "twitter:card",
+    "content": "summary_large_image"
+   },
+   {
+    "name": "twitter:title",
+    "content": "Bestuhl Ergonomic Office Chairs in Dubai & India | Furniconcepts"
+   },
+   {
+    "name": "twitter:description",
+    "content": "Long days at the desk? Bestuhl's award-winning Korean chairs adjust to you, with a 3-year warranty and 30-day free returns. Available in Dubai & India."
+   }
+  ],
+  "jsonld": [
+   {
+    "@context": "https://schema.org",
+    "@graph": [
+     {
+      "@type": "Brand",
+      "name": "Bestuhl",
+      "url": "https://www.furniconcepts.com/bestuhl.php",
+      "description": "Bestuhl Korean ergonomic office chairs and office furniture, including the J17 ergonomic chair and the K-Design Grand Prize-winning F.A.T10 conference table. Supplied by Furniconcepts across the UAE and India.",
+      "logo": "https://furniconcepts.com/dist/img/logo.png"
+     },
+     {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+       {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://www.furniconcepts.com/"
+       },
+       {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Brands",
+        "item": "https://www.furniconcepts.com/brands.php"
+       },
+       {
+        "@type": "ListItem",
+        "position": 3,
+        "name": "Bestuhl",
+        "item": "https://www.furniconcepts.com/bestuhl.php"
+       }
+      ]
+     },
+     {
+      "@type": "FAQPage",
+      "mainEntity": [
+       {
+        "@type": "Question",
+        "name": "Is the Bestuhl J17 good for back pain?",
+        "acceptedAnswer": {
+         "@type": "Answer",
+         "text": "The J17 is designed to support good posture over long hours, with adjustable seat depth, lockable recline and a breathable mesh back. For medical advice, please speak to a health professional."
+        }
+       },
+       {
+        "@type": "Question",
+        "name": "What's the difference between the J1 and J17?",
+        "acceptedAnswer": {
+         "@type": "Answer",
+         "text": "The J17 adds three lockable recline positions, 3-way adjustable armrests and seat-depth adjustment."
+        }
+       },
+       {
+        "@type": "Question",
+        "name": "What warranty comes with Bestuhl chairs?",
+        "acceptedAnswer": {
+         "@type": "Answer",
+         "text": "Three years against defects, plus a 30-day free return policy."
+        }
+       },
+       {
+        "@type": "Question",
+        "name": "Can I use a Bestuhl chair at home?",
+        "acceptedAnswer": {
+         "@type": "Answer",
+         "text": "Yes. The J1 and J17 are built for both home and office use."
+        }
+       },
+       {
+        "@type": "Question",
+        "name": "Does Bestuhl make meeting room furniture?",
+        "acceptedAnswer": {
+         "@type": "Answer",
+         "text": "Yes. The F.A.T10 conference and lecture table is its award-winning option."
+        }
+       }
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ "/brands/broad-power": {
+  "live": "/broad-power.php",
+  "title": "Broad Power Monitor Arms & Cable Management in Dubai | Furniconcepts",
+  "meta": [
+   {
+    "name": "description",
+    "content": "Tired of tangled cables and screens at the wrong height? Broad Power monitor arms and cable management clear your desks. Dubai & India."
+   },
+   {
+    "name": "robots",
+    "content": "index, follow"
+   },
+   {
+    "property": "og:title",
+    "content": "Broad Power Monitor Arms & Cable Management in Dubai | Furniconcepts"
+   },
+   {
+    "property": "og:description",
+    "content": "Tired of tangled cables and screens at the wrong height? Broad Power monitor arms and cable management clear your desks. Dubai & India."
+   },
+   {
+    "property": "og:type",
+    "content": "website"
+   },
+   {
+    "name": "twitter:card",
+    "content": "summary_large_image"
+   },
+   {
+    "name": "twitter:title",
+    "content": "Broad Power Monitor Arms & Cable Management in Dubai | Furniconcepts"
+   },
+   {
+    "name": "twitter:description",
+    "content": "Tired of tangled cables and screens at the wrong height? Broad Power monitor arms and cable management clear your desks. Dubai & India."
+   }
+  ],
+  "jsonld": [
+   {
+    "@context": "https://schema.org",
+    "@type": "Brand",
+    "name": "Broad Power",
+    "url": "https://www.furniconcepts.com/broad-power.php",
+    "description": "Broad Power monitor arms, cable management and desk power modules for offices, hotels and shared workspaces, supplied by Furniconcepts in Dubai and India.",
+    "logo": "https://furniconcepts.com/dist/img/logo.png"
+   },
+   {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+     {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://www.furniconcepts.com/"
+     },
+     {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Brands",
+      "item": "https://www.furniconcepts.com/brands.php"
+     },
+     {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Broad Power",
+      "item": "https://www.furniconcepts.com/broad-power.php"
+     }
+    ]
+   },
+   {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+     {
+      "@type": "Question",
+      "name": "Can one monitor arm hold two screens?",
+      "acceptedAnswer": {
+       "@type": "Answer",
+       "text": "Yes. Broad Power offers single, dual and multi-monitor arms."
+      }
+     },
+     {
+      "@type": "Question",
+      "name": "Will a monitor arm fit my desk?",
+      "acceptedAnswer": {
+       "@type": "Answer",
+       "text": "Most desk edges are covered by the clamp or grommet mount options. Share your desk details and we'll confirm the right fit."
+      }
+     },
+     {
+      "@type": "Question",
+      "name": "How do I stop cables tangling on a sit-stand desk?",
+      "acceptedAnswer": {
+       "@type": "Answer",
+       "text": "A height-adjustable Cable Spine moves with the desk and keeps cables neatly bundled."
+      }
+     },
+     {
+      "@type": "Question",
+      "name": "Can you add power sockets to our meeting table?",
+      "acceptedAnswer": {
+       "@type": "Answer",
+       "text": "Yes. Broad Power's desk power modules add power and data points directly into tables."
+      }
+     },
+     {
+      "@type": "Question",
+      "name": "Do you handle large office rollouts?",
+      "acceptedAnswer": {
+       "@type": "Answer",
+       "text": "Yes. We manage bulk orders, delivery and installation for full floors."
+      }
+     }
+    ]
+   }
+  ]
+ },
+ "/brands/cavaletti": {
+  "live": "/cavaletti.php",
+  "title": "Cavaletti Office Chairs in Dubai & India | Furniconcepts Authorized Dealer",
+  "meta": [
+   {
+    "name": "description",
+    "content": "From lounge to boardroom to workstation, Cavaletti has a chair for every seat in your office, all with a 6-year warranty. Genuine Cavaletti in Dubai & India."
+   },
+   {
+    "property": "og:title",
+    "content": "Cavaletti Office Chairs in Dubai & India | Furniconcepts Authorized Dealer"
+   },
+   {
+    "property": "og:description",
+    "content": "From lounge to boardroom to workstation, Cavaletti has a chair for every seat in your office, all with a 6-year warranty. Genuine Cavaletti in Dubai & India."
+   },
+   {
+    "property": "og:type",
+    "content": "website"
+   },
+   {
+    "property": "og:site_name",
+    "content": "FurniConcepts"
+   },
+   {
+    "name": "twitter:card",
+    "content": "summary_large_image"
+   },
+   {
+    "name": "twitter:title",
+    "content": "Cavaletti Office Chairs in Dubai & India | Furniconcepts Authorized Dealer"
+   },
+   {
+    "name": "twitter:description",
+    "content": "From lounge to boardroom to workstation, Cavaletti has a chair for every seat in your office, all with a 6-year warranty. Genuine Cavaletti in Dubai & India."
+   }
+  ],
+  "jsonld": [
+   {
+    "@context": "https://schema.org",
+    "@graph": [
+     {
+      "@type": "Brand",
+      "name": "Cavaletti",
+      "url": "https://www.furniconcepts.com/cavaletti.php",
+      "description": "Cavaletti office chairs and ergonomic seating, made in Erechim, Brazil since 1974, with a 6-year warranty. Supplied by Furniconcepts, authorised dealer in the UAE and India.",
+      "logo": "https://furniconcepts.com/dist/img/logo.png"
+     },
+     {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+       {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://www.furniconcepts.com/"
+       },
+       {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Brands",
+        "item": "https://www.furniconcepts.com/brands.php"
+       },
+       {
+        "@type": "ListItem",
+        "position": 3,
+        "name": "Cavaletti",
+        "item": "https://www.furniconcepts.com/cavaletti.php"
+       }
+      ]
+     },
+     {
+      "@type": "FAQPage",
+      "mainEntity": [
+       {
+        "@type": "Question",
+        "name": "Which Cavaletti chair is best for long working hours?",
+        "acceptedAnswer": {
+         "@type": "Answer",
+         "text": "Idea, Aura and the flagship Vélo are designed for all-day comfort, with strong back support and adjustable mechanisms."
+        }
+       },
+       {
+        "@type": "Question",
+        "name": "How long is the Cavaletti warranty?",
+        "acceptedAnswer": {
+         "@type": "Answer",
+         "text": "Six years against manufacturing defects, across all lines."
+        }
+       },
+       {
+        "@type": "Question",
+        "name": "Can I choose my own fabric and colour?",
+        "acceptedAnswer": {
+         "@type": "Answer",
+         "text": "Yes. Upholstery, colours and configurations can be customised to suit your office."
+        }
+       },
+       {
+        "@type": "Question",
+        "name": "What's the difference between Directive and Operative chairs?",
+        "acceptedAnswer": {
+         "@type": "Answer",
+         "text": "Directive chairs are built for leadership offices; Operative chairs are for everyday desk work."
+        }
+       },
+       {
+        "@type": "Question",
+        "name": "How do I know a Cavaletti chair is genuine?",
+        "acceptedAnswer": {
+         "@type": "Answer",
+         "text": "Buy from an authorised dealer and ask for the product certificates. We provide them on request."
+        }
+       },
+       {
+        "@type": "Question",
+        "name": "Do you supply Cavaletti in bulk for corporate offices?",
+        "acceptedAnswer": {
+         "@type": "Answer",
+         "text": "Yes. We handle bulk orders, delivery and installation for full office fit-outs."
+        }
+       }
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ "/brands/forma5": {
+  "live": "/forma5.php",
+  "title": "Forma5 Office Chairs, Desks & Workstations in Dubai | Furniconcepts",
+  "meta": [
+   {
+    "name": "description",
+    "content": "Want a workspace that keeps people moving and comfortable? Forma5 ergonomic chairs, height-adjustable desks and workstations, made with eco-friendly materials. Dubai & India."
+   },
+   {
+    "property": "og:type",
+    "content": "website"
+   },
+   {
+    "property": "og:title",
+    "content": "Forma5 Office Chairs, Desks & Workstations in Dubai | Furniconcepts"
+   },
+   {
+    "property": "og:description",
+    "content": "Want a workspace that keeps people moving and comfortable? Forma5 ergonomic chairs, height-adjustable desks and workstations, made with eco-friendly materials. Dubai & India."
+   },
+   {
+    "name": "twitter:card",
+    "content": "summary_large_image"
+   },
+   {
+    "name": "twitter:title",
+    "content": "Forma5 Office Chairs, Desks & Workstations in Dubai | Furniconcepts"
+   },
+   {
+    "name": "twitter:description",
+    "content": "Want a workspace that keeps people moving and comfortable? Forma5 ergonomic chairs, height-adjustable desks and workstations, made with eco-friendly materials. Dubai & India."
+   }
+  ],
+  "jsonld": [
+   {
+    "@context": "https://schema.org",
+    "@graph": [
+     {
+      "@type": "Brand",
+      "name": "Forma5",
+      "url": "https://www.furniconcepts.com/forma5.php",
+      "description": "Forma5 ergonomic chairs, height-adjustable desks, workstations and storage made with eco-friendly materials, supplied by Furniconcepts across the UAE and India.",
+      "logo": "https://furniconcepts.com/dist/img/logo.png"
+     },
+     {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+       {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://www.furniconcepts.com/"
+       },
+       {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Brands",
+        "item": "https://www.furniconcepts.com/brands.php"
+       },
+       {
+        "@type": "ListItem",
+        "position": 3,
+        "name": "Forma5",
+        "item": "https://www.furniconcepts.com/forma5.php"
+       }
+      ]
+     },
+     {
+      "@type": "FAQPage",
+      "mainEntity": [
+       {
+        "@type": "Question",
+        "name": "Does Forma5 make height-adjustable desks?",
+        "acceptedAnswer": {
+         "@type": "Answer",
+         "text": "Yes. The MUVIT table is height-adjustable and pairs with the MUVIT Trolley and MUVIT Seat."
+        }
+       },
+       {
+        "@type": "Question",
+        "name": "Which Forma5 chair is best for everyday desk work?",
+        "acceptedAnswer": {
+         "@type": "Answer",
+         "text": "Touch, Skala and F25 are popular ergonomic choices for long working days."
+        }
+       },
+       {
+        "@type": "Question",
+        "name": "Can I furnish a whole office with Forma5?",
+        "acceptedAnswer": {
+         "@type": "Answer",
+         "text": "Yes. The range covers workstations, executive desks, meeting rooms, reception, storage and lounge areas."
+        }
+       },
+       {
+        "@type": "Question",
+        "name": "Is Forma5 furniture eco-friendly?",
+        "acceptedAnswer": {
+         "@type": "Answer",
+         "text": "Yes. Forma5 uses environmentally friendly materials across its chairs and desks."
+        }
+       },
+       {
+        "@type": "Question",
+        "name": "Do you offer layout planning for Forma5 projects?",
+        "acceptedAnswer": {
+         "@type": "Answer",
+         "text": "Yes. We help plan the space, then handle delivery, installation and after-sales support."
+        }
+       }
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ "/brands/gebbwork": {
+  "live": "/gebbwork.php",
+  "title": "Gebbwork Office Furniture in Dubai & India | Furniconcepts",
+  "meta": [
+   {
+    "name": "description",
+    "content": "Furnishing a whole office? Gebbwork covers desks, meeting tables, reception, storage and built-in power from one supplier, built for heavy daily use. Dubai & India."
+   },
+   {
+    "property": "og:title",
+    "content": "Gebbwork Office Furniture in Dubai & India | Furniconcepts"
+   },
+   {
+    "property": "og:description",
+    "content": "Furnishing a whole office? Gebbwork covers desks, meeting tables, reception, storage and built-in power from one supplier, built for heavy daily use. Dubai & India."
+   },
+   {
+    "property": "og:type",
+    "content": "website"
+   },
+   {
+    "property": "og:site_name",
+    "content": "FurniConcepts"
+   },
+   {
+    "name": "twitter:card",
+    "content": "summary_large_image"
+   },
+   {
+    "name": "twitter:title",
+    "content": "Gebbwork Office Furniture in Dubai & India | Furniconcepts"
+   },
+   {
+    "name": "twitter:description",
+    "content": "Furnishing a whole office? Gebbwork covers desks, meeting tables, reception, storage and built-in power from one supplier, built for heavy daily use. Dubai & India."
+   }
+  ],
+  "jsonld": [
+   {
+    "@context": "https://schema.org",
+    "@graph": [
+     {
+      "@type": "Brand",
+      "name": "Gebbwork",
+      "url": "https://www.furniconcepts.com/gebbwork.php",
+      "description": "Gebbwork modular office furniture for every room, from reception to boardroom, with built-in power and data. Supplied by Furniconcepts, certified dealer in the UAE and India.",
+      "logo": "https://furniconcepts.com/dist/img/logo.png"
+     },
+     {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+       {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://www.furniconcepts.com/"
+       },
+       {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Brands",
+        "item": "https://www.furniconcepts.com/brands.php"
+       },
+       {
+        "@type": "ListItem",
+        "position": 3,
+        "name": "Gebbwork",
+        "item": "https://www.furniconcepts.com/gebbwork.php"
+       }
+      ]
+     },
+     {
+      "@type": "FAQPage",
+      "mainEntity": [
+       {
+        "@type": "Question",
+        "name": "Do Gebbwork meeting tables have built-in power?",
+        "acceptedAnswer": {
+         "@type": "Answer",
+         "text": "Yes. Depending on size, they include one to five outlet boxes with metal covers."
+        }
+       },
+       {
+        "@type": "Question",
+        "name": "Can Gebbwork furnish our reception area?",
+        "acceptedAnswer": {
+         "@type": "Answer",
+         "text": "Yes. The range includes high, low, angular and accessible counters, plus sideboards and lockable cabinets."
+        }
+       },
+       {
+        "@type": "Question",
+        "name": "Which leg styles are available on executive desks?",
+        "acceptedAnswer": {
+         "@type": "Answer",
+         "text": "Trestle, wood, frame foot and beam foot, each with a left or right credenza."
+        }
+       },
+       {
+        "@type": "Question",
+        "name": "Is Furniconcepts an authorised Gebbwork dealer?",
+        "acceptedAnswer": {
+         "@type": "Answer",
+         "text": "Yes. Our dealership certificate is available on request."
+        }
+       },
+       {
+        "@type": "Question",
+        "name": "Can we match furniture across several office locations?",
+        "acceptedAnswer": {
+         "@type": "Answer",
+         "text": "Yes. Choosing one Gebbwork collection keeps every site consistent."
+        }
+       }
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ "/brands/jwesys": {
+  "live": "/jwesys.php",
+  "title": "Jwesys Telescopic & Retractable Seating in Dubai & India | Furniconcepts",
+  "meta": [
+   {
+    "name": "description",
+    "content": "Need a hall that seats a crowd one day and clears the floor the next? Jwesys steel-frame telescopic seating for stadiums, auditoriums and schools. Dubai & India."
+   },
+   {
+    "property": "og:title",
+    "content": "Jwesys Telescopic & Retractable Seating in Dubai & India | Furniconcepts"
+   },
+   {
+    "property": "og:description",
+    "content": "Need a hall that seats a crowd one day and clears the floor the next? Jwesys steel-frame telescopic seating for stadiums, auditoriums and schools. Dubai & India."
+   },
+   {
+    "property": "og:type",
+    "content": "website"
+   },
+   {
+    "property": "og:site_name",
+    "content": "FurniConcepts"
+   },
+   {
+    "name": "twitter:card",
+    "content": "summary_large_image"
+   },
+   {
+    "name": "twitter:title",
+    "content": "Jwesys Telescopic & Retractable Seating in Dubai & India | Furniconcepts"
+   },
+   {
+    "name": "twitter:description",
+    "content": "Need a hall that seats a crowd one day and clears the floor the next? Jwesys steel-frame telescopic seating for stadiums, auditoriums and schools. Dubai & India."
+   }
+  ],
+  "jsonld": [
+   {
+    "@context": "https://schema.org",
+    "@graph": [
+     {
+      "@type": "Brand",
+      "name": "Jwesys",
+      "url": "https://www.furniconcepts.com/jwesys.php",
+      "description": "Jwesys steel-frame telescopic and retractable seating for stadiums, auditoriums, school halls and convention centres, supplied by Furniconcepts across the UAE and India.",
+      "logo": "https://furniconcepts.com/dist/img/logo.png"
+     },
+     {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+       {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://www.furniconcepts.com/"
+       },
+       {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Brands",
+        "item": "https://www.furniconcepts.com/brands.php"
+       },
+       {
+        "@type": "ListItem",
+        "position": 3,
+        "name": "Jwesys",
+        "item": "https://www.furniconcepts.com/jwesys.php"
+       }
+      ]
+     },
+     {
+      "@type": "FAQPage",
+      "mainEntity": [
+       {
+        "@type": "Question",
+        "name": "What is telescopic seating?",
+        "acceptedAnswer": {
+         "@type": "Answer",
+         "text": "Telescopic seating is tiered seating that retracts into a compact stack against a wall, turning a seated hall into open floor space."
+        }
+       },
+       {
+        "@type": "Question",
+        "name": "Is Jwesys suitable for indoor stadiums?",
+        "acceptedAnswer": {
+         "@type": "Answer",
+         "text": "Yes. Its retractable systems are built on steel frames for high-capacity, space-saving stands."
+        }
+       },
+       {
+        "@type": "Question",
+        "name": "Can we choose the seat colour and fabric?",
+        "acceptedAnswer": {
+         "@type": "Answer",
+         "text": "Yes. Jwesys offers multiple upholstery materials, colours and seat styles."
+        }
+       },
+       {
+        "@type": "Question",
+        "name": "Does Jwesys make hostel furniture?",
+        "acceptedAnswer": {
+         "@type": "Answer",
+         "text": "Yes, including beds, bunk beds, wardrobes, study desks and storage."
+        }
+       },
+       {
+        "@type": "Question",
+        "name": "Do you maintain the seating after installation?",
+        "acceptedAnswer": {
+         "@type": "Answer",
+         "text": "Yes. After-sales service and maintenance are part of our support."
+        }
+       }
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ "/brands/leadcom": {
+  "live": "/leadcom.php",
+  "title": "Leadcom Auditorium, Cinema & Airport Seating in Dubai | Furniconcepts",
+  "meta": [
+   {
+    "name": "description",
+    "content": "Opening a cinema, hall or airport lounge on a deadline? Leadcom seating ships fast from Dubai stock, BIFMA-certified. Dubai, India & Singapore."
+   },
+   {
+    "property": "og:title",
+    "content": "Leadcom Auditorium, Cinema & Airport Seating in Dubai | Furniconcepts"
+   },
+   {
+    "property": "og:description",
+    "content": "Opening a cinema, hall or airport lounge on a deadline? Leadcom seating ships fast from Dubai stock, BIFMA-certified. Dubai, India & Singapore."
+   },
+   {
+    "property": "og:type",
+    "content": "website"
+   },
+   {
+    "property": "og:site_name",
+    "content": "FurniConcepts"
+   },
+   {
+    "name": "twitter:card",
+    "content": "summary_large_image"
+   },
+   {
+    "name": "twitter:title",
+    "content": "Leadcom Auditorium, Cinema & Airport Seating in Dubai | Furniconcepts"
+   },
+   {
+    "name": "twitter:description",
+    "content": "Opening a cinema, hall or airport lounge on a deadline? Leadcom seating ships fast from Dubai stock, BIFMA-certified. Dubai, India & Singapore."
+   }
+  ],
+  "jsonld": [
+   {
+    "@context": "https://schema.org",
+    "@graph": [
+     {
+      "@type": "Brand",
+      "name": "Leadcom",
+      "url": "https://www.furniconcepts.com/leadcom.php",
+      "description": "Leadcom BIFMA-certified seating for auditoriums, cinemas, lecture halls, airports and VIP lounges, supplied by Furniconcepts from Dubai warehouse stock across the UAE, India and Singapore.",
+      "logo": "https://furniconcepts.com/dist/img/logo.png"
+     },
+     {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+       {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://www.furniconcepts.com/"
+       },
+       {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Brands",
+        "item": "https://www.furniconcepts.com/brands.php"
+       },
+       {
+        "@type": "ListItem",
+        "position": 3,
+        "name": "Leadcom",
+        "item": "https://www.furniconcepts.com/leadcom.php"
+       }
+      ]
+     },
+     {
+      "@type": "FAQPage",
+      "mainEntity": [
+       {
+        "@type": "Question",
+        "name": "What seat pitch do Leadcom auditorium chairs use?",
+        "acceptedAnswer": {
+         "@type": "Answer",
+         "text": "A 22-inch centre-to-centre pitch, which helps you fit the maximum number of seats within legal spacing."
+        }
+       },
+       {
+        "@type": "Question",
+        "name": "What is a Zero Wall cinema recliner?",
+        "acceptedAnswer": {
+         "@type": "Answer",
+         "text": "A recliner that doesn't need extra clearance behind it, such as the Gavino LS-816 and Galaxy LS-813C, so you can fit more rows."
+        }
+       },
+       {
+        "@type": "Question",
+        "name": "How quickly can Leadcom seating reach a UAE site?",
+        "acceptedAnswer": {
+         "@type": "Answer",
+         "text": "From our Dubai warehouse stock, delivery can be as fast as 7 days."
+        }
+       },
+       {
+        "@type": "Question",
+        "name": "Do you have auditorium chairs with writing tablets?",
+        "acceptedAnswer": {
+         "@type": "Answer",
+         "text": "Yes, including Arcadia Elite Wood LS-20602W, Metropolis Plus LS-7603A-301 and Hampton LS-620T."
+        }
+       },
+       {
+        "@type": "Question",
+        "name": "Is Leadcom seating available in Singapore?",
+        "acceptedAnswer": {
+         "@type": "Answer",
+         "text": "Yes, directly through our Singapore office."
+        }
+       }
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ "/brands/libero-italy": {
+  "live": "/libero.php",
+  "title": "Libero Italy Chairs, Sofas & Lounge Furniture in Dubai | Furniconcepts",
+  "meta": [
+   {
+    "name": "description",
+    "content": "Want your office or lobby to feel unmistakably Italian? Libero Italy chairs, sofas, lounge pieces and custom furniture with classic Italian design. Dubai & India."
+   },
+   {
+    "property": "og:title",
+    "content": "Libero Italy Chairs, Sofas & Lounge Furniture in Dubai | Furniconcepts"
+   },
+   {
+    "property": "og:description",
+    "content": "Want your office or lobby to feel unmistakably Italian? Libero Italy chairs, sofas, lounge pieces and custom furniture with classic Italian design. Dubai & India."
+   },
+   {
+    "property": "og:type",
+    "content": "website"
+   },
+   {
+    "property": "og:site_name",
+    "content": "FurniConcepts"
+   },
+   {
+    "name": "twitter:card",
+    "content": "summary_large_image"
+   },
+   {
+    "name": "twitter:title",
+    "content": "Libero Italy Chairs, Sofas & Lounge Furniture in Dubai | Furniconcepts"
+   },
+   {
+    "name": "twitter:description",
+    "content": "Want your office or lobby to feel unmistakably Italian? Libero Italy chairs, sofas, lounge pieces and custom furniture with classic Italian design. Dubai & India."
+   }
+  ],
+  "jsonld": [
+   {
+    "@context": "https://schema.org",
+    "@graph": [
+     {
+      "@type": "Brand",
+      "name": "Libero Italy",
+      "url": "https://www.furniconcepts.com/libero.php",
+      "description": "Libero Italy executive chairs, lounge seating, sofas, stools, benches and storage with classic Italian design, supplied by Furniconcepts, authorised dealer in the UAE and India.",
+      "logo": "https://furniconcepts.com/dist/img/logo.png"
+     },
+     {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+       {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://www.furniconcepts.com/"
+       },
+       {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Brands",
+        "item": "https://www.furniconcepts.com/brands.php"
+       },
+       {
+        "@type": "ListItem",
+        "position": 3,
+        "name": "Libero Italy",
+        "item": "https://www.furniconcepts.com/libero.php"
+       }
+      ]
+     },
+     {
+      "@type": "FAQPage",
+      "mainEntity": [
+       {
+        "@type": "Question",
+        "name": "Which Libero Italy chair suits a CEO's office?",
+        "acceptedAnswer": {
+         "@type": "Answer",
+         "text": "High-back executive models such as Gatto HB, Udine HB, Viola High Back or High King."
+        }
+       },
+       {
+        "@type": "Question",
+        "name": "Can Libero Italy furniture be made to size?",
+        "acceptedAnswer": {
+         "@type": "Answer",
+         "text": "Yes. Finishes, dimensions and configurations can be customised for your project."
+        }
+       },
+       {
+        "@type": "Question",
+        "name": "Is Libero Italy suitable for hotel lobbies?",
+        "acceptedAnswer": {
+         "@type": "Answer",
+         "text": "Yes. Lounge armchairs like Paris and Nora, and sofas like Verona and Virginia, suit lobbies and lounges."
+        }
+       },
+       {
+        "@type": "Question",
+        "name": "Do you have benches for waiting areas?",
+        "acceptedAnswer": {
+         "@type": "Answer",
+         "text": "Yes, including the Apollo, Firenze, Prisma and Q9 benches."
+        }
+       },
+       {
+        "@type": "Question",
+        "name": "Can I buy Libero Italy for my home?",
+        "acceptedAnswer": {
+         "@type": "Answer",
+         "text": "Yes. Many pieces work equally well in homes and offices."
+        }
+       }
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ "/brands/markant": {
+  "live": "/markant.php",
+  "title": "Markant Sit-Stand Desks & Office Furniture in Dubai | Furniconcepts",
+  "meta": [
+   {
+    "name": "description",
+    "content": "Tired of offices that look pieced together? Markant desks, pods, storage and cabling are designed as one system. Dutch design since 1948, in Dubai & India."
+   },
+   {
+    "property": "og:title",
+    "content": "Markant Sit-Stand Desks & Office Furniture in Dubai | Furniconcepts"
+   },
+   {
+    "property": "og:description",
+    "content": "Tired of offices that look pieced together? Markant desks, pods, storage and cabling are designed as one system. Dutch design since 1948, in Dubai & India."
+   },
+   {
+    "property": "og:type",
+    "content": "website"
+   },
+   {
+    "property": "og:site_name",
+    "content": "FurniConcepts"
+   },
+   {
+    "name": "twitter:card",
+    "content": "summary_large_image"
+   },
+   {
+    "name": "twitter:title",
+    "content": "Markant Sit-Stand Desks & Office Furniture in Dubai | Furniconcepts"
+   },
+   {
+    "name": "twitter:description",
+    "content": "Tired of offices that look pieced together? Markant desks, pods, storage and cabling are designed as one system. Dutch design since 1948, in Dubai & India."
+   }
+  ],
+  "jsonld": [
+   {
+    "@context": "https://schema.org",
+    "@graph": [
+     {
+      "@type": "Brand",
+      "name": "Markant",
+      "url": "https://www.furniconcepts.com/markant.php",
+      "description": "Markant Dutch workspace furniture since 1948: Matrix and MOx sit-stand desks, Skyhub acoustic pods, storage and cable accessories designed as one system. Supplied by Furniconcepts, official partner in the UAE and India.",
+      "logo": "https://furniconcepts.com/dist/img/logo.png"
+     },
+     {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+       {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://www.furniconcepts.com/"
+       },
+       {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Brands",
+        "item": "https://www.furniconcepts.com/brands.php"
+       },
+       {
+        "@type": "ListItem",
+        "position": 3,
+        "name": "Markant",
+        "item": "https://www.furniconcepts.com/markant.php"
+       }
+      ]
+     },
+     {
+      "@type": "FAQPage",
+      "mainEntity": [
+       {
+        "@type": "Question",
+        "name": "Do Markant sit-stand desks remember my preferred height?",
+        "acceptedAnswer": {
+         "@type": "Answer",
+         "text": "Yes. Matrix and MOx desks have programmable height presets and silent motors."
+        }
+       },
+       {
+        "@type": "Question",
+        "name": "What sizes does the Matrix PRO desk come in?",
+        "acceptedAnswer": {
+         "@type": "Answer",
+         "text": "Widths from 120 to 200 cm at 80 cm deep, plus Corner, Duo and Wing versions."
+        }
+       },
+       {
+        "@type": "Question",
+        "name": "Which Markant pod is best for private calls?",
+        "acceptedAnswer": {
+         "@type": "Answer",
+         "text": "Skyhub pods come in 2, 4 and 6-person sizes; the 2-person version suits calls and one-to-ones."
+        }
+       },
+       {
+        "@type": "Question",
+        "name": "What is the Zinn Smart Chair?",
+        "acceptedAnswer": {
+         "@type": "Answer",
+         "text": "Markant's ergonomic chair that adjusts itself to your body weight and movement."
+        }
+       },
+       {
+        "@type": "Question",
+        "name": "Can Markant furniture reduce office noise?",
+        "acceptedAnswer": {
+         "@type": "Answer",
+         "text": "Yes. Calma panels, Privacy Benches and acoustic 2-Store cabinets all help absorb sound."
+        }
+       }
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ "/brands/merryfair": {
+  "live": "/merryfair.php",
+  "title": "Merryfair Ergonomic Office Chairs in Dubai & India | Furniconcepts",
+  "meta": [
+   {
+    "name": "description",
+    "content": "Sore backs after long workdays? Merryfair chairs are built for posture control, trusted by AirAsia and Maybank. Seating and desking in Dubai & India."
+   },
+   {
+    "property": "og:title",
+    "content": "Merryfair Ergonomic Office Chairs in Dubai & India | Furniconcepts"
+   },
+   {
+    "property": "og:description",
+    "content": "Sore backs after long workdays? Merryfair chairs are built for posture control, trusted by AirAsia and Maybank. Seating and desking in Dubai & India."
+   },
+   {
+    "property": "og:type",
+    "content": "website"
+   },
+   {
+    "property": "og:site_name",
+    "content": "FurniConcepts"
+   },
+   {
+    "name": "twitter:card",
+    "content": "summary_large_image"
+   },
+   {
+    "name": "twitter:title",
+    "content": "Merryfair Ergonomic Office Chairs in Dubai & India | Furniconcepts"
+   },
+   {
+    "name": "twitter:description",
+    "content": "Sore backs after long workdays? Merryfair chairs are built for posture control, trusted by AirAsia and Maybank. Seating and desking in Dubai & India."
+   }
+  ],
+  "jsonld": [
+   {
+    "@context": "https://schema.org",
+    "@graph": [
+     {
+      "@type": "Brand",
+      "name": "Merryfair",
+      "url": "https://www.furniconcepts.com/merryfair.php",
+      "description": "Merryfair ergonomic office chairs, system furniture and desking, made in Malaysia since 1982 and designed around posture control. Supplied by Furniconcepts across the UAE and India.",
+      "logo": "https://furniconcepts.com/dist/img/logo.png"
+     },
+     {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+       {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://www.furniconcepts.com/"
+       },
+       {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Brands",
+        "item": "https://www.furniconcepts.com/brands.php"
+       },
+       {
+        "@type": "ListItem",
+        "position": 3,
+        "name": "Merryfair",
+        "item": "https://www.furniconcepts.com/merryfair.php"
+       }
+      ]
+     },
+     {
+      "@type": "FAQPage",
+      "mainEntity": [
+       {
+        "@type": "Question",
+        "name": "Which Merryfair chairs are the flagship models?",
+        "acceptedAnswer": {
+         "@type": "Answer",
+         "text": "Wau, Zenit, Rookee and Aire."
+        }
+       },
+       {
+        "@type": "Question",
+        "name": "Is there a Merryfair chair for 24-hour operations?",
+        "acceptedAnswer": {
+         "@type": "Answer",
+         "text": "Yes. The 24/Seven category is designed for round-the-clock use."
+        }
+       },
+       {
+        "@type": "Question",
+        "name": "Does Merryfair make desks as well as chairs?",
+        "acceptedAnswer": {
+         "@type": "Answer",
+         "text": "Yes, along with storage and system furniture."
+        }
+       },
+       {
+        "@type": "Question",
+        "name": "Where is Merryfair furniture made?",
+        "acceptedAnswer": {
+         "@type": "Answer",
+         "text": "At Merryfair's own manufacturing facility in Malaysia."
+        }
+       },
+       {
+        "@type": "Question",
+        "name": "Does Merryfair have gaming chairs?",
+        "acceptedAnswer": {
+         "@type": "Answer",
+         "text": "Yes. Gaming is one of its twelve seating categories."
+        }
+       }
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ "/brands/musepod": {
+  "live": "/musepod.php",
+  "title": "Musepod Office Pods & Phone Booths in Dubai & India | Furniconcepts",
+  "meta": [
+   {
+    "name": "description",
+    "content": "Open office too noisy to focus? Musepod pods cut noise by up to 30dB, from one-person booths to team rooms. Eco-friendly, no construction. Dubai & India."
+   },
+   {
+    "property": "og:title",
+    "content": "Musepod Office Pods & Phone Booths in Dubai & India | Furniconcepts"
+   },
+   {
+    "property": "og:description",
+    "content": "Open office too noisy to focus? Musepod pods cut noise by up to 30dB, from one-person booths to team rooms. Eco-friendly, no construction. Dubai & India."
+   },
+   {
+    "property": "og:type",
+    "content": "website"
+   },
+   {
+    "property": "og:site_name",
+    "content": "FurniConcepts"
+   },
+   {
+    "name": "twitter:card",
+    "content": "summary_large_image"
+   },
+   {
+    "name": "twitter:title",
+    "content": "Musepod Office Pods & Phone Booths in Dubai & India | Furniconcepts"
+   },
+   {
+    "name": "twitter:description",
+    "content": "Open office too noisy to focus? Musepod pods cut noise by up to 30dB, from one-person booths to team rooms. Eco-friendly, no construction. Dubai & India."
+   }
+  ],
+  "jsonld": [
+   {
+    "@context": "https://schema.org",
+    "@graph": [
+     {
+      "@type": "Brand",
+      "name": "Musepod",
+      "url": "https://www.furniconcepts.com/musepod.php",
+      "description": "Musepod acoustic office pods and phone booths by Benel, reducing noise by up to 30dB, from single-person booths to team pods. Supplied and installed by Furniconcepts across the UAE and India.",
+      "logo": "https://furniconcepts.com/dist/img/logo.png"
+     },
+     {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+       {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://www.furniconcepts.com/"
+       },
+       {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Brands",
+        "item": "https://www.furniconcepts.com/brands.php"
+       },
+       {
+        "@type": "ListItem",
+        "position": 3,
+        "name": "Musepod",
+        "item": "https://www.furniconcepts.com/musepod.php"
+       }
+      ]
+     },
+     {
+      "@type": "FAQPage",
+      "mainEntity": [
+       {
+        "@type": "Question",
+        "name": "How much noise does a Musepod block?",
+        "acceptedAnswer": {
+         "@type": "Answer",
+         "text": "Up to 30dB, enough to keep calls private in a busy open office."
+        }
+       },
+       {
+        "@type": "Question",
+        "name": "Do I need building permission or construction work?",
+        "acceptedAnswer": {
+         "@type": "Answer",
+         "text": "No. Musepod pods are freestanding and plug-and-play."
+        }
+       },
+       {
+        "@type": "Question",
+        "name": "Is there ventilation inside the pod?",
+        "acceptedAnswer": {
+         "@type": "Answer",
+         "text": "Yes. Dual air circulation keeps fresh air moving, and lighting switches on when you enter."
+        }
+       },
+       {
+        "@type": "Question",
+        "name": "Which Musepod suits a small team meeting?",
+        "acceptedAnswer": {
+         "@type": "Answer",
+         "text": "The Quartet seats four; the Ensemble is larger and can include a Media Wall."
+        }
+       },
+       {
+        "@type": "Question",
+        "name": "Can we move the pods later?",
+        "acceptedAnswer": {
+         "@type": "Answer",
+         "text": "Yes. The modular design allows pods to be reconfigured or relocated."
+        }
+       }
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ "/brands/nitrocare": {
+  "live": "/nitrocare.php",
+  "title": "Nitrocare Hospital Beds & Healthcare Furniture in Dubai | Furniconcepts",
+  "meta": [
+   {
+    "name": "description",
+    "content": "Equipping a ward, clinic or ICU? Award-winning Nitrocare beds, patient chairs and medical carts, from one supplier. Dubai, India & Singapore."
+   },
+   {
+    "property": "og:title",
+    "content": "Nitrocare Hospital Beds & Healthcare Furniture in Dubai | Furniconcepts"
+   },
+   {
+    "property": "og:description",
+    "content": "Equipping a ward, clinic or ICU? Award-winning Nitrocare beds, patient chairs and medical carts, from one supplier. Dubai, India & Singapore."
+   },
+   {
+    "property": "og:type",
+    "content": "website"
+   },
+   {
+    "property": "og:site_name",
+    "content": "FurniConcepts"
+   },
+   {
+    "name": "twitter:card",
+    "content": "summary_large_image"
+   },
+   {
+    "name": "twitter:title",
+    "content": "Nitrocare Hospital Beds & Healthcare Furniture in Dubai | Furniconcepts"
+   },
+   {
+    "name": "twitter:description",
+    "content": "Equipping a ward, clinic or ICU? Award-winning Nitrocare beds, patient chairs and medical carts, from one supplier. Dubai, India & Singapore."
+   }
+  ],
+  "jsonld": [
+   {
+    "@context": "https://schema.org",
+    "@graph": [
+     {
+      "@type": "Brand",
+      "name": "Nitrocare",
+      "url": "https://www.furniconcepts.com/nitrocare.php",
+      "description": "Nitrocare healthcare furniture by Turkey's Gökler Group: ICU and home-care beds, attendant chairs, exam and treatment furniture, medical carts and mobility aids. Supplied by Furniconcepts in the UAE, India and Singapore.",
+      "logo": "https://furniconcepts.com/dist/img/logo.png"
+     },
+     {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+       {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://www.furniconcepts.com/"
+       },
+       {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Brands",
+        "item": "https://www.furniconcepts.com/brands.php"
+       },
+       {
+        "@type": "ListItem",
+        "position": 3,
+        "name": "Nitrocare",
+        "item": "https://www.furniconcepts.com/nitrocare.php"
+       }
+      ]
+     },
+     {
+      "@type": "FAQPage",
+      "mainEntity": [
+       {
+        "@type": "Question",
+        "name": "Which Nitrocare bed is suitable for an ICU?",
+        "acceptedAnswer": {
+         "@type": "Answer",
+         "text": "The NITRO HB 8140, a height-adjustable bed with Trendelenburg positioning and CPR emergency release."
+        }
+       },
+       {
+        "@type": "Question",
+        "name": "Do you supply hospital beds for home care?",
+        "acceptedAnswer": {
+         "@type": "Answer",
+         "text": "Yes. The NITRO HB 7240 is a four-motor bed designed for home care."
+        }
+       },
+       {
+        "@type": "Question",
+        "name": "Is there seating for family members staying overnight?",
+        "acceptedAnswer": {
+         "@type": "Answer",
+         "text": "Yes. Attendant chairs like the NCRF-1000 recline, and the Domino and Aria sofa beds convert for sleeping."
+        }
+       },
+       {
+        "@type": "Question",
+        "name": "Does Nitrocare make dialysis chairs?",
+        "acceptedAnswer": {
+         "@type": "Answer",
+         "text": "Yes, along with chemotherapy chairs and the NHS-870 dialysis stretcher."
+        }
+       },
+       {
+        "@type": "Question",
+        "name": "Is Nitrocare furniture easy to keep clean?",
+        "acceptedAnswer": {
+         "@type": "Answer",
+         "text": "Yes. It uses antibacterial coatings and steel components designed for easy cleaning."
+        }
+       },
+       {
+        "@type": "Question",
+        "name": "Is Nitrocare available in Singapore?",
+        "acceptedAnswer": {
+         "@type": "Answer",
+         "text": "Yes, directly through our Singapore office."
+        }
+       }
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ "/brands/parin": {
+  "live": "/parin.php",
+  "title": "Parin Hospital, School & Public Seating Furniture | Furniconcepts",
+  "meta": [
+   {
+    "name": "description",
+    "content": "Running a campus, hospital or terminal? Certified Parin furniture at factory pricing, from ICU beds to classroom benches. India, UAE & Singapore."
+   },
+   {
+    "property": "og:type",
+    "content": "website"
+   },
+   {
+    "property": "og:title",
+    "content": "Parin Hospital, School & Public Seating Furniture | Furniconcepts"
+   },
+   {
+    "property": "og:description",
+    "content": "Running a campus, hospital or terminal? Certified Parin furniture at factory pricing, from ICU beds to classroom benches. India, UAE & Singapore."
+   },
+   {
+    "property": "og:site_name",
+    "content": "Furniconcepts"
+   },
+   {
+    "name": "twitter:card",
+    "content": "summary_large_image"
+   },
+   {
+    "name": "twitter:title",
+    "content": "Parin Hospital, School & Public Seating Furniture | Furniconcepts"
+   },
+   {
+    "name": "twitter:description",
+    "content": "Running a campus, hospital or terminal? Certified Parin furniture at factory pricing, from ICU beds to classroom benches. India, UAE & Singapore."
+   }
+  ],
+  "jsonld": [
+   {
+    "@context": "https://schema.org",
+    "@graph": [
+     {
+      "@type": "Brand",
+      "name": "Parin",
+      "url": "https://www.furniconcepts.com/parin.php",
+      "description": "Parin Furniture Limited, an NSE-listed OEM with 40+ years of experience, making CE, USFDA and ISO certified healthcare, education, public seating and library furniture. Supplied by Furniconcepts at factory pricing in India, the UAE and Singapore.",
+      "logo": "https://furniconcepts.com/dist/img/logo.png"
+     },
+     {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+       {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://www.furniconcepts.com/"
+       },
+       {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Brands",
+        "item": "https://www.furniconcepts.com/brands.php"
+       },
+       {
+        "@type": "ListItem",
+        "position": 3,
+        "name": "Parin",
+        "item": "https://www.furniconcepts.com/parin.php"
+       }
+      ]
+     },
+     {
+      "@type": "FAQPage",
+      "mainEntity": [
+       {
+        "@type": "Question",
+        "name": "Is Parin furniture certified for hospitals?",
+        "acceptedAnswer": {
+         "@type": "Answer",
+         "text": "Yes. Parin products carry CE, USFDA and ISO certifications."
+        }
+       },
+       {
+        "@type": "Question",
+        "name": "Can I choose how automated an ICU bed is?",
+        "acceptedAnswer": {
+         "@type": "Answer",
+         "text": "Yes. Parin offers fully motorised, semi-motorised and manual ICU beds to suit different budgets."
+        }
+       },
+       {
+        "@type": "Question",
+        "name": "Where can I see Parin furniture in person?",
+        "acceptedAnswer": {
+         "@type": "Answer",
+         "text": "At our Chennai showroom, which has healthcare and institutional mock-ups."
+        }
+       },
+       {
+        "@type": "Question",
+        "name": "Is Parin seating suitable for airports?",
+        "acceptedAnswer": {
+         "@type": "Answer",
+         "text": "Yes. The Pelican and Pride beam seating systems are built for busy waiting areas."
+        }
+       },
+       {
+        "@type": "Question",
+        "name": "Do you sell Parin to individual buyers?",
+        "acceptedAnswer": {
+         "@type": "Answer",
+         "text": "Yes. Alongside bulk B2B orders, we supply retail and home-office customers."
+        }
+       },
+       {
+        "@type": "Question",
+        "name": "How is Parin priced?",
+        "acceptedAnswer": {
+         "@type": "Answer",
+         "text": "Pricing depends on product, quantity and customisation. Bulk orders benefit most from direct factory pricing."
+        }
+       }
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ "/brands/safe-lockers": {
+  "live": "/Safe-lockers.php",
+  "title": "Safe Lockers Safes, Watch Winders & Vault Doors in Dubai | Furniconcepts",
+  "meta": [
+   {
+    "name": "description",
+    "content": "What needs protecting: cash, documents, watches or a whole vault? Fire-rated, biometric and custom safes for homes, hotels and banks. Dubai & India."
+   },
+   {
+    "property": "og:title",
+    "content": "Safe Lockers Safes, Watch Winders & Vault Doors in Dubai | Furniconcepts"
+   },
+   {
+    "property": "og:description",
+    "content": "What needs protecting: cash, documents, watches or a whole vault? Fire-rated, biometric and custom safes for homes, hotels and banks. Dubai & India."
+   },
+   {
+    "property": "og:type",
+    "content": "website"
+   },
+   {
+    "property": "og:site_name",
+    "content": "FurniConcepts"
+   },
+   {
+    "name": "twitter:card",
+    "content": "summary_large_image"
+   },
+   {
+    "name": "twitter:title",
+    "content": "Safe Lockers Safes, Watch Winders & Vault Doors in Dubai | Furniconcepts"
+   },
+   {
+    "name": "twitter:description",
+    "content": "What needs protecting: cash, documents, watches or a whole vault? Fire-rated, biometric and custom safes for homes, hotels and banks. Dubai & India."
+   }
+  ],
+  "jsonld": [
+   {
+    "@context": "https://schema.org",
+    "@graph": [
+     {
+      "@type": "Brand",
+      "name": "Safe Lockers",
+      "url": "https://www.furniconcepts.com/safe-lockers.php",
+      "description": "Safe Lockers fire-rated safes, fingerprint cash boxes, luxury watch winder safes, bank-grade vault doors and custom safes, supplied by Furniconcepts across the UAE and India.",
+      "logo": "https://furniconcepts.com/dist/img/logo.png"
+     },
+     {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+       {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://www.furniconcepts.com/"
+       },
+       {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Brands",
+        "item": "https://www.furniconcepts.com/brands.php"
+       },
+       {
+        "@type": "ListItem",
+        "position": 3,
+        "name": "Safe Lockers",
+        "item": "https://www.furniconcepts.com/safe-lockers.php"
+       }
+      ]
+     },
+     {
+      "@type": "FAQPage",
+      "mainEntity": [
+       {
+        "@type": "Question",
+        "name": "How long will a fireproof safe protect my documents?",
+        "acceptedAnswer": {
+         "@type": "Answer",
+         "text": "Safe Lockers fireproof models are rated for 1 hour or 2 hours."
+        }
+       },
+       {
+        "@type": "Question",
+        "name": "Can I open a safe with my fingerprint?",
+        "acceptedAnswer": {
+         "@type": "Answer",
+         "text": "Yes. Fingerprint locks are available on gun, residential and watch winder safes."
+        }
+       },
+       {
+        "@type": "Question",
+        "name": "Do you have safes for hotel rooms?",
+        "acceptedAnswer": {
+         "@type": "Answer",
+         "text": "Yes, with digital screen and key access."
+        }
+       },
+       {
+        "@type": "Question",
+        "name": "What's the largest watch winder safe you offer?",
+        "acceptedAnswer": {
+         "@type": "Answer",
+         "text": "A full-height model measuring 1700 x 700 x 600 mm, weighing 275 kg."
+        }
+       },
+       {
+        "@type": "Question",
+        "name": "Can you build a safe for a specific space?",
+        "acceptedAnswer": {
+         "@type": "Answer",
+         "text": "Yes. The custom DZ series is made for project-specific layouts."
+        }
+       }
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ "/brands/scab-italy": {
+  "live": "/scab.php",
+  "title": "Scab Italy Indoor & Outdoor Furniture in Dubai | Furniconcepts",
+  "meta": [
+   {
+    "name": "description",
+    "content": "Want your lobby and terrace to match? Scab Italy chairs, stools, sofas and sunbeds come in matching indoor and outdoor versions. Dubai, India & Singapore."
+   },
+   {
+    "property": "og:title",
+    "content": "Scab Italy Indoor & Outdoor Furniture in Dubai | Furniconcepts"
+   },
+   {
+    "property": "og:description",
+    "content": "Want your lobby and terrace to match? Scab Italy chairs, stools, sofas and sunbeds come in matching indoor and outdoor versions. Dubai, India & Singapore."
+   },
+   {
+    "property": "og:type",
+    "content": "website"
+   },
+   {
+    "property": "og:site_name",
+    "content": "FurniConcepts"
+   },
+   {
+    "name": "twitter:card",
+    "content": "summary_large_image"
+   },
+   {
+    "name": "twitter:title",
+    "content": "Scab Italy Indoor & Outdoor Furniture in Dubai | Furniconcepts"
+   },
+   {
+    "name": "twitter:description",
+    "content": "Want your lobby and terrace to match? Scab Italy chairs, stools, sofas and sunbeds come in matching indoor and outdoor versions. Dubai, India & Singapore."
+   }
+  ],
+  "jsonld": [
+   {
+    "@context": "https://schema.org",
+    "@graph": [
+     {
+      "@type": "Brand",
+      "name": "Scab Italy",
+      "url": "https://www.furniconcepts.com/scab.php",
+      "description": "Scab Italy chairs, bar stools, sofas, sunbeds and tables for cafés, restaurants, hotels, offices and homes, with matching indoor and outdoor versions. Supplied by Furniconcepts in the UAE, India and Singapore.",
+      "logo": "https://furniconcepts.com/dist/img/logo.png"
+     },
+     {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+       {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://www.furniconcepts.com/"
+       },
+       {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Brands",
+        "item": "https://www.furniconcepts.com/brands.php"
+       },
+       {
+        "@type": "ListItem",
+        "position": 3,
+        "name": "Scab Italy",
+        "item": "https://www.furniconcepts.com/scab.php"
+       }
+      ]
+     },
+     {
+      "@type": "FAQPage",
+      "mainEntity": [
+       {
+        "@type": "Question",
+        "name": "Which Scab Italy chairs can be used outdoors?",
+        "acceptedAnswer": {
+         "@type": "Answer",
+         "text": "DRESS CODE Glam and Smart, Lisa Outdoor, Ginevra and Isy & You are all designed for outdoor use."
+        }
+       },
+       {
+        "@type": "Question",
+        "name": "Will Scab outdoor furniture fade in strong sun?",
+        "acceptedAnswer": {
+         "@type": "Answer",
+         "text": "The outdoor range uses UV-resistant resin and aluminium designed to resist fading."
+        }
+       },
+       {
+        "@type": "Question",
+        "name": "Are Scab chairs stackable?",
+        "acceptedAnswer": {
+         "@type": "Answer",
+         "text": "Yes. Many models, including Ginevra, stack for easy storage."
+        }
+       },
+       {
+        "@type": "Question",
+        "name": "What bar stool height do I need?",
+        "acceptedAnswer": {
+         "@type": "Answer",
+         "text": "Most Scab stools come in two heights: about 65 cm for kitchen counters and 75–80 cm for bar counters."
+        }
+       },
+       {
+        "@type": "Question",
+        "name": "Do you supply matching tables?",
+        "acceptedAnswer": {
+         "@type": "Answer",
+         "text": "Yes. We can provide custom Scab dining and meeting tables to suit your space."
+        }
+       }
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ "/brands/worklyffe": {
+  "live": "/worklyf.php",
+  "title": "Worklyffe Conference, Training & Lounge Furniture in Dubai | Furniconcepts",
+  "meta": [
+   {
+    "name": "description",
+    "content": "Fitting out training rooms or a whole floor? Worklyffe conference tables, training desks and lounge seating, supplied in bulk as one project. Dubai & India."
+   },
+   {
+    "property": "og:title",
+    "content": "Worklyffe Conference, Training & Lounge Furniture in Dubai | Furniconcepts"
+   },
+   {
+    "property": "og:description",
+    "content": "Fitting out training rooms or a whole floor? Worklyffe conference tables, training desks and lounge seating, supplied in bulk as one project. Dubai & India."
+   },
+   {
+    "property": "og:type",
+    "content": "website"
+   },
+   {
+    "property": "og:site_name",
+    "content": "FurniConcepts"
+   },
+   {
+    "name": "twitter:card",
+    "content": "summary_large_image"
+   },
+   {
+    "name": "twitter:title",
+    "content": "Worklyffe Conference, Training & Lounge Furniture in Dubai | Furniconcepts"
+   },
+   {
+    "name": "twitter:description",
+    "content": "Fitting out training rooms or a whole floor? Worklyffe conference tables, training desks and lounge seating, supplied in bulk as one project. Dubai & India."
+   }
+  ],
+  "jsonld": [
+   {
+    "@context": "https://schema.org",
+    "@graph": [
+     {
+      "@type": "Brand",
+      "name": "Worklyffe",
+      "url": "https://www.furniconcepts.com/worklyf.php",
+      "description": "Worklyffe B2B furniture for bulk projects: conference and training tables, student desks, workstations, lounge seating and the Snug Booth. Supplied by Furniconcepts across the UAE and India.",
+      "logo": "https://furniconcepts.com/dist/img/logo.png"
+     },
+     {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+       {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://www.furniconcepts.com/"
+       },
+       {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Brands",
+        "item": "https://www.furniconcepts.com/brands.php"
+       },
+       {
+        "@type": "ListItem",
+        "position": 3,
+        "name": "Worklyffe",
+        "item": "https://www.furniconcepts.com/worklyf.php"
+       }
+      ]
+     },
+     {
+      "@type": "FAQPage",
+      "mainEntity": [
+       {
+        "@type": "Question",
+        "name": "Which Worklyffe tables suit a training room?",
+        "acceptedAnswer": {
+         "@type": "Answer",
+         "text": "Barron, Delta, Hurry Up and Let's Go, plus fixed seminar room tables."
+        }
+       },
+       {
+        "@type": "Question",
+        "name": "What is the Intellect Wave Desk?",
+        "acceptedAnswer": {
+         "@type": "Answer",
+         "text": "A curved student desk designed for group-based learning layouts."
+        }
+       },
+       {
+        "@type": "Question",
+        "name": "Is Worklyffe suitable for bulk orders?",
+        "acceptedAnswer": {
+         "@type": "Answer",
+         "text": "Yes. The range is built around B2B project supply for full offices and training centres."
+        }
+       },
+       {
+        "@type": "Question",
+        "name": "Does Worklyffe offer private seating for calls?",
+        "acceptedAnswer": {
+         "@type": "Answer",
+         "text": "Yes, the enclosed Snug Booth."
+        }
+       },
+       {
+        "@type": "Question",
+        "name": "Do you provide support after installation?",
+        "acceptedAnswer": {
+         "@type": "Answer",
+         "text": "Yes. We offer ongoing support and maintenance."
+        }
+       }
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ "/brands/zumbooth": {
+  "live": "/zumbooth.php",
+  "title": "Zumbooth Soundproof Office Phone Booths in Dubai | Furniconcepts",
+  "meta": [
+   {
+    "name": "description",
+    "content": "Need a quiet spot for calls in a busy office? Zumbooth booths switch on lights and fresh air the moment you step in. GREENGUARD certified, in Dubai & India."
+   },
+   {
+    "property": "og:title",
+    "content": "Zumbooth Soundproof Office Phone Booths in Dubai | Furniconcepts"
+   },
+   {
+    "property": "og:description",
+    "content": "Need a quiet spot for calls in a busy office? Zumbooth booths switch on lights and fresh air the moment you step in. GREENGUARD certified, in Dubai & India."
+   },
+   {
+    "property": "og:type",
+    "content": "website"
+   },
+   {
+    "property": "og:site_name",
+    "content": "FurniConcepts"
+   },
+   {
+    "name": "twitter:card",
+    "content": "summary_large_image"
+   },
+   {
+    "name": "twitter:title",
+    "content": "Zumbooth Soundproof Office Phone Booths in Dubai | Furniconcepts"
+   },
+   {
+    "name": "twitter:description",
+    "content": "Need a quiet spot for calls in a busy office? Zumbooth booths switch on lights and fresh air the moment you step in. GREENGUARD certified, in Dubai & India."
+   }
+  ],
+  "jsonld": [
+   {
+    "@context": "https://schema.org",
+    "@graph": [
+     {
+      "@type": "Brand",
+      "name": "Zumbooth",
+      "url": "https://www.furniconcepts.com/zumbooth.php",
+      "description": "Zumbooth soundproof office phone booths by Hecor, with sensor-controlled lighting and ventilation, GREENGUARD certification and a 2-year warranty. Supplied by Furniconcepts across the UAE and India.",
+      "logo": "https://furniconcepts.com/dist/img/logo.png"
+     },
+     {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+       {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://www.furniconcepts.com/"
+       },
+       {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Brands",
+        "item": "https://www.furniconcepts.com/brands.php"
+       },
+       {
+        "@type": "ListItem",
+        "position": 3,
+        "name": "Zumbooth",
+        "item": "https://www.furniconcepts.com/zumbooth.php"
+       }
+      ]
+     },
+     {
+      "@type": "FAQPage",
+      "mainEntity": [
+       {
+        "@type": "Question",
+        "name": "How does a Zumbooth stay comfortable inside?",
+        "acceptedAnswer": {
+         "@type": "Answer",
+         "text": "Sensors switch on lighting and ventilation automatically when the booth is occupied."
+        }
+       },
+       {
+        "@type": "Question",
+        "name": "Can I charge my laptop inside the booth?",
+        "acceptedAnswer": {
+         "@type": "Answer",
+         "text": "Yes. Every booth has built-in power outlets."
+        }
+       },
+       {
+        "@type": "Question",
+        "name": "Is there a two-person option?",
+        "acceptedAnswer": {
+         "@type": "Answer",
+         "text": "Yes, the Zumbooth Duo."
+        }
+       },
+       {
+        "@type": "Question",
+        "name": "Can we move the booth if our layout changes?",
+        "acceptedAnswer": {
+         "@type": "Answer",
+         "text": "Yes. Zumbooth is designed to be easy to relocate."
+        }
+       },
+       {
+        "@type": "Question",
+        "name": "What warranty comes with Zumbooth?",
+        "acceptedAnswer": {
+         "@type": "Answer",
+         "text": "Every booth has a 2-year warranty."
+        }
+       },
+       {
+        "@type": "Question",
+        "name": "How is Zumbooth different from Musepod?",
+        "acceptedAnswer": {
+         "@type": "Answer",
+         "text": "Both offer automatic lighting. Zumbooth adds GREENGUARD air-quality certification and wide colour choice; Musepod offers larger team pods up to the Ensemble."
+        }
+       }
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ "/career.php": {
+  "live": "/career.php",
+  "title": "Careers at Furniconcepts – Join Our Growing Furniture Innovation Team",
+  "meta": [
+   {
+    "name": "description",
+    "content": "Explore exciting career opportunities at Furniconcepts. Join a dynamic team committed to redefining spaces with modern furniture solutions across UAE, India & Singapore. Submit your CV online."
+   },
+   {
+    "name": "keywords",
+    "content": "Careers at Furniconcepts, jobs at Furniconcepts, modern office furniture dubai, ergonomic office chair dubai, office furniture UAE"
+   },
+   {
+    "property": "og:type",
+    "content": "website"
+   },
+   {
+    "property": "og:title",
+    "content": "Careers at Furniconcepts | Furniconcepts"
+   },
+   {
+    "property": "og:description",
+    "content": "Discover Careers at Furniconcepts by Furniconcepts – modern office furniture solutions in Dubai & UAE."
+   },
+   {
+    "name": "twitter:card",
+    "content": "summary_large_image"
+   },
+   {
+    "name": "twitter:title",
+    "content": "Careers at Furniconcepts | Furniconcepts"
+   },
+   {
+    "name": "twitter:description",
+    "content": "Discover Careers at Furniconcepts by Furniconcepts – modern office furniture solutions in Dubai & UAE."
+   }
+  ],
+  "jsonld": [
+   {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "name": "Careers at Furniconcepts",
+    "url": "https://furniconcepts.com/career.php",
+    "image": "https://furniconcepts.com/images/career.jpg",
+    "description": "Discover Careers at Furniconcepts by Furniconcepts – modern office furniture solutions in Dubai & UAE."
+   }
+  ]
+ },
+ "/certificates.php": {
+  "live": "/certificates.php",
+  "title": "Furniconcepts Certificates | Furniconcepts",
+  "meta": [
+   {
+    "name": "description",
+    "content": "Discover Furniconcepts Certificates by Furniconcepts – modern office furniture solutions in Dubai & UAE."
+   },
+   {
+    "name": "keywords",
+    "content": "Furniconcepts Certificates, modern office furniture dubai, ergonomic office chair dubai, office furniture UAE"
+   },
+   {
+    "property": "og:type",
+    "content": "website"
+   },
+   {
+    "property": "og:title",
+    "content": "Furniconcepts Certificates | Furniconcepts"
+   },
+   {
+    "property": "og:description",
+    "content": "Discover Furniconcepts Certificates by Furniconcepts – modern office furniture solutions in Dubai & UAE."
+   },
+   {
+    "name": "twitter:card",
+    "content": "summary_large_image"
+   },
+   {
+    "name": "twitter:title",
+    "content": "Furniconcepts Certificates | Furniconcepts"
+   },
+   {
+    "name": "twitter:description",
+    "content": "Discover Furniconcepts Certificates by Furniconcepts – modern office furniture solutions in Dubai & UAE."
+   }
+  ],
+  "jsonld": [
+   {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "name": "Furniconcepts Certificates",
+    "url": "https://furniconcepts.com/certificates.php",
+    "image": "https://furniconcepts.com/images/ISO%20Badge%20web.png",
+    "description": "Discover Furniconcepts Certificates by Furniconcepts – modern office furniture solutions in Dubai & UAE."
+   }
+  ]
+ },
+ "/contact": {
+  "live": "/contact.php",
+  "title": "Contact Furniconcepts – Offices in UAE, India & Singapore",
+  "meta": [
+   {
+    "name": "description",
+    "content": "Get in touch with Furniconcepts through our UAE, India, and Singapore offices. Access phone numbers, email addresses, and locations for support, inquiries, and project partnerships."
+   },
+   {
+    "name": "keywords",
+    "content": "modern office furniture dubai, ergonomic office chair dubai, contact Furniconcepts, office furniture suppliers UAE"
+   },
+   {
+    "property": "og:type",
+    "content": "website"
+   },
+   {
+    "property": "og:title",
+    "content": "Contact Furniconcepts Dubai | Furniconcepts"
+   },
+   {
+    "property": "og:description",
+    "content": "Discover Contact Furniconcepts Dubai by Furniconcepts – modern office furniture solutions in Dubai & UAE."
+   },
+   {
+    "name": "twitter:card",
+    "content": "summary_large_image"
+   },
+   {
+    "name": "twitter:title",
+    "content": "Contact Furniconcepts Dubai | Furniconcepts"
+   },
+   {
+    "name": "twitter:description",
+    "content": "Discover Contact Furniconcepts Dubai by Furniconcepts – modern office furniture solutions in Dubai & UAE."
+   }
+  ],
+  "jsonld": [
+   {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "Furniconcepts",
+    "url": "https://furniconcepts.com/contact.php",
+    "logo": "https://furniconcepts.com/images/logo.png",
+    "image": "https://furniconcepts.com/assets/images/bg/breadcrumb.png",
+    "description": "Discover Contact Furniconcepts Dubai by Furniconcepts – modern office furniture solutions in Dubai & UAE.",
+    "contactPoint": {
+     "@type": "ContactPoint",
+     "telephone": "+971-XXXXXXX",
+     "contactType": "Customer Service",
+     "areaServed": "AE",
+     "availableLanguage": [
+      "English",
+      "Arabic"
+     ]
+    },
+    "address": {
+     "@type": "PostalAddress",
+     "streetAddress": "Dubai, UAE",
+     "addressLocality": "Dubai",
+     "addressCountry": "AE"
+    }
+   }
+  ]
+ },
+ "/download-profiles": {
+  "live": "/download-profile.php",
+  "title": "Download Furniconcepts Profiles & Catalogs – All Collections",
+  "meta": [
+   {
+    "name": "description",
+    "content": "Download Furniconcepts' full range of profiles, furniture catalogs, and brand collections for office, hospitality, educational, and custom furniture solutions."
+   },
+   {
+    "name": "keywords",
+    "content": "Furniconcepts Profiles, download furniture catalog, modern office furniture dubai, ergonomic office chair dubai, office furniture UAE"
+   },
+   {
+    "property": "og:type",
+    "content": "website"
+   },
+   {
+    "property": "og:title",
+    "content": "Download Furniconcepts Profiles & Catalogs | Furniconcepts"
+   },
+   {
+    "property": "og:description",
+    "content": "Download Furniconcepts' full range of profiles, furniture catalogs, and brand collections for office, hospitality, educational, and custom furniture solutions."
+   },
+   {
+    "name": "twitter:card",
+    "content": "summary_large_image"
+   },
+   {
+    "name": "twitter:title",
+    "content": "Download Furniconcepts Profiles & Catalogs | Furniconcepts"
+   },
+   {
+    "name": "twitter:description",
+    "content": "Download Furniconcepts' full range of profiles, furniture catalogs, and brand collections for office, hospitality, educational, and custom furniture solutions."
+   }
+  ],
+  "jsonld": [
+   {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "name": "Download Furniconcepts Profiles & Catalogs",
+    "url": "https://furniconcepts.com/download-profile.php",
+    "image": "https://furniconcepts.com/assets/images/banner/banner1.jpg",
+    "description": "Download Furniconcepts' full range of profiles, furniture catalogs, and brand collections for office, hospitality, educational, and custom furniture solutions."
+   }
+  ]
+ },
+ "/download-profiles/audia-italia": {
+  "live": "/audiaitalia-profiles.php",
+  "title": "Audia Italia Profiles – Italian Auditorium Seating Dubai",
+  "meta": [
+   {
+    "name": "description",
+    "content": "Explore Audia Italia’s customizable auditorium and theater seating crafted in Italy with premium materials, ergonomic design, and expert project support."
+   },
+   {
+    "name": "keywords",
+    "content": "Audiaitalia, modern office furniture dubai, ergonomic office chair dubai, office furniture UAE"
+   },
+   {
+    "property": "og:type",
+    "content": "website"
+   },
+   {
+    "property": "og:title",
+    "content": "Modern Office Furniture Suppliers UAE | Furniconcepts"
+   },
+   {
+    "property": "og:description",
+    "content": "Discover Modern Office Furniture Suppliers UAE by Furniconcepts – modern office furniture solutions in Dubai & UAE."
+   },
+   {
+    "name": "twitter:card",
+    "content": "summary_large_image"
+   },
+   {
+    "name": "twitter:title",
+    "content": "Modern Office Furniture Suppliers UAE | Furniconcepts"
+   },
+   {
+    "name": "twitter:description",
+    "content": "Discover Modern Office Furniture Suppliers UAE by Furniconcepts – modern office furniture solutions in Dubai & UAE."
+   }
+  ],
+  "jsonld": [
+   {
+    "@context": "https://schema.org",
+    "@type": "Product",
+    "name": "Audia Italia",
+    "url": "https://furniconcepts.com/audiaitalia-profiles.php",
+    "image": "https://furniconcepts.com/images/audiaitalia-profiles.jpg",
+    "description": "Discover Audia Italia by Furniconcepts – premium Italian office furniture, seating solutions, and modern workspace products for corporate environments.",
+    "brand": {
+     "@type": "Brand",
+     "name": "Audia Italia"
+    },
+    "offers": {
+     "@type": "Offer",
+     "url": "https://furniconcepts.com/audiaitalia-profiles.php",
+     "priceCurrency": "AED",
+     "price": "0",
+     "description": "Contact for pricing",
+     "availability": "https://schema.org/InStock",
+     "seller": {
+      "@type": "Organization",
+      "name": "Furniconcepts"
+     }
+    }
+   }
+  ]
+ },
+ "/download-profiles/cavaletti": {
+  "live": "/cavaletti-profiles.php",
+  "title": "Cavaletti Profiles – Ergonomic Seating Catalogs Dubai",
+  "meta": [
+   {
+    "name": "description",
+    "content": "Browse complete Cavaletti catalogs including Viva, StartPlus, Pro, Stretch, Spot, and more—ergonomic office seating crafted for comfort, style, and modern workspaces."
+   },
+   {
+    "name": "keywords",
+    "content": "Modern Office Furniture Suppliers UAE, modern office furniture dubai, ergonomic office chair dubai, office furniture UAE"
+   },
+   {
+    "property": "og:type",
+    "content": "website"
+   },
+   {
+    "property": "og:title",
+    "content": "Modern Office Furniture Suppliers UAE | Furniconcepts"
+   },
+   {
+    "property": "og:description",
+    "content": "Discover Modern Office Furniture Suppliers UAE by Furniconcepts – modern office furniture solutions in Dubai & UAE."
+   },
+   {
+    "name": "twitter:card",
+    "content": "summary_large_image"
+   },
+   {
+    "name": "twitter:title",
+    "content": "Modern Office Furniture Suppliers UAE | Furniconcepts"
+   },
+   {
+    "name": "twitter:description",
+    "content": "Discover Modern Office Furniture Suppliers UAE by Furniconcepts – modern office furniture solutions in Dubai & UAE."
+   }
+  ],
+  "jsonld": [
+   {
+    "@context": "https://schema.org",
+    "@type": "Product",
+    "name": "Modern Office Furniture Suppliers UAE",
+    "url": "https://furniconcepts.com/cavaletti-profiles.php",
+    "image": "https://furniconcepts.com/images/cavaletti/BANNER-INFERIOR-LEAD-MING-AURA.png",
+    "description": "Discover Modern Office Furniture Suppliers UAE by Furniconcepts – modern office furniture solutions in Dubai and UAE.",
+    "brand": {
+     "@type": "Brand",
+     "name": "Furniconcepts"
+    },
+    "offers": {
+     "@type": "Offer",
+     "url": "https://furniconcepts.com/cavaletti-profiles.php",
+     "priceCurrency": "AED",
+     "price": "0",
+     "description": "Contact for pricing",
+     "availability": "https://schema.org/InStock",
+     "seller": {
+      "@type": "Organization",
+      "name": "Furniconcepts"
+     }
+    }
+   }
+  ]
+ },
+ "/download-profiles/dogus": {
+  "live": "/dogus-profiles.php",
+  "title": "Doğuş Profiles | School, Kindergarten & Laboratory Furniture",
+  "meta": [
+   {
+    "name": "description",
+    "content": "Explore Doğuş downloadable profiles for school furniture, kindergarten furniture, and laboratory furniture solutions."
+   },
+   {
+    "name": "keywords",
+    "content": "Doğuş Profiles, school furniture, kindergarten furniture, laboratory furniture"
+   },
+   {
+    "property": "og:type",
+    "content": "website"
+   },
+   {
+    "property": "og:title",
+    "content": "Doğuş Profiles | Furniconcepts"
+   },
+   {
+    "property": "og:description",
+    "content": "Explore Doğuş downloadable profiles for school furniture, kindergarten furniture, and laboratory furniture solutions."
+   },
+   {
+    "name": "twitter:card",
+    "content": "summary_large_image"
+   },
+   {
+    "name": "twitter:title",
+    "content": "Doğuş Profiles | Furniconcepts"
+   },
+   {
+    "name": "twitter:description",
+    "content": "Explore Doğuş downloadable profiles for school furniture, kindergarten furniture, and laboratory furniture solutions."
+   }
+  ],
+  "jsonld": [
+   {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "name": "Doğuş Profiles",
+    "url": "https://furniconcepts.com/dogus-profiles.php",
+    "image": "https://furniconcepts.com/assets/images/banner/banner1.jpg",
+    "description": "Explore Doğuş downloadable profiles for school furniture, kindergarten furniture, and laboratory furniture solutions."
+   }
+  ]
+ },
+ "/download-profiles/furniconcepts": {
+  "live": "/fc-profiles.php",
+  "title": "Furniconcepts Profiles & Catalogs – All Collections",
+  "meta": [
+   {
+    "name": "description",
+    "content": "Explore Furniconcepts’ full range of downloadable profiles, furniture catalogs, and product collections for office, hospitality, educational, and custom furniture solutions."
+   },
+   {
+    "name": "keywords",
+    "content": "Furniconcepts Profiles, modern office furniture dubai, ergonomic office chair dubai, office furniture UAE"
+   },
+   {
+    "property": "og:type",
+    "content": "website"
+   },
+   {
+    "property": "og:title",
+    "content": "Furniconcepts Profiles & Catalogs | Furniconcepts"
+   },
+   {
+    "property": "og:description",
+    "content": "Discover Furniconcepts Profiles by Furniconcepts – modern office furniture solutions in Dubai & UAE."
+   },
+   {
+    "name": "twitter:card",
+    "content": "summary_large_image"
+   },
+   {
+    "name": "twitter:title",
+    "content": "Furniconcepts Profiles & Catalogs | Furniconcepts"
+   },
+   {
+    "name": "twitter:description",
+    "content": "Discover Furniconcepts Profiles by Furniconcepts – modern office furniture solutions in Dubai & UAE."
+   }
+  ],
+  "jsonld": [
+   {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "name": "Furniconcepts Profiles & Catalogs",
+    "url": "https://furniconcepts.com/Furniconcepts-profiles/",
+    "image": "https://furniconcepts.com/assets/images/banner/banner1.jpg",
+    "description": "Discover Furniconcepts Profiles by Furniconcepts – modern office furniture solutions in Dubai & UAE."
+   }
+  ]
+ },
+ "/download-profiles/furniconcepts/airport-lounge-seating": {
+  "live": "/fc-airport-lounge-seating.php",
+  "title": "AIRPORT LOUNGE SEATING – Furniconcepts Profiles & Catalogs",
+  "meta": [
+   {
+    "name": "description",
+    "content": "Explore Furniconcepts’ full range of downloadable profiles, furniture catalogs, and product collections for office, hospitality, educational, and custom furniture solutions."
+   },
+   {
+    "name": "keywords",
+    "content": "Furniconcepts Profiles, modern office furniture dubai, ergonomic office chair dubai, office furniture UAE"
+   },
+   {
+    "property": "og:type",
+    "content": "website"
+   },
+   {
+    "property": "og:title",
+    "content": "AIRPORT LOUNGE SEATING | Furniconcepts"
+   },
+   {
+    "property": "og:description",
+    "content": "Discover Furniconcepts Profiles by Furniconcepts – modern office furniture solutions in Dubai & UAE."
+   },
+   {
+    "name": "twitter:card",
+    "content": "summary_large_image"
+   },
+   {
+    "name": "twitter:title",
+    "content": "AIRPORT LOUNGE SEATING | Furniconcepts"
+   },
+   {
+    "name": "twitter:description",
+    "content": "Discover Furniconcepts Profiles by Furniconcepts – modern office furniture solutions in Dubai & UAE."
+   }
+  ],
+  "jsonld": [
+   {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "name": "AIRPORT LOUNGE SEATING",
+    "url": "https://furniconcepts.com/fc-airport-lounge-seating.php",
+    "image": "https://furniconcepts.com/assets/images/banner/banner1.jpg",
+    "description": "Discover Furniconcepts Profiles by Furniconcepts – modern office furniture solutions in Dubai & UAE."
+   }
+  ]
+ },
+ "/download-profiles/furniconcepts/chair": {
+  "live": "/fc-chair.php",
+  "title": "FURNICONCEPTS CHAIR – Furniconcepts Profiles & Catalogs",
+  "meta": [
+   {
+    "name": "description",
+    "content": "Explore Furniconcepts’ full range of downloadable profiles, furniture catalogs, and product collections for office, hospitality, educational, and custom furniture solutions."
+   },
+   {
+    "name": "keywords",
+    "content": "Furniconcepts Profiles, modern office furniture dubai, ergonomic office chair dubai, office furniture UAE"
+   },
+   {
+    "property": "og:type",
+    "content": "website"
+   },
+   {
+    "property": "og:title",
+    "content": "FURNICONCEPTS CHAIR | Furniconcepts"
+   },
+   {
+    "property": "og:description",
+    "content": "Discover Furniconcepts Profiles by Furniconcepts – modern office furniture solutions in Dubai & UAE."
+   },
+   {
+    "name": "twitter:card",
+    "content": "summary_large_image"
+   },
+   {
+    "name": "twitter:title",
+    "content": "FURNICONCEPTS CHAIR | Furniconcepts"
+   },
+   {
+    "name": "twitter:description",
+    "content": "Discover Furniconcepts Profiles by Furniconcepts – modern office furniture solutions in Dubai & UAE."
+   }
+  ],
+  "jsonld": [
+   {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "name": "FURNICONCEPTS CHAIR",
+    "url": "https://www.furniconcepts.com/fc-chair.php",
+    "image": "https://furniconcepts.com/assets/images/banner/banner1.jpg",
+    "description": "Discover Furniconcepts Profiles by Furniconcepts – modern office furniture solutions in Dubai & UAE."
+   }
+  ]
+ },
+ "/download-profiles/furniconcepts/company-profile": {
+  "live": "/fc-company-profile.php",
+  "title": "FURNICONCEPTS PROFILE – Furniconcepts Profiles & Catalogs",
+  "meta": [
+   {
+    "name": "description",
+    "content": "Explore Furniconcepts’ full range of downloadable profiles, furniture catalogs, and product collections for office, hospitality, educational, and custom furniture solutions."
+   },
+   {
+    "name": "keywords",
+    "content": "Furniconcepts Profiles, modern office furniture dubai, ergonomic office chair dubai, office furniture UAE"
+   },
+   {
+    "property": "og:type",
+    "content": "website"
+   },
+   {
+    "property": "og:title",
+    "content": "FURNICONCEPTS PROFILE | Furniconcepts"
+   },
+   {
+    "property": "og:description",
+    "content": "Discover Furniconcepts Profiles by Furniconcepts – modern office furniture solutions in Dubai & UAE."
+   },
+   {
+    "name": "twitter:card",
+    "content": "summary_large_image"
+   },
+   {
+    "name": "twitter:title",
+    "content": "FURNICONCEPTS PROFILE | Furniconcepts"
+   },
+   {
+    "name": "twitter:description",
+    "content": "Discover Furniconcepts Profiles by Furniconcepts – modern office furniture solutions in Dubai & UAE."
+   }
+  ],
+  "jsonld": [
+   {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "name": "FURNICONCEPTS PROFILE",
+    "url": "https://furniconcepts.com/fc-company-profile.php",
+    "image": "https://furniconcepts.com/assets/images/banner/banner1.jpg",
+    "description": "Discover Furniconcepts Profiles by Furniconcepts – modern office furniture solutions in Dubai & UAE."
+   }
+  ]
+ },
+ "/download-profiles/furniconcepts/control-console-room": {
+  "live": "/fc-control-console-room.php",
+  "title": "CONTROL CONSOLE ROOM – Furniconcepts Profiles & Catalogs",
+  "meta": [
+   {
+    "name": "description",
+    "content": "Explore Furniconcepts’ full range of downloadable profiles, furniture catalogs, and product collections for office, hospitality, educational, and custom furniture solutions."
+   },
+   {
+    "name": "keywords",
+    "content": "Furniconcepts Profiles, modern office furniture dubai, ergonomic office chair dubai, office furniture UAE"
+   },
+   {
+    "property": "og:type",
+    "content": "website"
+   },
+   {
+    "property": "og:title",
+    "content": "CONTROL CONSOLE ROOM | Furniconcepts"
+   },
+   {
+    "property": "og:description",
+    "content": "Discover Furniconcepts Profiles by Furniconcepts – modern office furniture solutions in Dubai & UAE."
+   },
+   {
+    "name": "twitter:card",
+    "content": "summary_large_image"
+   },
+   {
+    "name": "twitter:title",
+    "content": "CONTROL CONSOLE ROOM | Furniconcepts"
+   },
+   {
+    "name": "twitter:description",
+    "content": "Discover Furniconcepts Profiles by Furniconcepts – modern office furniture solutions in Dubai & UAE."
+   }
+  ],
+  "jsonld": [
+   {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "name": "CONTROL CONSOLE ROOM",
+    "url": "https://furniconcepts.com/fc-control-console-room.php",
+    "image": "https://furniconcepts.com/assets/images/banner/banner1.jpg",
+    "description": "Discover Furniconcepts Profiles by Furniconcepts – modern office furniture solutions in Dubai & UAE."
+   }
+  ]
+ },
+ "/download-profiles/furniconcepts/education": {
+  "live": "/fc-education.php",
+  "title": "EDUCATION – Furniconcepts Profiles & Catalogs",
+  "meta": [
+   {
+    "name": "description",
+    "content": "Explore Furniconcepts’ full range of downloadable profiles, furniture catalogs, and product collections for office, hospitality, educational, and custom furniture solutions."
+   },
+   {
+    "name": "keywords",
+    "content": "Furniconcepts Profiles, modern office furniture dubai, ergonomic office chair dubai, office furniture UAE"
+   },
+   {
+    "property": "og:type",
+    "content": "website"
+   },
+   {
+    "property": "og:title",
+    "content": "EDUCATION | Furniconcepts"
+   },
+   {
+    "property": "og:description",
+    "content": "Discover Furniconcepts Profiles by Furniconcepts – modern office furniture solutions in Dubai & UAE."
+   },
+   {
+    "name": "twitter:card",
+    "content": "summary_large_image"
+   },
+   {
+    "name": "twitter:title",
+    "content": "EDUCATION | Furniconcepts"
+   },
+   {
+    "name": "twitter:description",
+    "content": "Discover Furniconcepts Profiles by Furniconcepts – modern office furniture solutions in Dubai & UAE."
+   }
+  ],
+  "jsonld": [
+   {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "name": "EDUCATION",
+    "url": "https://furniconcepts.com/fc-education.php",
+    "image": "https://furniconcepts.com/assets/images/banner/banner1.jpg",
+    "description": "Discover Furniconcepts Profiles by Furniconcepts – modern office furniture solutions in Dubai & UAE."
+   }
+  ]
+ },
+ "/download-profiles/furniconcepts/height-adjustable-desk": {
+  "live": "/fc-height-adjustable-desk.php",
+  "title": "HEIGHT ADJUSTABLE DESK – Furniconcepts Profiles & Catalogs",
+  "meta": [
+   {
+    "name": "description",
+    "content": "Explore Furniconcepts’ full range of downloadable profiles, furniture catalogs, and product collections for office, hospitality, educational, and custom furniture solutions."
+   },
+   {
+    "name": "keywords",
+    "content": "Furniconcepts Profiles, modern office furniture dubai, ergonomic office chair dubai, office furniture UAE"
+   },
+   {
+    "property": "og:type",
+    "content": "website"
+   },
+   {
+    "property": "og:title",
+    "content": "HEIGHT ADJUSTABLE DESK | Furniconcepts"
+   },
+   {
+    "property": "og:description",
+    "content": "Discover Furniconcepts Profiles by Furniconcepts – modern office furniture solutions in Dubai & UAE."
+   },
+   {
+    "name": "twitter:card",
+    "content": "summary_large_image"
+   },
+   {
+    "name": "twitter:title",
+    "content": "HEIGHT ADJUSTABLE DESK | Furniconcepts"
+   },
+   {
+    "name": "twitter:description",
+    "content": "Discover Furniconcepts Profiles by Furniconcepts – modern office furniture solutions in Dubai & UAE."
+   }
+  ],
+  "jsonld": [
+   {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "name": "HEIGHT ADJUSTABLE DESK",
+    "url": "https://furniconcepts.com/fc-height-adjustable-desk.php",
+    "image": "https://furniconcepts.com/assets/images/banner/banner1.jpg",
+    "description": "Discover Furniconcepts Profiles by Furniconcepts – modern office furniture solutions in Dubai & UAE."
+   }
+  ]
+ },
+ "/download-profiles/furniconcepts/hospital-clinic-laboratory-and-warehouse-chairs": {
+  "live": "/fc-hospital-clinic-laboratory-and-warehouse-chairs.php",
+  "title": "HOSPITAL, CLINIC, LABORATORY AND WAREHOUSE CHAIRS – Furniconcepts Profiles & Catalogs",
+  "meta": [
+   {
+    "name": "description",
+    "content": "Explore Furniconcepts’ full range of downloadable profiles, furniture catalogs, and product collections for office, hospitality, educational, and custom furniture solutions."
+   },
+   {
+    "name": "keywords",
+    "content": "Furniconcepts Profiles, modern office furniture dubai, ergonomic office chair dubai, office furniture UAE"
+   },
+   {
+    "property": "og:type",
+    "content": "website"
+   },
+   {
+    "property": "og:title",
+    "content": "HOSPITAL, CLINIC, LABORATORY AND WAREHOUSE CHAIRS | Furniconcepts"
+   },
+   {
+    "property": "og:description",
+    "content": "Discover Furniconcepts Profiles by Furniconcepts – modern office furniture solutions in Dubai & UAE."
+   },
+   {
+    "name": "twitter:card",
+    "content": "summary_large_image"
+   },
+   {
+    "name": "twitter:title",
+    "content": "HOSPITAL, CLINIC, LABORATORY AND WAREHOUSE CHAIRS | Furniconcepts"
+   },
+   {
+    "name": "twitter:description",
+    "content": "Discover Furniconcepts Profiles by Furniconcepts – modern office furniture solutions in Dubai & UAE."
+   }
+  ],
+  "jsonld": [
+   {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "name": "HOSPITAL, CLINIC, LABORATORY AND WAREHOUSE CHAIRS",
+    "url": "https://furniconcepts.com/fc-hospital-clinic-laboratory-and-warehouse-chairs.php",
+    "image": "https://furniconcepts.com/assets/images/banner/banner1.jpg",
+    "description": "Discover Furniconcepts Profiles by Furniconcepts – modern office furniture solutions in Dubai & UAE."
+   }
+  ]
+ },
+ "/download-profiles/furniconcepts/hotel-and-restaurant-profile": {
+  "live": "/fc-hotel-and-restaurant-profile.php",
+  "title": "HOTEL & RESTAURANT PROFILE – Furniconcepts Profiles & Catalogs",
+  "meta": [
+   {
+    "name": "description",
+    "content": "Explore Furniconcepts’ full range of downloadable profiles, furniture catalogs, and product collections for office, hospitality, educational, and custom furniture solutions."
+   },
+   {
+    "name": "keywords",
+    "content": "Furniconcepts Profiles, modern office furniture dubai, ergonomic office chair dubai, office furniture UAE"
+   },
+   {
+    "property": "og:type",
+    "content": "website"
+   },
+   {
+    "property": "og:title",
+    "content": "HOTEL & RESTAURANT PROFILE | Furniconcepts"
+   },
+   {
+    "property": "og:description",
+    "content": "Discover Furniconcepts Profiles by Furniconcepts – modern office furniture solutions in Dubai & UAE."
+   },
+   {
+    "name": "twitter:card",
+    "content": "summary_large_image"
+   },
+   {
+    "name": "twitter:title",
+    "content": "HOTEL & RESTAURANT PROFILE | Furniconcepts"
+   },
+   {
+    "name": "twitter:description",
+    "content": "Discover Furniconcepts Profiles by Furniconcepts – modern office furniture solutions in Dubai & UAE."
+   }
+  ],
+  "jsonld": [
+   {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "name": "HOTEL & RESTAURANT PROFILE",
+    "url": "https://furniconcepts.com/fc-hotel-and-restaurant-profile.php",
+    "image": "https://furniconcepts.com/assets/images/banner/banner1.jpg",
+    "description": "Discover Furniconcepts Profiles by Furniconcepts – modern office furniture solutions in Dubai & UAE."
+   }
+  ]
+ },
+ "/download-profiles/furniconcepts/interactive-display-screens": {
+  "live": "/fc-interactive-display-screens.php",
+  "title": "FC INTERACTIVE DISPLAY SCREENS – Furniconcepts Profiles & Catalogs",
+  "meta": [
+   {
+    "name": "description",
+    "content": "Explore Furniconcepts’ full range of downloadable profiles, furniture catalogs, and product collections for office, hospitality, educational, and custom furniture solutions."
+   },
+   {
+    "name": "keywords",
+    "content": "Furniconcepts Profiles, modern office furniture dubai, ergonomic office chair dubai, office furniture UAE"
+   },
+   {
+    "property": "og:type",
+    "content": "website"
+   },
+   {
+    "property": "og:title",
+    "content": "FC INTERACTIVE DISPLAY SCREENS | Furniconcepts"
+   },
+   {
+    "property": "og:description",
+    "content": "Discover Furniconcepts Profiles by Furniconcepts – modern office furniture solutions in Dubai & UAE."
+   },
+   {
+    "name": "twitter:card",
+    "content": "summary_large_image"
+   },
+   {
+    "name": "twitter:title",
+    "content": "FC INTERACTIVE DISPLAY SCREENS | Furniconcepts"
+   },
+   {
+    "name": "twitter:description",
+    "content": "Discover Furniconcepts Profiles by Furniconcepts – modern office furniture solutions in Dubai & UAE."
+   }
+  ],
+  "jsonld": [
+   {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "name": "FC INTERACTIVE DISPLAY SCREENS",
+    "url": "https://furniconcepts.com/fc-interactive-display-screens.php",
+    "image": "https://furniconcepts.com/assets/images/banner/banner1.jpg",
+    "description": "Discover Furniconcepts Profiles by Furniconcepts – modern office furniture solutions in Dubai & UAE."
+   }
+  ]
+ },
+ "/download-profiles/furniconcepts/light-and-floor": {
+  "live": "/fc-light-and-floor.php",
+  "title": "LIGHT AND FLOOR – Furniconcepts Profiles & Catalogs",
+  "meta": [
+   {
+    "name": "description",
+    "content": "Explore Furniconcepts’ full range of downloadable profiles, furniture catalogs, and product collections for office, hospitality, educational, and custom furniture solutions."
+   },
+   {
+    "name": "keywords",
+    "content": "Furniconcepts Profiles, modern office furniture dubai, ergonomic office chair dubai, office furniture UAE"
+   },
+   {
+    "property": "og:type",
+    "content": "website"
+   },
+   {
+    "property": "og:title",
+    "content": "LIGHT AND FLOOR | Furniconcepts"
+   },
+   {
+    "property": "og:description",
+    "content": "Discover Furniconcepts Profiles by Furniconcepts – modern office furniture solutions in Dubai & UAE."
+   },
+   {
+    "name": "twitter:card",
+    "content": "summary_large_image"
+   },
+   {
+    "name": "twitter:title",
+    "content": "LIGHT AND FLOOR | Furniconcepts"
+   },
+   {
+    "name": "twitter:description",
+    "content": "Discover Furniconcepts Profiles by Furniconcepts – modern office furniture solutions in Dubai & UAE."
+   }
+  ],
+  "jsonld": [
+   {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "name": "LIGHT AND FLOOR",
+    "url": "https://furniconcepts.com/fc-light-and-floor.php",
+    "image": "https://furniconcepts.com/assets/images/banner/banner1.jpg",
+    "description": "Discover Furniconcepts Profiles by Furniconcepts – modern office furniture solutions in Dubai & UAE."
+   }
+  ]
+ },
+ "/download-profiles/furniconcepts/outdoor-furniture": {
+  "live": "/fc-outdoor-furniture.php",
+  "title": "OUTDOOR FURNITURE – Furniconcepts Profiles & Catalogs",
+  "meta": [
+   {
+    "name": "description",
+    "content": "Explore Furniconcepts’ full range of downloadable profiles, furniture catalogs, and product collections for office, hospitality, educational, and custom furniture solutions."
+   },
+   {
+    "name": "keywords",
+    "content": "Furniconcepts Profiles, modern office furniture dubai, ergonomic office chair dubai, office furniture UAE"
+   },
+   {
+    "property": "og:type",
+    "content": "website"
+   },
+   {
+    "property": "og:title",
+    "content": "OUTDOOR FURNITURE | Furniconcepts"
+   },
+   {
+    "property": "og:description",
+    "content": "Discover Furniconcepts Profiles by Furniconcepts – modern office furniture solutions in Dubai & UAE."
+   },
+   {
+    "name": "twitter:card",
+    "content": "summary_large_image"
+   },
+   {
+    "name": "twitter:title",
+    "content": "OUTDOOR FURNITURE | Furniconcepts"
+   },
+   {
+    "name": "twitter:description",
+    "content": "Discover Furniconcepts Profiles by Furniconcepts – modern office furniture solutions in Dubai & UAE."
+   }
+  ],
+  "jsonld": [
+   {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "name": "OUTDOOR FURNITURE",
+    "url": "https://furniconcepts.com/fc-outdoor-furniture.php",
+    "image": "https://furniconcepts.com/assets/images/banner/banner1.jpg",
+    "description": "Discover Furniconcepts Profiles by Furniconcepts – modern office furniture solutions in Dubai & UAE."
+   }
+  ]
+ },
+ "/download-profiles/furniconcepts/phone-booth": {
+  "live": "/fc-phone-booth.php",
+  "title": "PHONE BOOTH – Furniconcepts Profiles & Catalogs",
+  "meta": [
+   {
+    "name": "description",
+    "content": "Explore Furniconcepts’ full range of downloadable profiles, furniture catalogs, and product collections for office, hospitality, educational, and custom furniture solutions."
+   },
+   {
+    "name": "keywords",
+    "content": "Furniconcepts Profiles, modern office furniture dubai, ergonomic office chair dubai, office furniture UAE"
+   },
+   {
+    "property": "og:type",
+    "content": "website"
+   },
+   {
+    "property": "og:title",
+    "content": "PHONE BOOTH | Furniconcepts"
+   },
+   {
+    "property": "og:description",
+    "content": "Discover Furniconcepts Profiles by Furniconcepts – modern office furniture solutions in Dubai & UAE."
+   },
+   {
+    "name": "twitter:card",
+    "content": "summary_large_image"
+   },
+   {
+    "name": "twitter:title",
+    "content": "PHONE BOOTH | Furniconcepts"
+   },
+   {
+    "name": "twitter:description",
+    "content": "Discover Furniconcepts Profiles by Furniconcepts – modern office furniture solutions in Dubai & UAE."
+   }
+  ],
+  "jsonld": [
+   {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "name": "PHONE BOOTH",
+    "url": "https://furniconcepts.com/fc-phone-booth.php",
+    "image": "https://furniconcepts.com/assets/images/banner/banner1.jpg",
+    "description": "Discover Furniconcepts Profiles by Furniconcepts – modern office furniture solutions in Dubai & UAE."
+   }
+  ]
+ },
+ "/download-profiles/furniconcepts/power-modules": {
+  "live": "/fc-power-modules.php",
+  "title": "FC POWER MODULES – Furniconcepts Profiles & Catalogs",
+  "meta": [
+   {
+    "name": "description",
+    "content": "Explore Furniconcepts’ full range of downloadable profiles, furniture catalogs, and product collections for office, hospitality, educational, and custom furniture solutions."
+   },
+   {
+    "name": "keywords",
+    "content": "Furniconcepts Profiles, modern office furniture dubai, ergonomic office chair dubai, office furniture UAE"
+   },
+   {
+    "property": "og:type",
+    "content": "website"
+   },
+   {
+    "property": "og:title",
+    "content": "FC POWER MODULES | Furniconcepts"
+   },
+   {
+    "property": "og:description",
+    "content": "Discover Furniconcepts Profiles by Furniconcepts – modern office furniture solutions in Dubai & UAE."
+   },
+   {
+    "name": "twitter:card",
+    "content": "summary_large_image"
+   },
+   {
+    "name": "twitter:title",
+    "content": "FC POWER MODULES | Furniconcepts"
+   },
+   {
+    "name": "twitter:description",
+    "content": "Discover Furniconcepts Profiles by Furniconcepts – modern office furniture solutions in Dubai & UAE."
+   }
+  ],
+  "jsonld": [
+   {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "name": "FC POWER MODULES",
+    "url": "https://furniconcepts.com/fc-power-modules.php",
+    "image": "https://furniconcepts.com/assets/images/banner/banner1.jpg",
+    "description": "Discover Furniconcepts Profiles by Furniconcepts – modern office furniture solutions in Dubai & UAE."
+   }
+  ]
+ },
+ "/download-profiles/furniconcepts/racking-and-shelving": {
+  "live": "/fc-racking-and-shelving.php",
+  "title": "RACKING AND SHELVING – Furniconcepts Profiles & Catalogs",
+  "meta": [
+   {
+    "name": "description",
+    "content": "Explore Furniconcepts’ full range of downloadable profiles, furniture catalogs, and product collections for office, hospitality, educational, and custom furniture solutions."
+   },
+   {
+    "name": "keywords",
+    "content": "Furniconcepts Profiles, modern office furniture dubai, ergonomic office chair dubai, office furniture UAE"
+   },
+   {
+    "property": "og:type",
+    "content": "website"
+   },
+   {
+    "property": "og:title",
+    "content": "RACKING AND SHELVING | Furniconcepts"
+   },
+   {
+    "property": "og:description",
+    "content": "Discover Furniconcepts Profiles by Furniconcepts – modern office furniture solutions in Dubai & UAE."
+   },
+   {
+    "name": "twitter:card",
+    "content": "summary_large_image"
+   },
+   {
+    "name": "twitter:title",
+    "content": "RACKING AND SHELVING | Furniconcepts"
+   },
+   {
+    "name": "twitter:description",
+    "content": "Discover Furniconcepts Profiles by Furniconcepts – modern office furniture solutions in Dubai & UAE."
+   }
+  ],
+  "jsonld": [
+   {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "name": "RACKING AND SHELVING",
+    "url": "https://furniconcepts.com/fc-racking-and-shelving.php",
+    "image": "https://furniconcepts.com/assets/images/banner/banner1.jpg",
+    "description": "Discover Furniconcepts Profiles by Furniconcepts – modern office furniture solutions in Dubai & UAE."
+   }
+  ]
+ },
+ "/download-profiles/furniconcepts/saloon-and-spa": {
+  "live": "/fc-saloon-and-spa.php",
+  "title": "FURNICONCEPTS SALOON AND SPA – Furniconcepts Profiles & Catalogs",
+  "meta": [
+   {
+    "name": "description",
+    "content": "Explore Furniconcepts’ full range of downloadable profiles, furniture catalogs, and product collections for office, hospitality, educational, and custom furniture solutions."
+   },
+   {
+    "name": "keywords",
+    "content": "Furniconcepts Profiles, modern office furniture dubai, ergonomic office chair dubai, office furniture UAE"
+   },
+   {
+    "property": "og:type",
+    "content": "website"
+   },
+   {
+    "property": "og:title",
+    "content": "FURNICONCEPTS SALOON AND SPA | Furniconcepts"
+   },
+   {
+    "property": "og:description",
+    "content": "Discover Furniconcepts Profiles by Furniconcepts – modern office furniture solutions in Dubai & UAE."
+   },
+   {
+    "name": "twitter:card",
+    "content": "summary_large_image"
+   },
+   {
+    "name": "twitter:title",
+    "content": "FURNICONCEPTS SALOON AND SPA | Furniconcepts"
+   },
+   {
+    "name": "twitter:description",
+    "content": "Discover Furniconcepts Profiles by Furniconcepts – modern office furniture solutions in Dubai & UAE."
+   }
+  ],
+  "jsonld": [
+   {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "name": "FURNICONCEPTS SALOON AND SPA",
+    "url": "https://furniconcepts.com/fc-saloon-and-spa.php",
+    "image": "https://furniconcepts.com/assets/images/banner/banner1.jpg",
+    "description": "Discover Furniconcepts Profiles by Furniconcepts – modern office furniture solutions in Dubai & UAE."
+   }
+  ]
+ },
+ "/download-profiles/furniconcepts/sofa": {
+  "live": "/fc-sofa.php",
+  "title": "FURNICONCEPTS SOFA – Furniconcepts Profiles & Catalogs",
+  "meta": [
+   {
+    "name": "description",
+    "content": "Explore Furniconcepts’ full range of downloadable profiles, furniture catalogs, and product collections for office, hospitality, educational, and custom furniture solutions."
+   },
+   {
+    "name": "keywords",
+    "content": "Furniconcepts Profiles, modern office furniture dubai, ergonomic office chair dubai, office furniture UAE"
+   },
+   {
+    "property": "og:type",
+    "content": "website"
+   },
+   {
+    "property": "og:title",
+    "content": "FURNICONCEPTS SOFA | Furniconcepts"
+   },
+   {
+    "property": "og:description",
+    "content": "Discover Furniconcepts Profiles by Furniconcepts – modern office furniture solutions in Dubai & UAE."
+   },
+   {
+    "name": "twitter:card",
+    "content": "summary_large_image"
+   },
+   {
+    "name": "twitter:title",
+    "content": "FURNICONCEPTS SOFA | Furniconcepts"
+   },
+   {
+    "name": "twitter:description",
+    "content": "Discover Furniconcepts Profiles by Furniconcepts – modern office furniture solutions in Dubai & UAE."
+   }
+  ],
+  "jsonld": [
+   {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "name": "FURNICONCEPTS SOFA",
+    "url": "https://furniconcepts.com/fc-sofa.php",
+    "image": "https://furniconcepts.com/assets/images/banner/banner1.jpg",
+    "description": "Discover Furniconcepts Profiles by Furniconcepts – modern office furniture solutions in Dubai & UAE."
+   }
+  ]
+ },
+ "/download-profiles/furniconcepts/soft-lounge-seating": {
+  "live": "/fc-soft-lounge-seating.php",
+  "title": "SOFT LOUNGE SEATING – Furniconcepts Profiles & Catalogs",
+  "meta": [
+   {
+    "name": "description",
+    "content": "Explore Furniconcepts’ full range of downloadable profiles, furniture catalogs, and product collections for office, hospitality, educational, and custom furniture solutions."
+   },
+   {
+    "name": "keywords",
+    "content": "Furniconcepts Profiles, modern office furniture dubai, ergonomic office chair dubai, office furniture UAE"
+   },
+   {
+    "property": "og:type",
+    "content": "website"
+   },
+   {
+    "property": "og:title",
+    "content": "SOFT LOUNGE SEATING | Furniconcepts"
+   },
+   {
+    "property": "og:description",
+    "content": "Discover Furniconcepts Profiles by Furniconcepts – modern office furniture solutions in Dubai & UAE."
+   },
+   {
+    "name": "twitter:card",
+    "content": "summary_large_image"
+   },
+   {
+    "name": "twitter:title",
+    "content": "SOFT LOUNGE SEATING | Furniconcepts"
+   },
+   {
+    "name": "twitter:description",
+    "content": "Discover Furniconcepts Profiles by Furniconcepts – modern office furniture solutions in Dubai & UAE."
+   }
+  ],
+  "jsonld": [
+   {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "name": "SOFT LOUNGE SEATING",
+    "url": "https://furniconcepts.com/fc-soft-lounge-seating.php",
+    "image": "https://furniconcepts.com/assets/images/banner/banner1.jpg",
+    "description": "Discover Furniconcepts Profiles by Furniconcepts – modern office furniture solutions in Dubai & UAE."
+   }
+  ]
+ },
+ "/download-profiles/furniconcepts/wall-paint-solution": {
+  "live": "/fc-wall-paint-solution.php",
+  "title": "WALL PAINT SOLUTION – Furniconcepts Profiles & Catalogs",
+  "meta": [
+   {
+    "name": "description",
+    "content": "Explore Furniconcepts’ full range of downloadable profiles, furniture catalogs, and product collections for office, hospitality, educational, and custom furniture solutions."
+   },
+   {
+    "name": "keywords",
+    "content": "Furniconcepts Profiles, modern office furniture dubai, ergonomic office chair dubai, office furniture UAE"
+   },
+   {
+    "property": "og:type",
+    "content": "website"
+   },
+   {
+    "property": "og:title",
+    "content": "WALL PAINT SOLUTION | Furniconcepts"
+   },
+   {
+    "property": "og:description",
+    "content": "Discover Furniconcepts Profiles by Furniconcepts – modern office furniture solutions in Dubai & UAE."
+   },
+   {
+    "name": "twitter:card",
+    "content": "summary_large_image"
+   },
+   {
+    "name": "twitter:title",
+    "content": "WALL PAINT SOLUTION | Furniconcepts"
+   },
+   {
+    "name": "twitter:description",
+    "content": "Discover Furniconcepts Profiles by Furniconcepts – modern office furniture solutions in Dubai & UAE."
+   }
+  ],
+  "jsonld": [
+   {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "name": "WALL PAINT SOLUTION",
+    "url": "https://furniconcepts.com/fc-wall-paint-solution.php",
+    "image": "https://furniconcepts.com/assets/images/banner/banner1.jpg",
+    "description": "Discover Furniconcepts Profiles by Furniconcepts – modern office furniture solutions in Dubai & UAE."
+   }
+  ]
+ },
+ "/download-profiles/gebbwork": {
+  "live": "/gebbwork-profiles.php",
+  "title": "Gebbwork Profiles – Modular Workstations & Office Systems",
+  "meta": [
+   {
+    "name": "description",
+    "content": "Discover Gebbwork’s modular office furniture profiles including Vitago, L‑Contract, and acoustic solutions designed for ergonomic, flexible, and sustainable workspaces."
+   },
+   {
+    "name": "keywords",
+    "content": "Modern Office Furniture Suppliers UAE, modern office furniture dubai, ergonomic office chair dubai, office furniture UAE"
+   },
+   {
+    "property": "og:type",
+    "content": "website"
+   },
+   {
+    "property": "og:title",
+    "content": "Modern Office Furniture Suppliers UAE | Furniconcepts"
+   },
+   {
+    "property": "og:description",
+    "content": "Discover Modern Office Furniture Suppliers UAE by Furniconcepts – modern office furniture solutions in Dubai & UAE."
+   },
+   {
+    "name": "twitter:card",
+    "content": "summary_large_image"
+   },
+   {
+    "name": "twitter:title",
+    "content": "Modern Office Furniture Suppliers UAE | Furniconcepts"
+   },
+   {
+    "name": "twitter:description",
+    "content": "Discover Modern Office Furniture Suppliers UAE by Furniconcepts – modern office furniture solutions in Dubai & UAE."
+   }
+  ],
+  "jsonld": [
+   {
+    "@context": "https://schema.org",
+    "@type": "Product",
+    "name": "Gebbwork",
+    "url": "https://furniconcepts.com/gebbwork-profiles.php",
+    "image": "https://furniconcepts.com/images/gebbwork/6720cfa6d94af.jpg",
+    "description": "Discover Gebbwork by Furniconcepts – premium office furniture, workspace solutions, and ergonomic seating for modern workplaces.",
+    "brand": {
+     "@type": "Brand",
+     "name": "Gebbwork"
+    },
+    "offers": {
+     "@type": "Offer",
+     "url": "https://furniconcepts.com/gebbwork-profiles.php",
+     "priceCurrency": "AED",
+     "price": "0",
+     "description": "Contact for pricing",
+     "availability": "https://schema.org/InStock",
+     "seller": {
+      "@type": "Organization",
+      "name": "Furniconcepts"
+     }
+    }
+   }
+  ]
+ },
+ "/download-profiles/jwesys": {
+  "live": "/jwesys-profiles.php",
+  "title": "Jwesys in dubai – Smart Workspace & Contract Furniture Solutions",
+  "meta": [
+   {
+    "name": "description",
+    "content": "Jwesys in Dubai provides integrated workspace design, customized solutions and smart contract furniture for corporate, educational and healthcare environments."
+   },
+   {
+    "name": "keywords",
+    "content": "Jwesys, modern office furniture dubai, ergonomic office chair dubai, office furniture UAE"
+   },
+   {
+    "property": "og:type",
+    "content": "website"
+   },
+   {
+    "property": "og:title",
+    "content": "Jwesys | Furniconcepts"
+   },
+   {
+    "property": "og:description",
+    "content": "Discover Jwesys by Furniconcepts – modern office furniture solutions in Dubai & UAE."
+   },
+   {
+    "name": "twitter:card",
+    "content": "summary_large_image"
+   },
+   {
+    "name": "twitter:title",
+    "content": "Jwesys | Furniconcepts"
+   },
+   {
+    "name": "twitter:description",
+    "content": "Discover Jwesys by Furniconcepts – modern office furniture solutions in Dubai & UAE."
+   }
+  ],
+  "jsonld": [
+   {
+    "@context": "https://schema.org",
+    "@type": "Product",
+    "name": "Jwesys",
+    "url": "https://furniconcepts.com/jwesys.php",
+    "image": "https://furniconcepts.com/images/jwesys/main-slider-03.png",
+    "description": "Discover Jwesys by Furniconcepts – innovative workspace, office furniture, and commercial interior solutions.",
+    "brand": {
+     "@type": "Brand",
+     "name": "Jwesys"
+    },
+    "offers": {
+     "@type": "Offer",
+     "url": "https://furniconcepts.com/jwesys.php",
+     "priceCurrency": "AED",
+     "price": "0",
+     "description": "Contact for pricing",
+     "availability": "https://schema.org/InStock",
+     "seller": {
+      "@type": "Organization",
+      "name": "Furniconcepts"
+     }
+    }
+   }
+  ]
+ },
+ "/download-profiles/leadcom": {
+  "live": "/leadcom-profiles.php",
+  "title": "Leadcom Profiles – Auditorium & Retractable Seating Systems",
+  "meta": [
+   {
+    "name": "description",
+    "content": "View Leadcom’s complete range of auditorium, cinema, and retractable seating systems crafted with ergonomic design, fire-safe materials, and global quality standards."
+   },
+   {
+    "name": "keywords",
+    "content": "Modern Office Furniture Suppliers UAE, modern office furniture dubai, ergonomic office chair dubai, office furniture UAE"
+   },
+   {
+    "property": "og:type",
+    "content": "website"
+   },
+   {
+    "property": "og:title",
+    "content": "Modern Office Furniture Suppliers UAE | Furniconcepts"
+   },
+   {
+    "property": "og:description",
+    "content": "Discover Modern Office Furniture Suppliers UAE by Furniconcepts – modern office furniture solutions in Dubai & UAE."
+   },
+   {
+    "name": "twitter:card",
+    "content": "summary_large_image"
+   },
+   {
+    "name": "twitter:title",
+    "content": "Modern Office Furniture Suppliers UAE | Furniconcepts"
+   },
+   {
+    "name": "twitter:description",
+    "content": "Discover Modern Office Furniture Suppliers UAE by Furniconcepts – modern office furniture solutions in Dubai & UAE."
+   }
+  ],
+  "jsonld": [
+   {
+    "@context": "https://schema.org",
+    "@type": "Product",
+    "name": "Modern Office Furniture Suppliers UAE",
+    "url": "https://furniconcepts.com/leadcom-profiles.php",
+    "image": "https://furniconcepts.com/images/leadcom/banner-3-1.jpg",
+    "description": "Discover modern office furniture solutions by Furniconcepts, including Leadcom seating and workspace solutions for offices in Dubai, UAE, and international markets.",
+    "brand": {
+     "@type": "Brand",
+     "name": "Leadcom"
+    },
+    "offers": {
+     "@type": "Offer",
+     "url": "https://furniconcepts.com/leadcom-profiles.php",
+     "priceCurrency": "AED",
+     "price": "0",
+     "description": "Contact for pricing",
+     "availability": "https://schema.org/InStock",
+     "seller": {
+      "@type": "Organization",
+      "name": "Furniconcepts"
+     }
+    }
+   }
+  ]
+ },
+ "/download-profiles/markant": {
+  "live": "/markant-profiles.php",
+  "title": "Markant | Furniconcepts",
+  "meta": [
+   {
+    "name": "description",
+    "content": "Discover Markant by Furniconcepts – modern office furniture solutions in Dubai & UAE."
+   },
+   {
+    "name": "keywords",
+    "content": "Markant, modern office furniture dubai, ergonomic office chair dubai, office furniture UAE"
+   },
+   {
+    "property": "og:type",
+    "content": "website"
+   },
+   {
+    "property": "og:title",
+    "content": "Markant | Furniconcepts"
+   },
+   {
+    "property": "og:description",
+    "content": "Discover Markant by Furniconcepts – modern office furniture solutions in Dubai & UAE."
+   },
+   {
+    "name": "twitter:card",
+    "content": "summary_large_image"
+   },
+   {
+    "name": "twitter:title",
+    "content": "Markant | Furniconcepts"
+   },
+   {
+    "name": "twitter:description",
+    "content": "Discover Markant by Furniconcepts – modern office furniture solutions in Dubai & UAE."
+   }
+  ],
+  "jsonld": [
+   {
+    "@context": "https://schema.org",
+    "@type": "Product",
+    "name": "Markant",
+    "url": "https://furniconcepts.com/markant-profiles.php",
+    "image": "https://furniconcepts.com/images/Markant/IMG_4944.jpg",
+    "description": "Discover Markant by Furniconcepts – premium office furniture, workspace solutions, and ergonomic seating for modern workplaces.",
+    "brand": {
+     "@type": "Brand",
+     "name": "Markant"
+    },
+    "offers": {
+     "@type": "Offer",
+     "url": "https://furniconcepts.com/markant-profiles.php",
+     "priceCurrency": "AED",
+     "price": "0",
+     "description": "Contact for pricing",
+     "availability": "https://schema.org/InStock",
+     "seller": {
+      "@type": "Organization",
+      "name": "Furniconcepts"
+     }
+    }
+   }
+  ]
+ },
+ "/download-profiles/nitrocare": {
+  "live": "/nitrocare-profiles.php",
+  "title": "Nitrocare dubai – Medical Furniture & Hospital Equipment by Furniconcepts",
+  "meta": [
+   {
+    "name": "description",
+    "content": "Nitrocare in Dubai delivers advanced hospital furniture and medical equipment with high technology manufacturing and ergonomic patient‑care design."
+   },
+   {
+    "name": "keywords",
+    "content": "Nitrocare, modern office furniture dubai, ergonomic office chair dubai, office furniture UAE"
+   },
+   {
+    "property": "og:type",
+    "content": "website"
+   },
+   {
+    "property": "og:title",
+    "content": "Nitrocare | Furniconcepts"
+   },
+   {
+    "property": "og:description",
+    "content": "Discover Nitrocare by Furniconcepts – modern office furniture solutions in Dubai & UAE."
+   },
+   {
+    "name": "twitter:card",
+    "content": "summary_large_image"
+   },
+   {
+    "name": "twitter:title",
+    "content": "Nitrocare | Furniconcepts"
+   },
+   {
+    "name": "twitter:description",
+    "content": "Discover Nitrocare by Furniconcepts – modern office furniture solutions in Dubai & UAE."
+   }
+  ],
+  "jsonld": [
+   {
+    "@context": "https://schema.org",
+    "@type": "Product",
+    "name": "Nitrocare",
+    "url": "https://furniconcepts.com/nitrocare.php",
+    "image": "https://furniconcepts.com/images/nitrocare/_lumi1669058148.jpg",
+    "description": "Discover Nitrocare by Furniconcepts – healthcare furniture, hospital furniture, medical equipment, and patient care solutions.",
+    "brand": {
+     "@type": "Brand",
+     "name": "Nitrocare"
+    },
+    "offers": {
+     "@type": "Offer",
+     "url": "https://furniconcepts.com/nitrocare.php",
+     "priceCurrency": "AED",
+     "price": "0",
+     "description": "Contact for pricing",
+     "availability": "https://schema.org/InStock",
+     "seller": {
+      "@type": "Organization",
+      "name": "Furniconcepts"
+     }
+    }
+   }
+  ]
+ },
+ "/download-profiles/parin": {
+  "live": "/parin-profiles.php",
+  "title": "PARIN Profiles | Furniconcepts",
+  "meta": [
+   {
+    "name": "description",
+    "content": "Explore PARIN furniture profiles and catalogs by Furniconcepts for office, healthcare, and institutional furniture solutions across India, UAE, and Singapore."
+   },
+   {
+    "name": "keywords",
+    "content": "PARIN profiles, PARIN furniture catalog, office furniture, healthcare furniture, institutional furniture, Furniconcepts"
+   },
+   {
+    "property": "og:type",
+    "content": "website"
+   },
+   {
+    "property": "og:title",
+    "content": "PARIN Profiles | Furniconcepts"
+   },
+   {
+    "property": "og:description",
+    "content": "Explore PARIN furniture profiles and catalogs by Furniconcepts for office, healthcare, and institutional furniture solutions across India, UAE, and Singapore."
+   },
+   {
+    "name": "twitter:card",
+    "content": "summary_large_image"
+   },
+   {
+    "name": "twitter:title",
+    "content": "PARIN Profiles | Furniconcepts"
+   },
+   {
+    "name": "twitter:description",
+    "content": "Explore PARIN furniture profiles and catalogs by Furniconcepts for office, healthcare, and institutional furniture solutions across India, UAE, and Singapore."
+   }
+  ],
+  "jsonld": [
+   {
+    "@context": "https://schema.org",
+    "@type": "CollectionPage",
+    "name": "PARIN Profiles",
+    "url": "https://furniconcepts.com/parin-profiles.php",
+    "image": "https://furniconcepts.com/assets/images/product/parin/parin-image.png",
+    "description": "Explore PARIN furniture profiles and catalogs by Furniconcepts for office, healthcare, and institutional furniture solutions."
+   }
+  ]
+ },
+ "/download-profiles/phoenix": {
+  "live": "/phoenix-profiles.php",
+  "title": "Phoenix Profiles | Furniconcepts",
+  "meta": [
+   {
+    "name": "description",
+    "content": "Explore Phoenix brochures and downloadable profile catalogs from Furniconcepts."
+   },
+   {
+    "name": "keywords",
+    "content": "Phoenix profiles, Phoenix brochures, Phoenix catalogs, Furniconcepts"
+   },
+   {
+    "property": "og:type",
+    "content": "website"
+   },
+   {
+    "property": "og:title",
+    "content": "Phoenix Profiles | Furniconcepts"
+   },
+   {
+    "property": "og:description",
+    "content": "Explore Phoenix brochures and downloadable profile catalogs from Furniconcepts."
+   },
+   {
+    "name": "twitter:card",
+    "content": "summary_large_image"
+   },
+   {
+    "name": "twitter:title",
+    "content": "Phoenix Profiles | Furniconcepts"
+   },
+   {
+    "name": "twitter:description",
+    "content": "Explore Phoenix brochures and downloadable profile catalogs from Furniconcepts."
+   }
+  ],
+  "jsonld": [
+   {
+    "@context": "https://schema.org",
+    "@type": "CollectionPage",
+    "name": "Phoenix Profiles",
+    "url": "https://furniconcepts.com/phoenix-profiles.php",
+    "image": "https://furniconcepts.com/images/slider/safe-lockers/hero-banner.png",
+    "description": "Explore Phoenix brochures and downloadable profile catalogs from Furniconcepts."
+   }
+  ]
+ },
+ "/download-profiles/scab": {
+  "live": "/scab-profiles.php",
+  "title": "Scab | Furniconcepts",
+  "meta": [
+   {
+    "name": "description",
+    "content": "Discover Scab by Furniconcepts – modern office furniture solutions in Itlay"
+   },
+   {
+    "name": "keywords",
+    "content": "Scab, modern office furniture dubai, ergonomic office chair dubai, office furniture UAE"
+   },
+   {
+    "property": "og:type",
+    "content": "website"
+   },
+   {
+    "property": "og:title",
+    "content": "Scab | Furniconcepts"
+   },
+   {
+    "property": "og:description",
+    "content": "Discover Scab by Furniconcepts – modern office furniture solutions in Itlay"
+   },
+   {
+    "name": "twitter:card",
+    "content": "summary_large_image"
+   },
+   {
+    "name": "twitter:title",
+    "content": "Scab | Furniconcepts"
+   },
+   {
+    "name": "twitter:description",
+    "content": "Discover Scab by Furniconcepts – modern office furniture solutions in Itlay"
+   }
+  ],
+  "jsonld": [
+   {
+    "@context": "https://schema.org",
+    "@type": "Product",
+    "name": "Scab",
+    "url": "https://furniconcepts.com/scab.php",
+    "image": "https://furniconcepts.com/assets/images/product/scab/scab-news-stand-cover-835x0-c-default.webp",
+    "description": "Discover Scab by Furniconcepts – premium furniture and seating solutions from Italy.",
+    "brand": {
+     "@type": "Brand",
+     "name": "Scab"
+    },
+    "offers": {
+     "@type": "Offer",
+     "url": "https://furniconcepts.com/scab.php",
+     "priceCurrency": "AED",
+     "price": "0",
+     "description": "Contact for pricing",
+     "availability": "https://schema.org/InStock",
+     "seller": {
+      "@type": "Organization",
+      "name": "Furniconcepts"
+     }
+    }
+   }
+  ]
+ },
+ "/download-profiles/versalink": {
+  "live": "/versalink-profiles.php",
+  "title": "Versalink Profiles – Modular Workstations & Office Systems",
+  "meta": [
+   {
+    "name": "description",
+    "content": "Discover Versalink’s modular office furniture profiles including Vitago, L‑Contract, and acoustic solutions designed for ergonomic, flexible, and sustainable workspaces."
+   },
+   {
+    "name": "keywords",
+    "content": "Modern Office Furniture Suppliers UAE, modern office furniture dubai, ergonomic office chair dubai, office furniture UAE"
+   },
+   {
+    "property": "og:type",
+    "content": "website"
+   },
+   {
+    "property": "og:title",
+    "content": "Modern Office Furniture Suppliers UAE | Furniconcepts"
+   },
+   {
+    "property": "og:description",
+    "content": "Discover Modern Office Furniture Suppliers UAE by Furniconcepts – modern office furniture solutions in Dubai & UAE."
+   },
+   {
+    "name": "twitter:card",
+    "content": "summary_large_image"
+   },
+   {
+    "name": "twitter:title",
+    "content": "Modern Office Furniture Suppliers UAE | Furniconcepts"
+   },
+   {
+    "name": "twitter:description",
+    "content": "Discover Modern Office Furniture Suppliers UAE by Furniconcepts – modern office furniture solutions in Dubai & UAE."
+   }
+  ],
+  "jsonld": [
+   {
+    "@context": "https://schema.org",
+    "@type": "Product",
+    "name": "Versalink",
+    "url": "https://furniconcepts.com/versalink-profiles.php",
+    "image": "https://furniconcepts.com/images/versalink/6720cfa6d94af.jpg",
+    "description": "Discover Versalink by Furniconcepts – innovative office furniture, workspace solutions, and ergonomic seating for modern workplaces.",
+    "brand": {
+     "@type": "Brand",
+     "name": "Versalink"
+    },
+    "offers": {
+     "@type": "Offer",
+     "url": "https://furniconcepts.com/versalink-profiles.php",
+     "priceCurrency": "AED",
+     "price": "0",
+     "description": "Contact for pricing",
+     "availability": "https://schema.org/InStock",
+     "seller": {
+      "@type": "Organization",
+      "name": "Furniconcepts"
+     }
+    }
+   }
+  ]
+ },
+ "/download-profiles/worklyffe": {
+  "live": "/worklyf-profiles.php",
+  "title": "Worklyffe | Furniconcepts",
+  "meta": [
+   {
+    "name": "description",
+    "content": "Discover Worklyffe by Furniconcepts – modern office furniture solutions in Dubai & UAE."
+   },
+   {
+    "name": "keywords",
+    "content": "Worklyffe, modern office furniture dubai, ergonomic office chair dubai, office furniture UAE"
+   },
+   {
+    "property": "og:type",
+    "content": "website"
+   },
+   {
+    "property": "og:title",
+    "content": "Worklyffe | Furniconcepts"
+   },
+   {
+    "property": "og:description",
+    "content": "Discover Worklyffe by Furniconcepts – modern office furniture solutions in Dubai & UAE."
+   },
+   {
+    "name": "twitter:card",
+    "content": "summary_large_image"
+   },
+   {
+    "name": "twitter:title",
+    "content": "Worklyffe | Furniconcepts"
+   },
+   {
+    "name": "twitter:description",
+    "content": "Discover Worklyffe by Furniconcepts – modern office furniture solutions in Dubai & UAE."
+   }
+  ],
+  "jsonld": [
+   {
+    "@context": "https://schema.org",
+    "@type": "Product",
+    "name": "Worklyffe",
+    "url": "https://furniconcepts.com/worklyf.php",
+    "image": "https://furniconcepts.com/images/worklyf/ZekerModularSeating_Curvilinear_Linear_Corner_Ctable_SingleSided_Display.png",
+    "description": "Discover Worklyffe by Furniconcepts – modern office furniture solutions in Dubai and UAE.",
+    "brand": {
+     "@type": "Brand",
+     "name": "Furniconcepts"
+    },
+    "offers": {
+     "@type": "Offer",
+     "url": "https://furniconcepts.com/worklyf.php",
+     "priceCurrency": "AED",
+     "price": "0",
+     "description": "Contact for pricing",
+     "availability": "https://schema.org/InStock",
+     "seller": {
+      "@type": "Organization",
+      "name": "Furniconcepts"
+     }
+    }
+   }
+  ]
+ },
+ "/hospital-furniture.php": {
+  "live": "/hospital-furniture.php",
+  "title": "Healthcare & Hospital Furniture Suppliers in Dubai, India & Singapore | Furniconcepts",
+  "meta": [
+   {
+    "name": "description",
+    "content": "Nitrocare hospital beds, ICU beds, stretchers, exam chairs and lab furniture in Dubai, India and Singapore. Award-winning medical furniture from a 60,000m² facility, supplied by Furniconcepts."
+   },
+   {
+    "name": "keywords",
+    "content": "hospital furniture dubai, hospital furniture suppliers india, hospital beds singapore, icu beds dubai, trendelenburg bed, hospital stretchers, exam chairs, laboratory furniture, nitrocare"
+   },
+   {
+    "name": "robots",
+    "content": "index, follow"
+   },
+   {
+    "property": "og:type",
+    "content": "website"
+   },
+   {
+    "property": "og:title",
+    "content": "Healthcare & Hospital Furniture Suppliers in Dubai, India & Singapore | Furniconcepts"
+   },
+   {
+    "property": "og:description",
+    "content": "Nitrocare hospital beds, ICU furniture, stretchers, exam chairs and lab furniture for hospitals, clinics and home care."
+   },
+   {
+    "property": "og:site_name",
+    "content": "Furniconcepts"
+   },
+   {
+    "name": "twitter:card",
+    "content": "summary_large_image"
+   },
+   {
+    "name": "twitter:title",
+    "content": "Healthcare & Hospital Furniture Suppliers in Dubai, India & Singapore | Furniconcepts"
+   },
+   {
+    "name": "twitter:description",
+    "content": "Award-winning Nitrocare hospital beds, ICU beds, stretchers and exam chairs across Dubai, India and Singapore."
+   }
+  ],
+  "jsonld": [
+   {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+     {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://www.furniconcepts.com/"
+     },
+     {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Solutions"
+     },
+     {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Healthcare Furniture",
+      "item": "https://www.furniconcepts.com/hospital-furniture.php"
+     }
+    ]
+   },
+   {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+     {
+      "@type": "Question",
+      "name": "What do you supply?",
+      "acceptedAnswer": {
+       "@type": "Answer",
+       "text": "Hospital beds, stretchers, trolleys, ICU furniture and exam chairs."
+      }
+     },
+     {
+      "@type": "Question",
+      "name": "What awards has Nitrocare won?",
+      "acceptedAnswer": {
+       "@type": "Answer",
+       "text": "Red Dot, German Design Award, iF Design Award, Good Design Award and more."
+      }
+     },
+     {
+      "@type": "Question",
+      "name": "Do you have ICU beds?",
+      "acceptedAnswer": {
+       "@type": "Answer",
+       "text": "Yes, the NITRO HB 8140."
+      }
+     },
+     {
+      "@type": "Question",
+      "name": "What is a Trendelenburg bed?",
+      "acceptedAnswer": {
+       "@type": "Answer",
+       "text": "A bed that tilts head-down, used during certain procedures and emergencies."
+      }
+     },
+     {
+      "@type": "Question",
+      "name": "Is home care furniture available?",
+      "acceptedAnswer": {
+       "@type": "Answer",
+       "text": "Yes, the NITRO HB 7240."
+      }
+     },
+     {
+      "@type": "Question",
+      "name": "Can you furnish a clinic, not just a hospital?",
+      "acceptedAnswer": {
+       "@type": "Answer",
+       "text": "Yes, including exam chairs and lighter-acuity furniture."
+      }
+     },
+     {
+      "@type": "Question",
+      "name": "Do you supply lab furniture?",
+      "acceptedAnswer": {
+       "@type": "Answer",
+       "text": "Yes."
+      }
+     }
+    ]
+   }
+  ]
+ },
+ "/hotel-furniture-manufacturers.php": {
+  "live": "/hotel-furniture-manufacturers.php",
+  "title": "Hotel & Hospitality Furniture Suppliers in Dubai, India & Singapore | Furniconcepts",
+  "meta": [
+   {
+    "name": "description",
+    "content": "Hotel, resort, restaurant and café furniture in Dubai, India and Singapore: SCAB Italy lounge seating, Worklyffe lobby and café furniture, and outdoor umbrella systems for pools and terraces."
+   },
+   {
+    "name": "keywords",
+    "content": "hotel furniture dubai, hospitality furniture suppliers india, hotel furniture singapore, hotel lobby furniture, restaurant furniture dubai, poolside umbrellas, cruise ship furniture, scab italy, worklyffe"
+   },
+   {
+    "name": "robots",
+    "content": "index, follow"
+   },
+   {
+    "property": "og:type",
+    "content": "website"
+   },
+   {
+    "property": "og:title",
+    "content": "Hotel & Hospitality Furniture Suppliers in Dubai, India & Singapore | Furniconcepts"
+   },
+   {
+    "property": "og:description",
+    "content": "Lobby, lounge, café and poolside furniture for hotels, resorts and restaurants from SCAB Italy and Worklyffe."
+   },
+   {
+    "property": "og:site_name",
+    "content": "Furniconcepts"
+   },
+   {
+    "name": "twitter:card",
+    "content": "summary_large_image"
+   },
+   {
+    "name": "twitter:title",
+    "content": "Hotel & Hospitality Furniture Suppliers in Dubai, India & Singapore | Furniconcepts"
+   },
+   {
+    "name": "twitter:description",
+    "content": "SCAB Italy lounge seating, Worklyffe lobby and café furniture, and poolside umbrella systems across Dubai, India and Singapore."
+   }
+  ],
+  "jsonld": [
+   {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+     {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://furniconcepts.com/"
+     },
+     {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Solutions"
+     },
+     {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Hospitality Furniture",
+      "item": "https://furniconcepts.com/hotel-furniture-manufacturers.php"
+     }
+    ]
+   },
+   {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+     {
+      "@type": "Question",
+      "name": "Which brands do you supply?",
+      "acceptedAnswer": {
+       "@type": "Answer",
+       "text": "SCAB Italy and Worklyffe."
+      }
+     },
+     {
+      "@type": "Question",
+      "name": "Can you furnish a whole hotel?",
+      "acceptedAnswer": {
+       "@type": "Answer",
+       "text": "Yes, from lobby to poolside."
+      }
+     },
+     {
+      "@type": "Question",
+      "name": "Do you furnish outdoor and pool areas?",
+      "acceptedAnswer": {
+       "@type": "Answer",
+       "text": "Yes, including umbrella systems."
+      }
+     },
+     {
+      "@type": "Question",
+      "name": "Do you supply restaurants?",
+      "acceptedAnswer": {
+       "@type": "Answer",
+       "text": "Yes, restaurants and bars are part of our hospitality work."
+      }
+     },
+     {
+      "@type": "Question",
+      "name": "Is hotel furniture different from cruise furniture?",
+      "acceptedAnswer": {
+       "@type": "Answer",
+       "text": "Yes. Cruise furniture needs marine-grade steel, IMO/SOLAS compliance and salt-resistant finishes. We supply both."
+      }
+     }
+    ]
+   }
+  ]
+ },
+ "/lounge-seating.php": {
+  "live": "/lounge-seating.php",
+  "title": "Lounge Seating Suppliers in Dubai, India & Singapore | Furniconcepts",
+  "meta": [
+   {
+    "name": "description",
+    "content": "Lounge chairs, modular sofas and collaborative seating for hotels, offices, coworking spaces and cafés in Dubai, India and Singapore, from SCAB Italy and Worklyffe, including the Sofa Vortex."
+   },
+   {
+    "name": "keywords",
+    "content": "lounge seating dubai, lounge chairs india, lounge seating singapore, modular sofas, hotel lobby seating, office breakout seating, reception sofa, scab italy, worklyffe"
+   },
+   {
+    "name": "robots",
+    "content": "index, follow"
+   },
+   {
+    "property": "og:type",
+    "content": "website"
+   },
+   {
+    "property": "og:title",
+    "content": "Lounge Seating Suppliers in Dubai, India & Singapore | Furniconcepts"
+   },
+   {
+    "property": "og:description",
+    "content": "Designer lounge chairs, modular sofas and collaborative seating from SCAB Italy and Worklyffe for lobbies, offices, coworking spaces and cafés."
+   },
+   {
+    "property": "og:site_name",
+    "content": "Furniconcepts"
+   },
+   {
+    "name": "twitter:card",
+    "content": "summary_large_image"
+   },
+   {
+    "name": "twitter:title",
+    "content": "Lounge Seating Suppliers in Dubai, India & Singapore | Furniconcepts"
+   },
+   {
+    "name": "twitter:description",
+    "content": "Lounge chairs, modular sofas and collaborative seating across Dubai, India and Singapore."
+   }
+  ],
+  "jsonld": [
+   {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+     {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://furniconcepts.com/"
+     },
+     {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Solutions"
+     },
+     {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Lounge Seating",
+      "item": "https://furniconcepts.com/lounge-seating.php"
+     }
+    ]
+   },
+   {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+     {
+      "@type": "Question",
+      "name": "Which brands do you use?",
+      "acceptedAnswer": {
+       "@type": "Answer",
+       "text": "SCAB Italy and Worklyffe."
+      }
+     },
+     {
+      "@type": "Question",
+      "name": "Is lounge seating just for hotels?",
+      "acceptedAnswer": {
+       "@type": "Answer",
+       "text": "No. It works just as well in offices, coworking spaces and cafés."
+      }
+     },
+     {
+      "@type": "Question",
+      "name": "Can lounge seating work in an office?",
+      "acceptedAnswer": {
+       "@type": "Answer",
+       "text": "Yes, especially in breakout and reception areas."
+      }
+     },
+     {
+      "@type": "Question",
+      "name": "Do you supply modular sofas?",
+      "acceptedAnswer": {
+       "@type": "Answer",
+       "text": "Yes, including the Sofa Vortex."
+      }
+     },
+     {
+      "@type": "Question",
+      "name": "Is modular seating better?",
+      "acceptedAnswer": {
+       "@type": "Answer",
+       "text": "It's easier to rearrange as your needs change."
+      }
+     }
+    ]
+   }
+  ]
+ },
+ "/newsletter.php": {
+  "live": "/newsletter.php",
+  "title": "Furniconcepts Newsletter – Updates, Offers & Insights",
+  "meta": [
+   {
+    "name": "description",
+    "content": "Subscribe to receive the latest product launches, design trends, event updates, and exclusive offers from Furniconcepts delivered directly to your inbox."
+   },
+   {
+    "name": "keywords",
+    "content": "Furniconcepts Newsletter, modern office furniture dubai, ergonomic office chair dubai, office furniture UAE"
+   },
+   {
+    "property": "og:type",
+    "content": "website"
+   },
+   {
+    "property": "og:title",
+    "content": "Furniconcepts Newsletter | Furniconcepts"
+   },
+   {
+    "property": "og:description",
+    "content": "Discover Furniconcepts Newsletter by Furniconcepts – modern office furniture solutions in Dubai & UAE."
+   },
+   {
+    "name": "twitter:card",
+    "content": "summary_large_image"
+   },
+   {
+    "name": "twitter:title",
+    "content": "Furniconcepts Newsletter | Furniconcepts"
+   },
+   {
+    "name": "twitter:description",
+    "content": "Discover Furniconcepts Newsletter by Furniconcepts – modern office furniture solutions in Dubai & UAE."
+   }
+  ],
+  "jsonld": [
+   {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "name": "Furniconcepts Newsletter",
+    "url": "https://furniconcepts.com/newsletter.php",
+    "image": "https://furniconcepts.com/images/newsletter.jpg",
+    "description": "Discover Furniconcepts Newsletter by Furniconcepts – modern office furniture solutions in Dubai & UAE."
+   }
+  ]
+ },
+ "/office-furniture.php": {
+  "live": "/office-furniture.php",
+  "title": "Office & Workplace Furniture Suppliers in Dubai, India & Singapore | Furniconcepts",
+  "meta": [
+   {
+    "name": "description",
+    "content": "Desks, ergonomic chairs, meeting furniture, storage and cable management in Dubai, India and Singapore from Gebbwork, Markant, Cavaletti, Forma5 and Worklyffe, for startups to full HQ fit-outs."
+   },
+   {
+    "name": "keywords",
+    "content": "office furniture dubai, office furniture suppliers india, office furniture singapore, ergonomic office chairs, sit-stand desks dubai, office workstations, office storage, gebbwork, markant, cavaletti, forma5, worklyffe"
+   },
+   {
+    "name": "robots",
+    "content": "index, follow"
+   },
+   {
+    "property": "og:type",
+    "content": "website"
+   },
+   {
+    "property": "og:title",
+    "content": "Office & Workplace Furniture Suppliers in Dubai, India & Singapore | Furniconcepts"
+   },
+   {
+    "property": "og:description",
+    "content": "Desks, ergonomic seating, meeting furniture, storage and cable management from trusted brands, for startup offices to full headquarters fit-outs."
+   },
+   {
+    "property": "og:site_name",
+    "content": "Furniconcepts"
+   },
+   {
+    "name": "twitter:card",
+    "content": "summary_large_image"
+   },
+   {
+    "name": "twitter:title",
+    "content": "Office & Workplace Furniture Suppliers in Dubai, India & Singapore | Furniconcepts"
+   },
+   {
+    "name": "twitter:description",
+    "content": "Desks, ergonomic chairs, meeting furniture, storage and cable management across Dubai, India and Singapore."
+   }
+  ],
+  "jsonld": [
+   {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+     {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://furniconcepts.com/"
+     },
+     {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Solutions"
+     },
+     {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Office & Workplace Furniture",
+      "item": "https://furniconcepts.com/office-furniture.php"
+     }
+    ]
+   },
+   {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+     {
+      "@type": "Question",
+      "name": "Which brands do you supply?",
+      "acceptedAnswer": {
+       "@type": "Answer",
+       "text": "Gebbwork, Markant, Cavaletti, Forma5, Worklyffe, Broad Power, Versalink and Safe Lockers."
+      }
+     },
+     {
+      "@type": "Question",
+      "name": "What makes a chair ergonomic?",
+      "acceptedAnswer": {
+       "@type": "Answer",
+       "text": "Adjustable lumbar support, armrests, headrest and seat depth. Synchro-tilt on higher-end chairs reduces spinal pressure when you recline."
+      }
+     },
+     {
+      "@type": "Question",
+      "name": "Do you have sit-stand desks?",
+      "acceptedAnswer": {
+       "@type": "Answer",
+       "text": "Yes, Markant's Matrix and MOx."
+      }
+     },
+     {
+      "@type": "Question",
+      "name": "Are sit-stand desks worth it?",
+      "acceptedAnswer": {
+       "@type": "Answer",
+       "text": "They encourage movement and posture changes through the day, which is why many hybrid and health-focused offices choose them."
+      }
+     },
+     {
+      "@type": "Question",
+      "name": "Can furniture be customised?",
+      "acceptedAnswer": {
+       "@type": "Answer",
+       "text": "Yes, including desk height, chair selection and add-ons like monitor arms."
+      }
+     },
+     {
+      "@type": "Question",
+      "name": "Do you work with startups?",
+      "acceptedAnswer": {
+       "@type": "Answer",
+       "text": "Yes, from budget lines like Versalink to premium Forma5 and Markant."
+      }
+     },
+     {
+      "@type": "Question",
+      "name": "Can you furnish a whole floor at once?",
+      "acceptedAnswer": {
+       "@type": "Answer",
+       "text": "Yes, from workstations to meeting rooms and storage."
+      }
+     }
+    ]
+   }
+  ]
+ },
+ "/outdoor-indoor-umbrella-supplier-dubai.php": {
+  "live": "/outdoor-indoor-umbrella-supplier-dubai.php",
+  "title": "Outdoor Umbrella Supplier Dubai | Commercial Shade Solutions UAE",
+  "meta": [
+   {
+    "name": "description",
+    "content": "Premium outdoor and indoor umbrella supplier in Dubai for hotels, restaurants, hospitals, and luxury commercial spaces with custom shade systems."
+   },
+   {
+    "name": "keywords",
+    "content": "outdoor umbrella supplier dubai, indoor umbrella supplier dubai, commercial umbrellas uae, hotel umbrellas dubai, restaurant umbrellas dubai, cantilever umbrellas dubai"
+   },
+   {
+    "name": "robots",
+    "content": "index, follow"
+   },
+   {
+    "property": "og:type",
+    "content": "website"
+   },
+   {
+    "property": "og:title",
+    "content": "Outdoor Umbrella Supplier Dubai | Commercial Shade Solutions UAE"
+   },
+   {
+    "property": "og:description",
+    "content": "Explore premium commercial umbrella systems in Dubai for hospitality, healthcare, dining, and luxury outdoor projects."
+   },
+   {
+    "property": "og:site_name",
+    "content": "Furniconcepts"
+   },
+   {
+    "name": "twitter:card",
+    "content": "summary_large_image"
+   },
+   {
+    "name": "twitter:title",
+    "content": "Outdoor Umbrella Supplier Dubai | Commercial Shade Solutions UAE"
+   },
+   {
+    "name": "twitter:description",
+    "content": "Discover premium umbrella systems in Dubai for hotels, restaurants, hospitals, and outdoor commercial spaces."
+   }
+  ],
+  "jsonld": [
+   {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+     {
+      "@type": "Question",
+      "name": "What type of umbrella works best in Dubai?",
+      "acceptedAnswer": {
+       "@type": "Answer",
+       "text": "Commercial umbrellas with strong UV protection, durable frames, and heat-ready materials work best in Dubai conditions."
+      }
+     },
+     {
+      "@type": "Question",
+      "name": "Do you supply umbrellas for hotels and resorts?",
+      "acceptedAnswer": {
+       "@type": "Answer",
+       "text": "Yes, Furniconcepts supports hotels, resorts, restaurants, and premium outdoor hospitality projects across Dubai."
+      }
+     },
+     {
+      "@type": "Question",
+      "name": "Can umbrellas be customized for branding?",
+      "acceptedAnswer": {
+       "@type": "Answer",
+       "text": "Yes, commercial umbrellas can be customized in size, color, canopy fabric, and branding to suit project requirements."
+      }
+     },
+     {
+      "@type": "Question",
+      "name": "What is the cost of commercial umbrellas in Dubai?",
+      "acceptedAnswer": {
+       "@type": "Answer",
+       "text": "Commercial umbrella prices in Dubai commonly range from AED 500 to AED 12,000 or more depending on size, type, material, and customization."
+      }
+     },
+     {
+      "@type": "Question",
+      "name": "Do you handle installation support?",
+      "acceptedAnswer": {
+       "@type": "Answer",
+       "text": "Yes, Furniconcepts supports supply planning and installation coordination for commercial umbrella projects in Dubai."
+      }
+     }
+    ]
+   }
+  ]
+ },
+ "/outdoor-indoor-umbrella-supplier-india.php": {
+  "live": "/outdoor-indoor-umbrella-supplier-india.php",
+  "title": "Outdoor Umbrella Supplier India | Commercial Shade Solutions",
+  "meta": [
+   {
+    "name": "description",
+    "content": "Commercial outdoor and indoor umbrella supplier in India for hotels, hospitals, restaurants, campuses, and business spaces with durable and customizable shade systems."
+   },
+   {
+    "name": "keywords",
+    "content": "outdoor umbrella supplier india, commercial umbrellas india, hotel umbrellas india, hospital umbrellas india, restaurant umbrellas india, cantilever umbrellas india"
+   },
+   {
+    "name": "robots",
+    "content": "index, follow"
+   },
+   {
+    "property": "og:type",
+    "content": "website"
+   },
+   {
+    "property": "og:title",
+    "content": "Outdoor Umbrella Supplier India | Commercial Shade Solutions"
+   },
+   {
+    "property": "og:description",
+    "content": "Explore commercial umbrella solutions in India for hospitality, healthcare, campuses, restaurants, and premium outdoor spaces."
+   },
+   {
+    "property": "og:site_name",
+    "content": "Furniconcepts"
+   },
+   {
+    "name": "twitter:card",
+    "content": "summary_large_image"
+   },
+   {
+    "name": "twitter:title",
+    "content": "Outdoor Umbrella Supplier India | Commercial Shade Solutions"
+   },
+   {
+    "name": "twitter:description",
+    "content": "Discover commercial umbrella systems in India for hotels, hospitals, restaurants, campuses, and outdoor business spaces."
+   }
+  ],
+  "jsonld": [
+   {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+     {
+      "@type": "Question",
+      "name": "What type of umbrella works best in India?",
+      "acceptedAnswer": {
+       "@type": "Answer",
+       "text": "The best umbrella depends on the region and use case, but commercial-grade umbrellas with durable frames, UV resistance, and weather-ready fabrics are usually the strongest choice."
+      }
+     },
+     {
+      "@type": "Question",
+      "name": "Do you supply umbrellas for hospitals and hotels?",
+      "acceptedAnswer": {
+       "@type": "Answer",
+       "text": "Yes, Furniconcepts supports umbrella projects for hotels, hospitals, restaurants, campuses, and other commercial spaces across India."
+      }
+     },
+     {
+      "@type": "Question",
+      "name": "Can umbrellas be customized for project needs?",
+      "acceptedAnswer": {
+       "@type": "Answer",
+       "text": "Yes, umbrella systems can be customized in size, color, structure, fabric, and branding to suit project requirements."
+      }
+     },
+     {
+      "@type": "Question",
+      "name": "What is the cost of commercial umbrellas in India?",
+      "acceptedAnswer": {
+       "@type": "Answer",
+       "text": "Commercial umbrella pricing in India commonly starts around Rs. 3,000 and can rise above Rs. 1,00,000 depending on type, material, and customization."
+      }
+     },
+     {
+      "@type": "Question",
+      "name": "Do you provide installation coordination?",
+      "acceptedAnswer": {
+       "@type": "Answer",
+       "text": "Yes, Furniconcepts supports planning and installation coordination for commercial umbrella projects."
+      }
+     }
+    ]
+   }
+  ]
+ },
+ "/outdoor-indoor-umbrella-supplier-singapore.php": {
+  "live": "/outdoor-indoor-umbrella-supplier-singapore.php",
+  "title": "Outdoor Umbrella Supplier Singapore | Commercial Shade Solutions",
+  "meta": [
+   {
+    "name": "description",
+    "content": "Premium outdoor and indoor umbrella supplier in Singapore for hotels, cafes, clinics, and commercial spaces with compact, custom, and design-led shade solutions."
+   },
+   {
+    "name": "keywords",
+    "content": "outdoor umbrella supplier singapore, indoor umbrella supplier singapore, commercial umbrellas singapore, hotel umbrellas singapore, cafe umbrellas singapore, cantilever umbrellas singapore"
+   },
+   {
+    "name": "robots",
+    "content": "index, follow"
+   },
+   {
+    "property": "og:type",
+    "content": "website"
+   },
+   {
+    "property": "og:title",
+    "content": "Outdoor Umbrella Supplier Singapore | Commercial Shade Solutions"
+   },
+   {
+    "property": "og:description",
+    "content": "Explore premium commercial umbrella solutions in Singapore for hotels, restaurants, clinics, and high-end outdoor spaces."
+   },
+   {
+    "property": "og:site_name",
+    "content": "Furniconcepts"
+   },
+   {
+    "name": "twitter:card",
+    "content": "summary_large_image"
+   },
+   {
+    "name": "twitter:title",
+    "content": "Outdoor Umbrella Supplier Singapore | Commercial Shade Solutions"
+   },
+   {
+    "name": "twitter:description",
+    "content": "Discover commercial umbrella systems in Singapore for hospitality, healthcare, and premium urban projects."
+   }
+  ],
+  "jsonld": [
+   {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+     {
+      "@type": "Question",
+      "name": "What type of umbrella works best in Singapore?",
+      "acceptedAnswer": {
+       "@type": "Answer",
+       "text": "Cantilever umbrellas are often a strong choice in Singapore because they save space, support cleaner layouts, and suit premium commercial environments."
+      }
+     },
+     {
+      "@type": "Question",
+      "name": "Do you supply umbrellas for hotels and cafes?",
+      "acceptedAnswer": {
+       "@type": "Answer",
+       "text": "Yes, Furniconcepts supports umbrella projects for hotels, rooftop dining venues, cafes, restaurants, and other hospitality spaces in Singapore."
+      }
+     },
+     {
+      "@type": "Question",
+      "name": "Can umbrella systems be customized?",
+      "acceptedAnswer": {
+       "@type": "Answer",
+       "text": "Yes, umbrella systems can be customized in size, color, canopy fabric, branding, and structural format based on project needs."
+      }
+     },
+     {
+      "@type": "Question",
+      "name": "What is the cost of commercial umbrellas in Singapore?",
+      "acceptedAnswer": {
+       "@type": "Answer",
+       "text": "Commercial umbrella pricing in Singapore commonly ranges from SGD 200 to SGD 8,000 or more depending on size, type, materials, and customization."
+      }
+     },
+     {
+      "@type": "Question",
+      "name": "Do you support installation coordination?",
+      "acceptedAnswer": {
+       "@type": "Answer",
+       "text": "Yes, Furniconcepts supports supply planning and installation coordination for commercial umbrella projects."
+      }
+     }
+    ]
+   }
+  ]
+ },
+ "/outdoor-indoor-umbrella-supplier.php": {
+  "live": "/outdoor-indoor-umbrella-supplier.php",
+  "title": "Outdoor & Indoor Umbrella Supplier Categories | Dubai, India & Singapore",
+  "meta": [
+   {
+    "name": "description",
+    "content": "Explore outdoor and indoor umbrella supplier pages for Dubai, India, and Singapore with commercial shade solutions for hotels, restaurants, hospitals, and premium spaces."
+   }
+  ],
+  "jsonld": []
+ },
+ "/projects": {
+  "live": "/projects/index.php",
+  "title": "Projects | Furniconcepts",
+  "meta": [
+   {
+    "name": "description",
+    "content": "Discover Modern Office Furniture Suppliers UAE by Furniconcepts – modern office furniture solutions in Dubai & UAE."
+   },
+   {
+    "name": "keywords",
+    "content": "modern office furniture dubai, ergonomic office chair dubai, office furniture suppliers UAE, Furniconcepts projects"
+   },
+   {
+    "property": "og:type",
+    "content": "website"
+   },
+   {
+    "property": "og:title",
+    "content": "Modern Office Furniture Suppliers UAE | Furniconcepts"
+   },
+   {
+    "property": "og:description",
+    "content": "Discover Modern Office Furniture Suppliers UAE by Furniconcepts – modern office furniture solutions in Dubai & UAE."
+   },
+   {
+    "name": "twitter:card",
+    "content": "summary_large_image"
+   },
+   {
+    "name": "twitter:title",
+    "content": "Modern Office Furniture Suppliers UAE | Furniconcepts"
+   },
+   {
+    "name": "twitter:description",
+    "content": "Discover Modern Office Furniture Suppliers UAE by Furniconcepts – modern office furniture solutions in Dubai & UAE."
+   }
+  ],
+  "jsonld": [
+   {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "name": "Modern Office Furniture Suppliers UAE",
+    "url": "https://furniconcepts.com/projects/",
+    "image": "https://furniconcepts.com/projects/assets/projects/cushman/banner.jpeg",
+    "description": "Discover Modern Office Furniture Suppliers UAE by Furniconcepts – modern office furniture solutions in Dubai & UAE.",
+    "publisher": {
+     "@type": "Organization",
+     "name": "Furniconcepts",
+     "url": "https://furniconcepts.com"
+    }
+   }
+  ]
+ },
+ "/school-furniture.php": {
+  "live": "/school-furniture.php",
+  "title": "School & Classroom Furniture Suppliers in Dubai, India & Singapore | Furniconcepts",
+  "meta": [
+   {
+    "name": "description",
+    "content": "Classroom chairs, modular desks and training seating for schools, colleges and training institutes in Dubai, India and Singapore, including the Teachease and Educomfort Pro chairs."
+   },
+   {
+    "name": "keywords",
+    "content": "school furniture dubai, classroom furniture india, school furniture singapore, classroom chairs, modular classroom desks, stackable school chairs, training room seating, chairs with writing tablet"
+   },
+   {
+    "name": "robots",
+    "content": "index, follow"
+   },
+   {
+    "property": "og:type",
+    "content": "website"
+   },
+   {
+    "property": "og:title",
+    "content": "School & Classroom Furniture Suppliers in Dubai, India & Singapore | Furniconcepts"
+   },
+   {
+    "property": "og:description",
+    "content": "Comfortable, durable and easy-to-rearrange classroom chairs, modular desks and training seating for schools, colleges and institutes."
+   },
+   {
+    "property": "og:site_name",
+    "content": "Furniconcepts"
+   },
+   {
+    "name": "twitter:card",
+    "content": "summary_large_image"
+   },
+   {
+    "name": "twitter:title",
+    "content": "School & Classroom Furniture Suppliers in Dubai, India & Singapore | Furniconcepts"
+   },
+   {
+    "name": "twitter:description",
+    "content": "Teachease and Educomfort Pro classroom chairs, modular desks and training seating across Dubai, India and Singapore."
+   }
+  ],
+  "jsonld": [
+   {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+     {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://www.furniconcepts.com/"
+     },
+     {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Solutions"
+     },
+     {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Education & School Furniture",
+      "item": "https://www.furniconcepts.com/school-furniture.php"
+     }
+    ]
+   },
+   {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+     {
+      "@type": "Question",
+      "name": "What products do you supply?",
+      "acceptedAnswer": {
+       "@type": "Answer",
+       "text": "Teachease and Educomfort Pro chairs, plus modular desk systems."
+      }
+     },
+     {
+      "@type": "Question",
+      "name": "Is the furniture reconfigurable?",
+      "acceptedAnswer": {
+       "@type": "Answer",
+       "text": "Yes, for both row and group layouts."
+      }
+     },
+     {
+      "@type": "Question",
+      "name": "Why choose modular classroom furniture?",
+      "acceptedAnswer": {
+       "@type": "Answer",
+       "text": "It lets teachers switch between rows, groups and open layouts to suit each lesson."
+      }
+     },
+     {
+      "@type": "Question",
+      "name": "Do you supply training institutes?",
+      "acceptedAnswer": {
+       "@type": "Answer",
+       "text": "Yes, with space-saving, stackable seating."
+      }
+     },
+     {
+      "@type": "Question",
+      "name": "Do you supply auditorium seating for schools?",
+      "acceptedAnswer": {
+       "@type": "Answer",
+       "text": "Yes, see Auditorium Seating."
+      }
+     },
+     {
+      "@type": "Question",
+      "name": "Do you supply sports ground seating?",
+      "acceptedAnswer": {
+       "@type": "Answer",
+       "text": "Yes, see Stadium Seating."
+      }
+     }
+    ]
+   }
+  ]
+ },
+ "/stadium-seating.php": {
+  "live": "/stadium-seating.php",
+  "title": "Stadium Seating Suppliers in Dubai, India & Singapore | Furniconcepts",
+  "meta": [
+   {
+    "name": "description",
+    "content": "Fixed, bleacher, retractable and VIP stadium seating from Jwesys and Leadcom across the UAE, Chennai, Bangalore, Hyderabad, Mumbai and Delhi. Fixed stadium chairs from ₹800 per seat in India."
+   },
+   {
+    "name": "keywords",
+    "content": "stadium seating dubai, stadium seating suppliers india, stadium chairs chennai, bleacher seating, retractable stadium seating, vip stadium seating, stadium seating price india, jwesys, leadcom"
+   },
+   {
+    "name": "robots",
+    "content": "index, follow"
+   },
+   {
+    "property": "og:type",
+    "content": "website"
+   },
+   {
+    "property": "og:title",
+    "content": "Stadium Seating Suppliers in Dubai, India & Singapore | Furniconcepts"
+   },
+   {
+    "property": "og:description",
+    "content": "Fixed, bleacher, retractable and VIP stadium seating from Jwesys and Leadcom for arenas, school grounds and multi-purpose venues."
+   },
+   {
+    "property": "og:site_name",
+    "content": "Furniconcepts"
+   },
+   {
+    "name": "twitter:card",
+    "content": "summary_large_image"
+   },
+   {
+    "name": "twitter:title",
+    "content": "Stadium Seating Suppliers in Dubai, India & Singapore | Furniconcepts"
+   },
+   {
+    "name": "twitter:description",
+    "content": "Fixed, bleacher, retractable and VIP stadium seating, with fixed chairs from ₹800 per seat in India."
+   }
+  ],
+  "jsonld": [
+   {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+     {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://www.furniconcepts.com/"
+     },
+     {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Solutions"
+     },
+     {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Stadium Seating",
+      "item": "https://www.furniconcepts.com/stadium-seating.php"
+     }
+    ]
+   },
+   {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+     {
+      "@type": "Question",
+      "name": "What types do you supply?",
+      "acceptedAnswer": {
+       "@type": "Answer",
+       "text": "Fixed, bleacher, retractable and VIP seating."
+      }
+     },
+     {
+      "@type": "Question",
+      "name": "How much does it cost?",
+      "acceptedAnswer": {
+       "@type": "Answer",
+       "text": "In India, from ₹800 per seat for fixed chairs and ₹15,000+ for retractable and premium systems."
+      }
+     },
+     {
+      "@type": "Question",
+      "name": "What's the cheapest stadium seating?",
+      "acceptedAnswer": {
+       "@type": "Answer",
+       "text": "Bleacher or bench seating, which gives the most capacity per square metre."
+      }
+     },
+     {
+      "@type": "Question",
+      "name": "Which brands do you use?",
+      "acceptedAnswer": {
+       "@type": "Answer",
+       "text": "Jwesys and Leadcom."
+      }
+     },
+     {
+      "@type": "Question",
+      "name": "Fixed or retractable?",
+      "acceptedAnswer": {
+       "@type": "Answer",
+       "text": "Fixed costs less per seat at scale. Retractable costs more but frees up the floor."
+      }
+     },
+     {
+      "@type": "Question",
+      "name": "Can one venue mix seating types?",
+      "acceptedAnswer": {
+       "@type": "Answer",
+       "text": "Yes. Many venues combine fixed stands with a VIP section."
+      }
+     },
+     {
+      "@type": "Question",
+      "name": "Which cities do you serve?",
+      "acceptedAnswer": {
+       "@type": "Answer",
+       "text": "Chennai, Bangalore, Hyderabad, Mumbai, Delhi and the UAE."
+      }
+     }
+    ]
+   }
+  ]
+ },
+ "/telescopic-cinema-seating-manufacturer-dubai.php": {
+  "live": "/telescopic-cinema-seating-manufacturer-dubai.php",
+  "title": "Telescopic Cinema Seating Manufacturer in Dubai | Furniconcepts",
+  "meta": [
+   {
+    "name": "description",
+    "content": "Furniconcepts delivers high-quality telescopic cinema seating in Dubai and India with retractable seating systems, auditorium seating, turnkey execution, and expert installation."
+   },
+   {
+    "name": "keywords",
+    "content": "telescopic cinema seating manufacturer dubai, cinema seating supplier dubai, auditorium seating manufacturers uae, retractable seating solutions dubai, telescopic seating india"
+   },
+   {
+    "name": "robots",
+    "content": "index, follow"
+   },
+   {
+    "property": "og:type",
+    "content": "website"
+   },
+   {
+    "property": "og:title",
+    "content": "Telescopic Cinema Seating Manufacturer in Dubai | Furniconcepts"
+   },
+   {
+    "property": "og:description",
+    "content": "Explore retractable cinema seating systems, auditorium seating, and custom telescopic platforms from Furniconcepts for Dubai, UAE, and India."
+   },
+   {
+    "property": "og:site_name",
+    "content": "Furniconcepts"
+   },
+   {
+    "name": "twitter:card",
+    "content": "summary_large_image"
+   },
+   {
+    "name": "twitter:title",
+    "content": "Telescopic Cinema Seating Manufacturer in Dubai | Furniconcepts"
+   },
+   {
+    "name": "twitter:description",
+    "content": "Advanced retractable seating systems for cinemas, auditoriums, and multi-purpose venues across Dubai, UAE, and India."
+   }
+  ],
+  "jsonld": [
+   {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+     {
+      "@type": "Question",
+      "name": "What is telescopic seating?",
+      "acceptedAnswer": {
+       "@type": "Answer",
+       "text": "Telescopic seating is a retractable seating system used to create flexible venue layouts by allowing seat rows to fold and stack when not in use."
+      }
+     },
+     {
+      "@type": "Question",
+      "name": "Do you provide customization?",
+      "acceptedAnswer": {
+       "@type": "Answer",
+       "text": "Yes. Furniconcepts offers custom retractable seating solutions based on venue layout, finish requirements, audience capacity, and branding needs."
+      }
+     },
+     {
+      "@type": "Question",
+      "name": "Do you offer maintenance?",
+      "acceptedAnswer": {
+       "@type": "Answer",
+       "text": "Yes. AMC and maintenance support are available to help preserve long-term performance and smooth operation."
+      }
+     },
+     {
+      "@type": "Question",
+      "name": "What is the delivery timeline in the UAE and India?",
+      "acceptedAnswer": {
+       "@type": "Answer",
+       "text": "Typical production takes 40-45 days. UAE delivery is generally 15-18 days, and India delivery is typically 7-10 days, depending on project scope."
+      }
+     }
+    ]
+   }
+  ]
+ }
+}

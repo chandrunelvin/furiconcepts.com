@@ -102,7 +102,7 @@ export default function About({ section }) {
             <blockquote className="pull-quote">
               Furniconcepts is not a furniture company — it is a multi-country workspace brand with scalable potential.
             </blockquote>
-            <a href="/#catalogs" className="btn-primary">Learn More <Arrow /></a>
+            <Link to="/#catalogs" className="btn-primary">Learn More <Arrow /></Link>
           </div>
           <div className="about-story-media">
             <img src="/images/common/crafted-precision.jpg" alt="Lounge seating in a daylit interior" loading="lazy" />
@@ -187,7 +187,7 @@ export default function About({ section }) {
               <h2>Trusted by Teams<br />Across the Region</h2>
               <p>Airlines, universities, hospitals, hotels, automotive groups and government departments — furnished, fitted out and supported by Furniconcepts.</p>
             </div>
-            <a href="/#catalogs" className="link-arrow">View Our Brands <Arrow /></a>
+            <Link to="/#catalogs" className="link-arrow">View Our Brands <Arrow /></Link>
           </div>
           <div className="client-viewport" ref={clientRail}>
             <div className="client-track" style={{ '--n': CLIENTS.length }}>

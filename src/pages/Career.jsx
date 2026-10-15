@@ -1,7 +1,6 @@
 import { useState } from 'react';
 import { Arrow, SiteFooter, SiteHeader } from '../components/Home2Chrome.jsx';
 import { OFFICES } from '../data/contact.js';
-import { useSeo } from '../lib/head.js';
 import { useReveal } from '../lib/reveal.js';
 import { Icon, useParallax } from './Contact.jsx';
 import '../styles/home2.css';
@@ -24,14 +23,6 @@ const REVEAL_GROUPS = [
   'footer .footer-brand, footer .footer-col, footer .footer-bottom',
 ];
 
-const SEO = {
-  title: 'Careers | Furniconcepts',
-  meta: [{
-    name: 'description',
-    content: 'Join Furniconcepts. Send us your CV to work with our team across Dubai, India and Singapore in furniture design, projects, sales and installation.',
-  }],
-  canonical: 'https://furniconcepts.com/career.php',
-};
 
 /** The old page's three points, with a line each. */
 const PERKS = [
@@ -114,7 +105,6 @@ function ApplyForm() {
 
 export default function Career() {
   useReveal(REVEAL_GROUPS);
-  useSeo(SEO);
   const heroLayer = useParallax(0.25);
 
   return (

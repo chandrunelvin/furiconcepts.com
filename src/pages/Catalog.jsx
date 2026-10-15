@@ -53,7 +53,7 @@ export default function Catalog({ slug }) {
             <nav className="crumbs" aria-label="Breadcrumb">
               <Link to="/">Home</Link>
               <span aria-hidden="true">/</span>
-              <a href="/#catalogs">Catalogs</a>
+              <Link to="/#catalogs">Catalogs</Link>
               <span aria-hidden="true">/</span>
               <span className="current">{item.brand}</span>
             </nav>
@@ -71,7 +71,7 @@ export default function Catalog({ slug }) {
                   <path d="M12 4v11M7 11l5 5 5-5M5 20h14" />
                 </svg>
               </a>
-              <a href="/#contact" className="btn-ghost">Request Pricing <Arrow size={14} /></a>
+              <Link to="/contact" className="btn-ghost">Request Pricing <Arrow size={14} /></Link>
             </div>
           </div>
           <div className="catalog-hero-cover">

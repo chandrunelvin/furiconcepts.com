@@ -289,9 +289,9 @@ export default function ProductExplorer({ products, brand, category: outerCatego
                   </svg>
                   Enquire on WhatsApp
                 </a>
-                <a className="btn-ghost" href="/#contact" onClick={() => setEnquiry(null)}>
+                <Link className="btn-ghost" to="/contact" onClick={() => setEnquiry(null)}>
                   Contact Us <Arrow size={14} />
-                </a>
+                </Link>
               </div>
             </div>
           </div>

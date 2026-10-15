@@ -4,7 +4,7 @@ import {
 } from '../components/BlogParts.jsx';
 import { Arrow, SiteFooter, SiteHeader } from '../components/Home2Chrome.jsx';
 import { ARTICLES, BLOG_AUTHOR, BLOG_NEWSLETTER } from '../data/blog.js';
-import { loadBlogContent, useSeo } from '../lib/head.js';
+import { loadBlogContent } from '../lib/head.js';
 import { useReveal } from '../lib/reveal.js';
 import { Link, navigate } from '../router.jsx';
 import '../styles/home2.css';
@@ -60,7 +60,6 @@ export default function BlogPost({ article }) {
     if (!article) return;
     loadBlogContent(article.slug).then(setContent).catch(() => setFailed(true));
   }, [article]);
-  useSeo(content?.seo);
   useReveal(REVEAL_GROUPS);
   const heroLayer = useParallax(0.25);
   const [query, setQuery] = useState('');

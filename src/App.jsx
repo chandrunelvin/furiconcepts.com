@@ -1,3 +1,4 @@
+import { useEffect } from 'react';
 import About from './pages/About.jsx';
 import Blog from './pages/Blog.jsx';
 import BlogPost from './pages/BlogPost.jsx';
@@ -13,10 +14,24 @@ import ProfileLibrary from './pages/ProfileLibrary.jsx';
 import Projects from './pages/Projects.jsx';
 import { getArticleByPath } from './data/blog.js';
 import { getCategoryByPath } from './data/categories.js';
+import { applySeo, loadBlogContent } from './lib/head.js';
 import { usePath } from './router.jsx';
+
+/** Each page's title, description, canonical and social tags (lib/seo.js, loaded on demand). */
+function useRouteSeo(path) {
+  useEffect(() => {
+    let live = true;
+    import('./lib/seo.js')
+      .then((m) => m.seoFor(path, loadBlogContent))
+      .then((seo) => { if (live) applySeo(seo); })
+      .catch(() => { if (live) applySeo(null); });
+    return () => { live = false; };
+  }, [path]);
+}
 
 export default function App() {
   const path = usePath();
+  useRouteSeo(path);
   if (path === '/home-old') return <Home />;
   if (path === '/about') return <About />;
   // the old certificates page is now a section of About

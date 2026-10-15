@@ -1,7 +1,6 @@
 import { useState } from 'react';
 import { Arrow, SiteFooter, SiteHeader } from '../components/Home2Chrome.jsx';
 import { NEWSLETTERS, NEWSLETTER_YEARS } from '../data/newsletters.js';
-import { useSeo } from '../lib/head.js';
 import { useReveal } from '../lib/reveal.js';
 import { Link } from '../router.jsx';
 import { DownloadIcon, Features, Hero, PdfViewer } from './ProfileLibrary.jsx';
@@ -19,14 +18,6 @@ const REVEAL_GROUPS = [
   'footer .footer-brand, footer .footer-col, footer .footer-bottom',
 ];
 
-const SEO = {
-  title: 'Furnijournal Newsletter | Furniconcepts',
-  meta: [{
-    name: 'description',
-    content: 'Read Furnijournal, the monthly Furniconcepts newsletter: project stories, product launches, design trends and company news from Dubai, India and Singapore.',
-  }],
-  canonical: 'https://furniconcepts.com/newsletter.php',
-};
 
 /** The band above the footer becomes the sign-up for this page. */
 const SIGNUP = {
@@ -109,7 +100,6 @@ function Archive({ view }) {
 
 export default function Newsletter() {
   useReveal(REVEAL_GROUPS);
-  useSeo(SEO);
   const [view, viewer] = useViewer();
 
   return (

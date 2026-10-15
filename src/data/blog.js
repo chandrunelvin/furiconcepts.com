@@ -924,7 +924,7 @@ export const ARTICLES = [
   },
   {
     slug: 'hospital-laboratory-furniture-supplier-dubai-india',
-    path: '/./hospital-laboratory-furniture-supplier-dubai-india.php',
+    path: '/hospital-laboratory-furniture-supplier-dubai-india.php',
     category: 'education-healthcare',
     date: '2025-08-17',
     title: 'Hospital & Laboratory Furniture Suppliers manufacturers in Dubai and India',

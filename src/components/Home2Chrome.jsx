@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
 import { CATEGORY_PAGES, TOP_CATEGORIES } from '../data/categories.js';
 import { Link, usePath } from '../router.jsx';
+import SiteSearch from './SiteSearch.jsx';
 
 /**
  * Header, slide-out menu and footer shared by the Home2 page and the brand
@@ -105,24 +106,17 @@ export function Logo() {
 
 /**
  * Most nav entries are in-page anchors; away from the home page those sections
- * do not exist, so the links point back at the home page's anchor instead.
- * Entries carrying a `path` are real pages and route client-side.
+ * do not exist, so the links point back at the home page's anchor instead,
+ * routed client-side like the entries carrying a `path` (real pages).
  */
-const navHref = (item, onHome) =>
-  item.path ?? (onHome ? item.href : `/${item.href}`);
-
 function NavLink({ item, onHome, className, onClick, children, current }) {
-  if (item.path) {
-    return (
-      <Link to={item.path} className={className} onClick={onClick} aria-current={current ? 'page' : undefined}>
-        {children}
-      </Link>
-    );
+  if (!item.path && onHome) {
+    return <a href={item.href} className={className} onClick={onClick}>{children}</a>;
   }
   return (
-    <a href={navHref(item, onHome)} className={className} onClick={onClick}>
+    <Link to={item.path ?? `/${item.href}`} className={className} onClick={onClick} aria-current={current ? 'page' : undefined}>
       {children}
-    </a>
+    </Link>
   );
 }
 
@@ -135,6 +129,20 @@ export function SiteHeader({ onHome = true, active = 'Home' }) {
   const [scrolled, setScrolled] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
   const [openGroup, setOpenGroup] = useState(null);
+  const [searchOpen, setSearchOpen] = useState(false);
+
+  // "/" or Ctrl/⌘+K opens the search from anywhere, unless the reader is typing
+  useEffect(() => {
+    const onKey = (e) => {
+      const typing = /^(INPUT|TEXTAREA|SELECT)$/.test(e.target.tagName) || e.target.isContentEditable;
+      if ((e.key === 'k' && (e.metaKey || e.ctrlKey)) || (e.key === '/' && !typing)) {
+        e.preventDefault();
+        setSearchOpen(true);
+      }
+    };
+    document.addEventListener('keydown', onKey);
+    return () => document.removeEventListener('keydown', onKey);
+  }, []);
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 10);
@@ -187,9 +195,11 @@ export function SiteHeader({ onHome = true, active = 'Home' }) {
             </ul>
           </nav>
           <div className="nav-right">
-            <svg className="icon-btn" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8">
-              <circle cx="11" cy="11" r="7" /><path d="M21 21l-4.3-4.3" />
-            </svg>
+            <button type="button" className="search-toggle" aria-label="Search" aria-haspopup="dialog" onClick={() => setSearchOpen(true)}>
+              <svg className="icon-btn" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8">
+                <circle cx="11" cy="11" r="7" /><path d="M21 21l-4.3-4.3" />
+              </svg>
+            </button>
             <Link to="/contact" className="cta">Get in Touch <Arrow size={14} /></Link>
             <button className="menu-toggle" aria-label="Open menu" aria-expanded={menuOpen} onClick={() => setMenuOpen(true)}>
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round">
@@ -199,6 +209,7 @@ export function SiteHeader({ onHome = true, active = 'Home' }) {
           </div>
         </div>
       </header>
+      <SiteSearch open={searchOpen} onClose={() => setSearchOpen(false)} />
 
       <div
         className={`menu-backdrop ${menuOpen ? 'open' : ''}`.trim()}

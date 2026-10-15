@@ -7,7 +7,6 @@ import { Arrow, SiteFooter, SiteHeader, brandLogo } from '../components/Home2Chr
 import { getCategoryByPath } from '../data/categories.js';
 import { categoryProducts } from '../data/categoryProducts.js';
 import { getProject } from '../data/projects.js';
-import { useSeo } from '../lib/head.js';
 import { useReveal } from '../lib/reveal.js';
 import { Link } from '../router.jsx';
 import '../styles/home2.css';
@@ -490,7 +489,6 @@ const isHidden = (blocks, i, opensOnIntro) => {
 /** A category landing page (e.g. /office-furniture.php), built from data/categories.js. */
 export default function Category({ category: c }) {
   useReveal(REVEAL_GROUPS);
-  useSeo(c.seo);
   const cta = c.cta || DEFAULT_CTA;
   const products = useMemo(() => categoryProducts(c.path, c.name), [c]);
   const opensOnIntro = c.sections[0]?.some((b) => b.type === 'hook');
