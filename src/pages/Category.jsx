@@ -4,8 +4,10 @@ import BrandIcon from '../components/BrandIcons.jsx';
 import FaqSection from '../components/FaqSection.jsx';
 import ProductExplorer from '../components/ProductExplorer.jsx';
 import { Arrow, SiteFooter, SiteHeader, brandLogo } from '../components/Home2Chrome.jsx';
+import { getCategoryByPath } from '../data/categories.js';
 import { categoryProducts } from '../data/categoryProducts.js';
 import { getProject } from '../data/projects.js';
+import { useSeo } from '../lib/head.js';
 import { useReveal } from '../lib/reveal.js';
 import { Link } from '../router.jsx';
 import '../styles/home2.css';
@@ -464,17 +466,20 @@ function Section({ blocks, alt, eyebrow, name, hero }) {
  *  - the intro line and the product-type cards right after it
  *    (e.g. "Pods, Booths & Panels"), which the product range now covers
  *  - the "Brands" link row
- *  - "Choose Your Region" (links to region pages not on this site yet)
+ *  - "Choose Your Region" while its region pages are not on this site yet
  *  - "Nitrocare Awards" on the hospital page
  *  - "Classroom Layouts Supported" on the school page
  *  - "Global Brands, Local Expertise" and "Our Specialized Seating Solutions"
  *    on the telescopic page
  */
+const regionPagesBuilt = (blocks) =>
+  blocks.find((b) => b.type === 'cards')?.items.every((card) => getCategoryByPath(card.link?.href)) ?? false;
+
 const isHidden = (blocks, i, opensOnIntro) => {
   const title = blocks[0]?.type === 'heading' ? blocks[0].title : '';
   if (opensOnIntro && (i === 0 || i === 1)) return true;
   if (title === 'Brands' || title === 'Brand') return true;
-  if (title === 'Choose Your Region') return true;
+  if (title === 'Choose Your Region') return !regionPagesBuilt(blocks);
   if (title === 'Nitrocare Awards') return true;
   if (title === 'Classroom Layouts Supported') return true;
   if (title === 'Global Brands, Local Expertise') return true;
@@ -485,6 +490,7 @@ const isHidden = (blocks, i, opensOnIntro) => {
 /** A category landing page (e.g. /office-furniture.php), built from data/categories.js. */
 export default function Category({ category: c }) {
   useReveal(REVEAL_GROUPS);
+  useSeo(c.seo);
   const cta = c.cta || DEFAULT_CTA;
   const products = useMemo(() => categoryProducts(c.path, c.name), [c]);
   const opensOnIntro = c.sections[0]?.some((b) => b.type === 'hook');

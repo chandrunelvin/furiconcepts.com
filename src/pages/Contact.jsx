@@ -23,7 +23,7 @@ const REVEAL_GROUPS = [
 ];
 
 /** Drifts a full-bleed banner against the scroll, as the other pages do. */
-function useParallax(speed) {
+export function useParallax(speed) {
   const ref = useRef(null);
   useEffect(() => {
     const el = ref.current;
@@ -43,7 +43,7 @@ function useParallax(speed) {
 const lines = (text) =>
   text.split('\n').map((line, i) => <span key={line + i} className="line">{line}</span>);
 
-const Icon = ({ name }) => {
+export const Icon = ({ name }) => {
   const paths = {
     phone: <path d="M6.6 3h3l1.5 4-2 1.4a12 12 0 005.5 5.5l1.4-2 4 1.5v3A2.6 2.6 0 0117.3 19 14.4 14.4 0 015 6.7 2.6 2.6 0 016.6 3z" />,
     mail: <><rect x="3" y="5.5" width="18" height="13" rx="2" /><path d="M3.5 7l8.5 6 8.5-6" /></>,

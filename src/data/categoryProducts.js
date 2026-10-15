@@ -1,9 +1,11 @@
 /**
  * Products shown on each category page, drawn from the brand catalogues in
- * brands.js. Each category lists [brand slug, product group keys, name filter?]
- * entries; a group key is a brand's product category (e.g. 'auditorium-seating'),
- * and the optional filter keeps only matching product names when a group mixes
- * in things that don't belong (Markant's privacy group also holds screens).
+ * brands.js. Each category lists [brand slug, product group keys, name filter?,
+ * tab names?] entries; a group key is a brand's product category (e.g.
+ * 'auditorium-seating'), and the optional filter keeps only matching product
+ * names when a group mixes in things that don't belong (Markant's privacy
+ * group also holds screens). Tab names rename a group for this page only, so
+ * Leadcom's auditorium seats can read as stand seating on the stadium page.
  * Only products that truly belong to the category are listed.
  * Groups that share a name across brands merge into one tab.
  */
@@ -60,6 +62,13 @@ const SOURCES = {
   ],
   '/stadium-seating.php': [
     ['merryfair', ['arena-and-stadium-seating']],
+    ['leadcom', ['auditorium-seating', 'vip-cinema-recliners', 'public-and-waiting-seating'], null, {
+      'auditorium-seating': 'Fixed & VIP Stand Seating',
+      'vip-cinema-recliners': 'VIP Box & Lounge Recliners',
+      'public-and-waiting-seating': 'Concourse & Beam Seating',
+    }],
+    ['merryfair', ['row-and-beam-seating'], null, { 'row-and-beam-seating': 'Concourse & Beam Seating' }],
+    ['parin', ['public-seating'], null, { 'public-seating': 'Concourse & Beam Seating' }],
   ],
   '/school-furniture.php': [
     ['leadcom', ['education-and-lecture']],
@@ -83,21 +92,22 @@ export function categoryProducts(path, name) {
 
   const tabs = new Map();
   const items = [];
-  for (const [slug, groups, only] of sources) {
+  for (const [slug, groups, only, names = {}] of sources) {
     const brand = BRANDS[slug];
     if (!brand) continue;
     const { categories, items: all } = brand.products;
     for (const key of groups) {
       const group = categories.find((c) => c.key === key);
       if (!group) continue;
-      const tab = slugify(group.label);
-      if (!tabs.has(tab)) tabs.set(tab, { key: tab, label: group.label, icon: group.icon });
+      const label = names[key] ?? group.label;
+      const tab = slugify(label);
+      if (!tabs.has(tab)) tabs.set(tab, { key: tab, label, icon: group.icon });
       for (const p of all.filter((x) => x.category === key && (!only || only.test(x.name)))) {
         items.push({
           ...p,
           id: `${slug}-${p.id}`,
           category: tab,
-          type: group.label,
+          type: label,
           brand: brand.name,
           origin: brand.origin,
         });

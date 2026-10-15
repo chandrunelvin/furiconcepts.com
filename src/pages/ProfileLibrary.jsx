@@ -38,7 +38,7 @@ const LOGO_NAMES = { Scab: 'Scab Italy' };
 const logoFor = (name) =>
   name === 'Furniconcepts' ? '/images/furni-logo.png' : brandLogo(LOGO_NAMES[name] ?? name);
 
-const DownloadIcon = ({ size = 15 }) => (
+export const DownloadIcon = ({ size = 15 }) => (
   <svg width={size} height={size} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
     <path d="M12 4v11M7 11l5 5 5-5M5 20h14" />
   </svg>
@@ -47,7 +47,7 @@ const DownloadIcon = ({ size = 15 }) => (
 /* ---------- shared sections ---------- */
 
 /** The blog's photo banner, held still rather than drifting with the scroll. */
-function Hero({ image, crumbs, title, text, logo }) {
+export function Hero({ image, crumbs, title, text, logo }) {
   return (
     <section className="blog-hero profiles-hero">
       <div className="blog-hero-media" aria-hidden="true">
@@ -71,7 +71,7 @@ function Hero({ image, crumbs, title, text, logo }) {
   );
 }
 
-function Features({ items }) {
+export function Features({ items }) {
   return (
     <section className="brand-features">
       <div className="wrap brand-features-inner" style={{ '--n': items.length }}>
@@ -132,7 +132,7 @@ function HelpBand() {
  * The PDF opens in a viewer over the page, as on the old site. Phones get the
  * PDF in a new tab instead, since most mobile browsers cannot show one inline.
  */
-function PdfViewer({ file, onClose }) {
+export function PdfViewer({ file, onClose }) {
   useEffect(() => {
     const onKey = (e) => { if (e.key === 'Escape') onClose(); };
     document.addEventListener('keydown', onKey);

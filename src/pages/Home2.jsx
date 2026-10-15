@@ -6,7 +6,7 @@ import { Arrow, BRAND_MENU, Diagonal, SiteFooter, SiteHeader, SocialRow } from '
 import { formatDate } from '../components/BlogParts.jsx';
 import { ARTICLES as BLOG_ARTICLES } from '../data/blog.js';
 import { getBrand } from '../data/brands.js';
-import { CATEGORY_PAGES } from '../data/categories.js';
+import { TOP_CATEGORIES } from '../data/categories.js';
 import { BRAND_FILES } from '../data/brandProfiles.js';
 import { FC_COLLECTIONS } from '../data/fcProfiles.js';
 import { PROFILES } from '../data/profiles.js';
@@ -69,7 +69,7 @@ const fitLogo = (e) => {
 };
 
 /** The category pages, in the Categories menu order, each led by its hero photo. */
-const SPACES = CATEGORY_PAGES.map((c) => ({ name: c.name, path: c.path, src: c.hero }));
+const SPACES = TOP_CATEGORIES.map((c) => ({ name: c.name, path: c.path, src: c.hero }));
 
 const STATS = [
   { num: '200+', label: 'Curated Collections' },

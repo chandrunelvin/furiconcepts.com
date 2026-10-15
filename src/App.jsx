@@ -2,11 +2,13 @@ import About from './pages/About.jsx';
 import Blog from './pages/Blog.jsx';
 import BlogPost from './pages/BlogPost.jsx';
 import Brand from './pages/Brand.jsx';
+import Career from './pages/Career.jsx';
 import Catalog from './pages/Catalog.jsx';
 import Category from './pages/Category.jsx';
 import Contact from './pages/Contact.jsx';
 import Home from './pages/Home.jsx';
 import Home2 from './pages/Home2.jsx';
+import Newsletter from './pages/Newsletter.jsx';
 import ProfileLibrary from './pages/ProfileLibrary.jsx';
 import Projects from './pages/Projects.jsx';
 import { getArticleByPath } from './data/blog.js';
@@ -22,6 +24,8 @@ export default function App() {
     const [brand, collection] = path.slice('/download-profiles/'.length).split('/');
     return <ProfileLibrary key={path} brand={brand || undefined} collection={collection} />;
   }
+  if (path === '/career.php' || path === '/careers') return <Career />;
+  if (path === '/newsletter.php' || path === '/newsletter') return <Newsletter />;
   if (path === '/projects') return <Projects key={path} />;
   if (path.startsWith('/projects/')) return <Projects key={path} slug={path.slice('/projects/'.length)} />;
   // the blog keeps the old site's URLs: /blogs.php and /<article>.php

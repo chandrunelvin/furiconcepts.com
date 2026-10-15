@@ -3236,3 +3236,31 @@
   .home2 .cat-col.is-dark{ padding:28px 22px; }
   .home2 .cat-project-thumb{ flex:1;width:auto;height:84px; }
 }
+
+/* ---------- newsletter (/newsletter.php) ---------- */
+.home2 .nl-years{ flex-wrap:nowrap; }
+.home2 .nl-project{
+  display:inline-flex;align-items:center;gap:6px;margin:-4px 0 4px;
+  font-size:12.5px;font-weight:600;color:var(--green);
+}
+.home2 .nl-project:hover{ text-decoration:underline; }
+
+/* ---------- careers (/career.php) ---------- */
+/* the CV picker reads as a field: the native input stays in place, invisible,
+   so it keeps focus, keyboard use and the browser's required check */
+.home2 .career-cv{
+  position:relative;display:flex;align-items:center;gap:14px;cursor:pointer;
+  padding:12px 16px;background:#fff;border:1px dashed var(--line);border-radius:var(--radius);
+  transition:border-color .2s, box-shadow .2s;
+}
+.home2 .career-cv:hover,
+.home2 .career-cv:focus-within{ border-color:var(--green);box-shadow:0 0 0 3px rgba(47,158,110,.12); }
+.home2 .career-cv.has-file{ border-style:solid; }
+.home2 .contact-form .career-cv input{
+  position:absolute;inset:0;width:100%;height:100%;opacity:0;cursor:pointer;padding:0;border:0;
+}
+.home2 .career-cv .method-label{ overflow-wrap:anywhere; }
+.home2 .career-error{ font-size:13px;color:#b42318;margin-top:-6px; }
+.home2 .contact-sent a{ text-decoration:underline; }
+.home2 .career-perks li > span.method-icon{ margin-top:2px; }
+.home2 .career-perks > li:not(:has(a)){ display:flex;align-items:flex-start;gap:14px;padding:12px 10px; }

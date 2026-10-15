@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import { CATEGORY_PAGES } from '../data/categories.js';
+import { CATEGORY_PAGES, TOP_CATEGORIES } from '../data/categories.js';
 import { Link, usePath } from '../router.jsx';
 
 /**
@@ -46,7 +46,7 @@ export const NAV = [
   { label: 'Home', href: '#top' },
   { label: 'About Us', href: '#about', path: '/about' },
   { label: 'Brands', path: '/brands/cavaletti', children: BRAND_MENU },
-  { label: 'Categories', href: '#collections', children: CATEGORY_PAGES.map((c) => ({ label: c.name, path: c.path })) },
+  { label: 'Categories', href: '#collections', children: TOP_CATEGORIES.map((c) => ({ label: c.name, path: c.path })) },
   { label: 'Projects', path: '/projects' },
   { label: 'Blog', path: '/blogs.php' },
 ];
@@ -279,6 +279,8 @@ const FOOTER_COLUMNS = [
       { label: 'Projects', path: '/projects' },
       { label: 'Blog', path: '/blogs.php' },
       { label: 'Download Profiles', path: '/download-profiles' },
+      { label: 'Newsletter', path: '/newsletter.php' },
+      { label: 'Careers', path: '/career.php' },
     ],
   },
   {
