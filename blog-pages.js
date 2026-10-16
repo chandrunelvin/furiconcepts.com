@@ -12,8 +12,8 @@ import path from 'node:path';
  *     /office-furniture.php → office-furniture.php, / → index.html) carrying
  *     its <title>, description, keywords, Open Graph/Twitter, canonical
  *     (https://www.furniconcepts.com/…) and JSON-LD tags from src/lib/seo.js,
- *     plus readable text — the article itself for blog posts. The app mounts
- *     over it as usual. A _headers entry makes the host serve .php as HTML.
+ *     plus readable text in <noscript> — the article itself for blog posts —
+ *     for crawlers. Browsers show the loading logo until the app mounts. A _headers entry makes the host serve .php as HTML.
  *   - old URLs that moved (/about.php, /cavaletti.php, …) get 301 redirects
  *     ahead of the app's catch-all rule in _redirects.
  *   - sitemap.xml lists every page on the www address; robots.txt points to it.
@@ -43,8 +43,10 @@ function page(shell, seo, body) {
     html = html.replace(/<meta name="description" content="[^"]*">/, `<meta name="description" content="${esc(description)}">`);
   }
   html = html.replace('</head>', `${headTags(seo)}\n</head>`);
-  // readable content for crawlers; React replaces it when the app mounts
-  return html.replace('<div id="root"></div>', `<div id="root">${body}</div>`);
+  // readable content for crawlers and visitors without JavaScript; browsers
+  // running the app never draw it (no flash of unstyled text), they see the
+  // loading logo until React replaces everything inside #root
+  return html.replace('<div id="root">', `<div id="root"><noscript>${body}</noscript>`);
 }
 
 const summary = (seo) => {
