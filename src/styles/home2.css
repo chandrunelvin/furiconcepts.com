@@ -3420,3 +3420,27 @@
 @media(prefers-reduced-motion:reduce){
   .home2 .site-search-backdrop,.home2 .site-search-panel{ animation:none; }
 }
+
+/* ---------- phones: section headers centred ----------------------------
+   Each section's label, heading, short intro and link stack down the middle
+   on a phone. Longer reading text (story, project write-ups) and forms keep
+   their left edge. */
+@media(max-width:760px){
+  .home2 :is(.split-intro,.head-row,.blog-list-head,.profiles-head,.brand-products-head,.cat-head,
+    .brand-why-copy,.contact-cta-copy,.about-cta-copy,.brand-faq-copy,.testimonials-side,.lifestyle-copy,
+    .newsletter-body > div:first-child){
+    text-align:center; align-items:center; margin-inline:auto;
+  }
+  .home2 :is(.split-intro,.head-row,.blog-list-head,.profiles-head,.brand-products-head,.cat-head,
+    .brand-why-copy,.contact-cta-copy,.about-cta-copy,.brand-faq-copy,.testimonials-side,.lifestyle-copy,
+    .newsletter-body > div:first-child) :is(h2,p){ margin-inline:auto; }
+  .home2 .brand-products > .wrap > .eyebrow{ text-align:center; }
+  .home2 .eyebrow-rule{ justify-content:center; }
+  /* the journal panel also holds the article list, so only its head centres */
+  .home2 .journal-panel > :is(.eyebrow,h2,p){ text-align:center; margin-inline:auto; }
+  .home2 .journal-panel > .link-arrow{ display:flex; justify-content:center; }
+  .home2 .journal-controls{ justify-content:center; flex-wrap:wrap; gap:14px 22px; }
+  /* figures and controls that sit under a centred head */
+  .home2 .lifestyle .stats{ text-align:center; align-items:center; }
+  .home2 :is(.quote-count,.quote-nav){ justify-content:center; }
+}
