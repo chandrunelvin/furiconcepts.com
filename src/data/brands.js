@@ -259,8 +259,8 @@ export const BRANDS = {
     Lockers, Bestuhl and Merryfair have none usable yet, so their hero falls
     back to the plain green band. */
 const HERO = new Set([
-  'audia-italia', 'broad-power', 'forma5', 'gebbwork', 'jwesys', 'leadcom', 'libero-italy',
-  'markant', 'musepod', 'nitrocare', 'scab-italy', 'worklyffe', 'zumbooth',
+  'audia-italia', 'bestuhl', 'broad-power', 'forma5', 'gebbwork', 'jwesys', 'leadcom', 'libero-italy',
+  'markant', 'merryfair', 'musepod', 'nitrocare', 'parin', 'safe-lockers', 'scab-italy', 'worklyffe', 'zumbooth',
 ]);
 
 /**
