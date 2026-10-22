@@ -17,6 +17,19 @@ import { getCategoryByPath } from './data/categories.js';
 import { applySeo, loadBlogContent } from './lib/head.js';
 import { usePath } from './router.jsx';
 
+/**
+ * index.html's Tag Manager and Meta Pixel snippets count the page the visitor
+ * lands on; pages reached through in-site links never reload, so each of
+ * those is reported here, once its title is in place.
+ */
+let lastTracked = window.location.pathname.replace(/\/+$/, '') || '/';
+function trackPageView(path) {
+  if (path === lastTracked) return;
+  lastTracked = path;
+  window.dataLayer?.push({ event: 'page_view', page_path: path, page_title: document.title });
+  window.fbq?.('track', 'PageView');
+}
+
 /** Each page's title, description, canonical and social tags (lib/seo.js, loaded on demand). */
 function useRouteSeo(path) {
   useEffect(() => {
@@ -24,7 +37,8 @@ function useRouteSeo(path) {
     import('./lib/seo.js')
       .then((m) => m.seoFor(path, loadBlogContent))
       .then((seo) => { if (live) applySeo(seo); })
-      .catch(() => { if (live) applySeo(null); });
+      .catch(() => { if (live) applySeo(null); })
+      .finally(() => { if (live) trackPageView(path); });
     return () => { live = false; };
   }, [path]);
 }

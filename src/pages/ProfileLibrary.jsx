@@ -48,7 +48,7 @@ export const DownloadIcon = ({ size = 15 }) => (
 /* ---------- shared sections ---------- */
 
 /** The blog's photo banner, held still rather than drifting with the scroll. */
-export function Hero({ image, crumbs, title, text, logo }) {
+export function Hero({ image, crumbs, title, text, logo, logoAlt = '' }) {
   return (
     <section className="blog-hero profiles-hero">
       <div className="blog-hero-media" aria-hidden="true">
@@ -64,7 +64,7 @@ export function Hero({ image, crumbs, title, text, logo }) {
           ))}
           <span aria-current="page">{title}</span>
         </nav>
-        {logo && <div className="hero-brand-logo profiles-hero-logo"><img src={logo} alt="" /></div>}
+        {logo && <div className="hero-brand-logo profiles-hero-logo"><img src={logo} alt={logoAlt} /></div>}
         <h1>{title}</h1>
         <p>{text}</p>
       </div>
@@ -281,6 +281,7 @@ function FcCollections() {
         image="/images/common/hero1.webp"
         crumbs={[['Home', '/'], ['Download Profiles', ROOT]]}
         logo="/images/furni-logo.png"
+        logoAlt="Furniconcepts logo"
         title="Furniconcepts Profiles"
         text="Our own company profiles and catalogues, grouped by collection."
       />
@@ -347,6 +348,7 @@ function BrandProfiles({ profile, data }) {
         image={profile.cover}
         crumbs={[['Home', '/'], ['Download Profiles', ROOT]]}
         logo={logoFor(profile.name)}
+        logoAlt={`${profile.name} logo`}
         title={`${profile.name} Profiles`}
         text={profile.title}
       />
