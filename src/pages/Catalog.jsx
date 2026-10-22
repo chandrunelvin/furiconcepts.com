@@ -14,6 +14,7 @@ const REVEAL_GROUPS = [
   '.range-list li',
   '.gallery-tile',
   '.brand-chip-link',
+  '.newsletter-media, .newsletter-body',
   'footer .footer-brand, footer .footer-col, footer .footer-bottom',
 ];
 

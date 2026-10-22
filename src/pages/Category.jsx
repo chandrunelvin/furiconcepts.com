@@ -28,6 +28,7 @@ const REVEAL_GROUPS = [
   '.cat-feature, .cat-pillar, .cat-pillars-head > *',
   '.cat-delivery-apps > *, .cat-steps li',
   '.about-cta-copy > *',
+  '.newsletter-media, .newsletter-body',
   'footer .footer-brand, footer .footer-col, footer .footer-bottom',
 ];
 

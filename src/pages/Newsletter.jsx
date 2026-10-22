@@ -15,6 +15,7 @@ const REVEAL_GROUPS = [
   '.brand-feature',
   '.blog-list-head > *',
   '.profile-card',
+  '.newsletter-media, .newsletter-body',
   'footer .footer-brand, footer .footer-col, footer .footer-bottom',
 ];
 

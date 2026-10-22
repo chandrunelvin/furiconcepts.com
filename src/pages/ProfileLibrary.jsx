@@ -23,6 +23,7 @@ const REVEAL_GROUPS = [
   '.blog-list-head > *',
   '.profile-card, .cert-link',
   '.brand-why-copy > *, .brand-why-points li',
+  '.newsletter-media, .newsletter-body',
   'footer .footer-brand, footer .footer-col, footer .footer-bottom',
 ];
 

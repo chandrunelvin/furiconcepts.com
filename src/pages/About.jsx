@@ -50,6 +50,7 @@ const REVEAL_GROUPS = [
   '.about-certs .profile-card',
   '.testimonials-side, .quote-stage',
   '.about-cta-copy > *',
+  '.newsletter-media, .newsletter-body',
   'footer .footer-brand, footer .footer-col, footer .footer-bottom',
 ];
 
