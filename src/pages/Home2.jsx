@@ -336,6 +336,7 @@ export default function Home2() {
         </div>
       </section>
 
+      {/* ---- crafted band ---- hidden for now; remove this comment wrapper to show it again
       <section className="section crafted-band">
           <div className="crafted-media">
             <div className="img-parallax" ref={craftedLayer}>
@@ -371,6 +372,7 @@ export default function Home2() {
             </Link>
           </div>
       </section>
+      */}
 
       <section className="section" id="spaces">
         <div className="wrap">
