@@ -89,7 +89,9 @@ export default function Brand({ slug }) {
           {brandLogo(brand.name) && (
             <div className="hero-brand-logo"><img src={brandLogo(brand.name)} alt={`${brand.name} logo`} /></div>
           )}
-          <h1>{brand.name}</h1>
+          {/* the logo already names the brand, so the heading stays for search
+              engines and screen readers only */}
+          <h1 className={brandLogo(brand.name) ? 'sr-only' : undefined}>{brand.name}</h1>
           <div className="brand-hero-tagline">{lines(brand.tagline)}</div>
           <p>{brand.heroText}</p>
           <a href={brand.heroCta.href} className="btn-primary">
@@ -169,7 +171,7 @@ export default function Brand({ slug }) {
       {/* ---- product explorer ---- */}
       <ProductExplorer products={products} brand={brand} category={category} onCategory={setCategory} />
 
-      {/* ---- applications ---- */}
+      {/* ---- applications ---- hidden for now; remove this comment wrapper to show it again
       {brand.applications && (
       <section className={`section brand-apps ${brand.applications.contain ? 'contain' : ''}`.trim()}>
         <div className="wrap">
@@ -197,6 +199,7 @@ export default function Brand({ slug }) {
         </div>
       </section>
       )}
+      */}
 
       {/* ---- faq ---- */}
       {brand.faq && (

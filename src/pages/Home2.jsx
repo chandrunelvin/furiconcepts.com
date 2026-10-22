@@ -1,5 +1,6 @@
 import { useEffect, useRef, useState } from 'react';
 import { useMarquee } from '../lib/marquee.js';
+import { useReveal } from '../lib/reveal.js';
 import { useStepRail } from '../lib/stepRail.js';
 import { onScrollFrame, prefersReducedMotion } from '../lib/scroll.js';
 import { Arrow, BRAND_MENU, Diagonal, SiteFooter, SiteHeader, SocialRow } from '../components/Home2Chrome.jsx';
@@ -71,10 +72,12 @@ const fitLogo = (e) => {
 /** The category pages, in the Categories menu order, each led by its hero photo. */
 const SPACES = TOP_CATEGORIES.map((c) => ({ name: c.name, path: c.path, src: c.hero }));
 
+/* figures as furniconcepts.com states them: founded in Oman in 1995 (Our
+   Journey), now in 5 countries with 350+ clients (home page) */
 const STATS = [
-  { num: '200+', label: 'Curated Collections' },
-  { num: '15+', label: 'Years of Experience' },
-  { num: '50k+', label: 'Happy Customers' },
+  { num: '30+', label: 'Years of Experience' },
+  { num: '350+', label: 'Clients Served' },
+  { num: '5', label: 'Countries' },
 ];
 
 /** The journal shows the newest posts from the blog. */
@@ -186,42 +189,9 @@ const REVEAL_GROUPS = [
   'footer .footer-brand, footer .footer-col, footer .footer-bottom',
 ];
 
-function useReveal() {
-  useEffect(() => {
-    const root = document.querySelector('.home2');
-    if (!root) return undefined;
-
-    const targets = REVEAL_GROUPS.flatMap((group) => [...root.querySelectorAll(group)]);
-    if (!targets.length) return undefined;
-
-    if (prefersReducedMotion() || typeof IntersectionObserver === 'undefined') {
-      targets.forEach((el) => el.classList.add('is-in'));
-      return undefined;
-    }
-
-    targets.forEach((el) => el.classList.add('reveal'));
-
-    const io = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry) => {
-          if (!entry.isIntersecting) return;
-          entry.target.classList.add('is-in');
-          io.unobserve(entry.target);
-        });
-      },
-      { threshold: 0.12, rootMargin: '0px 0px -8% 0px' }
-    );
-    targets.forEach((el) => io.observe(el));
-
-    // failsafe: content must never be left invisible
-    const t = setTimeout(() => targets.forEach((el) => el.classList.add('is-in')), 2500);
-    return () => { io.disconnect(); clearTimeout(t); };
-  }, []);
-}
-
 export default function Home2() {
   const [slide, setSlide] = useState(0);
-  useReveal();
+  useReveal(REVEAL_GROUPS);
   const heroLayer = useParallax(0.25);
   const bannerLayer = useParallax(0.35);
   const journalLayer = useParallax(0.2);
@@ -369,9 +339,8 @@ export default function Home2() {
               More Than<br />Furniture.<br />It&apos;s a <span className="accent">Lifestyle.</span>
             </h2>
             <p>
-              At Furniconcepts, we believe that great spaces inspire better living. Our collections are
-              thoughtfully designed <span className="accent">to bring comfort</span>, style and functionality
-              to your everyday life.
+              At Furniconcepts, we believe great spaces inspire better work. Since 1995 we have furnished
+              offices, hotels and public spaces <span className="accent">with comfort</span>, style and function.
             </p>
           </div>
           <div className="stats">

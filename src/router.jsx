@@ -55,11 +55,16 @@ function transition(update, after) {
     after();
     return;
   }
-  document.startViewTransition(() => {
+  const vt = document.startViewTransition(() => {
     flushSync(update);
     after();
     return aboveFoldImagesReady();
   });
+  // while the crossfade runs the screen is a still snapshot, so a scroll
+  // would seem stuck and then jump — the reader's first scroll ends it
+  const skip = () => vt.skipTransition();
+  USER_SCROLL.forEach((type) => window.addEventListener(type, skip, { passive: true, once: true }));
+  vt.finished.finally(() => USER_SCROLL.forEach((type) => window.removeEventListener(type, skip)));
 }
 
 const USER_SCROLL = ['wheel', 'touchstart', 'keydown', 'mousedown'];

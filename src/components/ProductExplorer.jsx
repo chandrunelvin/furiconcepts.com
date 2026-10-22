@@ -222,7 +222,7 @@ export default function ProductExplorer({ products, brand, category: outerCatego
           {visible.length ? (
             <div className="brand-grid">
               {shown.map((p) => (
-                <button type="button" className="brand-card" key={p.id} onClick={() => setEnquiry(p)}>
+                <button type="button" className="brand-card" key={p.id} title={p.name} onClick={() => setEnquiry(p)}>
                   <span className="brand-card-media">
                     <img src={p.image} alt={`${p.name} — ${p.type}`} loading="lazy" />
                   </span>
