@@ -743,11 +743,26 @@
 }
 
 /* ---------- scroll reveal ---------- */
+/* Each block only ever animates its own opacity and transform, with
+   will-change set before it moves, so the browser prepares the layer up front
+   and nothing repaints while the page scrolls. Only the starting position
+   differs by kind of block. (Masks, blurs and animating parts inside a block
+   made scrolling stutter — keep it to these two properties.) */
 .home2 .reveal{
   opacity:0; transform:translateY(26px);
   transition:opacity .85s cubic-bezier(.2,.8,.2,1), transform .85s cubic-bezier(.2,.8,.2,1);
   will-change:opacity, transform;
 }
+/* cards and tiles lift and grow a touch */
+.home2 .reveal:not(.is-in):is([class*="card"],.stat,.num-cell,.feature,.brand-feature,.cat-pillar,.cat-type,.cat-tile,.office-card){
+  transform:translateY(30px) scale(.96);
+}
+/* sliders come in from the side they scroll towards */
+.home2 .reveal:not(.is-in):is([class*="viewport"],.team-row){ transform:translateX(48px); }
+/* photo frames settle from a slight zoom */
+.home2 .reveal:not(.is-in)[class*="-media"]{ transform:scale(1.04); }
+/* the small green labels slide in from the left */
+.home2 .reveal:not(.is-in).eyebrow{ transform:translateX(-18px); }
 .home2 .reveal.is-in{ opacity:1; transform:none; will-change:auto; }
 /* a sibling cascade so a row arrives as a group, not all at once */
 .home2 .reveal:nth-child(2){ transition-delay:.08s; }

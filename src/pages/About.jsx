@@ -19,12 +19,12 @@ const NUMBERS = [
     icon: <><rect x="3" y="3" width="7" height="7" rx="1.5" /><rect x="14" y="3" width="7" height="7" rx="1.5" /><rect x="3" y="14" width="7" height="7" rx="1.5" /><rect x="14" y="14" width="7" height="7" rx="1.5" /></>,
   },
   {
-    num: '16+',
+    num: '18',
     label: 'Core Partner Brands',
     icon: <><circle cx="12" cy="8" r="5" /><path d="M8.5 12.5L7 21l5-2.5L17 21l-1.5-8.5" /></>,
   },
   {
-    num: '15+',
+    num: '30+',
     label: 'Years of Experience',
     icon: <><circle cx="12" cy="12" r="9" /><path d="M12 7v5l3.5 2" /></>,
   },
