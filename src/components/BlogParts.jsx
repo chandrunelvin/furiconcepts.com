@@ -1,7 +1,6 @@
-import { useEffect, useRef } from 'react';
 import { Arrow } from './Home2Chrome.jsx';
 import { ARTICLES, BLOG_CATEGORIES, BLOG_FEATURED } from '../data/blog.js';
-import { onScrollFrame, prefersReducedMotion } from '../lib/scroll.js';
+import { useParallax } from '../lib/parallax.js';
 import { Link } from '../router.jsx';
 
 /**
@@ -9,23 +8,8 @@ import { Link } from '../router.jsx';
  * icons, date formatting and the sidebar.
  */
 
-/** Drifts a full-bleed banner against the scroll, as the other pages do. */
-export function useParallax(speed) {
-  const ref = useRef(null);
-  useEffect(() => {
-    const el = ref.current;
-    if (!el || prefersReducedMotion()) return undefined;
-    const apply = () => {
-      const parent = el.parentElement;
-      if (!parent) return;
-      const rect = parent.getBoundingClientRect();
-      el.style.transform = `translateY(${((rect.top - window.innerHeight / 2) * speed * 0.35).toFixed(2)}px)`;
-    };
-    apply();
-    return onScrollFrame(apply);
-  }, [speed]);
-  return ref;
-}
+/** Banner drift, shared with the pages that import it from here. */
+export { useParallax };
 
 export const Icon = ({ name }) => {
   const paths = {

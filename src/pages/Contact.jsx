@@ -1,11 +1,12 @@
-import { useEffect, useRef, useState } from 'react';
+import { useState } from 'react';
 import { Arrow, SiteFooter, SiteHeader } from '../components/Home2Chrome.jsx';
 import {
   CONTACT_FEATURES, CONTACT_HERO, CONTACT_METHODS,
   COUNTRIES, OFFICES, OFFICES_INTRO, SUBJECTS,
 } from '../data/contact.js';
+import { HONEYPOT, sendForm } from '../lib/forms.js';
 import { useReveal } from '../lib/reveal.js';
-import { onScrollFrame, prefersReducedMotion } from '../lib/scroll.js';
+import { useParallax } from '../lib/parallax.js';
 import { Link } from '../router.jsx';
 import '../styles/home2.css';
 
@@ -22,23 +23,8 @@ const REVEAL_GROUPS = [
   'footer .footer-brand, footer .footer-col, footer .footer-bottom',
 ];
 
-/** Drifts a full-bleed banner against the scroll, as the other pages do. */
-export function useParallax(speed) {
-  const ref = useRef(null);
-  useEffect(() => {
-    const el = ref.current;
-    if (!el || prefersReducedMotion()) return undefined;
-    const apply = () => {
-      const parent = el.parentElement;
-      if (!parent) return;
-      const rect = parent.getBoundingClientRect();
-      el.style.transform = `translateY(${((rect.top - window.innerHeight / 2) * speed * 0.35).toFixed(2)}px)`;
-    };
-    apply();
-    return onScrollFrame(apply);
-  }, [speed]);
-  return ref;
-}
+/** Banner drift, shared with the pages that import it from here. */
+export { useParallax };
 
 const lines = (text) =>
   text.split('\n').map((line, i) => <span key={line + i} className="line">{line}</span>);
@@ -66,7 +52,18 @@ export default function Contact() {
   useReveal(REVEAL_GROUPS);
   const heroLayer = useParallax(0.25);
 
-  const [sent, setSent] = useState(false);
+  // 'idle' | 'sending' | 'sent' | 'error'
+  const [status, setStatus] = useState('idle');
+
+  const submit = (e) => {
+    e.preventDefault();
+    const form = e.currentTarget;
+    const fields = Object.fromEntries(new FormData(form));
+    setStatus('sending');
+    sendForm(`Website enquiry: ${fields.subject} – ${fields.name}`, fields)
+      .then(() => { setStatus('sent'); form.reset(); })
+      .catch(() => setStatus('error'));
+  };
   const [active, setActive] = useState(OFFICES[0].id);
 
   const office = OFFICES.find((o) => o.id === active) ?? OFFICES[0];
@@ -107,7 +104,8 @@ export default function Contact() {
               <h2>Get in Touch</h2>
               <p className="contact-form-intro">Fill out the form and our team will get back to you soon.</p>
 
-              <form className="contact-form" onSubmit={(e) => { e.preventDefault(); setSent(true); }}>
+              <form className="contact-form" onSubmit={submit}>
+                <input {...HONEYPOT} />
                 <div className="field-row">
                   <input type="text" name="name" placeholder="Your Name *" required aria-label="Your name" />
                   <input type="email" name="email" placeholder="Email Address *" required aria-label="Email address" />
@@ -125,12 +123,18 @@ export default function Contact() {
                   {SUBJECTS.map((sub) => <option key={sub} value={sub}>{sub}</option>)}
                 </select>
                 <textarea name="message" rows="5" placeholder="Your Message *" required aria-label="Your message" />
-                <button type="submit" className="btn-primary">
-                  {sent ? 'Message Sent' : 'Send Message'} <Arrow size={14} />
+                <button type="submit" className="btn-primary" disabled={status === 'sending'}>
+                  {status === 'sending' ? 'Sending…' : status === 'sent' ? 'Message Sent' : 'Send Message'} <Arrow size={14} />
                 </button>
-                {sent && (
+                {status === 'sent' && (
                   <p className="contact-sent" role="status">
                     Thank you — your message has been sent. We will get back to you shortly.
+                  </p>
+                )}
+                {status === 'error' && (
+                  <p className="contact-sent contact-error" role="alert">
+                    Sorry, your message could not be sent. Please try again, or email us at{' '}
+                    <a href="mailto:letstalk@furniconcepts.com">letstalk@furniconcepts.com</a>.
                   </p>
                 )}
               </form>

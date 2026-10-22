@@ -2199,6 +2199,7 @@
 }
 .home2 .contact-form .btn-primary{ margin-top:6px; }
 .home2 .contact-sent{ font-size:13.5px;color:var(--green);font-weight:500; }
+.home2 .contact-error{ color:#b3261e; }
 
 .home2 .contact-methods{ display:flex;flex-direction:column;gap:6px; }
 .home2 .contact-methods a{
@@ -2498,6 +2499,9 @@
 /* newsletter: optional privacy line under the form */
 .home2 .newsletter-body > .sub-form-wrap{ flex:0 0 auto; }
 .home2 .sub-note{ font-size:13px;color:var(--ink-soft);margin-top:10px;padding-left:6px; }
+.home2 .sub-status{ color:var(--green);font-weight:500; }
+.home2 .sub-error{ color:#b3261e; }
+.home2 .sub-error a{ text-decoration:underline; }
 
 /* ---- responsive ---- */
 @media(max-width:1180px){

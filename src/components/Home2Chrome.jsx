@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react';
 import { CATEGORY_PAGES, TOP_CATEGORIES } from '../data/categories.js';
+import { HONEYPOT, sendForm } from '../lib/forms.js';
 import { Link, usePath } from '../router.jsx';
 import SiteSearch from './SiteSearch.jsx';
 
@@ -318,10 +319,16 @@ const NEWSLETTER_COPY = {
 /** `copy` swaps the band's wording per page; a `note` adds a line under the form. */
 export function Newsletter({ copy = NEWSLETTER_COPY }) {
   const [email, setEmail] = useState('');
+  // 'idle' | 'sending' | 'sent' | 'error'
+  const [status, setStatus] = useState('idle');
 
   const subscribe = (e) => {
     e.preventDefault();
-    setEmail('Subscribed!');
+    const fields = Object.fromEntries(new FormData(e.currentTarget));
+    setStatus('sending');
+    sendForm('Newsletter sign-up', { ...fields, page: window.location.pathname })
+      .then(() => { setStatus('sent'); setEmail(''); })
+      .catch(() => setStatus('error'));
   };
 
   return (
@@ -337,15 +344,27 @@ export function Newsletter({ copy = NEWSLETTER_COPY }) {
         </div>
         <div className="sub-form-wrap">
           <form className="sub-form" onSubmit={subscribe}>
+            <input {...HONEYPOT} />
             <input
               type="email"
+              name="email"
+              aria-label="Your email address"
               placeholder="Your email address"
               value={email}
               onChange={(e) => setEmail(e.target.value)}
               required
             />
-            <button type="submit">Subscribe <Arrow size={14} /></button>
+            <button type="submit" disabled={status === 'sending'}>
+              {status === 'sending' ? 'Subscribing…' : 'Subscribe'} <Arrow size={14} />
+            </button>
           </form>
+          {status === 'sent' && <p className="sub-note sub-status" role="status">Thank you — you&apos;re subscribed.</p>}
+          {status === 'error' && (
+            <p className="sub-note sub-status sub-error" role="alert">
+              Sorry, that didn&apos;t go through. Please try again, or email{' '}
+              <a href="mailto:letstalk@furniconcepts.com">letstalk@furniconcepts.com</a>.
+            </p>
+          )}
           {copy.note && <p className="sub-note">{copy.note}</p>}
         </div>
       </div>

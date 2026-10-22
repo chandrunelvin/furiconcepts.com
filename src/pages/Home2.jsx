@@ -1,8 +1,9 @@
 import { useEffect, useRef, useState } from 'react';
 import { useMarquee } from '../lib/marquee.js';
+import { useParallax } from '../lib/parallax.js';
 import { useReveal } from '../lib/reveal.js';
 import { useStepRail } from '../lib/stepRail.js';
-import { onScrollFrame, prefersReducedMotion } from '../lib/scroll.js';
+import { prefersReducedMotion } from '../lib/scroll.js';
 import { Arrow, BRAND_MENU, Diagonal, SiteFooter, SiteHeader, SocialRow } from '../components/Home2Chrome.jsx';
 import { formatDate } from '../components/BlogParts.jsx';
 import { ARTICLES as BLOG_ARTICLES } from '../data/blog.js';
@@ -149,25 +150,6 @@ function JournalSlider({ articles }) {
       </div>
     </>
   );
-}
-
-/** Moves its layer against the scroll, matching the original data-speed script. */
-function useParallax(speed) {
-  const ref = useRef(null);
-  useEffect(() => {
-    const el = ref.current;
-    if (!el || prefersReducedMotion()) return undefined;
-    const apply = () => {
-      const parent = el.parentElement;
-      if (!parent) return;
-      const rect = parent.getBoundingClientRect();
-      const offset = (rect.top - window.innerHeight / 2) * speed * 0.35;
-      el.style.transform = `translateY(${offset.toFixed(2)}px)`;
-    };
-    apply();
-    return onScrollFrame(apply);
-  }, [speed]);
-  return ref;
 }
 
 /**
