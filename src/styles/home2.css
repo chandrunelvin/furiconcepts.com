@@ -743,69 +743,19 @@
 }
 
 /* ---------- scroll reveal ---------- */
-/* reveal.js tags each block .reveal, then .is-in as it scrolls into view. The
-   motion follows what the block is: text rises and fades in, headings
-   follow a beat later, photos fade in with a slow settle of the image,
-   cards lift into place and rails slide in from the side. `translate` and
-   `scale` are used instead of `transform` wherever an element already has its
-   own transform (hover zooms, parallax), so the two never fight. */
-.home2{ --reveal-ease:cubic-bezier(.16,1,.3,1); }
-
-/* text and anything without a more specific style. Only opacity and
-   transform move (no blur, no blanket will-change): those stay on the
-   compositor, so a first scroll that reveals several blocks at once can't
-   stall the page */
 .home2 .reveal{
-  opacity:0; transform:translateY(34px);
-  transition:opacity .9s var(--reveal-ease), transform 1.1s var(--reveal-ease);
+  opacity:0; transform:translateY(26px);
+  transition:opacity .85s cubic-bezier(.2,.8,.2,1), transform .85s cubic-bezier(.2,.8,.2,1);
+  will-change:opacity, transform;
 }
-.home2 .reveal.is-in{ opacity:1; transform:none; }
-
-/* cards, tiles and stats lift and grow into place (start states sit behind
-   :not(.is-in) so they can never outrank the settled state) */
-.home2 .reveal:not(.is-in):is([class*="card"],.stat,.num-cell,.feature,.brand-feature,.brand-app,.cat-pillar,.cat-type,.office-card){
-  transform:translateY(46px) scale(.94);
-}
-
-/* rails and carousels slide in from the side they scroll towards */
-.home2 .reveal:not(.is-in):is([class*="viewport"],.team-row){ transform:translateX(70px); }
-
-/* photos fade in while the picture settles from a zoom. Everything here
-   animates opacity, transform, translate or scale only: the compositor runs
-   those without repainting, where a clip-path mask repainted the whole photo
-   or heading every frame and stuttered the first scroll on Retina screens */
-.home2 .reveal[class*="-media"]{ transform:none; transition:opacity 1.2s var(--reveal-ease); }
-.home2 .reveal[class*="-media"] img{ scale:1.14; transition:scale 1.8s var(--reveal-ease); }
-.home2 .reveal.is-in[class*="-media"] img{ scale:1; }
-
-/* headings inside a block rise in a beat after it */
-.home2 .reveal :is(h1,h2){
-  opacity:0; translate:0 .45em;
-  transition:opacity .9s var(--reveal-ease) .12s, translate 1.1s var(--reveal-ease) .12s;
-}
-.home2 .reveal.is-in :is(h1,h2){ opacity:1; translate:0 0; }
-.home2 .reveal:not(.is-in):is(h1,h2){ transform:translateY(48px); }
-
-/* the small green labels slide in from the left */
-.home2 .reveal.eyebrow,
-.home2 .reveal .eyebrow{ opacity:0; translate:-16px 0; transition:opacity .8s var(--reveal-ease) .05s, translate .9s var(--reveal-ease) .05s; }
-.home2 .reveal.is-in.eyebrow,
-.home2 .reveal.is-in .eyebrow{ opacity:1; translate:0 0; }
-
-/* counted figures keep their width while the digits run */
-.home2 :is(.num,.num-value){ font-variant-numeric:tabular-nums; }
-
+.home2 .reveal.is-in{ opacity:1; transform:none; will-change:auto; }
 /* a sibling cascade so a row arrives as a group, not all at once */
 .home2 .reveal:nth-child(2){ transition-delay:.08s; }
 .home2 .reveal:nth-child(3){ transition-delay:.16s; }
 .home2 .reveal:nth-child(4){ transition-delay:.24s; }
-.home2 .reveal:nth-child(5){ transition-delay:.32s; }
-.home2 .reveal:nth-child(n+6){ transition-delay:.38s; }
+.home2 .reveal:nth-child(n+5){ transition-delay:.3s; }
 @media(prefers-reduced-motion:reduce){
-  .home2 .reveal,
-  .home2 .reveal :is(h1,h2,.eyebrow,img){
-    opacity:1; transform:none; translate:none; scale:none; transition:none;
-  }
+  .home2 .reveal{ opacity:1; transform:none; transition:none; }
 }
 
 /* the hero has nothing to scroll into: its copy rises on load instead */
