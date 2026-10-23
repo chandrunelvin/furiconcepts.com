@@ -13,13 +13,13 @@ import { BRANDS } from './brands.js';
 
 const SOURCES = {
   '/acoustic-pods.php': [
-    ['musepod', ['pods-and-booths']],
+    ['musepod', ['mp-series', 'me-series', 'pods-and-booths'], null, { 'mp-series': 'Pods & Booths', 'me-series': 'Pods & Booths' }],
     ['zumbooth', ['booths']],
     ['leadcom', ['acoustic-pods-and-cabins']],
     ['markant', ['focus-and-privacy'], /pod|calma|skyhub/i],
   ],
   '/acoustic-solutions.php': [
-    ['musepod', ['pods-and-booths']],
+    ['musepod', ['mp-series', 'me-series', 'pods-and-booths'], null, { 'mp-series': 'Pods & Booths', 'me-series': 'Pods & Booths' }],
     ['zumbooth', ['booths']],
     ['leadcom', ['acoustic-pods-and-cabins']],
     ['markant', ['focus-and-privacy'], /pod|calma|skyhub/i],

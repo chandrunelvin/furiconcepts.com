@@ -944,6 +944,56 @@
     },
     "groups": [
       {
+        "title": "MP Series",
+        "items": [
+          {
+            "name": "MP1",
+            "img": "/images/brand-product-images/musepod/musepod-mp1.webp"
+          },
+          {
+            "name": "MP1.5",
+            "img": "/images/brand-product-images/musepod/musepod-mp1-5.webp"
+          },
+          {
+            "name": "MP2",
+            "img": "/images/brand-product-images/musepod/musepod-mp2.webp"
+          },
+          {
+            "name": "MP3",
+            "img": "/images/brand-product-images/musepod/musepod-mp3.webp"
+          },
+          {
+            "name": "MP5",
+            "img": "/images/brand-product-images/musepod/musepod-mp5.webp"
+          }
+        ]
+      },
+      {
+        "title": "ME Series",
+        "items": [
+          {
+            "name": "ME1",
+            "img": "/images/brand-product-images/musepod/musepod-me1.webp"
+          },
+          {
+            "name": "ME1 Plus",
+            "img": "/images/brand-product-images/musepod/musepod-me1-plus.webp"
+          },
+          {
+            "name": "ME2",
+            "img": "/images/brand-product-images/musepod/musepod-me2.webp"
+          },
+          {
+            "name": "ME3",
+            "img": "/images/brand-product-images/musepod/musepod-me3.webp"
+          },
+          {
+            "name": "ME5",
+            "img": "/images/brand-product-images/musepod/musepod-me5.webp"
+          }
+        ]
+      },
+      {
         "title": "Pods & Booths",
         "items": [
           {
