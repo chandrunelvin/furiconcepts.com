@@ -3444,3 +3444,19 @@
   .home2 .lifestyle .stats{ text-align:center; align-items:center; }
   .home2 :is(.quote-count,.quote-nav){ justify-content:center; }
 }
+
+/* ---------- floating WhatsApp button -----------------------------------
+   Sits above page content but under the menu drawer and dialogs (150+). */
+.home2 .wa-float{
+  position:fixed;right:20px;bottom:20px;z-index:140;display:block;width:260px;
+  transition:transform .2s ease;
+}
+.home2 .wa-float img{ width:100%;height:auto;object-fit:contain; }
+.home2 .wa-float:hover{ transform:translateY(-3px); }
+.home2 .wa-float:focus-visible{ outline:2px solid #0a7a55;outline-offset:2px;border-radius:999px; }
+@media(max-width:760px){
+  .home2 .wa-float{ width:72px;right:14px;bottom:14px; }
+}
+@media(prefers-reduced-motion:reduce){
+  .home2 .wa-float{ transition:none; }
+}

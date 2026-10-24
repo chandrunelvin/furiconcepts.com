@@ -38,8 +38,8 @@ export const CONTACT_METHODS = [
   },
   {
     icon: 'whatsapp',
-    label: 'Chat on WhatsApp',
-    note: 'Get quick support from our team',
+    label: '+971 50 378 2215',
+    note: 'Chat on WhatsApp for quick support',
     href: 'https://api.whatsapp.com/send?phone=971503782215',
     external: true,
   },
