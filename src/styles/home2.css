@@ -620,8 +620,8 @@
   .home2 .newsletter-media::after{ background:linear-gradient(180deg, rgba(250,249,246,0) 55%, var(--cream) 100%); }
 }
 
-/* the lifestyle artwork already carries its own dark green field on the right,
-   so the scrim only needs to steady the text, not build the whole gradient */
+/* the office photo shows clear on the left; the scrim darkens the rest so
+   the text and stats stay readable over the skyline */
 .home2 .lifestyle .overlay{
   background:linear-gradient(90deg,
     rgba(15,38,32,0) 0%, rgba(15,38,32,.16) 20%, rgba(15,38,32,.66) 36%,
@@ -655,15 +655,24 @@
 }
 .home2 .stat .label{ font-size:13.5px; color:rgba(255,255,255,.8); }
 
-/* the green field in the artwork is widest toward the top, and the band crops
-   vertically — so favour the upper part and give it more height to sit in */
+/* the office photo is bright behind the copy (window and skyline), so the
+   scrim stays clear over the shelves on the left and turns deep green under
+   the text and stats; the text itself is full white, heavier, with a soft shadow */
 .home2 .lifestyle{ min-height:540px; }
 .home2 .lifestyle .bg-parallax img{ object-position:50% 30%; }
 .home2 .lifestyle .overlay{
   background:linear-gradient(90deg,
-    rgba(15,38,32,0) 0%, rgba(15,38,32,0) 44%, rgba(15,38,32,.22) 56%,
-    rgba(15,38,32,.42) 68%, rgba(15,38,32,.46) 100%);
+    rgba(15,38,32,0) 0%, rgba(15,38,32,.05) 30%, rgba(15,38,32,.6) 46%,
+    rgba(15,38,32,.82) 58%, rgba(15,38,32,.86) 100%);
 }
+.home2 .lifestyle :is(h2,p,.stat .num,.stat .label){
+  color:#fff;text-shadow:0 1px 12px rgba(0,0,0,.35);
+}
+.home2 .lifestyle .accent{ color:#3fd39a; }
+.home2 .lifestyle h2{ font-weight:700; }
+.home2 .lifestyle-copy p{ font-weight:500; }
+.home2 .stat .num{ font-weight:700; }
+.home2 .stat .label{ font-weight:600; }
 @media(max-width:900px){
   .home2 .lifestyle{ min-height:0; }
   .home2 .lifestyle .overlay{ background:rgba(15,38,32,.84); }

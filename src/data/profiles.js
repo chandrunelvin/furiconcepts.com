@@ -12,7 +12,7 @@
 const page = (slug) => `/download-profiles/${slug}`;
 
 export const PROFILES = [
-  { name: 'Furniconcepts', title: 'Company Profile & Catalogues', cover: '/images/common/hero1.webp', path: page('furniconcepts'), card: '/images/profiles/furniconcepts/hotel-catalog.webp', cardPosition: '10% 50%' },
+  { name: 'Furniconcepts', title: 'Company Profile & Catalogues', cover: '/images/common/hero1.webp', path: page('furniconcepts'), card: '/images/profiles/covers/furniconcepts/furniconcepts-indian-brochure-lastest.jpg' },
   { name: 'Cavaletti', title: 'Office & Task Seating', cover: '/images/cavaletti/task-chair.jpg', path: page('cavaletti'), card: '/images/profiles/covers/cavaletti/1653585765catalogo-yon-2022-en-web.webp' },
   { name: 'Gebbwork', title: 'Desking & Workplace Systems', cover: '/images/brands/gebbwork.jpg', path: page('gebbwork'), card: '/images/profiles/covers/gebbwork/64ded6f76b649.webp' },
   { name: 'Leadcom', title: 'Auditorium & Venue Seating', cover: '/images/brands/leadcom.jpg', path: page('leadcom'), card: '/images/profiles/leadcom/cinema-recliners.jpg', cardPosition: '70% 50%' },

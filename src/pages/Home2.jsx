@@ -350,7 +350,7 @@ export default function Home2() {
 
       <section className="lifestyle" id="about">
         <div className="bg-parallax" ref={bannerLayer}>
-          <img src="/images/common/more-then-furniture-bg.webp" alt="Dining setting in a daylit concrete interior" />
+          <img src="/images/common/lifestyle-office-bg.webp" alt="Executive office with leather chairs and a city skyline view" />
         </div>
         <div className="overlay" />
         <div className="wrap lifestyle-inner">
