@@ -63,6 +63,14 @@ export const CERTIFICATES = [
     ...doc('hse-team', 'jpg'),
   },
   {
+    group: 'safety',
+    title: 'WSQ Statement of Attainment – WSH Control Measures',
+    text: 'Awarded to Dharshan DC by Eversafe Academy, Singapore, for Workplace Safety and Health Control Measures under the Singapore Workforce Skills Qualifications system.',
+    meta: 'Cert No. 9100008272882 · 25 September 2026',
+    ...doc('wsh-dharshan'),
+    cover: '/images/certificates/wsh-dharshan.jpg',
+  },
+  {
     group: 'trademark',
     title: 'Registered Trademark Certificate – Furni Concepts',
     text: 'Registered under the Singapore Trade Marks Act 1998, giving exclusive rights and brand protection.',

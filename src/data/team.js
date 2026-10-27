@@ -95,12 +95,11 @@ export const TEAM = [
     ],
   },
   {
-    name: 'Arjun Rajendran',
+    name: 'Moorthy',
     role: 'Flooring Division & Power Modules',
-    src: photo('arjun'),
-    linkedin: linkedin('arjun-369-rajendran'),
+    src: photo('moorthy'),
     bio: [
-      'Arjun Rajendran specializes in flooring solutions and smart power module systems, bringing practical expertise in delivering efficient, modern, and seamless workspace solutions with a focus on functionality, quality, and design integration.',
+      'Moorthy specializes in flooring solutions and smart power module systems, bringing practical expertise in delivering efficient, modern, and seamless workspace solutions with a focus on functionality, quality, and design integration.',
     ],
   },
   {

@@ -10,7 +10,7 @@ export const FC_COLLECTIONS = [
     desc: 'Company, corporate & furniture profiles and core catalogs.',
     cover: '/images/profiles/furniconcepts/hotel-catalog.webp',
     files: [
-      { title: 'Furniconcepts Brand Profile', cover: '/images/profiles/covers/furniconcepts/furniconcepts-brand-profile-main.webp', pdf: '/pdfs/furniconcepts/furniconcepts-brand-profile-main.pdf' },
+      { title: 'Furniconcepts Brand Profile', cover: '/images/profiles/covers/furniconcepts/furniconcepts-brand-profile-main.jpg', pdf: '/pdfs/furniconcepts/furniconcepts-brand-profile-main.pdf' },
       { title: 'Furniconcepts Furniture Brochure', cover: '/images/profiles/covers/furniconcepts/furniconcepts-indian-brochure-lastest.webp', pdf: '/pdfs/furniconcepts/furniconcepts-indian-brochure-lastest.pdf' },
       { title: 'Furniconcepts Corporate Profile', cover: '/images/profiles/covers/furniconcepts/furni-concepts-corporate-profile-new.webp', pdf: '/pdfs/furniconcepts/furni-concepts-corporate-profile-new.pdf' },
       { title: 'Furniconcepts Client List', cover: '/images/profiles/covers/furniconcepts/furniconcepts-corporate-clients-rev1.webp', pdf: '/pdfs/furniconcepts/furniconcepts-corporate-clients-rev1.pdf' },

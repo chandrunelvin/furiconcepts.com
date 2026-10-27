@@ -38,7 +38,7 @@ const DOWNLOADS = PROFILES.map((p) => {
   const files = slug === 'furniconcepts'
     ? FC_COLLECTIONS.flatMap((c) => c.files)
     : BRAND_FILES[slug]?.files ?? [];
-  return { name: p.name, title: p.title, path: p.path, cover: p.card ?? files[0]?.cover ?? p.cover, count: files.length };
+  return { name: p.name, title: p.title, path: p.path, cover: p.card ?? files[0]?.cover ?? p.cover, position: p.cardPosition, count: files.length };
 });
 
 /** The partner brands, in the Brands menu order, each shown by its lead product. */
@@ -92,6 +92,8 @@ const JOURNAL = [...BLOG_ARTICLES].sort((a, b) => b.date.localeCompare(a.date)).
 function JournalSlider({ articles }) {
   const rail = useRef(null);
   const [state, setState] = useState({ first: 1, prev: false, next: true });
+  /** Pauses autoplay for a moment; set by the effect, called by the arrows. */
+  const quiet = useRef(() => {});
 
   useEffect(() => {
     const el = rail.current;
@@ -108,14 +110,51 @@ function JournalSlider({ articles }) {
     sync();
     el.addEventListener('scroll', sync, { passive: true });
     window.addEventListener('resize', sync);
+
+    // autoplay: one card every few seconds, back to the start after the last;
+    // paused while hovered or focused, and briefly after a swipe, wheel or click
+    let held = false;
+    let quietUntil = 0;
+    const hold = () => { held = true; };
+    const release = () => { held = false; };
+    const holdBriefly = () => { quietUntil = Date.now() + 5000; };
+    el.addEventListener('mouseenter', hold);
+    el.addEventListener('mouseleave', release);
+    el.addEventListener('focusin', hold);
+    el.addEventListener('focusout', release);
+    el.addEventListener('touchstart', holdBriefly, { passive: true });
+    el.addEventListener('wheel', holdBriefly, { passive: true });
+    quiet.current = holdBriefly;
+
+    const timer = prefersReducedMotion()
+      ? 0
+      : setInterval(() => {
+        if (held || document.hidden || Date.now() < quietUntil) return;
+        const card = el.firstElementChild;
+        if (!card) return;
+        if (el.scrollLeft >= el.scrollWidth - el.clientWidth - 4) {
+          el.scrollTo({ left: 0, behavior: 'smooth' });
+        } else {
+          el.scrollBy({ left: card.getBoundingClientRect().width + 16, behavior: 'smooth' });
+        }
+      }, 3500);
+
     return () => {
+      clearInterval(timer);
       el.removeEventListener('scroll', sync);
       window.removeEventListener('resize', sync);
+      el.removeEventListener('mouseenter', hold);
+      el.removeEventListener('mouseleave', release);
+      el.removeEventListener('focusin', hold);
+      el.removeEventListener('focusout', release);
+      el.removeEventListener('touchstart', holdBriefly);
+      el.removeEventListener('wheel', holdBriefly);
     };
   }, []);
 
   const page = (dir) => {
     const el = rail.current;
+    quiet.current();
     if (el) el.scrollBy({ left: dir * el.clientWidth, behavior: prefersReducedMotion() ? 'auto' : 'smooth' });
   };
   const pad = (n) => String(n).padStart(2, '0');
@@ -424,7 +463,7 @@ export default function Home2() {
               {DOWNLOADS.map((item) => (
                 <Link to={item.path} className="catalog-card" key={item.path}>
                   <div className="catalog-cover">
-                    <img src={item.cover} alt={`${item.name} catalogue cover`} loading="lazy" />
+                    <img src={item.cover} alt={`${item.name} catalogue cover`} loading="lazy" style={item.position ? { objectPosition: item.position } : undefined} />
                     <span className="catalog-badge">PDF</span>
                     <span className="catalog-hover">
                       <span className="catalog-dl">View Catalogues <Arrow size={14} /></span>

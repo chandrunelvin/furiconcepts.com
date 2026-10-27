@@ -7,14 +7,15 @@
  * where they exist, and site photography for brands without one.
  * `card` is the image the home page's catalogue row shows: the brand's best
  * catalogue cover where it is a strong one, otherwise brand photography.
+ * `cardPosition` sets which part of a wide `card` image the tall card crops to.
  */
 const page = (slug) => `/download-profiles/${slug}`;
 
 export const PROFILES = [
-  { name: 'Furniconcepts', title: 'Company Profile & Catalogues', cover: '/images/common/hero1.webp', path: page('furniconcepts'), card: '/images/common/hero1.webp' },
+  { name: 'Furniconcepts', title: 'Company Profile & Catalogues', cover: '/images/common/hero1.webp', path: page('furniconcepts'), card: '/images/profiles/furniconcepts/hotel-catalog.webp', cardPosition: '10% 50%' },
   { name: 'Cavaletti', title: 'Office & Task Seating', cover: '/images/cavaletti/task-chair.jpg', path: page('cavaletti'), card: '/images/profiles/covers/cavaletti/1653585765catalogo-yon-2022-en-web.webp' },
   { name: 'Gebbwork', title: 'Desking & Workplace Systems', cover: '/images/brands/gebbwork.jpg', path: page('gebbwork'), card: '/images/profiles/covers/gebbwork/64ded6f76b649.webp' },
-  { name: 'Leadcom', title: 'Auditorium & Venue Seating', cover: '/images/brands/leadcom.jpg', path: page('leadcom'), card: '/images/brands/leadcom.jpg' },
+  { name: 'Leadcom', title: 'Auditorium & Venue Seating', cover: '/images/brands/leadcom.jpg', path: page('leadcom'), card: '/images/profiles/leadcom/cinema-recliners.jpg', cardPosition: '70% 50%' },
   { name: 'Nitrocare', title: 'Healthcare & Hospital Furniture', cover: '/images/brands/nitrocare.jpg', path: page('nitrocare'), card: '/images/brands/nitrocare.jpg' },
   { name: 'Jwesys', title: 'Telescopic & Retractable Seating', cover: '/images/brands/jwesys.jpg', path: page('jwesys'), card: '/images/profiles/covers/jwesys/retractable-seating-stadium-2025-edition-compressed.webp' },
   { name: 'Audia Italia', title: 'Acoustic Solutions', cover: '/images/brands/audia-italia.jpg', path: page('audia-italia'), card: '/images/brands/audia-italia.jpg' },
@@ -24,6 +25,6 @@ export const PROFILES = [
   { name: 'Versalink', title: 'Sovica & General Catalogues', cover: '/images/common/crafted-precision.jpg', path: page('versalink'), card: '/images/profiles/covers/versalink/general-catalogue-v4.webp' },
   { name: 'Phoenix', title: 'Household, Storage & Seating', cover: '/images/about-us/about-hero-bg.webp', path: page('phoenix'), card: '/images/profiles/covers/phoenix/phoenix-storageorganization2026-webversion-cvpmgpu.webp' },
   { name: 'Parin', title: 'Office Seating & Storage', cover: '/images/brand-product-images/parin/edu1.webp', path: page('parin'), card: '/images/profiles/covers/parin/09-parin-latest-catalogue-june-2025.webp' },
-  { name: 'Doğuş', title: 'School, Kindergarten & Lab Furniture', cover: '/images/common/quality-detail.jpg', path: page('dogus'), card: '/images/projects/philiphines/banner.webp' },
+  { name: 'Doğuş', title: 'School, Kindergarten & Lab Furniture', cover: '/images/common/quality-detail.jpg', path: page('dogus'), card: '/images/profiles/dogus/school-furniture.jpg' },
   { name: 'Safe Lockers', title: 'Safes & Lockers', cover: '/images/brand-product-images/safe-lockers/product-014.webp', path: '/brands/safe-lockers', card: '/images/brand-product-images/safe-lockers/product-014.webp' },
 ];
