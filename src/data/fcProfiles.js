@@ -11,8 +11,8 @@ export const FC_COLLECTIONS = [
     cover: '/images/profiles/furniconcepts/hotel-catalog.webp',
     files: [
       { title: 'Furniconcepts Brand Profile', cover: '/images/profiles/covers/furniconcepts/furniconcepts-brand-profile-main.jpg', pdf: '/pdfs/furniconcepts/furniconcepts-brand-profile-main.pdf' },
-      { title: 'Furniconcepts Furniture Brochure', cover: '/images/profiles/covers/furniconcepts/furniconcepts-indian-brochure-lastest.webp', pdf: '/pdfs/furniconcepts/furniconcepts-indian-brochure-lastest.pdf' },
-      { title: 'Furniconcepts Corporate Profile', cover: '/images/profiles/covers/furniconcepts/furni-concepts-corporate-profile-new.webp', pdf: '/pdfs/furniconcepts/furni-concepts-corporate-profile-new.pdf' },
+      { title: 'Furniconcepts Furniture Brochure', cover: '/images/profiles/covers/furniconcepts/furniconcepts-indian-brochure-lastest.jpg', pdf: '/pdfs/furniconcepts/furniconcepts-indian-brochure-lastest.pdf' },
+      { title: 'Furniconcepts Corporate Profile', cover: '/images/profiles/covers/furniconcepts/furni-concepts-corporate-profile-new.jpg', pdf: '/pdfs/furniconcepts/furni-concepts-corporate-profile-new.pdf' },
       { title: 'Furniconcepts Client List', cover: '/images/profiles/covers/furniconcepts/furniconcepts-corporate-clients-rev1.webp', pdf: '/pdfs/furniconcepts/furniconcepts-corporate-clients-rev1.pdf' },
       { title: 'Furniconcepts Educational Client Profile', cover: '/images/profiles/covers/furniconcepts/furniconcepts-education-client-profile-new.webp', pdf: '/pdfs/furniconcepts/furniconcepts-education-client-profile-new.pdf' },
       { title: 'Furniconcepts Modular Kitchen Brochure', cover: '/images/profiles/covers/furniconcepts/furniconcepts-modular-kitchen-broucher.webp', pdf: '/pdfs/furniconcepts/furniconcepts-modular-kitchen-broucher.pdf' },
