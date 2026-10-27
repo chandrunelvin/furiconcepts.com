@@ -625,7 +625,7 @@ export const CATEGORY_PAGES = [
   {
     "path": "/airport-seating.php",
     "name": "Airport Seating",
-    "hero": "/images/cavaletti/beam-seating-dark.jpg",
+    "hero": "/images/categories/airport-seating-hero.webp",
     "card": "/images/categories/airport-seating-card.webp",
     "title": "Airport Seating",
     "eyebrow": "Airport Seating",
@@ -1224,7 +1224,7 @@ export const CATEGORY_PAGES = [
   {
     "path": "/hospital-furniture.php",
     "name": "Hospital",
-    "hero": "/images/projects/healthhub/01.webp",
+    "hero": "/images/categories/hospital-furniture-hero.webp",
     "card": "/images/categories/hospital-furniture-card.webp",
     "title": "Healthcare & Hospital Furniture Suppliers",
     "titleAccent": "in Dubai, India & Singapore",
