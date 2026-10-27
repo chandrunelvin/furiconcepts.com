@@ -2118,6 +2118,7 @@ export const CATEGORY_PAGES = [
         },
         {
           "type": "cards",
+          "style": "region",
           "items": [
             {
               "title": "Dubai",
@@ -2127,7 +2128,8 @@ export const CATEGORY_PAGES = [
               "link": {
                 "label": "View Dubai",
                 "href": "/outdoor-indoor-umbrella-supplier-dubai.php"
-              }
+              },
+              "image": "/images/blog/cantilever-vs-center-pole-umbrellas/hero.webp"
             },
             {
               "title": "India",
@@ -2137,7 +2139,8 @@ export const CATEGORY_PAGES = [
               "link": {
                 "label": "View India",
                 "href": "/outdoor-indoor-umbrella-supplier-india.php"
-              }
+              },
+              "image": "/images/blog/commercial-umbrella-pricing-guide/hero.webp"
             },
             {
               "title": "Singapore",
@@ -2147,7 +2150,8 @@ export const CATEGORY_PAGES = [
               "link": {
                 "label": "View Singapore",
                 "href": "/outdoor-indoor-umbrella-supplier-singapore.php"
-              }
+              },
+              "image": "/images/blog/outdoor-umbrellas/hero.webp"
             }
           ]
         }

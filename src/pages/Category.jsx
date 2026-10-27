@@ -70,6 +70,7 @@ function Checklist({ items, small }) {
  *  default  – numbered cards
  *  brands   – partner cards led by a large logo
  *  media    – photo-topped cards
+ *  region   – a photo behind the whole card, white text on a dark shade
  *  features – an icon strip, as on the brand pages
  */
 function Cards({ items, style }) {
@@ -93,6 +94,9 @@ function Cards({ items, style }) {
         const logo = card.title && brandLogo(card.title.replace(/ Seating$/, ''));
         return (
           <article className="cat-type" key={card.title || i}>
+            {style === 'region' && card.image && (
+              <img src={card.image} alt="" className="cat-type-bg" loading="lazy" />
+            )}
             {style === 'media' && card.image && (
               <div className="cat-type-media"><img src={card.image} alt="" loading="lazy" /></div>
             )}
