@@ -71,7 +71,7 @@ const fitLogo = (e) => {
 };
 
 /** The category pages, in the Categories menu order, each led by its hero photo. */
-const SPACES = TOP_CATEGORIES.map((c) => ({ name: c.name, path: c.path, src: c.hero }));
+const SPACES = TOP_CATEGORIES.map((c) => ({ name: c.name, path: c.path, src: c.card ?? c.hero }));
 
 /* figures as furniconcepts.com states them: founded in Oman in 1995 (Our
    Journey), now in 5 countries with 350+ clients (home page) */
@@ -239,7 +239,7 @@ export default function Home2() {
             One Stop<br /><span className="accent">Solutions</span><br />for Every Space
           </h1>
           <p>Office, acoustic, hospitality, healthcare and venue seating — specified, supplied and installed across the UAE, India and Singapore.</p>
-          <a href="#collections" className="btn-primary">Explore Categories <Arrow /></a>
+          <Link to="/categories" className="btn-primary">Explore Categories <Arrow /></Link>
           <div className="slide-dots">
             {HERO_SLIDES.map((slideItem, i) => (
               <button
@@ -420,7 +420,7 @@ export default function Home2() {
               <div className="eyebrow">Our Categories</div>
               <h2>Furniture for Every Space</h2>
               <p>From offices and acoustic pods to auditoriums, hospitals, hotels and schools — explore the {SPACES.length} categories we supply across the UAE, India and Singapore.</p>
-              <Link to={SPACES[0].path} className="link-arrow">Explore Categories <Arrow /></Link>
+              <Link to="/categories" className="link-arrow">Explore Categories <Arrow /></Link>
             </div>
             <div className="spaces-viewport" ref={spacesRail}>
               <div className="spaces-track" style={{ '--n': SPACES.length }}>

@@ -41,6 +41,7 @@ export function pageImage(path) {
     '/certificates.php': '/images/certificates/iso-9001-singapore.webp',
     '/blogs.php': BLOG_HERO.image,
     '/projects': PROJECTS[0]?.media[0],
+    '/categories': '/images/projects/al-futtaim-ho-phone-booth/banner.webp',
     '/download-profiles': '/images/about-us/about-hero-bg.webp',
     '/download-profiles/furniconcepts': DEFAULT_IMAGE,
   };

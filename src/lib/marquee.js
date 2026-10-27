@@ -52,13 +52,16 @@ export function useMarquee({ speed = 42 } = {}) {
       startX = e.clientX;
       startLeft = el.scrollLeft;
       pause();
-      el.classList.add('is-dragging');
     };
     const onPointerMove = (e) => {
       if (!dragging) return;
       const dx = e.clientX - startX;
       moved = Math.abs(dx);
-      if (moved > 4 && e.pointerType === 'mouse') el.setPointerCapture?.(e.pointerId);
+      // only a real drag switches the links off; a plain click must reach them
+      if (moved > 4) {
+        el.classList.add('is-dragging');
+        if (e.pointerType === 'mouse') el.setPointerCapture?.(e.pointerId);
+      }
       el.scrollLeft = startLeft - dx;
       wrap();
     };
@@ -87,6 +90,9 @@ export function useMarquee({ speed = 42 } = {}) {
     el.addEventListener('pointermove', onPointerMove);
     el.addEventListener('pointerup', endDrag);
     el.addEventListener('pointercancel', endDrag);
+    // the browser's own image/link drag would cancel the pointer drag
+    const noNativeDrag = (e) => e.preventDefault();
+    el.addEventListener('dragstart', noNativeDrag);
 
     let raf = 0;
     let last = 0;
@@ -117,6 +123,7 @@ export function useMarquee({ speed = 42 } = {}) {
       el.removeEventListener('pointermove', onPointerMove);
       el.removeEventListener('pointerup', endDrag);
       el.removeEventListener('pointercancel', endDrag);
+      el.removeEventListener('dragstart', noNativeDrag);
     };
   }, [speed]);
 

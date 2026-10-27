@@ -11,6 +11,8 @@
  * A page with a `parent` (e.g. the Dubai / India / Singapore umbrella pages)
  * sits under that category: it is routed, but left out of the menus. Head
  * tags for every page live in data/seo.json (see lib/seo.js).
+ * An optional `card` replaces `hero` on the category cards (home page and
+ * /categories) where the banner doesn't suit a tall card.
  */
 export const CATEGORY_PAGES = [
   {
@@ -624,6 +626,7 @@ export const CATEGORY_PAGES = [
     "path": "/airport-seating.php",
     "name": "Airport Seating",
     "hero": "/images/cavaletti/beam-seating-dark.jpg",
+    "card": "/images/categories/airport-seating-card.webp",
     "title": "Airport Seating",
     "eyebrow": "Airport Seating",
     "summary": "Choose your region to explore airport seating supplier pages for Dubai, India, and Singapore.",
@@ -675,6 +678,7 @@ export const CATEGORY_PAGES = [
     "path": "/auditorium-seating.php",
     "name": "Auditorium",
     "hero": "/images/projects/etisalat-hq-auditorium/banner.webp",
+    "card": "/images/categories/auditorium-seating-card.webp",
     "title": "Auditorium Seating Suppliers",
     "titleAccent": "in Dubai, India & Singapore",
     "eyebrow": "Auditorium Seating",
@@ -1221,6 +1225,7 @@ export const CATEGORY_PAGES = [
     "path": "/hospital-furniture.php",
     "name": "Hospital",
     "hero": "/images/projects/healthhub/01.webp",
+    "card": "/images/categories/hospital-furniture-card.webp",
     "title": "Healthcare & Hospital Furniture Suppliers",
     "titleAccent": "in Dubai, India & Singapore",
     "eyebrow": "Healthcare Furniture",
@@ -1503,6 +1508,7 @@ export const CATEGORY_PAGES = [
     "path": "/lounge-seating.php",
     "name": "Lounge Seating",
     "hero": "/images/projects/etisalat-hq/banner.webp",
+    "card": "/images/categories/lounge-seating-card.webp",
     "title": "Lounge Seating Suppliers",
     "titleAccent": "in Dubai, India & Singapore",
     "eyebrow": "Lounge Seating",
@@ -3493,6 +3499,7 @@ export const CATEGORY_PAGES = [
     "path": "/stadium-seating.php",
     "name": "Stadium",
     "hero": "/images/cavaletti/auditorium.jpg",
+    "card": "/images/categories/stadium-seating-card.webp",
     "title": "Stadium Seating Suppliers",
     "titleAccent": "in Dubai, India & Singapore",
     "eyebrow": "Stadium Seating",
@@ -3723,6 +3730,7 @@ export const CATEGORY_PAGES = [
     "path": "/school-furniture.php",
     "name": "School",
     "hero": "/images/projects/philiphines/banner.webp",
+    "card": "/images/categories/school-furniture-card.webp",
     "title": "School & Classroom Furniture Suppliers",
     "titleAccent": "in Dubai, India & Singapore",
     "eyebrow": "Education & School Furniture",
