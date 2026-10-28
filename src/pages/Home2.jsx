@@ -59,8 +59,11 @@ function trimmedLogo(src) {
  * square ones tiny. Sizing each to the same area evens out their visual weight.
  */
 const LOGO_AREA = 2400;
-/** Heavy, solid-black wordmarks read larger than their area, so they get a nudge down. */
-const LOGO_WEIGHT = { 'libero-logo.png': 0.82 };
+/**
+ * Heavy, solid-black wordmarks read larger than their area, so they get a nudge
+ * down; thin-stroked or two-line ones (Zum, Jwesys) read smaller, so they go up.
+ */
+const LOGO_WEIGHT = { 'libero-logo.png': 0.82, 'jwesys-logo.png': 1.3, 'zumbooth-logo.png': 1.25 };
 const fitLogo = (e) => {
   const img = e.currentTarget;
   const ratio = img.naturalWidth / img.naturalHeight || 1;
@@ -83,6 +86,67 @@ const STATS = [
 
 /** The journal shows the newest posts from the blog. */
 /** The latest articles for the journal slider, newest first. */
+/** Press coverage and collaborations, as the Spotlight section on furniconcepts.com lists them. */
+const spot = (name) => `/images/spotlight/${name}`;
+const SPOTLIGHT = [
+  {
+    source: 'Lokmat', tag: 'In The Press', date: 'Oct 2026',
+    href: 'https://www.lokmat.com/lifeline/furniconcepts-flexible-and-efficient-design-approach-to-kodesk-co-working-space-in-chennai-a-a719/',
+    src: spot('lokmat.jpg'),
+    title: 'Furniconcepts’ Flexible and Efficient Design Approach to KoDesk Co-Working Space in Chennai',
+    text: 'A Marathi feature on how the KoDesk co-working space was planned around flexibility, comfort and the facilities a full working day needs.',
+  },
+  {
+    source: 'Oneindia Hindi', tag: 'In The Press', date: 'Oct 2026',
+    href: 'https://hindi.oneindia.com/partner-content/furniconcepts-auditorium-seating-supplier-india-schools-corporate-halls-012-1668447.html',
+    src: spot('oneindia.jpg'),
+    title: 'Furniconcepts Auditorium Seating: India’s Top Supplier for Schools, Colleges & Corporate Halls',
+    text: 'As demand for auditorium seating grows across India, Furniconcepts delivers ergonomic, durable seating for schools, colleges and corporate halls.',
+  },
+  {
+    source: 'Dinakaran', tag: 'In The Press', date: 'Oct 2026',
+    href: 'https://www.dinakaran.com/news/office-furniture-for-everyone-from-startups-to-corporates',
+    src: spot('dinakaran.jpg'),
+    title: 'Office Furniture for Everyone, from Startups to Corporates',
+    text: 'A Tamil feature on the new demands in office furniture, and how workplaces from startups to corporates are being furnished for them.',
+  },
+  {
+    source: 'Indulge Express', tag: 'In The Press', date: 'Nov 2025',
+    href: 'https://www.indulgexpress.com/indulge-connect-digital-covers/2025/Nov/03/furniconcepts-designing-spaces-defining-standards',
+    src: spot('indulge-express.jpg'),
+    title: 'Furniconcepts: Designing Spaces, Defining Standards',
+    text: 'In today’s fast-changing world, where offices are no longer just workplaces but extensions of identity and culture, Furniconcepts stands as a symbol of design innovation…',
+  },
+  {
+    source: 'Startup Story', tag: 'In The Press', date: 'Mar 2026',
+    href: 'https://startupstorymedia.com/furniconcepts-building-worldwide-furniture-solutions-since-1995/?amp=1',
+    src: spot('startup-story.jpg'),
+    title: 'Furniconcepts: Building Worldwide Furniture Solutions Since 1995',
+    text: 'Furniconcepts began as a small business in the Sultanate of Oman and has grown into a recognized name in multiple countries across Asia and the Middle East.',
+  },
+  {
+    source: 'Newstrack English', tag: 'In The Press', date: 'Read Article',
+    href: 'https://english.newstrack.com/world-news/furniconcepts-crafting-global-spaces-through-new-ideas-people-and-purpose-591082',
+    src: spot('newstrack-logo.png'), logo: true,
+    title: 'Furniconcepts: Crafting Global Spaces Through New Ideas, People and Purpose',
+    text: 'A feature on Newstrack English covering Furniconcepts’ journey of crafting global spaces through fresh ideas, people and purpose.',
+  },
+  {
+    source: 'Comfi · LinkedIn', tag: 'Collaboration', date: 'View Post',
+    href: 'https://www.linkedin.com/posts/comfi-ai_comfi-x-furniconcepts-activity-7439580325204144128-e5oH',
+    src: spot('comfi-logo.png'), logo: true,
+    title: 'Comfi × Furniconcepts',
+    text: 'A collaboration spotlight shared by Comfi on LinkedIn, featuring their partnership with Furniconcepts.',
+  },
+  {
+    source: 'Hello Entrepreneurs', tag: 'In The Press', date: 'Feb 2026',
+    href: 'https://helloentrepreneurs.com/brand-saga/furniconcepts-crafting-global-furniture-solutions-since-1995-77427/',
+    src: spot('hello-entrepreneurs.webp'),
+    title: 'Furniconcepts: Crafting Global Furniture Solutions Since 1995',
+    text: 'In 2021, the company underwent a complete rebranding and restructuring under the unified identity of Furniconcepts, marking a strategic shift toward…',
+  },
+];
+
 const JOURNAL = [...BLOG_ARTICLES].sort((a, b) => b.date.localeCompare(a.date)).slice(0, 12);
 
 /**
@@ -204,6 +268,7 @@ const REVEAL_GROUPS = [
   '#spaces .split-intro, #spaces .spaces-viewport',
   '#catalogs .head-row, #catalogs .catalog-note',
   '#catalogs .catalog-viewport',
+  '#spotlight .head-row, #spotlight .spot-viewport',
   '.journal-media, .journal-panel > .eyebrow, .journal-panel > h2, .journal-panel > p, .journal-panel > .link-arrow',
   '.journal-panel .article-card',
   '.newsletter-media, .newsletter-body',
@@ -220,6 +285,7 @@ export default function Home2() {
   const collRail = useMarquee({ speed: 40 });
   const spacesRail = useMarquee({ speed: 40 });
   const catalogRail = useStepRail({ interval: 3500 });
+  const spotRail = useStepRail({ interval: 4000 });
 
   useEffect(() => {
     if (prefersReducedMotion()) return undefined;
@@ -486,6 +552,46 @@ export default function Home2() {
           <div className="catalog-note">
             <p>Looking for a brand or product not listed here? We will send the current edition straight to your inbox.</p>
             <Link to="/download-profiles" className="link-arrow">Request a Catalogue <Arrow /></Link>
+          </div>
+        </div>
+      </section>
+
+      <section className="section spotlight" id="spotlight">
+        <div className="wrap">
+          <div className="head-row">
+            <div>
+              <div className="eyebrow">Spotlight</div>
+              <h2>Furniconcepts In The News</h2>
+            </div>
+            <p>Take a look at what we&apos;ve been up to: press features and collaborations from across the region.</p>
+          </div>
+          <div className="catalog-rail">
+          <button type="button" className="rail-arrow prev" aria-label="Previous story" onClick={spotRail.prev}>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round"><path d="M15 6l-6 6 6 6" /></svg>
+          </button>
+          <button type="button" className="rail-arrow next" aria-label="Next story" onClick={spotRail.next}>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round"><path d="M9 6l6 6-6 6" /></svg>
+          </button>
+          <div className="spot-viewport" ref={spotRail.ref}>
+            <div className="spot-track">
+              {SPOTLIGHT.map((item) => (
+                <a href={item.href} className="spot-card" key={item.href} target="_blank" rel="noopener noreferrer">
+                  <div className={item.logo ? 'spot-img is-logo' : 'spot-img'}>
+                    <img src={item.src} alt={item.source} loading="lazy" />
+                  </div>
+                  <div className="spot-body">
+                    <div className="spot-meta">
+                      <span className="spot-source">{item.source}</span>
+                      <span className="spot-tag">{item.tag}</span>
+                    </div>
+                    <h3 className="spot-title">{item.title}</h3>
+                    <p className="spot-text">{item.text}</p>
+                    <span className="spot-date">{item.date} <Arrow size={12} width={2.6} /></span>
+                  </div>
+                </a>
+              ))}
+            </div>
+          </div>
           </div>
         </div>
       </section>
