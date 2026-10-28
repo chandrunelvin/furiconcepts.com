@@ -317,7 +317,7 @@ const FEATURE_ICONS = [
 /** Maps one furniconcepts.sg brand record onto the Cavaletti page shape. */
 function buildBrand(src) {
   const ed = src.editorial ?? {};
-  const heroImage = HERO.has(src.slug) ? `/images/brands/${src.slug}.jpg` : null;
+  const heroImage = HERO.has(src.slug) ? `/images/brands/${src.slug}.webp` : null;
   const downloads = DOWNLOADS[src.slug];
 
   const seen = new Map();

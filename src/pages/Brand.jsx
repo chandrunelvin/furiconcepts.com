@@ -80,7 +80,7 @@ export default function Brand({ slug }) {
         {brand.heroImage && (
           <div className="brand-hero-media" aria-hidden="true">
             <div className="img-parallax" ref={heroLayer}>
-              <img src={brand.heroImage} alt="" />
+              <img src={brand.heroImage} alt="" fetchPriority="high" decoding="async" />
             </div>
           </div>
         )}
