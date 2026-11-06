@@ -78,9 +78,6 @@ export default function About({ section }) {
           <img src="/images/about-us/about-hero-bg.webp" alt="" />
         </div>
         <div className="overlay" />
-        <ul className="hero-keywords" aria-hidden="true">
-          <li>Spaces</li><li>People</li><li>Sustainability</li><li>A Brighter Tomorrow</li>
-        </ul>
         <div className="wrap about-hero-inner">
           <nav className="crumbs" aria-label="Breadcrumb">
             <Link to="/">Home</Link>
