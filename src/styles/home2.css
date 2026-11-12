@@ -3553,6 +3553,11 @@
 @keyframes wa-bob{ 0%,100%{ transform:translateY(0); } 50%{ transform:translateY(-10px); } }
 .home2 .wa-float:hover{ transform:translateY(-3px); }
 .home2 .wa-float:focus-visible{ outline:2px solid #0a7a55;outline-offset:2px;border-radius:999px; }
+/* laptops and smaller: the round icon (see WhatsAppFloat), so the wide pill
+   never sits over the page text */
+@media(max-width:1440px){
+  .home2 .wa-float{ width:68px; }
+}
 @media(max-width:760px){
   .home2 .wa-float{ width:72px;right:14px;bottom:14px; }
 }

@@ -419,7 +419,8 @@ export function SiteFooter({ newsletter }) {
   );
 }
 
-/** The floating WhatsApp button: the wide "Chat with Us" pill on desktop, the round icon on phones. */
+/** The floating WhatsApp button: the wide "Chat with Us" pill on large desktops, the round icon on laptops,
+    tablets and phones, where the pill would cover the page text. */
 function WhatsAppFloat() {
   return (
     <a
@@ -430,7 +431,7 @@ function WhatsAppFloat() {
       aria-label="Chat with Furniconcepts on WhatsApp, +971 50 378 2215"
     >
       <picture>
-        <source media="(max-width:760px)" srcSet="/images/common/whatsapp-chat-mobile.webp" />
+        <source media="(max-width:1440px)" srcSet="/images/common/whatsapp-chat-mobile.webp" />
         <img src="/images/common/whatsapp-chat-desktop.webp" alt="" width="640" height="213" />
       </picture>
     </a>

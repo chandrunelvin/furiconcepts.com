@@ -81,7 +81,7 @@ const SPACES = TOP_CATEGORIES.map((c) => ({ name: c.name, path: c.path, src: c.c
 const STATS = [
   { num: '30+', label: 'Years of Experience' },
   { num: '350+', label: 'Clients Served' },
-  { num: '5', label: 'Countries' },
+  { num: '5+', label: 'Countries' },
 ];
 
 /** The journal shows the newest posts from the blog. */
