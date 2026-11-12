@@ -676,7 +676,7 @@ export const CATEGORY_PAGES = [
   },
   {
     "path": "/auditorium-seating.php",
-    "name": "Auditorium",
+    "name": "Auditorium Seating",
     "hero": "/images/projects/etisalat-hq-auditorium/banner.webp",
     "card": "/images/categories/auditorium-seating-card.webp",
     "title": "Auditorium Seating Suppliers",
@@ -1223,7 +1223,7 @@ export const CATEGORY_PAGES = [
   },
   {
     "path": "/hospital-furniture.php",
-    "name": "Hospital",
+    "name": "Hospital Furniture",
     "hero": "/images/categories/hospital-furniture-hero.webp",
     "card": "/images/categories/hospital-furniture-card.webp",
     "title": "Healthcare & Hospital Furniture Suppliers",
@@ -3501,7 +3501,7 @@ export const CATEGORY_PAGES = [
   },
   {
     "path": "/stadium-seating.php",
-    "name": "Stadium",
+    "name": "Stadium Seating",
     "hero": "/images/cavaletti/auditorium.jpg",
     "card": "/images/categories/stadium-seating-card.webp",
     "title": "Stadium Seating Suppliers",
@@ -3732,7 +3732,7 @@ export const CATEGORY_PAGES = [
   },
   {
     "path": "/school-furniture.php",
-    "name": "School",
+    "name": "School Furniture",
     "hero": "/images/projects/philiphines/banner.webp",
     "card": "/images/categories/school-furniture-card.webp",
     "title": "School & Classroom Furniture Suppliers",
@@ -3993,7 +3993,7 @@ export const CATEGORY_PAGES = [
   },
   {
     "path": "/telescopic-cinema-seating-manufacturer-dubai.php",
-    "name": "Telescopic",
+    "name": "Telescopic Seating",
     "hero": "/images/projects/telescopic/banner.webp",
     "title": "Telescopic Cinema Seating Manufacturer",
     "titleAccent": "in Dubai",

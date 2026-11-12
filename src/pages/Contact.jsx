@@ -243,6 +243,22 @@ export default function Contact() {
       {/* ---- map: the office cards above choose which office it shows ---- */}
       <section className="locations" id="locations">
         <div className="wrap">
+          {/* phones only: the office cards are a long scroll away there, so the
+              map gets its own switcher */}
+          <div className="map-tabs" role="tablist" aria-label="Choose an office">
+            {OFFICES.map((o) => (
+              <button
+                type="button"
+                role="tab"
+                key={o.id}
+                aria-selected={o.id === active}
+                className={`map-tab ${o.id === active ? 'active' : ''}`.trim()}
+                onClick={() => setActive(o.id)}
+              >
+                {o.city}
+              </button>
+            ))}
+          </div>
           <div className="map-frame">
             <iframe
               title={`Map of the ${office.city} office`}

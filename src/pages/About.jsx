@@ -187,10 +187,6 @@ export default function About({ section }) {
               <div className="eyebrow">Our Clients</div>
               <h2>Trusted by Teams<br />Across the Region</h2>
             </div>
-            <div className="team-head-aside">
-              <p>Airlines, universities, hospitals, hotels, automotive groups and government departments — furnished, fitted out and supported by Furniconcepts.</p>
-              <Link to="/#catalogs" className="link-arrow">View Our Brands <Arrow /></Link>
-            </div>
           </div>
           <div className="client-viewport" ref={clientRail}>
             <div className="client-track" style={{ '--n': CLIENTS.length }}>
@@ -258,9 +254,6 @@ function Certificates() {
           <div>
             <div className="eyebrow">Certificates</div>
             <h2>Certified Quality,<br />Trusted Compliance</h2>
-          </div>
-          <div className="team-head-aside">
-            <p>ISO-certified for quality, environment and safety, with a registered trademark and UAE In-Country Value certification. View or download any document for your records.</p>
           </div>
         </div>
         <div className="brand-tabs about-cert-tabs" role="tablist" aria-label="Certificate type">

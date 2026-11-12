@@ -117,7 +117,7 @@
 
 .home2 .hero{
   position:relative;
-  min-height:100vh;
+  min-height:calc(100vh / var(--z,1));
   display:grid;
   grid-template-columns:0.92fr 1.08fr;
   padding-top:78px;
@@ -167,7 +167,7 @@
   position:relative;overflow:hidden;
   min-height:520px;
 }
-@media(max-width:900px){ .home2 .hero-media{min-height:60vh;} }
+@media(max-width:900px){ .home2 .hero-media{min-height:calc(60vh / var(--z,1));} }
 .home2 .hero-media .img-parallax{
   position:absolute; top:-12%; left:0; width:100%; height:124%;
   will-change:transform;
@@ -196,6 +196,10 @@
 
 .home2 .section{padding:100px 0;}
 @media(max-width:900px){ .home2 .section{padding:64px 0;} }
+/* two sections on the same light ground would stack both paddings into a
+   double gap, so the second drops its top padding: one gap between every
+   section. Sections with their own ground (white / card bands) keep theirs. */
+.home2 .section:not(.is-alt,.catalog-more) + .section:not(.is-alt,.catalog-more){ padding-top:0; }
 .home2 .head-row{
   display:flex;justify-content:space-between;align-items:flex-end;gap:40px;
   margin-bottom:48px;
@@ -203,6 +207,8 @@
 @media(max-width:900px){ .home2 .head-row{flex-direction:column;align-items:flex-start;gap:20px;} }
 .home2 .head-row h2{font-size:clamp(25px,2.8vw,35px);font-weight:600;letter-spacing:-.5px;max-width:440px;line-height:1.15;}
 .home2 .head-row p{font-size:15px;color:var(--ink-soft);max-width:380px;}
+/* side-by-side header: the intro lines end on the content's right edge */
+@media(min-width:901px){ .home2 .head-row > p{text-align:right;} }
 .home2 .link-arrow{
   display:inline-flex;align-items:center;gap:8px;color:var(--green);
   font-size:14px;font-weight:600;white-space:nowrap;
@@ -447,7 +453,7 @@
 .home2 .back-top:hover{background:var(--green);color:#fff;border-color:var(--green);}
 
 /* the scoped root has to behave like the page body it replaces */
-.home2{ min-height:100vh; }
+.home2{ min-height:calc(100vh / var(--z,1)); }
 /* headings all sit on the display face; the old design put them on the body
    face and promoted only a handful, which left titles like the newsletter's
    in the wrong typeface after the brand fonts changed */
@@ -680,7 +686,7 @@
 
 /* ---- full-bleed hero with a transparent header over it ----------------- */
 .home2 .hero{
-  grid-template-columns:1fr; padding-top:0; position:relative; min-height:100vh;
+  grid-template-columns:1fr; padding-top:0; position:relative; min-height:calc(100vh / var(--z,1));
   align-items:center; overflow:hidden;
 }
 .home2 .hero-media{
@@ -704,7 +710,7 @@
 .home2 .slide-dots .dot.active{ color:#fff; }
 .home2 .hero-caption{ color:#fff; }
 @media(max-width:900px){
-  .home2 .hero{ min-height:88vh; }
+  .home2 .hero{ min-height:calc(88vh / var(--z,1)); }
   .home2 .hero-text h1{ max-width:none; }
 }
 
@@ -1050,7 +1056,7 @@
    Built from the blog page's hero and cards and the brand page's feature
    strip and dark band; only the pieces below are new. */
 .home2.profiles-page{ padding-top:0; }
-.home2 .profiles-hero{ min-height:min(480px,66vh); }
+.home2 .profiles-hero{ min-height:min(480px,calc(66vh / var(--z,1))); }
 .home2 .profiles-hero p{ max-width:40ch; }
 .home2 .breadcrumb .crumb{ display:contents; }
 .home2 .profiles-hero-logo{ margin-bottom:22px;opacity:0;animation:home2-rise .9s cubic-bezier(.2,.8,.2,1) .06s forwards; }
@@ -1215,7 +1221,7 @@
 
 /* ---- hero ---- */
 .home2 .about-hero{
-  position:relative;min-height:min(78vh,640px);display:flex;align-items:flex-end;
+  position:relative;min-height:min(calc(78vh / var(--z,1)),640px);display:flex;align-items:flex-end;
   padding:150px 0 70px;color:#fff;overflow:hidden;
 }
 .home2 .about-hero-media{ position:absolute;inset:0;z-index:0; }
@@ -1574,14 +1580,6 @@
 }
 @media(max-width:900px){ .home2 .pull-quote{ padding-left:16px;margin-bottom:24px; } }
 
-/* team and clients sit on the same cream ground, so their 100px paddings
-   stack into a 200px gap — halve the pair that meet in the middle */
-.home2 .about-team{ padding-bottom:58px; }
-.home2 .about-clients{ padding-top:58px; }
-@media(max-width:900px){
-  .home2 .about-team{ padding-bottom:36px; }
-  .home2 .about-clients{ padding-top:36px; }
-}
 
 /* =======================================================================
    Brand showcase page (/brands/:slug)
@@ -1592,7 +1590,7 @@
 
 /* ---- hero ---- */
 .home2 .brand-hero{
-  position:relative;min-height:min(760px,92vh);display:flex;align-items:center;
+  position:relative;min-height:min(760px,calc(92vh / var(--z,1)));display:flex;align-items:center;
   overflow:hidden;background:var(--green-darker);
 }
 .home2 .brand-hero-media{ position:absolute;inset:0;z-index:0; }
@@ -2095,7 +2093,7 @@
 @keyframes brand-modal-fade{ from{opacity:0} to{opacity:1} }
 @keyframes brand-modal-rise{ from{opacity:0;transform:translateY(14px)} to{opacity:1;transform:none} }
 .home2 .brand-modal-panel{
-  position:relative;z-index:1;width:min(920px,100%);max-height:88vh;overflow-y:auto;
+  position:relative;z-index:1;width:min(920px,100%);max-height:calc(88vh / var(--z,1));overflow-y:auto;
   display:grid;grid-template-columns:0.85fr 1.15fr;
   background:var(--cream);border:1px solid var(--line);border-radius:var(--radius);
   box-shadow:0 50px 90px -50px rgba(11,32,25,.7);
@@ -2153,7 +2151,7 @@
 @media(max-width:820px){
   .home2 .brand-modal{ padding:0;align-items:flex-end; }
   .home2 .brand-modal-panel{
-    width:100%;max-height:94vh;grid-template-columns:1fr;border-radius:0;border-left:none;border-right:none;
+    width:100%;max-height:calc(94vh / var(--z,1));grid-template-columns:1fr;border-radius:0;border-left:none;border-right:none;
   }
   .home2 .brand-modal-media{
     border-right:none;border-bottom:1px solid var(--line);aspect-ratio:3/2;padding:20px;
@@ -2197,7 +2195,7 @@
 /* ---- hero ---- */
 .home2 .contact-hero{
   position:relative;overflow:hidden;background:var(--green-darker);
-  display:flex;align-items:center;min-height:min(560px,76vh);
+  display:flex;align-items:center;min-height:min(560px,calc(76vh / var(--z,1)));
 }
 .home2 .contact-hero-media{ position:absolute;inset:0;z-index:0; }
 .home2 .contact-hero-media .img-parallax{ position:absolute;inset:-12% 0;will-change:transform; }
@@ -2331,6 +2329,24 @@
   border-radius:var(--radius);overflow:hidden;box-shadow:0 30px 60px -40px rgba(11,32,25,.45);
 }
 .home2 .map-frame iframe{ position:absolute;inset:0;width:100%;height:100%;border:0; }
+/* office switcher above the map: phones only */
+.home2 .map-tabs{ display:none; }
+@media(max-width:620px){
+  .home2 .map-tabs{
+    display:flex;gap:8px;overflow-x:auto;scrollbar-width:none;
+    margin:0 -24px 16px;padding:0 24px 4px;
+    scroll-snap-type:x proximity;scroll-padding-inline:24px;
+  }
+  .home2 .map-tabs::-webkit-scrollbar{ display:none; }
+  .home2 .map-tab{
+    flex:none;scroll-snap-align:start;white-space:nowrap;
+    padding:11px 18px;border-radius:var(--radius);
+    border:1px solid var(--line);background:#fff;color:var(--ink);
+    font-size:13.5px;font-weight:500;
+    transition:background .2s, color .2s, border-color .2s;
+  }
+  .home2 .map-tab.active{ background:var(--green-dark);border-color:var(--green-dark);color:#fff; }
+}
 
 /* ---- quotation band ---- */
 .home2 .contact-cta{ position:relative;overflow:hidden;background:var(--cream); }
@@ -2394,7 +2410,7 @@
 /* ---- hero ---- */
 .home2 .blog-hero{
   position:relative;overflow:hidden;background:var(--green-darker);
-  display:flex;align-items:center;min-height:min(520px,72vh);
+  display:flex;align-items:center;min-height:min(520px,calc(72vh / var(--z,1)));
 }
 .home2 .blog-hero-media{ position:absolute;inset:0;z-index:0; }
 .home2 .blog-hero-media .img-parallax{ position:absolute;inset:-12% 0;will-change:transform; }
@@ -2606,7 +2622,7 @@
 /* =======================================================================
    Blog article page (/blog/:slug)
    ======================================================================= */
-.home2 .post-hero{ min-height:min(480px,70vh); }
+.home2 .post-hero{ min-height:min(480px,calc(70vh / var(--z,1))); }
 .home2 .post-hero .blog-hero-inner{ padding-block:130px 56px; }
 .home2 .post-hero h1{ font-size:clamp(32px,4.4vw,58px);line-height:1.06;max-width:16ch;margin-bottom:18px; }
 .home2 .post-hero p{ max-width:46ch;font-size:clamp(14px,1.5vw,16.5px); }
@@ -2805,7 +2821,7 @@
 .home2 .sr-only{
   position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);border:0;
 }
-.home2.projects-page{ padding-top:0;height:100vh;height:100svh;overflow:hidden;background:var(--green-darker); }
+.home2.projects-page{ padding-top:0;height:calc(100vh / var(--z,1));height:calc(100svh / var(--z,1));overflow:hidden;background:var(--green-darker); }
 .home2 .proj-stage{ position:fixed;inset:0;overflow:hidden; }
 .home2 .proj-slide{
   position:absolute;inset:0;display:flex;align-items:center;
@@ -2855,7 +2871,7 @@
 /* numbered rail on the right, as on the old site */
 .home2 .proj-rail-wrap{
   position:fixed;right:40px;top:50%;transform:translateY(-50%);z-index:5;
-  display:flex;align-items:stretch;gap:16px;height:min(62vh,560px);
+  display:flex;align-items:stretch;gap:16px;height:min(calc(62vh / var(--z,1)),560px);
 }
 .home2 .proj-rail{
   display:flex;flex-direction:column;gap:6px;overflow-y:auto;scrollbar-width:none;
@@ -2896,7 +2912,7 @@
   font-size:13px;letter-spacing:2px;text-transform:uppercase;color:rgba(255,255,255,.6);
 }
 @media(max-width:900px){
-  .home2 .proj-rail-wrap{ right:16px;height:46vh; }
+  .home2 .proj-rail-wrap{ right:16px;height:calc(46vh / var(--z,1)); }
   .home2 .proj-rail button{ font-size:13px;padding:6px 0; }
   .home2 .proj-copy{ padding-right:56px; }
   .home2 .proj-controls{ right:16px;bottom:22px; }
@@ -2968,10 +2984,10 @@
 .home2 .proj-lightbox-bar button:hover,
 .home2 .proj-lightbox-nav:hover{ background:var(--green);border-color:var(--green); }
 .home2 .proj-lightbox-bar svg,.home2 .proj-lightbox-nav svg{ width:20px;height:20px; }
-.home2 .proj-lightbox-media{ position:relative;z-index:1;margin:0;max-width:calc(100vw - 180px);max-height:calc(100vh - 140px); }
+.home2 .proj-lightbox-media{ position:relative;z-index:1;margin:0;max-width:calc(calc(100vw / var(--z,1)) - 180px);max-height:calc(calc(100vh / var(--z,1)) - 140px); }
 .home2 .proj-lightbox-media img,
 .home2 .proj-lightbox-media video{
-  display:block;width:auto;height:auto;max-width:calc(100vw - 180px);max-height:calc(100vh - 140px);
+  display:block;width:auto;height:auto;max-width:calc(calc(100vw / var(--z,1)) - 180px);max-height:calc(calc(100vh / var(--z,1)) - 140px);
   object-fit:contain;border-radius:var(--radius);
 }
 .home2 .proj-lightbox-nav{ position:absolute;top:50%;z-index:2;transform:translateY(-50%); }
@@ -2980,7 +2996,7 @@
 @media(max-width:700px){
   .home2 .proj-lightbox-media,
   .home2 .proj-lightbox-media img,
-  .home2 .proj-lightbox-media video{ max-width:100vw;max-height:calc(100vh - 160px);border-radius:0; }
+  .home2 .proj-lightbox-media video{ max-width:calc(100vw / var(--z,1));max-height:calc(calc(100vh / var(--z,1)) - 160px);border-radius:0; }
   .home2 .proj-lightbox-nav{ top:auto;bottom:24px;transform:none; }
 }
 
@@ -3069,7 +3085,7 @@
   transition:background .2s,transform .2s;
 }
 .home2 .post-body a.post-cta:hover{ background:#26875c;color:#fff;transform:translateY(-1px); }
-.home2 .post-loading{ min-height:40vh;opacity:.6; }
+.home2 .post-loading{ min-height:calc(40vh / var(--z,1));opacity:.6; }
 
 @media(max-width:700px){
   .home2 .post-body{ font-size:14.5px; }
@@ -3079,7 +3095,7 @@
 /* =======================================================================
    Category landing pages (/acoustic-pods.php, /office-furniture.php, ...)
    ======================================================================= */
-.home2 .cat-hero{ min-height:min(600px,80vh); }
+.home2 .cat-hero{ min-height:min(600px,calc(80vh / var(--z,1))); }
 /* the category photos are bright, and the intro paragraph runs wide — carry
    the dark band further right so the text stays readable over them */
 @media(min-width:761px){
@@ -3331,7 +3347,7 @@
 /* ---- featured project: a slide from the Projects page ---- */
 .home2 .cat-project-band{
   position:relative;display:flex;align-items:flex-end;overflow:hidden;
-  min-height:min(640px,86vh);color:#fff;
+  min-height:min(640px,calc(86vh / var(--z,1)));color:#fff;
 }
 .home2 .cat-project-inner{
   position:relative;z-index:2;width:100%;padding-block:110px 72px;
@@ -3427,10 +3443,10 @@
 }
 .home2 .search-toggle:hover{ background:rgba(47,158,110,.12); }
 .home2 .search-toggle:focus-visible{ outline:2px solid var(--green);outline-offset:2px; }
-.home2 .site-search{ position:fixed;inset:0;z-index:200;display:flex;justify-content:center;align-items:flex-start;padding:9vh 20px 20px; }
+.home2 .site-search{ position:fixed;inset:0;z-index:200;display:flex;justify-content:center;align-items:flex-start;padding:calc(9vh / var(--z,1)) 20px 20px; }
 .home2 .site-search-backdrop{ position:absolute;inset:0;background:rgba(15,38,32,.55);backdrop-filter:blur(3px);animation:ss-fade .2s ease; }
 .home2 .site-search-panel{
-  position:relative;display:flex;flex-direction:column;width:min(720px,100%);max-height:78vh;
+  position:relative;display:flex;flex-direction:column;width:min(720px,100%);max-height:calc(78vh / var(--z,1));
   background:var(--cream);border:1px solid var(--line);border-radius:var(--radius);
   box-shadow:0 40px 90px -30px rgba(11,32,25,.6);overflow:hidden;animation:ss-rise .25s cubic-bezier(.2,.8,.2,1);
 }
@@ -3578,3 +3594,10 @@
 }
 .home2 .cat-type-grid.is-region .cat-type-body p{ font-weight:500; }
 .home2 .cat-type-grid.is-region .link-arrow{ font-weight:600; }
+
+/* Desktop only: the page is sized in px, which reads small on large screens,
+   so scale it all up. Viewport-height values above divide by --z so
+   full-height sections still fit the screen. */
+@media (min-width:1200px){
+  .home2{ --z:1.12; zoom:var(--z); }
+}
