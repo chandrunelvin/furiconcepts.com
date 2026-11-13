@@ -146,7 +146,7 @@ export default function ProductExplorer({ products, brand, category: outerCatego
             )}
           </div>
 
-          <div className="brand-tabs-rail">
+          <div className={`brand-tabs-rail${tabScroll.prev ? ' can-prev' : ''}${tabScroll.next ? ' can-next' : ''}`}>
             <button
               type="button"
               className="tab-nav prev"

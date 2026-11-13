@@ -1197,149 +1197,16 @@ export const CATEGORY_PAGES = [
     "path": "/outdoor-indoor-umbrella-supplier.php",
     "name": "Outdoor & Indoor Umbrellas",
     "hero": "/images/blog/outdoor-umbrellas/hero.webp",
-    "title": "Outdoor & Indoor Umbrellas",
-    "eyebrow": "Outdoor & Indoor Umbrellas",
-    "summary": "Commercial umbrellas for hotels, restaurants and outdoor spaces. Choose your region: Dubai, India or Singapore.",
-    "sections": [
-      [
-        {
-          "type": "heading",
-          "title": "Choose Your Region"
-        },
-        {
-          "type": "cards",
-          "style": "region",
-          "items": [
-            {
-              "title": "Dubai",
-              "body": [
-                "Explore umbrella supplier solutions for Dubai hotels, restaurants, hospitals, poolside zones, and premium outdoor commercial spaces."
-              ],
-              "link": {
-                "label": "View Dubai",
-                "href": "/outdoor-indoor-umbrella-supplier-dubai.php"
-              },
-              "image": "/images/blog/cantilever-vs-center-pole-umbrellas/hero.webp"
-            },
-            {
-              "title": "India",
-              "body": [
-                "See umbrella supplier options built for Indian hotels, hospitals, restaurants, campuses, and climate-ready commercial projects."
-              ],
-              "link": {
-                "label": "View India",
-                "href": "/outdoor-indoor-umbrella-supplier-india.php"
-              },
-              "image": "/images/blog/commercial-umbrella-pricing-guide/hero.webp"
-            },
-            {
-              "title": "Singapore",
-              "body": [
-                "Browse premium umbrella supplier content tailored for Singapore hospitality venues, clinics, cafes, and compact high-end urban spaces."
-              ],
-              "link": {
-                "label": "View Singapore",
-                "href": "/outdoor-indoor-umbrella-supplier-singapore.php"
-              },
-              "image": "/images/blog/outdoor-umbrellas/hero.webp"
-            }
-          ]
-        }
-      ]
-    ]
-  },
-  {
-    "path": "/outdoor-indoor-umbrella-supplier-dubai.php",
-    "parent": "/outdoor-indoor-umbrella-supplier.php",
-    "name": "Umbrellas Dubai",
-    "hero": "/images/blog/cantilever-vs-center-pole-umbrellas/hero.webp",
     "title": "Outdoor & Indoor Umbrella Supplier",
-    "titleAccent": "in Dubai",
-    "eyebrow": "Dubai Umbrella Solutions",
-    "summary": "Premium commercial umbrellas for hotels, restaurants and outdoor spaces across Dubai and the UAE.",
-    "stats": [
-      {
-        "value": "Heat Ready",
-        "label": "Solutions built for Dubai sun, UV exposure, and intensive outdoor use"
-      },
-      {
-        "value": "Luxury Focus",
-        "label": "Umbrella systems for hospitality, poolside, dining, and branded guest spaces"
-      },
-      {
-        "value": "Project Support",
-        "label": "Customization, planning, supply, and installation coordination"
-      }
-    ],
+    "eyebrow": "Outdoor & Indoor Umbrellas",
+    "summary": "Commercial umbrellas for hotels, restaurants, hospitals and outdoor spaces, supplied and installed across the UAE, India and Singapore.",
     "sections": [
-      [
-        {
-          "type": "heading",
-          "title": "Commercial Umbrella Solutions in Dubai",
-          "body": [
-            "We supply multiple umbrella formats for hotels, restaurants, hospitals, and premium outdoor commercial projects."
-          ]
-        },
-        {
-          "type": "cards",
-          "items": [
-            {
-              "title": "Commercial Outdoor Umbrellas",
-              "body": [
-                "Commercial umbrellas for Dubai help businesses create more usable outdoor seating while maintaining a clean, premium presentation."
-              ],
-              "list": [
-                "Wide shade coverage",
-                "Heat-ready commercial materials",
-                "Suitable for hospitality terraces",
-                "Strong fit for restaurants and cafes"
-              ]
-            },
-            {
-              "title": "Cantilever Umbrellas",
-              "body": [
-                "Cantilever systems are a premium choice for poolside lounges, luxury hospitality, and branded outdoor guest spaces."
-              ],
-              "list": [
-                "No center pole in the seating zone",
-                "Flexible shade direction",
-                "High-end hospitality appearance",
-                "Works well in luxury outdoor layouts"
-              ]
-            },
-            {
-              "title": "Center Pole Umbrellas",
-              "body": [
-                "Center pole umbrellas suit compact cafe terraces and practical outdoor seating plans where straightforward coverage matters."
-              ],
-              "list": [
-                "Efficient for standard table setups",
-                "Simple installation and use",
-                "Commercial value option",
-                "Good for smaller shaded zones"
-              ]
-            },
-            {
-              "title": "Indoor Decorative Umbrellas",
-              "body": [
-                "Decorative umbrella concepts support themed interiors, hotel entrances, and event-driven hospitality environments."
-              ],
-              "list": [
-                "Adds character to premium interiors",
-                "Suitable for themed venues",
-                "Custom color and finish options",
-                "Supports branded guest experiences"
-              ]
-            }
-          ]
-        }
-      ],
       [
         {
           "type": "heading",
           "title": "Features of Our Umbrella Systems",
           "body": [
-            "Each solution is built to balance outdoor performance, premium presentation, and commercial durability."
+            "Each system is chosen for the climate it will face, the space it has to fit and the look the venue needs."
           ]
         },
         {
@@ -1347,39 +1214,39 @@ export const CATEGORY_PAGES = [
           "style": "features",
           "items": [
             {
-              "title": "UV & Heat Protection",
+              "title": "UV, Heat & Weather Protection",
               "body": [
-                "Materials selected to perform better in Dubai’s intense sun and high-temperature conditions."
+                "Fabrics and frames selected for intense sun in the UAE, heavy rain in India and humidity in Singapore."
               ],
               "icon": "sparkle"
             },
             {
               "title": "Commercial Durability",
               "body": [
-                "Frames and canopy systems chosen for regular use across high-traffic outdoor environments."
+                "Frames and canopies built for daily use in hotels, restaurants, hospitals and campuses."
               ],
               "icon": "gear"
             },
             {
-              "title": "Luxury Presentation",
+              "title": "Premium Presentation",
               "body": [
-                "Design direction suited to premium hospitality, leisure, and branded commercial settings."
+                "Designs suited to hospitality, rooftop dining and branded guest spaces."
               ],
               "icon": "gem"
             },
             {
-              "title": "Customization",
+              "title": "Space Efficiency",
               "body": [
-                "Project-ready options for branding, structure, fabric, finish, and shade coverage requirements."
+                "Cantilever, wall-mounted and compact systems for tight urban layouts and busy walkways."
               ],
               "icon": "grid"
             },
             {
-              "title": "Operational Practicality",
+              "title": "Customization",
               "body": [
-                "Systems built to support easier setup, daily use, and long-term maintenance."
+                "Size, fabric, colour, finish and branding matched to each project."
               ],
-              "icon": "clock"
+              "icon": "leaf"
             }
           ]
         }
@@ -1389,201 +1256,60 @@ export const CATEGORY_PAGES = [
           "type": "heading",
           "title": "FAQs",
           "body": [
-            "Quick answers for Dubai hospitality, healthcare, and commercial umbrella projects."
+            "Quick answers for hospitality, healthcare and commercial umbrella projects in the UAE, India and Singapore."
           ]
         },
         {
           "type": "faq",
           "items": [
             {
-              "q": "What type of umbrella works best in Dubai?",
-              "a": "Commercial umbrellas with strong UV protection, durable frames, and heat-ready materials work best in Dubai conditions."
+              "q": "Which umbrella works best for my region?",
+              "a": "In the UAE, choose strong UV protection and heat-ready materials. In India, weather-ready fabrics that handle heat, rain and humidity. In Singapore, cantilever umbrellas are popular because they save space and keep layouts clean."
             },
             {
-              "q": "Do you supply umbrellas for hotels and resorts?",
-              "a": "Yes, Furniconcepts supports hotels, resorts, restaurants, and premium outdoor hospitality projects across Dubai."
+              "q": "Do you supply umbrellas for hotels, restaurants and hospitals?",
+              "a": "Yes. Furniconcepts supplies umbrellas for hotels, resorts, restaurants, cafés, rooftop venues, hospitals and campuses."
             },
             {
               "q": "Can umbrellas be customized for branding?",
-              "a": "Yes, commercial umbrellas can be customized in size, color, canopy fabric, and branding to suit project requirements."
+              "a": "Yes. Umbrellas can be customized in size, colour, canopy fabric, structure and branding to suit each project."
             },
             {
-              "q": "What is the cost of commercial umbrellas in Dubai?",
-              "a": "Pricing depends on the umbrella's size, type, material and customization. Contact us for a quotation for your project."
+              "q": "Which countries do you deliver to?",
+              "a": "We supply and install commercial umbrellas across the UAE, India and Singapore."
             },
             {
-              "q": "Do you handle installation support?",
-              "a": "Yes, Furniconcepts supports supply planning and installation coordination for commercial umbrella projects in Dubai."
+              "q": "Do you handle installation?",
+              "a": "Yes. Furniconcepts coordinates supply planning and installation for commercial umbrella projects."
             }
           ]
         }
       ]
     ],
-    "cta": {
-      "title": "Looking for a Commercial Umbrella Supplier in Dubai?",
-      "body": [
-        "Furniconcepts supports hotels, restaurants, hospitals, and outdoor commercial spaces with premium umbrella systems tailored to Dubai conditions. Contact us for project consultation and quotations."
-      ],
-      "buttons": [
-        {
-          "label": "Contact Us",
-          "href": "/contact"
-        },
-        {
-          "label": "WhatsApp Us",
-          "href": "https://api.whatsapp.com/send?phone=971503782215&text=I%20want%20a%20quote%20for%20commercial%20umbrellas%20in%20Dubai"
-        }
-      ]
-    }
-  },
-  {
-    "path": "/outdoor-indoor-umbrella-supplier-india.php",
-    "parent": "/outdoor-indoor-umbrella-supplier.php",
-    "name": "Umbrellas India",
-    "hero": "/images/blog/commercial-umbrella-pricing-guide/hero.webp",
-    "title": "Outdoor & Indoor Umbrella Supplier",
-    "titleAccent": "in India",
-    "eyebrow": "India Umbrella Solutions",
-    "summary": "Commercial umbrellas for hotels, restaurants and outdoor spaces across India, built for every climate and budget.",
+    "titleAccent": "in UAE, IN, SG",
     "stats": [
       {
-        "value": "Climate Fit",
-        "label": "Solutions aligned to heat, rain, humidity, and region-specific project conditions"
-      },
-      {
-        "value": "Commercial Range",
-        "label": "Umbrellas for hotels, hospitals, restaurants, campuses, and outdoor business spaces"
-      },
-      {
-        "value": "Custom Support",
-        "label": "Sizing, branding, project selection, and installation coordination"
-      }
-    ],
-    "sections": [
-      [
-        {
-          "type": "heading",
-          "title": "FAQs",
-          "body": [
-            "Quick answers for hospitality, healthcare, campus, and commercial umbrella projects in India."
-          ]
-        },
-        {
-          "type": "faq",
-          "items": [
-            {
-              "q": "What type of umbrella works best in India?",
-              "a": "The best umbrella depends on the region and use case, but commercial-grade umbrellas with durable frames, UV resistance, and weather-ready fabrics are usually the strongest choice."
-            },
-            {
-              "q": "Do you supply umbrellas for hospitals and hotels?",
-              "a": "Yes, Furniconcepts supports umbrella projects for hotels, hospitals, restaurants, campuses, and other commercial spaces across India."
-            },
-            {
-              "q": "Can umbrellas be customized for project needs?",
-              "a": "Yes, umbrella systems can be customized in size, color, structure, fabric, and branding to suit project requirements."
-            },
-            {
-              "q": "What is the cost of commercial umbrellas in India?",
-              "a": "Pricing depends on the umbrella's type, material and customization. Contact us for a quotation for your project."
-            },
-            {
-              "q": "Do you provide installation coordination?",
-              "a": "Yes, Furniconcepts supports planning and installation coordination for commercial umbrella projects."
-            }
-          ]
-        }
-      ]
-    ],
-    "cta": {
-      "title": "Looking for a Commercial Umbrella Supplier in India?",
-      "body": [
-        "Furniconcepts supports hotels, hospitals, restaurants, campuses, and commercial projects with durable and customizable umbrella systems. Contact us for project consultation and pricing support."
-      ],
-      "buttons": [
-        {
-          "label": "Contact Us",
-          "href": "/contact"
-        },
-        {
-          "label": "WhatsApp Us",
-          "href": "https://api.whatsapp.com/send?phone=919363607900&text=I%20want%20a%20quote%20for%20commercial%20umbrellas%20in%20India"
-        }
-      ]
-    }
-  },
-  {
-    "path": "/outdoor-indoor-umbrella-supplier-singapore.php",
-    "parent": "/outdoor-indoor-umbrella-supplier.php",
-    "name": "Umbrellas Singapore",
-    "hero": "/images/blog/outdoor-umbrellas/hero.webp",
-    "title": "Outdoor & Indoor Umbrella Supplier",
-    "titleAccent": "in Singapore",
-    "eyebrow": "Singapore Umbrella Solutions",
-    "summary": "Premium commercial umbrellas for hotels, restaurants and outdoor spaces across Singapore.",
-    "stats": [
-      {
-        "value": "Compact Ready",
-        "label": "Solutions aligned to dense urban layouts and premium commercial spaces"
+        "value": "Climate Ready",
+        "label": "Built for UAE heat, Indian monsoons and Singapore humidity"
       },
       {
         "value": "Hospitality Focus",
-        "label": "Shade systems for hotels, cafes, rooftop dining, and guest-facing venues"
+        "label": "Shade for pools, terraces, rooftops and outdoor dining"
       },
       {
-        "value": "Custom Support",
-        "label": "Project planning, branding, sizing, and installation coordination"
+        "value": "Project Support",
+        "label": "Sizing, branding, supply and installation coordination"
       }
     ],
-    "sections": [
-      [
-        {
-          "type": "heading",
-          "title": "FAQs",
-          "body": [
-            "Quick answers for Singapore hospitality, healthcare, and commercial umbrella projects."
-          ]
-        },
-        {
-          "type": "faq",
-          "items": [
-            {
-              "q": "What type of umbrella works best in Singapore?",
-              "a": "Cantilever umbrellas are often a strong choice in Singapore because they save space, support cleaner layouts, and suit premium commercial environments."
-            },
-            {
-              "q": "Do you supply umbrellas for hotels and cafes?",
-              "a": "Yes, Furniconcepts supports umbrella projects for hotels, rooftop dining venues, cafes, restaurants, and other hospitality spaces in Singapore."
-            },
-            {
-              "q": "Can umbrella systems be customized?",
-              "a": "Yes, umbrella systems can be customized in size, color, canopy fabric, branding, and structural format based on project needs."
-            },
-            {
-              "q": "What is the cost of commercial umbrellas in Singapore?",
-              "a": "Pricing depends on the umbrella's size, type, materials and customization. Contact us for a quotation for your project."
-            },
-            {
-              "q": "Do you support installation coordination?",
-              "a": "Yes, Furniconcepts supports supply planning and installation coordination for commercial umbrella projects."
-            }
-          ]
-        }
-      ]
-    ],
     "cta": {
-      "title": "Looking for a Commercial Umbrella Supplier in Singapore?",
+      "title": "Looking for a Commercial Umbrella Supplier?",
       "body": [
-        "Furniconcepts supplies premium umbrella systems for hotels, restaurants, clinics, and modern commercial spaces. Contact us for project consultation and custom recommendations."
+        "Furniconcepts supplies umbrella systems for hotels, restaurants, hospitals and outdoor commercial spaces across the UAE, India and Singapore. Contact us for a project consultation and quotation."
       ],
       "buttons": [
         {
           "label": "Contact Us",
           "href": "/contact"
-        },
-        {
-          "label": "WhatsApp Us",
-          "href": "https://api.whatsapp.com/send?phone=6580933197&text=I%20want%20a%20quote%20for%20commercial%20umbrellas%20in%20Singapore"
         }
       ]
     }
@@ -1745,7 +1471,7 @@ export const CATEGORY_PAGES = [
     "title": "School & Classroom Furniture Suppliers",
     "titleAccent": "in UAE, IN, SG",
     "eyebrow": "Education & School Furniture",
-    "summary": "Furniconcepts supplies classroom chairs, modular desks and training seating for schools, colleges and training institutes in Dubai, India and Singapore, including the Teachease and Educomfort Pro chairs, designed for comfort, durability and flexible layouts.",
+    "summary": "Classroom chairs, modular desks and training seating for schools and colleges across Dubai, India and Singapore.",
     "stats": [
       {
         "value": "Rows to Groups",
@@ -1922,7 +1648,7 @@ export const CATEGORY_PAGES = [
     "title": "Telescopic Cinema Seating Manufacturer",
     "titleAccent": "in Dubai",
     "eyebrow": "Telescopic",
-    "summary": "Furniconcepts delivers advanced retractable seating systems for cinemas, auditoriums, and multi-purpose venues across the UAE and India, combining global engineering with local execution, installation, and compliance expertise.",
+    "summary": "Retractable seating for cinemas, auditoriums and multi-purpose venues, supplied and installed across the UAE and India.",
     "stats": [
       {
         "value": "30+",
@@ -1938,52 +1664,6 @@ export const CATEGORY_PAGES = [
       }
     ],
     "sections": [
-      [
-        {
-          "type": "columns",
-          "columns": [
-            [
-              {
-                "type": "heading",
-                "eyebrow": "Overview",
-                "title": "What Is Telescopic Cinema Seating?",
-                "body": [
-                  "Telescopic cinema seating is a retractable seating system that allows rows of seats to fold and stack when not in use. It is ideal for venues that need to transform quickly between screening, event, and open-floor modes without sacrificing audience comfort."
-                ]
-              },
-              {
-                "type": "panel",
-                "blocks": [
-                  {
-                    "type": "checklist",
-                    "items": [
-                      "Saves space for high-value multi-use venues",
-                      "Converts halls into flexible event environments",
-                      "Perfect for cinemas, auditoriums, institutions, and event spaces"
-                    ]
-                  }
-                ]
-              }
-            ],
-            [
-              {
-                "type": "heading",
-                "eyebrow": "Why Us",
-                "title": "Why Furniconcepts"
-              },
-              {
-                "type": "tags",
-                "items": [
-                  "Leading cinema seating supplier in Dubai with turnkey execution capability",
-                  "Technical consultants focused on ROI, space optimization, and audience comfort",
-                  "Local design, distribution, installation, and post-installation support",
-                  "Solutions for multiplexes, corporate auditoriums, universities, and event venues"
-                ]
-              }
-            ]
-          ]
-        }
-      ],
       [
         {
           "type": "heading",
@@ -2025,42 +1705,6 @@ export const CATEGORY_PAGES = [
                 "label": "Explore Cavaletti",
                 "href": "/brands/cavaletti"
               }
-            }
-          ]
-        }
-      ],
-      [
-        {
-          "type": "heading",
-          "title": "Technical Expertise in Dubai and India",
-          "body": [
-            "We provide turnkey workspace solutions tailored to the regulatory, budgetary, and functional demands of the Middle East and the Indian subcontinent."
-          ]
-        },
-        {
-          "type": "cards",
-          "style": "pillars",
-          "items": [
-            {
-              "title": "Dubai & UAE",
-              "icon": "globe",
-              "body": [
-                "Focused on high-tech automation, luxury finishes, and rapid 15-18 day delivery for premium venue projects across the UAE."
-              ]
-            },
-            {
-              "title": "India",
-              "icon": "chart",
-              "body": [
-                "Focused on cost-effective auditorium seating, GST-compliant billing, and pan-India installation support for flexible venue requirements."
-              ]
-            },
-            {
-              "title": "Compliance",
-              "icon": "gem",
-              "body": [
-                "All materials are aligned with BS 5852 fire safety expectations and BIFMA-certified durability standards for dependable long-term use."
-              ]
             }
           ]
         }

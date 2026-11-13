@@ -223,7 +223,7 @@ export const ARTICLES = [
     category: 'acoustics-pods',
     date: '2026-04-28',
     title: 'Acoustic Pods vs Phone Booths: Which is Better for Your Office?',
-    excerpt: 'Compare acoustic pods and office phone booths by features, pricing, privacy, and use cases across Dubai, India, and Singapore.',
+    excerpt: 'Acoustic pods vs office phone booths: features, privacy and best uses.',
     author: 'Furniconcepts',
     image: '/images/blog/acoustic-pods-vs-phone-booths/card.webp',
     hero: '/images/blog/acoustic-pods-vs-phone-booths/hero.webp',

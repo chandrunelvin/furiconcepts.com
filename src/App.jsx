@@ -44,8 +44,20 @@ function useRouteSeo(path) {
   }, [path]);
 }
 
+/** Old addresses that now live on another page; visitors are sent to the new one. */
+const MOVED = {
+  // the Dubai, India and Singapore umbrella pages were merged into one page
+  '/outdoor-indoor-umbrella-supplier-dubai.php': '/outdoor-indoor-umbrella-supplier.php',
+  '/outdoor-indoor-umbrella-supplier-india.php': '/outdoor-indoor-umbrella-supplier.php',
+  '/outdoor-indoor-umbrella-supplier-singapore.php': '/outdoor-indoor-umbrella-supplier.php',
+};
+
 export default function App() {
-  const path = usePath();
+  const requested = usePath();
+  const path = MOVED[requested] ?? requested;
+  useEffect(() => {
+    if (MOVED[requested]) window.history.replaceState({}, '', MOVED[requested]);
+  }, [requested]);
   useRouteSeo(path);
   if (path === '/home-old') return <Home />;
   if (path === '/about') return <About />;

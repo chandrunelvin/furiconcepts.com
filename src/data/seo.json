@@ -4967,49 +4967,13 @@
    }
   ]
  },
- "/outdoor-indoor-umbrella-supplier-dubai.php": {
-  "live": "/outdoor-indoor-umbrella-supplier-dubai.php",
-  "title": "Outdoor Umbrella Supplier Dubai | Commercial Shade Solutions UAE",
+ "/outdoor-indoor-umbrella-supplier.php": {
+  "live": "/outdoor-indoor-umbrella-supplier.php",
+  "title": "Outdoor & Indoor Umbrella Supplier | UAE, India & Singapore",
   "meta": [
    {
     "name": "description",
-    "content": "Premium outdoor and indoor umbrella supplier in Dubai for hotels, restaurants, hospitals, and luxury commercial spaces with custom shade systems."
-   },
-   {
-    "name": "keywords",
-    "content": "outdoor umbrella supplier dubai, indoor umbrella supplier dubai, commercial umbrellas uae, hotel umbrellas dubai, restaurant umbrellas dubai, cantilever umbrellas dubai"
-   },
-   {
-    "name": "robots",
-    "content": "index, follow"
-   },
-   {
-    "property": "og:type",
-    "content": "website"
-   },
-   {
-    "property": "og:title",
-    "content": "Outdoor Umbrella Supplier Dubai | Commercial Shade Solutions UAE"
-   },
-   {
-    "property": "og:description",
-    "content": "Explore premium commercial umbrella systems in Dubai for hospitality, healthcare, dining, and luxury outdoor projects."
-   },
-   {
-    "property": "og:site_name",
-    "content": "Furniconcepts"
-   },
-   {
-    "name": "twitter:card",
-    "content": "summary_large_image"
-   },
-   {
-    "name": "twitter:title",
-    "content": "Outdoor Umbrella Supplier Dubai | Commercial Shade Solutions UAE"
-   },
-   {
-    "name": "twitter:description",
-    "content": "Discover premium umbrella systems in Dubai for hotels, restaurants, hospitals, and outdoor commercial spaces."
+    "content": "Commercial outdoor and indoor umbrellas for hotels, restaurants, hospitals and outdoor spaces, supplied and installed across the UAE, India and Singapore."
    }
   ],
   "jsonld": [
@@ -5019,18 +4983,18 @@
     "mainEntity": [
      {
       "@type": "Question",
-      "name": "What type of umbrella works best in Dubai?",
+      "name": "Which umbrella works best for my region?",
       "acceptedAnswer": {
        "@type": "Answer",
-       "text": "Commercial umbrellas with strong UV protection, durable frames, and heat-ready materials work best in Dubai conditions."
+       "text": "In the UAE, choose strong UV protection and heat-ready materials. In India, weather-ready fabrics that handle heat, rain and humidity. In Singapore, cantilever umbrellas are popular because they save space and keep layouts clean."
       }
      },
      {
       "@type": "Question",
-      "name": "Do you supply umbrellas for hotels and resorts?",
+      "name": "Do you supply umbrellas for hotels, restaurants and hospitals?",
       "acceptedAnswer": {
        "@type": "Answer",
-       "text": "Yes, Furniconcepts supports hotels, resorts, restaurants, and premium outdoor hospitality projects across Dubai."
+       "text": "Yes. Furniconcepts supplies umbrellas for hotels, resorts, restaurants, cafés, rooftop venues, hospitals and campuses."
       }
      },
      {
@@ -5038,227 +5002,28 @@
       "name": "Can umbrellas be customized for branding?",
       "acceptedAnswer": {
        "@type": "Answer",
-       "text": "Yes, commercial umbrellas can be customized in size, color, canopy fabric, and branding to suit project requirements."
+       "text": "Yes. Umbrellas can be customized in size, colour, canopy fabric, structure and branding to suit each project."
       }
      },
      {
       "@type": "Question",
-      "name": "What is the cost of commercial umbrellas in Dubai?",
+      "name": "Which countries do you deliver to?",
       "acceptedAnswer": {
        "@type": "Answer",
-       "text": "Pricing depends on the umbrella's size, type, material and customization. Contact us for a quotation for your project."
+       "text": "We supply and install commercial umbrellas across the UAE, India and Singapore."
       }
      },
      {
       "@type": "Question",
-      "name": "Do you handle installation support?",
+      "name": "Do you handle installation?",
       "acceptedAnswer": {
        "@type": "Answer",
-       "text": "Yes, Furniconcepts supports supply planning and installation coordination for commercial umbrella projects in Dubai."
+       "text": "Yes. Furniconcepts coordinates supply planning and installation for commercial umbrella projects."
       }
      }
     ]
    }
   ]
- },
- "/outdoor-indoor-umbrella-supplier-india.php": {
-  "live": "/outdoor-indoor-umbrella-supplier-india.php",
-  "title": "Outdoor Umbrella Supplier India | Commercial Shade Solutions",
-  "meta": [
-   {
-    "name": "description",
-    "content": "Commercial outdoor and indoor umbrella supplier in India for hotels, hospitals, restaurants, campuses, and business spaces with durable and customizable shade systems."
-   },
-   {
-    "name": "keywords",
-    "content": "outdoor umbrella supplier india, commercial umbrellas india, hotel umbrellas india, hospital umbrellas india, restaurant umbrellas india, cantilever umbrellas india"
-   },
-   {
-    "name": "robots",
-    "content": "index, follow"
-   },
-   {
-    "property": "og:type",
-    "content": "website"
-   },
-   {
-    "property": "og:title",
-    "content": "Outdoor Umbrella Supplier India | Commercial Shade Solutions"
-   },
-   {
-    "property": "og:description",
-    "content": "Explore commercial umbrella solutions in India for hospitality, healthcare, campuses, restaurants, and premium outdoor spaces."
-   },
-   {
-    "property": "og:site_name",
-    "content": "Furniconcepts"
-   },
-   {
-    "name": "twitter:card",
-    "content": "summary_large_image"
-   },
-   {
-    "name": "twitter:title",
-    "content": "Outdoor Umbrella Supplier India | Commercial Shade Solutions"
-   },
-   {
-    "name": "twitter:description",
-    "content": "Discover commercial umbrella systems in India for hotels, hospitals, restaurants, campuses, and outdoor business spaces."
-   }
-  ],
-  "jsonld": [
-   {
-    "@context": "https://schema.org",
-    "@type": "FAQPage",
-    "mainEntity": [
-     {
-      "@type": "Question",
-      "name": "What type of umbrella works best in India?",
-      "acceptedAnswer": {
-       "@type": "Answer",
-       "text": "The best umbrella depends on the region and use case, but commercial-grade umbrellas with durable frames, UV resistance, and weather-ready fabrics are usually the strongest choice."
-      }
-     },
-     {
-      "@type": "Question",
-      "name": "Do you supply umbrellas for hospitals and hotels?",
-      "acceptedAnswer": {
-       "@type": "Answer",
-       "text": "Yes, Furniconcepts supports umbrella projects for hotels, hospitals, restaurants, campuses, and other commercial spaces across India."
-      }
-     },
-     {
-      "@type": "Question",
-      "name": "Can umbrellas be customized for project needs?",
-      "acceptedAnswer": {
-       "@type": "Answer",
-       "text": "Yes, umbrella systems can be customized in size, color, structure, fabric, and branding to suit project requirements."
-      }
-     },
-     {
-      "@type": "Question",
-      "name": "What is the cost of commercial umbrellas in India?",
-      "acceptedAnswer": {
-       "@type": "Answer",
-       "text": "Pricing depends on the umbrella's type, material and customization. Contact us for a quotation for your project."
-      }
-     },
-     {
-      "@type": "Question",
-      "name": "Do you provide installation coordination?",
-      "acceptedAnswer": {
-       "@type": "Answer",
-       "text": "Yes, Furniconcepts supports planning and installation coordination for commercial umbrella projects."
-      }
-     }
-    ]
-   }
-  ]
- },
- "/outdoor-indoor-umbrella-supplier-singapore.php": {
-  "live": "/outdoor-indoor-umbrella-supplier-singapore.php",
-  "title": "Outdoor Umbrella Supplier Singapore | Commercial Shade Solutions",
-  "meta": [
-   {
-    "name": "description",
-    "content": "Premium outdoor and indoor umbrella supplier in Singapore for hotels, cafes, clinics, and commercial spaces with compact, custom, and design-led shade solutions."
-   },
-   {
-    "name": "keywords",
-    "content": "outdoor umbrella supplier singapore, indoor umbrella supplier singapore, commercial umbrellas singapore, hotel umbrellas singapore, cafe umbrellas singapore, cantilever umbrellas singapore"
-   },
-   {
-    "name": "robots",
-    "content": "index, follow"
-   },
-   {
-    "property": "og:type",
-    "content": "website"
-   },
-   {
-    "property": "og:title",
-    "content": "Outdoor Umbrella Supplier Singapore | Commercial Shade Solutions"
-   },
-   {
-    "property": "og:description",
-    "content": "Explore premium commercial umbrella solutions in Singapore for hotels, restaurants, clinics, and high-end outdoor spaces."
-   },
-   {
-    "property": "og:site_name",
-    "content": "Furniconcepts"
-   },
-   {
-    "name": "twitter:card",
-    "content": "summary_large_image"
-   },
-   {
-    "name": "twitter:title",
-    "content": "Outdoor Umbrella Supplier Singapore | Commercial Shade Solutions"
-   },
-   {
-    "name": "twitter:description",
-    "content": "Discover commercial umbrella systems in Singapore for hospitality, healthcare, and premium urban projects."
-   }
-  ],
-  "jsonld": [
-   {
-    "@context": "https://schema.org",
-    "@type": "FAQPage",
-    "mainEntity": [
-     {
-      "@type": "Question",
-      "name": "What type of umbrella works best in Singapore?",
-      "acceptedAnswer": {
-       "@type": "Answer",
-       "text": "Cantilever umbrellas are often a strong choice in Singapore because they save space, support cleaner layouts, and suit premium commercial environments."
-      }
-     },
-     {
-      "@type": "Question",
-      "name": "Do you supply umbrellas for hotels and cafes?",
-      "acceptedAnswer": {
-       "@type": "Answer",
-       "text": "Yes, Furniconcepts supports umbrella projects for hotels, rooftop dining venues, cafes, restaurants, and other hospitality spaces in Singapore."
-      }
-     },
-     {
-      "@type": "Question",
-      "name": "Can umbrella systems be customized?",
-      "acceptedAnswer": {
-       "@type": "Answer",
-       "text": "Yes, umbrella systems can be customized in size, color, canopy fabric, branding, and structural format based on project needs."
-      }
-     },
-     {
-      "@type": "Question",
-      "name": "What is the cost of commercial umbrellas in Singapore?",
-      "acceptedAnswer": {
-       "@type": "Answer",
-       "text": "Pricing depends on the umbrella's size, type, materials and customization. Contact us for a quotation for your project."
-      }
-     },
-     {
-      "@type": "Question",
-      "name": "Do you support installation coordination?",
-      "acceptedAnswer": {
-       "@type": "Answer",
-       "text": "Yes, Furniconcepts supports supply planning and installation coordination for commercial umbrella projects."
-      }
-     }
-    ]
-   }
-  ]
- },
- "/outdoor-indoor-umbrella-supplier.php": {
-  "live": "/outdoor-indoor-umbrella-supplier.php",
-  "title": "Outdoor & Indoor Umbrella Supplier Categories | Dubai, India & Singapore",
-  "meta": [
-   {
-    "name": "description",
-    "content": "Explore outdoor and indoor umbrella supplier pages for Dubai, India, and Singapore with commercial shade solutions for hotels, restaurants, hospitals, and premium spaces."
-   }
-  ],
-  "jsonld": []
  },
  "/projects": {
   "live": "/projects/index.php",
