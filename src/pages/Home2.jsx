@@ -21,13 +21,9 @@ const img = (id, w) => `https://images.unsplash.com/photo-${id}?fm=jpg&q=80&w=${
 const cav = (name) => `/images/cavaletti/${name}.jpg`;
 const common = (name) => `/images/common/${name}.jpg`;
 
-/** Hero rotates through real project photography. */
-const HERO_SLIDES = [
-  { src: '/images/common/hero1.webp', alt: 'Furniconcepts interior with contemporary seating' },
-  { src: cav('project-lounge'), alt: 'Branch lounge furnished with modular Cavaletti seating' },
-  { src: cav('showroom-lounge'), alt: 'Cavaletti showroom lounge seating' },
-  { src: cav('office-green'), alt: 'Open-plan workplace with Cavaletti task seating' },
-];
+/** Hero background video; the first frame photo shows while it loads. */
+const HERO_VIDEO = '/videos/home-hero-video.mp4';
+const HERO_POSTER = '/images/common/hero1.webp';
 
 /**
  * The Download Profiles brands, each card led by its chosen image (profiles.js
@@ -276,7 +272,7 @@ const REVEAL_GROUPS = [
 ];
 
 export default function Home2() {
-  const [slide, setSlide] = useState(0);
+  const heroVideo = useRef(null);
   useReveal(REVEAL_GROUPS);
   const heroLayer = useParallax(0.25);
   const bannerLayer = useParallax(0.35);
@@ -288,10 +284,10 @@ export default function Home2() {
   const spotRail = useStepRail({ interval: 4000 });
 
   useEffect(() => {
-    if (prefersReducedMotion()) return undefined;
-    const t = setInterval(() => setSlide((i) => (i + 1) % HERO_SLIDES.length), 6000);
-    return () => clearInterval(t);
-  }, [slide]);
+    const v = heroVideo.current;
+    if (!v || prefersReducedMotion()) return;
+    v.play().catch(() => {});
+  }, []);
 
   return (
     <div className="home2">
@@ -300,39 +296,25 @@ export default function Home2() {
       <section className="hero" id="top">
         <div className="hero-text">
           <div className="wrap hero-copy">
-          <div className="eyebrow">Welcome to Furniconcepts</div>
           <h1>
-            One Stop<br /><span className="accent">Solutions</span><br />for Every Space
+            One Stop <span className="accent">Solutions</span><br />for Every Space
           </h1>
-          <p>Office, acoustic, hospitality, healthcare and venue seating — specified, supplied and installed across the UAE, India and Singapore.</p>
           <Link to="/categories" className="btn-primary">Explore Categories <Arrow /></Link>
-          <div className="slide-dots">
-            {HERO_SLIDES.map((slideItem, i) => (
-              <button
-                key={slideItem.src}
-                type="button"
-                className={`dot ${i === slide ? 'active' : ''}`.trim()}
-                aria-label={`Show slide ${i + 1}`}
-                onClick={() => setSlide(i)}
-              >
-                {String(i + 1).padStart(2, '0')}
-              </button>
-            ))}
-          </div>
           </div>
         </div>
         <div className="hero-media">
           <div className="img-parallax" ref={heroLayer}>
-            {HERO_SLIDES.map((slideItem, i) => (
-              <img
-                key={slideItem.src}
-                className={`hero-slide ${i === slide ? 'active' : ''}`.trim()}
-                src={slideItem.src}
-                alt={slideItem.alt}
-                aria-hidden={i !== slide}
-                loading={i === 0 ? 'eager' : 'lazy'}
-              />
-            ))}
+            <video
+              ref={heroVideo}
+              className="hero-video"
+              src={HERO_VIDEO}
+              poster={HERO_POSTER}
+              muted
+              loop
+              playsInline
+              preload="auto"
+              aria-hidden="true"
+            />
           </div>
         </div>
       </section>
