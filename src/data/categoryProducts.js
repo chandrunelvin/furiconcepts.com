@@ -119,7 +119,7 @@ export function categoryProducts(path, name) {
   return {
     eyebrow: `${name} Products`,
     title: `Explore Our ${name} Range`,
-    intro: `Products from the partner brands Furniconcepts supplies for ${name.toLowerCase()} projects across Dubai, India and Singapore. Tap any product to enquire.`,
+    intro: `Products from the partner brands Furniconcepts supplies for ${name.toLowerCase()} projects across UAE, IN, SG. Tap any product to enquire.`,
     download: { label: 'Request Catalogue', href: '/download-profiles' },
     whatsapp: '971503782215',
     enquiryNote: 'Send us an enquiry now, we will get back to you asap.',

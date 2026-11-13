@@ -22,7 +22,7 @@ export const CATEGORY_PAGES = [
     "title": "Acoustic Pods & Sound Solutions Suppliers",
     "titleAccent": "in UAE, IN, SG",
     "eyebrow": "Acoustic Pods & Solutions",
-    "summary": "Musepod and Zumbooth acoustic pods, phone booths and panels, supplied across Dubai, India and Singapore.",
+    "summary": "Musepod and Zumbooth acoustic pods, phone booths and panels, supplied across UAE, IN, SG.",
     "stats": [
       {
         "value": "Up to 30dB",
@@ -201,11 +201,11 @@ export const CATEGORY_PAGES = [
     "hero": "/images/projects/al-futtaim-ho-phone-booth/06.webp",
     "title": "Acoustic Solutions: Silent Pods, Office Phone Booths & Acoustic Panels",
     "eyebrow": "Workspace Acoustics",
-    "summary": "Open-plan offices need quiet spaces. Furniconcepts supplies silent pods, phone booths and acoustic wall and ceiling panels for offices, schools and commercial spaces across Dubai, India and Singapore.",
+    "summary": "Open-plan offices need quiet spaces. Furniconcepts supplies silent pods, phone booths and acoustic wall and ceiling panels for offices, schools and commercial spaces across UAE, IN, SG.",
     "stats": [
       {
         "value": "3 Regions",
-        "label": "UAE, India, and Singapore project support"
+        "label": "UAE, IN, SG project support"
       },
       {
         "value": "Pods + Panels",
@@ -276,7 +276,7 @@ export const CATEGORY_PAGES = [
     "card": "/images/categories/airport-seating-card.webp",
     "title": "Airport Seating",
     "eyebrow": "Airport Seating",
-    "summary": "Choose your region to explore airport seating supplier pages for Dubai, India, and Singapore.",
+    "summary": "Choose your region to explore airport seating supplier pages for UAE, IN, SG.",
     "sections": [
       [
         {
@@ -329,7 +329,7 @@ export const CATEGORY_PAGES = [
     "title": "Auditorium Seating Suppliers",
     "titleAccent": "in UAE, IN, SG",
     "eyebrow": "Auditorium Seating",
-    "summary": "Fixed, retractable and VIP auditorium seating from Leadcom and Audia Italia, with layout planning and installation across Dubai, India and Singapore.",
+    "summary": "Fixed, retractable and VIP auditorium seating from Leadcom and Audia Italia, with layout planning and installation across UAE, IN, SG.",
     "stats": [
       {
         "value": "7 Days",
@@ -363,7 +363,7 @@ export const CATEGORY_PAGES = [
               "label": "Audia Italia",
               "href": "/brands/audia-italia"
             },
-            ", we supply and install fixed, retractable and custom auditorium seating across Dubai, India and Singapore. We plan the layout in 3D, build to BIFMA standards and handle installation ourselves."
+            ", we supply and install fixed, retractable and custom auditorium seating across UAE, IN, SG. We plan the layout in 3D, build to BIFMA standards and handle installation ourselves."
           ]
         }
       ],
@@ -479,7 +479,7 @@ export const CATEGORY_PAGES = [
             },
             {
               "q": "Do you work outside the UAE?",
-              "a": "Yes, across Dubai, India and Singapore."
+              "a": "Yes, across UAE, IN, SG."
             }
           ]
         }
@@ -505,7 +505,7 @@ export const CATEGORY_PAGES = [
     "title": "Hotel & Hospitality Furniture Suppliers",
     "titleAccent": "in UAE, IN, SG",
     "eyebrow": "Hospitality Furniture",
-    "summary": "Hotel, restaurant and café furniture from SCAB Italy and Worklyffe, plus outdoor umbrellas, across Dubai, India and Singapore.",
+    "summary": "Hotel, restaurant and café furniture from SCAB Italy and Worklyffe, plus outdoor umbrellas, across UAE, IN, SG.",
     "stats": [
       {
         "value": "Lobby to Poolside",
@@ -529,7 +529,7 @@ export const CATEGORY_PAGES = [
         {
           "type": "intro",
           "text": [
-            "We furnish hotels, resorts and restaurants across Dubai, India and Singapore, with ",
+            "We furnish hotels, resorts and restaurants across UAE, IN, SG, with ",
             {
               "label": "SCAB Italy",
               "href": "/brands/scab-italy"
@@ -678,7 +678,7 @@ export const CATEGORY_PAGES = [
     "title": "Healthcare & Hospital Furniture Suppliers",
     "titleAccent": "in UAE, IN, SG",
     "eyebrow": "Healthcare Furniture",
-    "summary": "Award-winning Nitrocare hospital beds, ICU beds, stretchers and exam chairs, supplied across Dubai, India and Singapore.",
+    "summary": "Award-winning Nitrocare hospital beds, ICU beds, stretchers and exam chairs, supplied across UAE, IN, SG.",
     "stats": [
       {
         "value": "60,000m²",
@@ -707,7 +707,7 @@ export const CATEGORY_PAGES = [
               "label": "Nitrocare",
               "href": "/brands/nitrocare"
             },
-            ", an award-winning medical furniture maker with a 60,000m² production facility. We supply hospital beds, stretchers, ICU furniture and exam chairs across Dubai, India and Singapore."
+            ", an award-winning medical furniture maker with a 60,000m² production facility. We supply hospital beds, stretchers, ICU furniture and exam chairs across UAE, IN, SG."
           ]
         }
       ],
@@ -866,7 +866,7 @@ export const CATEGORY_PAGES = [
     "title": "Lounge Seating Suppliers",
     "titleAccent": "in UAE, IN, SG",
     "eyebrow": "Lounge Seating",
-    "summary": "Lounge chairs, modular sofas and collaborative seating from SCAB Italy and Worklyffe, across Dubai, India and Singapore.",
+    "summary": "Lounge chairs, modular sofas and collaborative seating from SCAB Italy and Worklyffe, across UAE, IN, SG.",
     "stats": [
       {
         "value": "SCAB Italy",
@@ -890,7 +890,7 @@ export const CATEGORY_PAGES = [
         {
           "type": "intro",
           "text": [
-            "Lounge chairs, modular sofas and collaborative seating for hotel lobbies, offices, coworking spaces and cafés across Dubai, India and Singapore, from ",
+            "Lounge chairs, modular sofas and collaborative seating for hotel lobbies, offices, coworking spaces and cafés across UAE, IN, SG, from ",
             {
               "label": "SCAB Italy",
               "href": "/brands/scab-italy"
@@ -1004,7 +1004,7 @@ export const CATEGORY_PAGES = [
     "title": "Office & Workplace Furniture Suppliers",
     "titleAccent": "in UAE, IN, SG",
     "eyebrow": "Office & Workplace Furniture",
-    "summary": "Desks, ergonomic chairs, meeting furniture and storage from Gebbwork, Cavaletti, Forma5 and more, across Dubai, India and Singapore.",
+    "summary": "Desks, ergonomic chairs, meeting furniture and storage from Gebbwork, Cavaletti, Forma5 and more, across UAE, IN, SG.",
     "stats": [
       {
         "value": "10+ Brands",
@@ -1016,7 +1016,7 @@ export const CATEGORY_PAGES = [
       },
       {
         "value": "3 Regions",
-        "label": "Dubai, India and Singapore"
+        "label": "UAE, IN, SG"
       }
     ],
     "sections": [
@@ -1027,7 +1027,7 @@ export const CATEGORY_PAGES = [
         },
         {
           "type": "intro",
-          "text": "From a single startup desk to a full headquarters fit-out, we bring together trusted brands for desks, seating, storage and accessories across Dubai, India and Singapore."
+          "text": "From a single startup desk to a full headquarters fit-out, we bring together trusted brands for desks, seating, storage and accessories across UAE, IN, SG."
         }
       ],
       [
@@ -1199,7 +1199,7 @@ export const CATEGORY_PAGES = [
     "hero": "/images/blog/outdoor-umbrellas/hero.webp",
     "title": "Outdoor & Indoor Umbrella Supplier",
     "eyebrow": "Outdoor & Indoor Umbrellas",
-    "summary": "Commercial umbrellas for hotels, restaurants, hospitals and outdoor spaces, supplied and installed across the UAE, India and Singapore.",
+    "summary": "Commercial umbrellas for hotels, restaurants, hospitals and outdoor spaces, supplied and installed across UAE, IN, SG.",
     "sections": [
       [
         {
@@ -1256,7 +1256,7 @@ export const CATEGORY_PAGES = [
           "type": "heading",
           "title": "FAQs",
           "body": [
-            "Quick answers for hospitality, healthcare and commercial umbrella projects in the UAE, India and Singapore."
+            "Quick answers for hospitality, healthcare and commercial umbrella projects in UAE, IN, SG."
           ]
         },
         {
@@ -1276,7 +1276,7 @@ export const CATEGORY_PAGES = [
             },
             {
               "q": "Which countries do you deliver to?",
-              "a": "We supply and install commercial umbrellas across the UAE, India and Singapore."
+              "a": "We supply and install commercial umbrellas across UAE, IN, SG."
             },
             {
               "q": "Do you handle installation?",
@@ -1304,7 +1304,7 @@ export const CATEGORY_PAGES = [
     "cta": {
       "title": "Looking for a Commercial Umbrella Supplier?",
       "body": [
-        "Furniconcepts supplies umbrella systems for hotels, restaurants, hospitals and outdoor commercial spaces across the UAE, India and Singapore. Contact us for a project consultation and quotation."
+        "Furniconcepts supplies umbrella systems for hotels, restaurants, hospitals and outdoor commercial spaces across UAE, IN, SG. Contact us for a project consultation and quotation."
       ],
       "buttons": [
         {
@@ -1471,7 +1471,7 @@ export const CATEGORY_PAGES = [
     "title": "School & Classroom Furniture Suppliers",
     "titleAccent": "in UAE, IN, SG",
     "eyebrow": "Education & School Furniture",
-    "summary": "Classroom chairs, modular desks and training seating for schools and colleges across Dubai, India and Singapore.",
+    "summary": "Classroom chairs, modular desks and training seating for schools and colleges across UAE, IN, SG.",
     "stats": [
       {
         "value": "Rows to Groups",
@@ -1494,7 +1494,7 @@ export const CATEGORY_PAGES = [
         },
         {
           "type": "intro",
-          "text": "We supply classroom desks, chairs and modular furniture for schools, colleges and training institutes across Dubai, India and Singapore, designed to be comfortable for students, tough enough for daily use and easy to rearrange."
+          "text": "We supply classroom desks, chairs and modular furniture for schools, colleges and training institutes across UAE, IN, SG, designed to be comfortable for students, tough enough for daily use and easy to rearrange."
         }
       ],
       [

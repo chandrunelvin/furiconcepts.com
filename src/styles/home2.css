@@ -3582,13 +3582,10 @@
 @keyframes wa-bob{ 0%,100%{ transform:translateY(0); } 50%{ transform:translateY(-10px); } }
 .home2 .wa-float:hover{ transform:translateY(-3px); }
 .home2 .wa-float:focus-visible{ outline:2px solid #0a7a55;outline-offset:2px;border-radius:999px; }
-/* the "Chat with us" pill shrinks on smaller screens so it covers less of the page */
-.home2 .wa-float{ width:200px; }
-@media(max-width:1440px){
-  .home2 .wa-float{ width:180px; }
-}
+/* the round WhatsApp icon, a little smaller on phones */
+.home2 .wa-float{ width:68px;border-radius:50%;filter:drop-shadow(0 6px 14px rgba(15,38,32,.25)); }
 @media(max-width:760px){
-  .home2 .wa-float{ width:150px;right:12px;bottom:12px; }
+  .home2 .wa-float{ width:60px;right:14px;bottom:14px; }
 }
 @media(prefers-reduced-motion:reduce){
   .home2 .wa-float{ transition:none; }
