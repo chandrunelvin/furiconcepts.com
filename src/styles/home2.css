@@ -686,8 +686,18 @@
 
 /* ---- full-bleed hero with a transparent header over it ----------------- */
 .home2 .hero{
-  grid-template-columns:1fr; padding-top:0; position:relative; min-height:calc(100vh / var(--z,1));
+  grid-template-columns:1fr; position:relative; min-height:calc(100vh / var(--z,1));
   align-items:center; overflow:hidden;
+  /* the copy centres in the space under the floating header; on a short
+     laptop screen the hero grows instead of pushing the copy up under the logo */
+  padding:104px 0 48px; box-sizing:border-box;
+}
+/* short laptop screens: tighten the copy so it still fits in one screen */
+@media(min-width:901px) and (max-height:760px){
+  .home2 .hero-text h1{ font-size:clamp(32px,3.4vw,44px); margin-bottom:16px; }
+  .home2 .hero-text p{ margin-bottom:22px; }
+  .home2 .hero .eyebrow{ margin-bottom:12px; }
+  .home2 .hero .slide-dots{ margin-top:28px; }
 }
 .home2 .hero-media{
   position:absolute; inset:0; min-height:0; z-index:0;
