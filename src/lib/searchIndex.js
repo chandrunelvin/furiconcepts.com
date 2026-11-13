@@ -61,6 +61,7 @@ export function searchIndex() {
   PAGES.forEach((p) => add('page', p));
 
   for (const c of CATEGORY_PAGES) {
+    if (c.hidden) continue;
     add('category', {
       title: c.parent ? `${c.title} ${c.titleAccent ?? ''}`.trim() : c.name,
       sub: c.parent ? 'Region page' : c.eyebrow,

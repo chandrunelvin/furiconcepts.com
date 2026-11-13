@@ -447,7 +447,7 @@ export default function Home2() {
                 <span className="detail-arrow"><Diagonal /></span>
               </div>
             </Link>
-            <Link to="/acoustic-pods.php" className="detail-card fabric">
+            <Link to="/acoustic-solutions.php" className="detail-card fabric">
               <img src={common('sustainable')} alt="" loading="lazy" />
               <div className="detail-row">
                 <div>

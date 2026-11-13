@@ -17,6 +17,7 @@
 export const CATEGORY_PAGES = [
   {
     "path": "/acoustic-pods.php",
+    "hidden": true,
     "name": "Acoustic Pods",
     "hero": "/images/projects/al-futtaim-ho-phone-booth/banner.webp",
     "title": "Acoustic Pods & Sound Solutions Suppliers",
@@ -1861,7 +1862,8 @@ export const CATEGORY_PAGES = [
   }
 ];
 
-export const getCategoryByPath = (path) => CATEGORY_PAGES.find((c) => c.path === path);
+/** Hidden pages (`hidden: true`) are kept in the data but not served, listed or linked. */
+export const getCategoryByPath = (path) => CATEGORY_PAGES.find((c) => c.path === path && !c.hidden);
 
 /** The top-level categories, for menus and the home page. */
-export const TOP_CATEGORIES = CATEGORY_PAGES.filter((c) => !c.parent);
+export const TOP_CATEGORIES = CATEGORY_PAGES.filter((c) => !c.parent && !c.hidden);

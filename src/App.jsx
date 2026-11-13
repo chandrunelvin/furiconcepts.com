@@ -50,6 +50,8 @@ const MOVED = {
   '/outdoor-indoor-umbrella-supplier-dubai.php': '/outdoor-indoor-umbrella-supplier.php',
   '/outdoor-indoor-umbrella-supplier-india.php': '/outdoor-indoor-umbrella-supplier.php',
   '/outdoor-indoor-umbrella-supplier-singapore.php': '/outdoor-indoor-umbrella-supplier.php',
+  // Acoustic Pods is hidden for now; its visitors go to Acoustic Solutions
+  '/acoustic-pods.php': '/acoustic-solutions.php',
 };
 
 export default function App() {

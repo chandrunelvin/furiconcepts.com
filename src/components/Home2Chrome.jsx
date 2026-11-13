@@ -129,7 +129,10 @@ export function SiteHeader({ onHome = true, active = 'Home' }) {
   const path = usePath();
   const [scrolled, setScrolled] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
-  const [openGroup, setOpenGroup] = useState(null);
+  // the menu panel opens with the reader's current section already expanded
+  const [openGroup, setOpenGroup] = useState(
+    () => NAV.find((item) => item.children?.some((c) => c.path === path))?.label ?? null,
+  );
   const [searchOpen, setSearchOpen] = useState(false);
 
   // "/" or Ctrl/⌘+K opens the search from anywhere, unless the reader is typing
@@ -275,7 +278,7 @@ export function SiteHeader({ onHome = true, active = 'Home' }) {
 const FOOTER_COLUMNS = [
   {
     heading: 'Categories',
-    links: ['/office-furniture.php', '/acoustic-pods.php', '/auditorium-seating.php',
+    links: ['/office-furniture.php', '/acoustic-solutions.php', '/auditorium-seating.php',
       '/hotel-furniture-manufacturers.php', '/hospital-furniture.php', '/school-furniture.php']
       .map((path) => ({ label: CATEGORY_PAGES.find((c) => c.path === path).name, path })),
   },
