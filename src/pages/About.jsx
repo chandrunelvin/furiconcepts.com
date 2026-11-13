@@ -73,9 +73,9 @@ export default function About({ section }) {
           <div className="about-story-copy">
             <div className="eyebrow">About Us</div>
             <h2>Crafting Elegance,<br />Inspiring Spaces</h2>
-            <p>At Furniconcepts, we&apos;re more than just a furniture brand. We create spaces that people enjoy working and living in. From India to the UAE, Saudi Arabia and Qatar, we supply furniture that looks good and works hard, from timeless classics to the latest designs. Our design team works with you to find the right pieces for your space, your style and your budget.</p>
+            <p>Creating spaces that people enjoy working and living in. From India to the UAE, Saudi Arabia and Qatar, we supply furniture that looks good and works hard, from timeless classics to the latest designs. Our design team works with you to find the right pieces for your space, your style and your budget.</p>
             <blockquote className="pull-quote">
-              Furniconcepts is not a furniture company. It is a multi-country workspace brand with scalable potential.
+              We&apos;re a multi-country workspace brand with scalable potential.
             </blockquote>
             <Link to="/#catalogs" className="btn-primary">Learn More <Arrow /></Link>
           </div>
