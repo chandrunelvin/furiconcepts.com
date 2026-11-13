@@ -1563,7 +1563,7 @@
 .home2 .quote-mark{ width:34px;height:34px;color:var(--green);margin-bottom:22px; }
 .home2 .quote-stage blockquote{
   font-family:var(--font-primary);font-weight:500;letter-spacing:-.01em;
-  font-size:clamp(17px,2.2vw,26px);line-height:1.45;max-width:34ch;
+  font-size:clamp(16px,1.6vw,20px);line-height:1.6;max-width:44ch;
   animation:home2-quote-in .5s ease both;
 }
 @keyframes home2-quote-in{ from{ opacity:0;transform:translateY(10px); } to{ opacity:1;transform:none; } }
