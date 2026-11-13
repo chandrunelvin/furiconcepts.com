@@ -1,38 +1,42 @@
 /* ---------------------------------------------------------------------------
    Brand typefaces.
 
-   Primary   — Euclid Circular A  (headings, navigation, buttons)
+   Primary   — Euclid Circular B  (headings, navigation, buttons)
    Secondary — Montserrat         (body copy, labels, supporting text)
 
-   Euclid Circular A is a licensed face (Swiss Typefaces) and is not served by
-   any public CDN, so the woff2 files have to be dropped into /public/fonts/
-   under the site's licence. Until they are, the stack falls through to
-   Montserrat, which is already loaded, so nothing renders in a system font.
+   Euclid Circular B is a licensed face (Swiss Typefaces) served from
+   /public/fonts/ (Light 300 to Bold 700). If a file fails to load, the stack
+   falls through to Montserrat, which is already loaded.
    --------------------------------------------------------------------------- */
 
 @font-face{
-  font-family:'Euclid Circular A';
-  src:url('/fonts/EuclidCircularA-Regular.woff2') format('woff2');
+  font-family:'Euclid Circular B';
+  src:url('/fonts/EuclidCircularB-Light.ttf') format('truetype');
+  font-weight:300; font-style:normal; font-display:swap;
+}
+@font-face{
+  font-family:'Euclid Circular B';
+  src:url('/fonts/EuclidCircularB-Regular.ttf') format('truetype');
   font-weight:400; font-style:normal; font-display:swap;
 }
 @font-face{
-  font-family:'Euclid Circular A';
-  src:url('/fonts/EuclidCircularA-Medium.woff2') format('woff2');
+  font-family:'Euclid Circular B';
+  src:url('/fonts/EuclidCircularB-Medium.ttf') format('truetype');
   font-weight:500; font-style:normal; font-display:swap;
 }
 @font-face{
-  font-family:'Euclid Circular A';
-  src:url('/fonts/EuclidCircularA-SemiBold.woff2') format('woff2');
+  font-family:'Euclid Circular B';
+  src:url('/fonts/EuclidCircularB-SemiBold.ttf') format('truetype');
   font-weight:600; font-style:normal; font-display:swap;
 }
 @font-face{
-  font-family:'Euclid Circular A';
-  src:url('/fonts/EuclidCircularA-Bold.woff2') format('woff2');
+  font-family:'Euclid Circular B';
+  src:url('/fonts/EuclidCircularB-Bold.ttf') format('truetype');
   font-weight:700; font-style:normal; font-display:swap;
 }
 
 :root{
-  --font-primary:'Euclid Circular A','Montserrat',system-ui,-apple-system,sans-serif;
+  --font-primary:'Euclid Circular B','Montserrat',system-ui,-apple-system,sans-serif;
   --font-secondary:'Montserrat',system-ui,-apple-system,sans-serif;
 }
 
@@ -41,7 +45,7 @@
 
    Every size on this site was set against Inter, whose x-height is 0.545 of
    the em — unusually tall, because it is drawn for interfaces. Montserrat sits
-   at 0.517 and Euclid Circular A at roughly the same, so the identical px size
+   at 0.517 and Euclid Circular B at roughly the same, so the identical px size
    renders about 5% smaller and the whole page reads shrunken.
 
    font-size-adjust pins the x-height instead of the em, so text occupies the

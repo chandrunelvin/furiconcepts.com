@@ -23,7 +23,7 @@ export const PROFILES = [
   { name: 'Worklyffe', title: 'Workplace Accessories', cover: '/images/brands/worklyffe.jpg', path: page('worklyffe'), card: '/images/brands/worklyffe.webp' },
   { name: 'Scab', title: 'Dining & Outdoor Seating', cover: '/images/brands/scab-italy.jpg', path: page('scab'), card: '/images/brands/scab-italy.webp' },
   { name: 'Versalink', title: 'Sovica & General Catalogues', cover: '/images/brands/versalink.webp', path: page('versalink'), card: '/images/brands/versalink.webp' },
-  { name: 'Phoenix', title: 'Household, Storage & Seating', cover: '/images/about-us/about-hero-bg.webp', path: page('phoenix'), card: '/images/profiles/covers/phoenix/phoenix-storageorganization2026-webversion-cvpmgpu.webp' },
+  { name: 'Phoenix', title: 'Household, Storage & Seating', cover: '/images/brands/phoenix.webp', path: page('phoenix'), card: '/images/brands/phoenix.webp' },
   { name: 'Parin', title: 'Office Seating & Storage', cover: '/images/brand-product-images/parin/edu1.webp', path: page('parin'), card: '/images/profiles/covers/parin/09-parin-latest-catalogue-june-2025.webp' },
   { name: 'Doğuş', title: 'School, Kindergarten & Lab Furniture', cover: '/images/common/quality-detail.jpg', path: page('dogus'), card: '/images/profiles/dogus/school-furniture.jpg' },
   { name: 'Safe Lockers', title: 'Safes & Lockers', cover: '/images/brand-product-images/safe-lockers/product-014.webp', path: '/brands/safe-lockers', card: '/images/brand-product-images/safe-lockers/product-014.webp' },
