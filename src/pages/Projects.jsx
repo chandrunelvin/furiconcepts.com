@@ -1,6 +1,7 @@
 import { useCallback, useEffect, useRef, useState } from 'react';
 import { Icon } from '../components/BlogParts.jsx';
-import { Arrow, SiteFooter, SiteHeader } from '../components/Home2Chrome.jsx';
+import { Arrow, SiteFooter, SiteHeader, WhatsAppFloat } from '../components/Home2Chrome.jsx';
+import ProjectIcon from '../components/ProjectIcon.jsx';
 import { PROJECTS, getProject } from '../data/projects.js';
 import { prefersReducedMotion } from '../lib/scroll.js';
 import { useReveal } from '../lib/reveal.js';
@@ -135,9 +136,10 @@ function ProjectsSlider() {
               className={i === index ? 'is-active' : undefined}
               aria-current={i === index ? 'true' : undefined}
               aria-label={`${pad(i + 1)} ${p.title}`}
+              title={p.title}
               onClick={() => go(i)}
             >
-              {pad(i + 1)}
+              <ProjectIcon project={p} className="proj-rail-icon" />
             </button>
           ))}
         </div>
@@ -155,6 +157,8 @@ function ProjectsSlider() {
         </button>
       </div>
       <div className="proj-hint" aria-hidden="true">Scroll to explore · {current.title}</div>
+      {/* this full-screen page has no footer, so it adds the WhatsApp button itself */}
+      <WhatsAppFloat />
     </div>
   );
 }

@@ -420,7 +420,7 @@ export function SiteFooter({ newsletter }) {
 }
 
 /** The floating WhatsApp button: the round WhatsApp icon on every screen size. */
-function WhatsAppFloat() {
+export function WhatsAppFloat() {
   return (
     <a
       className="wa-float"
