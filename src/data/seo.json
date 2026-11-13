@@ -171,22 +171,6 @@
        "@type": "Answer",
        "text": "Zumbooth has sensor-controlled ventilation."
       }
-     },
-     {
-      "@type": "Question",
-      "name": "How many pods does an office need?",
-      "acceptedAnswer": {
-       "@type": "Answer",
-       "text": "It depends on headcount and how often people take calls. We'll help you size it."
-      }
-     },
-     {
-      "@type": "Question",
-      "name": "Can pods be moved later?",
-      "acceptedAnswer": {
-       "@type": "Answer",
-       "text": "Musepod's modular design allows reconfiguration."
-      }
      }
     ]
    }
@@ -263,7 +247,7 @@
       "name": "What is the cost of acoustic pods in Dubai?",
       "acceptedAnswer": {
        "@type": "Answer",
-       "text": "Acoustic pod pricing in Dubai commonly ranges from AED 15,000 to AED 80,000 or more depending on size, finish, and features."
+       "text": "Pricing depends on the pod's size, finish and features. Contact us for a quotation for your project."
       }
      },
      {
@@ -409,30 +393,6 @@
        "@type": "Answer",
        "text": "Yes. Dubai warehouse stock supports 7-day delivery."
       }
-     },
-     {
-      "@type": "Question",
-      "name": "Is installation included?",
-      "acceptedAnswer": {
-       "@type": "Answer",
-       "text": "Yes. We handle 3D planning, manufacturing, delivery and on-site installation."
-      }
-     },
-     {
-      "@type": "Question",
-      "name": "Can seating be customised?",
-      "acceptedAnswer": {
-       "@type": "Answer",
-       "text": "Yes. Audia Italia is fully tailored per venue, and Leadcom offers tablet arms, continental layouts and reinforced backs."
-      }
-     },
-     {
-      "@type": "Question",
-      "name": "Do you work outside the UAE?",
-      "acceptedAnswer": {
-       "@type": "Answer",
-       "text": "Yes, across Dubai, India and Singapore."
-      }
      }
     ]
    }
@@ -546,14 +506,6 @@
       "acceptedAnswer": {
        "@type": "Answer",
        "text": "Yes. Our team manages delivery, installation and after-sales service."
-      }
-     },
-     {
-      "@type": "Question",
-      "name": "Is Audia Italia available in Singapore?",
-      "acceptedAnswer": {
-       "@type": "Answer",
-       "text": "Yes, directly through our Singapore office."
       }
      }
     ]
@@ -910,14 +862,6 @@
         "acceptedAnswer": {
          "@type": "Answer",
          "text": "Buy from an authorised dealer and ask for the product certificates. We provide them on request."
-        }
-       },
-       {
-        "@type": "Question",
-        "name": "Do you supply Cavaletti in bulk for corporate offices?",
-        "acceptedAnswer": {
-         "@type": "Answer",
-         "text": "Yes. We handle bulk orders, delivery and installation for full office fit-outs."
         }
        }
       ]
@@ -1995,14 +1939,6 @@
          "@type": "Answer",
          "text": "Yes. It uses antibacterial coatings and steel components designed for easy cleaning."
         }
-       },
-       {
-        "@type": "Question",
-        "name": "Is Nitrocare available in Singapore?",
-        "acceptedAnswer": {
-         "@type": "Answer",
-         "text": "Yes, directly through our Singapore office."
-        }
        }
       ]
      }
@@ -2122,14 +2058,6 @@
         "acceptedAnswer": {
          "@type": "Answer",
          "text": "Yes. Alongside bulk B2B orders, we supply retail and home-office customers."
-        }
-       },
-       {
-        "@type": "Question",
-        "name": "How is Parin priced?",
-        "acceptedAnswer": {
-         "@type": "Answer",
-         "text": "Pricing depends on product, quantity and customisation. Bulk orders benefit most from direct factory pricing."
         }
        }
       ]
@@ -2610,14 +2538,6 @@
         "acceptedAnswer": {
          "@type": "Answer",
          "text": "Every booth has a 2-year warranty."
-        }
-       },
-       {
-        "@type": "Question",
-        "name": "How is Zumbooth different from Musepod?",
-        "acceptedAnswer": {
-         "@type": "Answer",
-         "text": "Both offer automatic lighting. Zumbooth adds GREENGUARD air-quality certification and wide colour choice; Musepod offers larger team pods up to the Ensemble."
         }
        }
       ]
@@ -4643,22 +4563,6 @@
        "@type": "Answer",
        "text": "Yes, the NITRO HB 7240."
       }
-     },
-     {
-      "@type": "Question",
-      "name": "Can you furnish a clinic, not just a hospital?",
-      "acceptedAnswer": {
-       "@type": "Answer",
-       "text": "Yes, including exam chairs and lighter-acuity furniture."
-      }
-     },
-     {
-      "@type": "Question",
-      "name": "Do you supply lab furniture?",
-      "acceptedAnswer": {
-       "@type": "Answer",
-       "text": "Yes."
-      }
      }
     ]
    }
@@ -5058,22 +4962,6 @@
        "@type": "Answer",
        "text": "Yes, including desk height, chair selection and add-ons like monitor arms."
       }
-     },
-     {
-      "@type": "Question",
-      "name": "Do you work with startups?",
-      "acceptedAnswer": {
-       "@type": "Answer",
-       "text": "Yes, from budget lines like Versalink to premium Forma5 and Markant."
-      }
-     },
-     {
-      "@type": "Question",
-      "name": "Can you furnish a whole floor at once?",
-      "acceptedAnswer": {
-       "@type": "Answer",
-       "text": "Yes, from workstations to meeting rooms and storage."
-      }
      }
     ]
    }
@@ -5158,7 +5046,7 @@
       "name": "What is the cost of commercial umbrellas in Dubai?",
       "acceptedAnswer": {
        "@type": "Answer",
-       "text": "Commercial umbrella prices in Dubai commonly range from AED 500 to AED 12,000 or more depending on size, type, material, and customization."
+       "text": "Pricing depends on the umbrella's size, type, material and customization. Contact us for a quotation for your project."
       }
      },
      {
@@ -5252,7 +5140,7 @@
       "name": "What is the cost of commercial umbrellas in India?",
       "acceptedAnswer": {
        "@type": "Answer",
-       "text": "Commercial umbrella pricing in India commonly starts around Rs. 3,000 and can rise above Rs. 1,00,000 depending on type, material, and customization."
+       "text": "Pricing depends on the umbrella's type, material and customization. Contact us for a quotation for your project."
       }
      },
      {
@@ -5346,7 +5234,7 @@
       "name": "What is the cost of commercial umbrellas in Singapore?",
       "acceptedAnswer": {
        "@type": "Answer",
-       "text": "Commercial umbrella pricing in Singapore commonly ranges from SGD 200 to SGD 8,000 or more depending on size, type, materials, and customization."
+       "text": "Pricing depends on the umbrella's size, type, materials and customization. Contact us for a quotation for your project."
       }
      },
      {
@@ -5537,14 +5425,6 @@
        "@type": "Answer",
        "text": "Yes, see Auditorium Seating."
       }
-     },
-     {
-      "@type": "Question",
-      "name": "Do you supply sports ground seating?",
-      "acceptedAnswer": {
-       "@type": "Answer",
-       "text": "Yes, see Stadium Seating."
-      }
      }
     ]
    }
@@ -5556,7 +5436,7 @@
   "meta": [
    {
     "name": "description",
-    "content": "Fixed, bleacher, retractable and VIP stadium seating from Jwesys and Leadcom across the UAE, Chennai, Bangalore, Hyderabad, Mumbai and Delhi. Fixed stadium chairs from ₹800 per seat in India."
+    "content": "Fixed, bleacher, retractable and VIP stadium seating from Jwesys and Leadcom across the UAE, Chennai, Bangalore, Hyderabad, Mumbai and Delhi."
    },
    {
     "name": "keywords",
@@ -5592,7 +5472,7 @@
    },
    {
     "name": "twitter:description",
-    "content": "Fixed, bleacher, retractable and VIP stadium seating, with fixed chairs from ₹800 per seat in India."
+    "content": "Fixed, bleacher, retractable and VIP stadium seating from Jwesys and Leadcom across the UAE and India."
    }
   ],
   "jsonld": [
@@ -5636,7 +5516,7 @@
       "name": "How much does it cost?",
       "acceptedAnswer": {
        "@type": "Answer",
-       "text": "In India, from ₹800 per seat for fixed chairs and ₹15,000+ for retractable and premium systems."
+       "text": "It depends on the seating type, quantity and finish. Contact us for a quotation for your venue."
       }
      },
      {
@@ -5661,22 +5541,6 @@
       "acceptedAnswer": {
        "@type": "Answer",
        "text": "Fixed costs less per seat at scale. Retractable costs more but frees up the floor."
-      }
-     },
-     {
-      "@type": "Question",
-      "name": "Can one venue mix seating types?",
-      "acceptedAnswer": {
-       "@type": "Answer",
-       "text": "Yes. Many venues combine fixed stands with a VIP section."
-      }
-     },
-     {
-      "@type": "Question",
-      "name": "Which cities do you serve?",
-      "acceptedAnswer": {
-       "@type": "Answer",
-       "text": "Chennai, Bangalore, Hyderabad, Mumbai, Delhi and the UAE."
       }
      }
     ]

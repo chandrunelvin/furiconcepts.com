@@ -93,7 +93,6 @@ export default function Brand({ slug }) {
               engines and screen readers only */}
           <h1 className={brandLogo(brand.name) ? 'sr-only' : undefined}>{brand.name}</h1>
           <div className="brand-hero-tagline">{lines(brand.tagline)}</div>
-          <p>{brand.heroText}</p>
           <a href={brand.heroCta.href} className="btn-primary">
             {brand.heroCta.label} <Arrow />
           </a>

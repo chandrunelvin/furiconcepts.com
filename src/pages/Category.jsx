@@ -491,6 +491,9 @@ const isHidden = (blocks, i, opensOnIntro) => {
   return false;
 };
 
+/** The consultation band at the foot of each category page; set true to show it again. */
+const SHOW_CLOSING_CTA = false;
+
 /** A category landing page (e.g. /office-furniture.php), built from data/categories.js. */
 export default function Category({ category: c }) {
   useReveal(REVEAL_GROUPS);
@@ -525,26 +528,28 @@ export default function Category({ category: c }) {
         <Section blocks={blocks} alt={i % 2 === 1} eyebrow={c.eyebrow} name={c.name} hero={c.hero} key={i} />
       ))}
 
-      {/* ---- closing cta ---- */}
-      <section className="about-cta">
-        <div className="about-cta-media">
-          <img src="/images/about-us/bg-create.webp" alt="" aria-hidden="true" />
-        </div>
-        <div className="overlay" />
-        <div className="wrap about-cta-inner">
-          <div className="about-cta-copy">
-            <h2>{cta.title}</h2>
-            {cta.body.map((p) => <p key={p}>{p}</p>)}
-            <div className="cat-cta-actions">
-              {cta.buttons.map((btn, i) => (
-                <SmartLink href={btn.href} className={i === 0 ? 'btn-primary' : 'btn-ghost'} key={btn.href}>
-                  {btn.label} <Arrow />
-                </SmartLink>
-              ))}
+      {/* ---- closing cta ---- hidden on every category page for now (SHOW_CLOSING_CTA) */}
+      {SHOW_CLOSING_CTA && (
+        <section className="about-cta">
+          <div className="about-cta-media">
+            <img src="/images/about-us/bg-create.webp" alt="" aria-hidden="true" />
+          </div>
+          <div className="overlay" />
+          <div className="wrap about-cta-inner">
+            <div className="about-cta-copy">
+              <h2>{cta.title}</h2>
+              {cta.body.map((p) => <p key={p}>{p}</p>)}
+              <div className="cat-cta-actions">
+                {cta.buttons.map((btn, i) => (
+                  <SmartLink href={btn.href} className={i === 0 ? 'btn-primary' : 'btn-ghost'} key={btn.href}>
+                    {btn.label} <Arrow />
+                  </SmartLink>
+                ))}
+              </div>
             </div>
           </div>
-        </div>
-      </section>
+        </section>
+      )}
 
       <SiteFooter />
     </div>

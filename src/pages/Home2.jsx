@@ -490,6 +490,7 @@ export default function Home2() {
         </div>
       </section>
 
+      {/* ---- brand catalogues ---- hidden for now; remove this comment wrapper to show it again
       <section className="section catalogs" id="catalogs">
         <div className="wrap">
           <div className="head-row">
@@ -537,6 +538,7 @@ export default function Home2() {
           </div>
         </div>
       </section>
+      */}
 
       <section className="section spotlight" id="spotlight">
         <div className="wrap">
@@ -545,7 +547,6 @@ export default function Home2() {
               <div className="eyebrow">Spotlight</div>
               <h2>Furniconcepts In The News</h2>
             </div>
-            <p>Take a look at what we&apos;ve been up to: press features and collaborations from across the region.</p>
           </div>
           <div className="catalog-rail">
           <button type="button" className="rail-arrow prev" aria-label="Previous story" onClick={spotRail.prev}>

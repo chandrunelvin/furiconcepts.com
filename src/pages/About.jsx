@@ -7,33 +7,11 @@ import { TESTIMONIALS } from '../data/testimonials.js';
 import { LEADERSHIP, TEAM } from '../data/team.js';
 import { useMarquee } from '../lib/marquee.js';
 import { useReveal } from '../lib/reveal.js';
+import { useStepRail } from '../lib/stepRail.js';
 import { prefersReducedMotion } from '../lib/scroll.js';
 import { Link } from '../router.jsx';
-import { DownloadIcon, PdfViewer } from './ProfileLibrary.jsx';
+import { PdfViewer } from './ProfileLibrary.jsx';
 import '../styles/home2.css';
-
-const NUMBERS = [
-  {
-    num: '12',
-    label: 'Furniture Categories',
-    icon: <><rect x="3" y="3" width="7" height="7" rx="1.5" /><rect x="14" y="3" width="7" height="7" rx="1.5" /><rect x="3" y="14" width="7" height="7" rx="1.5" /><rect x="14" y="14" width="7" height="7" rx="1.5" /></>,
-  },
-  {
-    num: '18',
-    label: 'Core Partner Brands',
-    icon: <><circle cx="12" cy="8" r="5" /><path d="M8.5 12.5L7 21l5-2.5L17 21l-1.5-8.5" /></>,
-  },
-  {
-    num: '30+',
-    label: 'Years of Experience',
-    icon: <><circle cx="12" cy="12" r="9" /><path d="M12 7v5l3.5 2" /></>,
-  },
-  {
-    num: '5+',
-    label: 'Countries Worldwide',
-    icon: <><circle cx="12" cy="12" r="9" /><path d="M3 12h18M12 3c2.5 3 2.5 15 0 18M12 3c-2.5 3-2.5 15 0 18" /></>,
-  },
-];
 
 /** Leadership first, then the rest of the team — one continuous row. */
 const PEOPLE = [...LEADERSHIP, ...TEAM];
@@ -42,12 +20,11 @@ const PEOPLE = [...LEADERSHIP, ...TEAM];
 const REVEAL_GROUPS = [
   '.about-hero .crumbs, .about-hero .eyebrow, .about-hero h1, .about-hero p',
   '.about-story-media, .about-story-copy > *',
-  '.about-numbers .num-cell',
   '.vision-panel .vision-body, .mission-panel .vision-body',
   '.about-team .team-head, .about-team .team-row',
   '.about-clients .team-head, .about-clients .client-viewport',
-  '.about-certs .team-head > *, .about-certs .brand-tabs',
-  '.about-certs .profile-card',
+  '.about-certs .head-row > *',
+  '.about-certs .spot-card',
   '.testimonials-side, .quote-stage',
   '.about-cta-copy > *',
   '.newsletter-media, .newsletter-body',
@@ -84,9 +61,9 @@ export default function About({ section }) {
             <span aria-hidden="true">/</span>
             <span className="current">About Us</span>
           </nav>
-          <div className="eyebrow">About Furniconcepts — ISO 9001:2015 Certified</div>
+          <div className="eyebrow">About Furniconcepts | ISO 9001:2015 Certified</div>
           <h1>More Than a<br />Furniture <span className="accent">Brand.</span></h1>
-          <p>We&apos;re more than just a furniture brand — we&apos;re creators of captivating spaces, with a footprint spanning India, Singapore and the Middle East.</p>
+          <p>We&apos;re more than just a furniture brand. We&apos;re creators of captivating spaces, with a footprint spanning India, Singapore and the Middle East.</p>
         </div>
       </section>
 
@@ -96,33 +73,15 @@ export default function About({ section }) {
           <div className="about-story-copy">
             <div className="eyebrow">About Us</div>
             <h2>Crafting Elegance,<br />Inspiring Spaces</h2>
-            <p>At Furniconcepts, we&apos;re more than just a furniture brand — we&apos;re creators of captivating spaces. With a footprint spanning India and key Middle Eastern countries such as UAE, Saudi Arabia, Qatar, and beyond, we specialize in curating exquisite furniture solutions that seamlessly blend elegance with functionality. From timeless classics to cutting-edge designs, each piece in our collection is a testament to our commitment to craftsmanship and quality.</p>
-            <p>Driven by a passion for design and dedication to sustainability, we&apos;re on a mission to redefine the way you experience furniture. Our team of skilled artisans and design experts work tirelessly to bring your vision to life, offering personalized solutions tailored to your unique style and needs. Step into the world of Furniconcepts and unlock the potential to transform your living and working spaces into extraordinary realms of comfort and beauty.</p>
+            <p>At Furniconcepts, we&apos;re more than just a furniture brand. We create spaces that people enjoy working and living in. From India to the UAE, Saudi Arabia and Qatar, we supply furniture that looks good and works hard, from timeless classics to the latest designs. Our design team works with you to find the right pieces for your space, your style and your budget.</p>
             <blockquote className="pull-quote">
-              Furniconcepts is not a furniture company — it is a multi-country workspace brand with scalable potential.
+              Furniconcepts is not a furniture company. It is a multi-country workspace brand with scalable potential.
             </blockquote>
             <Link to="/#catalogs" className="btn-primary">Learn More <Arrow /></Link>
           </div>
           <div className="about-story-media">
             <img src="/images/common/crafted-precision.jpg" alt="Lounge seating in a daylit interior" loading="lazy" />
           </div>
-        </div>
-      </section>
-
-      {/* ---- numbers ---- */}
-      <section className="about-numbers">
-        <div className="wrap">
-          {NUMBERS.map((item) => (
-            <div className="num-cell" key={item.label}>
-              <svg className="num-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
-                {item.icon}
-              </svg>
-              <div>
-                <div className="num-value">{item.num}</div>
-                <div className="num-label">{item.label}</div>
-              </div>
-            </div>
-          ))}
         </div>
       </section>
 
@@ -171,7 +130,6 @@ export default function About({ section }) {
               <h2>The People<br />Behind Furniconcepts</h2>
             </div>
             <div className="team-head-aside">
-              <p>Sales, design, estimation, IT and installation — across the UAE, Saudi Arabia, India and Singapore, all working towards one goal: better spaces.</p>
               <Link to="/career.php" className="link-arrow">Explore Careers <Arrow /></Link>
             </div>
           </div>
@@ -185,7 +143,7 @@ export default function About({ section }) {
           <div className="team-head">
             <div>
               <div className="eyebrow">Our Clients</div>
-              <h2>Trusted by Teams<br />Across the Region</h2>
+              <h2>Trusted by Teams{' '}<br />Across the Region</h2>
             </div>
           </div>
           <div className="client-viewport" ref={clientRail}>
@@ -239,6 +197,9 @@ function Certificates() {
   const [group, setGroup] = useState('all');
   const [open, setOpen] = useState(null);
   const shown = CERTIFICATES.filter((c) => group === 'all' || c.group === group);
+  const rail = useStepRail({ interval: 4000 });
+  /* a new tab starts its row from the first card */
+  useEffect(() => { rail.ref.current?.scrollTo({ left: 0 }); }, [group, rail.ref]);
   const close = useCallback(() => setOpen(null), []);
 
   const view = (e, cert) => {
@@ -248,51 +209,55 @@ function Certificates() {
   };
 
   return (
-    <section className="section about-certs" id="certificates">
+    <section className="section spotlight about-certs" id="certificates">
       <div className="wrap">
-        <div className="team-head">
+        <div className="head-row">
           <div>
             <div className="eyebrow">Certificates</div>
-            <h2>Certified Quality,<br />Trusted Compliance</h2>
+            <h2>Certified Quality, Trusted Compliance</h2>
+          </div>
+          <div className="brand-tabs about-cert-tabs" role="tablist" aria-label="Certificate type">
+            {CERT_GROUPS.map((g) => (
+              <button
+                type="button"
+                role="tab"
+                aria-selected={g.key === group}
+                className={`brand-tab ${g.key === group ? 'active' : ''}`.trim()}
+                onClick={() => setGroup(g.key)}
+                key={g.key}
+              >
+                {g.label}
+              </button>
+            ))}
           </div>
         </div>
-        <div className="brand-tabs about-cert-tabs" role="tablist" aria-label="Certificate type">
-          {CERT_GROUPS.map((g) => (
-            <button
-              type="button"
-              role="tab"
-              aria-selected={g.key === group}
-              className={`brand-tab ${g.key === group ? 'active' : ''}`.trim()}
-              onClick={() => setGroup(g.key)}
-              key={g.key}
-            >
-              {g.label}
-            </button>
-          ))}
-        </div>
-        <div className="profiles-grid" key={group}>
-          {shown.map((c) => (
-            <article className="blog-card profile-card" key={c.pdf}>
-              <a href={c.pdf} target="_blank" rel="noopener" onClick={(e) => view(e, c)}
-                 className="blog-card-media profile-media doc-media" tabIndex={-1} aria-hidden="true">
-                <img src={c.cover} alt="" loading="lazy" />
-                <span className="profile-badge">{CERT_GROUPS.find((g) => g.key === c.group).label.toUpperCase()}</span>
-              </a>
-              <div className="blog-card-body">
-                <span className="blog-tag">{c.meta}</span>
-                <h3><a href={c.pdf} target="_blank" rel="noopener" onClick={(e) => view(e, c)}>{c.title}</a></h3>
-                <p>{c.text}</p>
-                <div className="profile-actions">
-                  <a href={c.pdf} target="_blank" rel="noopener" onClick={(e) => view(e, c)} className="link-arrow">
-                    {c.cta ?? 'View Certificate'} <Arrow size={13} />
-                  </a>
-                  <a href={c.pdf} download className="profile-download" aria-label={`Download ${c.title}`}>
-                    <DownloadIcon />
-                  </a>
-                </div>
-              </div>
-            </article>
-          ))}
+        <div className="catalog-rail">
+          <button type="button" className="rail-arrow prev" aria-label="Previous certificate" onClick={rail.prev}>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round"><path d="M15 6l-6 6 6 6" /></svg>
+          </button>
+          <button type="button" className="rail-arrow next" aria-label="Next certificate" onClick={rail.next}>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round"><path d="M9 6l6 6-6 6" /></svg>
+          </button>
+          <div className="spot-viewport" ref={rail.ref}>
+            <div className="spot-track">
+              {shown.map((c) => (
+                <a href={c.pdf} target="_blank" rel="noopener" onClick={(e) => view(e, c)} className="spot-card cert-card" key={c.pdf}>
+                  <div className="spot-img cert-img">
+                    <img src={c.cover} alt="" loading="lazy" />
+                  </div>
+                  <div className="spot-body">
+                    <div className="spot-meta">
+                      <span className="spot-source">{CERT_GROUPS.find((g) => g.key === c.group).label}</span>
+                    </div>
+                    <span className="spot-tag cert-meta">{c.meta}</span>
+                    <h3 className="spot-title">{c.title}</h3>
+                    <p className="spot-text">{c.text}</p>
+                    <span className="spot-date">{c.cta ?? 'View Certificate'} <Arrow size={12} width={2.6} /></span>
+                  </div>
+                </a>
+              ))}
+            </div>
+          </div>
         </div>
       </div>
       {open && <PdfViewer file={open} onClose={close} />}

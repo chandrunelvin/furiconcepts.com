@@ -1,6 +1,9 @@
 import { useState } from 'react';
 import { useParallax } from '../lib/parallax.js';
 
+/** Every FAQ list shows at most this many questions. */
+const MAX_FAQS = 5;
+
 /**
  * The FAQ band shared by the brand and category pages: copy on the left over a
  * drifting photo, questions on the right that open one at a time.
@@ -32,7 +35,7 @@ export default function FaqSection({
           {intro && <p>{intro}</p>}
         </div>
         <div className="brand-faq-list">
-          {items.map((item, i) => (
+          {items.slice(0, MAX_FAQS).map((item, i) => (
             <div className={`brand-faq-item ${open === i ? 'open' : ''}`.trim()} key={item.q}>
               <button
                 type="button"

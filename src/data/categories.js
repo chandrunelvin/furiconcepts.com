@@ -20,9 +20,9 @@ export const CATEGORY_PAGES = [
     "name": "Acoustic Pods",
     "hero": "/images/projects/al-futtaim-ho-phone-booth/banner.webp",
     "title": "Acoustic Pods & Sound Solutions Suppliers",
-    "titleAccent": "in Dubai, India & Singapore",
+    "titleAccent": "in UAE, IN, SG",
     "eyebrow": "Acoustic Pods & Solutions",
-    "summary": "Furniconcepts supplies Musepod and Zumbooth acoustic pods and phone booths, plus acoustic panels, across Dubai, India and Singapore. Musepod cuts noise by up to 30dB; Zumbooth offers sensor-controlled lighting and ventilation with GREENGUARD certification.",
+    "summary": "Musepod and Zumbooth acoustic pods, phone booths and panels, supplied across Dubai, India and Singapore.",
     "stats": [
       {
         "value": "Up to 30dB",
@@ -94,134 +94,6 @@ export const CATEGORY_PAGES = [
                 "Wall and ceiling treatments that calm the noise across a whole floor, no booth required."
               ]
             }
-          ]
-        }
-      ],
-      [
-        {
-          "type": "heading",
-          "title": "Musepod vs Zumbooth"
-        },
-        {
-          "type": "table",
-          "columns": [
-            "",
-            "Musepod",
-            "Zumbooth"
-          ],
-          "rows": [
-            [
-              "Noise reduction",
-              "Up to 30dB",
-              "On request"
-            ],
-            [
-              "Sizes",
-              "Solo to collaboration spaces",
-              "On request"
-            ],
-            [
-              "Smart features",
-              "On request",
-              "Sensor lighting and ventilation, occupancy light"
-            ],
-            [
-              "Materials",
-              "Recycled, FSC-certified boards",
-              "90%+ recycled, aluminium frame"
-            ],
-            [
-              "Certification",
-              "FSC",
-              "GREENGUARD"
-            ],
-            [
-              "Colours",
-              "Custom finishes",
-              "200+ combinations"
-            ],
-            [
-              "Warranty",
-              "On request",
-              "2 years"
-            ]
-          ]
-        }
-      ],
-      [
-        {
-          "type": "heading",
-          "title": "Pod vs Panel"
-        },
-        {
-          "type": "table",
-          "columns": [
-            "",
-            "Acoustic Pod",
-            "Acoustic Panels"
-          ],
-          "rows": [
-            [
-              "Privacy",
-              "Full visual and sound",
-              "None"
-            ],
-            [
-              "Noise control",
-              "Inside the pod",
-              "Across the whole room"
-            ],
-            [
-              "Cost",
-              "Higher",
-              "Lower"
-            ],
-            [
-              "Best for",
-              "Calls, focus work",
-              "Reducing general office noise"
-            ]
-          ]
-        }
-      ],
-      [
-        {
-          "type": "columns",
-          "columns": [
-            [
-              {
-                "type": "heading",
-                "title": "How to Choose"
-              },
-              {
-                "type": "panel",
-                "blocks": [
-                  {
-                    "type": "checklist",
-                    "items": [
-                      "Mostly solo calls? A focus pod or phone booth.",
-                      "Small team huddles? A meeting pod.",
-                      "The whole floor feels loud? Start with panels.",
-                      "ESG targets? Both brands have strong sustainability credentials."
-                    ]
-                  }
-                ]
-              }
-            ],
-            [
-              {
-                "type": "heading",
-                "title": "Built For"
-              },
-              {
-                "type": "tags",
-                "items": [
-                  "Open-plan offices",
-                  "Hybrid teams on constant video calls",
-                  "Workplaces with sustainability goals"
-                ]
-              }
-            ]
           ]
         }
       ],
@@ -329,7 +201,7 @@ export const CATEGORY_PAGES = [
     "hero": "/images/projects/al-futtaim-ho-phone-booth/06.webp",
     "title": "Acoustic Solutions: Silent Pods, Office Phone Booths & Acoustic Panels",
     "eyebrow": "Workspace Acoustics",
-    "summary": "As open-plan workplaces become more common, businesses across Dubai, India, and Singapore are investing in acoustic solutions to improve focus, privacy, and productivity. Furniconcepts delivers silent pods, office phone booths, acoustic wall panels, and ceiling systems tailored for corporate, educational, and commercial environments.",
+    "summary": "Open-plan offices need quiet spaces. Furniconcepts supplies silent pods, phone booths and acoustic wall and ceiling panels for offices, schools and commercial spaces across Dubai, India and Singapore.",
     "stats": [
       {
         "value": "3 Regions",
@@ -345,231 +217,6 @@ export const CATEGORY_PAGES = [
       }
     ],
     "sections": [
-      [
-        {
-          "type": "heading",
-          "title": "Acoustic Panels: Wall & Ceiling Solutions",
-          "body": [
-            "Acoustic panels improve speech clarity and reduce echo in everything from conference rooms and auditoriums to healthcare and education spaces."
-          ]
-        },
-        {
-          "type": "cards",
-          "items": [
-            {
-              "title": "Acoustic Wall Panels India",
-              "body": [
-                "Acoustic wall panels are designed to absorb sound and reduce echo in work and learning environments."
-              ],
-              "list": [
-                "Conference rooms",
-                "Auditoriums",
-                "Offices",
-                "Studios",
-                "Better acoustics",
-                "Clearer speech",
-                "Enhanced interior design"
-              ]
-            },
-            {
-              "title": "Acoustic Ceiling Panels Dubai",
-              "body": [
-                "Ceiling panels help control reflected sound from overhead surfaces and are especially useful in hard-finished commercial interiors."
-              ],
-              "list": [
-                "Offices",
-                "Airports",
-                "Hospitals",
-                "Educational institutions",
-                "Fire-resistant materials",
-                "Modern designs",
-                "Easy maintenance"
-              ]
-            }
-          ]
-        }
-      ],
-      [
-        {
-          "type": "heading",
-          "title": "Pods vs Panels",
-          "body": [
-            "Pods and panels solve different acoustic problems. Pods create enclosed private spaces, while panels improve overall sound absorption and speech comfort."
-          ]
-        },
-        {
-          "type": "table",
-          "columns": [
-            "Feature",
-            "Acoustic Pods",
-            "Acoustic Panels"
-          ],
-          "rows": [
-            [
-              "Purpose",
-              "Private space",
-              "Sound absorption"
-            ],
-            [
-              "Installation",
-              "Modular",
-              "Fixed"
-            ],
-            [
-              "Cost",
-              "High",
-              "Medium"
-            ],
-            [
-              "Flexibility",
-              "High",
-              "Low"
-            ],
-            [
-              "Best For",
-              "Calls and meetings",
-              "Noise control"
-            ]
-          ]
-        }
-      ],
-      [
-        {
-          "type": "columns",
-          "columns": [
-            [
-              {
-                "type": "heading",
-                "title": "Pricing Overview: Dubai, India & Singapore",
-                "body": [
-                  "Pricing depends on size, acoustic specification, finish quality, and the complexity of the product or installation."
-                ]
-              },
-              {
-                "type": "table",
-                "columns": [
-                  "Acoustic Pods Pricing",
-                  "Price Range"
-                ],
-                "rows": [
-                  [
-                    "Dubai",
-                    "AED 15,000 - AED 80,000+"
-                  ],
-                  [
-                    "India",
-                    "Rs. 2,00,000 - Rs. 10,00,000+"
-                  ],
-                  [
-                    "Singapore",
-                    "SGD 5,000 - SGD 25,000+"
-                  ]
-                ]
-              },
-              {
-                "type": "table",
-                "columns": [
-                  "Acoustic Panels Pricing",
-                  "Price Range"
-                ],
-                "rows": [
-                  [
-                    "Wall Panels",
-                    "AED 100 - AED 500 / panel"
-                  ],
-                  [
-                    "Ceiling Panels",
-                    "AED 150 - AED 700 / panel"
-                  ]
-                ]
-              }
-            ],
-            [
-              {
-                "type": "heading",
-                "title": "Applications",
-                "body": [
-                  "Acoustic solutions are now part of modern planning for focused work, speech privacy, and better interior comfort."
-                ]
-              },
-              {
-                "type": "tags",
-                "items": [
-                  "Corporate offices",
-                  "Co-working spaces",
-                  "Educational institutions",
-                  "Healthcare facilities",
-                  "Airports and public spaces"
-                ]
-              }
-            ]
-          ]
-        }
-      ],
-      [
-        {
-          "type": "heading",
-          "title": "Why Choose Furniconcepts",
-          "body": [
-            "Furniconcepts supports acoustic projects with the right mix of workspace privacy products, panel systems, and coordinated project execution."
-          ]
-        },
-        {
-          "type": "cards",
-          "items": [
-            {
-              "title": "Premium Acoustic Solutions",
-              "body": [
-                "High-performance pods, booths, wall panels, and ceiling systems for commercial-grade use."
-              ]
-            },
-            {
-              "title": "Custom Design Capability",
-              "body": [
-                "Solutions can be matched to layout, capacity, privacy, and design goals."
-              ]
-            },
-            {
-              "title": "Global Presence",
-              "body": [
-                "Project support across UAE, India, and Singapore with consistent commercial standards."
-              ]
-            },
-            {
-              "title": "End-to-End Execution",
-              "body": [
-                "From planning and selection to supply and installation, delivery stays coordinated under one team."
-              ]
-            }
-          ]
-        }
-      ],
-      [
-        {
-          "type": "heading",
-          "title": "Explore More Acoustic Solutions",
-          "body": [
-            "Use these guides to compare acoustic products and plan the right privacy and sound-control strategy for your workplace."
-          ]
-        },
-        {
-          "type": "links",
-          "items": [
-            {
-              "label": "Compare acoustic pods and phone booths",
-              "href": "/acoustic-pods-vs-phone-booths.php"
-            },
-            {
-              "label": "Explore acoustic wall and ceiling solutions",
-              "href": "/acoustic-wall-panels-ceiling-solutions.php"
-            },
-            {
-              "label": "Learn how to soundproof an office",
-              "href": "/how-to-soundproof-office.php"
-            }
-          ]
-        }
-      ],
       [
         {
           "type": "heading",
@@ -591,7 +238,7 @@ export const CATEGORY_PAGES = [
             },
             {
               "q": "What is the cost of acoustic pods in Dubai?",
-              "a": "Acoustic pod pricing in Dubai commonly ranges from AED 15,000 to AED 80,000 or more depending on size, finish, and features."
+              "a": "Pricing depends on the pod's size, finish and features. Contact us for a quotation for your project."
             },
             {
               "q": "Do acoustic panels reduce noise?",
@@ -680,9 +327,9 @@ export const CATEGORY_PAGES = [
     "hero": "/images/projects/etisalat-hq-auditorium/banner.webp",
     "card": "/images/categories/auditorium-seating-card.webp",
     "title": "Auditorium Seating Suppliers",
-    "titleAccent": "in Dubai, India & Singapore",
+    "titleAccent": "in UAE, IN, SG",
     "eyebrow": "Auditorium Seating",
-    "summary": "Furniconcepts supplies fixed, retractable and custom VIP auditorium seating in Dubai, India and Singapore as the regional distributor for Leadcom and Audia Italia. Every project includes 3D layout planning, BIFMA-standard construction and on-site installation, with 7-day delivery available from Dubai stock.",
+    "summary": "Fixed, retractable and VIP auditorium seating from Leadcom and Audia Italia, with layout planning and installation across Dubai, India and Singapore.",
     "stats": [
       {
         "value": "7 Days",
@@ -746,96 +393,6 @@ export const CATEGORY_PAGES = [
                 "Italian-made seating tailored to your venue: finishes, sizes, armrests and upholstery. You'll see the full layout in 3D before anything goes into production."
               ]
             }
-          ]
-        }
-      ],
-      [
-        {
-          "type": "heading",
-          "title": "Compare Seating Types"
-        },
-        {
-          "type": "table",
-          "columns": [
-            "",
-            "Fixed",
-            "Retractable (Telescopic)",
-            "Custom VIP (Audia Italia)"
-          ],
-          "rows": [
-            [
-              "Best for",
-              "Dedicated halls",
-              "Multi-use spaces",
-              "Premium theatres, VIP rows"
-            ],
-            [
-              "Floor flexibility",
-              "None",
-              "Folds flat against wall",
-              "None"
-            ],
-            [
-              "Key feature",
-              "22\" pitch, 100,000-cycle cushioning",
-              "Moves up to 50 rows at once",
-              "Fully tailored finishes"
-            ],
-            [
-              "Warranty",
-              "On request",
-              "5 years on mechanism",
-              "On request"
-            ],
-            [
-              "Lead time",
-              "On request",
-              "40–45 days (15–18 days premium UAE)",
-              "On request"
-            ]
-          ]
-        }
-      ],
-      [
-        {
-          "type": "columns",
-          "columns": [
-            [
-              {
-                "type": "heading",
-                "title": "How to Choose"
-              },
-              {
-                "type": "panel",
-                "blocks": [
-                  {
-                    "type": "checklist",
-                    "items": [
-                      "Will the room host only seated events? Choose fixed.",
-                      "Does it need to become open floor space? Choose retractable.",
-                      "Is it a premium or branded venue? Consider Audia Italia.",
-                      "Are sessions longer than two hours? Prioritise lumbar support and cushioning.",
-                      "Is it a lecture hall? Add tablet arms."
-                    ]
-                  }
-                ]
-              }
-            ],
-            [
-              {
-                "type": "heading",
-                "title": "Built For"
-              },
-              {
-                "type": "tags",
-                "items": [
-                  "Corporate town halls",
-                  "Cinemas and multiplexes",
-                  "Lecture halls",
-                  "School gyms that double as auditoriums"
-                ]
-              }
-            ]
           ]
         }
       ],
@@ -946,9 +503,9 @@ export const CATEGORY_PAGES = [
     "name": "Hotel Furniture",
     "hero": "/images/projects/le-royal-meridian/banner.webp",
     "title": "Hotel & Hospitality Furniture Suppliers",
-    "titleAccent": "in Dubai, India & Singapore",
+    "titleAccent": "in UAE, IN, SG",
     "eyebrow": "Hospitality Furniture",
-    "summary": "Furniconcepts furnishes hotels, resorts, restaurants and cafés across Dubai, India and Singapore, with SCAB Italy lounge seating, Worklyffe lobby and café furniture, and outdoor umbrella systems for pools and terraces.",
+    "summary": "Hotel, restaurant and café furniture from SCAB Italy and Worklyffe, plus outdoor umbrellas, across Dubai, India and Singapore.",
     "stats": [
       {
         "value": "Lobby to Poolside",
@@ -1020,114 +577,6 @@ export const CATEGORY_PAGES = [
                 "href": "/outdoor-indoor-umbrella-supplier.php"
               }
             }
-          ]
-        }
-      ],
-      [
-        {
-          "type": "heading",
-          "title": "What We Furnish"
-        },
-        {
-          "type": "table",
-          "columns": [
-            "Space",
-            "What we supply",
-            "Brand"
-          ],
-          "rows": [
-            [
-              "Lobby & lounge",
-              "Designer lounge seating",
-              "SCAB Italy"
-            ],
-            [
-              "Cafés & informal areas",
-              "Collaborative furniture",
-              "Worklyffe"
-            ],
-            [
-              "Guest & public areas",
-              "Durable, brand-aligned furniture",
-              "On request"
-            ],
-            [
-              "Pool & terrace",
-              "Umbrella systems",
-              "On request"
-            ]
-          ]
-        }
-      ],
-      [
-        {
-          "type": "heading",
-          "title": "Hotel vs Cruise Furniture"
-        },
-        {
-          "type": "table",
-          "columns": [
-            "",
-            "Hotel",
-            "Cruise / Marine"
-          ],
-          "rows": [
-            [
-              "Materials",
-              "Commercial grade",
-              "Marine-grade stainless steel"
-            ],
-            [
-              "Compliance",
-              "Local codes",
-              "IMO/SOLAS"
-            ],
-            [
-              "Finish",
-              "Standard",
-              "Salt-corrosion resistant"
-            ]
-          ]
-        }
-      ],
-      [
-        {
-          "type": "columns",
-          "columns": [
-            [
-              {
-                "type": "heading",
-                "title": "How to Choose"
-              },
-              {
-                "type": "panel",
-                "blocks": [
-                  {
-                    "type": "checklist",
-                    "items": [
-                      "Start with your brand story. Furniture should reflect it.",
-                      "Pick hard-wearing pieces for high-traffic public areas.",
-                      "Plan indoor and outdoor spaces together for a consistent look.",
-                      "Balance comfort with space so guests never feel crowded."
-                    ]
-                  }
-                ]
-              }
-            ],
-            [
-              {
-                "type": "heading",
-                "title": "Built For"
-              },
-              {
-                "type": "tags",
-                "items": [
-                  "Hotels and resorts",
-                  "Restaurants and bars",
-                  "Cafés and informal spaces"
-                ]
-              }
-            ]
           ]
         }
       ],
@@ -1227,9 +676,9 @@ export const CATEGORY_PAGES = [
     "hero": "/images/categories/hospital-furniture-hero.webp",
     "card": "/images/categories/hospital-furniture-card.webp",
     "title": "Healthcare & Hospital Furniture Suppliers",
-    "titleAccent": "in Dubai, India & Singapore",
+    "titleAccent": "in UAE, IN, SG",
     "eyebrow": "Healthcare Furniture",
-    "summary": "Furniconcepts supplies Nitrocare hospital beds, ICU beds, stretchers, exam chairs and lab furniture across Dubai, India and Singapore. Nitrocare is an award-winning manufacturer with a 60,000m² facility and Red Dot and German Design Award wins.",
+    "summary": "Award-winning Nitrocare hospital beds, ICU beds, stretchers and exam chairs, supplied across Dubai, India and Singapore.",
     "stats": [
       {
         "value": "60,000m²",
@@ -1300,59 +749,6 @@ export const CATEGORY_PAGES = [
       [
         {
           "type": "heading",
-          "title": "Hospital Beds at a Glance"
-        },
-        {
-          "type": "table",
-          "columns": [
-            "Model",
-            "Use",
-            "Key features"
-          ],
-          "rows": [
-            [
-              "NITRO HB 7240",
-              "Home care",
-              "Four motors"
-            ],
-            [
-              "NITRO HB 8140",
-              "Intensive care",
-              "Height-adjustable, Trendelenburg, CPR release, 18cm X-ray extension"
-            ]
-          ]
-        }
-      ],
-      [
-        {
-          "type": "heading",
-          "title": "Clinical Features Explained"
-        },
-        {
-          "type": "table",
-          "columns": [
-            "Feature",
-            "What it does"
-          ],
-          "rows": [
-            [
-              "Trendelenburg positioning",
-              "Tilts the bed head-down for clinical procedures"
-            ],
-            [
-              "CPR quick-release",
-              "Flattens the bed instantly in an emergency"
-            ],
-            [
-              "X-ray extension (18cm)",
-              "Allows imaging without moving the patient"
-            ]
-          ]
-        }
-      ],
-      [
-        {
-          "type": "heading",
           "title": "Nitrocare Awards"
         },
         {
@@ -1365,48 +761,6 @@ export const CATEGORY_PAGES = [
             "Good Industrial Design",
             "International Design Award",
             "Product Design Award"
-          ]
-        }
-      ],
-      [
-        {
-          "type": "columns",
-          "columns": [
-            [
-              {
-                "type": "heading",
-                "title": "How to Choose"
-              },
-              {
-                "type": "panel",
-                "blocks": [
-                  {
-                    "type": "checklist",
-                    "items": [
-                      "Match bed type to care level: home, ward or ICU.",
-                      "For ICUs, look for CPR release and imaging compatibility.",
-                      "Plan stretchers and trolleys alongside beds for smooth patient flow.",
-                      "Add clinic exam chairs and lab furniture to the same order."
-                    ]
-                  }
-                ]
-              }
-            ],
-            [
-              {
-                "type": "heading",
-                "title": "Built For"
-              },
-              {
-                "type": "tags",
-                "items": [
-                  "Hospitals and ICUs",
-                  "Clinics and outpatient centres",
-                  "Home care",
-                  "In-hospital labs"
-                ]
-              }
-            ]
           ]
         }
       ],
@@ -1510,9 +864,9 @@ export const CATEGORY_PAGES = [
     "hero": "/images/projects/etisalat-hq/banner.webp",
     "card": "/images/categories/lounge-seating-card.webp",
     "title": "Lounge Seating Suppliers",
-    "titleAccent": "in Dubai, India & Singapore",
+    "titleAccent": "in UAE, IN, SG",
     "eyebrow": "Lounge Seating",
-    "summary": "Furniconcepts supplies lounge chairs, modular sofas and collaborative seating for hotels, offices, coworking spaces and cafés across Dubai, India and Singapore, from SCAB Italy and Worklyffe, including the curved, modular Sofa Vortex.",
+    "summary": "Lounge chairs, modular sofas and collaborative seating from SCAB Italy and Worklyffe, across Dubai, India and Singapore.",
     "stats": [
       {
         "value": "SCAB Italy",
@@ -1584,84 +938,6 @@ export const CATEGORY_PAGES = [
       [
         {
           "type": "heading",
-          "title": "Lounge Seating by Space"
-        },
-        {
-          "type": "table",
-          "columns": [
-            "Space",
-            "Recommended",
-            "Why"
-          ],
-          "rows": [
-            [
-              "Hotel lobby",
-              "SCAB Italy",
-              "Designer look, durable materials"
-            ],
-            [
-              "Office breakout",
-              "SCAB Italy, Sofa Vortex",
-              "Works across hospitality and workspace"
-            ],
-            [
-              "Coworking & cafés",
-              "Worklyffe",
-              "Built for collaborative use"
-            ],
-            [
-              "Reception",
-              "Sofa Vortex",
-              "Curved, flexible arrangement"
-            ]
-          ]
-        }
-      ],
-      [
-        {
-          "type": "columns",
-          "columns": [
-            [
-              {
-                "type": "heading",
-                "title": "How to Choose"
-              },
-              {
-                "type": "panel",
-                "blocks": [
-                  {
-                    "type": "checklist",
-                    "items": [
-                      "Decide the mood: relaxed, social or semi-formal.",
-                      "Modular sofas adapt as your layout changes.",
-                      "Choose durable fabrics for busy spaces.",
-                      "Match lounge pieces to the rest of your interior."
-                    ]
-                  }
-                ]
-              }
-            ],
-            [
-              {
-                "type": "heading",
-                "title": "Built For"
-              },
-              {
-                "type": "tags",
-                "items": [
-                  "Hotel lobbies",
-                  "Corporate breakout spaces",
-                  "Coworking spaces and cafés",
-                  "Waiting areas"
-                ]
-              }
-            ]
-          ]
-        }
-      ],
-      [
-        {
-          "type": "heading",
           "title": "Brands"
         },
         {
@@ -1726,9 +1002,9 @@ export const CATEGORY_PAGES = [
     "name": "Office Furniture",
     "hero": "/images/projects/cushman/banner.webp",
     "title": "Office & Workplace Furniture Suppliers",
-    "titleAccent": "in Dubai, India & Singapore",
+    "titleAccent": "in UAE, IN, SG",
     "eyebrow": "Office & Workplace Furniture",
-    "summary": "Furniconcepts supplies desks, ergonomic chairs, meeting furniture, storage and cable management across Dubai, India and Singapore from brands including Gebbwork, Markant, Cavaletti, Forma5 and Worklyffe, for everything from startup offices to full headquarters fit-outs.",
+    "summary": "Desks, ergonomic chairs, meeting furniture and storage from Gebbwork, Cavaletti, Forma5 and more, across Dubai, India and Singapore.",
     "stats": [
       {
         "value": "10+ Brands",
@@ -1792,192 +1068,6 @@ export const CATEGORY_PAGES = [
                 "Broad Power monitor arms, cable organisers and desk power modules. Clean desks, safer cables."
               ]
             }
-          ]
-        }
-      ],
-      [
-        {
-          "type": "heading",
-          "title": "What We Supply, and From Whom"
-        },
-        {
-          "type": "table",
-          "columns": [
-            "Category",
-            "Brands",
-            "Highlights"
-          ],
-          "rows": [
-            [
-              "Desks & workstations",
-              "Gebbwork, Markant, Libero Italy, Versalink",
-              "Sit-stand desks with silent motors and presets"
-            ],
-            [
-              "Ergonomic seating",
-              "Cavaletti, Forma5, Bestuhl, Merryfair, Jwesys",
-              "Synchro-tilt, lumbar, seat-depth adjustment"
-            ],
-            [
-              "Meeting & training",
-              "Worklyffe",
-              "Meeting and training tables"
-            ],
-            [
-              "Storage",
-              "Gebbwork, Safe Lockers",
-              "Cabinets, bookcases, secure lockers"
-            ],
-            [
-              "Power & cables",
-              "Broad Power",
-              "Monitor arms, cable organisers, desk power"
-            ]
-          ]
-        }
-      ],
-      [
-        {
-          "type": "heading",
-          "title": "Budget Guide"
-        },
-        {
-          "type": "table",
-          "columns": [
-            "Tier",
-            "Good for",
-            "Example brands"
-          ],
-          "rows": [
-            [
-              "Budget-friendly",
-              "Startups, quick setups",
-              "Versalink"
-            ],
-            [
-              "Mid-range",
-              "Growing teams",
-              "Gebbwork, Worklyffe"
-            ],
-            [
-              "Premium",
-              "HQs, executive floors",
-              "Markant, Forma5, Cavaletti"
-            ]
-          ]
-        }
-      ],
-      [
-        {
-          "type": "heading",
-          "title": "Popular Picks"
-        },
-        {
-          "type": "table",
-          "columns": [
-            "Product",
-            "Type",
-            "Shop",
-            "Price"
-          ],
-          "rows": [
-            [
-              "Nero Task Chair with Headrest",
-              "Task chair",
-              "UAE",
-              "AED 2,100"
-            ],
-            [
-              "Bianco Task Chair O2B (Grey Mesh)",
-              "Task chair",
-              "UAE",
-              "AED 1,150"
-            ],
-            [
-              "Bianco Task Chair O2B (Foam Seat)",
-              "Task chair",
-              "UAE",
-              "AED 1,100"
-            ],
-            [
-              "Warren Swivel Chair",
-              "Meeting chair",
-              "UAE",
-              "AED 1,100"
-            ],
-            [
-              "Haven HB Massage Chair",
-              "Executive chair",
-              "India",
-              "Price on request"
-            ],
-            [
-              "Boss HB / MB Chair",
-              "Executive chair",
-              "India",
-              "Price on request"
-            ],
-            [
-              "Butterfly HB Designer Chair",
-              "Reception accent chair",
-              "India",
-              "Price on request"
-            ],
-            [
-              "Optimus Eco HB Chair",
-              "Eco ergonomic chair",
-              "India",
-              "Price on request"
-            ],
-            [
-              "Sofa Vortex",
-              "Modular reception sofa",
-              "India",
-              "Price on request"
-            ]
-          ]
-        }
-      ],
-      [
-        {
-          "type": "columns",
-          "columns": [
-            [
-              {
-                "type": "heading",
-                "title": "Ergonomic Chair Checklist"
-              },
-              {
-                "type": "panel",
-                "blocks": [
-                  {
-                    "type": "checklist",
-                    "items": [
-                      "Adjustable seat height and depth",
-                      "Adjustable lumbar support",
-                      "Adjustable armrests",
-                      "Headrest for long desk hours",
-                      "Synchro-tilt recline"
-                    ]
-                  }
-                ]
-              }
-            ],
-            [
-              {
-                "type": "heading",
-                "title": "Built For"
-              },
-              {
-                "type": "tags",
-                "items": [
-                  "Corporate headquarters",
-                  "Startups",
-                  "Hybrid and health-focused workplaces",
-                  "Government and institutional control rooms"
-                ]
-              }
-            ]
           ]
         }
       ],
@@ -2109,7 +1199,7 @@ export const CATEGORY_PAGES = [
     "hero": "/images/blog/outdoor-umbrellas/hero.webp",
     "title": "Outdoor & Indoor Umbrellas",
     "eyebrow": "Outdoor & Indoor Umbrellas",
-    "summary": "Choose your region to explore commercial umbrella supplier pages for Dubai, India, and Singapore across hospitality, healthcare, dining, and premium outdoor spaces.",
+    "summary": "Commercial umbrellas for hotels, restaurants and outdoor spaces. Choose your region: Dubai, India or Singapore.",
     "sections": [
       [
         {
@@ -2166,7 +1256,7 @@ export const CATEGORY_PAGES = [
     "title": "Outdoor & Indoor Umbrella Supplier",
     "titleAccent": "in Dubai",
     "eyebrow": "Dubai Umbrella Solutions",
-    "summary": "Dubai projects demand umbrella systems that combine premium visual quality with strong outdoor performance. Furniconcepts supplies commercial umbrella solutions for hotels, restaurants, hospitals, and lifestyle environments across Dubai and the wider UAE.",
+    "summary": "Premium commercial umbrellas for hotels, restaurants and outdoor spaces across Dubai and the UAE.",
     "stats": [
       {
         "value": "Heat Ready",
@@ -2182,59 +1272,6 @@ export const CATEGORY_PAGES = [
       }
     ],
     "sections": [
-      [
-        {
-          "type": "columns",
-          "columns": [
-            [
-              {
-                "type": "heading",
-                "eyebrow": "Why It Matters",
-                "title": "Why Commercial Umbrellas Matter",
-                "body": [
-                  "In Dubai, umbrella systems are part of the business experience. They improve comfort, support outdoor revenue, and strengthen the look of premium guest spaces."
-                ]
-              },
-              {
-                "type": "panel",
-                "blocks": [
-                  {
-                    "type": "checklist",
-                    "items": [
-                      "Premium outdoor and indoor umbrella solutions for hotels, restaurants, hospitals, and commercial developments",
-                      "Built for Dubai conditions with strong emphasis on heat resistance, UV protection, and durability",
-                      "Shade systems for poolside, outdoor dining, waiting areas, and guest-facing spaces",
-                      "Support for customization, branding, supply, and installation coordination",
-                      "Regional delivery capability across UAE, India, and Singapore"
-                    ]
-                  }
-                ]
-              }
-            ],
-            [
-              {
-                "type": "heading",
-                "eyebrow": "Where We Work",
-                "title": "Key Dubai Locations We Serve",
-                "body": [
-                  "We support umbrella projects across major hospitality, healthcare, leisure, and mixed-use districts."
-                ]
-              },
-              {
-                "type": "tags",
-                "items": [
-                  "Dubai Marina",
-                  "Palm Jumeirah",
-                  "Downtown Dubai",
-                  "JBR",
-                  "Al Barsha",
-                  "Dubai Healthcare City"
-                ]
-              }
-            ]
-          ]
-        }
-      ],
       [
         {
           "type": "heading",
@@ -2350,212 +1387,6 @@ export const CATEGORY_PAGES = [
       [
         {
           "type": "heading",
-          "title": "Cost of Commercial Umbrellas in Dubai (2026)",
-          "body": [
-            "Pricing varies based on umbrella type, structural quality, canopy specification, shade size, and branding needs."
-          ]
-        },
-        {
-          "type": "table",
-          "columns": [
-            "Product",
-            "Estimated Cost Range"
-          ],
-          "rows": [
-            [
-              "Compact commercial umbrellas",
-              "AED 500 - AED 2,000+"
-            ],
-            [
-              "Center pole umbrellas",
-              "AED 1,000 - AED 4,000+"
-            ],
-            [
-              "Cantilever umbrellas",
-              "AED 2,500 - AED 12,000+"
-            ],
-            [
-              "Custom premium umbrella systems",
-              "Project-based pricing"
-            ]
-          ]
-        },
-        {
-          "type": "text",
-          "text": [
-            "For a detailed breakdown by type and region, read our ",
-            {
-              "label": "Commercial Umbrella Pricing Guide",
-              "href": "/commercial-umbrella-pricing-guide.php"
-            },
-            "."
-          ]
-        }
-      ],
-      [
-        {
-          "type": "heading",
-          "title": "How to Choose the Right Umbrella Supplier",
-          "body": [
-            "The right supplier should understand climate performance, project presentation, customization, and commercial execution quality."
-          ]
-        },
-        {
-          "type": "cards",
-          "items": [
-            {
-              "title": "Climate Suitability",
-              "body": [
-                "Dubai projects need umbrella systems designed for harsh sun, UV exposure, and demanding outdoor use."
-              ]
-            },
-            {
-              "title": "Commercial Experience",
-              "body": [
-                "Suppliers with hospitality, healthcare, and large commercial project experience are better suited for Dubai environments."
-              ]
-            },
-            {
-              "title": "Customization Range",
-              "body": [
-                "Premium spaces often need tailored dimensions, colors, branding, and structural choices."
-              ]
-            },
-            {
-              "title": "Installation Coordination",
-              "body": [
-                "Proper planning and installation support help deliver long-term performance and better visual integration."
-              ]
-            },
-            {
-              "title": "Visual Quality",
-              "body": [
-                "Dubai projects place strong value on polished design, so appearance matters alongside performance."
-              ]
-            }
-          ]
-        }
-      ],
-      [
-        {
-          "type": "heading",
-          "title": "Global Presence: UAE | Singapore | India",
-          "body": [
-            "Beyond Dubai, Furniconcepts supports umbrella projects across multiple regional commercial markets."
-          ]
-        },
-        {
-          "type": "cards",
-          "style": "pillars",
-          "items": [
-            {
-              "title": "UAE",
-              "body": [
-                "Dubai and wider UAE hospitality, healthcare, and commercial projects supported with premium umbrella systems."
-              ],
-              "icon": "globe"
-            },
-            {
-              "title": "Singapore",
-              "body": [
-                "Compact premium urban spaces supported with space-smart umbrella formats and project coordination."
-              ],
-              "icon": "globe"
-            },
-            {
-              "title": "India",
-              "body": [
-                "Hospitality and institutional projects supported with scalable commercial umbrella solutions."
-              ],
-              "icon": "globe"
-            }
-          ]
-        }
-      ],
-      [
-        {
-          "type": "columns",
-          "image": "/images/blog/outdoor-umbrellas/hero.webp",
-          "columns": [
-            [
-              {
-                "type": "heading",
-                "title": "Applications",
-                "body": [
-                  "Our umbrella systems support hospitality, healthcare, commercial, and lifestyle spaces that rely on usable shaded environments."
-                ]
-              },
-              {
-                "type": "panel",
-                "blocks": [
-                  {
-                    "type": "checklist",
-                    "items": [
-                      "Hotels & Resorts",
-                      "Restaurants & Cafes",
-                      "Hospitals & Healthcare",
-                      "Corporate & Mixed-Use Projects",
-                      "Retail & Public Lifestyle Spaces"
-                    ]
-                  }
-                ]
-              }
-            ],
-            [
-              {
-                "type": "heading",
-                "title": "Why Choose Furniconcepts",
-                "body": [
-                  "Premium product direction, commercial project understanding, and regional execution support for Dubai umbrella projects."
-                ]
-              },
-              {
-                "type": "stats",
-                "items": [
-                  {
-                    "value": "Premium",
-                    "label": "Project-grade umbrella systems for hotels, resorts and dining, not low-spec retail supply"
-                  },
-                  {
-                    "value": "Custom",
-                    "label": "Size, canopy, finish and branding tailored to each hospitality or healthcare space"
-                  },
-                  {
-                    "value": "End-to-End",
-                    "label": "Planning, supply, customization and installation coordinated by one team"
-                  },
-                  {
-                    "value": "3 Regions",
-                    "label": "Execution support across UAE, India and Singapore for multi-market brands"
-                  }
-                ]
-              }
-            ]
-          ]
-        }
-      ],
-      [
-        {
-          "type": "heading",
-          "title": "Future Trends in Commercial Umbrellas",
-          "body": [
-            "Dubai demand is moving toward stronger premium presentation, larger branded guest zones, and more advanced shade formats."
-          ]
-        },
-        {
-          "type": "badges",
-          "items": [
-            "Larger demand for luxury outdoor guest experiences",
-            "More branded umbrella systems for hospitality and retail",
-            "Integrated lighting and enhanced night-time usability",
-            "Greater adoption of cantilever and premium shade formats",
-            "Higher focus on durable commercial materials"
-          ]
-        }
-      ],
-      [
-        {
-          "type": "heading",
           "title": "FAQs",
           "body": [
             "Quick answers for Dubai hospitality, healthcare, and commercial umbrella projects."
@@ -2578,7 +1409,7 @@ export const CATEGORY_PAGES = [
             },
             {
               "q": "What is the cost of commercial umbrellas in Dubai?",
-              "a": "Commercial umbrella prices in Dubai commonly range from AED 500 to AED 12,000 or more depending on size, type, material, and customization."
+              "a": "Pricing depends on the umbrella's size, type, material and customization. Contact us for a quotation for your project."
             },
             {
               "q": "Do you handle installation support?",
@@ -2613,7 +1444,7 @@ export const CATEGORY_PAGES = [
     "title": "Outdoor & Indoor Umbrella Supplier",
     "titleAccent": "in India",
     "eyebrow": "India Umbrella Solutions",
-    "summary": "India projects need umbrella systems that handle varied climates, commercial practicality, and different budget levels. Furniconcepts supplies outdoor and indoor commercial umbrellas for hospitality, healthcare, education, dining, and business environments across India.",
+    "summary": "Commercial umbrellas for hotels, restaurants and outdoor spaces across India, built for every climate and budget.",
     "stats": [
       {
         "value": "Climate Fit",
@@ -2629,377 +1460,6 @@ export const CATEGORY_PAGES = [
       }
     ],
     "sections": [
-      [
-        {
-          "type": "columns",
-          "columns": [
-            [
-              {
-                "type": "heading",
-                "eyebrow": "Why It Matters",
-                "title": "Why Commercial Umbrellas Matter",
-                "body": [
-                  "Across India, the right umbrella system improves outdoor usability, guest comfort, visual presentation, and long-term commercial value."
-                ]
-              },
-              {
-                "type": "panel",
-                "blocks": [
-                  {
-                    "type": "checklist",
-                    "items": [
-                      "Commercial outdoor and indoor umbrella solutions for hotels, hospitals, restaurants, and institutional spaces",
-                      "Strong fit for India’s varied climate conditions and regional project requirements",
-                      "Umbrella systems designed for shade performance, durability, and practical commercial use",
-                      "Support for custom sizing, branding, material selection, and execution coordination",
-                      "Regional capability across India, UAE, and Singapore"
-                    ]
-                  }
-                ]
-              }
-            ],
-            [
-              {
-                "type": "heading",
-                "eyebrow": "Where We Work",
-                "title": "Key Indian Locations We Serve",
-                "body": [
-                  "We support umbrella projects across hospitality, institutional, healthcare, and commercial markets in major Indian cities."
-                ]
-              },
-              {
-                "type": "tags",
-                "items": [
-                  "Mumbai",
-                  "Delhi",
-                  "Bangalore",
-                  "Chennai",
-                  "Hyderabad",
-                  "Goa"
-                ]
-              }
-            ]
-          ]
-        }
-      ],
-      [
-        {
-          "type": "heading",
-          "title": "Commercial Umbrella Solutions in India",
-          "body": [
-            "We provide a mix of umbrella formats for hospitality, healthcare, institutional, and commercial environments."
-          ]
-        },
-        {
-          "type": "cards",
-          "items": [
-            {
-              "title": "Commercial Outdoor Umbrellas",
-              "body": [
-                "Outdoor umbrellas for Indian businesses help create more comfortable guest areas while improving commercial usability and brand presentation."
-              ],
-              "list": [
-                "Strong fit for hotels, cafes, and restaurants",
-                "Weather-ready commercial materials",
-                "Broad shade coverage options",
-                "Suitable for high-use daily environments"
-              ]
-            },
-            {
-              "title": "Cantilever Umbrellas",
-              "body": [
-                "Cantilever umbrella systems suit premium hospitality, resorts, and commercial projects that need flexible shade without a center pole."
-              ],
-              "list": [
-                "More open seating layouts",
-                "Better fit for premium spaces",
-                "Good for poolside and lounge zones",
-                "Improves premium visual appeal"
-              ]
-            },
-            {
-              "title": "Center Pole Umbrellas",
-              "body": [
-                "Center pole umbrellas work well for practical dining layouts, campus spaces, and budget-conscious commercial environments."
-              ],
-              "list": [
-                "Simple layout integration",
-                "Good for standard table seating",
-                "Commercially efficient option",
-                "Suitable for routine high-turnover use"
-              ]
-            },
-            {
-              "title": "Healthcare and Institutional Shade Solutions",
-              "body": [
-                "Umbrella systems for hospitals, clinics, colleges, and campuses help create more comfortable exterior waiting and rest areas."
-              ],
-              "list": [
-                "Useful for patient and visitor comfort",
-                "Supports campus outdoor spaces",
-                "Low-maintenance commercial materials",
-                "Strong fit for institutional environments"
-              ]
-            }
-          ]
-        }
-      ],
-      [
-        {
-          "type": "heading",
-          "title": "Features of Our Umbrella Systems",
-          "body": [
-            "Each solution is selected to support climate suitability, durability, project flexibility, and stronger long-term value."
-          ]
-        },
-        {
-          "type": "cards",
-          "style": "features",
-          "items": [
-            {
-              "title": "Climate Adaptability",
-              "body": [
-                "Umbrella systems suited to India’s varied heat, rain, humidity, and coastal conditions."
-              ],
-              "icon": "leaf"
-            },
-            {
-              "title": "Commercial Durability",
-              "body": [
-                "Built for active use in hospitality, healthcare, institutional, and food-service environments."
-              ],
-              "icon": "gear"
-            },
-            {
-              "title": "Flexible Pricing Range",
-              "body": [
-                "Solutions available across practical commercial budgets and premium project requirements."
-              ],
-              "icon": "chart"
-            },
-            {
-              "title": "Customization",
-              "body": [
-                "Project-specific choices for branding, materials, structure, coverage, and appearance."
-              ],
-              "icon": "grid"
-            },
-            {
-              "title": "Operational Utility",
-              "body": [
-                "Designed to improve comfort, support outdoor use, and reduce replacement frequency over time."
-              ],
-              "icon": "clock"
-            }
-          ]
-        }
-      ],
-      [
-        {
-          "type": "heading",
-          "title": "Cost of Commercial Umbrellas in India (2026)",
-          "body": [
-            "Pricing depends on umbrella format, structural quality, material selection, size, and project-level customization."
-          ]
-        },
-        {
-          "type": "table",
-          "columns": [
-            "Product",
-            "Estimated Cost Range"
-          ],
-          "rows": [
-            [
-              "Basic commercial umbrellas",
-              "Rs. 3,000 - Rs. 15,000+"
-            ],
-            [
-              "Center pole umbrellas",
-              "Rs. 8,000 - Rs. 35,000+"
-            ],
-            [
-              "Cantilever umbrellas",
-              "Rs. 25,000 - Rs. 1,00,000+"
-            ],
-            [
-              "Custom premium umbrella systems",
-              "Project-based pricing"
-            ]
-          ]
-        },
-        {
-          "type": "text",
-          "text": [
-            "For a detailed breakdown by type and region, read our ",
-            {
-              "label": "Commercial Umbrella Pricing Guide",
-              "href": "/commercial-umbrella-pricing-guide.php"
-            },
-            "."
-          ]
-        }
-      ],
-      [
-        {
-          "type": "heading",
-          "title": "How to Choose the Right Umbrella Supplier",
-          "body": [
-            "The right supplier should help match product quality, climate fit, customization, and long-term value to the project."
-          ]
-        },
-        {
-          "type": "cards",
-          "items": [
-            {
-              "title": "Climate Fit",
-              "body": [
-                "India’s varied weather means the right umbrella system depends heavily on local use case and environmental conditions."
-              ]
-            },
-            {
-              "title": "Material Quality",
-              "body": [
-                "Commercial projects should prioritize durable frames, strong canopy fabrics, and reliable long-term performance."
-              ]
-            },
-            {
-              "title": "Customization Support",
-              "body": [
-                "Hotels, healthcare spaces, and campuses often require specific sizes, layouts, and branding alignment."
-              ]
-            },
-            {
-              "title": "Project Experience",
-              "body": [
-                "Suppliers with hospitality, institutional, and healthcare experience are better prepared for commercial execution."
-              ]
-            },
-            {
-              "title": "Value Over Time",
-              "body": [
-                "The best supplier helps reduce replacement risk by matching the right umbrella system to the project environment."
-              ]
-            }
-          ]
-        }
-      ],
-      [
-        {
-          "type": "heading",
-          "title": "Global Presence: India | UAE | Singapore",
-          "body": [
-            "Beyond India, Furniconcepts supports commercial umbrella projects across multiple regional markets."
-          ]
-        },
-        {
-          "type": "cards",
-          "style": "pillars",
-          "items": [
-            {
-              "title": "India",
-              "body": [
-                "Hospitality, healthcare, campus, and commercial spaces supported with scalable umbrella solutions."
-              ],
-              "icon": "globe"
-            },
-            {
-              "title": "UAE",
-              "body": [
-                "Dubai commercial and hospitality projects supported with premium shade systems and execution coordination."
-              ],
-              "icon": "globe"
-            },
-            {
-              "title": "Singapore",
-              "body": [
-                "Compact premium projects supported with design-led commercial umbrella formats."
-              ],
-              "icon": "globe"
-            }
-          ]
-        }
-      ],
-      [
-        {
-          "type": "columns",
-          "image": "/images/blog/cantilever-vs-center-pole-umbrellas/hero.webp",
-          "columns": [
-            [
-              {
-                "type": "heading",
-                "title": "Applications",
-                "body": [
-                  "Our umbrella systems support businesses and institutions that need practical shade, durability, and more usable outdoor environments."
-                ]
-              },
-              {
-                "type": "panel",
-                "blocks": [
-                  {
-                    "type": "checklist",
-                    "items": [
-                      "Hotels & Resorts",
-                      "Hospitals & Clinics",
-                      "Restaurants & Cafes",
-                      "Schools & Campuses",
-                      "Corporate & Commercial Spaces"
-                    ]
-                  }
-                ]
-              }
-            ],
-            [
-              {
-                "type": "heading",
-                "title": "Why Choose Furniconcepts",
-                "body": [
-                  "Commercial product direction, customization strength, and regional project capability for umbrella supply in India."
-                ]
-              },
-              {
-                "type": "stats",
-                "items": [
-                  {
-                    "value": "Commercial",
-                    "label": "Umbrella systems matched to hotels, hospitals, restaurants, campuses and business spaces"
-                  },
-                  {
-                    "value": "Custom",
-                    "label": "Size, branding, structure and fabric tailored to each project type"
-                  },
-                  {
-                    "value": "End-to-End",
-                    "label": "Planning, selection, supply and execution coordinated by one team"
-                  },
-                  {
-                    "value": "Value",
-                    "label": "A practical balance of budget control, durability and project-grade quality"
-                  }
-                ]
-              }
-            ]
-          ]
-        }
-      ],
-      [
-        {
-          "type": "heading",
-          "title": "Future Trends in Commercial Umbrellas",
-          "body": [
-            "India demand is moving toward stronger climate-fit selection, higher customization, and more premium hospitality-oriented shade systems."
-          ]
-        },
-        {
-          "type": "badges",
-          "items": [
-            "Higher demand for premium hospitality shade systems",
-            "More project-specific branded umbrellas",
-            "Growing use of cantilever umbrellas in upscale venues",
-            "Stronger focus on climate-fit product selection",
-            "Rising demand from healthcare and institutional spaces"
-          ]
-        }
-      ],
       [
         {
           "type": "heading",
@@ -3025,7 +1485,7 @@ export const CATEGORY_PAGES = [
             },
             {
               "q": "What is the cost of commercial umbrellas in India?",
-              "a": "Commercial umbrella pricing in India commonly starts around Rs. 3,000 and can rise above Rs. 1,00,000 depending on type, material, and customization."
+              "a": "Pricing depends on the umbrella's type, material and customization. Contact us for a quotation for your project."
             },
             {
               "q": "Do you provide installation coordination?",
@@ -3060,7 +1520,7 @@ export const CATEGORY_PAGES = [
     "title": "Outdoor & Indoor Umbrella Supplier",
     "titleAccent": "in Singapore",
     "eyebrow": "Singapore Umbrella Solutions",
-    "summary": "Singapore projects demand commercial umbrella solutions that balance compact planning, premium presentation, and reliable weather performance. Furniconcepts supplies outdoor and indoor umbrella systems designed for hospitality, healthcare, dining, and modern commercial environments.",
+    "summary": "Premium commercial umbrellas for hotels, restaurants and outdoor spaces across Singapore.",
     "stats": [
       {
         "value": "Compact Ready",
@@ -3076,377 +1536,6 @@ export const CATEGORY_PAGES = [
       }
     ],
     "sections": [
-      [
-        {
-          "type": "columns",
-          "columns": [
-            [
-              {
-                "type": "heading",
-                "eyebrow": "Why It Matters",
-                "title": "Why Commercial Umbrellas Matter",
-                "body": [
-                  "In Singapore, the right umbrella system improves comfort, preserves space, strengthens visual identity, and helps businesses make better use of premium outdoor areas."
-                ]
-              },
-              {
-                "type": "panel",
-                "blocks": [
-                  {
-                    "type": "checklist",
-                    "items": [
-                      "Premium outdoor and indoor umbrella solutions for hotels, clinics, restaurants, and commercial spaces",
-                      "Strong fit for compact Singapore layouts where space efficiency and visual appeal both matter",
-                      "Commercial-grade materials with weather-ready frames and premium canopy options",
-                      "Support for customization, branding, layout planning, and installation coordination",
-                      "Regional project capability across Singapore, UAE, and India"
-                    ]
-                  }
-                ]
-              }
-            ],
-            [
-              {
-                "type": "heading",
-                "eyebrow": "Where We Work",
-                "title": "Key Singapore Locations We Serve",
-                "body": [
-                  "We support umbrella projects across major lifestyle, hospitality, medical, and commercial districts."
-                ]
-              },
-              {
-                "type": "tags",
-                "items": [
-                  "Orchard Road",
-                  "Marina Bay",
-                  "Sentosa",
-                  "Clarke Quay",
-                  "Bugis",
-                  "Novena"
-                ]
-              }
-            ]
-          ]
-        }
-      ],
-      [
-        {
-          "type": "heading",
-          "title": "Commercial Umbrella Solutions in Singapore",
-          "body": [
-            "We provide multiple umbrella formats for hospitality, healthcare, dining, and urban commercial environments."
-          ]
-        },
-        {
-          "type": "cards",
-          "items": [
-            {
-              "title": "Cantilever Umbrellas",
-              "body": [
-                "Cantilever umbrellas are ideal for premium hospitality and commercial projects that need shade without a center pole interrupting the layout."
-              ],
-              "list": [
-                "Space-saving overhanging design",
-                "Suitable for rooftop dining and poolside zones",
-                "Cleaner circulation around seating",
-                "Modern look for premium urban spaces"
-              ]
-            },
-            {
-              "title": "Center Pole Commercial Umbrellas",
-              "body": [
-                "Center pole umbrellas work well for compact cafe seating, restaurant terraces, and practical commercial layouts."
-              ],
-              "list": [
-                "Efficient for table-based seating",
-                "Straightforward installation",
-                "Budget-conscious commercial choice",
-                "Easy to reposition in flexible spaces"
-              ]
-            },
-            {
-              "title": "Wall-Mounted and Compact Shade Systems",
-              "body": [
-                "Wall-mounted and compact umbrella systems help maximize usable space in dense Singapore projects where every square foot matters."
-              ],
-              "list": [
-                "Strong fit for narrow footprints",
-                "Keeps walkways more open",
-                "Supports modern compact planning",
-                "Ideal for high-density urban settings"
-              ]
-            },
-            {
-              "title": "Indoor Decorative Umbrellas",
-              "body": [
-                "Indoor umbrella concepts support themed hospitality spaces, boutique environments, and design-led interiors."
-              ],
-              "list": [
-                "Adds visual identity to interiors",
-                "Useful for themed cafes and hotels",
-                "Available in custom finishes and styles",
-                "Supports premium brand presentation"
-              ]
-            }
-          ]
-        }
-      ],
-      [
-        {
-          "type": "heading",
-          "title": "Features of Our Umbrella Systems",
-          "body": [
-            "Each system is selected or developed to support durability, space optimization, and premium visual presentation."
-          ]
-        },
-        {
-          "type": "cards",
-          "style": "features",
-          "items": [
-            {
-              "title": "Space Efficiency",
-              "body": [
-                "Built for compact layouts where maximizing circulation and seating value is essential."
-              ],
-              "icon": "grid"
-            },
-            {
-              "title": "Weather Readiness",
-              "body": [
-                "Commercial umbrella systems selected for humid conditions, rain exposure, and daily outdoor use."
-              ],
-              "icon": "leaf"
-            },
-            {
-              "title": "Premium Visual Appeal",
-              "body": [
-                "Designs aligned with Singapore hospitality, retail, and high-end commercial expectations."
-              ],
-              "icon": "gem"
-            },
-            {
-              "title": "Customization",
-              "body": [
-                "Sizes, finishes, fabrics, colors, and branding options tailored to each project."
-              ],
-              "icon": "sparkle"
-            },
-            {
-              "title": "Ease of Maintenance",
-              "body": [
-                "Materials and systems chosen to support easier upkeep in active commercial environments."
-              ],
-              "icon": "gear"
-            }
-          ]
-        }
-      ],
-      [
-        {
-          "type": "heading",
-          "title": "Cost of Commercial Umbrellas in Singapore (2026)",
-          "body": [
-            "Pricing depends on umbrella type, frame quality, canopy material, size, and the amount of customization required."
-          ]
-        },
-        {
-          "type": "table",
-          "columns": [
-            "Product",
-            "Estimated Cost Range"
-          ],
-          "rows": [
-            [
-              "Compact commercial umbrellas",
-              "SGD 200 - SGD 1,200+"
-            ],
-            [
-              "Center pole umbrellas",
-              "SGD 500 - SGD 2,500+"
-            ],
-            [
-              "Cantilever umbrellas",
-              "SGD 1,500 - SGD 8,000+"
-            ],
-            [
-              "Custom premium umbrella systems",
-              "Project-based pricing"
-            ]
-          ]
-        },
-        {
-          "type": "text",
-          "text": [
-            "For a detailed breakdown by type and region, read our ",
-            {
-              "label": "Commercial Umbrella Pricing Guide",
-              "href": "/commercial-umbrella-pricing-guide.php"
-            },
-            "."
-          ]
-        }
-      ],
-      [
-        {
-          "type": "heading",
-          "title": "How to Choose the Right Umbrella Supplier",
-          "body": [
-            "The best supplier helps balance quality, layout fit, long-term performance, and project-specific customization."
-          ]
-        },
-        {
-          "type": "cards",
-          "items": [
-            {
-              "title": "Commercial Product Quality",
-              "body": [
-                "Choose umbrellas built for repeated daily use, stable performance, and premium finish quality."
-              ]
-            },
-            {
-              "title": "Space Planning Awareness",
-              "body": [
-                "Compact Singapore projects need suppliers who understand layout efficiency, circulation, and urban space constraints."
-              ]
-            },
-            {
-              "title": "Customization Capability",
-              "body": [
-                "Brand colors, canopy design, structural format, and size flexibility are important for premium projects."
-              ]
-            },
-            {
-              "title": "Installation Support",
-              "body": [
-                "Professional coordination helps ensure the umbrella system performs correctly in the real environment."
-              ]
-            },
-            {
-              "title": "Relevant Market Experience",
-              "body": [
-                "Suppliers with hospitality, healthcare, and commercial project experience are better suited for demanding Singapore spaces."
-              ]
-            }
-          ]
-        }
-      ],
-      [
-        {
-          "type": "heading",
-          "title": "Global Presence: Singapore | UAE | India",
-          "body": [
-            "Beyond Singapore, Furniconcepts supports commercial umbrella projects across multiple regional markets."
-          ]
-        },
-        {
-          "type": "cards",
-          "style": "pillars",
-          "items": [
-            {
-              "title": "Singapore",
-              "body": [
-                "Urban hospitality, healthcare, and commercial projects that need compact premium umbrella solutions."
-              ],
-              "icon": "globe"
-            },
-            {
-              "title": "UAE",
-              "body": [
-                "Dubai hospitality and outdoor dining projects supported with commercial shade systems and project coordination."
-              ],
-              "icon": "globe"
-            },
-            {
-              "title": "India",
-              "body": [
-                "Hospitality, healthcare, and campus environments supported with scalable commercial umbrella supply."
-              ],
-              "icon": "globe"
-            }
-          ]
-        }
-      ],
-      [
-        {
-          "type": "columns",
-          "image": "/images/blog/commercial-umbrella-pricing-guide/hero.webp",
-          "columns": [
-            [
-              {
-                "type": "heading",
-                "title": "Applications",
-                "body": [
-                  "Our umbrella solutions support commercial spaces that need durable shade, premium aesthetics, and stronger guest comfort."
-                ]
-              },
-              {
-                "type": "panel",
-                "blocks": [
-                  {
-                    "type": "checklist",
-                    "items": [
-                      "Hotels & Resorts",
-                      "Restaurants & Cafes",
-                      "Clinics & Healthcare",
-                      "Corporate Spaces",
-                      "Retail & Lifestyle Venues"
-                    ]
-                  }
-                ]
-              }
-            ],
-            [
-              {
-                "type": "heading",
-                "title": "Why Choose Furniconcepts",
-                "body": [
-                  "Commercial execution strength, premium product direction, and regional capability for umbrella projects."
-                ]
-              },
-              {
-                "type": "stats",
-                "items": [
-                  {
-                    "value": "Space-Smart",
-                    "label": "Compact and cantilever formats planned around dense urban layouts"
-                  },
-                  {
-                    "value": "Custom",
-                    "label": "Umbrella concepts tailored to space, branding, usage and guest experience"
-                  },
-                  {
-                    "value": "End-to-End",
-                    "label": "Selection, planning, supply, customization and execution coordinated by one team"
-                  },
-                  {
-                    "value": "Design-Led",
-                    "label": "Function, durability and architectural fit balanced for premium spaces"
-                  }
-                ]
-              }
-            ]
-          ]
-        }
-      ],
-      [
-        {
-          "type": "heading",
-          "title": "Future Trends in Commercial Umbrellas",
-          "body": [
-            "Commercial shade systems are moving toward smarter controls, stronger visual integration, and better use of compact space."
-          ]
-        },
-        {
-          "type": "badges",
-          "items": [
-            "Smart shading systems with automation support",
-            "More compact formats for dense urban projects",
-            "Integrated lighting for hospitality environments",
-            "Higher demand for custom branded outdoor shade solutions",
-            "Greater focus on premium hospitality presentation"
-          ]
-        }
-      ],
       [
         {
           "type": "heading",
@@ -3472,7 +1561,7 @@ export const CATEGORY_PAGES = [
             },
             {
               "q": "What is the cost of commercial umbrellas in Singapore?",
-              "a": "Commercial umbrella pricing in Singapore commonly ranges from SGD 200 to SGD 8,000 or more depending on size, type, materials, and customization."
+              "a": "Pricing depends on the umbrella's size, type, materials and customization. Contact us for a quotation for your project."
             },
             {
               "q": "Do you support installation coordination?",
@@ -3505,14 +1594,10 @@ export const CATEGORY_PAGES = [
     "hero": "/images/cavaletti/auditorium.jpg",
     "card": "/images/categories/stadium-seating-card.webp",
     "title": "Stadium Seating Suppliers",
-    "titleAccent": "in Dubai, India & Singapore",
+    "titleAccent": "in UAE, IN, SG",
     "eyebrow": "Stadium Seating",
-    "summary": "Furniconcepts supplies fixed, bleacher, retractable and VIP stadium seating through Jwesys and Leadcom, with projects across the UAE and Chennai, Bangalore, Hyderabad, Mumbai and Delhi. In India, fixed stadium chairs start from ₹800 per seat.",
+    "summary": "Fixed, bleacher, retractable and VIP stadium seating from Jwesys and Leadcom, across the UAE and India.",
     "stats": [
-      {
-        "value": "From ₹800",
-        "label": "Per seat for fixed stadium chairs in India"
-      },
       {
         "value": "4 Seating Types",
         "label": "Fixed, bleacher, retractable and VIP"
@@ -3583,84 +1668,6 @@ export const CATEGORY_PAGES = [
       [
         {
           "type": "heading",
-          "title": "Compare Seating Types"
-        },
-        {
-          "type": "table",
-          "columns": [
-            "Type",
-            "Best for",
-            "Flexibility"
-          ],
-          "rows": [
-            [
-              "Bleacher / Bench",
-              "Schools, training grounds",
-              "Fixed"
-            ],
-            [
-              "Fixed Chairs",
-              "Arenas, university grounds",
-              "Fixed"
-            ],
-            [
-              "Retractable",
-              "Multi-purpose venues",
-              "Folds away"
-            ],
-            [
-              "VIP / Premium",
-              "Premium stands, boxes",
-              "Fixed"
-            ]
-          ]
-        }
-      ],
-      [
-        {
-          "type": "columns",
-          "columns": [
-            [
-              {
-                "type": "heading",
-                "title": "How to Choose"
-              },
-              {
-                "type": "panel",
-                "blocks": [
-                  {
-                    "type": "checklist",
-                    "items": [
-                      "Start with capacity and budget per seat.",
-                      "Need the floor for other events? Go retractable.",
-                      "Selling premium tickets? Add a VIP section.",
-                      "Schools on tight budgets often start with bleachers.",
-                      "Ask about outdoor suitability for open-air stands."
-                    ]
-                  }
-                ]
-              }
-            ],
-            [
-              {
-                "type": "heading",
-                "title": "Built For"
-              },
-              {
-                "type": "tags",
-                "items": [
-                  "Sports arenas",
-                  "School and university grounds",
-                  "Multi-purpose venues"
-                ]
-              }
-            ]
-          ]
-        }
-      ],
-      [
-        {
-          "type": "heading",
           "title": "Brands"
         },
         {
@@ -3691,7 +1698,7 @@ export const CATEGORY_PAGES = [
             },
             {
               "q": "How much does it cost?",
-              "a": "In India, from ₹800 per seat for fixed chairs and ₹15,000+ for retractable and premium systems."
+              "a": "It depends on the seating type, quantity and finish. Contact us for a quotation for your venue."
             },
             {
               "q": "What's the cheapest stadium seating?",
@@ -3736,7 +1743,7 @@ export const CATEGORY_PAGES = [
     "hero": "/images/projects/philiphines/banner.webp",
     "card": "/images/categories/school-furniture-card.webp",
     "title": "School & Classroom Furniture Suppliers",
-    "titleAccent": "in Dubai, India & Singapore",
+    "titleAccent": "in UAE, IN, SG",
     "eyebrow": "Education & School Furniture",
     "summary": "Furniconcepts supplies classroom chairs, modular desks and training seating for schools, colleges and training institutes in Dubai, India and Singapore, including the Teachease and Educomfort Pro chairs, designed for comfort, durability and flexible layouts.",
     "stats": [
@@ -3822,47 +1829,6 @@ export const CATEGORY_PAGES = [
       [
         {
           "type": "heading",
-          "title": "Classroom Chairs Compared"
-        },
-        {
-          "type": "table",
-          "columns": [
-            "",
-            "Teachease Chair",
-            "Educomfort Pro Chair"
-          ],
-          "rows": [
-            [
-              "Best for",
-              "Classrooms, training rooms",
-              "Classrooms, flexible spaces"
-            ],
-            [
-              "Seat",
-              "Padded",
-              "Comfortable shell"
-            ],
-            [
-              "Frame",
-              "Durable metal",
-              "Durable"
-            ],
-            [
-              "Writing tablet",
-              "No",
-              "Optional"
-            ],
-            [
-              "Stackable",
-              "No",
-              "Yes"
-            ]
-          ]
-        }
-      ],
-      [
-        {
-          "type": "heading",
           "title": "Classroom Layouts Supported"
         },
         {
@@ -3871,48 +1837,6 @@ export const CATEGORY_PAGES = [
             "Traditional rows for lectures and exams",
             "Small groups for collaborative work",
             "Open floor for activities, with chairs stacked away"
-          ]
-        }
-      ],
-      [
-        {
-          "type": "columns",
-          "columns": [
-            [
-              {
-                "type": "heading",
-                "title": "How to Choose"
-              },
-              {
-                "type": "panel",
-                "blocks": [
-                  {
-                    "type": "checklist",
-                    "items": [
-                      "Will rooms be rearranged often? Choose modular desks and stackable chairs.",
-                      "Do students write without desks? Add tablet arms.",
-                      "Short on storage? Stacking chairs save space.",
-                      "Plan auditorium and sports seating in the same project for a consistent campus."
-                    ]
-                  }
-                ]
-              }
-            ],
-            [
-              {
-                "type": "heading",
-                "title": "Built For"
-              },
-              {
-                "type": "tags",
-                "items": [
-                  "K-12 schools",
-                  "Colleges and universities",
-                  "Training institutes",
-                  "Coaching centres"
-                ]
-              }
-            ]
           ]
         }
       ],
@@ -4108,50 +2032,6 @@ export const CATEGORY_PAGES = [
       [
         {
           "type": "heading",
-          "title": "Fixed vs. Telescopic Seating",
-          "body": [
-            "For Dubai's flexible venue requirements, retractable seating gives operators stronger space utilization and better long-term functional value."
-          ]
-        },
-        {
-          "type": "table",
-          "columns": [
-            "Feature",
-            "Fixed Seating",
-            "Telescopic Seating"
-          ],
-          "rows": [
-            [
-              "Space Usage",
-              "Permanent",
-              "Space-saving"
-            ],
-            [
-              "Best For",
-              "Dedicated theaters",
-              "Multi-purpose halls"
-            ],
-            [
-              "Flexibility",
-              "Low",
-              "High"
-            ],
-            [
-              "Operation",
-              "Manual",
-              "Motorized"
-            ],
-            [
-              "Benefit",
-              "Luxury comfort",
-              "Up to 90% space recovery"
-            ]
-          ]
-        }
-      ],
-      [
-        {
-          "type": "heading",
           "title": "Technical Expertise in Dubai and India",
           "body": [
             "We provide turnkey workspace solutions tailored to the regulatory, budgetary, and functional demands of the Middle East and the Indian subcontinent."
@@ -4284,68 +2164,6 @@ export const CATEGORY_PAGES = [
                 "Anti-pinch detailing and internationally aligned compliance-focused specifications."
               ]
             }
-          ]
-        }
-      ],
-      [
-        {
-          "type": "columns",
-          "image": "/images/projects/telescopic/04.webp",
-          "columns": [
-            [
-              {
-                "type": "heading",
-                "title": "Applications in Dubai",
-                "body": [
-                  "Our retractable and auditorium seating systems are suitable for premium entertainment, educational, and large-capacity public environments."
-                ]
-              },
-              {
-                "type": "panel",
-                "blocks": [
-                  {
-                    "type": "checklist",
-                    "items": [
-                      "Cinemas & multiplexes",
-                      "Auditoriums & theatres",
-                      "Schools & universities",
-                      "Event halls",
-                      "Stadiums & arenas"
-                    ]
-                  }
-                ]
-              }
-            ],
-            [
-              {
-                "type": "heading",
-                "title": "Installation & Delivery",
-                "body": [
-                  "Furniconcepts manages production, delivery, installation, and staff guidance to ensure a clean transition from specification to operation."
-                ]
-              },
-              {
-                "type": "stats",
-                "items": [
-                  {
-                    "value": "40-45",
-                    "label": "Days manufacturing timeline"
-                  },
-                  {
-                    "value": "15-18",
-                    "label": "Days UAE delivery window"
-                  },
-                  {
-                    "value": "7-10",
-                    "label": "Days India delivery window"
-                  },
-                  {
-                    "value": "100%",
-                    "label": "Installation support and staff training included"
-                  }
-                ]
-              }
-            ]
           ]
         }
       ],

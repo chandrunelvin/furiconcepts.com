@@ -655,6 +655,8 @@
   font-family:var(--font-primary); font-weight:500; letter-spacing:-.5px;
   font-size:clamp(27px,2.6vw,39px); line-height:1.12; margin-bottom:20px;
 }
+/* keep it to its three set lines ("More Than / Furniture. / It's a Lifestyle.") */
+.home2 .lifestyle h2{ white-space:nowrap; }
 .home2 .lifestyle .accent{ color:var(--green); }
 .home2 .lifestyle-copy p{ font-size:14.5px; color:rgba(255,255,255,.88); max-width:34ch; }
 .home2 .lifestyle-copy p .accent{ color:var(--green); }
@@ -1284,7 +1286,7 @@
 
 /* ---- our story ---- */
 .home2 .about-story-inner{
-  display:grid;grid-template-columns:.92fr 1.08fr;gap:56px;align-items:stretch;
+  display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:stretch;
 }
 .home2 .about-story-copy h2{
   font-family:var(--font-primary);font-weight:500;letter-spacing:-.02em;
@@ -1292,7 +1294,7 @@
 }
 .home2 .about-story-copy p{
   font-size:clamp(14px,1.6vw,15px);color:var(--ink-soft);line-height:1.75;
-  max-width:48ch;margin-bottom:28px;
+  margin-bottom:28px;
 }
 /* the photograph runs the full height of the copy beside it */
 .home2 .about-story-media{
@@ -3376,7 +3378,7 @@
   position:relative;z-index:2;width:100%;padding-block:110px 72px;
   display:grid;grid-template-columns:minmax(0,1fr) auto;gap:48px;align-items:end;
 }
-.home2 .cat-project-band .proj-title{ font-size:clamp(32px,4.6vw,62px);max-width:14ch; }
+.home2 .cat-project-band .proj-title{ font-size:clamp(27px,3.5vw,42px);line-height:1.08;max-width:22ch; }
 .home2 .cat-project-band .proj-sub{ margin-bottom:18px; }
 .home2 .cat-project-note{ font-size:15px;color:rgba(255,255,255,.82);max-width:46ch;line-height:1.7;margin-bottom:32px; }
 .home2 .cat-project-thumbs{ display:flex;gap:12px; }
@@ -3657,4 +3659,44 @@
   .home2 .hero-text h1{ font-size:min(28px, 7vw); margin-bottom:16px; }
   .home2 .hero-text .btn-primary{ padding:8px 16px; font-size:12px; gap:8px; }
   .home2 .hero-text .btn-primary svg{ width:13px; height:13px; }
+}
+
+/* spotlight title on one line on desktop */
+@media(min-width:901px){
+  .home2 .spotlight .head-row h2{ max-width:none; white-space:nowrap; }
+}
+
+/* About "Our Clients" title on one line on desktop, like the Spotlight title */
+@media(min-width:901px){
+  .home2 .about-clients .team-head h2{ white-space:nowrap; }
+  .home2 .about-clients .team-head h2 br{ display:none; }
+}
+
+/* About certificates: laid out like the home page Spotlight row */
+/* title on top, the filter tabs in one row under it */
+.home2 .about-certs .head-row{ flex-direction:column; align-items:flex-start; gap:24px; }
+@media(min-width:901px){ .home2 .about-certs .about-cert-tabs{ margin:0; justify-content:flex-start; } }
+.home2 .cert-img{ background:#fff; border-bottom:1px solid var(--line); }
+.home2 .cert-img img{ object-position:top center; }
+.home2 .cert-meta{
+  align-self:flex-start; padding:0; background:none; border-radius:0;
+  font-size:12px; font-weight:500; letter-spacing:0; line-height:1.45;
+}
+
+/* brand page hero: label, logo, tagline and button centred over the banner */
+.home2 .brand-hero-inner{
+  display:flex; flex-direction:column; align-items:center; text-align:center;
+}
+.home2 .brand-hero-tagline{ margin-bottom:30px; }
+@media(min-width:901px){
+  .home2 .brand-hero::after{
+    background:
+      linear-gradient(180deg,rgba(8,18,14,.62) 0%,rgba(8,18,14,.3) 30%,rgba(8,18,14,.3) 70%,rgba(8,18,14,.5) 100%),
+      radial-gradient(ellipse at center,rgba(8,18,14,.5) 0%,rgba(8,18,14,.2) 60%,rgba(8,18,14,0) 100%);
+  }
+}
+
+/* category hero title: exactly two lines on desktop, the name then "in UAE, IN, SG" */
+@media(min-width:901px){
+  .home2 .cat-hero h1{ max-width:none; }
 }
