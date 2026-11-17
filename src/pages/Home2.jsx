@@ -467,7 +467,6 @@ export default function Home2() {
             <div className="split-intro">
               <div className="eyebrow">Our Categories</div>
               <h2>Furniture for Every Space</h2>
-              <p>From offices and acoustic pods to auditoriums, hospitals, hotels and schools — explore the {SPACES.length} categories we supply across the UAE, India and Singapore.</p>
               <Link to="/categories" className="link-arrow">Explore Categories <Arrow /></Link>
             </div>
             <div className="spaces-viewport" ref={spacesRail}>
