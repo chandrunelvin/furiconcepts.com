@@ -3773,3 +3773,39 @@
 .home2 header:not(.scrolled) nav.main-nav .sub-menu a.is-current:not(.sub-logo){
   color:var(--green);font-weight:600;background:var(--card);
 }
+
+/* ---- phones: stats sit in one row of three, features in a 2x2 grid ---- */
+@media(max-width:640px){
+  .home2 .lifestyle .stats{
+    display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:0;
+    align-items:start;
+  }
+  .home2 .lifestyle .stat{ padding:4px 8px; text-align:center; }
+  .home2 .lifestyle .stat + .stat{ border-left:1px solid rgba(255,255,255,.22); }
+  .home2 .lifestyle .stat .num{ font-size:28px; line-height:1.1; }
+  .home2 .lifestyle .stat .label{ font-size:12px; line-height:1.35; margin-top:6px; }
+
+  .home2 .features .wrap{ grid-template-columns:repeat(2,minmax(0,1fr)); gap:28px 18px; }
+  .home2 .feature{ flex-direction:column; gap:10px; padding:0; }
+  .home2 .feature .ficon{ width:28px; height:28px; }
+  .home2 .feature h4{ font-size:13.5px; margin-bottom:4px; }
+  .home2 .feature p{ font-size:12.5px; }
+}
+
+/* ---- phones: a shorter footer. Link columns pair up two by two, gaps
+       tighten, and the newsletter drops its corner artwork ---- */
+@media(max-width:640px){
+  .home2 .newsletter-media{ display:none; }
+  .home2 .newsletter-body{ padding:32px 20px; gap:18px; }
+
+  .home2 footer{ padding:40px 0 22px; }
+  .home2 .footer-top{
+    grid-template-columns:repeat(2,minmax(0,1fr)); gap:26px 18px; margin-bottom:28px;
+  }
+  .home2 .footer-brand{ grid-column:1 / -1; }
+  .home2 .footer-brand p{ margin:10px 0 14px; max-width:none; }
+  .home2 .footer-col h5{ margin-bottom:10px; }
+  .home2 .footer-col ul{ gap:7px; }
+  .home2 .footer-col a{ font-size:13px; overflow-wrap:anywhere; }
+  .home2 .footer-bottom{ flex-direction:row; align-items:center; gap:12px; padding-top:18px; font-size:12px; }
+}
