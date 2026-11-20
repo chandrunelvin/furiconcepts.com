@@ -202,7 +202,7 @@ export const CATEGORY_PAGES = [
     "hero": "/images/projects/al-futtaim-ho-phone-booth/06.webp",
     "title": "Acoustic Solutions: Silent Pods, Office Phone Booths & Acoustic Panels",
     "eyebrow": "Workspace Acoustics",
-    "summary": "Open-plan offices need quiet spaces. Furniconcepts supplies silent pods, phone booths and acoustic wall and ceiling panels for offices, schools and commercial spaces across UAE, IN, SG.",
+    "summary": "Silent pods, phone booths and acoustic panels for quieter offices, schools and commercial spaces.",
     "stats": [
       {
         "value": "3 Regions",
