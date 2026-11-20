@@ -110,7 +110,7 @@ export default function Newsletter() {
         image="/images/projects/star-cinemas/banner.webp"
         crumbs={[['Home', '/'], ['About Us', '/about']]}
         title="Furnijournal Newsletter"
-        text="Shape of Spaces: project stories, product launches, design trends and company news from Furniconcepts, every month."
+        text="Project stories, launches and news from Furniconcepts, every month."
       />
       <Features items={[
         ['doc', `${NEWSLETTERS.length} Issues`],

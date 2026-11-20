@@ -18,6 +18,7 @@ const issue = (year, month, name, vol, story, project) => ({
 });
 
 export const NEWSLETTERS = [
+  issue('2026', '10', 'October', 13, 'Furniconcepts Singapore goes live'),
   issue('2026', '08', 'August', 11, 'A workspace that moves with you'),
   issue('2026', '07', 'July', 10, 'Furnishing a Toyota showroom in Abu Dhabi', 'abu-dhabi-toyota'),
   issue('2026', '06', 'June', 9, 'Three Volkswagen showrooms transformed across the UAE'),
