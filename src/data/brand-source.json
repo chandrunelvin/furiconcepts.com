@@ -62,47 +62,1577 @@
     },
     "groups": [
       {
+        "title": "Management Desks",
+        "items": [
+          {
+            "name": "Executive Desk with Right Credenza - Trestle Leg",
+            "img": "/images/brand-product-images/gebbwork/65fae7ced30cc.webp",
+            "description": "This executive desk features a right-side credenza with a trestle leg design. It offers storage, durability, and a modern professional look."
+          },
+          {
+            "name": "Executive Desk with Right Credenza - Wood Leg",
+            "img": "/images/brand-product-images/gebbwork/65fae80b1f2c8.webp",
+            "description": "This executive desk combines wooden legs with a right credenza. It provides elegant design and practical storage for offices."
+          },
+          {
+            "name": "Executive Desk with Right Credenza - Frame Foot",
+            "img": "/images/brand-product-images/gebbwork/65fae7844c2b9.webp",
+            "description": "This desk features a frame foot structure with a right credenza. It ensures stability, style, and efficient workspace organization."
+          },
+          {
+            "name": "Executive Desk with Right Credenza - Beam Foot",
+            "img": "/images/brand-product-images/gebbwork/65fae85bd96b6.webp",
+            "description": "This desk offers a beam foot design with integrated credenza. It provides strength and a contemporary office appearance."
+          },
+          {
+            "name": "Executive Desk with Left Credenza - Trestle Leg",
+            "img": "/images/brand-product-images/gebbwork/65fae8a15bd49.webp",
+            "description": "This desk features a left-side credenza with trestle legs. It is ideal for modern office layouts and efficient storage."
+          },
+          {
+            "name": "Executive Desk with Left Credenza - Wood Leg",
+            "img": "/images/brand-product-images/gebbwork/65fae8f178c4d.webp",
+            "description": "This desk combines wood leg aesthetics with a left credenza. It enhances workspace functionality and elegance."
+          },
+          {
+            "name": "Executive Desk with Left Credenza - Frame Foot",
+            "img": "/images/brand-product-images/gebbwork/mesa_executiva_com_credenza_esquerdo_pe_quadro_vitago.webp",
+            "description": "This desk provides a strong frame foot design with left credenza. It ensures durability and workspace efficiency."
+          },
+          {
+            "name": "Executive Desk with Left Credenza - Beam Foot",
+            "img": "/images/brand-product-images/gebbwork/65fae9356b636.webp",
+            "description": "This desk offers a beam foot structure with left credenza storage. It is ideal for executive offices and professional environments."
+          }
+        ]
+      },
+      {
         "title": "Executive Desks",
         "items": [
           {
-            "name": "Executive Desk, Right Credenza (Trestle Leg)",
-            "img": "/images/brand-product-images/gebbwork/65fae7ced30cc.webp"
+            "name": "DOM - Board of Directors Table",
+            "img": "/images/brand-product-images/gebbwork/65fad164f132c.webp",
+            "description": "This boardroom table is designed for executive meetings. It provides space, elegance, and functionality."
           },
           {
-            "name": "Executive Desk, Right Credenza (Wood Leg)",
-            "img": "/images/brand-product-images/gebbwork/65fae80b1f2c8.webp"
+            "name": "DOM - Board Table with Credenza",
+            "img": "/images/brand-product-images/gebbwork/65fad1bc893cd.webp",
+            "description": "This board table includes a credenza for storage. It enhances executive meeting spaces."
           },
           {
-            "name": "Executive Desk, Right Credenza (Frame Foot)",
-            "img": "/images/brand-product-images/gebbwork/65fae7844c2b9.webp"
+            "name": "DOM - Directors Table with Left Credenza",
+            "img": "/images/brand-product-images/gebbwork/65fad1eded088.webp",
+            "description": "This directors table features a left credenza. It offers storage and a premium office design."
+          }
+        ]
+      },
+      {
+        "title": "Directors Tables",
+        "items": [
+          {
+            "name": "Edge - Rectangular Director Desk with Glass Top",
+            "img": "/images/brand-product-images/gebbwork/mesa_diretor_retangular_com_tampo_de_vidro_-_edge_office.webp",
+            "description": "This rectangular desk with a glass top adds elegance to executive spaces. It offers a sleek and modern workspace solution."
           },
           {
-            "name": "Executive Desk, Right Credenza (Beam Foot)",
-            "img": "/images/brand-product-images/gebbwork/65fae85bd96b6.webp"
+            "name": "Edge - Director Desk with Side Cabinet",
+            "img": "/images/brand-product-images/gebbwork/mesa_diretor_dinamica_com_armario_lateral_-_edge_office.webp",
+            "description": "This dynamic desk includes a side cabinet for storage. It enhances organization and executive workspace efficiency."
           },
           {
-            "name": "Executive Desk, Left Credenza (Trestle Leg)",
-            "img": "/images/brand-product-images/gebbwork/65fae8a15bd49.webp"
+            "name": "Edge - Director Desk with Side Drawer",
+            "img": "/images/brand-product-images/gebbwork/mesa_diretor_dinamica_com_gaveta_lateral_-_edge_office.webp",
+            "description": "This desk features a side drawer for convenient storage. It is ideal for modern executive offices."
           },
           {
-            "name": "Executive Desk, Left Credenza (Wood Leg)",
-            "img": "/images/brand-product-images/gebbwork/65fae8f178c4d.webp"
+            "name": "Edge - Director Desk with Glass Top and Cabinet",
+            "img": "/images/brand-product-images/gebbwork/mesa_diretor_dinamica_com_tampo_em_vidro_e_armario_-_edge_office.webp",
+            "description": "This desk combines a glass top with cabinet storage. It offers a premium look and practical functionality."
           },
           {
-            "name": "Executive Desk, Left Credenza (Frame Foot)",
-            "img": "/images/brand-product-images/gebbwork/mesa-executiva-com-credenza-esquerdo-pe-quadro-vitago.webp"
+            "name": "Edge - Director Desk with Glass Top and Drawer",
+            "img": "/images/brand-product-images/gebbwork/mesa_diretor_dinamica_com_tampo_em_vidro_e_gaveta_lateral_-_edge_office.webp",
+            "description": "This desk features a glass surface and side drawer. It provides a sleek design with functional storage."
           },
           {
-            "name": "Executive Desk, Left Credenza (Beam Foot)",
-            "img": "/images/brand-product-images/gebbwork/65fae9356b636.webp"
+            "name": "Gebbwork Office Furniture",
+            "img": "/images/brand-product-images/gebbwork/65045b1e5ddc2.webp",
+            "description": "Modern Gebbwork office furniture solutions for workspaces and commercial interiors."
           },
           {
-            "name": "Director Desk, Glass Top — Edge",
-            "img": "/images/brand-product-images/gebbwork/mesa-diretor-retangular-com-tampo-de-vidro-edge-office.webp"
+            "name": "Gebbwork Office Furniture",
+            "img": "/images/brand-product-images/gebbwork/65045b1e5fd62.webp",
+            "description": "Modern Gebbwork office furniture solutions for workspaces and commercial interiors."
           },
           {
-            "name": "Dynamic Director Desk with Side Cabinet — Edge",
-            "img": "/images/brand-product-images/gebbwork/mesa-diretor-dinamica-com-armario-lateral-edge-office.webp"
+            "name": "Gebbwork Office Furniture",
+            "img": "/images/brand-product-images/gebbwork/mesa_diretor_com_gaveterio_ped_01_gaveta_e_01_pasta_-_yaris_office.webp",
+            "description": "Modern Gebbwork office furniture solutions for workspaces and commercial interiors."
+          },
+          {
+            "name": "Gebbwork Office Furniture",
+            "img": "/images/brand-product-images/gebbwork/65f9eaba1f085.webp",
+            "description": "Modern Gebbwork office furniture solutions for workspaces and commercial interiors."
+          },
+          {
+            "name": "Gebbwork Office Furniture",
+            "img": "/images/brand-product-images/gebbwork/mesa_diretor_dinamica_com_armario_lateral_-_edge_office.webp",
+            "description": "Modern Gebbwork office furniture solutions for workspaces and commercial interiors."
+          },
+          {
+            "name": "Gebbwork Office Furniture",
+            "img": "/images/brand-product-images/gebbwork/mesa_diretor_dinamica_com_gaveta_lateral_-_edge_office.webp",
+            "description": "Modern Gebbwork office furniture solutions for workspaces and commercial interiors."
+          },
+          {
+            "name": "Gebbwork Office Furniture",
+            "img": "/images/brand-product-images/gebbwork/mesa_diretor_dinamica_com_gaveteiro_ped_02_gavetas_01_pasta_-_pe_quadro_-_start_office.webp",
+            "description": "Modern Gebbwork office furniture solutions for workspaces and commercial interiors."
+          },
+          {
+            "name": "Gebbwork Office Furniture",
+            "img": "/images/brand-product-images/gebbwork/mesa_diretor_dinamica_com_gaveteiro_ped_04_gavetas_-_pe_quadro_-_start_office.webp",
+            "description": "Modern Gebbwork office furniture solutions for workspaces and commercial interiors."
+          },
+          {
+            "name": "Gebbwork Office Furniture",
+            "img": "/images/brand-product-images/gebbwork/mesa_diretor_dinamica_com_tampo_em_vidro_e_armario_-_edge_office.webp",
+            "description": "Modern Gebbwork office furniture solutions for workspaces and commercial interiors."
+          },
+          {
+            "name": "Gebbwork Office Furniture",
+            "img": "/images/brand-product-images/gebbwork/mesa_diretor_dinamica_com_tampo_em_vidro_e_gaveta_lateral_-_edge_office.webp",
+            "description": "Modern Gebbwork office furniture solutions for workspaces and commercial interiors."
+          },
+          {
+            "name": "Gebbwork Office Furniture",
+            "img": "/images/brand-product-images/gebbwork/65f9ea45eeff8.webp",
+            "description": "Modern Gebbwork office furniture solutions for workspaces and commercial interiors."
+          },
+          {
+            "name": "Gebbwork Office Furniture",
+            "img": "/images/brand-product-images/gebbwork/65fc3dca75ba4.webp",
+            "description": "Modern Gebbwork office furniture solutions for workspaces and commercial interiors."
+          },
+          {
+            "name": "Gebbwork Office Furniture",
+            "img": "/images/brand-product-images/gebbwork/65f9eb16460af.webp",
+            "description": "Modern Gebbwork office furniture solutions for workspaces and commercial interiors."
+          },
+          {
+            "name": "Gebbwork Office Furniture",
+            "img": "/images/brand-product-images/gebbwork/mesa_diretor_em_l_com_armario_pdestal_com_01_caixa_de_tomadas_plastica__-_start_office.webp",
+            "description": "Modern Gebbwork office furniture solutions for workspaces and commercial interiors."
+          },
+          {
+            "name": "Gebbwork Office Furniture",
+            "img": "/images/brand-product-images/gebbwork/mesa_diretor_retangular_-_edge_office.webp",
+            "description": "Modern Gebbwork office furniture solutions for workspaces and commercial interiors."
+          },
+          {
+            "name": "Gebbwork Office Furniture",
+            "img": "/images/brand-product-images/gebbwork/mesa_diretor_retangular_com_tampo_de_vidro_-_edge_office.webp",
+            "description": "Modern Gebbwork office furniture solutions for workspaces and commercial interiors."
+          },
+          {
+            "name": "Gebbwork Office Furniture",
+            "img": "/images/brand-product-images/gebbwork/650468ec0513b.webp",
+            "description": "Modern Gebbwork office furniture solutions for workspaces and commercial interiors."
+          },
+          {
+            "name": "Gebbwork Office Furniture",
+            "img": "/images/brand-product-images/gebbwork/650468ec05e78.webp",
+            "description": "Modern Gebbwork office furniture solutions for workspaces and commercial interiors."
+          }
+        ]
+      },
+      {
+        "title": "Meeting Tables",
+        "items": [
+          {
+            "name": "Gebbwork Office Furniture",
+            "img": "/images/brand-product-images/gebbwork/mesa_de_reunies_12-14_lugares_com_04_caixas_de_tomadas_plastica_e_tampa_metalica_-_edge_office.webp",
+            "description": "Modern Gebbwork office furniture solutions for workspaces and commercial interiors."
+          },
+          {
+            "name": "Gebbwork Office Furniture",
+            "img": "/images/brand-product-images/gebbwork/mesa_de_reunies_10-12_lugares_com_03_caixas_de_tomadas_plastica_e_tampa_metalica_-_edge_office.webp",
+            "description": "Modern Gebbwork office furniture solutions for workspaces and commercial interiors."
+          },
+          {
+            "name": "Gebbwork Office Furniture",
+            "img": "/images/brand-product-images/gebbwork/mesa_de_reunies_14-16_lugares_com_05_caixas_de_tomadas_plastica_e_tampa_metalica_-_edge_office.webp",
+            "description": "Modern Gebbwork office furniture solutions for workspaces and commercial interiors."
+          },
+          {
+            "name": "Gebbwork Office Furniture",
+            "img": "/images/brand-product-images/gebbwork/mesa_de_reunies_complemento_-_edge_office.webp",
+            "description": "Modern Gebbwork office furniture solutions for workspaces and commercial interiors."
+          },
+          {
+            "name": "Gebbwork Office Furniture",
+            "img": "/images/brand-product-images/gebbwork/mesa_de_reunies_6-8_lugares_com_uma_caixa_de_tomadas_plastica_e_tampa_metalica_-_edge_office.webp",
+            "description": "Modern Gebbwork office furniture solutions for workspaces and commercial interiors."
+          },
+          {
+            "name": "Gebbwork Office Furniture",
+            "img": "/images/brand-product-images/gebbwork/mesa_de_reunies_8-10_lugares_com_02_caixas_de_tomadas_plastica_e_tampa_metalica_-_edge_office.webp",
+            "description": "Modern Gebbwork office furniture solutions for workspaces and commercial interiors."
+          }
+        ]
+      },
+      {
+        "title": "Drawers",
+        "items": [
+          {
+            "name": "Gebbwork Office Furniture",
+            "img": "/images/brand-product-images/gebbwork/65fad0a858aaa.webp",
+            "description": "Modern Gebbwork office furniture solutions for workspaces and commercial interiors."
+          },
+          {
+            "name": "Gebbwork Office Furniture",
+            "img": "/images/brand-product-images/gebbwork/65fad0da975c5.webp",
+            "description": "Modern Gebbwork office furniture solutions for workspaces and commercial interiors."
+          },
+          {
+            "name": "Gebbwork Office Furniture",
+            "img": "/images/brand-product-images/gebbwork/gaveteiro_com_extensao_04_gavetas_-_start_office.webp",
+            "description": "Modern Gebbwork office furniture solutions for workspaces and commercial interiors."
+          },
+          {
+            "name": "Gebbwork Office Furniture",
+            "img": "/images/brand-product-images/gebbwork/65f9e95980834.webp",
+            "description": "Modern Gebbwork office furniture solutions for workspaces and commercial interiors."
+          },
+          {
+            "name": "Gebbwork Office Furniture",
+            "img": "/images/brand-product-images/gebbwork/65f9e9038eb36.webp",
+            "description": "Modern Gebbwork office furniture solutions for workspaces and commercial interiors."
+          },
+          {
+            "name": "Gebbwork Office Furniture",
+            "img": "/images/brand-product-images/gebbwork/gaveteiro_lateral_com_extensao_04_gavetas_-_yaris_office.webp",
+            "description": "Modern Gebbwork office furniture solutions for workspaces and commercial interiors."
+          },
+          {
+            "name": "Gebbwork Office Furniture",
+            "img": "/images/brand-product-images/gebbwork/65f9e8768a157.webp",
+            "description": "Modern Gebbwork office furniture solutions for workspaces and commercial interiors."
+          },
+          {
+            "name": "Gebbwork Office Furniture",
+            "img": "/images/brand-product-images/gebbwork/65f9e72259bbc.webp",
+            "description": "Modern Gebbwork office furniture solutions for workspaces and commercial interiors."
+          },
+          {
+            "name": "Gebbwork Office Furniture",
+            "img": "/images/brand-product-images/gebbwork/gaveteiro_movel_02_gavetas_e_01_pasta_-_express_office.webp",
+            "description": "Modern Gebbwork office furniture solutions for workspaces and commercial interiors."
+          },
+          {
+            "name": "Gebbwork Office Furniture",
+            "img": "/images/brand-product-images/gebbwork/65f9e7b1332fb.webp",
+            "description": "Modern Gebbwork office furniture solutions for workspaces and commercial interiors."
+          },
+          {
+            "name": "Gebbwork Office Furniture",
+            "img": "/images/brand-product-images/gebbwork/gaveteiro_movel_02_gavetas_e_01_pasta_-_start_office.webp",
+            "description": "Modern Gebbwork office furniture solutions for workspaces and commercial interiors."
+          },
+          {
+            "name": "Gebbwork Office Furniture",
+            "img": "/images/brand-product-images/gebbwork/gaveteiro_movel_02_gavetas_e_01_pasta_-_yaris_office.webp",
+            "description": "Modern Gebbwork office furniture solutions for workspaces and commercial interiors."
+          },
+          {
+            "name": "Gebbwork Office Furniture",
+            "img": "/images/brand-product-images/gebbwork/65fc38c971f1e.webp",
+            "description": "Modern Gebbwork office furniture solutions for workspaces and commercial interiors."
+          },
+          {
+            "name": "Gebbwork Office Furniture",
+            "img": "/images/brand-product-images/gebbwork/gaveteiro_movel_04_gavetas_-_express_office.webp",
+            "description": "Modern Gebbwork office furniture solutions for workspaces and commercial interiors."
+          },
+          {
+            "name": "Gebbwork Office Furniture",
+            "img": "/images/brand-product-images/gebbwork/65fc3894de71b.webp",
+            "description": "Modern Gebbwork office furniture solutions for workspaces and commercial interiors."
+          },
+          {
+            "name": "Gebbwork Office Furniture",
+            "img": "/images/brand-product-images/gebbwork/gaveteiro_movel_04_gavetas_-_yaris_office.webp",
+            "description": "Modern Gebbwork office furniture solutions for workspaces and commercial interiors."
+          },
+          {
+            "name": "Gebbwork Office Furniture",
+            "img": "/images/brand-product-images/gebbwork/65fc37d1c6033.webp",
+            "description": "Modern Gebbwork office furniture solutions for workspaces and commercial interiors."
+          },
+          {
+            "name": "Gebbwork Office Furniture",
+            "img": "/images/brand-product-images/gebbwork/gaveteiro_suspenso_-_pega_lateral_-_express_office.webp",
+            "description": "Modern Gebbwork office furniture solutions for workspaces and commercial interiors."
+          },
+          {
+            "name": "Gebbwork Office Furniture",
+            "img": "/images/brand-product-images/gebbwork/gaveteiro_suspenso_-_puxador_-_express_office.webp",
+            "description": "Modern Gebbwork office furniture solutions for workspaces and commercial interiors."
+          },
+          {
+            "name": "Gebbwork Office Furniture",
+            "img": "/images/brand-product-images/gebbwork/gaveteiro_suspenso_-_start_office.webp",
+            "description": "Modern Gebbwork office furniture solutions for workspaces and commercial interiors."
+          },
+          {
+            "name": "Gebbwork Office Furniture",
+            "img": "/images/brand-product-images/gebbwork/gaveteiro_suspenso_-_yaris_office.webp",
+            "description": "Modern Gebbwork office furniture solutions for workspaces and commercial interiors."
+          },
+          {
+            "name": "Gebbwork Office Furniture",
+            "img": "/images/brand-product-images/gebbwork/65fc380e55b89.webp",
+            "description": "Modern Gebbwork office furniture solutions for workspaces and commercial interiors."
+          },
+          {
+            "name": "Gebbwork Office Furniture",
+            "img": "/images/brand-product-images/gebbwork/65fc385154539.webp",
+            "description": "Modern Gebbwork office furniture solutions for workspaces and commercial interiors."
+          },
+          {
+            "name": "Gebbwork Office Furniture",
+            "img": "/images/brand-product-images/gebbwork/gaveteiro_suspenso_2_gavetas_-_new_city_office.webp",
+            "description": "Modern Gebbwork office furniture solutions for workspaces and commercial interiors."
+          },
+          {
+            "name": "Gebbwork Office Furniture",
+            "img": "/images/brand-product-images/gebbwork/gaveteiro_suspenso_para_plataformas_-_express_office.webp",
+            "description": "Modern Gebbwork office furniture solutions for workspaces and commercial interiors."
+          },
+          {
+            "name": "Gebbwork Office Furniture",
+            "img": "/images/brand-product-images/gebbwork/gaveteiro_volante_1_gaveta_e_1_pasta_-_edge_office.webp",
+            "description": "Modern Gebbwork office furniture solutions for workspaces and commercial interiors."
+          },
+          {
+            "name": "Gebbwork Office Furniture",
+            "img": "/images/brand-product-images/gebbwork/gaveteiro_volante_2_gavetas_e_1_pasta_-_new_city_office.webp",
+            "description": "Modern Gebbwork office furniture solutions for workspaces and commercial interiors."
+          },
+          {
+            "name": "Gebbwork Office Furniture",
+            "img": "/images/brand-product-images/gebbwork/gaveteiro_volante_3_gavetas_-_edge_office.webp",
+            "description": "Modern Gebbwork office furniture solutions for workspaces and commercial interiors."
+          },
+          {
+            "name": "Gebbwork Office Furniture",
+            "img": "/images/brand-product-images/gebbwork/gaveteiro_volante_4_gavetas_-_new_city_office.webp",
+            "description": "Modern Gebbwork office furniture solutions for workspaces and commercial interiors."
+          },
+          {
+            "name": "Gebbwork Office Furniture",
+            "img": "/images/brand-product-images/gebbwork/gaveteiromovel_04_gavetas_-_start_office.webp",
+            "description": "Modern Gebbwork office furniture solutions for workspaces and commercial interiors."
+          }
+        ]
+      },
+      {
+        "title": "Accessories",
+        "items": [
+          {
+            "name": "Gebbwork Office Furniture",
+            "img": "/images/brand-product-images/gebbwork/braco_articulavel_360_para_monitor_632_preto_office.webp",
+            "description": "Modern Gebbwork office furniture solutions for workspaces and commercial interiors."
+          },
+          {
+            "name": "Gebbwork Office Furniture",
+            "img": "/images/brand-product-images/gebbwork/braco_articulavel_360_para_monitor_lcd_632_preto_-_acessorios_vitago.webp",
+            "description": "Modern Gebbwork office furniture solutions for workspaces and commercial interiors."
+          },
+          {
+            "name": "Gebbwork Office Furniture",
+            "img": "/images/brand-product-images/gebbwork/kit_ferragem_painel_parede_-_acessorios_vitago.webp",
+            "description": "Modern Gebbwork office furniture solutions for workspaces and commercial interiors."
+          },
+          {
+            "name": "Gebbwork Office Furniture",
+            "img": "/images/brand-product-images/gebbwork/kit_ferragem_painel_parede_office.webp",
+            "description": "Modern Gebbwork office furniture solutions for workspaces and commercial interiors."
+          },
+          {
+            "name": "Gebbwork Office Furniture",
+            "img": "/images/brand-product-images/gebbwork/kit_ferragem_para_montagem_-_acessorios_vitago.webp",
+            "description": "Modern Gebbwork office furniture solutions for workspaces and commercial interiors."
+          },
+          {
+            "name": "Gebbwork Office Furniture",
+            "img": "/images/brand-product-images/gebbwork/kit_ferragem_para_montagem_office.webp",
+            "description": "Modern Gebbwork office furniture solutions for workspaces and commercial interiors."
+          },
+          {
+            "name": "Gebbwork Office Furniture",
+            "img": "/images/brand-product-images/gebbwork/kit_pitao_15_mm_para_fixacao_superior_-_acessorios_vitago.webp",
+            "description": "Modern Gebbwork office furniture solutions for workspaces and commercial interiors."
+          },
+          {
+            "name": "Gebbwork Office Furniture",
+            "img": "/images/brand-product-images/gebbwork/kit_pitao_15mm_para_fixacao_superior_office.webp",
+            "description": "Modern Gebbwork office furniture solutions for workspaces and commercial interiors."
+          },
+          {
+            "name": "Gebbwork Office Furniture",
+            "img": "/images/brand-product-images/gebbwork/kit_pitao_6_mm_para_fixacao_superior_-_acessorios_vitago.webp",
+            "description": "Modern Gebbwork office furniture solutions for workspaces and commercial interiors."
+          },
+          {
+            "name": "Gebbwork Office Furniture",
+            "img": "/images/brand-product-images/gebbwork/kit_pitao_6mm_para_fixacao_superior_office.webp",
+            "description": "Modern Gebbwork office furniture solutions for workspaces and commercial interiors."
+          },
+          {
+            "name": "Gebbwork Office Furniture",
+            "img": "/images/brand-product-images/gebbwork/kit_puxador_metalico_edge_128mm_office.webp",
+            "description": "Modern Gebbwork office furniture solutions for workspaces and commercial interiors."
+          },
+          {
+            "name": "Gebbwork Office Furniture",
+            "img": "/images/brand-product-images/gebbwork/kit_puxador_metalico_mano_128_mm_-_acessorios_vitago.webp",
+            "description": "Modern Gebbwork office furniture solutions for workspaces and commercial interiors."
+          },
+          {
+            "name": "Gebbwork Office Furniture",
+            "img": "/images/brand-product-images/gebbwork/kit_puxador_metalico_stivo_128_mm_-_acessorios_vitago.webp",
+            "description": "Modern Gebbwork office furniture solutions for workspaces and commercial interiors."
+          },
+          {
+            "name": "Gebbwork Office Furniture",
+            "img": "/images/brand-product-images/gebbwork/kit_puxador_metalico_stivo_128mm_office.webp",
+            "description": "Modern Gebbwork office furniture solutions for workspaces and commercial interiors."
+          },
+          {
+            "name": "Gebbwork Office Furniture",
+            "img": "/images/brand-product-images/gebbwork/kit_puxador_perfil_metalico_-_acessorios_vitago.webp",
+            "description": "Modern Gebbwork office furniture solutions for workspaces and commercial interiors."
+          },
+          {
+            "name": "Gebbwork Office Furniture",
+            "img": "/images/brand-product-images/gebbwork/kit_puxador_yaris_128mm_office.webp",
+            "description": "Modern Gebbwork office furniture solutions for workspaces and commercial interiors."
+          },
+          {
+            "name": "Gebbwork Office Furniture",
+            "img": "/images/brand-product-images/gebbwork/luminaria_-_acessorios_vitago.webp",
+            "description": "Modern Gebbwork office furniture solutions for workspaces and commercial interiors."
+          },
+          {
+            "name": "Gebbwork Office Furniture",
+            "img": "/images/brand-product-images/gebbwork/pe_cilindrico_2_12_d635_x715_-_acessorios_vitago.webp",
+            "description": "Modern Gebbwork office furniture solutions for workspaces and commercial interiors."
+          },
+          {
+            "name": "Gebbwork Office Furniture",
+            "img": "/images/brand-product-images/gebbwork/pe_cilindrico_2_12d635x175_office.webp",
+            "description": "Modern Gebbwork office furniture solutions for workspaces and commercial interiors."
+          },
+          {
+            "name": "Gebbwork Office Furniture",
+            "img": "/images/brand-product-images/gebbwork/sistema_de_fixacao_para_tv_universal_-_acessorios_vitago.webp",
+            "description": "Modern Gebbwork office furniture solutions for workspaces and commercial interiors."
+          },
+          {
+            "name": "Gebbwork Office Furniture",
+            "img": "/images/brand-product-images/gebbwork/sistema_de_fixacao_para_tv_universal_office.webp",
+            "description": "Modern Gebbwork office furniture solutions for workspaces and commercial interiors."
+          },
+          {
+            "name": "Gebbwork Office Furniture",
+            "img": "/images/brand-product-images/gebbwork/suporte_horizontal_para_papel_em_aco_-_acessorios_vitago.webp",
+            "description": "Modern Gebbwork office furniture solutions for workspaces and commercial interiors."
+          },
+          {
+            "name": "Gebbwork Office Furniture",
+            "img": "/images/brand-product-images/gebbwork/suporte_horizontal_para_papel_em_aco_office.webp",
+            "description": "Modern Gebbwork office furniture solutions for workspaces and commercial interiors."
+          },
+          {
+            "name": "Gebbwork Office Furniture",
+            "img": "/images/brand-product-images/gebbwork/suporte_para_pasta_suspensa_-_acessorios_vitago.webp",
+            "description": "Modern Gebbwork office furniture solutions for workspaces and commercial interiors."
+          },
+          {
+            "name": "Gebbwork Office Furniture",
+            "img": "/images/brand-product-images/gebbwork/suporte_para_pasta_suspensa_office.webp",
+            "description": "Modern Gebbwork office furniture solutions for workspaces and commercial interiors."
+          },
+          {
+            "name": "Gebbwork Office Furniture",
+            "img": "/images/brand-product-images/gebbwork/suporte_para_pasta_suspensa_economico_-_acessorios_vitago.webp",
+            "description": "Modern Gebbwork office furniture solutions for workspaces and commercial interiors."
+          },
+          {
+            "name": "Gebbwork Office Furniture",
+            "img": "/images/brand-product-images/gebbwork/suporte_vertical_para_papel_em_aco_-_acessorios_vitago.webp",
+            "description": "Modern Gebbwork office furniture solutions for workspaces and commercial interiors."
+          },
+          {
+            "name": "Gebbwork Office Furniture",
+            "img": "/images/brand-product-images/gebbwork/suporte_vertical_para_papel_em_aco_office.webp",
+            "description": "Modern Gebbwork office furniture solutions for workspaces and commercial interiors."
+          }
+        ]
+      },
+      {
+        "title": "Front Desks",
+        "items": [
+          {
+            "name": "Edge - Rectangular Director Desk",
+            "img": "/images/brand-product-images/gebbwork/mesa_diretor_retangular_-_edge_office.webp",
+            "description": "This rectangular desk offers a clean and modern look. It is ideal for executive office environments."
+          },
+          {
+            "name": "High Service Counter",
+            "img": "/images/brand-product-images/gebbwork/balcao_atendimento_alto_office.webp",
+            "description": "This high counter is designed for reception areas. It provides functionality and a professional appearance."
+          },
+          {
+            "name": "Angle Service Counter",
+            "img": "/images/brand-product-images/gebbwork/balcao_atendimento_angular_office.webp",
+            "description": "This angular counter optimizes space usage. It is suitable for reception and service areas."
+          },
+          {
+            "name": "Low Service Counter",
+            "img": "/images/brand-product-images/gebbwork/balcao_atendimento_baixo_office.webp",
+            "description": "This low counter provides accessibility and style. It is ideal for customer service environments."
+          },
+          {
+            "name": "Service Counter",
+            "img": "/images/brand-product-images/gebbwork/balcao_atendimento_office.webp",
+            "description": "This service counter offers a simple and professional design. It is suitable for offices and reception areas."
+          },
+          {
+            "name": "Gebbwork Office Furniture",
+            "img": "/images/brand-product-images/gebbwork/65fc9eb6c85b4.webp",
+            "description": "Modern Gebbwork office furniture solutions for workspaces and commercial interiors."
+          },
+          {
+            "name": "Gebbwork Office Furniture",
+            "img": "/images/brand-product-images/gebbwork/66143b9b8cda7.webp",
+            "description": "Modern Gebbwork office furniture solutions for workspaces and commercial interiors."
+          },
+          {
+            "name": "Gebbwork Office Furniture",
+            "img": "/images/brand-product-images/gebbwork/65fc9ee7d325b.webp",
+            "description": "Modern Gebbwork office furniture solutions for workspaces and commercial interiors."
+          },
+          {
+            "name": "Gebbwork Office Furniture",
+            "img": "/images/brand-product-images/gebbwork/66143bda39a92.webp",
+            "description": "Modern Gebbwork office furniture solutions for workspaces and commercial interiors."
+          },
+          {
+            "name": "Gebbwork Office Furniture",
+            "img": "/images/brand-product-images/gebbwork/balcao_atendimento_alto_office.webp",
+            "description": "Modern Gebbwork office furniture solutions for workspaces and commercial interiors."
+          },
+          {
+            "name": "Gebbwork Office Furniture",
+            "img": "/images/brand-product-images/gebbwork/balcao_atendimento_angular_office.webp",
+            "description": "Modern Gebbwork office furniture solutions for workspaces and commercial interiors."
+          },
+          {
+            "name": "Gebbwork Office Furniture",
+            "img": "/images/brand-product-images/gebbwork/66143c12eed8a.webp",
+            "description": "Modern Gebbwork office furniture solutions for workspaces and commercial interiors."
+          },
+          {
+            "name": "Gebbwork Office Furniture",
+            "img": "/images/brand-product-images/gebbwork/balcao_atendimento_baixo_office.webp",
+            "description": "Modern Gebbwork office furniture solutions for workspaces and commercial interiors."
+          },
+          {
+            "name": "Gebbwork Office Furniture",
+            "img": "/images/brand-product-images/gebbwork/balcao_atendimento_office.webp",
+            "description": "Modern Gebbwork office furniture solutions for workspaces and commercial interiors."
+          },
+          {
+            "name": "Gebbwork Office Furniture",
+            "img": "/images/brand-product-images/gebbwork/66143c6411fd5.webp",
+            "description": "Modern Gebbwork office furniture solutions for workspaces and commercial interiors."
+          },
+          {
+            "name": "Gebbwork Office Furniture",
+            "img": "/images/brand-product-images/gebbwork/66143c93b67af.webp",
+            "description": "Modern Gebbwork office furniture solutions for workspaces and commercial interiors."
+          },
+          {
+            "name": "Gebbwork Office Furniture",
+            "img": "/images/brand-product-images/gebbwork/66143cca6f154.webp",
+            "description": "Modern Gebbwork office furniture solutions for workspaces and commercial interiors."
+          },
+          {
+            "name": "Gebbwork Office Furniture",
+            "img": "/images/brand-product-images/gebbwork/66143cf77233a.webp",
+            "description": "Modern Gebbwork office furniture solutions for workspaces and commercial interiors."
+          },
+          {
+            "name": "Gebbwork Office Furniture",
+            "img": "/images/brand-product-images/gebbwork/66143d2088117.webp",
+            "description": "Modern Gebbwork office furniture solutions for workspaces and commercial interiors."
+          },
+          {
+            "name": "Gebbwork Office Furniture",
+            "img": "/images/brand-product-images/gebbwork/66143d6228281.webp",
+            "description": "Modern Gebbwork office furniture solutions for workspaces and commercial interiors."
+          },
+          {
+            "name": "Gebbwork Office Furniture",
+            "img": "/images/brand-product-images/gebbwork/divisao_diresq_fechamento_baixo_-_recepcao_vitago.webp",
+            "description": "Modern Gebbwork office furniture solutions for workspaces and commercial interiors."
+          },
+          {
+            "name": "Gebbwork Office Furniture",
+            "img": "/images/brand-product-images/gebbwork/frontal_balcao_baixoalto_-_recepcao_vitago.webp",
+            "description": "Modern Gebbwork office furniture solutions for workspaces and commercial interiors."
+          },
+          {
+            "name": "Gebbwork Office Furniture",
+            "img": "/images/brand-product-images/gebbwork/frontal_balcao_canto_-_recepcao_vitago.webp",
+            "description": "Modern Gebbwork office furniture solutions for workspaces and commercial interiors."
+          },
+          {
+            "name": "Gebbwork Office Furniture",
+            "img": "/images/brand-product-images/gebbwork/frontal_superior_balcao_baixo_-_recepcao_vitago.webp",
+            "description": "Modern Gebbwork office furniture solutions for workspaces and commercial interiors."
+          },
+          {
+            "name": "Gebbwork Office Furniture",
+            "img": "/images/brand-product-images/gebbwork/mesa_de_canto_com_vidro_-_recepcao_vitago.webp",
+            "description": "Modern Gebbwork office furniture solutions for workspaces and commercial interiors."
+          },
+          {
+            "name": "Gebbwork Office Furniture",
+            "img": "/images/brand-product-images/gebbwork/mesa_de_centro_com_vidro_-_recepcao_vitago.webp",
+            "description": "Modern Gebbwork office furniture solutions for workspaces and commercial interiors."
+          },
+          {
+            "name": "Gebbwork Office Furniture",
+            "img": "/images/brand-product-images/gebbwork/painel_central_alto_-_recepcao_vitago.webp",
+            "description": "Modern Gebbwork office furniture solutions for workspaces and commercial interiors."
+          },
+          {
+            "name": "Gebbwork Office Furniture",
+            "img": "/images/brand-product-images/gebbwork/painel_central_baixo_-_recepcao_vitago.webp",
+            "description": "Modern Gebbwork office furniture solutions for workspaces and commercial interiors."
+          },
+          {
+            "name": "Gebbwork Office Furniture",
+            "img": "/images/brand-product-images/gebbwork/painel_lateral_direito_fechamento_alto_-_recepcao_vitago.webp",
+            "description": "Modern Gebbwork office furniture solutions for workspaces and commercial interiors."
+          },
+          {
+            "name": "Gebbwork Office Furniture",
+            "img": "/images/brand-product-images/gebbwork/painel_lateral_direito_fechamento_baixo_-_recepcao_vitago.webp",
+            "description": "Modern Gebbwork office furniture solutions for workspaces and commercial interiors."
+          },
+          {
+            "name": "Gebbwork Office Furniture",
+            "img": "/images/brand-product-images/gebbwork/painel_lateral_esquerdo_fechamento_alto_-_recepcao_vitago.webp",
+            "description": "Modern Gebbwork office furniture solutions for workspaces and commercial interiors."
+          },
+          {
+            "name": "Gebbwork Office Furniture",
+            "img": "/images/brand-product-images/gebbwork/painel_lateral_esquerdo_fechamento_baixo_-_recepcao_vitago.webp",
+            "description": "Modern Gebbwork office furniture solutions for workspaces and commercial interiors."
+          }
+        ]
+      },
+      {
+        "title": "Electrical Accessories",
+        "items": [
+          {
+            "name": "Gebbwork Office Furniture",
+            "img": "/images/brand-product-images/gebbwork/caixa_de_tomadas_09_pontos_04_eletricas_03_logicas_usb_e_hdmi_tampa_metalica_vitago.webp",
+            "description": "Modern Gebbwork office furniture solutions for workspaces and commercial interiors."
+          },
+          {
+            "name": "Gebbwork Office Furniture",
+            "img": "/images/brand-product-images/gebbwork/caixa_de_tomadas_09_pontos_04_eletricas_03_logicas_usb_e_hdmi_vitago.webp",
+            "description": "Modern Gebbwork office furniture solutions for workspaces and commercial interiors."
+          },
+          {
+            "name": "Gebbwork Office Furniture",
+            "img": "/images/brand-product-images/gebbwork/caixa_de_tomadas_09_pontos_-_03_eletricas_04_logicas_usb_e_hdmi_office.webp",
+            "description": "Modern Gebbwork office furniture solutions for workspaces and commercial interiors."
+          },
+          {
+            "name": "Gebbwork Office Furniture",
+            "img": "/images/brand-product-images/gebbwork/caixa_de_tomadas_09_pontos_-_03_eletricas_04_logicas_usb_e_hdmi_tampa_metalica_office.webp",
+            "description": "Modern Gebbwork office furniture solutions for workspaces and commercial interiors."
+          },
+          {
+            "name": "Gebbwork Office Furniture",
+            "img": "/images/brand-product-images/gebbwork/caixa_de_tomadas_metalica_para_06_eletricas_06_logicas_usb_e_hdmi_vitago.webp",
+            "description": "Modern Gebbwork office furniture solutions for workspaces and commercial interiors."
+          },
+          {
+            "name": "Gebbwork Office Furniture",
+            "img": "/images/brand-product-images/gebbwork/calha_fiacao_vitago.webp",
+            "description": "Modern Gebbwork office furniture solutions for workspaces and commercial interiors."
+          },
+          {
+            "name": "Gebbwork Office Furniture",
+            "img": "/images/brand-product-images/gebbwork/carregador_universal_inducaousb_-_preto_office.webp",
+            "description": "Modern Gebbwork office furniture solutions for workspaces and commercial interiors."
+          },
+          {
+            "name": "Gebbwork Office Furniture",
+            "img": "/images/brand-product-images/gebbwork/carregador_universal_inducaousb_-_preto_vitago.webp",
+            "description": "Modern Gebbwork office furniture solutions for workspaces and commercial interiors."
+          },
+          {
+            "name": "Gebbwork Office Furniture",
+            "img": "/images/brand-product-images/gebbwork/conector_hdmi_femeafemea_office.webp",
+            "description": "Modern Gebbwork office furniture solutions for workspaces and commercial interiors."
+          },
+          {
+            "name": "Gebbwork Office Furniture",
+            "img": "/images/brand-product-images/gebbwork/conector_hdmi_femeafemea_vitago.webp",
+            "description": "Modern Gebbwork office furniture solutions for workspaces and commercial interiors."
+          },
+          {
+            "name": "Gebbwork Office Furniture",
+            "img": "/images/brand-product-images/gebbwork/conector_usb_charger_5v_21a_office.webp",
+            "description": "Modern Gebbwork office furniture solutions for workspaces and commercial interiors."
+          },
+          {
+            "name": "Gebbwork Office Furniture",
+            "img": "/images/brand-product-images/gebbwork/conector_usb_charger_5v_21a_vitago.webp",
+            "description": "Modern Gebbwork office furniture solutions for workspaces and commercial interiors."
+          },
+          {
+            "name": "Gebbwork Office Furniture",
+            "img": "/images/brand-product-images/gebbwork/conector_usb_femeafemea_office.webp",
+            "description": "Modern Gebbwork office furniture solutions for workspaces and commercial interiors."
+          },
+          {
+            "name": "Gebbwork Office Furniture",
+            "img": "/images/brand-product-images/gebbwork/conector_usb_femeafemea_vitago.webp",
+            "description": "Modern Gebbwork office furniture solutions for workspaces and commercial interiors."
+          },
+          {
+            "name": "Gebbwork Office Furniture",
+            "img": "/images/brand-product-images/gebbwork/duto_para_cabos_vertical_fixo_em_aco_580x5070x30_office.webp",
+            "description": "Modern Gebbwork office furniture solutions for workspaces and commercial interiors."
+          },
+          {
+            "name": "Gebbwork Office Furniture",
+            "img": "/images/brand-product-images/gebbwork/duto_para_cabos_vertical_fixo_em_aco_580x5070x30_vitago.webp",
+            "description": "Modern Gebbwork office furniture solutions for workspaces and commercial interiors."
+          },
+          {
+            "name": "Gebbwork Office Furniture",
+            "img": "/images/brand-product-images/gebbwork/duto_para_cabos_vertical_tampa_saque_em_aco_595x80x25_office.webp",
+            "description": "Modern Gebbwork office furniture solutions for workspaces and commercial interiors."
+          },
+          {
+            "name": "Gebbwork Office Furniture",
+            "img": "/images/brand-product-images/gebbwork/duto_para_cabos_vertical_tampa_saque_em_aco_595x80x25_vitago.webp",
+            "description": "Modern Gebbwork office furniture solutions for workspaces and commercial interiors."
+          },
+          {
+            "name": "Gebbwork Office Furniture",
+            "img": "/images/brand-product-images/gebbwork/extensao_tomadas_office.webp",
+            "description": "Modern Gebbwork office furniture solutions for workspaces and commercial interiors."
+          },
+          {
+            "name": "Gebbwork Office Furniture",
+            "img": "/images/brand-product-images/gebbwork/extensao_tomadas_vitago.webp",
+            "description": "Modern Gebbwork office furniture solutions for workspaces and commercial interiors."
+          },
+          {
+            "name": "Gebbwork Office Furniture",
+            "img": "/images/brand-product-images/gebbwork/kit_04_tomadas_eletrificaveis_office.webp",
+            "description": "Modern Gebbwork office furniture solutions for workspaces and commercial interiors."
+          },
+          {
+            "name": "Gebbwork Office Furniture",
+            "img": "/images/brand-product-images/gebbwork/kit_04_tomadas_eletrificaveis_vitago.webp",
+            "description": "Modern Gebbwork office furniture solutions for workspaces and commercial interiors."
+          },
+          {
+            "name": "Gebbwork Office Furniture",
+            "img": "/images/brand-product-images/gebbwork/kit_com_05_passa_cabo_office.webp",
+            "description": "Modern Gebbwork office furniture solutions for workspaces and commercial interiors."
+          },
+          {
+            "name": "Gebbwork Office Furniture",
+            "img": "/images/brand-product-images/gebbwork/kit_com_5_passo_cabo_vitago.webp",
+            "description": "Modern Gebbwork office furniture solutions for workspaces and commercial interiors."
+          },
+          {
+            "name": "Gebbwork Office Furniture",
+            "img": "/images/brand-product-images/gebbwork/regua_para_bancada_com_tomadas_e_rj45_-_yaris_office.webp",
+            "description": "Modern Gebbwork office furniture solutions for workspaces and commercial interiors."
+          },
+          {
+            "name": "Gebbwork Office Furniture",
+            "img": "/images/brand-product-images/gebbwork/tomada_carregador_usb_2a-biv_office.webp",
+            "description": "Modern Gebbwork office furniture solutions for workspaces and commercial interiors."
+          },
+          {
+            "name": "Gebbwork Office Furniture",
+            "img": "/images/brand-product-images/gebbwork/tomada_carregador_usb_2a-biv_vitago.webp",
+            "description": "Modern Gebbwork office furniture solutions for workspaces and commercial interiors."
+          },
+          {
+            "name": "Gebbwork Office Furniture",
+            "img": "/images/brand-product-images/gebbwork/tomada_eletrica_office.webp",
+            "description": "Modern Gebbwork office furniture solutions for workspaces and commercial interiors."
+          },
+          {
+            "name": "Gebbwork Office Furniture",
+            "img": "/images/brand-product-images/gebbwork/tomada_eletrica_vitago.webp",
+            "description": "Modern Gebbwork office furniture solutions for workspaces and commercial interiors."
+          },
+          {
+            "name": "Gebbwork Office Furniture",
+            "img": "/images/brand-product-images/gebbwork/tomada_inf_rj45_cat_06_vitago.webp",
+            "description": "Modern Gebbwork office furniture solutions for workspaces and commercial interiors."
+          },
+          {
+            "name": "Gebbwork Office Furniture",
+            "img": "/images/brand-product-images/gebbwork/tomada_inf_rj45_vitago.webp",
+            "description": "Modern Gebbwork office furniture solutions for workspaces and commercial interiors."
+          },
+          {
+            "name": "Gebbwork Office Furniture",
+            "img": "/images/brand-product-images/gebbwork/tomada_infrj45_cat_06_office.webp",
+            "description": "Modern Gebbwork office furniture solutions for workspaces and commercial interiors."
+          },
+          {
+            "name": "Gebbwork Office Furniture",
+            "img": "/images/brand-product-images/gebbwork/tomada_infrj45_office.webp",
+            "description": "Modern Gebbwork office furniture solutions for workspaces and commercial interiors."
+          }
+        ]
+      },
+      {
+        "title": "Cabinets",
+        "items": [
+          {
+            "name": "Gebbwork Office Furniture",
+            "img": "/images/brand-product-images/gebbwork/aparador_-_edge_office.webp",
+            "description": "Modern Gebbwork office furniture solutions for workspaces and commercial interiors."
+          },
+          {
+            "name": "DOM - High Cabinet",
+            "img": "/images/brand-product-images/gebbwork/65facb15a374a.webp",
+            "description": "This high cabinet provides ample storage space. It is ideal for offices and document organization."
+          },
+          {
+            "name": "Lexus Prime - High Cabinet",
+            "img": "/images/brand-product-images/gebbwork/65fae99f9c6d7.webp",
+            "description": "This tall cabinet ensures efficient storage. It complements modern office interiors."
+          },
+          {
+            "name": "New City - High Cabinet",
+            "img": "/images/brand-product-images/gebbwork/armario_alto_-_new_city_office.webp",
+            "description": "This cabinet is designed for organized storage. It is suitable for professional workspaces."
+          },
+          {
+            "name": "Gebbwork Office Furniture",
+            "img": "/images/brand-product-images/gebbwork/armario_alto_-_start_office.webp",
+            "description": "Modern Gebbwork office furniture solutions for workspaces and commercial interiors."
+          },
+          {
+            "name": "Gebbwork Office Furniture",
+            "img": "/images/brand-product-images/gebbwork/armario_alto_-_yaris_office.webp",
+            "description": "Modern Gebbwork office furniture solutions for workspaces and commercial interiors."
+          },
+          {
+            "name": "Express - 2 Door High Cabinet",
+            "img": "/images/brand-product-images/gebbwork/armario_alto_02_portas_-_express_office.webp",
+            "description": "This cabinet features two doors for secure storage. It is ideal for office organization."
+          },
+          {
+            "name": "Gebbwork Office Furniture",
+            "img": "/images/brand-product-images/gebbwork/65faeb56cd303.webp",
+            "description": "Modern Gebbwork office furniture solutions for workspaces and commercial interiors."
+          },
+          {
+            "name": "Edge - High Cabinet with 12 Niches",
+            "img": "/images/brand-product-images/gebbwork/armario_alto_12_nichos_-_edge_office.webp",
+            "description": "This cabinet includes multiple niches for display and storage. It suits modern office layouts."
+          },
+          {
+            "name": "Gebbwork Office Furniture",
+            "img": "/images/brand-product-images/gebbwork/armario_alto_2_portas_-_edge_office.webp",
+            "description": "Modern Gebbwork office furniture solutions for workspaces and commercial interiors."
+          },
+          {
+            "name": "Edge - Cabinet with Doors and Niches",
+            "img": "/images/brand-product-images/gebbwork/armario_alto_2_portas_e_4_nichos_-_edge_office.webp",
+            "description": "This cabinet combines closed storage with open niches. It provides flexibility and style."
+          },
+          {
+            "name": "Edge - High Cabinet with 8 Niches",
+            "img": "/images/brand-product-images/gebbwork/armario_alto_8_nichos_-_edge_office.webp",
+            "description": "This cabinet offers open storage with multiple niches. It enhances organization and accessibility."
+          },
+          {
+            "name": "Gebbwork Office Furniture",
+            "img": "/images/brand-product-images/gebbwork/65facd2c44846.webp",
+            "description": "Modern Gebbwork office furniture solutions for workspaces and commercial interiors."
+          },
+          {
+            "name": "Gebbwork Office Furniture",
+            "img": "/images/brand-product-images/gebbwork/armario_alto_credenza_-_express_office.webp",
+            "description": "Modern Gebbwork office furniture solutions for workspaces and commercial interiors."
+          },
+          {
+            "name": "Gebbwork Office Furniture",
+            "img": "/images/brand-product-images/gebbwork/armario_alto_credenza_-_start_office.webp",
+            "description": "Modern Gebbwork office furniture solutions for workspaces and commercial interiors."
+          },
+          {
+            "name": "Gebbwork Office Furniture",
+            "img": "/images/brand-product-images/gebbwork/65faef14a549c.webp",
+            "description": "Modern Gebbwork office furniture solutions for workspaces and commercial interiors."
+          },
+          {
+            "name": "Gebbwork Office Furniture",
+            "img": "/images/brand-product-images/gebbwork/armario_arquivo_04_gavetas_com_nicho_-_yaris_office.webp",
+            "description": "Modern Gebbwork office furniture solutions for workspaces and commercial interiors."
+          },
+          {
+            "name": "Gebbwork Office Furniture",
+            "img": "/images/brand-product-images/gebbwork/armario_arquivo_04_gavetas_pasta_-_start_office.webp",
+            "description": "Modern Gebbwork office furniture solutions for workspaces and commercial interiors."
+          },
+          {
+            "name": "Gebbwork Office Furniture",
+            "img": "/images/brand-product-images/gebbwork/armario_arquivo_04_pastas_-_express_office.webp",
+            "description": "Modern Gebbwork office furniture solutions for workspaces and commercial interiors."
+          },
+          {
+            "name": "Gebbwork Office Furniture",
+            "img": "/images/brand-product-images/gebbwork/armario_arquivo_4_gavetas_pasta_suspensa_-_new_city_office.webp",
+            "description": "Modern Gebbwork office furniture solutions for workspaces and commercial interiors."
+          },
+          {
+            "name": "Gebbwork Office Furniture",
+            "img": "/images/brand-product-images/gebbwork/65facb826480e.webp",
+            "description": "Modern Gebbwork office furniture solutions for workspaces and commercial interiors."
+          },
+          {
+            "name": "Gebbwork Office Furniture",
+            "img": "/images/brand-product-images/gebbwork/65fae9cd53c7c.webp",
+            "description": "Modern Gebbwork office furniture solutions for workspaces and commercial interiors."
+          },
+          {
+            "name": "Gebbwork Office Furniture",
+            "img": "/images/brand-product-images/gebbwork/armario_baixo_-_new_city_office.webp",
+            "description": "Modern Gebbwork office furniture solutions for workspaces and commercial interiors."
+          },
+          {
+            "name": "Gebbwork Office Furniture",
+            "img": "/images/brand-product-images/gebbwork/armario_baixo_-_start_office.webp",
+            "description": "Modern Gebbwork office furniture solutions for workspaces and commercial interiors."
+          },
+          {
+            "name": "Gebbwork Office Furniture",
+            "img": "/images/brand-product-images/gebbwork/armario_baixo_-_yaris_office.webp",
+            "description": "Modern Gebbwork office furniture solutions for workspaces and commercial interiors."
+          },
+          {
+            "name": "Gebbwork Office Furniture",
+            "img": "/images/brand-product-images/gebbwork/armario_baixo_02_portas_-_express_office.webp",
+            "description": "Modern Gebbwork office furniture solutions for workspaces and commercial interiors."
+          },
+          {
+            "name": "Gebbwork Office Furniture",
+            "img": "/images/brand-product-images/gebbwork/65faefa9c68d3.webp",
+            "description": "Modern Gebbwork office furniture solutions for workspaces and commercial interiors."
+          },
+          {
+            "name": "Gebbwork Office Furniture",
+            "img": "/images/brand-product-images/gebbwork/armario_baixo_6_nichos_-_edge_office.webp",
+            "description": "Modern Gebbwork office furniture solutions for workspaces and commercial interiors."
+          },
+          {
+            "name": "Gebbwork Office Furniture",
+            "img": "/images/brand-product-images/gebbwork/armario_baixo_8_nichos_-_edge_office.webp",
+            "description": "Modern Gebbwork office furniture solutions for workspaces and commercial interiors."
+          },
+          {
+            "name": "Gebbwork Office Furniture",
+            "img": "/images/brand-product-images/gebbwork/65faebc0c0e03.webp",
+            "description": "Modern Gebbwork office furniture solutions for workspaces and commercial interiors."
+          },
+          {
+            "name": "Gebbwork Office Furniture",
+            "img": "/images/brand-product-images/gebbwork/65faec17d1e9a.webp",
+            "description": "Modern Gebbwork office furniture solutions for workspaces and commercial interiors."
+          },
+          {
+            "name": "Gebbwork Office Furniture",
+            "img": "/images/brand-product-images/gebbwork/armario_baixo_com_2_portas_e_2_nichos_-_edge_office.webp",
+            "description": "Modern Gebbwork office furniture solutions for workspaces and commercial interiors."
+          },
+          {
+            "name": "Gebbwork Office Furniture",
+            "img": "/images/brand-product-images/gebbwork/armario_baixo_com_2_portas_e_4_nichos_-_edge_office.webp",
+            "description": "Modern Gebbwork office furniture solutions for workspaces and commercial interiors."
+          },
+          {
+            "name": "Gebbwork Office Furniture",
+            "img": "/images/brand-product-images/gebbwork/armario_baixo_com_4_gavetas_para_pasta_suspensa_e_2_nichos_-_edge_office.webp",
+            "description": "Modern Gebbwork office furniture solutions for workspaces and commercial interiors."
+          },
+          {
+            "name": "Gebbwork Office Furniture",
+            "img": "/images/brand-product-images/gebbwork/65faec8471c63.webp",
+            "description": "Modern Gebbwork office furniture solutions for workspaces and commercial interiors."
+          },
+          {
+            "name": "Gebbwork Office Furniture",
+            "img": "/images/brand-product-images/gebbwork/armario_baixo_credenza_-_express_office.webp",
+            "description": "Modern Gebbwork office furniture solutions for workspaces and commercial interiors."
+          },
+          {
+            "name": "Gebbwork Office Furniture",
+            "img": "/images/brand-product-images/gebbwork/armario_baixo_credenza_-_start_office.webp",
+            "description": "Modern Gebbwork office furniture solutions for workspaces and commercial interiors."
+          },
+          {
+            "name": "Gebbwork Office Furniture",
+            "img": "/images/brand-product-images/gebbwork/armario_baixo_credenza_-_yaris_office.webp",
+            "description": "Modern Gebbwork office furniture solutions for workspaces and commercial interiors."
+          },
+          {
+            "name": "Gebbwork Office Furniture",
+            "img": "/images/brand-product-images/gebbwork/65faecf02e56d.webp",
+            "description": "Modern Gebbwork office furniture solutions for workspaces and commercial interiors."
+          },
+          {
+            "name": "Gebbwork Office Furniture",
+            "img": "/images/brand-product-images/gebbwork/armario_estante_-_express_office.webp",
+            "description": "Modern Gebbwork office furniture solutions for workspaces and commercial interiors."
+          },
+          {
+            "name": "Gebbwork Office Furniture",
+            "img": "/images/brand-product-images/gebbwork/armario_estante_-_new_city_office.webp",
+            "description": "Modern Gebbwork office furniture solutions for workspaces and commercial interiors."
+          },
+          {
+            "name": "Gebbwork Office Furniture",
+            "img": "/images/brand-product-images/gebbwork/armario_estante_-_start_office.webp",
+            "description": "Modern Gebbwork office furniture solutions for workspaces and commercial interiors."
+          },
+          {
+            "name": "Gebbwork Office Furniture",
+            "img": "/images/brand-product-images/gebbwork/armario_estante_-_yaris_office.webp",
+            "description": "Modern Gebbwork office furniture solutions for workspaces and commercial interiors."
+          },
+          {
+            "name": "Gebbwork Office Furniture",
+            "img": "/images/brand-product-images/gebbwork/65faedb488b8a.webp",
+            "description": "Modern Gebbwork office furniture solutions for workspaces and commercial interiors."
+          },
+          {
+            "name": "Gebbwork Office Furniture",
+            "img": "/images/brand-product-images/gebbwork/65facc09d9aa8.webp",
+            "description": "Modern Gebbwork office furniture solutions for workspaces and commercial interiors."
+          },
+          {
+            "name": "Gebbwork Office Furniture",
+            "img": "/images/brand-product-images/gebbwork/armario_extra_alto_-_start_office.webp",
+            "description": "Modern Gebbwork office furniture solutions for workspaces and commercial interiors."
+          },
+          {
+            "name": "Gebbwork Office Furniture",
+            "img": "/images/brand-product-images/gebbwork/65faed2a8bbc6.webp",
+            "description": "Modern Gebbwork office furniture solutions for workspaces and commercial interiors."
+          },
+          {
+            "name": "Gebbwork Office Furniture",
+            "img": "/images/brand-product-images/gebbwork/65facceb4c48a.webp",
+            "description": "Modern Gebbwork office furniture solutions for workspaces and commercial interiors."
+          },
+          {
+            "name": "Gebbwork Office Furniture",
+            "img": "/images/brand-product-images/gebbwork/65facbc6bba8a.webp",
+            "description": "Modern Gebbwork office furniture solutions for workspaces and commercial interiors."
+          },
+          {
+            "name": "Gebbwork Office Furniture",
+            "img": "/images/brand-product-images/gebbwork/65faea03362ae.webp",
+            "description": "Modern Gebbwork office furniture solutions for workspaces and commercial interiors."
+          },
+          {
+            "name": "Gebbwork Office Furniture",
+            "img": "/images/brand-product-images/gebbwork/65faed73376b6.webp",
+            "description": "Modern Gebbwork office furniture solutions for workspaces and commercial interiors."
+          },
+          {
+            "name": "Gebbwork Office Furniture",
+            "img": "/images/brand-product-images/gebbwork/armario_misto_dinamico_com_extensao_-_start_office.webp",
+            "description": "Modern Gebbwork office furniture solutions for workspaces and commercial interiors."
+          },
+          {
+            "name": "Gebbwork Office Furniture",
+            "img": "/images/brand-product-images/gebbwork/armario_misto_dinamico_com_extensao_-_yaris_office.webp",
+            "description": "Modern Gebbwork office furniture solutions for workspaces and commercial interiors."
+          },
+          {
+            "name": "Gebbwork Office Furniture",
+            "img": "/images/brand-product-images/gebbwork/65facc5e18791.webp",
+            "description": "Modern Gebbwork office furniture solutions for workspaces and commercial interiors."
+          },
+          {
+            "name": "Gebbwork Office Furniture",
+            "img": "/images/brand-product-images/gebbwork/65facca5b96b4.webp",
+            "description": "Modern Gebbwork office furniture solutions for workspaces and commercial interiors."
+          },
+          {
+            "name": "Gebbwork Office Furniture",
+            "img": "/images/brand-product-images/gebbwork/65faee737f66e.webp",
+            "description": "Modern Gebbwork office furniture solutions for workspaces and commercial interiors."
+          },
+          {
+            "name": "Gebbwork Office Furniture",
+            "img": "/images/brand-product-images/gebbwork/conjunto_2_portas_altas_em_mdp_-_edge_office.webp",
+            "description": "Modern Gebbwork office furniture solutions for workspaces and commercial interiors."
+          },
+          {
+            "name": "Gebbwork Office Furniture",
+            "img": "/images/brand-product-images/gebbwork/conjunto_2_portas_baixas_em_mdp_-_edge_office.webp",
+            "description": "Modern Gebbwork office furniture solutions for workspaces and commercial interiors."
+          },
+          {
+            "name": "Gebbwork Office Furniture",
+            "img": "/images/brand-product-images/gebbwork/nicho_2_vaos_adaptavel_em_armarios_-_edge_office.webp",
+            "description": "Modern Gebbwork office furniture solutions for workspaces and commercial interiors."
+          },
+          {
+            "name": "Gebbwork Office Furniture",
+            "img": "/images/brand-product-images/gebbwork/nicho_3_gavetas_adaptavel_em_armarios_-_edge_office.webp",
+            "description": "Modern Gebbwork office furniture solutions for workspaces and commercial interiors."
+          },
+          {
+            "name": "Gebbwork Office Furniture",
+            "img": "/images/brand-product-images/gebbwork/nicho_3_vaos_adaptavel_em_armarios_-_edge_office.webp",
+            "description": "Modern Gebbwork office furniture solutions for workspaces and commercial interiors."
+          },
+          {
+            "name": "Gebbwork Office Furniture",
+            "img": "/images/brand-product-images/gebbwork/nicho_4_vaos_adaptavel_em_armarios_-_edge_office.webp",
+            "description": "Modern Gebbwork office furniture solutions for workspaces and commercial interiors."
+          },
+          {
+            "name": "Gebbwork Office Furniture",
+            "img": "/images/brand-product-images/gebbwork/porta_alta_vidro_-_edge_office.webp",
+            "description": "Modern Gebbwork office furniture solutions for workspaces and commercial interiors."
+          },
+          {
+            "name": "Gebbwork Office Furniture",
+            "img": "/images/brand-product-images/gebbwork/porta_baixa_de_vidro_-_edge_office.webp",
+            "description": "Modern Gebbwork office furniture solutions for workspaces and commercial interiors."
+          },
+          {
+            "name": "Gebbwork Office Furniture",
+            "img": "/images/brand-product-images/gebbwork/65faee3be15d1.webp",
+            "description": "Modern Gebbwork office furniture solutions for workspaces and commercial interiors."
+          },
+          {
+            "name": "Gebbwork Office Furniture",
+            "img": "/images/brand-product-images/gebbwork/prateleira_suspensa_com_fixacao_invisivel_-_edge_office.webp",
+            "description": "Modern Gebbwork office furniture solutions for workspaces and commercial interiors."
+          },
+          {
+            "name": "Gebbwork Office Furniture",
+            "img": "/images/brand-product-images/gebbwork/65faef5a1580d.webp",
+            "description": "Modern Gebbwork office furniture solutions for workspaces and commercial interiors."
+          },
+          {
+            "name": "Gebbwork Office Furniture",
+            "img": "/images/brand-product-images/gebbwork/vidro_para_armario_baixo_-_edge_office.webp",
+            "description": "Modern Gebbwork office furniture solutions for workspaces and commercial interiors."
+          },
+          {
+            "name": "Gebbwork Office Furniture",
+            "img": "/images/brand-product-images/gebbwork/aparador_-_edge_office-jpg.webp",
+            "description": "Modern Gebbwork office furniture solutions for workspaces and commercial interiors."
+          },
+          {
+            "name": "Gebbwork Office Furniture",
+            "img": "/images/brand-product-images/gebbwork/65facb15a374a-jpg.webp",
+            "description": "Modern Gebbwork office furniture solutions for workspaces and commercial interiors."
+          },
+          {
+            "name": "Gebbwork Office Furniture",
+            "img": "/images/brand-product-images/gebbwork/65fae99f9c6d7-jpg.webp",
+            "description": "Modern Gebbwork office furniture solutions for workspaces and commercial interiors."
+          },
+          {
+            "name": "Gebbwork Office Furniture",
+            "img": "/images/brand-product-images/gebbwork/armario_alto_-_new_city_office-jpg.webp",
+            "description": "Modern Gebbwork office furniture solutions for workspaces and commercial interiors."
+          },
+          {
+            "name": "Gebbwork Office Furniture",
+            "img": "/images/brand-product-images/gebbwork/armario_alto_-_start_office-jpg.webp",
+            "description": "Modern Gebbwork office furniture solutions for workspaces and commercial interiors."
+          },
+          {
+            "name": "Gebbwork Office Furniture",
+            "img": "/images/brand-product-images/gebbwork/armario_alto_-_yaris_office-jpg.webp",
+            "description": "Modern Gebbwork office furniture solutions for workspaces and commercial interiors."
+          },
+          {
+            "name": "Gebbwork Office Furniture",
+            "img": "/images/brand-product-images/gebbwork/armario_alto_02_portas_-_express_office-jpg.webp",
+            "description": "Modern Gebbwork office furniture solutions for workspaces and commercial interiors."
+          },
+          {
+            "name": "Gebbwork Office Furniture",
+            "img": "/images/brand-product-images/gebbwork/65faeb56cd303-jpg.webp",
+            "description": "Modern Gebbwork office furniture solutions for workspaces and commercial interiors."
+          },
+          {
+            "name": "Gebbwork Office Furniture",
+            "img": "/images/brand-product-images/gebbwork/armario_alto_12_nichos_-_edge_office-jpg.webp",
+            "description": "Modern Gebbwork office furniture solutions for workspaces and commercial interiors."
+          },
+          {
+            "name": "Gebbwork Office Furniture",
+            "img": "/images/brand-product-images/gebbwork/armario_alto_2_portas_-_edge_office-jpg.webp",
+            "description": "Modern Gebbwork office furniture solutions for workspaces and commercial interiors."
+          },
+          {
+            "name": "Gebbwork Office Furniture",
+            "img": "/images/brand-product-images/gebbwork/armario_alto_2_portas_e_4_nichos_-_edge_office-jpg.webp",
+            "description": "Modern Gebbwork office furniture solutions for workspaces and commercial interiors."
+          },
+          {
+            "name": "Gebbwork Office Furniture",
+            "img": "/images/brand-product-images/gebbwork/armario_alto_8_nichos_-_edge_office-jpg.webp",
+            "description": "Modern Gebbwork office furniture solutions for workspaces and commercial interiors."
+          },
+          {
+            "name": "Gebbwork Office Furniture",
+            "img": "/images/brand-product-images/gebbwork/65facd2c44846-jpg.webp",
+            "description": "Modern Gebbwork office furniture solutions for workspaces and commercial interiors."
+          },
+          {
+            "name": "Gebbwork Office Furniture",
+            "img": "/images/brand-product-images/gebbwork/armario_alto_credenza_-_express_office-jpg.webp",
+            "description": "Modern Gebbwork office furniture solutions for workspaces and commercial interiors."
+          },
+          {
+            "name": "Gebbwork Office Furniture",
+            "img": "/images/brand-product-images/gebbwork/armario_alto_credenza_-_start_office-jpg.webp",
+            "description": "Modern Gebbwork office furniture solutions for workspaces and commercial interiors."
+          },
+          {
+            "name": "Gebbwork Office Furniture",
+            "img": "/images/brand-product-images/gebbwork/65faef14a549c-jpg.webp",
+            "description": "Modern Gebbwork office furniture solutions for workspaces and commercial interiors."
+          },
+          {
+            "name": "Gebbwork Office Furniture",
+            "img": "/images/brand-product-images/gebbwork/armario_arquivo_04_gavetas_com_nicho_-_yaris_office-jpg.webp",
+            "description": "Modern Gebbwork office furniture solutions for workspaces and commercial interiors."
+          },
+          {
+            "name": "Gebbwork Office Furniture",
+            "img": "/images/brand-product-images/gebbwork/armario_arquivo_04_gavetas_pasta_-_start_office-jpg.webp",
+            "description": "Modern Gebbwork office furniture solutions for workspaces and commercial interiors."
+          },
+          {
+            "name": "Gebbwork Office Furniture",
+            "img": "/images/brand-product-images/gebbwork/armario_arquivo_04_pastas_-_express_office-jpg.webp",
+            "description": "Modern Gebbwork office furniture solutions for workspaces and commercial interiors."
+          },
+          {
+            "name": "Gebbwork Office Furniture",
+            "img": "/images/brand-product-images/gebbwork/armario_arquivo_4_gavetas_pasta_suspensa_-_new_city_office-jpg.webp",
+            "description": "Modern Gebbwork office furniture solutions for workspaces and commercial interiors."
+          },
+          {
+            "name": "Gebbwork Office Furniture",
+            "img": "/images/brand-product-images/gebbwork/65facb826480e-jpg.webp",
+            "description": "Modern Gebbwork office furniture solutions for workspaces and commercial interiors."
+          },
+          {
+            "name": "Gebbwork Office Furniture",
+            "img": "/images/brand-product-images/gebbwork/65fae9cd53c7c-jpg.webp",
+            "description": "Modern Gebbwork office furniture solutions for workspaces and commercial interiors."
+          },
+          {
+            "name": "Gebbwork Office Furniture",
+            "img": "/images/brand-product-images/gebbwork/armario_baixo_-_new_city_office-jpg.webp",
+            "description": "Modern Gebbwork office furniture solutions for workspaces and commercial interiors."
+          },
+          {
+            "name": "Gebbwork Office Furniture",
+            "img": "/images/brand-product-images/gebbwork/armario_baixo_-_start_office-jpg.webp",
+            "description": "Modern Gebbwork office furniture solutions for workspaces and commercial interiors."
+          },
+          {
+            "name": "Gebbwork Office Furniture",
+            "img": "/images/brand-product-images/gebbwork/armario_baixo_-_yaris_office-jpg.webp",
+            "description": "Modern Gebbwork office furniture solutions for workspaces and commercial interiors."
+          },
+          {
+            "name": "Gebbwork Office Furniture",
+            "img": "/images/brand-product-images/gebbwork/armario_baixo_02_portas_-_express_office-jpg.webp",
+            "description": "Modern Gebbwork office furniture solutions for workspaces and commercial interiors."
+          },
+          {
+            "name": "Gebbwork Office Furniture",
+            "img": "/images/brand-product-images/gebbwork/65faefa9c68d3-jpg.webp",
+            "description": "Modern Gebbwork office furniture solutions for workspaces and commercial interiors."
+          },
+          {
+            "name": "Gebbwork Office Furniture",
+            "img": "/images/brand-product-images/gebbwork/armario_baixo_6_nichos_-_edge_office-jpg.webp",
+            "description": "Modern Gebbwork office furniture solutions for workspaces and commercial interiors."
+          },
+          {
+            "name": "Gebbwork Office Furniture",
+            "img": "/images/brand-product-images/gebbwork/armario_baixo_8_nichos_-_edge_office-jpg.webp",
+            "description": "Modern Gebbwork office furniture solutions for workspaces and commercial interiors."
+          },
+          {
+            "name": "Gebbwork Office Furniture",
+            "img": "/images/brand-product-images/gebbwork/65faebc0c0e03-jpg.webp",
+            "description": "Modern Gebbwork office furniture solutions for workspaces and commercial interiors."
+          },
+          {
+            "name": "Gebbwork Office Furniture",
+            "img": "/images/brand-product-images/gebbwork/65faec17d1e9a-jpg.webp",
+            "description": "Modern Gebbwork office furniture solutions for workspaces and commercial interiors."
+          },
+          {
+            "name": "Gebbwork Office Furniture",
+            "img": "/images/brand-product-images/gebbwork/armario_baixo_com_2_portas_e_2_nichos_-_edge_office-jpg.webp",
+            "description": "Modern Gebbwork office furniture solutions for workspaces and commercial interiors."
+          },
+          {
+            "name": "Gebbwork Office Furniture",
+            "img": "/images/brand-product-images/gebbwork/armario_baixo_com_2_portas_e_4_nichos_-_edge_office-jpg.webp",
+            "description": "Modern Gebbwork office furniture solutions for workspaces and commercial interiors."
+          },
+          {
+            "name": "Gebbwork Office Furniture",
+            "img": "/images/brand-product-images/gebbwork/65faec8471c63-jpg.webp",
+            "description": "Modern Gebbwork office furniture solutions for workspaces and commercial interiors."
+          },
+          {
+            "name": "Gebbwork Office Furniture",
+            "img": "/images/brand-product-images/gebbwork/armario_baixo_credenza_-_express_office-jpg.webp",
+            "description": "Modern Gebbwork office furniture solutions for workspaces and commercial interiors."
+          },
+          {
+            "name": "Gebbwork Office Furniture",
+            "img": "/images/brand-product-images/gebbwork/armario_baixo_credenza_-_start_office-jpg.webp",
+            "description": "Modern Gebbwork office furniture solutions for workspaces and commercial interiors."
+          },
+          {
+            "name": "Gebbwork Office Furniture",
+            "img": "/images/brand-product-images/gebbwork/armario_baixo_credenza_-_yaris_office-jpg.webp",
+            "description": "Modern Gebbwork office furniture solutions for workspaces and commercial interiors."
+          },
+          {
+            "name": "Gebbwork Office Furniture",
+            "img": "/images/brand-product-images/gebbwork/65faecf02e56d-jpg.webp",
+            "description": "Modern Gebbwork office furniture solutions for workspaces and commercial interiors."
+          },
+          {
+            "name": "Gebbwork Office Furniture",
+            "img": "/images/brand-product-images/gebbwork/armario_estante_-_express_office-jpg.webp",
+            "description": "Modern Gebbwork office furniture solutions for workspaces and commercial interiors."
+          },
+          {
+            "name": "Gebbwork Office Furniture",
+            "img": "/images/brand-product-images/gebbwork/armario_estante_-_new_city_office-jpg.webp",
+            "description": "Modern Gebbwork office furniture solutions for workspaces and commercial interiors."
+          },
+          {
+            "name": "Gebbwork Office Furniture",
+            "img": "/images/brand-product-images/gebbwork/armario_estante_-_start_office-jpg.webp",
+            "description": "Modern Gebbwork office furniture solutions for workspaces and commercial interiors."
+          },
+          {
+            "name": "Gebbwork Office Furniture",
+            "img": "/images/brand-product-images/gebbwork/armario_estante_-_yaris_office-jpg.webp",
+            "description": "Modern Gebbwork office furniture solutions for workspaces and commercial interiors."
+          },
+          {
+            "name": "Gebbwork Office Furniture",
+            "img": "/images/brand-product-images/gebbwork/65faedb488b8a-jpg.webp",
+            "description": "Modern Gebbwork office furniture solutions for workspaces and commercial interiors."
+          },
+          {
+            "name": "Gebbwork Office Furniture",
+            "img": "/images/brand-product-images/gebbwork/65facc09d9aa8-jpg.webp",
+            "description": "Modern Gebbwork office furniture solutions for workspaces and commercial interiors."
+          },
+          {
+            "name": "Gebbwork Office Furniture",
+            "img": "/images/brand-product-images/gebbwork/armario_extra_alto_-_start_office-jpg.webp",
+            "description": "Modern Gebbwork office furniture solutions for workspaces and commercial interiors."
+          },
+          {
+            "name": "Gebbwork Office Furniture",
+            "img": "/images/brand-product-images/gebbwork/65faed2a8bbc6-jpg.webp",
+            "description": "Modern Gebbwork office furniture solutions for workspaces and commercial interiors."
+          },
+          {
+            "name": "Gebbwork Office Furniture",
+            "img": "/images/brand-product-images/gebbwork/65facceb4c48a-jpg.webp",
+            "description": "Modern Gebbwork office furniture solutions for workspaces and commercial interiors."
+          },
+          {
+            "name": "Gebbwork Office Furniture",
+            "img": "/images/brand-product-images/gebbwork/65facbc6bba8a-jpg.webp",
+            "description": "Modern Gebbwork office furniture solutions for workspaces and commercial interiors."
+          },
+          {
+            "name": "Gebbwork Office Furniture",
+            "img": "/images/brand-product-images/gebbwork/65faea03362ae-jpg.webp",
+            "description": "Modern Gebbwork office furniture solutions for workspaces and commercial interiors."
+          },
+          {
+            "name": "Gebbwork Office Furniture",
+            "img": "/images/brand-product-images/gebbwork/65faed73376b6-jpg.webp",
+            "description": "Modern Gebbwork office furniture solutions for workspaces and commercial interiors."
+          },
+          {
+            "name": "Gebbwork Office Furniture",
+            "img": "/images/brand-product-images/gebbwork/armario_misto_dinamico_com_extensao_-_start_office-jpg.webp",
+            "description": "Modern Gebbwork office furniture solutions for workspaces and commercial interiors."
+          },
+          {
+            "name": "Gebbwork Office Furniture",
+            "img": "/images/brand-product-images/gebbwork/armario_misto_dinamico_com_extensao_-_yaris_office-jpg.webp",
+            "description": "Modern Gebbwork office furniture solutions for workspaces and commercial interiors."
+          },
+          {
+            "name": "Gebbwork Office Furniture",
+            "img": "/images/brand-product-images/gebbwork/65facc5e18791-jpg.webp",
+            "description": "Modern Gebbwork office furniture solutions for workspaces and commercial interiors."
+          },
+          {
+            "name": "Gebbwork Office Furniture",
+            "img": "/images/brand-product-images/gebbwork/65facca5b96b4-jpg.webp",
+            "description": "Modern Gebbwork office furniture solutions for workspaces and commercial interiors."
+          },
+          {
+            "name": "Gebbwork Office Furniture",
+            "img": "/images/brand-product-images/gebbwork/65faee737f66e-jpg.webp",
+            "description": "Modern Gebbwork office furniture solutions for workspaces and commercial interiors."
+          },
+          {
+            "name": "Gebbwork Office Furniture",
+            "img": "/images/brand-product-images/gebbwork/conjunto_2_portas_altas_em_mdp_-_edge_office-jpg.webp",
+            "description": "Modern Gebbwork office furniture solutions for workspaces and commercial interiors."
+          },
+          {
+            "name": "Gebbwork Office Furniture",
+            "img": "/images/brand-product-images/gebbwork/conjunto_2_portas_baixas_em_mdp_-_edge_office-jpg.webp",
+            "description": "Modern Gebbwork office furniture solutions for workspaces and commercial interiors."
+          },
+          {
+            "name": "Gebbwork Office Furniture",
+            "img": "/images/brand-product-images/gebbwork/nicho_2_vaos_adaptavel_em_armarios_-_edge_office-jpg.webp",
+            "description": "Modern Gebbwork office furniture solutions for workspaces and commercial interiors."
+          },
+          {
+            "name": "Gebbwork Office Furniture",
+            "img": "/images/brand-product-images/gebbwork/nicho_3_gavetas_adaptavel_em_armarios_-_edge_office-jpg.webp",
+            "description": "Modern Gebbwork office furniture solutions for workspaces and commercial interiors."
+          },
+          {
+            "name": "Gebbwork Office Furniture",
+            "img": "/images/brand-product-images/gebbwork/nicho_3_vaos_adaptavel_em_armarios_-_edge_office-jpg.webp",
+            "description": "Modern Gebbwork office furniture solutions for workspaces and commercial interiors."
+          },
+          {
+            "name": "Gebbwork Office Furniture",
+            "img": "/images/brand-product-images/gebbwork/nicho_4_vaos_adaptavel_em_armarios_-_edge_office-jpg.webp",
+            "description": "Modern Gebbwork office furniture solutions for workspaces and commercial interiors."
+          },
+          {
+            "name": "Gebbwork Office Furniture",
+            "img": "/images/brand-product-images/gebbwork/porta_alta_vidro_-_edge_office-jpg.webp",
+            "description": "Modern Gebbwork office furniture solutions for workspaces and commercial interiors."
+          },
+          {
+            "name": "Gebbwork Office Furniture",
+            "img": "/images/brand-product-images/gebbwork/porta_baixa_de_vidro_-_edge_office-jpg.webp",
+            "description": "Modern Gebbwork office furniture solutions for workspaces and commercial interiors."
+          },
+          {
+            "name": "Gebbwork Office Furniture",
+            "img": "/images/brand-product-images/gebbwork/65faee3be15d1-jpg.webp",
+            "description": "Modern Gebbwork office furniture solutions for workspaces and commercial interiors."
+          },
+          {
+            "name": "Gebbwork Office Furniture",
+            "img": "/images/brand-product-images/gebbwork/prateleira_suspensa_com_fixacao_invisivel_-_edge_office-jpg.webp",
+            "description": "Modern Gebbwork office furniture solutions for workspaces and commercial interiors."
+          },
+          {
+            "name": "Gebbwork Office Furniture",
+            "img": "/images/brand-product-images/gebbwork/65faef5a1580d-jpg.webp",
+            "description": "Modern Gebbwork office furniture solutions for workspaces and commercial interiors."
+          },
+          {
+            "name": "Gebbwork Office Furniture",
+            "img": "/images/brand-product-images/gebbwork/vidro_para_armario_baixo_-_edge_office-jpg.webp",
+            "description": "Modern Gebbwork office furniture solutions for workspaces and commercial interiors."
+          }
+        ]
+      },
+      {
+        "title": "Bookcases",
+        "items": [
+          {
+            "name": "Gebbwork Office Furniture",
+            "img": "/images/brand-product-images/gebbwork/65facd8fa8f94.webp",
+            "description": "Modern Gebbwork office furniture solutions for workspaces and commercial interiors."
+          },
+          {
+            "name": "Gebbwork Office Furniture",
+            "img": "/images/brand-product-images/gebbwork/65face16bd3e1.webp",
+            "description": "Modern Gebbwork office furniture solutions for workspaces and commercial interiors."
+          },
+          {
+            "name": "Gebbwork Office Furniture",
+            "img": "/images/brand-product-images/gebbwork/65facea0068d0.webp",
+            "description": "Modern Gebbwork office furniture solutions for workspaces and commercial interiors."
+          },
+          {
+            "name": "Gebbwork Office Furniture",
+            "img": "/images/brand-product-images/gebbwork/65facf4d7d0f9.webp",
+            "description": "Modern Gebbwork office furniture solutions for workspaces and commercial interiors."
+          },
+          {
+            "name": "Gebbwork Office Furniture",
+            "img": "/images/brand-product-images/gebbwork/65fad01e00bb3.webp",
+            "description": "Modern Gebbwork office furniture solutions for workspaces and commercial interiors."
+          },
+          {
+            "name": "Gebbwork Office Furniture",
+            "img": "/images/brand-product-images/gebbwork/65fad06a77643.webp",
+            "description": "Modern Gebbwork office furniture solutions for workspaces and commercial interiors."
+          },
+          {
+            "name": "Gebbwork Office Furniture",
+            "img": "/images/brand-product-images/gebbwork/65fad344bc441.webp",
+            "description": "Modern Gebbwork office furniture solutions for workspaces and commercial interiors."
           }
         ]
       }

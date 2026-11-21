@@ -53,7 +53,10 @@ const SOURCES = {
   '/office-furniture.php': [
     ['cavaletti', ['office', 'task', 'executive', 'visitor', 'collaborative']],
     ['merryfair', ['task-chairs', 'executive-chairs', 'signature-chairs', 'contemporary-chairs', 'system-furniture', 'desking-elements']],
-    ['gebbwork', ['executive-desks']],
+    ['gebbwork', ['management-desks', 'executive-desks', 'directors-tables', 'meeting-tables', 'front-desks'], null, {
+      'management-desks': 'Executive Desks',
+      'directors-tables': 'Executive Desks',
+    }],
     ['forma5', ['desks-and-workspace', 'seating']],
     ['markant', ['chairs', 'tables', 'desks', 'storage-and-accessories']],
     ['leadcom', ['workstations-and-tables']],
