@@ -73,7 +73,7 @@ export const OFFICES = [
   },
   {
     id: 'chennai',
-    city: 'IN – Chennai',
+    city: 'IND – Chennai',
     company: 'ZtoA Furniconcepts India Private Limited',
     address:
       'The Southern India Chamber of Commerce and Industry, Esplanade Rd, George Town, Chennai, Tamil Nadu 600104, India',
@@ -84,7 +84,7 @@ export const OFFICES = [
   },
   {
     id: 'singapore',
-    city: 'SG – Singapore',
+    city: 'SGP – Singapore',
     company: 'FURNICONCEPTS PTE. LTD',
     address: '2 Venture Dr, #12-11B, Singapore 608526',
     phone: '+65 8235 2565',

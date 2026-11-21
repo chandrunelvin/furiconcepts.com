@@ -45,7 +45,7 @@ export const brandLogo = (name) =>
   BRAND_MENU.find((b) => brandKey(b.label) === brandKey(name))?.logo;
 
 export const NAV = [
-  { label: 'Home', href: '#top' },
+  { label: 'Home', path: '/' },
   { label: 'About Us', href: '#about', path: '/about' },
   { label: 'Brands', path: '/brands/cavaletti', children: BRAND_MENU },
   { label: 'Categories', href: '#spaces', path: '/categories', children: TOP_CATEGORIES.map((c) => ({ label: c.name, path: c.path })) },

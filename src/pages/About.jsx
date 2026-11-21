@@ -2,6 +2,7 @@ import { useCallback, useEffect, useRef, useState } from 'react';
 import { createPortal } from 'react-dom';
 import { Arrow, SiteFooter, SiteHeader } from '../components/Home2Chrome.jsx';
 import { CERTIFICATES, CERT_GROUPS } from '../data/certificates.js';
+import { lockScroll } from '../lib/scrollLock.js';
 import { CLIENTS } from '../data/clients.js';
 import { TESTIMONIALS } from '../data/testimonials.js';
 import { LEADERSHIP, TEAM } from '../data/team.js';
@@ -251,7 +252,7 @@ function Certificates() {
                     </div>
                     <span className="spot-tag cert-meta">{c.meta}</span>
                     <h3 className="spot-title">{c.title}</h3>
-                    <p className="spot-text">{c.text}</p>
+                    {c.text && <p className="spot-text">{c.text}</p>}
                     <span className="spot-date">{c.cta ?? 'View Certificate'} <Arrow size={12} width={2.6} /></span>
                   </div>
                 </a>
@@ -260,7 +261,7 @@ function Certificates() {
           </div>
         </div>
       </div>
-      {open && <PdfViewer file={open} onClose={close} />}
+      {open && <PdfViewer file={open} onClose={close} fit />}
     </section>
   );
 }
@@ -357,12 +358,11 @@ function TeamModal({ people, index, onStep, onClose }) {
       if (e.key === 'ArrowLeft') onStep(-1);
     };
     document.addEventListener('keydown', onKey);
-    document.body.style.overflow = 'hidden';
-    return () => {
-      document.removeEventListener('keydown', onKey);
-      document.body.style.overflow = '';
-    };
+    return () => document.removeEventListener('keydown', onKey);
   }, [onClose, onStep]);
+
+  // pin the page behind the popup (see lib/scrollLock.js)
+  useEffect(() => lockScroll(), []);
 
   // mounted at the page root: the team row carries a reveal transform, which
   // would otherwise pin this fixed overlay to the row instead of the screen

@@ -115,6 +115,7 @@ function ProjectsSlider() {
             </div>
             <div className="wrap proj-copy">
               <div className="proj-num">{pad(i + 1)} <span>/ {pad(count)}</span></div>
+              <ProjectLogo project={p} lazy={!seen.has(i)} />
               <h2 className="proj-title">
                 <Link to={`${ROOT}/${p.slug}`} tabIndex={i === index ? 0 : -1}>{p.title}</Link>
               </h2>
@@ -230,6 +231,7 @@ function ProjectDetail({ project }) {
             <span className="crumb"><Link to={ROOT}>Projects</Link><Icon name="chevron" /></span>
             <span aria-current="page">{project.title}</span>
           </nav>
+          <ProjectLogo project={project} className="profiles-hero-logo" />
           <h1>{project.title}</h1>
           <p>{project.subtitle}</p>
         </div>
@@ -303,4 +305,18 @@ export default function Projects({ slug }) {
   if (!slug) return <ProjectsSlider />;
   const project = getProject(slug);
   return project ? <ProjectDetail project={project} /> : <Missing />;
+}
+
+/**
+ * The client's logo on a white card, so any logo reads on the dark photo.
+ * Projects whose logo file we don't have yet show the company name instead.
+ */
+function ProjectLogo({ project, className = '', lazy = false }) {
+  return (
+    <div className={`proj-logo ${project.logo ? '' : 'is-text'} ${className}`.trim()}>
+      {project.logo
+        ? <img src={project.logo} alt={`${project.title} logo`} loading={lazy ? 'lazy' : undefined} />
+        : <span>{project.title}</span>}
+    </div>
+  );
 }

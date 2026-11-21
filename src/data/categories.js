@@ -21,9 +21,9 @@ export const CATEGORY_PAGES = [
     "name": "Acoustic Pods",
     "hero": "/images/projects/al-futtaim-ho-phone-booth/banner.webp",
     "title": "Acoustic Pods & Sound Solutions Suppliers",
-    "titleAccent": "in UAE, IN, SG",
+    "titleAccent": "in UAE, IND, SGP",
     "eyebrow": "Acoustic Pods & Solutions",
-    "summary": "Musepod and Zumbooth acoustic pods, phone booths and panels, supplied across UAE, IN, SG.",
+    "summary": "Musepod and Zumbooth acoustic pods, phone booths and panels, supplied across UAE, IND, SGP.",
     "stats": [
       {
         "value": "Up to 30dB",
@@ -206,7 +206,7 @@ export const CATEGORY_PAGES = [
     "stats": [
       {
         "value": "3 Regions",
-        "label": "UAE, IN, SG project support"
+        "label": "UAE, IND, SGP project support"
       },
       {
         "value": "Pods + Panels",
@@ -277,7 +277,7 @@ export const CATEGORY_PAGES = [
     "card": "/images/categories/airport-seating-card.webp",
     "title": "Airport Seating",
     "eyebrow": "Airport Seating",
-    "summary": "Choose your region to explore airport seating supplier pages for UAE, IN, SG.",
+    "summary": "Choose your region to explore airport seating supplier pages for UAE, IND, SGP.",
     "sections": [
       [
         {
@@ -328,9 +328,9 @@ export const CATEGORY_PAGES = [
     "hero": "/images/projects/etisalat-hq-auditorium/banner.webp",
     "card": "/images/categories/auditorium-seating-card.webp",
     "title": "Auditorium Seating Suppliers",
-    "titleAccent": "in UAE, IN, SG",
+    "titleAccent": "in UAE, IND, SGP",
     "eyebrow": "Auditorium Seating",
-    "summary": "Fixed, retractable and VIP auditorium seating from Leadcom and Audia Italia, with layout planning and installation across UAE, IN, SG.",
+    "summary": "Fixed, retractable and VIP auditorium seating from Leadcom and Audia Italia, with layout planning and installation across UAE, IND, SGP.",
     "stats": [
       {
         "value": "7 Days",
@@ -364,7 +364,7 @@ export const CATEGORY_PAGES = [
               "label": "Audia Italia",
               "href": "/brands/audia-italia"
             },
-            ", we supply and install fixed, retractable and custom auditorium seating across UAE, IN, SG. We plan the layout in 3D, build to BIFMA standards and handle installation ourselves."
+            ", we supply and install fixed, retractable and custom auditorium seating across UAE, IND, SGP. We plan the layout in 3D, build to BIFMA standards and handle installation ourselves."
           ]
         }
       ],
@@ -480,7 +480,7 @@ export const CATEGORY_PAGES = [
             },
             {
               "q": "Do you work outside the UAE?",
-              "a": "Yes, across UAE, IN, SG."
+              "a": "Yes, across UAE, IND, SGP."
             }
           ]
         }
@@ -504,9 +504,9 @@ export const CATEGORY_PAGES = [
     "name": "Hotel Furniture",
     "hero": "/images/projects/le-royal-meridian/banner.webp",
     "title": "Hotel & Hospitality Furniture Suppliers",
-    "titleAccent": "in UAE, IN, SG",
+    "titleAccent": "in UAE, IND, SGP",
     "eyebrow": "Hospitality Furniture",
-    "summary": "Hotel, restaurant and café furniture from SCAB Italy and Worklyffe, plus outdoor umbrellas, across UAE, IN, SG.",
+    "summary": "Hotel, restaurant and café furniture from SCAB Italy and Worklyffe, plus outdoor umbrellas, across UAE, IND, SGP.",
     "stats": [
       {
         "value": "Lobby to Poolside",
@@ -530,7 +530,7 @@ export const CATEGORY_PAGES = [
         {
           "type": "intro",
           "text": [
-            "We furnish hotels, resorts and restaurants across UAE, IN, SG, with ",
+            "We furnish hotels, resorts and restaurants across UAE, IND, SGP, with ",
             {
               "label": "SCAB Italy",
               "href": "/brands/scab-italy"
@@ -677,9 +677,9 @@ export const CATEGORY_PAGES = [
     "hero": "/images/categories/hospital-furniture-hero.webp",
     "card": "/images/categories/hospital-furniture-card.webp",
     "title": "Healthcare & Hospital Furniture Suppliers",
-    "titleAccent": "in UAE, IN, SG",
+    "titleAccent": "in UAE, IND, SGP",
     "eyebrow": "Healthcare Furniture",
-    "summary": "Award-winning Nitrocare hospital beds, ICU beds, stretchers and exam chairs, supplied across UAE, IN, SG.",
+    "summary": "Award-winning Nitrocare hospital beds, ICU beds, stretchers and exam chairs, supplied across UAE, IND, SGP.",
     "stats": [
       {
         "value": "60,000m²",
@@ -708,7 +708,7 @@ export const CATEGORY_PAGES = [
               "label": "Nitrocare",
               "href": "/brands/nitrocare"
             },
-            ", an award-winning medical furniture maker with a 60,000m² production facility. We supply hospital beds, stretchers, ICU furniture and exam chairs across UAE, IN, SG."
+            ", an award-winning medical furniture maker with a 60,000m² production facility. We supply hospital beds, stretchers, ICU furniture and exam chairs across UAE, IND, SGP."
           ]
         }
       ],
@@ -865,9 +865,9 @@ export const CATEGORY_PAGES = [
     "hero": "/images/projects/etisalat-hq/banner.webp",
     "card": "/images/categories/lounge-seating-card.webp",
     "title": "Lounge Seating Suppliers",
-    "titleAccent": "in UAE, IN, SG",
+    "titleAccent": "in UAE, IND, SGP",
     "eyebrow": "Lounge Seating",
-    "summary": "Lounge chairs, modular sofas and collaborative seating from SCAB Italy and Worklyffe, across UAE, IN, SG.",
+    "summary": "Lounge chairs, modular sofas and collaborative seating from SCAB Italy and Worklyffe, across UAE, IND, SGP.",
     "stats": [
       {
         "value": "SCAB Italy",
@@ -891,7 +891,7 @@ export const CATEGORY_PAGES = [
         {
           "type": "intro",
           "text": [
-            "Lounge chairs, modular sofas and collaborative seating for hotel lobbies, offices, coworking spaces and cafés across UAE, IN, SG, from ",
+            "Lounge chairs, modular sofas and collaborative seating for hotel lobbies, offices, coworking spaces and cafés across UAE, IND, SGP, from ",
             {
               "label": "SCAB Italy",
               "href": "/brands/scab-italy"
@@ -1003,9 +1003,9 @@ export const CATEGORY_PAGES = [
     "name": "Office Furniture",
     "hero": "/images/projects/cushman/banner.webp",
     "title": "Office & Workplace Furniture Suppliers",
-    "titleAccent": "in UAE, IN, SG",
+    "titleAccent": "in UAE, IND, SGP",
     "eyebrow": "Office & Workplace Furniture",
-    "summary": "Desks, ergonomic chairs, meeting furniture and storage from Gebbwork, Cavaletti, Forma5 and more, across UAE, IN, SG.",
+    "summary": "Desks, ergonomic chairs, meeting furniture and storage from Gebbwork, Cavaletti, Forma5 and more, across UAE, IND, SGP.",
     "stats": [
       {
         "value": "10+ Brands",
@@ -1017,7 +1017,7 @@ export const CATEGORY_PAGES = [
       },
       {
         "value": "3 Regions",
-        "label": "UAE, IN, SG"
+        "label": "UAE, IND, SGP"
       }
     ],
     "sections": [
@@ -1028,7 +1028,7 @@ export const CATEGORY_PAGES = [
         },
         {
           "type": "intro",
-          "text": "From a single startup desk to a full headquarters fit-out, we bring together trusted brands for desks, seating, storage and accessories across UAE, IN, SG."
+          "text": "From a single startup desk to a full headquarters fit-out, we bring together trusted brands for desks, seating, storage and accessories across UAE, IND, SGP."
         }
       ],
       [
@@ -1200,7 +1200,7 @@ export const CATEGORY_PAGES = [
     "hero": "/images/blog/outdoor-umbrellas/hero.webp",
     "title": "Outdoor & Indoor Umbrella Supplier",
     "eyebrow": "Outdoor & Indoor Umbrellas",
-    "summary": "Commercial umbrellas for hotels, restaurants, hospitals and outdoor spaces, supplied and installed across UAE, IN, SG.",
+    "summary": "Commercial umbrellas for hotels, restaurants, hospitals and outdoor spaces, supplied and installed across UAE, IND, SGP.",
     "sections": [
       [
         {
@@ -1257,7 +1257,7 @@ export const CATEGORY_PAGES = [
           "type": "heading",
           "title": "FAQs",
           "body": [
-            "Quick answers for hospitality, healthcare and commercial umbrella projects in UAE, IN, SG."
+            "Quick answers for hospitality, healthcare and commercial umbrella projects in UAE, IND, SGP."
           ]
         },
         {
@@ -1277,7 +1277,7 @@ export const CATEGORY_PAGES = [
             },
             {
               "q": "Which countries do you deliver to?",
-              "a": "We supply and install commercial umbrellas across UAE, IN, SG."
+              "a": "We supply and install commercial umbrellas across UAE, IND, SGP."
             },
             {
               "q": "Do you handle installation?",
@@ -1287,7 +1287,7 @@ export const CATEGORY_PAGES = [
         }
       ]
     ],
-    "titleAccent": "in UAE, IN, SG",
+    "titleAccent": "in UAE, IND, SGP",
     "stats": [
       {
         "value": "Climate Ready",
@@ -1305,7 +1305,7 @@ export const CATEGORY_PAGES = [
     "cta": {
       "title": "Looking for a Commercial Umbrella Supplier?",
       "body": [
-        "Furniconcepts supplies umbrella systems for hotels, restaurants, hospitals and outdoor commercial spaces across UAE, IN, SG. Contact us for a project consultation and quotation."
+        "Furniconcepts supplies umbrella systems for hotels, restaurants, hospitals and outdoor commercial spaces across UAE, IND, SGP. Contact us for a project consultation and quotation."
       ],
       "buttons": [
         {
@@ -1321,7 +1321,7 @@ export const CATEGORY_PAGES = [
     "hero": "/images/cavaletti/auditorium.jpg",
     "card": "/images/categories/stadium-seating-card.webp",
     "title": "Stadium Seating Suppliers",
-    "titleAccent": "in UAE, IN, SG",
+    "titleAccent": "in UAE, IND, SGP",
     "eyebrow": "Stadium Seating",
     "summary": "Fixed, bleacher, retractable and VIP stadium seating from Jwesys and Leadcom, across the UAE and India.",
     "stats": [
@@ -1470,9 +1470,9 @@ export const CATEGORY_PAGES = [
     "hero": "/images/projects/philiphines/banner.webp",
     "card": "/images/categories/school-furniture-card.webp",
     "title": "School & Classroom Furniture Suppliers",
-    "titleAccent": "in UAE, IN, SG",
+    "titleAccent": "in UAE, IND, SGP",
     "eyebrow": "Education & School Furniture",
-    "summary": "Classroom chairs, modular desks and training seating for schools and colleges across UAE, IN, SG.",
+    "summary": "Classroom chairs, modular desks and training seating for schools and colleges across UAE, IND, SGP.",
     "stats": [
       {
         "value": "Rows to Groups",
@@ -1495,7 +1495,7 @@ export const CATEGORY_PAGES = [
         },
         {
           "type": "intro",
-          "text": "We supply classroom desks, chairs and modular furniture for schools, colleges and training institutes across UAE, IN, SG, designed to be comfortable for students, tough enough for daily use and easy to rearrange."
+          "text": "We supply classroom desks, chairs and modular furniture for schools, colleges and training institutes across UAE, IND, SGP, designed to be comfortable for students, tough enough for daily use and easy to rearrange."
         }
       ],
       [

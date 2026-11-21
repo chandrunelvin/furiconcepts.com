@@ -1029,4 +1029,63 @@ export const PROJECTS = [
   },
 ];
 
+/**
+ * The client company's logo for each project, shown on the projects slider
+ * and the project page. Uses the logos already on the About page; projects
+ * without a known logo simply show none.
+ */
+const client = (file) => `/images/clients/${file}`;
+const quoted = (file) => `/images/testimonials/${file}`;
+const project = (file) => `/images/projects/logos/${file}`;
+const AL_FUTTAIM = client('1200px-al-futtaim-group-dl-logo-svg.png');
+const ANSARI = quoted('ansari-exchange.png');
+const INDEX = quoted('index-holding.png');
+const TOYOTA = client('toyota.png');
+const LOGOS = {
+  cushman: client('x-works.png'),
+  'toto-showroom': AL_FUTTAIM,
+  'al-ansari': ANSARI,
+  'ansari-training': ANSARI,
+  'cash-counter': ANSARI,
+  mg: client('mg-logo.webp'),
+  'futtaim-newoffice': AL_FUTTAIM,
+  futtaim: AL_FUTTAIM,
+  'al-futtaim': AL_FUTTAIM,
+  'al-futtaim-new': AL_FUTTAIM,
+  'al-futtaim-ho-phone-booth': AL_FUTTAIM,
+  'air-arabia': client('air-arabia-logo-wine.png'),
+  srg: client('sheraton-full-lockup-1.png'),
+  'amity-school': client('amity-school.png'),
+  amity: client('amity-university-logo.png'),
+  'al-futtaim-volvo': client('volvo.jpg'),
+  emerson: client('emerson-logo-compressed-data-5576584.png'),
+  lemerdian: client('moonkids-lemeridien-logo-1.jpg'),
+  'le-royal-meridian': client('moonkids-lemeridien-logo-1.jpg'),
+  'aw-rostamani': client('arabian-automobiles-logo-en-3072x1728.jpg'),
+  grosvenor: client('grosvenor-house-a-luxury-collection-hote.png'),
+  'grosvenor-office': client('grosvenor-house-a-luxury-collection-hote.png'),
+  sicci: client('sicci.png'),
+  furni: '/images/furni-logo.png',
+  'furniconcept-lab-showroom': '/images/furni-logo.png',
+  'index-tower': INDEX,
+  'burj-daman': INDEX,
+  'new-burj-daman': INDEX,
+  'etisalat-hq': client('eand-logo-en.svg'),
+  'etisalat-hq-auditorium': client('eand-logo-en.svg'),
+  healthhub: client('healthhub-al-futtaim.png'),
+  'sharjah-research': client('sharjah.jpg'),
+  'toyota-showroom': TOYOTA,
+  'futtaim-toyota': TOYOTA,
+  'abu-dhabi-toyota': TOYOTA,
+  'corniche-abudhabi': client('volswogan.png'),
+  // fetched from each company's own site or Wikimedia
+  tristar: project('tristar.png'),
+  philiphines: project('philippines.png'),
+  'open-text': project('opentext.png'),
+  'ritz-carlton': project('ritz-carlton.png'),
+  famco: project('famco.png'),
+  'chevrolet-project': project('chevrolet.png'),
+};
+PROJECTS.forEach((p) => { if (LOGOS[p.slug]) p.logo = LOGOS[p.slug]; });
+
 export const getProject = (slug) => PROJECTS.find((p) => p.slug === slug);

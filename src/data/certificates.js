@@ -22,7 +22,6 @@ export const CERTIFICATES = [
   {
     group: 'iso',
     title: 'ISO 9001:2015 – Quality Management System',
-    text: 'Furniconcepts Pte. Ltd., Singapore, audited by Hawk Eye Certifications for furniture manufacturing, trading and services, and flooring trading works.',
     meta: 'UAF/INT/2608FT/2491 · Valid to 19.08.2029',
     ...doc('iso-9001-singapore', 'jpg'),
   },

@@ -1,3 +1,4 @@
+import { lockScroll } from '../lib/scrollLock.js';
 import { useEffect, useState } from 'react';
 import { Icon, useParallax } from '../components/BlogParts.jsx';
 import { Arrow, SiteFooter, SiteHeader, brandLogo } from '../components/Home2Chrome.jsx';
@@ -133,14 +134,19 @@ function HelpBand() {
  * The PDF opens in a viewer over the page, as on the old site. Phones get the
  * PDF in a new tab instead, since most mobile browsers cannot show one inline.
  */
-export function PdfViewer({ file, onClose }) {
+/**
+ * `fit` shows a whole page at once (certificates); image files are always
+ * shown whole, scaled to the window, instead of at full size in a frame.
+ */
+export function PdfViewer({ file, onClose, fit = false }) {
+  const isImage = /\.(jpe?g|png|webp|gif)$/i.test(file.pdf);
   useEffect(() => {
     const onKey = (e) => { if (e.key === 'Escape') onClose(); };
     document.addEventListener('keydown', onKey);
-    document.body.style.overflow = 'hidden';
+    const unlock = lockScroll();
     return () => {
       document.removeEventListener('keydown', onKey);
-      document.body.style.overflow = '';
+      unlock();
     };
   }, [onClose]);
 
@@ -159,7 +165,9 @@ export function PdfViewer({ file, onClose }) {
             </svg>
           </button>
         </div>
-        <iframe src={file.pdf} title={file.title} />
+        {isImage
+          ? <div className="pdf-viewer-image"><img src={file.pdf} alt={file.title} /></div>
+          : <iframe src={fit ? `${file.pdf}#view=Fit` : file.pdf} title={file.title} />}
       </div>
     </div>
   );

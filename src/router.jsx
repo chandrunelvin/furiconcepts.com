@@ -104,7 +104,12 @@ function scrollToHash(hash) {
 export function navigate(to) {
   const url = new URL(to, window.location.href);
   const samePage = url.pathname === window.location.pathname && url.search === window.location.search;
-  if (samePage && url.hash === window.location.hash && !url.hash) return;
+  // a link to the page already open (Home on the home page): just go back
+  // to the top, without adding anything to the address
+  if (samePage && !url.hash && !window.location.hash) {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+    return;
+  }
   window.history.pushState({}, '', url.pathname + url.search + url.hash);
   if (samePage) {
     scrollToHash(url.hash);

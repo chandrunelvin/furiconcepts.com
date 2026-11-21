@@ -1,3 +1,4 @@
+import { lockScroll } from '../lib/scrollLock.js';
 import { useEffect, useMemo, useRef, useState } from 'react';
 import BrandIcon from './BrandIcons.jsx';
 import { Arrow } from './Home2Chrome.jsx';
@@ -115,10 +116,10 @@ export default function ProductExplorer({ products, brand, category: outerCatego
     if (!enquiry) return undefined;
     const onKey = (e) => { if (e.key === 'Escape') setEnquiry(null); };
     document.addEventListener('keydown', onKey);
-    document.body.style.overflow = 'hidden';
+    const unlock = lockScroll();
     return () => {
       document.removeEventListener('keydown', onKey);
-      document.body.style.overflow = '';
+      unlock();
     };
   }, [enquiry]);
 

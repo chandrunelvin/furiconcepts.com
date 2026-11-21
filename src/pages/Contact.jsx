@@ -210,14 +210,12 @@ export default function Contact() {
                     <Icon name="pin" />
                     <span>{o.address}</span>
                   </p>
-                  <p className="office-line">
+                  {/* pinned to the same spot in every card; two numbers stack */}
+                  <p className="office-line office-phone">
                     <Icon name="phone" />
-                    <span>
-                      {o.phone.split(/,\s*/).map((tel, i) => (
-                        <span key={tel}>
-                          {i > 0 && ', '}
-                          <a href={`tel:${tel.replace(/\s/g, '')}`} onClick={(e) => e.stopPropagation()}>{tel}</a>
-                        </span>
+                    <span className="office-phones">
+                      {o.phone.split(/,\s*/).map((tel) => (
+                        <a key={tel} href={`tel:${tel.replace(/\s/g, '')}`} onClick={(e) => e.stopPropagation()}>{tel}</a>
                       ))}
                     </span>
                   </p>
