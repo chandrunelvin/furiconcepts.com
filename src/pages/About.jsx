@@ -470,7 +470,14 @@ function Testimonials() {
           <svg className="quote-mark" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
             <path d="M9.5 5C6.5 6.6 5 9.2 5 12.8V19h6v-6.2H8.3c0-2.2.9-3.7 2.7-4.6L9.5 5zm9 0c-3 1.6-4.5 4.2-4.5 7.8V19h6v-6.2h-2.7c0-2.2.9-3.7 2.7-4.6L18.5 5z" />
           </svg>
-          <blockquote key={current.company}>{current.quote}</blockquote>
+          {/* every quote sits in the same cell (hidden) so the box is always
+              as tall as the longest one and the section never jumps */}
+          <div className="quote-text">
+            {TESTIMONIALS.map((item) => (
+              <blockquote key={item.company} className="quote-sizer" aria-hidden="true">{item.quote}</blockquote>
+            ))}
+            <blockquote key={`live-${current.company}`}>{current.quote}</blockquote>
+          </div>
           <figcaption>
             <span className="quote-logo">
               <img src={current.logo} alt={current.company} />

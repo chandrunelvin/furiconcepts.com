@@ -1445,12 +1445,12 @@
 }
 .home2 .client-tile{
   border:1px solid var(--line);border-radius:var(--radius);background:#fff;
-  min-height:104px;display:flex;align-items:center;justify-content:center;padding:18px 20px;
+  height:104px;display:flex;align-items:center;justify-content:center;padding:12px 14px;
   transition:border-color .2s;
 }
 .home2 .client-tile:hover{ border-color:var(--green); }
 .home2 .client-tile img{
-  width:100%;height:100%;max-height:56px;object-fit:contain;
+  width:100%;height:100%;object-fit:contain;
   filter:grayscale(1);opacity:.72;transition:filter .3s, opacity .3s;
 }
 .home2 .client-tile:hover img{ filter:none;opacity:1; }
@@ -1497,7 +1497,7 @@
 @media(max-width:700px){
   .home2 .team-rail{ --pv:2;--gap:12px; }
   .home2 .client-viewport{ --pv:2.4;--gap:10px; }
-  .home2 .client-tile{ min-height:84px;padding:14px; }
+  .home2 .client-tile{ height:84px;padding:10px; }
   .home2 .about-hero{ padding:104px 0 40px; }
   .home2 .about-story-media{ aspect-ratio:4/3; }
 }
@@ -1566,11 +1566,14 @@
   font-size:clamp(16px,1.6vw,20px);line-height:1.6;max-width:44ch;
   animation:home2-quote-in .5s ease both;
 }
+.home2 .quote-text{ display:grid; }
+.home2 .quote-text > blockquote{ grid-area:1 / 1; }
+.home2 .quote-stage blockquote.quote-sizer{ visibility:hidden;animation:none; }
 @keyframes home2-quote-in{ from{ opacity:0;transform:translateY(10px); } to{ opacity:1;transform:none; } }
 .home2 .quote-stage figcaption{ display:flex;align-items:center;gap:16px;margin-top:30px; }
 .home2 .quote-logo{
-  width:74px;height:52px;flex:none;border-radius:var(--radius);background:#fff;
-  display:flex;align-items:center;justify-content:center;padding:8px 10px;
+  width:124px;height:64px;flex:none;border-radius:var(--radius);background:#fff;
+  display:flex;align-items:center;justify-content:center;padding:6px 8px;
 }
 .home2 .quote-logo img{ width:100%;height:100%;object-fit:contain; }
 .home2 .quote-who{ display:flex;flex-direction:column;gap:3px; }
