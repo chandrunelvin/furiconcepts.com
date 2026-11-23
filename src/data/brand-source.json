@@ -1837,6 +1837,10 @@
           {
             "name": "Keeva LS-401",
             "img": "/images/brand-product-images/leadcom/leadcom-education-seating-401-1.webp"
+          },
+          {
+            "name": "Owen LS-548A Office Chair",
+            "img": "/images/brand-product-images/leadcom/548-0.webp"
           }
         ]
       },
@@ -1874,7 +1878,7 @@
         ]
       },
       {
-        "title": "Lounge & Office Chairs",
+        "title": "Lounge Chairs & Recliners",
         "items": [
           {
             "name": "Tate LS-855",
@@ -1891,10 +1895,6 @@
           {
             "name": "Peleo Series — Round",
             "img": "/images/brand-product-images/leadcom/leadcom-modular-lounge-seating-2.webp"
-          },
-          {
-            "name": "Owen LS-548A Office Chair",
-            "img": "/images/brand-product-images/leadcom/548-0.webp"
           }
         ]
       },
@@ -4077,6 +4077,15 @@
     },
     "groups": [
       {
+        "title": "Executive Chairs",
+        "items": [
+          {
+            "name": "Oslo",
+            "img": "/images/brand-product-images/markant/oslo.webp"
+          }
+        ]
+      },
+      {
         "title": "Meeting & Visitor Chairs",
         "items": [
           {
@@ -4094,10 +4103,6 @@
           {
             "name": "Lyon Swivel",
             "img": "/images/brand-product-images/markant/lyon-swivel.webp"
-          },
-          {
-            "name": "Oslo",
-            "img": "/images/brand-product-images/markant/oslo.webp"
           },
           {
             "name": "Rome",
@@ -5152,6 +5157,14 @@
           {
             "name": "Lagenda",
             "img": "/images/brand-product-images/merryfair/01-lagenda.webp"
+          },
+          {
+            "name": "Turini",
+            "img": "/images/brand-product-images/merryfair/01-turini-gal.webp"
+          },
+          {
+            "name": "Avanti",
+            "img": "/images/brand-product-images/merryfair/01-avanti-gal.webp"
           }
         ]
       },
@@ -5198,10 +5211,6 @@
           {
             "name": "Mogoo",
             "img": "/images/brand-product-images/merryfair/01-mogoo.webp"
-          },
-          {
-            "name": "Turini",
-            "img": "/images/brand-product-images/merryfair/01-turini-gal.webp"
           }
         ]
       },
@@ -5223,10 +5232,6 @@
           {
             "name": "Balanz",
             "img": "/images/brand-product-images/merryfair/01-balanz-gal.webp"
-          },
-          {
-            "name": "Avanti",
-            "img": "/images/brand-product-images/merryfair/01-avanti-gal.webp"
           }
         ]
       },
@@ -6098,6 +6103,14 @@
           {
             "name": "Caldor Low Back Executive Chair",
             "img": "/images/brand-product-images/versalink/caldor-low-back-executive-chair.webp"
+          },
+          {
+            "name": "Command Medium Back Chair",
+            "img": "/images/brand-product-images/versalink/command-medium-back-chair.webp"
+          },
+          {
+            "name": "Command High Back Chair",
+            "img": "/images/brand-product-images/versalink/command-high-back-chair.webp"
           }
         ]
       },
@@ -6113,20 +6126,12 @@
             "img": "/images/brand-product-images/versalink/aethon.webp"
           },
           {
-            "name": "Flow Chair",
-            "img": "/images/brand-product-images/versalink/flow-chair.webp"
-          },
-          {
             "name": "Airflow",
             "img": "/images/brand-product-images/versalink/airflow.webp"
           },
           {
             "name": "Nexa",
             "img": "/images/brand-product-images/versalink/nexa.webp"
-          },
-          {
-            "name": "Aven",
-            "img": "/images/brand-product-images/versalink/aven.webp"
           },
           {
             "name": "Velocity Medium Back Chair",
@@ -6151,14 +6156,6 @@
           {
             "name": "Nuvo High Back Chair",
             "img": "/images/brand-product-images/versalink/nuvo-high-back-chair.webp"
-          },
-          {
-            "name": "Command Medium Back Chair",
-            "img": "/images/brand-product-images/versalink/command-medium-back-chair.webp"
-          },
-          {
-            "name": "Command High Back Chair",
-            "img": "/images/brand-product-images/versalink/command-high-back-chair.webp"
           },
           {
             "name": "Lumina Medium Back Chair",
@@ -6232,6 +6229,14 @@
           {
             "name": "Calla",
             "img": "/images/brand-product-images/versalink/calla.webp"
+          },
+          {
+            "name": "Flow Chair",
+            "img": "/images/brand-product-images/versalink/flow-chair.webp"
+          },
+          {
+            "name": "Aven",
+            "img": "/images/brand-product-images/versalink/aven.webp"
           }
         ]
       },
