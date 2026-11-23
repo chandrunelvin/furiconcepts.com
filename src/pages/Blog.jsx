@@ -169,7 +169,7 @@ export default function Blog() {
                 {visible.map((a) => (
                   <article className="blog-card" key={a.slug}>
                     <Link to={articlePath(a)} className="blog-card-media" tabIndex={-1} aria-hidden="true">
-                      <img src={a.image} alt="" loading="lazy" />
+                      <img src={a.image} alt={a.title} loading="lazy" />
                     </Link>
                     <div className="blog-card-body">
                       <span className="blog-tag">{categoryLabel(a.category)}</span>

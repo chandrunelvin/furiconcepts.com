@@ -103,6 +103,11 @@ export const TEAM = [
     ],
   },
   {
+    name: 'Hari',
+    role: 'Sales Manager',
+    src: photo('hari'),
+  },
+  {
     name: 'Pradeep',
     role: 'Sales Manager, India',
     src: photo('pradeep'),

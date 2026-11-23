@@ -111,7 +111,7 @@ function ProjectsSlider() {
             aria-label={`${i + 1} of ${count}: ${p.title}`}
           >
             <div className="proj-media">
-              {seen.has(i) && <img src={banner(p)} alt="" />}
+              {seen.has(i) && <img src={banner(p)} alt={`${p.title}, ${p.subtitle}`} />}
             </div>
             <div className="wrap proj-copy">
               <div className="proj-num">{pad(i + 1)} <span>/ {pad(count)}</span></div>
@@ -224,7 +224,7 @@ function ProjectDetail({ project }) {
       <SiteHeader onHome={false} active="Projects" />
 
       <section className="blog-hero profiles-hero">
-        <div className="blog-hero-media" aria-hidden="true"><img src={banner(project)} alt="" /></div>
+        <div className="blog-hero-media" aria-hidden="true"><img src={banner(project)} alt={`${project.title}, ${project.subtitle}`} /></div>
         <div className="wrap blog-hero-inner">
           <nav className="breadcrumb" aria-label="Breadcrumb">
             <span className="crumb"><Link to="/">Home</Link><Icon name="chevron" /></span>
@@ -257,22 +257,22 @@ function ProjectDetail({ project }) {
           </div>
           <div className="proj-gallery">
             {project.media.map((m, k) => (
-              <button type="button" className={`proj-gallery-item ${isVideo(m) ? 'is-video' : ''}`.trim()} key={isVideo(m) ? m.video : m} onClick={() => setOpen(k)} aria-label={`Open ${isVideo(m) ? 'video' : 'photo'} ${k + 1}`}>
+              <button type="button" className={`proj-gallery-item ${isVideo(m) ? 'is-video' : ''}`.trim()} key={isVideo(m) ? m.video : m} onClick={() => setOpen(k)} aria-label={`Open ${isVideo(m) ? 'video' : 'photo'} ${k + 1} of ${project.title}`}>
                 {isVideo(m)
-                  ? <><img src={m.poster} alt="" loading="lazy" /><span className="proj-play" aria-hidden="true"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z" /></svg></span></>
-                  : <img src={m} alt="" loading="lazy" />}
+                  ? <><img src={m.poster} alt={`${project.title}, ${project.subtitle}: video ${k + 1}`} loading="lazy" /><span className="proj-play" aria-hidden="true"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z" /></svg></span></>
+                  : <img src={m} alt={`${project.title}, ${project.subtitle}: photo ${k + 1}`} loading="lazy" />}
               </button>
             ))}
           </div>
 
           <div className="proj-next">
             <Link to={`${ROOT}/${prev.slug}`} className="proj-next-link prev">
-              <span className="proj-next-thumb"><img src={banner(prev)} alt="" loading="lazy" /></span>
+              <span className="proj-next-thumb"><img src={banner(prev)} alt={prev.title} loading="lazy" /></span>
               <span><span className="proj-next-label">Previous Project</span><span className="proj-next-title">{prev.title}</span></span>
             </Link>
             <Link to={`${ROOT}/${next.slug}`} className="proj-next-link next">
               <span><span className="proj-next-label">Next Project</span><span className="proj-next-title">{next.title}</span></span>
-              <span className="proj-next-thumb"><img src={banner(next)} alt="" loading="lazy" /></span>
+              <span className="proj-next-thumb"><img src={banner(next)} alt={next.title} loading="lazy" /></span>
             </Link>
           </div>
         </div>

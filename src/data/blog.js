@@ -24,6 +24,7 @@ export const BLOG_CATEGORIES = [
   { id: 'acoustics-pods', label: 'Acoustics & Pods', icon: 'lamp' },
   { id: 'education-healthcare', label: 'Education & Healthcare', icon: 'heart' },
   { id: 'hospitality-outdoor', label: 'Hospitality & Outdoor', icon: 'leaf' },
+  { id: 'storage-racking', label: 'Storage & Racking', icon: 'rack' },
   { id: 'brands-suppliers', label: 'Brands & Suppliers', icon: 'doc' },
 ];
 
@@ -172,7 +173,7 @@ export const ARTICLES = [
   {
     slug: 'industrial-racking-systems-pricing-guide',
     path: '/industrial-racking-systems-pricing-guide.php',
-    category: 'office-furniture',
+    category: 'storage-racking',
     date: '2026-03-28',
     title: 'Industrial Racking Systems: Types, Pricing & Complete Buyer Guide (2026)',
     excerpt: 'Explore industrial racking systems with type comparisons, pricing, and warehouse buying guidance across Dubai, India, and Singapore.',
@@ -184,7 +185,7 @@ export const ARTICLES = [
   {
     slug: 'warehouse-racking-shelving-systems-dubai',
     path: '/warehouse-racking-shelving-systems-dubai.php',
-    category: 'office-furniture',
+    category: 'storage-racking',
     date: '2026-03-24',
     title: 'Warehouse Racking & Shelving Systems in Dubai (Complete 2026 Guide)',
     excerpt: 'Explore warehouse racking, shelving, pricing, and industrial storage solutions across Dubai, India, and Singapore.',
@@ -196,7 +197,7 @@ export const ARTICLES = [
   {
     slug: 'warehouse-shelving-vs-racking-pricing',
     path: '/warehouse-shelving-vs-racking-pricing.php',
-    category: 'office-furniture',
+    category: 'storage-racking',
     date: '2026-03-21',
     title: 'Warehouse Shelving vs Racking Systems: Pricing, Comparison & Best Choice Guide (2026)',
     excerpt: 'Compare warehouse shelving and racking systems by pricing, features, and best-use scenarios across Dubai, India, and Singapore.',
@@ -328,7 +329,7 @@ export const ARTICLES = [
   {
     slug: 'lounge-seating-design-trends',
     path: '/lounge-seating-design-trends.php',
-    category: 'seating-venues',
+    category: 'hospitality-outdoor',
     date: '2026-02-10',
     title: 'Lounge Seating Design Trends for Modern Workspaces & Commercial Spaces (2026)',
     excerpt: 'Explore modular sofas, ergonomic lounge chairs, minimalist styles, and premium hospitality-inspired lounge seating trends for 2026.',
@@ -626,7 +627,7 @@ export const ARTICLES = [
   {
     slug: 'storage-industrial-solutions',
     path: '/storage-industrial-solutions.php',
-    category: 'office-furniture',
+    category: 'storage-racking',
     date: '2025-11-19',
     title: 'Warehouse Storage & Industrial Racking Systems',
     heading: 'Storage and Industrial Solutions',

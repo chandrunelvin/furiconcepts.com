@@ -103,7 +103,7 @@ export default function BlogPost({ article }) {
       <section className="blog-hero post-hero">
         <div className="blog-hero-media" aria-hidden="true">
           <div className="img-parallax" ref={heroLayer}>
-            <img src={article.hero ?? article.image} alt="" />
+            <img src={article.hero ?? article.image} alt={article.heading ?? article.title} />
           </div>
         </div>
         <div className="wrap blog-hero-inner">
@@ -176,7 +176,7 @@ export default function BlogPost({ article }) {
               <div className="post-related-grid">
                 {relatedTo(article).map((r) => (
                   <Link to={articlePath(r)} className="post-related-card" key={r.slug}>
-                    <span className="post-related-thumb"><img src={r.image} alt="" loading="lazy" /></span>
+                    <span className="post-related-thumb"><img src={r.image} alt={r.title} loading="lazy" /></span>
                     <span className="post-related-text">
                       <span className="post-related-title">{r.title}</span>
                       <span className="post-related-date">

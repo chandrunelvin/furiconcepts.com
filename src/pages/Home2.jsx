@@ -225,7 +225,7 @@ function JournalSlider({ articles }) {
         {articles.map((article) => (
           <Link to={article.path} className="article-card" key={article.slug}>
             <div className="article-thumb">
-              <img src={article.image} alt="" loading="lazy" />
+              <img src={article.image} alt={article.title} loading="lazy" />
             </div>
             <div className="article-body">
               <div className="article-date">{formatDate(article.date)}</div>

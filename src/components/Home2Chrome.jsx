@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react';
 import { CATEGORY_PAGES, TOP_CATEGORIES } from '../data/categories.js';
+import { SOCIAL_URLS } from '../data/contact.js';
 import { HONEYPOT, sendForm } from '../lib/forms.js';
 import { Link, usePath } from '../router.jsx';
 import SiteSearch from './SiteSearch.jsx';
@@ -65,17 +66,8 @@ export const Diagonal = () => (
   </svg>
 );
 
-/**
- * One source for the social links, shared by the menu drawer and the footer.
- * URLs are the ones furniconcepts.com/home.html links to.
- */
-export const SOCIAL_URLS = {
-  Instagram: 'https://www.instagram.com/furniconcepts_/',
-  Pinterest: 'https://in.pinterest.com/furniconcepts/',
-  Facebook: 'https://www.facebook.com/profile.php?id=61550794511232',
-  LinkedIn: 'https://www.linkedin.com/company/furniconcepts/',
-  YouTube: 'https://www.youtube.com/@FurniconceptsOfficial',
-};
+/** The social links live in data/contact.js, which the site's SEO tags also read. */
+export { SOCIAL_URLS };
 
 const SOCIALS = [
   { label: 'Instagram', path: <><rect x="3" y="3" width="18" height="18" rx="5" /><circle cx="12" cy="12" r="4" /><circle cx="17.5" cy="6.5" r="1" /></> },

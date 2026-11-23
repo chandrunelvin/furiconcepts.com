@@ -491,8 +491,8 @@ export const PROJECTS = [
   },
   {
     slug: 'telescopic',
-    title: 'Telescopic Seating',
-    subtitle: 'UAE, Saudi Arabia & Oman',
+    title: 'Raha International School',
+    subtitle: 'Telescopic Seating, Abu Dhabi',
     media: [
       img('telescopic', 'banner'),
       img('telescopic', '01'),
@@ -1026,6 +1026,7 @@ const LOGOS = {
   amity: client('amity-university-logo.png'),
   'al-futtaim-volvo': client('volvo.jpg'),
   'mussafah-abudhabi': client('volswogan.png'),
+  telescopic: client('alraha.jpg'),
   emerson: client('emerson-logo-compressed-data-5576584.png'),
   // the Dubai hotel: the brand logo, not the Le Méridien Abu Dhabi one on the clients wall
   lemerdian: project('le-meridien.png'),

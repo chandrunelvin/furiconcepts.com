@@ -2933,11 +2933,11 @@
  },
  "/download-profiles/furniconcepts": {
   "live": "/fc-profiles.php",
-  "title": "Furniconcepts Profiles & Catalogs – All Collections",
+  "title": "Furniconcepts Profiles & Catalogues | Download PDFs",
   "meta": [
    {
     "name": "description",
-    "content": "Explore Furniconcepts’ full range of downloadable profiles, furniture catalogs, and product collections for office, hospitality, educational, and custom furniture solutions."
+    "content": "Download Furniconcepts' own company profile and product catalogues: chairs, sofas, phone booths, power modules, school, hotel and outdoor furniture."
    },
    {
     "name": "keywords",
@@ -2953,7 +2953,7 @@
    },
    {
     "property": "og:description",
-    "content": "Discover Furniconcepts Profiles by Furniconcepts – modern office furniture solutions in Dubai & UAE."
+    "content": "Download Furniconcepts' own company profile and product catalogues: chairs, sofas, phone booths, power modules, school, hotel and outdoor furniture."
    },
    {
     "name": "twitter:card",
@@ -2965,7 +2965,7 @@
    },
    {
     "name": "twitter:description",
-    "content": "Discover Furniconcepts Profiles by Furniconcepts – modern office furniture solutions in Dubai & UAE."
+    "content": "Download Furniconcepts' own company profile and product catalogues: chairs, sofas, phone booths, power modules, school, hotel and outdoor furniture."
    }
   ],
   "jsonld": [
@@ -2981,11 +2981,11 @@
  },
  "/download-profiles/furniconcepts/airport-lounge-seating": {
   "live": "/fc-airport-lounge-seating.php",
-  "title": "AIRPORT LOUNGE SEATING – Furniconcepts Profiles & Catalogs",
+  "title": "Airport Lounge Seating Catalogues | Furniconcepts Profiles",
   "meta": [
    {
     "name": "description",
-    "content": "Explore Furniconcepts’ full range of downloadable profiles, furniture catalogs, and product collections for office, hospitality, educational, and custom furniture solutions."
+    "content": "Download Furniconcepts airport lounge seating catalogues (1 PDF). Airport lounge & public waiting area seating profiles. Supplied across Dubai, India and."
    },
    {
     "name": "keywords",
@@ -3001,7 +3001,7 @@
    },
    {
     "property": "og:description",
-    "content": "Discover Furniconcepts Profiles by Furniconcepts – modern office furniture solutions in Dubai & UAE."
+    "content": "Download Furniconcepts airport lounge seating catalogues (1 PDF). Airport lounge & public waiting area seating profiles. Supplied across Dubai, India and."
    },
    {
     "name": "twitter:card",
@@ -3013,7 +3013,7 @@
    },
    {
     "name": "twitter:description",
-    "content": "Discover Furniconcepts Profiles by Furniconcepts – modern office furniture solutions in Dubai & UAE."
+    "content": "Download Furniconcepts airport lounge seating catalogues (1 PDF). Airport lounge & public waiting area seating profiles. Supplied across Dubai, India and."
    }
   ],
   "jsonld": [
@@ -3029,11 +3029,11 @@
  },
  "/download-profiles/furniconcepts/chair": {
   "live": "/fc-chair.php",
-  "title": "FURNICONCEPTS CHAIR – Furniconcepts Profiles & Catalogs",
+  "title": "Chair Catalogues | Furniconcepts Profiles",
   "meta": [
    {
     "name": "description",
-    "content": "Explore Furniconcepts’ full range of downloadable profiles, furniture catalogs, and product collections for office, hospitality, educational, and custom furniture solutions."
+    "content": "Download Furniconcepts chair catalogues (11 PDFs). Executive, office, plastic & table & chair profiles. Supplied across Dubai, India and Singapore."
    },
    {
     "name": "keywords",
@@ -3049,7 +3049,7 @@
    },
    {
     "property": "og:description",
-    "content": "Discover Furniconcepts Profiles by Furniconcepts – modern office furniture solutions in Dubai & UAE."
+    "content": "Download Furniconcepts chair catalogues (11 PDFs). Executive, office, plastic & table & chair profiles. Supplied across Dubai, India and Singapore."
    },
    {
     "name": "twitter:card",
@@ -3061,7 +3061,7 @@
    },
    {
     "name": "twitter:description",
-    "content": "Discover Furniconcepts Profiles by Furniconcepts – modern office furniture solutions in Dubai & UAE."
+    "content": "Download Furniconcepts chair catalogues (11 PDFs). Executive, office, plastic & table & chair profiles. Supplied across Dubai, India and Singapore."
    }
   ],
   "jsonld": [
@@ -3077,11 +3077,11 @@
  },
  "/download-profiles/furniconcepts/company-profile": {
   "live": "/fc-company-profile.php",
-  "title": "FURNICONCEPTS PROFILE – Furniconcepts Profiles & Catalogs",
+  "title": "Company Profile & Brochures | Furniconcepts",
   "meta": [
    {
     "name": "description",
-    "content": "Explore Furniconcepts’ full range of downloadable profiles, furniture catalogs, and product collections for office, hospitality, educational, and custom furniture solutions."
+    "content": "Download the Furniconcepts company profile and brochures (6 PDFs). Company, corporate & furniture profiles and core catalogs. Supplied across Dubai, India and Singapore."
    },
    {
     "name": "keywords",
@@ -3097,7 +3097,7 @@
    },
    {
     "property": "og:description",
-    "content": "Discover Furniconcepts Profiles by Furniconcepts – modern office furniture solutions in Dubai & UAE."
+    "content": "Download the Furniconcepts company profile and brochures (6 PDFs). Company, corporate & furniture profiles and core catalogs. Supplied across Dubai, India and Singapore."
    },
    {
     "name": "twitter:card",
@@ -3109,7 +3109,7 @@
    },
    {
     "name": "twitter:description",
-    "content": "Discover Furniconcepts Profiles by Furniconcepts – modern office furniture solutions in Dubai & UAE."
+    "content": "Download the Furniconcepts company profile and brochures (6 PDFs). Company, corporate & furniture profiles and core catalogs. Supplied across Dubai, India and Singapore."
    }
   ],
   "jsonld": [
@@ -3125,11 +3125,11 @@
  },
  "/download-profiles/furniconcepts/control-console-room": {
   "live": "/fc-control-console-room.php",
-  "title": "CONTROL CONSOLE ROOM – Furniconcepts Profiles & Catalogs",
+  "title": "Control Console Room Catalogues | Furniconcepts Profiles",
   "meta": [
    {
     "name": "description",
-    "content": "Explore Furniconcepts’ full range of downloadable profiles, furniture catalogs, and product collections for office, hospitality, educational, and custom furniture solutions."
+    "content": "Download Furniconcepts control console room catalogues (1 PDF). Control room furniture for monitoring & command centers. Supplied across Dubai, India and."
    },
    {
     "name": "keywords",
@@ -3145,7 +3145,7 @@
    },
    {
     "property": "og:description",
-    "content": "Discover Furniconcepts Profiles by Furniconcepts – modern office furniture solutions in Dubai & UAE."
+    "content": "Download Furniconcepts control console room catalogues (1 PDF). Control room furniture for monitoring & command centers. Supplied across Dubai, India and."
    },
    {
     "name": "twitter:card",
@@ -3157,7 +3157,7 @@
    },
    {
     "name": "twitter:description",
-    "content": "Discover Furniconcepts Profiles by Furniconcepts – modern office furniture solutions in Dubai & UAE."
+    "content": "Download Furniconcepts control console room catalogues (1 PDF). Control room furniture for monitoring & command centers. Supplied across Dubai, India and."
    }
   ],
   "jsonld": [
@@ -3173,11 +3173,11 @@
  },
  "/download-profiles/furniconcepts/education": {
   "live": "/fc-education.php",
-  "title": "EDUCATION – Furniconcepts Profiles & Catalogs",
+  "title": "Education Catalogues | Furniconcepts Profiles",
   "meta": [
    {
     "name": "description",
-    "content": "Explore Furniconcepts’ full range of downloadable profiles, furniture catalogs, and product collections for office, hospitality, educational, and custom furniture solutions."
+    "content": "Download Furniconcepts education catalogues (7 PDFs). Educational furniture catalogs and school collections. Supplied across Dubai, India and Singapore."
    },
    {
     "name": "keywords",
@@ -3193,7 +3193,7 @@
    },
    {
     "property": "og:description",
-    "content": "Discover Furniconcepts Profiles by Furniconcepts – modern office furniture solutions in Dubai & UAE."
+    "content": "Download Furniconcepts education catalogues (7 PDFs). Educational furniture catalogs and school collections. Supplied across Dubai, India and Singapore."
    },
    {
     "name": "twitter:card",
@@ -3205,7 +3205,7 @@
    },
    {
     "name": "twitter:description",
-    "content": "Discover Furniconcepts Profiles by Furniconcepts – modern office furniture solutions in Dubai & UAE."
+    "content": "Download Furniconcepts education catalogues (7 PDFs). Educational furniture catalogs and school collections. Supplied across Dubai, India and Singapore."
    }
   ],
   "jsonld": [
@@ -3221,11 +3221,11 @@
  },
  "/download-profiles/furniconcepts/height-adjustable-desk": {
   "live": "/fc-height-adjustable-desk.php",
-  "title": "HEIGHT ADJUSTABLE DESK – Furniconcepts Profiles & Catalogs",
+  "title": "Height Adjustable Desk Catalogues | Furniconcepts Profiles",
   "meta": [
    {
     "name": "description",
-    "content": "Explore Furniconcepts’ full range of downloadable profiles, furniture catalogs, and product collections for office, hospitality, educational, and custom furniture solutions."
+    "content": "Download Furniconcepts height adjustable desk catalogues (1 PDF). Height adjustable desk systems for ergonomic offices. Supplied across Dubai, India and."
    },
    {
     "name": "keywords",
@@ -3241,7 +3241,7 @@
    },
    {
     "property": "og:description",
-    "content": "Discover Furniconcepts Profiles by Furniconcepts – modern office furniture solutions in Dubai & UAE."
+    "content": "Download Furniconcepts height adjustable desk catalogues (1 PDF). Height adjustable desk systems for ergonomic offices. Supplied across Dubai, India and."
    },
    {
     "name": "twitter:card",
@@ -3253,7 +3253,7 @@
    },
    {
     "name": "twitter:description",
-    "content": "Discover Furniconcepts Profiles by Furniconcepts – modern office furniture solutions in Dubai & UAE."
+    "content": "Download Furniconcepts height adjustable desk catalogues (1 PDF). Height adjustable desk systems for ergonomic offices. Supplied across Dubai, India and."
    }
   ],
   "jsonld": [
@@ -3269,11 +3269,11 @@
  },
  "/download-profiles/furniconcepts/hospital-clinic-laboratory-and-warehouse-chairs": {
   "live": "/fc-hospital-clinic-laboratory-and-warehouse-chairs.php",
-  "title": "HOSPITAL, CLINIC, LABORATORY AND WAREHOUSE CHAIRS – Furniconcepts Profiles & Catalogs",
+  "title": "Hospital, Clinic, Laboratory & Warehouse Chairs | Furniconcepts Profiles",
   "meta": [
    {
     "name": "description",
-    "content": "Explore Furniconcepts’ full range of downloadable profiles, furniture catalogs, and product collections for office, hospitality, educational, and custom furniture solutions."
+    "content": "Download Furniconcepts hospital, clinic, laboratory & warehouse chairs catalogues (3 PDFs). Specialized seating for healthcare, lab & industrial spaces.."
    },
    {
     "name": "keywords",
@@ -3289,7 +3289,7 @@
    },
    {
     "property": "og:description",
-    "content": "Discover Furniconcepts Profiles by Furniconcepts – modern office furniture solutions in Dubai & UAE."
+    "content": "Download Furniconcepts hospital, clinic, laboratory & warehouse chairs catalogues (3 PDFs). Specialized seating for healthcare, lab & industrial spaces.."
    },
    {
     "name": "twitter:card",
@@ -3301,7 +3301,7 @@
    },
    {
     "name": "twitter:description",
-    "content": "Discover Furniconcepts Profiles by Furniconcepts – modern office furniture solutions in Dubai & UAE."
+    "content": "Download Furniconcepts hospital, clinic, laboratory & warehouse chairs catalogues (3 PDFs). Specialized seating for healthcare, lab & industrial spaces.."
    }
   ],
   "jsonld": [
@@ -3317,11 +3317,11 @@
  },
  "/download-profiles/furniconcepts/hotel-and-restaurant-profile": {
   "live": "/fc-hotel-and-restaurant-profile.php",
-  "title": "HOTEL & RESTAURANT PROFILE – Furniconcepts Profiles & Catalogs",
+  "title": "Hotel & Restaurant Profile Catalogues | Furniconcepts Profiles",
   "meta": [
    {
     "name": "description",
-    "content": "Explore Furniconcepts’ full range of downloadable profiles, furniture catalogs, and product collections for office, hospitality, educational, and custom furniture solutions."
+    "content": "Download Furniconcepts hotel & restaurant profile catalogues (7 PDFs). Hospitality, banquet, hotel & restaurant furniture profiles. Supplied across Dubai."
    },
    {
     "name": "keywords",
@@ -3337,7 +3337,7 @@
    },
    {
     "property": "og:description",
-    "content": "Discover Furniconcepts Profiles by Furniconcepts – modern office furniture solutions in Dubai & UAE."
+    "content": "Download Furniconcepts hotel & restaurant profile catalogues (7 PDFs). Hospitality, banquet, hotel & restaurant furniture profiles. Supplied across Dubai."
    },
    {
     "name": "twitter:card",
@@ -3349,7 +3349,7 @@
    },
    {
     "name": "twitter:description",
-    "content": "Discover Furniconcepts Profiles by Furniconcepts – modern office furniture solutions in Dubai & UAE."
+    "content": "Download Furniconcepts hotel & restaurant profile catalogues (7 PDFs). Hospitality, banquet, hotel & restaurant furniture profiles. Supplied across Dubai."
    }
   ],
   "jsonld": [
@@ -3365,11 +3365,11 @@
  },
  "/download-profiles/furniconcepts/interactive-display-screens": {
   "live": "/fc-interactive-display-screens.php",
-  "title": "FC INTERACTIVE DISPLAY SCREENS – Furniconcepts Profiles & Catalogs",
+  "title": "FC Interactive Display Screens | Furniconcepts Profiles",
   "meta": [
    {
     "name": "description",
-    "content": "Explore Furniconcepts’ full range of downloadable profiles, furniture catalogs, and product collections for office, hospitality, educational, and custom furniture solutions."
+    "content": "Download Furniconcepts fc interactive display screens catalogues (3 PDFs). Interactive displays and monitor arm systems. Supplied across Dubai, India and."
    },
    {
     "name": "keywords",
@@ -3385,7 +3385,7 @@
    },
    {
     "property": "og:description",
-    "content": "Discover Furniconcepts Profiles by Furniconcepts – modern office furniture solutions in Dubai & UAE."
+    "content": "Download Furniconcepts fc interactive display screens catalogues (3 PDFs). Interactive displays and monitor arm systems. Supplied across Dubai, India and."
    },
    {
     "name": "twitter:card",
@@ -3397,7 +3397,7 @@
    },
    {
     "name": "twitter:description",
-    "content": "Discover Furniconcepts Profiles by Furniconcepts – modern office furniture solutions in Dubai & UAE."
+    "content": "Download Furniconcepts fc interactive display screens catalogues (3 PDFs). Interactive displays and monitor arm systems. Supplied across Dubai, India and."
    }
   ],
   "jsonld": [
@@ -3413,11 +3413,11 @@
  },
  "/download-profiles/furniconcepts/light-and-floor": {
   "live": "/fc-light-and-floor.php",
-  "title": "LIGHT AND FLOOR – Furniconcepts Profiles & Catalogs",
+  "title": "Light & Floor Catalogues | Furniconcepts Profiles",
   "meta": [
    {
     "name": "description",
-    "content": "Explore Furniconcepts’ full range of downloadable profiles, furniture catalogs, and product collections for office, hospitality, educational, and custom furniture solutions."
+    "content": "Download Furniconcepts light & floor catalogues (1 PDF). Decorative & functional floor lighting profiles. Supplied across Dubai, India and Singapore."
    },
    {
     "name": "keywords",
@@ -3433,7 +3433,7 @@
    },
    {
     "property": "og:description",
-    "content": "Discover Furniconcepts Profiles by Furniconcepts – modern office furniture solutions in Dubai & UAE."
+    "content": "Download Furniconcepts light & floor catalogues (1 PDF). Decorative & functional floor lighting profiles. Supplied across Dubai, India and Singapore."
    },
    {
     "name": "twitter:card",
@@ -3445,7 +3445,7 @@
    },
    {
     "name": "twitter:description",
-    "content": "Discover Furniconcepts Profiles by Furniconcepts – modern office furniture solutions in Dubai & UAE."
+    "content": "Download Furniconcepts light & floor catalogues (1 PDF). Decorative & functional floor lighting profiles. Supplied across Dubai, India and Singapore."
    }
   ],
   "jsonld": [
@@ -3461,11 +3461,11 @@
  },
  "/download-profiles/furniconcepts/outdoor-furniture": {
   "live": "/fc-outdoor-furniture.php",
-  "title": "OUTDOOR FURNITURE – Furniconcepts Profiles & Catalogs",
+  "title": "Outdoor Furniture Catalogues | Furniconcepts Profiles",
   "meta": [
    {
     "name": "description",
-    "content": "Explore Furniconcepts’ full range of downloadable profiles, furniture catalogs, and product collections for office, hospitality, educational, and custom furniture solutions."
+    "content": "Download Furniconcepts outdoor furniture catalogues (4 PDFs). Indoor & outdoor catalogs for parks and open-air seating. Supplied across Dubai, India and."
    },
    {
     "name": "keywords",
@@ -3481,7 +3481,7 @@
    },
    {
     "property": "og:description",
-    "content": "Discover Furniconcepts Profiles by Furniconcepts – modern office furniture solutions in Dubai & UAE."
+    "content": "Download Furniconcepts outdoor furniture catalogues (4 PDFs). Indoor & outdoor catalogs for parks and open-air seating. Supplied across Dubai, India and."
    },
    {
     "name": "twitter:card",
@@ -3493,7 +3493,7 @@
    },
    {
     "name": "twitter:description",
-    "content": "Discover Furniconcepts Profiles by Furniconcepts – modern office furniture solutions in Dubai & UAE."
+    "content": "Download Furniconcepts outdoor furniture catalogues (4 PDFs). Indoor & outdoor catalogs for parks and open-air seating. Supplied across Dubai, India and."
    }
   ],
   "jsonld": [
@@ -3509,11 +3509,11 @@
  },
  "/download-profiles/furniconcepts/phone-booth": {
   "live": "/fc-phone-booth.php",
-  "title": "PHONE BOOTH – Furniconcepts Profiles & Catalogs",
+  "title": "Phone Booth Catalogues | Furniconcepts Profiles",
   "meta": [
    {
     "name": "description",
-    "content": "Explore Furniconcepts’ full range of downloadable profiles, furniture catalogs, and product collections for office, hospitality, educational, and custom furniture solutions."
+    "content": "Download Furniconcepts phone booth catalogues (7 PDFs). Acoustic pods & phone booths for quiet office zones. Supplied across Dubai, India and Singapore."
    },
    {
     "name": "keywords",
@@ -3529,7 +3529,7 @@
    },
    {
     "property": "og:description",
-    "content": "Discover Furniconcepts Profiles by Furniconcepts – modern office furniture solutions in Dubai & UAE."
+    "content": "Download Furniconcepts phone booth catalogues (7 PDFs). Acoustic pods & phone booths for quiet office zones. Supplied across Dubai, India and Singapore."
    },
    {
     "name": "twitter:card",
@@ -3541,7 +3541,7 @@
    },
    {
     "name": "twitter:description",
-    "content": "Discover Furniconcepts Profiles by Furniconcepts – modern office furniture solutions in Dubai & UAE."
+    "content": "Download Furniconcepts phone booth catalogues (7 PDFs). Acoustic pods & phone booths for quiet office zones. Supplied across Dubai, India and Singapore."
    }
   ],
   "jsonld": [
@@ -3557,11 +3557,11 @@
  },
  "/download-profiles/furniconcepts/power-modules": {
   "live": "/fc-power-modules.php",
-  "title": "FC POWER MODULES – Furniconcepts Profiles & Catalogs",
+  "title": "FC Power Modules Catalogues | Furniconcepts Profiles",
   "meta": [
    {
     "name": "description",
-    "content": "Explore Furniconcepts’ full range of downloadable profiles, furniture catalogs, and product collections for office, hospitality, educational, and custom furniture solutions."
+    "content": "Download Furniconcepts fc power modules catalogues (3 PDFs). Integrated workplace power & connectivity solutions. Supplied across Dubai, India and Singapore."
    },
    {
     "name": "keywords",
@@ -3577,7 +3577,7 @@
    },
    {
     "property": "og:description",
-    "content": "Discover Furniconcepts Profiles by Furniconcepts – modern office furniture solutions in Dubai & UAE."
+    "content": "Download Furniconcepts fc power modules catalogues (3 PDFs). Integrated workplace power & connectivity solutions. Supplied across Dubai, India and Singapore."
    },
    {
     "name": "twitter:card",
@@ -3589,7 +3589,7 @@
    },
    {
     "name": "twitter:description",
-    "content": "Discover Furniconcepts Profiles by Furniconcepts – modern office furniture solutions in Dubai & UAE."
+    "content": "Download Furniconcepts fc power modules catalogues (3 PDFs). Integrated workplace power & connectivity solutions. Supplied across Dubai, India and Singapore."
    }
   ],
   "jsonld": [
@@ -3605,11 +3605,11 @@
  },
  "/download-profiles/furniconcepts/racking-and-shelving": {
   "live": "/fc-racking-and-shelving.php",
-  "title": "RACKING AND SHELVING – Furniconcepts Profiles & Catalogs",
+  "title": "Racking & Shelving Catalogues | Furniconcepts Profiles",
   "meta": [
    {
     "name": "description",
-    "content": "Explore Furniconcepts’ full range of downloadable profiles, furniture catalogs, and product collections for office, hospitality, educational, and custom furniture solutions."
+    "content": "Download Furniconcepts racking & shelving catalogues (1 PDF). Storage, shelving & racking systems for warehouses. Supplied across Dubai, India and Singapore."
    },
    {
     "name": "keywords",
@@ -3625,7 +3625,7 @@
    },
    {
     "property": "og:description",
-    "content": "Discover Furniconcepts Profiles by Furniconcepts – modern office furniture solutions in Dubai & UAE."
+    "content": "Download Furniconcepts racking & shelving catalogues (1 PDF). Storage, shelving & racking systems for warehouses. Supplied across Dubai, India and Singapore."
    },
    {
     "name": "twitter:card",
@@ -3637,7 +3637,7 @@
    },
    {
     "name": "twitter:description",
-    "content": "Discover Furniconcepts Profiles by Furniconcepts – modern office furniture solutions in Dubai & UAE."
+    "content": "Download Furniconcepts racking & shelving catalogues (1 PDF). Storage, shelving & racking systems for warehouses. Supplied across Dubai, India and Singapore."
    }
   ],
   "jsonld": [
@@ -3653,11 +3653,11 @@
  },
  "/download-profiles/furniconcepts/saloon-and-spa": {
   "live": "/fc-saloon-and-spa.php",
-  "title": "FURNICONCEPTS SALOON AND SPA – Furniconcepts Profiles & Catalogs",
+  "title": "Saloon & Spa Catalogues | Furniconcepts Profiles",
   "meta": [
    {
     "name": "description",
-    "content": "Explore Furniconcepts’ full range of downloadable profiles, furniture catalogs, and product collections for office, hospitality, educational, and custom furniture solutions."
+    "content": "Download Furniconcepts saloon & spa catalogues (2 PDFs). Saloon & spa seating profiles for hospitality spaces. Supplied across Dubai, India and Singapore."
    },
    {
     "name": "keywords",
@@ -3673,7 +3673,7 @@
    },
    {
     "property": "og:description",
-    "content": "Discover Furniconcepts Profiles by Furniconcepts – modern office furniture solutions in Dubai & UAE."
+    "content": "Download Furniconcepts saloon & spa catalogues (2 PDFs). Saloon & spa seating profiles for hospitality spaces. Supplied across Dubai, India and Singapore."
    },
    {
     "name": "twitter:card",
@@ -3685,7 +3685,7 @@
    },
    {
     "name": "twitter:description",
-    "content": "Discover Furniconcepts Profiles by Furniconcepts – modern office furniture solutions in Dubai & UAE."
+    "content": "Download Furniconcepts saloon & spa catalogues (2 PDFs). Saloon & spa seating profiles for hospitality spaces. Supplied across Dubai, India and Singapore."
    }
   ],
   "jsonld": [
@@ -3701,11 +3701,11 @@
  },
  "/download-profiles/furniconcepts/sofa": {
   "live": "/fc-sofa.php",
-  "title": "FURNICONCEPTS SOFA – Furniconcepts Profiles & Catalogs",
+  "title": "Sofa Catalogues | Furniconcepts Profiles",
   "meta": [
    {
     "name": "description",
-    "content": "Explore Furniconcepts’ full range of downloadable profiles, furniture catalogs, and product collections for office, hospitality, educational, and custom furniture solutions."
+    "content": "Download Furniconcepts sofa catalogues (4 PDFs). Custom, office, folding & public-seating sofa profiles. Supplied across Dubai, India and Singapore."
    },
    {
     "name": "keywords",
@@ -3721,7 +3721,7 @@
    },
    {
     "property": "og:description",
-    "content": "Discover Furniconcepts Profiles by Furniconcepts – modern office furniture solutions in Dubai & UAE."
+    "content": "Download Furniconcepts sofa catalogues (4 PDFs). Custom, office, folding & public-seating sofa profiles. Supplied across Dubai, India and Singapore."
    },
    {
     "name": "twitter:card",
@@ -3733,7 +3733,7 @@
    },
    {
     "name": "twitter:description",
-    "content": "Discover Furniconcepts Profiles by Furniconcepts – modern office furniture solutions in Dubai & UAE."
+    "content": "Download Furniconcepts sofa catalogues (4 PDFs). Custom, office, folding & public-seating sofa profiles. Supplied across Dubai, India and Singapore."
    }
   ],
   "jsonld": [
@@ -3749,11 +3749,11 @@
  },
  "/download-profiles/furniconcepts/soft-lounge-seating": {
   "live": "/fc-soft-lounge-seating.php",
-  "title": "SOFT LOUNGE SEATING – Furniconcepts Profiles & Catalogs",
+  "title": "Soft Lounge Seating Catalogues | Furniconcepts Profiles",
   "meta": [
    {
     "name": "description",
-    "content": "Explore Furniconcepts’ full range of downloadable profiles, furniture catalogs, and product collections for office, hospitality, educational, and custom furniture solutions."
+    "content": "Download Furniconcepts soft lounge seating catalogues (2 PDFs). Soft lounge & public waiting area seating profiles. Supplied across Dubai, India and."
    },
    {
     "name": "keywords",
@@ -3769,7 +3769,7 @@
    },
    {
     "property": "og:description",
-    "content": "Discover Furniconcepts Profiles by Furniconcepts – modern office furniture solutions in Dubai & UAE."
+    "content": "Download Furniconcepts soft lounge seating catalogues (2 PDFs). Soft lounge & public waiting area seating profiles. Supplied across Dubai, India and."
    },
    {
     "name": "twitter:card",
@@ -3781,7 +3781,7 @@
    },
    {
     "name": "twitter:description",
-    "content": "Discover Furniconcepts Profiles by Furniconcepts – modern office furniture solutions in Dubai & UAE."
+    "content": "Download Furniconcepts soft lounge seating catalogues (2 PDFs). Soft lounge & public waiting area seating profiles. Supplied across Dubai, India and."
    }
   ],
   "jsonld": [
@@ -3797,11 +3797,11 @@
  },
  "/download-profiles/furniconcepts/wall-paint-solution": {
   "live": "/fc-wall-paint-solution.php",
-  "title": "WALL PAINT SOLUTION – Furniconcepts Profiles & Catalogs",
+  "title": "Wall Paint Solution Catalogues | Furniconcepts Profiles",
   "meta": [
    {
     "name": "description",
-    "content": "Explore Furniconcepts’ full range of downloadable profiles, furniture catalogs, and product collections for office, hospitality, educational, and custom furniture solutions."
+    "content": "Download Furniconcepts wall paint solution catalogues (2 PDFs). Creative wall paint & interactive surface solutions. Supplied across Dubai, India and."
    },
    {
     "name": "keywords",
@@ -3817,7 +3817,7 @@
    },
    {
     "property": "og:description",
-    "content": "Discover Furniconcepts Profiles by Furniconcepts – modern office furniture solutions in Dubai & UAE."
+    "content": "Download Furniconcepts wall paint solution catalogues (2 PDFs). Creative wall paint & interactive surface solutions. Supplied across Dubai, India and."
    },
    {
     "name": "twitter:card",
@@ -3829,7 +3829,7 @@
    },
    {
     "name": "twitter:description",
-    "content": "Discover Furniconcepts Profiles by Furniconcepts – modern office furniture solutions in Dubai & UAE."
+    "content": "Download Furniconcepts wall paint solution catalogues (2 PDFs). Creative wall paint & interactive surface solutions. Supplied across Dubai, India and."
    }
   ],
   "jsonld": [
@@ -4037,11 +4037,11 @@
  },
  "/download-profiles/markant": {
   "live": "/markant-profiles.php",
-  "title": "Markant | Furniconcepts",
+  "title": "Markant Catalogues & Profiles | Furniconcepts",
   "meta": [
    {
     "name": "description",
-    "content": "Discover Markant by Furniconcepts – modern office furniture solutions in Dubai & UAE."
+    "content": "Download Markant catalogues and brochures for acoustic pods, workstations and office furniture, supplied by Furniconcepts in Dubai, India and Singapore."
    },
    {
     "name": "keywords",
@@ -4053,11 +4053,11 @@
    },
    {
     "property": "og:title",
-    "content": "Markant | Furniconcepts"
+    "content": "Markant Catalogues & Profiles | Furniconcepts"
    },
    {
     "property": "og:description",
-    "content": "Discover Markant by Furniconcepts – modern office furniture solutions in Dubai & UAE."
+    "content": "Download Markant catalogues and brochures for acoustic pods, workstations and office furniture, supplied by Furniconcepts in Dubai, India and Singapore."
    },
    {
     "name": "twitter:card",
@@ -4065,11 +4065,11 @@
    },
    {
     "name": "twitter:title",
-    "content": "Markant | Furniconcepts"
+    "content": "Markant Catalogues & Profiles | Furniconcepts"
    },
    {
     "name": "twitter:description",
-    "content": "Discover Markant by Furniconcepts – modern office furniture solutions in Dubai & UAE."
+    "content": "Download Markant catalogues and brochures for acoustic pods, workstations and office furniture, supplied by Furniconcepts in Dubai, India and Singapore."
    }
   ],
   "jsonld": [
@@ -4261,11 +4261,11 @@
  },
  "/download-profiles/scab": {
   "live": "/scab-profiles.php",
-  "title": "Scab | Furniconcepts",
+  "title": "Scab Italy Catalogues & Profiles | Furniconcepts",
   "meta": [
    {
     "name": "description",
-    "content": "Discover Scab by Furniconcepts – modern office furniture solutions in Itlay"
+    "content": "Download Scab Italy catalogues for Italian designer chairs, lounge and outdoor seating, supplied by Furniconcepts in Dubai, India and Singapore."
    },
    {
     "name": "keywords",
@@ -4277,11 +4277,11 @@
    },
    {
     "property": "og:title",
-    "content": "Scab | Furniconcepts"
+    "content": "Scab Italy Catalogues & Profiles | Furniconcepts"
    },
    {
     "property": "og:description",
-    "content": "Discover Scab by Furniconcepts – modern office furniture solutions in Itlay"
+    "content": "Download Scab Italy catalogues for Italian designer chairs, lounge and outdoor seating, supplied by Furniconcepts in Dubai, India and Singapore."
    },
    {
     "name": "twitter:card",
@@ -4289,11 +4289,11 @@
    },
    {
     "name": "twitter:title",
-    "content": "Scab | Furniconcepts"
+    "content": "Scab Italy Catalogues & Profiles | Furniconcepts"
    },
    {
     "name": "twitter:description",
-    "content": "Discover Scab by Furniconcepts – modern office furniture solutions in Itlay"
+    "content": "Download Scab Italy catalogues for Italian designer chairs, lounge and outdoor seating, supplied by Furniconcepts in Dubai, India and Singapore."
    }
   ],
   "jsonld": [
@@ -5027,11 +5027,11 @@
  },
  "/projects": {
   "live": "/projects/index.php",
-  "title": "Projects | Furniconcepts",
+  "title": "Completed Projects in UAE, India & Singapore | Furniconcepts",
   "meta": [
    {
     "name": "description",
-    "content": "Discover Modern Office Furniture Suppliers UAE by Furniconcepts – modern office furniture solutions in Dubai & UAE."
+    "content": "Explore completed Furniconcepts projects: offices, showrooms, hotels, schools, cinemas and hospitals furnished across the UAE, Oman, India and Singapore."
    },
    {
     "name": "keywords",
@@ -5047,7 +5047,7 @@
    },
    {
     "property": "og:description",
-    "content": "Discover Modern Office Furniture Suppliers UAE by Furniconcepts – modern office furniture solutions in Dubai & UAE."
+    "content": "Explore completed Furniconcepts projects: offices, showrooms, hotels, schools, cinemas and hospitals furnished across the UAE, Oman, India and Singapore."
    },
    {
     "name": "twitter:card",
@@ -5059,7 +5059,7 @@
    },
    {
     "name": "twitter:description",
-    "content": "Discover Modern Office Furniture Suppliers UAE by Furniconcepts – modern office furniture solutions in Dubai & UAE."
+    "content": "Explore completed Furniconcepts projects: offices, showrooms, hotels, schools, cinemas and hospitals furnished across the UAE, Oman, India and Singapore."
    }
   ],
   "jsonld": [

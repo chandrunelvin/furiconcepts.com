@@ -507,7 +507,7 @@ function Testimonials() {
 function TeamCard({ person, onOpen }) {
   return (
     <button type="button" className="team-card" onClick={onOpen} aria-label={`View profile: ${person.name}, ${person.role}`}>
-      <div className="team-photo"><img src={person.src} alt="" loading="lazy" /></div>
+      <div className="team-photo"><img src={person.src} alt={`${person.name}, ${person.role}`} loading="lazy" /></div>
       <span className="team-bar">
         <span className="team-text">
           <span className="team-name">{person.name}</span>

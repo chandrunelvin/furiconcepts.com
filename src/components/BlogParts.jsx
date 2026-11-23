@@ -19,6 +19,7 @@ export const Icon = ({ name }) => {
     chair: <><rect x="8" y="3" width="8" height="9" rx="3" /><path d="M6 12.5h12M12 14.5v3.5M7.5 21l4.5-3 4.5 3M6 10v4M18 10v4" /></>,
     leaf: <><path d="M5 19C5 10 10.5 4.5 20 4c-.4 9.5-6 15-15 15z" /><path d="M5 19l8-8" /></>,
     doc: <><path d="M14 3H7a2 2 0 00-2 2v14a2 2 0 002 2h10a2 2 0 002-2V8l-5-5z" /><path d="M14 3v5h5M9 13h6M9 17h4" /></>,
+    rack: <><path d="M4 3v18M20 3v18M4 8.5h16M4 14.5h16M4 20.5h16" /><path d="M7 6.5h3M12 12.5h4M7 18.5h5" /></>,
     building: <><path d="M4 21V8l6-3v16M10 21V3h8v18M3 21h18" /><path d="M13 7h2M13 11h2M13 15h2M6.5 11h1M6.5 15h1" /></>,
     search: <><circle cx="11" cy="11" r="7" /><path d="M21 21l-4.3-4.3" /></>,
     chevron: <path d="M9 6l6 6-6 6" />,
@@ -101,7 +102,7 @@ export function BlogSidebar({ category, onCategory, query, onQuery, onSearch, li
           {list.map((a) => (
             <li key={a.slug}>
               <Link to={articlePath(a)}>
-                <span className="blog-popular-thumb"><img src={a.image} alt="" loading="lazy" /></span>
+                <span className="blog-popular-thumb"><img src={a.image} alt={a.title} loading="lazy" /></span>
                 <span className="blog-popular-text">
                   <span className="blog-popular-title">{a.title}</span>
                   <time dateTime={a.date}>{formatDate(a.date)}</time>

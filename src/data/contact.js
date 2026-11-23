@@ -17,6 +17,18 @@ export const CONTACT_HERO = {
   image: '/images/contact-us/contact-us-hero-image.webp',
 };
 
+/**
+ * One source for the social links, shared by the menu drawer, the footer and
+ * the Organization structured data. URLs are the ones furniconcepts.com/home.html links to.
+ */
+export const SOCIAL_URLS = {
+  Instagram: 'https://www.instagram.com/furniconcepts_/',
+  Pinterest: 'https://in.pinterest.com/furniconcepts/',
+  Facebook: 'https://www.facebook.com/profile.php?id=61550794511232',
+  LinkedIn: 'https://www.linkedin.com/company/furniconcepts/',
+  YouTube: 'https://www.youtube.com/@FurniconceptsOfficial',
+};
+
 export const CONTACT_METHODS = [
   {
     icon: 'phone',

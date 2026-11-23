@@ -2,7 +2,7 @@ import { BLOG_HERO, getArticleByPath } from '../data/blog.js';
 import { BRANDS } from '../data/brands.js';
 import { CATALOGS } from '../data/catalogs.js';
 import { getCategoryByPath } from '../data/categories.js';
-import { CONTACT_HERO } from '../data/contact.js';
+import { CONTACT_HERO, CONTACT_METHODS, OFFICES, SOCIAL_URLS } from '../data/contact.js';
 import { FC_COLLECTIONS } from '../data/fcProfiles.js';
 import { PROFILES } from '../data/profiles.js';
 import { PROJECTS } from '../data/projects.js';
@@ -86,6 +86,86 @@ function rewrite(value, image) {
 
 const metaKey = (m) => m.name ?? m.property;
 
+/* ---------- structured data the old site's tags lacked ---------- */
+
+const ORG_ID = `${SITE}/#organization`;
+const LOGO = `${SITE}/images/furni-logo.png`;
+const COUNTRY = { dubai: 'AE', factory: 'AE', chennai: 'IN', singapore: 'SG' };
+
+/** The company, on the home page; every other page's data points to it by @id. */
+function organization() {
+  const phone = CONTACT_METHODS.find((m) => m.icon === 'phone')?.label;
+  const email = CONTACT_METHODS.find((m) => m.icon === 'mail')?.label;
+  return {
+    '@context': 'https://schema.org',
+    '@type': 'Organization',
+    '@id': ORG_ID,
+    name: 'Furniconcepts',
+    url: `${SITE}/`,
+    logo: { '@type': 'ImageObject', url: LOGO, width: 1600, height: 298 },
+    email,
+    telephone: phone,
+    sameAs: Object.values(SOCIAL_URLS).filter((u) => u.startsWith('http')),
+    contactPoint: [{ '@type': 'ContactPoint', telephone: phone, email, contactType: 'sales', areaServed: ['AE', 'IN', 'SG', 'OM'], availableLanguage: ['English', 'Arabic'] }],
+    location: OFFICES.map((o) => ({
+      '@type': 'Place',
+      name: o.company,
+      telephone: o.phone.split(',')[0].trim(),
+      address: { '@type': 'PostalAddress', streetAddress: o.address, addressCountry: COUNTRY[o.id] },
+      geo: { '@type': 'GeoCoordinates', latitude: Number(o.coords.split(',')[0]), longitude: Number(o.coords.split(',')[1]) },
+    })),
+  };
+}
+
+const website = () => ({
+  '@context': 'https://schema.org',
+  '@type': 'WebSite',
+  '@id': `${SITE}/#website`,
+  name: 'Furniconcepts',
+  url: `${SITE}/`,
+  publisher: { '@id': ORG_ID },
+});
+
+const breadcrumbs = (trail) => ({
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: trail.map(([name, path], i) => ({ '@type': 'ListItem', position: i + 1, name, item: SITE + encodeURI(path) })),
+});
+
+/** Extra JSON-LD for a page, skipping any type the page's own tags already carry. */
+function structured(path, existing, img) {
+  const has = (type) => existing.some((d) => JSON.stringify(d).includes(`"@type":"${type}"`) || JSON.stringify(d).includes(`"@type": "${type}"`));
+  const out = [];
+  if (path === '/') {
+    if (!has('Organization')) out.push(organization());
+    if (!has('WebSite')) out.push(website());
+  }
+  const article = getArticleByPath(decodeURI(path));
+  if (article) {
+    if (!has('BlogPosting') && !has('Article')) {
+      out.push({
+        '@context': 'https://schema.org',
+        '@type': 'BlogPosting',
+        headline: (article.heading ?? article.title).slice(0, 110),
+        description: article.excerpt,
+        image: [img],
+        datePublished: article.date,
+        dateModified: article.date,
+        author: { '@type': 'Organization', name: article.author ?? 'Furniconcepts', url: `${SITE}/` },
+        publisher: { '@id': ORG_ID, '@type': 'Organization', name: 'Furniconcepts', logo: { '@type': 'ImageObject', url: LOGO } },
+        mainEntityOfPage: { '@type': 'WebPage', '@id': SITE + encodeURI(path) },
+        ...(article.words && { wordCount: article.words }),
+      });
+    }
+    if (!has('BreadcrumbList')) out.push(breadcrumbs([['Home', '/'], ['Blog', '/blogs.php'], [article.title, article.path]]));
+  }
+  const project = PROJECTS.find((p) => p.slug === slugAfter(path, '/projects/'));
+  if (project && !has('BreadcrumbList')) {
+    out.push(breadcrumbs([['Home', '/'], ['Projects', '/projects'], [project.title, path]]));
+  }
+  return out;
+}
+
 /**
  * Finishes a page's tags: canonical and og:url on the www address, the page's
  * own image, and og/twitter title and description filled in where missing.
@@ -114,6 +194,15 @@ export function finalizeSeo(seo, path, image = pageImage(path)) {
     // blog JSON-LD arrives as text; text that is not valid JSON goes out as-is
     try { return rewrite(JSON.parse(d.__raw), image); } catch { return d; }
   });
+  jsonld.push(...structured(path, jsonld, img));
+
+  // blog posts are articles in link previews, with their publish date
+  const article = getArticleByPath(decodeURI(path));
+  if (article) {
+    const type = meta.find((m) => m.property === 'og:type');
+    if (type) type.content = 'article'; else meta.push({ property: 'og:type', content: 'article' });
+    if (!has('article:published_time')) meta.push({ property: 'article:published_time', content: article.date });
+  }
   return { title: seo.title, meta, canonical, jsonld };
 }
 
