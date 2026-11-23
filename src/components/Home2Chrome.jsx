@@ -42,6 +42,7 @@ export const BRAND_MENU = [
   { label: 'Safe Lockers', path: '/brands/safe-lockers', logo: logo('vssafebox-safe-lockers-logo.png') },
   { label: 'Teachmint', path: '/brands/teachmint', logo: logo('teachmint.svg'), showInPartnerCollection: false },
   { label: 'Konektra', path: '/brands/konektra', logo: logo('konektra.svg'), showInPartnerCollection: false },
+  { label: 'CMS Electracom', path: '/brands/cms-electracom', logo: logo('cms-electracom.png'), showInPartnerCollection: false },
 ];
 
 /** A brand's logo by name; spacing and case are ignored ("Gebb Work" = "Gebbwork"). */

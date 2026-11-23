@@ -9,12 +9,14 @@
 import SOURCE from './brand-source.json';
 import { TEACHMINT } from './teachmint.js';
 import { KONEKTRA } from './konektra.js';
+import { CMS_ELECTRACOM } from './cmsElectracom.js';
 
 const img = (name) => `/images/cavaletti/${name}.jpg`;
 /** Product shots pulled from the live Cavaletti page (furniconcepts.com/cavaletti.php). */
 const product = (name) => `/images/cavaletti/products/${name}.webp`;
 
 export const BRANDS = {
+  'cms-electracom': CMS_ELECTRACOM,
   konektra: KONEKTRA,
   teachmint: TEACHMINT,
   cavaletti: {

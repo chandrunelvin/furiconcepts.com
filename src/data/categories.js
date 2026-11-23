@@ -1118,12 +1118,17 @@ export const CATEGORY_PAGES = [
       [
         {
           "type": "heading",
-          "title": "Modular Storage for Changing Workspaces",
+          "title": "Modular Storage and Workstation Power",
           "body": [
             [
               "Explore ",
               { "label": "Konektra SYSTEM 01 modular furniture", "href": "/brands/konektra" },
               " for low cabinets, open shelves and dividers that can move with your team."
+            ],
+            [
+              "Plan sockets and cable routes around each desk with ",
+              { "label": "CMS Electracom workstation power", "href": "/brands/cms-electracom" },
+              "."
             ]
           ]
         }

@@ -40,6 +40,7 @@ const lines = (text) =>
 export default function Brand({ slug }) {
   const brand = getBrand(slug);
   const products = brand?.products;
+  const guide = brand?.planningGuide;
 
   const [category, setCategory] = useState('all');
 
@@ -185,6 +186,32 @@ export default function Brand({ slug }) {
 
       {/* ---- product explorer ---- */}
       <ProductExplorer products={products} brand={brand} category={category} onCategory={setCategory} />
+
+      {guide && (
+        <section id="workspace-planning" className="section brand-guide is-alt" aria-labelledby="workspace-planning-title">
+          <div className="wrap brand-guide-inner">
+            <div className="brand-guide-copy">
+              <h2 id="workspace-planning-title">{guide.title}</h2>
+              <p className="brand-guide-intro">{guide.intro}</p>
+              <dl>
+                {guide.topics.map(({ title, text }) => (
+                  <div key={title}>
+                    <dt>{title}</dt>
+                    <dd>{text}</dd>
+                  </div>
+                ))}
+              </dl>
+              <SmartLink href={guide.link.href} className="link-arrow">
+                {guide.link.label} <span aria-hidden="true"><Arrow size={15} /></span>
+              </SmartLink>
+            </div>
+            <figure>
+              <img src={guide.image} alt={guide.imageAlt} width="1250" height="600" loading="lazy" />
+              <figcaption>{guide.caption}</figcaption>
+            </figure>
+          </div>
+        </section>
+      )}
 
       {brand.planning && (
         <div className="section brand-planning">

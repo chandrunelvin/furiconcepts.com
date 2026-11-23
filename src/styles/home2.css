@@ -3841,6 +3841,32 @@
 .home2 .brand-planning p{ margin-bottom:12px; }
 .home2 .brand-planning ul{ padding-left:1.1em;list-style:disc;color:var(--ink-soft);font-size:15px;line-height:1.7; }
 .home2 .brand-planning li + li{ margin-top:8px; }
+.home2 .brand-guide{ background:#fff;scroll-margin-top:78px; }
+.home2 .brand-guide-inner{
+  display:grid;grid-template-columns:1fr 1fr;gap:clamp(36px,5vw,80px);align-items:center;
+}
+.home2 .brand-guide h2{
+  font-family:var(--font-primary);font-size:clamp(30px,3.2vw,42px);font-weight:500;
+  line-height:1.12;letter-spacing:-.025em;
+}
+.home2 .brand-guide-intro{ margin:16px 0 26px;max-width:52ch;color:var(--ink-soft);line-height:1.65; }
+.home2 .brand-guide dl > div{
+  display:grid;grid-template-columns:minmax(95px,.7fr) 2fr;gap:16px;
+  padding:15px 0;border-top:1px solid var(--line);
+}
+.home2 .brand-guide dt{ font-size:15px;font-weight:600; }
+.home2 .brand-guide dd{ font-size:14.5px;line-height:1.6;color:var(--ink-soft); }
+.home2 .brand-guide .link-arrow{ margin-top:15px; }
+.home2 .brand-guide .link-arrow span{ display:inline-flex; }
+.home2 .brand-guide figure img{ aspect-ratio:5/4;height:auto;border-radius:var(--radius); }
+.home2 .brand-guide figcaption{ margin-top:10px;font-size:13px;color:var(--ink-soft); }
+@media(max-width:900px){
+  .home2 .brand-guide-inner{ grid-template-columns:1fr;gap:32px; }
+  .home2 .brand-guide figure img{ aspect-ratio:2/1; }
+}
+@media(max-width:540px){
+  .home2 .brand-guide dl > div{ grid-template-columns:1fr;gap:4px; }
+}
 .home2 .brand-contact-links{ display:flex;flex-wrap:wrap;gap:8px 20px;margin-top:22px;font-size:14px; }
 .home2 .brand-contact-links a{ text-decoration:underline;text-underline-offset:3px; }
 @media(min-width:901px){
