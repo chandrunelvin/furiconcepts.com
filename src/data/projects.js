@@ -1052,6 +1052,10 @@ const LOGOS = {
   'ritz-carlton': project('ritz-carlton.png'),
   famco: project('famco.png'),
   'chevrolet-project': project('chevrolet.png'),
+  ovorider: project('ovorider.png'),
+  tamayez: project('tamayez.png'),
+  'star-cinemas': project('star-cinemas.png'),
+  arcadia: project('arcadia.png'),
 };
 PROJECTS.forEach((p) => { if (LOGOS[p.slug]) p.logo = LOGOS[p.slug]; });
 
