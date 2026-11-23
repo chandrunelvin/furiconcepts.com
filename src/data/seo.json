@@ -1,4 +1,22 @@
 {
+ "/brands/konektra": {
+  "title": "Konektra Modular Furniture Systems | Office Furniture — Furniconcepts",
+  "meta": [
+   {
+    "name": "description",
+    "content": "Konektra modular furniture systems from Nuremberg for offices and shared spaces. Plan layouts with Furniconcepts. Request a Konektra consultation."
+   }
+  ],
+  "jsonld": [
+   {
+    "@context": "https://schema.org",
+    "@type": "Brand",
+    "name": "Konektra",
+    "url": "https://www.konektra.com/",
+    "logo": "https://www.konektra.com/cdn/shop/files/logo1.svg"
+   }
+  ]
+ },
  "/brands/teachmint": {
   "title": "Teachmint X Interactive Flat Panels | Smart Classroom Displays — Furniconcepts",
   "meta": [

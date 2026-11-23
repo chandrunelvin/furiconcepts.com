@@ -6,7 +6,7 @@ import { Arrow, SiteFooter, SiteHeader, brandLogo } from '../components/Home2Chr
 import { getBrand, quoteCta } from '../data/brands.js';
 import { useParallax } from '../lib/parallax.js';
 import { useReveal } from '../lib/reveal.js';
-import { Link } from '../router.jsx';
+import { Link, SmartLink } from '../router.jsx';
 import '../styles/home2.css';
 
 /* Blocks that fade up as they scroll into view, in document order. Children
@@ -194,7 +194,7 @@ export default function Brand({ slug }) {
                 <h2>{title}</h2>
                 {text && <p>{text}</p>}
                 {points && <ul>{points.map((point) => <li key={point}>{point}</li>)}</ul>}
-                {link && <Link to={link.href} className="link-arrow">{link.label} <Arrow size={14} /></Link>}
+                {link && <SmartLink href={link.href} className="link-arrow">{link.label} <Arrow size={14} /></SmartLink>}
               </section>
             ))}
           </div>

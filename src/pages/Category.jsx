@@ -8,7 +8,7 @@ import { getCategoryByPath } from '../data/categories.js';
 import { categoryProducts } from '../data/categoryProducts.js';
 import { getProject } from '../data/projects.js';
 import { useReveal } from '../lib/reveal.js';
-import { Link } from '../router.jsx';
+import { Link, SmartLink } from '../router.jsx';
 import '../styles/home2.css';
 
 /** Blocks that fade up as they arrive; siblings in a group cascade. */
@@ -40,14 +40,6 @@ const DEFAULT_CTA = {
 };
 
 const pad = (n) => String(n).padStart(2, '0');
-
-/** Internal paths route client-side; anything absolute opens in a new tab. */
-function SmartLink({ href, children, ...rest }) {
-  if (/^https?:/.test(href)) {
-    return <a href={href} target="_blank" rel="noopener noreferrer" {...rest}>{children}</a>;
-  }
-  return <Link to={href} {...rest}>{children}</Link>;
-}
 
 /** Rich text: a string, or a list of strings and {label, href} links. */
 const Rich = ({ text }) =>

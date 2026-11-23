@@ -41,6 +41,7 @@ export const BRAND_MENU = [
   { label: 'Merryfair', path: '/brands/merryfair', logo: logo('merryfair_logo.png') },
   { label: 'Safe Lockers', path: '/brands/safe-lockers', logo: logo('vssafebox-safe-lockers-logo.png') },
   { label: 'Teachmint', path: '/brands/teachmint', logo: logo('teachmint.svg'), showInPartnerCollection: false },
+  { label: 'Konektra', path: '/brands/konektra', logo: logo('konektra.svg'), showInPartnerCollection: false },
 ];
 
 /** A brand's logo by name; spacing and case are ignored ("Gebb Work" = "Gebbwork"). */

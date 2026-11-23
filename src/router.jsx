@@ -141,3 +141,11 @@ export function Link({ to, children, onClick, ...rest }) {
     </a>
   );
 }
+
+/** Internal paths route client-side; absolute URLs open in a new tab. */
+export function SmartLink({ href, children, ...rest }) {
+  if (/^https?:/.test(href)) {
+    return <a href={href} target="_blank" rel="noopener noreferrer" {...rest}>{children}</a>;
+  }
+  return <Link to={href} {...rest}>{children}</Link>;
+}

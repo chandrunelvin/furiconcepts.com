@@ -1118,6 +1118,19 @@ export const CATEGORY_PAGES = [
       [
         {
           "type": "heading",
+          "title": "Modular Storage for Changing Workspaces",
+          "body": [
+            [
+              "Explore ",
+              { "label": "Konektra SYSTEM 01 modular furniture", "href": "/brands/konektra" },
+              " for low cabinets, open shelves and dividers that can move with your team."
+            ]
+          ]
+        }
+      ],
+      [
+        {
+          "type": "heading",
           "title": "Featured Project: Open Text",
           "body": [
             "Office furniture supplied and installed by Furniconcepts."

@@ -8,12 +8,14 @@
  */
 import SOURCE from './brand-source.json';
 import { TEACHMINT } from './teachmint.js';
+import { KONEKTRA } from './konektra.js';
 
 const img = (name) => `/images/cavaletti/${name}.jpg`;
 /** Product shots pulled from the live Cavaletti page (furniconcepts.com/cavaletti.php). */
 const product = (name) => `/images/cavaletti/products/${name}.webp`;
 
 export const BRANDS = {
+  konektra: KONEKTRA,
   teachmint: TEACHMINT,
   cavaletti: {
     slug: 'cavaletti',
