@@ -1026,8 +1026,9 @@ const LOGOS = {
   amity: client('amity-university-logo.png'),
   'al-futtaim-volvo': client('volvo.jpg'),
   emerson: client('emerson-logo-compressed-data-5576584.png'),
-  lemerdian: client('moonkids-lemeridien-logo-1.jpg'),
-  'le-royal-meridian': client('moonkids-lemeridien-logo-1.jpg'),
+  // the Dubai hotel: the brand logo, not the Le Méridien Abu Dhabi one on the clients wall
+  lemerdian: project('le-meridien.png'),
+  'le-royal-meridian': project('le-meridien.png'),
   'aw-rostamani': client('arabian-automobiles-logo-en-3072x1728.jpg'),
   grosvenor: client('grosvenor-house-a-luxury-collection-hote.png'),
   'grosvenor-office': client('grosvenor-house-a-luxury-collection-hote.png'),
@@ -1056,6 +1057,9 @@ const LOGOS = {
   tamayez: project('tamayez.png'),
   'star-cinemas': project('star-cinemas.png'),
   arcadia: project('arcadia.png'),
+  axiom: project('axiom-global.png'),
+  amazon: project('amazon-foods.png'),
+  'easy-access': project('easy-access.png'),
 };
 PROJECTS.forEach((p) => { if (LOGOS[p.slug]) p.logo = LOGOS[p.slug]; });
 
