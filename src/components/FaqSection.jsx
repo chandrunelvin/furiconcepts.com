@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { useParallax } from '../lib/parallax.js';
 
-/** Every FAQ list shows at most this many questions. */
+/** Default length for the site's compact FAQ sections. */
 const MAX_FAQS = 5;
 
 /**
@@ -15,6 +15,7 @@ export default function FaqSection({
   intro,
   image = '/images/cavaletti/faq-bg.webp',
   items,
+  limit = MAX_FAQS,
 }) {
   const [open, setOpen] = useState(null);
   const layer = useParallax(0.2);
@@ -35,7 +36,7 @@ export default function FaqSection({
           {intro && <p>{intro}</p>}
         </div>
         <div className="brand-faq-list">
-          {items.slice(0, MAX_FAQS).map((item, i) => (
+          {items.slice(0, limit).map((item, i) => (
             <div className={`brand-faq-item ${open === i ? 'open' : ''}`.trim()} key={item.q}>
               <button
                 type="button"

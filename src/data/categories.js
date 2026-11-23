@@ -1570,6 +1570,19 @@ export const CATEGORY_PAGES = [
       [
         {
           "type": "heading",
+          "title": "Planning a Smart Classroom?",
+          "body": [
+            [
+              "Match the display to the distance from the board to the back row. Explore ",
+              { "label": "Teachmint X interactive flat panels", "href": "/brands/teachmint" },
+              " alongside your seating plan."
+            ]
+          ]
+        }
+      ],
+      [
+        {
+          "type": "heading",
           "title": "Featured Project: Amity School Qusais",
           "body": [
             "School furniture supplied and installed by Furniconcepts in Dubai."

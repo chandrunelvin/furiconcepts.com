@@ -136,6 +136,27 @@ const breadcrumbs = (trail) => ({
 function structured(path, existing, img) {
   const has = (type) => existing.some((d) => JSON.stringify(d).includes(`"@type":"${type}"`) || JSON.stringify(d).includes(`"@type": "${type}"`));
   const out = [];
+  const brand = BRANDS[slugAfter(path, '/brands/')];
+  if (brand?.breadcrumb) {
+    out.push(breadcrumbs(brand.breadcrumb.map(({ label, href }) => [label, href ?? path])));
+    if (brand.faq) out.push({
+      '@context': 'https://schema.org', '@type': 'FAQPage',
+      mainEntity: brand.faq.items.map(({ q, a }) => ({
+        '@type': 'Question', name: q, acceptedAnswer: { '@type': 'Answer', text: a },
+      })),
+    });
+    out.push({
+      '@context': 'https://schema.org', '@type': 'ItemList',
+      itemListElement: brand.products.items.map((product, index) => ({
+        '@type': 'ListItem', position: index + 1,
+        item: {
+          '@type': 'Product', name: product.name, image: absolute(product.image),
+          description: product.description, brand: { '@type': 'Brand', name: brand.name },
+          url: SITE + path + '#' + product.id,
+        },
+      })),
+    });
+  }
   if (path === '/') {
     if (!has('Organization')) out.push(organization());
     if (!has('WebSite')) out.push(website());

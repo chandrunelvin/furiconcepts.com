@@ -7,12 +7,14 @@
  * brand data) by buildBrand below, into the same shape Cavaletti uses.
  */
 import SOURCE from './brand-source.json';
+import { TEACHMINT } from './teachmint.js';
 
 const img = (name) => `/images/cavaletti/${name}.jpg`;
 /** Product shots pulled from the live Cavaletti page (furniconcepts.com/cavaletti.php). */
 const product = (name) => `/images/cavaletti/products/${name}.webp`;
 
 export const BRANDS = {
+  teachmint: TEACHMINT,
   cavaletti: {
     slug: 'cavaletti',
     name: 'Cavaletti',

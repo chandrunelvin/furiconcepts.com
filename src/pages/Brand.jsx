@@ -85,14 +85,30 @@ export default function Brand({ slug }) {
           </div>
         )}
         <div className="wrap brand-hero-inner">
-          <div className="eyebrow">{brand.eyebrow}</div>
+          {brand.breadcrumb ? (
+            <nav className="breadcrumb" aria-label="Breadcrumb">
+              {brand.breadcrumb.map((item, index) => (
+                <span className="crumb" key={item.label}>
+                  {index > 0 && <span aria-hidden="true">/</span>}
+                  {item.href ? <Link to={item.href}>{item.label}</Link> : <span aria-current="page">{item.label}</span>}
+                </span>
+              ))}
+            </nav>
+          ) : <div className="eyebrow">{brand.eyebrow}</div>}
           {brandLogo(brand.name) && (
             <div className="hero-brand-logo"><img src={brandLogo(brand.name)} alt={`${brand.name} logo`} /></div>
           )}
-          {/* the logo already names the brand, so the heading stays for search
-              engines and screen readers only */}
-          <h1 className={brandLogo(brand.name) ? 'sr-only' : undefined}>{brand.name}</h1>
-          <div className="brand-hero-tagline">{lines(brand.tagline)}</div>
+          {brand.heading ? (
+            <>
+              <h1 className="brand-hero-heading">{brand.heading}</h1>
+              <p>{brand.heroText}</p>
+            </>
+          ) : (
+            <>
+              <h1 className={brandLogo(brand.name) ? 'sr-only' : undefined}>{brand.name}</h1>
+              <div className="brand-hero-tagline">{lines(brand.tagline)}</div>
+            </>
+          )}
           <a href={brand.heroCta.href} className="btn-primary">
             {brand.heroCta.label} <Arrow />
           </a>
@@ -170,6 +186,21 @@ export default function Brand({ slug }) {
       {/* ---- product explorer ---- */}
       <ProductExplorer products={products} brand={brand} category={category} onCategory={setCategory} />
 
+      {brand.planning && (
+        <div className="section brand-planning">
+          <div className="wrap brand-planning-inner">
+            {brand.planning.map(({ title, text, link, points }) => (
+              <section className="brand-about-copy" key={title}>
+                <h2>{title}</h2>
+                {text && <p>{text}</p>}
+                {points && <ul>{points.map((point) => <li key={point}>{point}</li>)}</ul>}
+                {link && <Link to={link.href} className="link-arrow">{link.label} <Arrow size={14} /></Link>}
+              </section>
+            ))}
+          </div>
+        </div>
+      )}
+
       {/* ---- applications ---- hidden for now; remove this comment wrapper to show it again
       {brand.applications && (
       <section className={`section brand-apps ${brand.applications.contain ? 'contain' : ''}`.trim()}>
@@ -208,12 +239,13 @@ export default function Brand({ slug }) {
           intro={brand.faq.intro}
           image={brand.faq.image}
           items={brand.faq.items}
+          limit={brand.faq.limit}
         />
       )}
 
       {/* ---- quotation band ---- */}
       {(() => {
-        const cta = quoteCta(brand);
+        const cta = brand.quoteCta ?? quoteCta(brand);
         return (
           <section className="contact-cta brand-cta">
             <div className="contact-cta-media" aria-hidden="true">
@@ -236,6 +268,11 @@ export default function Brand({ slug }) {
                     </Link>
                   )}
                 </div>
+                {brand.contacts && (
+                  <ul className="brand-contact-links" aria-label="Consultation contacts">
+                    {brand.contacts.map(({ label, href }) => <li key={href}><a href={href}>{label}</a></li>)}
+                  </ul>
+                )}
               </div>
             </div>
           </section>

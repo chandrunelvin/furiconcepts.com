@@ -50,7 +50,7 @@ const CARD_IMAGES = new Set([
 ]);
 
 /** The partner brands, in the Brands menu order, each shown by its lead product. */
-const BRAND_CARDS = BRAND_MENU.map((m) => {
+const BRAND_CARDS = BRAND_MENU.filter((m) => m.showInPartnerCollection !== false).map((m) => {
   const slug = m.path.split('/').pop();
   const brand = getBrand(slug);
   const src = CARD_IMAGES.has(slug) ? `/images/brand-cards/${slug}.webp` : brand?.products.items[0]?.image;
