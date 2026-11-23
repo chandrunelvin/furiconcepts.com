@@ -53,7 +53,8 @@ export const FC_COLLECTIONS = [
     slug: 'hospital-clinic-laboratory-and-warehouse-chairs',
     title: 'Hospital, Clinic, Laboratory & Warehouse Chairs',
     desc: 'Specialized seating for healthcare, lab & industrial spaces.',
-    cover: '/images/profiles/furniconcepts/hospital-profile-pic.webp',
+    // the old 510px picture was blurry; this is a sharp hospital room with bed and chairs
+    cover: '/images/profiles/furniconcepts/hospital-clinic-chairs.webp',
     files: [
       { title: 'Furniconcepts Healthcare Seating Brochure', cover: '/images/profiles/covers/furniconcepts/furniconcepts-healthcare-seating-brochure.webp', pdf: '/pdfs/furniconcepts/furniconcepts-healthcare-seating-brochure.pdf' },
       { title: 'Healthcare Furniture Brochure', cover: '/images/profiles/covers/furniconcepts/furniconcepts-healthcare-brochure.webp', pdf: '/pdfs/furniconcepts/furniconcepts-healthcare-brochure.pdf' },
