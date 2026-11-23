@@ -175,7 +175,10 @@ app.use(express.static(DIST, {
 // every other path is a page of the app
 app.get('*', (req, res) => res.sendFile(path.join(DIST, 'index.html')));
 
-app.listen(PORT, () => {
+// a numeric port listens on every network interface so the host's proxy can reach it;
+// some panels pass a socket path in PORT instead, which is used as given
+const listenArgs = /^\d+$/.test(String(PORT)) ? [Number(PORT), '0.0.0.0'] : [PORT];
+app.listen(...listenArgs, () => {
   console.log(`Furniconcepts site on port ${PORT}, forms email ${MAIL_TO.join(', ')}`);
   if (!process.env.SMTP_HOST || !process.env.SMTP_USER) console.warn('SMTP is not set up yet: add the SMTP_* settings to .env');
 });
