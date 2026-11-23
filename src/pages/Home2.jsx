@@ -46,6 +46,7 @@ const DOWNLOADS = PROFILES.map((p) => {
 const CARD_IMAGES = new Set([
   'cavaletti', 'gebbwork', 'leadcom', 'forma5', 'broad-power', 'musepod', 'zumbooth', 'libero-italy', 'nitrocare',
   'jwesys', 'audia-italia', 'scab-italy', 'markant', 'worklyffe', 'parin', 'bestuhl', 'merryfair', 'safe-lockers',
+  'penworkers', 'versalink',
 ]);
 
 /** The partner brands, in the Brands menu order, each shown by its lead product. */

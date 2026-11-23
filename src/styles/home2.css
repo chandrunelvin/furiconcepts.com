@@ -2448,6 +2448,7 @@
 .home2 .locations{ padding:0 0 100px; }
 @media(max-width:900px){ .home2 .locations{ padding-bottom:64px; } }
 .home2 .locations{ scroll-margin-top:96px; }
+.home2 #vision{ scroll-margin-top:80px; }
 .home2 .map-frame{
   position:relative;height:520px;background:var(--card);
   border-radius:var(--radius);overflow:hidden;box-shadow:0 30px 60px -40px rgba(11,32,25,.45);

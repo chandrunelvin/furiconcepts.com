@@ -78,7 +78,8 @@ export default function About({ section }) {
             <blockquote className="pull-quote">
               We&apos;re a multi-country workspace brand with scalable potential.
             </blockquote>
-            <Link to="/#catalogs" className="btn-primary">Learn More <Arrow /></Link>
+            {/* stays on this page: scrolls on to the vision and mission */}
+            <a href="#vision" className="btn-primary">Learn More <Arrow /></a>
           </div>
           <div className="about-story-media">
             <img src="/images/common/crafted-precision.jpg" alt="Lounge seating in a daylit interior" loading="lazy" />
@@ -87,7 +88,7 @@ export default function About({ section }) {
       </section>
 
       {/* ---- vision + mission ---- */}
-      <section className="vision-band">
+      <section className="vision-band" id="vision">
         <div className="vision-panel">
           <img src="/images/about-us/bg-vision-image.webp" alt="" aria-hidden="true" />
           <div className="vision-body">

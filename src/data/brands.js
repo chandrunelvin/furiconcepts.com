@@ -260,7 +260,8 @@ export const BRANDS = {
     back to the plain green band. */
 const HERO = new Set([
   'audia-italia', 'bestuhl', 'broad-power', 'forma5', 'gebbwork', 'jwesys', 'leadcom', 'libero-italy',
-  'markant', 'merryfair', 'musepod', 'nitrocare', 'parin', 'safe-lockers', 'scab-italy', 'worklyffe', 'zumbooth',
+  'markant', 'merryfair', 'musepod', 'nitrocare', 'parin', 'penworkers', 'safe-lockers', 'scab-italy', 'versalink',
+  'worklyffe', 'zumbooth',
 ]);
 
 /**
@@ -278,6 +279,7 @@ const DOWNLOADS = {
   markant: 'markant',
   worklyffe: 'worklyffe',
   parin: 'parin',
+  versalink: 'versalink',
   'broad-power': 'furniconcepts/power-modules',
   musepod: 'furniconcepts/phone-booth',
   zumbooth: 'furniconcepts/phone-booth',

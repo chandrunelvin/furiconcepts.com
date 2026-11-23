@@ -5397,5 +5397,284 @@
     ]
    }
   ]
+ },
+ "/brands/penworkers": {
+  "live": "/brands/penworkers",
+  "title": "Penworkers Cinema, Auditorium & Stadium Seating | Furniconcepts",
+  "meta": [
+   {
+    "name": "description",
+    "content": "Penworkers fixed public seating through Furniconcepts: cinema chairs, auditorium, stadium and telescopic seating, recliners and classroom seating. Request a quote."
+   },
+   {
+    "name": "robots",
+    "content": "index, follow"
+   },
+   {
+    "property": "og:title",
+    "content": "Penworkers Cinema, Auditorium & Stadium Seating | Furniconcepts"
+   },
+   {
+    "property": "og:description",
+    "content": "Penworkers fixed public seating through Furniconcepts: cinema chairs, auditorium, stadium and telescopic seating, recliners and classroom seating. Request a quote."
+   },
+   {
+    "property": "og:type",
+    "content": "website"
+   },
+   {
+    "property": "og:site_name",
+    "content": "Furniconcepts"
+   },
+   {
+    "name": "twitter:card",
+    "content": "summary_large_image"
+   },
+   {
+    "name": "twitter:title",
+    "content": "Penworkers Cinema, Auditorium & Stadium Seating | Furniconcepts"
+   },
+   {
+    "name": "twitter:description",
+    "content": "Penworkers fixed public seating through Furniconcepts: cinema chairs, auditorium, stadium and telescopic seating, recliners and classroom seating. Request a quote."
+   }
+  ],
+  "jsonld": [
+   {
+    "@context": "https://schema.org",
+    "@graph": [
+     {
+      "@type": "Brand",
+      "name": "Penworkers",
+      "url": "https://www.furniconcepts.com/brands/penworkers",
+      "description": "Penworkers fixed public seating from Mumbai: cinema chairs, recliners and sofa seating, auditorium, stadium, telescopic and classroom seating, available through Furniconcepts.",
+      "logo": "https://www.furniconcepts.com/images/brand-logo/penworkers-logo.png"
+     },
+     {
+      "@type": "Organization",
+      "name": "Furniconcepts",
+      "url": "https://www.furniconcepts.com/"
+     },
+     {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+       {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://www.furniconcepts.com/"
+       },
+       {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Brands",
+        "item": "https://www.furniconcepts.com/categories"
+       },
+       {
+        "@type": "ListItem",
+        "position": 3,
+        "name": "Penworkers",
+        "item": "https://www.furniconcepts.com/brands/penworkers"
+       }
+      ]
+     },
+     {
+      "@type": "FAQPage",
+      "mainEntity": [
+       {
+        "@type": "Question",
+        "name": "Who is Penworkers?",
+        "acceptedAnswer": {
+         "@type": "Answer",
+         "text": "Penworkers is a Mumbai seating company that has been making fixed public seating for four generations. Its range covers cinema, auditorium, stadium, telescopic, recliner and classroom seating."
+        }
+       },
+       {
+        "@type": "Question",
+        "name": "What does Penworkers make?",
+        "acceptedAnswer": {
+         "@type": "Answer",
+         "text": "Cinema chairs, recliners and sofa seating, auditorium seating, stadium seating, telescopic seating and classroom seating."
+        }
+       },
+       {
+        "@type": "Question",
+        "name": "Does Penworkers make recliners for home theatres?",
+        "acceptedAnswer": {
+         "@type": "Answer",
+         "text": "Yes. Penworkers lists recliners and home theatre seating among its ranges."
+        }
+       },
+       {
+        "@type": "Question",
+        "name": "Can I get custom designs?",
+        "acceptedAnswer": {
+         "@type": "Answer",
+         "text": "Penworkers says it customises chairs. Tell us what you need and we will check what can be made."
+        }
+       },
+       {
+        "@type": "Question",
+        "name": "Has Penworkers supplied stadiums?",
+        "acceptedAnswer": {
+         "@type": "Answer",
+         "text": "Penworkers lists several major Indian stadiums among its projects."
+        }
+       },
+       {
+        "@type": "Question",
+        "name": "Where can I buy genuine Penworkers seating?",
+        "acceptedAnswer": {
+         "@type": "Answer",
+         "text": "Through Furniconcepts. Send us your project details and we will respond with a plan and a quote."
+        }
+       }
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ "/brands/versalink": {
+  "live": "/brands/versalink",
+  "title": "Versalink Office Desks & Storage Dubai | Furniconcepts",
+  "meta": [
+   {
+    "name": "description",
+    "content": "Versalink system furniture in Dubai, India and Singapore through Furniconcepts: desks, workstations and storage for startups and growing offices. Request a quote."
+   },
+   {
+    "name": "robots",
+    "content": "index, follow"
+   },
+   {
+    "property": "og:title",
+    "content": "Versalink Office Desks & Storage Dubai | Furniconcepts"
+   },
+   {
+    "property": "og:description",
+    "content": "Versalink system furniture in Dubai, India and Singapore through Furniconcepts: desks, workstations and storage for startups and growing offices. Request a quote."
+   },
+   {
+    "property": "og:type",
+    "content": "website"
+   },
+   {
+    "property": "og:site_name",
+    "content": "Furniconcepts"
+   },
+   {
+    "name": "twitter:card",
+    "content": "summary_large_image"
+   },
+   {
+    "name": "twitter:title",
+    "content": "Versalink Office Desks & Storage Dubai | Furniconcepts"
+   },
+   {
+    "name": "twitter:description",
+    "content": "Versalink system furniture in Dubai, India and Singapore through Furniconcepts: desks, workstations and storage for startups and growing offices. Request a quote."
+   }
+  ],
+  "jsonld": [
+   {
+    "@context": "https://schema.org",
+    "@graph": [
+     {
+      "@type": "Brand",
+      "name": "Versalink",
+      "url": "https://www.furniconcepts.com/brands/versalink",
+      "description": "Versalink system furniture from Klang, Malaysia: desks, workstations and storage, supplied by Furniconcepts in Dubai, India and Singapore.",
+      "logo": "https://www.furniconcepts.com/images/brand-logo/versalink-logo.png"
+     },
+     {
+      "@type": "Organization",
+      "name": "Furniconcepts",
+      "url": "https://www.furniconcepts.com/",
+      "areaServed": [
+       "AE",
+       "IN",
+       "SG"
+      ]
+     },
+     {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+       {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://www.furniconcepts.com/"
+       },
+       {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Brands",
+        "item": "https://www.furniconcepts.com/categories"
+       },
+       {
+        "@type": "ListItem",
+        "position": 3,
+        "name": "Versalink",
+        "item": "https://www.furniconcepts.com/brands/versalink"
+       }
+      ]
+     },
+     {
+      "@type": "FAQPage",
+      "mainEntity": [
+       {
+        "@type": "Question",
+        "name": "Where is Versalink made?",
+        "acceptedAnswer": {
+         "@type": "Answer",
+         "text": "Versalink is a Malaysian company based in Klang. It has designed and made system furniture since 1991."
+        }
+       },
+       {
+        "@type": "Question",
+        "name": "What does Versalink make?",
+        "acceptedAnswer": {
+         "@type": "Answer",
+         "text": "System furniture, which includes desks, workstations and storage. It also offers workspace planning."
+        }
+       },
+       {
+        "@type": "Question",
+        "name": "Is Versalink a good choice for a startup?",
+        "acceptedAnswer": {
+         "@type": "Answer",
+         "text": "It is our budget-friendly option, which suits startups and offices that need to set up quickly at a sensible cost."
+        }
+       },
+       {
+        "@type": "Question",
+        "name": "Can I match Versalink desks with chairs from another brand?",
+        "acceptedAnswer": {
+         "@type": "Answer",
+         "text": "Yes. Many customers pair Versalink desks and storage with ergonomic chairs from Cavaletti, Bestuhl, Merryfair or Forma5."
+        }
+       },
+       {
+        "@type": "Question",
+        "name": "Do you supply Versalink in Singapore and India?",
+        "acceptedAnswer": {
+         "@type": "Answer",
+         "text": "Yes. Furniconcepts supplies Versalink in Dubai, India and Singapore."
+        }
+       },
+       {
+        "@type": "Question",
+        "name": "Where can I buy genuine Versalink furniture?",
+        "acceptedAnswer": {
+         "@type": "Answer",
+         "text": "Through Furniconcepts. Send us your project details and we will respond with a layout and a quote."
+        }
+       }
+      ]
+     }
+    ]
+   }
+  ]
  }
 }
