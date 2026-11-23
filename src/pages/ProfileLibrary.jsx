@@ -1,10 +1,12 @@
 import { lockScroll } from '../lib/scrollLock.js';
-import { useEffect, useState } from 'react';
+import { useCallback, useEffect, useState } from 'react';
 import { Icon, useParallax } from '../components/BlogParts.jsx';
 import { Arrow, SiteFooter, SiteHeader, brandLogo } from '../components/Home2Chrome.jsx';
 import { BRAND_FILES } from '../data/brandProfiles.js';
+import { COUNTRIES } from '../data/contact.js';
 import { FC_COLLECTIONS, getFcCollection } from '../data/fcProfiles.js';
 import { PROFILES } from '../data/profiles.js';
+import { HONEYPOT, sendForm } from '../lib/forms.js';
 import { useReveal } from '../lib/reveal.js';
 import { Link } from '../router.jsx';
 import '../styles/home2.css';
@@ -45,6 +47,118 @@ export const DownloadIcon = ({ size = 15 }) => (
     <path d="M12 4v11M7 11l5 5 5-5M5 20h14" />
   </svg>
 );
+
+/* ---------- download form ---------- */
+
+/**
+ * A catalogue downloads only after the visitor fills a short form, which is
+ * emailed to the team. Their details are remembered in this browser, so later
+ * downloads start straight away and are still reported, without asking again.
+ */
+const LEAD_KEY = 'fc-download-details';
+const readLead = () => {
+  try { return JSON.parse(localStorage.getItem(LEAD_KEY)); } catch { return null; }
+};
+const saveLead = (lead) => {
+  try { localStorage.setItem(LEAD_KEY, JSON.stringify(lead)); } catch { /* private mode: ask again next time */ }
+};
+
+/** Starts a browser download of a file on this site. */
+function startDownload(file) {
+  const a = document.createElement('a');
+  a.href = file.pdf;
+  a.download = '';
+  document.body.appendChild(a);
+  a.click();
+  a.remove();
+}
+
+/** Emails one download to the team; a failed send never blocks the download. */
+const reportDownload = (file, brand, lead) =>
+  sendForm(`Catalogue download: ${file.title} (${brand}) by ${lead.name}`, {
+    ...lead,
+    catalogue: file.title,
+    brand,
+    file: new URL(file.pdf, window.location.origin).href,
+  }).catch(() => {});
+
+/**
+ * `request(file)` downloads at once for a visitor who already filled the form,
+ * and opens the form otherwise; render `form` somewhere on the page.
+ */
+export function useDownloadGate(brand) {
+  const [pending, setPending] = useState(null);
+  const request = useCallback((file) => {
+    const lead = readLead();
+    if (lead) {
+      reportDownload(file, brand, lead);
+      startDownload(file);
+    } else {
+      setPending(file);
+    }
+  }, [brand]);
+  const close = useCallback(() => setPending(null), []);
+  const form = pending && <DownloadForm file={pending} brand={brand} onClose={close} />;
+  return { request, form };
+}
+
+function DownloadForm({ file, brand, onClose }) {
+  const [sending, setSending] = useState(false);
+  useEffect(() => {
+    const onKey = (e) => { if (e.key === 'Escape') onClose(); };
+    document.addEventListener('keydown', onKey);
+    const unlock = lockScroll();
+    return () => {
+      document.removeEventListener('keydown', onKey);
+      unlock();
+    };
+  }, [onClose]);
+
+  const submit = async (e) => {
+    e.preventDefault();
+    const { botcheck, ...lead } = Object.fromEntries(new FormData(e.currentTarget));
+    if (botcheck) { onClose(); return; }
+    setSending(true);
+    saveLead(lead);
+    await reportDownload(file, brand, lead);
+    startDownload(file);
+    onClose();
+  };
+
+  return (
+    <div className="pdf-viewer download-gate" role="dialog" aria-modal="true" aria-labelledby="download-gate-title">
+      <div className="pdf-viewer-backdrop" onClick={onClose} />
+      <div className="download-gate-panel">
+        <button type="button" className="pdf-viewer-close download-gate-close" aria-label="Close" onClick={onClose}>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round">
+            <path d="M6 6l12 12M18 6L6 18" />
+          </svg>
+        </button>
+        <div className="eyebrow">Download Catalogue</div>
+        <h2 id="download-gate-title">{file.title}</h2>
+        <p className="download-gate-intro">Fill in your details and the download will start straight away.</p>
+        <form className="contact-form" onSubmit={submit}>
+          <input {...HONEYPOT} />
+          <div className="field-row">
+            <input type="text" name="name" placeholder="Your Name *" required aria-label="Your name" autoComplete="name" />
+            <input type="email" name="email" placeholder="Email Address *" required aria-label="Email address" autoComplete="email" />
+          </div>
+          <div className="field-row">
+            <input type="tel" name="phone" placeholder="Phone Number *" required aria-label="Phone number" autoComplete="tel" />
+            <select name="country" required defaultValue="" aria-label="Select country">
+              <option value="" disabled>Select Country *</option>
+              {COUNTRIES.map((c) => <option key={c} value={c}>{c}</option>)}
+            </select>
+          </div>
+          <input type="text" name="company" placeholder="Company Name" aria-label="Company name" autoComplete="organization" />
+          <button type="submit" className="btn-primary" disabled={sending}>
+            {sending ? 'Starting download…' : 'Download'} <DownloadIcon size={14} />
+          </button>
+        </form>
+      </div>
+    </div>
+  );
+}
 
 /* ---------- shared sections ---------- */
 
@@ -123,7 +237,7 @@ function HelpBand() {
           <li><Icon name="doc" /><span>{TOTAL_FILES} catalogues online</span></li>
           <li><Icon name="building" /><span>{PROFILES.length} brands, one supplier</span></li>
           <li><Icon name="user" /><span>Dubai, Chennai &amp; Singapore teams</span></li>
-          <li><Icon name="check" /><span>Free to view and download</span></li>
+          <li><Icon name="check" /><span>Free to view, quick form to download</span></li>
         </ul>
       </div>
     </section>
@@ -138,7 +252,7 @@ function HelpBand() {
  * `fit` shows a whole page at once (certificates); image files are always
  * shown whole, scaled to the window, instead of at full size in a frame.
  */
-export function PdfViewer({ file, onClose, fit = false }) {
+export function PdfViewer({ file, onClose, fit = false, onDownload }) {
   const isImage = /\.(jpe?g|png|webp|gif)$/i.test(file.pdf);
   useEffect(() => {
     const onKey = (e) => { if (e.key === 'Escape') onClose(); };
@@ -156,7 +270,8 @@ export function PdfViewer({ file, onClose, fit = false }) {
       <div className="pdf-viewer-panel">
         <div className="pdf-viewer-bar">
           <div className="pdf-viewer-title">{file.title}</div>
-          <a href={file.pdf} download className="btn-primary">
+          <a href={file.pdf} download className="btn-primary"
+             onClick={onDownload && ((e) => { e.preventDefault(); onDownload(file); })}>
             Download <DownloadIcon size={14} />
           </a>
           <button type="button" className="pdf-viewer-close" aria-label="Close" onClick={onClose}>
@@ -177,6 +292,11 @@ export function PdfViewer({ file, onClose, fit = false }) {
 function FileSection({ brand, files, certs = [], eyebrow, title, back = [ROOT, 'All Brands'] }) {
   const [open, setOpen] = useState(null);
   const close = () => setOpen(null);
+  const gate = useDownloadGate(brand);
+  const download = (e, file) => {
+    e.preventDefault();
+    gate.request(file);
+  };
 
   const view = (e, file) => {
     if (window.matchMedia('(max-width: 760px)').matches) return;
@@ -207,7 +327,7 @@ function FileSection({ brand, files, certs = [], eyebrow, title, back = [ROOT, '
                   <a href={file.pdf} target="_blank" rel="noopener" onClick={(e) => view(e, file)} className="link-arrow">
                     View Catalogue <Arrow size={13} />
                   </a>
-                  <a href={file.pdf} download className="profile-download" aria-label={`Download ${file.title}`}>
+                  <a href={file.pdf} download className="profile-download" aria-label={`Download ${file.title}`} onClick={(e) => download(e, file)}>
                     <DownloadIcon />
                   </a>
                 </div>
@@ -228,7 +348,8 @@ function FileSection({ brand, files, certs = [], eyebrow, title, back = [ROOT, '
           </div>
         )}
       </div>
-      {open && <PdfViewer file={open} onClose={close} />}
+      {open && <PdfViewer file={open} onClose={close} onDownload={gate.request} />}
+      {gate.form}
     </section>
   );
 }

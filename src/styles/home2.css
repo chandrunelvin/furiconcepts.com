@@ -236,7 +236,14 @@
 }
 .home2 .coll-label svg{color:var(--green);}
 /* brand cards name the brand with its logo */
-.home2 .brand-coll-name{ width:auto;height:26px;max-width:120px;object-fit:contain; }
+/* every brand logo fills one same-size box, and every label is one height,
+   so the cards line up whatever shape the logo is */
+.home2 .brand-coll-name{
+  width:120px;height:34px;max-width:calc(100% - 40px);
+  object-fit:contain;object-position:left center;
+}
+.home2 .brand-coll-card .coll-label{ min-height:0;gap:12px;padding-block:9px; }
+.home2 .brand-coll-card .coll-label svg{ flex-shrink:0; }
 .home2 .brand-coll-card:hover .coll-label{ color:var(--green); }
 .home2 .space-card:hover .coll-label{ color:var(--green); }
 
@@ -366,7 +373,7 @@
   padding:70px 56px;display:flex;flex-direction:column;justify-content:center;
 }
 @media(max-width:900px){ .home2 .journal-panel{padding:48px 24px;} }
-.home2 .journal-panel .eyebrow{ color:var(--green); }
+.home2 .journal-panel .eyebrow{ color:var(--green);font-size:18px;font-weight:600;letter-spacing:3px; }
 .home2 .journal-panel h2{font-size:clamp(25px,2.6vw,33px);font-weight:600;letter-spacing:-.5px;margin-bottom:16px;}
 .home2 .journal-panel p{font-size:14.5px;color:rgba(255,255,255,.7);max-width:420px;margin-bottom:14px;}
 .home2 .journal-panel .link-arrow{color:#fff;}
@@ -401,6 +408,13 @@
 .home2 .article-date{font-size:13px;letter-spacing:1px;color:var(--ink-soft);margin-bottom:8px;}
 .home2 .article-title{font-size:13.5px;font-weight:600;line-height:1.35;margin-bottom:10px;}
 .home2 .article-body .link-arrow{font-size:13px;}
+/* the photo sits flush on the card (the card already rounds the top corners),
+   runs a little taller, and long titles stop at three lines so cards match */
+.home2 .journal .article-thumb{ aspect-ratio:4/3;border-radius:0; }
+.home2 .journal .article-thumb img{ width:100%;height:100%;object-fit:cover;display:block; }
+.home2 .journal .article-title{
+  display:-webkit-box;-webkit-box-orient:vertical;-webkit-line-clamp:3;line-clamp:3;overflow:hidden;
+}
 
 .home2 .newsletter{padding:70px 0;border-top:1px solid var(--line);border-bottom:1px solid var(--line);}
 .home2 .newsletter .wrap{
@@ -526,6 +540,13 @@
 /* brand cards keep the collection-card look; the product sits on white */
 .home2 .brand-coll-card .coll-thumb{ position:relative;background:#fff; }
 .home2 .brand-coll-card .coll-thumb > img{ object-fit:contain;padding:12% 14% 20%; }
+/* prepared card images already carry an even margin, so they need less padding */
+.home2 .brand-coll-card .coll-thumb > img.is-prepared{ padding:3% 5% 15%; }
+/* on phones the brand cards and their logo box run larger */
+@media(max-width:640px){
+  .home2 #collections .coll-viewport{ --pv:1.08; }
+  .home2 #collections .brand-coll-name{ width:140px;height:38px; }
+}
 
 /* --- lifestyle band: photo on the left, panel and stats on the right --- */
 .home2 .lifestyle .overlay{
@@ -1179,6 +1200,21 @@
 }
 .home2 .pdf-viewer-close:hover{ background:var(--green);border-color:var(--green);color:#fff; }
 .home2 .pdf-viewer-close svg{ width:18px;height:18px; }
+/* the short form a visitor fills before a catalogue downloads; it sits above the PDF viewer */
+.home2 .download-gate{ z-index:210; }
+.home2 .download-gate-panel{
+  position:relative;width:min(560px,100%);max-height:100%;overflow-y:auto;
+  background:var(--cream);border-radius:var(--radius);padding:38px 36px 34px;
+  box-shadow:0 40px 80px -30px rgba(0,0,0,.5);
+}
+.home2 .download-gate-close{ position:absolute;top:14px;right:14px; }
+.home2 .download-gate .eyebrow{ margin-bottom:10px; }
+.home2 .download-gate h2{ font-size:clamp(20px,2.2vw,26px);font-weight:600;line-height:1.25;margin:0 44px 8px 0; }
+.home2 .download-gate-intro{ font-size:14px;color:var(--ink-soft);margin-bottom:22px; }
+@media(max-width:560px){
+  .home2 .download-gate-panel{ padding:30px 20px 24px; }
+  .home2 .download-gate .field-row{ grid-template-columns:1fr; }
+}
 .home2 .pdf-viewer iframe{ flex:1;width:100%;border:0;background:var(--card); }
 /* image certificates: the whole page, scaled to fit the window */
 .home2 .pdf-viewer-image{

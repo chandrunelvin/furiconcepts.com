@@ -37,10 +37,23 @@ const DOWNLOADS = PROFILES.map((p) => {
   return { name: p.name, title: p.title, path: p.path, cover: p.card ?? files[0]?.cover ?? p.cover, position: p.cardPosition, count: files.length };
 });
 
+/**
+ * Each brand card uses a prepared image in /images/brand-cards/<slug>.webp:
+ * the product cropped tight and centred on a white square so every product
+ * covers the same area, whatever its shape. Broad Power's card shows the
+ * PD3 2S2 106 and Cavaletti's the Velo chair. A brand without a prepared image falls back to its first product.
+ */
+const CARD_IMAGES = new Set([
+  'cavaletti', 'gebbwork', 'leadcom', 'forma5', 'broad-power', 'musepod', 'zumbooth', 'libero-italy', 'nitrocare',
+  'jwesys', 'audia-italia', 'scab-italy', 'markant', 'worklyffe', 'parin', 'bestuhl', 'merryfair', 'safe-lockers',
+]);
+
 /** The partner brands, in the Brands menu order, each shown by its lead product. */
 const BRAND_CARDS = BRAND_MENU.map((m) => {
-  const brand = getBrand(m.path.split('/').pop());
-  return { name: m.label, path: m.path, logo: trimmedLogo(m.logo), src: brand?.products.items[0]?.image };
+  const slug = m.path.split('/').pop();
+  const brand = getBrand(slug);
+  const src = CARD_IMAGES.has(slug) ? `/images/brand-cards/${slug}.webp` : brand?.products.items[0]?.image;
+  return { name: m.label, path: m.path, logo: trimmedLogo(m.logo), src, prepared: CARD_IMAGES.has(slug) };
 });
 
 /** The same logo with its empty margin cropped off (see /images/brand-logo/trim). */
@@ -49,25 +62,6 @@ function trimmedLogo(src) {
   const file = src.split('/').pop().replace(/\.\w+$/, '.png');
   return `/images/brand-logo/trim/${file}`;
 }
-
-/**
- * Logos come in every shape, so a fixed height makes wide ones look huge and
- * square ones tiny. Sizing each to the same area evens out their visual weight.
- */
-const LOGO_AREA = 2400;
-/**
- * Heavy, solid-black wordmarks read larger than their area, so they get a nudge
- * down; thin-stroked or two-line ones (Zum, Jwesys) read smaller, so they go up.
- */
-const LOGO_WEIGHT = { 'libero-logo.png': 0.82, 'jwesys-logo.png': 1.3, 'zumbooth-logo.png': 1.25 };
-const fitLogo = (e) => {
-  const img = e.currentTarget;
-  const ratio = img.naturalWidth / img.naturalHeight || 1;
-  const weight = LOGO_WEIGHT[img.src.split('/').pop()] ?? 1;
-  let height = Math.min(34, Math.sqrt(LOGO_AREA / ratio)) * weight;
-  if (height * ratio > 120) height = 120 / ratio;
-  img.style.height = `${height.toFixed(1)}px`;
-};
 
 /** The category pages, in the Categories menu order, each led by its hero photo. */
 const SPACES = TOP_CATEGORIES.map((c) => ({ name: c.name, path: c.path, src: c.card ?? c.hero }));
@@ -143,15 +137,15 @@ const SPOTLIGHT = [
   },
 ];
 
-const JOURNAL = [...BLOG_ARTICLES].sort((a, b) => b.date.localeCompare(a.date)).slice(0, 12);
+const JOURNAL = [...BLOG_ARTICLES].sort((a, b) => b.date.localeCompare(a.date)).slice(0, 10);
 
 /**
  * The journal's article rail: a native scroller (swipe, drag, wheel) that
- * snaps card by card, with arrows that page it and a position counter.
+ * snaps card by card, with arrows that page it.
  */
 function JournalSlider({ articles }) {
   const rail = useRef(null);
-  const [state, setState] = useState({ first: 1, prev: false, next: true });
+  const [state, setState] = useState({ prev: false, next: true });
   /** Pauses autoplay for a moment; set by the effect, called by the arrows. */
   const quiet = useRef(() => {});
 
@@ -159,10 +153,7 @@ function JournalSlider({ articles }) {
     const el = rail.current;
     if (!el) return undefined;
     const sync = () => {
-      const card = el.firstElementChild;
-      const step = card ? card.getBoundingClientRect().width + 16 : el.clientWidth;
       setState({
-        first: Math.round(el.scrollLeft / step) + 1,
         prev: el.scrollLeft > 4,
         next: el.scrollLeft < el.scrollWidth - el.clientWidth - 4,
       });
@@ -217,14 +208,11 @@ function JournalSlider({ articles }) {
     quiet.current();
     if (el) el.scrollBy({ left: dir * el.clientWidth, behavior: prefersReducedMotion() ? 'auto' : 'smooth' });
   };
-  const pad = (n) => String(n).padStart(2, '0');
-
   return (
     <>
       <div className="journal-controls">
         <Link to="/blogs.php" className="link-arrow">View All Articles <Arrow /></Link>
         <div className="journal-nav">
-          <span className="journal-count">{pad(state.first)} <span>/ {pad(articles.length)}</span></span>
           <button type="button" aria-label="Previous articles" disabled={!state.prev} onClick={() => page(-1)}>
             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round"><path d="M15 6l-6 6 6 6" /></svg>
           </button>
@@ -380,11 +368,11 @@ export default function Home2() {
                     tabIndex={i >= BRAND_CARDS.length ? -1 : undefined}
                   >
                     <div className="coll-thumb">
-                      {brand.src && <img src={brand.src} alt={`${brand.name} product`} loading="lazy" />}
+                      {brand.src && <img className={brand.prepared ? 'is-prepared' : undefined} src={brand.src} alt={`${brand.name} product`} loading="lazy" />}
                     </div>
                     <div className="coll-label">
                       {brand.logo
-                        ? <img className="brand-coll-name" src={brand.logo} alt={brand.name} loading="lazy" onLoad={fitLogo} />
+                        ? <img className="brand-coll-name" src={brand.logo} alt={brand.name} loading="lazy" />
                         : brand.name}
                       <Arrow />
                     </div>
@@ -586,7 +574,7 @@ export default function Home2() {
             </div>
           </div>
           <div className="journal-panel">
-            <div className="eyebrow">Journal —</div>
+            <div className="eyebrow">Journal</div>
             <h2>Ideas &amp; Inspiration</h2>
             <p>Discover design trends, expert tips and real spaces that inspire a more beautiful way of living.</p>
             <JournalSlider articles={JOURNAL} />

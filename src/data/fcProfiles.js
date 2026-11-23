@@ -146,7 +146,7 @@ export const FC_COLLECTIONS = [
     files: [
       { title: 'Broad Power', cover: '/images/profiles/covers/furniconcepts/broad-power-brochure.webp', pdf: '/pdfs/furniconcepts/broad-power-brochure.pdf' },
       { title: 'FC Power Module Vol - 1', cover: '/images/profiles/covers/furniconcepts/bravo-connect-part-01-en-1.webp', pdf: '/pdfs/furniconcepts/bravo-connect-part-01-en-1.pdf' },
-      { title: 'FC Power Module Vol - 2', cover: '/images/profiles/covers/furniconcepts/bravo-connect-part-02-en-1.webp', pdf: '/pdfs/furniconcepts/bravo-connect-part-02-en-1.pdf' },
+      { title: 'FC Power Module Vol - 2', cover: '/images/profiles/covers/furniconcepts/bravo-connect-part-01-en-1.webp', pdf: '/pdfs/furniconcepts/bravo-connect-part-02-en-1.pdf' },
     ],
   },
   {

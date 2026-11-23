@@ -13,13 +13,13 @@ import { BRANDS } from './brands.js';
 
 const SOURCES = {
   '/acoustic-pods.php': [
-    ['musepod', ['mp-series', 'me-series', 'pods-and-booths'], null, { 'mp-series': 'Pods & Booths', 'me-series': 'Pods & Booths' }],
+    ['musepod', ['mp-series', 'me-series', 'pods'], null, { 'mp-series': 'Pods', 'me-series': 'Pods' }],
     ['zumbooth', ['booths']],
     ['leadcom', ['acoustic-pods-and-cabins']],
     ['markant', ['focus-and-privacy'], /pod|calma|skyhub/i],
   ],
   '/acoustic-solutions.php': [
-    ['musepod', ['mp-series', 'me-series', 'pods-and-booths'], null, { 'mp-series': 'Pods & Booths', 'me-series': 'Pods & Booths' }],
+    ['musepod', ['mp-series', 'me-series', 'pods'], null, { 'mp-series': 'Pods', 'me-series': 'Pods' }],
     ['zumbooth', ['booths']],
     ['leadcom', ['acoustic-pods-and-cabins']],
     ['markant', ['focus-and-privacy'], /pod|calma|skyhub/i],
@@ -85,6 +85,22 @@ const SOURCES = {
   ],
 };
 
+/**
+ * The acoustic pod pages sort every pod by how many people it seats instead of
+ * by brand group. First matching rule wins; anything unmatched is a single pod.
+ */
+const POD_PAGES = new Set(['/acoustic-pods.php', '/acoustic-solutions.php']);
+const POD_SIZES = [
+  { key: 'single-pods', label: 'Single Pods', icon: 'person' },
+  { key: 'double-pods', label: 'Double Pods', icon: 'people' },
+  { key: 'meeting-pods', label: 'Meeting Pods', icon: 'box' },
+];
+const podSize = (name) => {
+  if (/^(MP|ME)[35]$|quartet|ensemble|meeting pod|premium cabin|standard cabin|calma large|hybrid pod|skyhub/i.test(name)) return POD_SIZES[2];
+  if (/^(MP|ME)2$|duo|calma medium/i.test(name)) return POD_SIZES[1];
+  return POD_SIZES[0];
+};
+
 const slugify = (text) =>
   text.toLowerCase().replace(/&/g, ' and ').replace(/[^a-z0-9]+/g, '-').replace(/^-+|-+$/g, '');
 
@@ -119,6 +135,18 @@ export function categoryProducts(path, name) {
   }
   if (!items.length) return null;
 
+  let categories = [...tabs.values()];
+  if (POD_PAGES.has(path)) {
+    for (const item of items) {
+      const size = podSize(item.name);
+      item.category = size.key;
+      item.type = size.label;
+    }
+    categories = POD_SIZES.filter((t) => items.some((i) => i.category === t.key));
+    const order = POD_SIZES.map((t) => t.key);
+    items.sort((a, b) => order.indexOf(a.category) - order.indexOf(b.category));
+  }
+
   return {
     eyebrow: `${name} Products`,
     title: `Explore Our ${name} Range`,
@@ -127,7 +155,7 @@ export function categoryProducts(path, name) {
     whatsapp: '971503782215',
     enquiryNote: 'Send us an enquiry now, we will get back to you asap.',
     viewAll: { label: `View All ${name} Products` },
-    categories: [{ key: 'all', label: 'All Products', icon: 'grid' }, ...tabs.values()],
+    categories: [{ key: 'all', label: 'All Products', icon: 'grid' }, ...categories],
     items,
   };
 }
