@@ -918,8 +918,8 @@ export const PROJECTS = [
   },
   {
     slug: 'mussafah-abudhabi',
-    title: 'Mussafah Office',
-    subtitle: 'Abu Dhabi',
+    title: 'Volkswagen Showroom',
+    subtitle: 'Mussafah, Abu Dhabi',
     media: [
       img('mussafah-abudhabi', 'banner'),
       img('mussafah-abudhabi', '01'),
@@ -1025,6 +1025,7 @@ const LOGOS = {
   'amity-school': client('amity-school.png'),
   amity: client('amity-university-logo.png'),
   'al-futtaim-volvo': client('volvo.jpg'),
+  'mussafah-abudhabi': client('volswogan.png'),
   emerson: client('emerson-logo-compressed-data-5576584.png'),
   // the Dubai hotel: the brand logo, not the Le Méridien Abu Dhabi one on the clients wall
   lemerdian: project('le-meridien.png'),
@@ -1041,7 +1042,8 @@ const LOGOS = {
   'etisalat-hq': client('eand-logo-en.svg'),
   'etisalat-hq-auditorium': client('eand-logo-en.svg'),
   healthhub: client('healthhub-al-futtaim.png'),
-  'sharjah-research': client('sharjah.jpg'),
+  // the park's wide logo from srtip.ae; the square one on the clients wall reads too small here
+  'sharjah-research': project('srtip.png'),
   'toyota-showroom': TOYOTA,
   'futtaim-toyota': TOYOTA,
   'abu-dhabi-toyota': TOYOTA,

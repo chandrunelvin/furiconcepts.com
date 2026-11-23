@@ -3014,6 +3014,8 @@
   .home2 .proj-hint{ left:24px;bottom:34px;max-width:55vw;overflow:hidden;text-overflow:ellipsis;white-space:nowrap; }
 }
 @media(max-width:620px){
+  /* on phones the hint sits behind the View Project button and WhatsApp, so it goes */
+  .home2 .proj-hint{ display:none; }
   .home2 .proj-sub{ letter-spacing:1.8px;margin-bottom:30px; }
   .home2 .proj-view{ padding:13px 22px;font-size:13px; }
 }
