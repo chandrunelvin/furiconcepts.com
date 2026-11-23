@@ -27,11 +27,10 @@ const SIGNUP = {
   text: 'Subscribe for project stories, product launches and exclusive updates from Furniconcepts.',
 };
 
-/** Wide screens open the PDF over the page; phones follow the link. */
+/** Issues open over the page as a flipbook, on phones too. */
 function useViewer() {
   const [open, setOpen] = useState(null);
   const view = (e, issue) => {
-    if (window.matchMedia('(max-width: 760px)').matches) return;
     e.preventDefault();
     setOpen(issue);
   };

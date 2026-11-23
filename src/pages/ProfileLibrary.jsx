@@ -1,5 +1,5 @@
 import { lockScroll } from '../lib/scrollLock.js';
-import { useCallback, useEffect, useState } from 'react';
+import { Suspense, lazy, useCallback, useEffect, useState } from 'react';
 import { Icon, useParallax } from '../components/BlogParts.jsx';
 import { Arrow, SiteFooter, SiteHeader, brandLogo } from '../components/Home2Chrome.jsx';
 import { BRAND_FILES } from '../data/brandProfiles.js';
@@ -18,6 +18,9 @@ import '../styles/home2.css';
  *   /download-profiles/furniconcepts            Furniconcepts' collections
  *   /download-profiles/furniconcepts/<slug>     one collection's PDFs
  */
+// the flipbook (pdf.js + page curl) loads only when a catalogue is opened
+const FlipBook = lazy(() => import('../components/FlipBook.jsx'));
+
 const ROOT = '/download-profiles';
 const FC = `${ROOT}/furniconcepts`;
 
@@ -52,8 +55,8 @@ export const DownloadIcon = ({ size = 15 }) => (
 
 /**
  * A catalogue downloads only after the visitor fills a short form, which is
- * emailed to the team. Their details are remembered in this browser, so later
- * downloads start straight away and are still reported, without asking again.
+ * emailed to the team. The form shows for every download; details a visitor
+ * gave before are filled in for them, so a repeat download is one click.
  */
 const LEAD_KEY = 'fc-download-details';
 const readLead = () => {
@@ -82,21 +85,10 @@ const reportDownload = (file, brand, lead) =>
     file: new URL(file.pdf, window.location.origin).href,
   }).catch(() => {});
 
-/**
- * `request(file)` downloads at once for a visitor who already filled the form,
- * and opens the form otherwise; render `form` somewhere on the page.
- */
+/** `request(file)` opens the download form; render `form` somewhere on the page. */
 export function useDownloadGate(brand) {
   const [pending, setPending] = useState(null);
-  const request = useCallback((file) => {
-    const lead = readLead();
-    if (lead) {
-      reportDownload(file, brand, lead);
-      startDownload(file);
-    } else {
-      setPending(file);
-    }
-  }, [brand]);
+  const request = useCallback((file) => setPending(file), []);
   const close = useCallback(() => setPending(null), []);
   const form = pending && <DownloadForm file={pending} brand={brand} onClose={close} />;
   return { request, form };
@@ -104,6 +96,7 @@ export function useDownloadGate(brand) {
 
 function DownloadForm({ file, brand, onClose }) {
   const [sending, setSending] = useState(false);
+  const saved = readLead() ?? {};
   useEffect(() => {
     const onKey = (e) => { if (e.key === 'Escape') onClose(); };
     document.addEventListener('keydown', onKey);
@@ -140,17 +133,17 @@ function DownloadForm({ file, brand, onClose }) {
         <form className="contact-form" onSubmit={submit}>
           <input {...HONEYPOT} />
           <div className="field-row">
-            <input type="text" name="name" placeholder="Your Name *" required aria-label="Your name" autoComplete="name" />
-            <input type="email" name="email" placeholder="Email Address *" required aria-label="Email address" autoComplete="email" />
+            <input type="text" name="name" placeholder="Your Name *" required aria-label="Your name" autoComplete="name" defaultValue={saved.name} />
+            <input type="email" name="email" placeholder="Email Address *" required aria-label="Email address" autoComplete="email" defaultValue={saved.email} />
           </div>
           <div className="field-row">
-            <input type="tel" name="phone" placeholder="Phone Number *" required aria-label="Phone number" autoComplete="tel" />
-            <select name="country" required defaultValue="" aria-label="Select country">
+            <input type="tel" name="phone" placeholder="Phone Number *" required aria-label="Phone number" autoComplete="tel" defaultValue={saved.phone} />
+            <select name="country" required defaultValue={saved.country ?? ''} aria-label="Select country">
               <option value="" disabled>Select Country *</option>
               {COUNTRIES.map((c) => <option key={c} value={c}>{c}</option>)}
             </select>
           </div>
-          <input type="text" name="company" placeholder="Company Name" aria-label="Company name" autoComplete="organization" />
+          <input type="text" name="company" placeholder="Company Name" aria-label="Company name" autoComplete="organization" defaultValue={saved.company} />
           <button type="submit" className="btn-primary" disabled={sending}>
             {sending ? 'Starting download…' : 'Download'} <DownloadIcon size={14} />
           </button>
@@ -245,15 +238,16 @@ function HelpBand() {
 }
 
 /**
- * The PDF opens in a viewer over the page, as on the old site. Phones get the
- * PDF in a new tab instead, since most mobile browsers cannot show one inline.
- */
-/**
- * `fit` shows a whole page at once (certificates); image files are always
- * shown whole, scaled to the window, instead of at full size in a frame.
+ * The PDF opens in a viewer over the page, as a flipbook whose pages turn like
+ * a printed catalogue, on phones too. `fit` keeps the plain PDF frame showing
+ * a whole page at once (single-page certificates); image files are shown
+ * whole, scaled to the window. If a PDF can't be drawn as a book, the viewer
+ * falls back to the browser's own PDF frame.
  */
 export function PdfViewer({ file, onClose, fit = false, onDownload }) {
   const isImage = /\.(jpe?g|png|webp|gif)$/i.test(file.pdf);
+  const [plain, setPlain] = useState(fit);
+  const toPlain = useCallback(() => setPlain(true), []);
   useEffect(() => {
     const onKey = (e) => { if (e.key === 'Escape') onClose(); };
     document.addEventListener('keydown', onKey);
@@ -282,7 +276,13 @@ export function PdfViewer({ file, onClose, fit = false, onDownload }) {
         </div>
         {isImage
           ? <div className="pdf-viewer-image"><img src={file.pdf} alt={file.title} /></div>
-          : <iframe src={fit ? `${file.pdf}#view=Fit` : file.pdf} title={file.title} />}
+          : plain
+            ? <iframe src={fit ? `${file.pdf}#view=Fit` : file.pdf} title={file.title} />
+            : (
+              <Suspense fallback={<div className="flipbook"><div className="flipbook-loading" role="status">Opening catalogue…</div></div>}>
+                <FlipBook src={file.pdf} title={file.title} onFail={toPlain} />
+              </Suspense>
+            )}
       </div>
     </div>
   );
@@ -298,8 +298,10 @@ function FileSection({ brand, files, certs = [], eyebrow, title, back = [ROOT, '
     gate.request(file);
   };
 
-  const view = (e, file) => {
-    if (window.matchMedia('(max-width: 760px)').matches) return;
+  // catalogues open as a flipbook everywhere; a certificate on a phone opens
+  // in its own tab, since a phone can't show a plain PDF frame
+  const view = (e, file, isCert = false) => {
+    if (isCert && window.matchMedia('(max-width: 760px)').matches) return;
     e.preventDefault();
     setOpen(file);
   };
@@ -310,7 +312,7 @@ function FileSection({ brand, files, certs = [], eyebrow, title, back = [ROOT, '
         <SectionHead eyebrow={eyebrow} title={title}>
           <Link to={back[0]} className="link-arrow">{back[1]} <Arrow size={14} /></Link>
         </SectionHead>
-        <div className="profiles-grid">
+        <div className="profiles-grid is-files">
           {files.map((file) => (
             <article className="blog-card profile-card" key={file.pdf}>
               <a href={file.pdf} target="_blank" rel="noopener" onClick={(e) => view(e, file)}
@@ -340,7 +342,7 @@ function FileSection({ brand, files, certs = [], eyebrow, title, back = [ROOT, '
             <h5>Dealership Certificates</h5>
             <div className="cert-links">
               {certs.map((cert) => (
-                <a className="cert-link" href={cert.pdf} target="_blank" rel="noopener" onClick={(e) => view(e, cert)} key={cert.pdf}>
+                <a className="cert-link" href={cert.pdf} target="_blank" rel="noopener" onClick={(e) => view(e, cert, true)} key={cert.pdf}>
                   <Icon name="doc" /> {cert.title}
                 </a>
               ))}
@@ -348,7 +350,7 @@ function FileSection({ brand, files, certs = [], eyebrow, title, back = [ROOT, '
           </div>
         )}
       </div>
-      {open && <PdfViewer file={open} onClose={close} onDownload={gate.request} />}
+      {open && <PdfViewer file={open} onClose={close} onDownload={gate.request} fit={certs.includes(open)} />}
       {gate.form}
     </section>
   );

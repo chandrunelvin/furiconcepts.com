@@ -25,6 +25,10 @@ const MAIL_TO = (process.env.MAIL_TO || 'letstalk@furniconcepts.com,chandru@hubb
   .split(',').map((s) => s.trim()).filter(Boolean);
 
 const transporter = nodemailer.createTransport({
+  // one kept-open connection, so busy hours don't log in once per email
+  // (Yahoo blocks an account after too many logins in a short time)
+  pool: true,
+  maxConnections: 2,
   host: process.env.SMTP_HOST,
   port: Number(process.env.SMTP_PORT || 465),
   // port 465 uses SSL from the start; 587 upgrades with STARTTLS
@@ -32,6 +36,9 @@ const transporter = nodemailer.createTransport({
   auth: { user: process.env.SMTP_USER, pass: process.env.SMTP_PASS },
 });
 const MAIL_FROM = process.env.MAIL_FROM || process.env.SMTP_USER;
+// Some providers (Yahoo) refuse mail whose Reply-To is another address; with
+// MAIL_REPLY_TO=false the visitor's address goes in the email as a link instead
+const USE_REPLY_TO = process.env.MAIL_REPLY_TO !== 'false';
 
 /* ---------- form emails ---------- */
 
@@ -68,9 +75,13 @@ function buildMail(type, body, file) {
     `<tr><td style="padding:8px 14px;background:#f4f6f5;font-weight:600;vertical-align:top;white-space:nowrap">${esc(LABELS[k] ?? k)}</td>` +
     `<td style="padding:8px 14px;white-space:pre-wrap">${esc(v)}</td></tr>`
   ).join('');
+  const replyLink = EMAIL_RE.test(values.email)
+    ? `<p style="margin:0 0 14px"><a href="mailto:${esc(values.email)}" style="display:inline-block;background:#2f9e6e;color:#fff;text-decoration:none;padding:9px 16px;border-radius:6px;font-weight:600">Reply to ${esc(values.email)}</a></p>`
+    : '';
   const html =
     `<div style="font-family:Arial,sans-serif;font-size:14px;color:#16211c">` +
     `<h2 style="font-size:18px;margin:0 0 14px">${esc(form.title)}</h2>` +
+    replyLink +
     `<table style="border-collapse:collapse;border:1px solid #dfe5e2">${rows}</table>` +
     (file ? `<p style="margin-top:14px">CV attached: ${esc(file.originalname)}</p>` : '') +
     `<p style="margin-top:18px;color:#6b7770;font-size:12px">Sent from the furniconcepts.com ${esc(form.title.toLowerCase())} form.</p></div>`;
@@ -79,7 +90,7 @@ function buildMail(type, body, file) {
   return {
     from: { name: 'Furniconcepts Website', address: MAIL_FROM },
     to: MAIL_TO,
-    replyTo: EMAIL_RE.test(values.email) ? values.email : undefined,
+    replyTo: USE_REPLY_TO && EMAIL_RE.test(values.email) ? values.email : undefined,
     subject,
     text,
     html,
