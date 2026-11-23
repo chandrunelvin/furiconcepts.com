@@ -183,6 +183,26 @@ export default function Career() {
         </div>
       </section>
 
+      {/* ---- the team you would join ---- */}
+      <section className="section career-team" id="team">
+        <div className="wrap">
+          <div className="career-team-head">
+            <div className="eyebrow">Meet the Team</div>
+            <h2>The People You Would Work With</h2>
+            <p>From sales and design to installation and finance, here is how our team fits together.</p>
+          </div>
+          <a className="career-team-chart" href="/images/team/organization-chart.webp" target="_blank" rel="noopener noreferrer">
+            <img
+              src="/images/team/organization-chart.webp"
+              alt="Furniconcepts organization chart, from the CEO to the sales, design, technical and support teams"
+              width="1115"
+              height="1193"
+              loading="lazy"
+            />
+          </a>
+        </div>
+      </section>
+
       {/* ---- where you could work ---- */}
       <section className="section offices" id="offices">
         <div className="wrap">
