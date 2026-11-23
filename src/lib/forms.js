@@ -1,27 +1,33 @@
 /**
- * Sends a form to Web3Forms, which emails it to the address the access key
- * was created for. The key lives in .env as VITE_WEB3FORMS_KEY (Web3Forms
- * keys are meant to sit in page code; they can only send to that address).
+ * Sends a website form to the site's own server (server.js), which emails it
+ * with Nodemailer to letstalk@furniconcepts.com and chandru@hubble-web.com.
+ *
+ * `form` names the form: 'contact' | 'newsletter' | 'download' | 'career'.
+ * `fields` is a plain object, or a FormData when a file (a CV) goes with it.
  *
  * Resolves on success; rejects with a reader-facing message otherwise.
  */
-const ENDPOINT = 'https://api.web3forms.com/submit';
-const KEY = import.meta.env.VITE_WEB3FORMS_KEY;
+const ENDPOINT = '/api/forms';
 
-export async function sendForm(subject, fields) {
-  if (!KEY) throw new Error('This form is not connected yet.');
+export async function sendForm(form, fields) {
+  const isData = fields instanceof FormData;
   // a filled-in honeypot means a bot: pretend it went, send nothing
-  if (fields.botcheck) return;
-  // a form's own "subject" field is kept as the topic, so it can't replace
-  // the email's subject line
-  const { botcheck, subject: topic, ...rest } = fields;
+  if (isData ? fields.get('botcheck') : fields.botcheck) return;
+
+  let body;
+  if (isData) {
+    fields.set('form', form);
+    body = fields;
+  } else {
+    body = JSON.stringify({ ...fields, form });
+  }
   const res = await fetch(ENDPOINT, {
     method: 'POST',
-    headers: { 'Content-Type': 'application/json', Accept: 'application/json' },
-    body: JSON.stringify({ ...rest, ...(topic ? { topic } : {}), access_key: KEY, subject, from_name: 'Furniconcepts website' }),
+    headers: isData ? { Accept: 'application/json' } : { 'Content-Type': 'application/json', Accept: 'application/json' },
+    body,
   }).catch(() => null);
   const data = res ? await res.json().catch(() => null) : null;
-  if (!res?.ok || !data?.success) throw new Error('Your message could not be sent.');
+  if (!res?.ok || !data?.ok) throw new Error(data?.error || 'Your message could not be sent.');
 }
 
 /** Hidden field that people never see or fill, so only bots do. */

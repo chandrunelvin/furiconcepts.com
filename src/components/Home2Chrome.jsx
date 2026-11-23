@@ -329,7 +329,7 @@ export function Newsletter({ copy = NEWSLETTER_COPY }) {
     e.preventDefault();
     const fields = Object.fromEntries(new FormData(e.currentTarget));
     setStatus('sending');
-    sendForm('Newsletter sign-up', { ...fields, page: window.location.pathname })
+    sendForm('newsletter', { ...fields, page: window.location.pathname })
       .then(() => { setStatus('sent'); setEmail(''); })
       .catch(() => setStatus('error'));
   };

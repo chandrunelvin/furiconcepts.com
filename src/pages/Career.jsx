@@ -1,15 +1,15 @@
 import { useState } from 'react';
 import { Arrow, SiteFooter, SiteHeader } from '../components/Home2Chrome.jsx';
 import { OFFICES } from '../data/contact.js';
+import { HONEYPOT, sendForm } from '../lib/forms.js';
 import { useReveal } from '../lib/reveal.js';
 import { Icon, useParallax } from './Contact.jsx';
 import '../styles/home2.css';
 
 /**
  * The careers page (/career.php, the old site's URL), built from the Contact
- * page's parts. The site has no server to receive files, so sending the form
- * opens the applicant's email app addressed to the team with their details
- * filled in, and asks them to attach the CV they picked.
+ * page's parts. The application and its CV go to the site's server, which
+ * emails them to the team (see server.js).
  */
 const CAREERS_EMAIL = 'letstalk@furniconcepts.com';
 
@@ -38,7 +38,8 @@ const MAX_CV_MB = 5;
 function ApplyForm() {
   const [cvName, setCvName] = useState('');
   const [error, setError] = useState('');
-  const [opened, setOpened] = useState(false);
+  // 'idle' | 'sending' | 'sent' | 'error'
+  const [status, setStatus] = useState('idle');
 
   const pickCv = (e) => {
     const file = e.target.files[0];
@@ -54,24 +55,17 @@ function ApplyForm() {
 
   const submit = (e) => {
     e.preventDefault();
-    const f = new FormData(e.currentTarget);
-    const subject = `Job application: ${f.get('subject')} – ${f.get('name')}`;
-    const body = [
-      `Name: ${f.get('name')}`,
-      `Email: ${f.get('email')}`,
-      `Phone: ${f.get('phone')}`,
-      `Applying for: ${f.get('subject')}`,
-      '',
-      f.get('message'),
-      '',
-      `CV attached: ${cvName}`,
-    ].join('\n');
-    window.location.href = `mailto:${CAREERS_EMAIL}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
-    setOpened(true);
+    const form = e.currentTarget;
+    setStatus('sending');
+    setError('');
+    sendForm('career', new FormData(form))
+      .then(() => { setStatus('sent'); form.reset(); setCvName(''); })
+      .catch(() => setStatus('error'));
   };
 
   return (
     <form className="contact-form" onSubmit={submit}>
+      <input {...HONEYPOT} />
       <div className="field-row">
         <input type="text" name="name" placeholder="Your Name *" required aria-label="Your name" />
         <input type="email" name="email" placeholder="Email Address *" required aria-label="Email address" />
@@ -90,13 +84,18 @@ function ApplyForm() {
       </label>
       {error && <p className="career-error" role="alert">{error}</p>}
       <textarea name="message" rows="5" placeholder="Tell us about yourself *" required aria-label="Tell us about yourself" />
-      <button type="submit" className="btn-primary">
-        Send Application <Arrow size={14} />
+      <button type="submit" className="btn-primary" disabled={status === 'sending'}>
+        {status === 'sending' ? 'Sending…' : status === 'sent' ? 'Application Sent' : 'Send Application'} <Arrow size={14} />
       </button>
-      {opened && (
+      {status === 'sent' && (
         <p className="contact-sent" role="status">
-          Your email app has opened with your application. Attach your CV ({cvName}) and press send.
-          No email app? Send your CV to <a href={`mailto:${CAREERS_EMAIL}`}>{CAREERS_EMAIL}</a>.
+          Thank you. Your application has been sent and our team will be in touch.
+        </p>
+      )}
+      {status === 'error' && (
+        <p className="contact-sent contact-error" role="alert">
+          Sorry, that didn&apos;t go through. Please try again, or email your CV to{' '}
+          <a href={`mailto:${CAREERS_EMAIL}`}>{CAREERS_EMAIL}</a>.
         </p>
       )}
     </form>

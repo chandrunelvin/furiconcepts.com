@@ -60,7 +60,7 @@ export default function Contact() {
     const form = e.currentTarget;
     const fields = Object.fromEntries(new FormData(form));
     setStatus('sending');
-    sendForm(`Website enquiry: ${fields.subject} – ${fields.name}`, fields)
+    sendForm('contact', fields)
       .then(() => { setStatus('sent'); form.reset(); })
       .catch(() => setStatus('error'));
   };

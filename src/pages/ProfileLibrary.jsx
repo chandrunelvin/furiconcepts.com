@@ -75,7 +75,7 @@ function startDownload(file) {
 
 /** Emails one download to the team; a failed send never blocks the download. */
 const reportDownload = (file, brand, lead) =>
-  sendForm(`Catalogue download: ${file.title} (${brand}) by ${lead.name}`, {
+  sendForm('download', {
     ...lead,
     catalogue: file.title,
     brand,
