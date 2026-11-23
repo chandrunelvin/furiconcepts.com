@@ -50,11 +50,12 @@ export const KONEKTRA = {
         'Adjust the seat height and backrest angle to suit the desk. The padded armrests also move up, down and sideways, and pivot to support the forearms.'),
     ],
   },
+  planningHead: { eyebrow: 'Planning with Konektra', title: 'Modular Storage That Moves With Your Team', intro: 'How SYSTEM 01 fits an office, and how we help you plan it.' },
   planning: [
-    { title: 'About Konektra', text: 'Based in Nuremberg, Konektra has worked with architects and designers for more than a decade. Its SYSTEM 01 furniture uses tubes, connectors and metal panels. Classic uses exposed ball joints. Urban closes the corners for a different finish.' },
-    { title: 'Where modular furniture helps', text: 'An open divider can mark the edge of a breakout area while keeping sightlines across the office. A low cabinet keeps shared equipment within reach. When teams move, the modules can be rebuilt to suit a new arrangement.', link: { label: 'Explore Office Furniture', href: '/office-furniture.php' } },
-    { title: 'Plan with CAD models', text: 'Place a Konektra model in your floor plan to check shelf heights, door clearance and the aisle beside a desk. Architects and designers can find drawing and modelling files in pCon.catalog.', link: { label: 'Open Konektra in pCon.catalog', href: 'https://catalogs.pcon-solutions.com/welcome/o-3daadb5c002f408a9a6a67776c174c49?lang=en' } },
-    { title: 'Why plan with Furniconcepts?', text: 'Send one drawing for the storage, workstations and seating. Our UAE and India contacts can review the layout, check supply for your location and prepare a combined quote. The same team handles questions as the drawings change.' },
+    { title: 'About Konektra', icon: 'globe', text: 'Based in Nuremberg, Konektra has worked with architects and designers for more than a decade. Its SYSTEM 01 furniture uses tubes, connectors and metal panels. Classic uses exposed ball joints. Urban closes the corners for a different finish.' },
+    { title: 'Where modular furniture helps', icon: 'box', text: 'An open divider can mark the edge of a breakout area while keeping sightlines across the office. A low cabinet keeps shared equipment within reach. When teams move, the modules can be rebuilt to suit a new arrangement.', link: { label: 'Explore Office Furniture', href: '/office-furniture.php' } },
+    { title: 'Plan with CAD models', icon: 'grid', text: 'Place a Konektra model in your floor plan to check shelf heights, door clearance and the aisle beside a desk. Architects and designers can find drawing and modelling files in pCon.catalog.', link: { label: 'Open Konektra in pCon.catalog', href: 'https://catalogs.pcon-solutions.com/welcome/o-3daadb5c002f408a9a6a67776c174c49?lang=en' } },
+    { title: 'Why plan with Furniconcepts?', icon: 'people', text: 'Send one drawing for the storage, workstations and seating. Our UAE and India contacts can review the layout, check supply for your location and prepare a combined quote. The same team handles questions as the drawings change.' },
   ],
   faq: {
     eyebrow: 'FAQ', title: 'Frequently Asked Questions',

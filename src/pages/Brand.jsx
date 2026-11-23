@@ -214,18 +214,41 @@ export default function Brand({ slug }) {
       )}
 
       {brand.planning && (
-        <div className="section brand-planning">
-          <div className="wrap brand-planning-inner">
-            {brand.planning.map(({ title, text, link, points }) => (
-              <section className="brand-about-copy" key={title}>
-                <h2>{title}</h2>
-                {text && <p>{text}</p>}
-                {points && <ul>{points.map((point) => <li key={point}>{point}</li>)}</ul>}
-                {link && <SmartLink href={link.href} className="link-arrow">{link.label} <Arrow size={14} /></SmartLink>}
-              </section>
-            ))}
+        <section className="section brand-planning" aria-labelledby="brand-planning-title">
+          <div className="wrap">
+            {brand.planningHead && (
+              <div className="brand-planning-head">
+                <div className="eyebrow">{brand.planningHead.eyebrow}</div>
+                <h2 id="brand-planning-title">{brand.planningHead.title}</h2>
+                {brand.planningHead.intro && <p>{brand.planningHead.intro}</p>}
+              </div>
+            )}
+            <div className="brand-planning-grid">
+              {brand.planning.map(({ title, text, link, points, icon }) => {
+                // the "Why plan with Furniconcepts?" card closes the row as the call to action
+                const feature = /^why\b/i.test(title);
+                return (
+                  <article className={`brand-planning-card${feature ? ' is-feature' : ''}`} key={title}>
+                    {icon && <span className="brand-planning-icon" aria-hidden="true"><BrandIcon name={icon} size={22} /></span>}
+                    <h3>{title}</h3>
+                    {text && <p>{text}</p>}
+                    {points && <ul>{points.map((point) => <li key={point}>{point}</li>)}</ul>}
+                    {link && (
+                      <SmartLink href={link.href} className="link-arrow">
+                        {link.label} <Arrow size={14} />
+                      </SmartLink>
+                    )}
+                    {feature && brand.heroCta && (
+                      <Link to={brand.heroCta.href} className="btn-primary">
+                        Request a Consultation <Arrow size={14} />
+                      </Link>
+                    )}
+                  </article>
+                );
+              })}
+            </div>
           </div>
-        </div>
+        </section>
       )}
 
       {/* ---- applications ---- hidden for now; remove this comment wrapper to show it again

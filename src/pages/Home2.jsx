@@ -81,6 +81,34 @@ const STATS = [
 const spot = (name) => `/images/spotlight/${name}`;
 const SPOTLIGHT = [
   {
+    source: 'Daksha Telugu', tag: 'In The Press', date: 'Nov 2026',
+    href: 'https://dakshatelugu.com/furniconcepts-karporet-diggajalaku-sari-jodi-ga-jad-tu-e-pharni-kansepts',
+    src: spot('daksha-telugu.jpg'),
+    title: 'Furniconcepts: The Right Match for Corporate Leaders, From Z to A',
+    text: 'A Telugu feature on Furniconcepts’ work for large corporate offices in Hyderabad, including the multi-floor fit-out for Redington.',
+  },
+  {
+    source: 'Gujarati Jagran', tag: 'In The Press', date: 'Nov 2026',
+    href: 'https://www.gujaratijagran.com/business/furniconcepts-office-furniture-indian-client-experience-delivery-timeline-1978847',
+    src: spot('gujarati-jagran.jpg'),
+    title: 'A Deadline Is a Promise: Indian Clients on Working With Furniconcepts',
+    text: 'A Gujarati feature on delivery timelines, with clients such as Trinity Foods and Adroit Interiors describing on-time installation and site coordination.',
+  },
+  {
+    source: 'Oneindia Kannada', tag: 'In The Press', date: 'Nov 2026',
+    href: 'https://kannada.oneindia.com/partner-content/office-furniture-furniconcepts-best-fit-for-offices-looks-elegant-comfortable-affordable-prizes-h-473499.html',
+    src: spot('oneindia-kannada.jpg'),
+    title: 'Adapting to Change in Office Fit-Outs: What the Furniconcepts Experience Shows',
+    text: 'A Kannada feature on how Furniconcepts handles late layout changes in office fit-outs, told through an Indian client’s corporate office project.',
+  },
+  {
+    source: 'Sanjevani', tag: 'In The Press', date: 'Nov 2026',
+    href: 'https://sanjevani.com/an-overview-of-healthcare-furniture/',
+    src: spot('sanjevani.jpg'),
+    title: 'An Overview of Healthcare Furniture',
+    text: 'A Kannada feature on why hospital beds, exam tables, carts and attendant seating matter to patients, medical staff and families.',
+  },
+  {
     source: 'Lokmat', tag: 'In The Press', date: 'Oct 2026',
     href: 'https://www.lokmat.com/lifeline/furniconcepts-flexible-and-efficient-design-approach-to-kodesk-co-working-space-in-chennai-a-a719/',
     src: spot('lokmat.jpg'),

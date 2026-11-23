@@ -43,11 +43,12 @@ export const TEACHMINT = {
       panel('x2-86', 'Teachmint X2 86″', 'standard', 'An 86-inch 4K board for rooms with longer sightlines. Check text size from the last row before choosing a mounting position.'),
     ],
   },
+  planningHead: { eyebrow: 'Planning with Teachmint', title: 'Choose the Right Panel for Every Classroom', intro: 'What the panels offer, which size to pick and how to set up the room around them.' },
   planning: [
-    { title: 'What Teachmint X offers', text: 'The standard Neo and Star specifications list an octa-core CPU, 8 GB of RAM, 128 GB of storage and Google EDLA-certified Android 16. Teachers can write on the screen, share work wirelessly or use EduAI to prepare a quiz. Teachmint reports that its panels are tested at NABL-accredited laboratories.' },
-    { title: 'Choosing a panel size', text: 'Measure from the board wall to the last row. Try a typical slide or maths problem at that distance. Send us the room depth, seat positions and sample lesson so we can help you choose a screen students can read.' },
-    { title: 'Pairing with classroom furniture', text: 'Angle desks so students at the edges can see the board. Leave a clear route to the screen for students who come up to write, and keep power cables outside the aisles.', link: { label: 'Explore School Furniture', href: '/school-furniture.php' } },
-    { title: 'Why plan with Furniconcepts?', text: 'Send one brief for the panel and the furniture. Our team can review your layout before you order, check which models can be quoted for your school and handle follow-up questions through one contact.' },
+    { title: 'What Teachmint X offers', icon: 'sparkle', text: 'The standard Neo and Star specifications list an octa-core CPU, 8 GB of RAM, 128 GB of storage and Google EDLA-certified Android 16. Teachers can write on the screen, share work wirelessly or use EduAI to prepare a quiz. Teachmint reports that its panels are tested at NABL-accredited laboratories.' },
+    { title: 'Choosing a panel size', icon: 'chart', text: 'Measure from the board wall to the last row. Try a typical slide or maths problem at that distance. Send us the room depth, seat positions and sample lesson so we can help you choose a screen students can read.' },
+    { title: 'Pairing with classroom furniture', icon: 'chair', text: 'Angle desks so students at the edges can see the board. Leave a clear route to the screen for students who come up to write, and keep power cables outside the aisles.', link: { label: 'Explore School Furniture', href: '/school-furniture.php' } },
+    { title: 'Why plan with Furniconcepts?', icon: 'people', text: 'Send one brief for the panel and the furniture. Our team can review your layout before you order, check which models can be quoted for your school and handle follow-up questions through one contact.' },
   ],
   faq: {
     limit: 6,
