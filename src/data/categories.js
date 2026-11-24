@@ -999,6 +999,998 @@ export const CATEGORY_PAGES = [
     }
   },
   {
+    "path": "/marine-cruise-ship-furniture.php",
+    "name": "Marine & Cruise Ship Furniture",
+    "hero": "/images/blog/cruise-ship-custom-made-furniture-supplier-dubai-india-singapore/hero.webp",
+    "card": "/images/blog/cruise-ship-custom-made-furniture-supplier-dubai-india-singapore/card.webp",
+    "title": "Marine Furniture Supplier for Cruise Ships, Yachts and Boats",
+    "titleAccent": "in the UAE",
+    "eyebrow": "Marine & Cruise Ship",
+    "summary": "Marine furniture uses marine-grade stainless steel and salt-resistant finishes, and ship furniture must meet IMO and SOLAS safety requirements.",
+    "stats": [
+      {
+        "value": "Marine-Grade",
+        "label": "Stainless steel frames with salt-resistant finishes"
+      },
+      {
+        "value": "IMO & SOLAS",
+        "label": "Cruise ship furniture designed to meet safety requirements"
+      },
+      {
+        "value": "360°",
+        "label": "Rotation on the Marlin Custom Cruise Umbrella"
+      }
+    ],
+    "sections": [
+      [
+        {
+          "type": "heading",
+          "title": "Marine Furniture for Cruise Ships, Yachts and Boats",
+          "body": [
+            "Furniconcepts supplies marine furniture in the UAE, from cruise ship deck seating to custom pieces for yachts. Our cruise ship furniture is built from marine-grade stainless steel with salt-resistant finishes, designed to meet IMO and SOLAS safety requirements. For yachts and boats, send your brief and we will confirm what we can build for your vessel."
+          ]
+        },
+        {
+          "type": "cards",
+          "items": [
+            {
+              "title": "Cruise Lines and Shipyards",
+              "body": [
+                "Deck plans and specifications, quoted area by area."
+              ],
+              "link": {
+                "label": "Request a Marine Quote",
+                "href": "/contact"
+              }
+            },
+            {
+              "title": "Yacht Owners, Captains and Refit Teams",
+              "body": [
+                "Photos, measurements or drawings of your vessel are enough to start."
+              ],
+              "link": {
+                "label": "Send Your Brief",
+                "href": "/contact"
+              }
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "type": "heading",
+          "title": "Marine Furniture We Quote"
+        },
+        {
+          "type": "cards",
+          "items": [
+            {
+              "title": "Cruise Ship Furniture",
+              "body": [
+                "Deck seating, dining and bar furniture, public-area pieces and custom shade for passenger vessels. Pieces are specified area by area from your deck plans and the standards your class society requires."
+              ],
+              "link": {
+                "label": "Read: Cruise Ship Furniture",
+                "href": "/cruise-ship-custom-made-furniture-supplier-dubai-india-singapore.php"
+              }
+            },
+            {
+              "title": "Custom Umbrellas and Shade",
+              "body": [
+                "Our Marlin Custom Cruise Umbrella turns through 360°, hides its ribs and folds its canopy in an accordion style. Shade is sized to the deck and quoted with the seating."
+              ],
+              "link": {
+                "label": "Outdoor Umbrellas",
+                "href": "/outdoor-indoor-umbrella-supplier.php"
+              }
+            },
+            {
+              "title": "Yacht and Boat Furniture",
+              "body": [
+                "Deck chairs, cockpit and dining tables, loungers, sofas and cushions, made to your drawings or measurements. Each brief is reviewed and we tell you plainly what we can build."
+              ]
+            },
+            {
+              "title": "Refit and Replacement Pieces",
+              "body": [
+                "Pieces matched to existing deck layouts and fixing points, so a refit does not mean redesigning the deck."
+              ]
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "type": "heading",
+          "title": "Choosing Seating by Area"
+        },
+        {
+          "type": "table",
+          "columns": [
+            "Area",
+            "What matters most",
+            "Typical choice"
+          ],
+          "rows": [
+            [
+              "Sun deck",
+              "UV, wind, salt spray",
+              "Stainless steel frames, UV-stable fabric"
+            ],
+            [
+              "Pool deck",
+              "Wet and dry cycles, non-slip",
+              "Quick-drying, drainable seating"
+            ],
+            [
+              "Alfresco dining",
+              "Stability when the vessel moves",
+              "Heavier chairs, fixed or weighted tables"
+            ],
+            [
+              "Cockpit or helm area (yachts)",
+              "Space, safe fixing, easy cleaning",
+              "Custom-made, fixed seating"
+            ],
+            [
+              "Lounges and public areas",
+              "Fire-test compliance, humidity, heavy use",
+              "Specified with your class society"
+            ],
+            [
+              "Cabins and crew areas",
+              "Space, fixing",
+              "Compact or built-in pieces"
+            ]
+          ]
+        }
+      ],
+      [
+        {
+          "type": "heading",
+          "title": "Materials and Finishes: A Buying Guide",
+          "body": [
+            "General guidance. Confirm the exact specification for your vessel with us and your class society."
+          ]
+        },
+        {
+          "type": "table",
+          "columns": [
+            "Material",
+            "Where it works",
+            "What to watch"
+          ],
+          "rows": [
+            [
+              "Marine-grade stainless steel",
+              "Frames, fixings and fittings exposed to salt",
+              "Grades differ in salt resistance. Ask which grade is quoted"
+            ],
+            [
+              "Powder-coated metal",
+              "Frames that need colour",
+              "Coating quality decides how long it lasts at sea"
+            ],
+            [
+              "Teak and hardwood",
+              "Decks, tables, a natural look",
+              "Needs maintenance and turns grey if left untreated"
+            ],
+            [
+              "Marine fabrics and foam",
+              "Cushions, upholstery",
+              "UV fade, mould, water retention"
+            ],
+            [
+              "Synthetic weave and moulded plastics",
+              "Light outdoor seating",
+              "UV stability and fire-test requirements"
+            ]
+          ]
+        }
+      ],
+      [
+        {
+          "type": "columns",
+          "columns": [
+            [
+              {
+                "type": "heading",
+                "eyebrow": "Safety & Approvals",
+                "title": "Ask Early, Because These Affect Design"
+              },
+              {
+                "type": "panel",
+                "blocks": [
+                  {
+                    "type": "checklist",
+                    "items": [
+                      "IMO and SOLAS requirements for your vessel type",
+                      "Fire-test requirements for upholstery and finishes, set by your class society or flag state",
+                      "How each piece is secured, and what must be stowed in rough weather",
+                      "The test reports and certificates your project file needs",
+                      "Tell us which standards apply and we will confirm what we can document"
+                    ]
+                  }
+                ]
+              }
+            ],
+            [
+              {
+                "type": "heading",
+                "eyebrow": "Our Process",
+                "title": "How an Enquiry Works"
+              },
+              {
+                "type": "tags",
+                "items": [
+                  "Send the brief: vessel type, areas, drawings or photos, quantities, standards, delivery port and date.",
+                  "We review. We confirm what we can supply and raise any material or compliance questions.",
+                  "You receive a quote with the specification for each area.",
+                  "Approve details. Finishes, dimensions and fixing methods are confirmed before production.",
+                  "Delivery to your port or yard. Timelines depend on the order, and we confirm them in the quote."
+                ]
+              }
+            ]
+          ]
+        }
+      ],
+      [
+        {
+          "type": "heading",
+          "title": "Buyer-Specific Routes"
+        },
+        {
+          "type": "cards",
+          "items": [
+            {
+              "title": "Cruise Lines and Ship Operators",
+              "body": [
+                "Specifications that stay consistent across vessels, and quotes by deck."
+              ]
+            },
+            {
+              "title": "Shipyards and Fit-Out Contractors",
+              "body": [
+                "Quotes built from your drawing package and build schedule."
+              ]
+            },
+            {
+              "title": "Yacht Owners, Captains and Managers",
+              "body": [
+                "A smaller brief, usually with photos and measurements."
+              ]
+            },
+            {
+              "title": "Refit Contractors",
+              "body": [
+                "Replacement and matching pieces for existing layouts."
+              ]
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "type": "heading",
+          "title": "Common Marine Furniture Mistakes"
+        },
+        {
+          "type": "checklist",
+          "items": [
+            "Choosing by indoor specification instead of salt and UV exposure",
+            "Overlooking how pieces are fixed when the vessel moves",
+            "Leaving fire-test requirements until after design approval",
+            "Ordering cushions and frames separately with no shared finish plan",
+            "Skipping a maintenance plan for teak and fabrics"
+          ]
+        },
+        {
+          "type": "text",
+          "text": [
+            "Looking for land-based outdoor furniture? For hotels, resorts and waterfront restaurants, see ",
+            {
+              "label": "Hospitality Furniture",
+              "href": "/hotel-furniture-manufacturers.php"
+            },
+            "."
+          ]
+        },
+        {
+          "type": "buttons",
+          "items": [
+            {
+              "label": "Request a Marine Quote",
+              "href": "/contact"
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "type": "heading",
+          "title": "Frequently Asked Questions",
+          "body": [
+            "Answers on marine-grade materials, IMO and SOLAS, yachts, refits and quotes in the UAE."
+          ]
+        },
+        {
+          "type": "faq",
+          "items": [
+            {
+              "q": "What does marine grade mean for furniture?",
+              "a": "It means the materials and finishes are chosen to resist salt, moisture and UV. For metal frames, that usually means marine-grade stainless steel with a protective finish."
+            },
+            {
+              "q": "Do you build to IMO and SOLAS requirements?",
+              "a": "Our ship furniture is designed to meet IMO and SOLAS safety requirements. Send your class society’s specification and we will confirm what applies."
+            },
+            {
+              "q": "Do you supply yachts and small boats?",
+              "a": "Send your brief with drawings or photos. We will tell you clearly what we can build for your vessel."
+            },
+            {
+              "q": "Can you make custom pieces?",
+              "a": "Yes. The Marlin Custom Cruise Umbrella is an example of our custom engineering. Share drawings for other pieces and we will review them."
+            },
+            {
+              "q": "How do I choose between stainless steel and teak?",
+              "a": "Stainless steel suits salt-exposed frames and fittings. Teak suits decks and tables where a natural finish matters and maintenance is planned. Many vessels use both."
+            },
+            {
+              "q": "Can you match furniture to existing deck fixings in a refit?",
+              "a": "Send photos and measurements of the current layout and we will review them."
+            },
+            {
+              "q": "Can seating and umbrellas be quoted together?",
+              "a": "Yes. We can quote seating, tables and shade for the same deck in one enquiry."
+            },
+            {
+              "q": "How are cushions and fabrics chosen?",
+              "a": "By area. Sun decks need UV-stable fabric, and wet areas need quick-drying materials. Tell us the area and we will advise."
+            },
+            {
+              "q": "What should I send to get an accurate quote?",
+              "a": "Vessel type, drawings, quantities, standards, finishes, delivery port and target date."
+            },
+            {
+              "q": "How long does a marine order take?",
+              "a": "It depends on the items and quantities. We confirm the timeline in your quote."
+            },
+            {
+              "q": "Do you serve Abu Dhabi as well as Dubai?",
+              "a": "Send your delivery port and project location with your enquiry."
+            },
+            {
+              "q": "How do I request a quote?",
+              "a": "Use the contact form, email letstalk@furniconcepts.com or call +971 50 378 2215."
+            }
+          ]
+        }
+      ]
+    ],
+    "cta": {
+      "title": "Request a Marine Quote",
+      "body": [
+        "UAE +971 50 378 2215, letstalk@furniconcepts.com"
+      ],
+      "buttons": [
+        {
+          "label": "Request a Marine Quote",
+          "href": "/contact"
+        }
+      ]
+    }
+  },
+  {
+    "path": "/military-defence-furniture.php",
+    "name": "Military & Defence Furniture",
+    "hero": "/images/projects/etisalat-hq-auditorium/banner.webp",
+    "title": "Military and Defence Furniture Supplier",
+    "titleAccent": "in the UAE",
+    "eyebrow": "Military & Defence",
+    "summary": "Defence furniture is built for continuous use, strict specifications and secure sites. Furniconcepts supplies control room workstations, ergonomic seating, briefing hall seating and secure storage in the UAE.",
+    "stats": [
+      {
+        "value": "Control Rooms",
+        "label": "Desks, sit-stand desks, monitor arms and cable spines"
+      },
+      {
+        "value": "1hr & 2hr",
+        "label": "Fire-rated safes, plus gun safes and vault doors"
+      },
+      {
+        "value": "ISO 9001:2015",
+        "label": "Certified for how projects are scoped and delivered"
+      }
+    ],
+    "sections": [
+      [
+        {
+          "type": "heading",
+          "title": "Furniture for Military, Defence and Security Facilities",
+          "body": [
+            "Furniconcepts supplies furniture for military, defence and security facilities in the UAE: operations and control rooms, briefing and training halls, secure storage, headquarters offices and accommodation. We work from your specification or tender, supply products from authorised brand partners, and confirm in writing what we can and cannot supply before you commit."
+          ]
+        },
+        {
+          "type": "cards",
+          "items": [
+            {
+              "title": "Defence Procurement Teams",
+              "body": [
+                "Send your tender or specification and we will answer it line by line."
+              ],
+              "link": {
+                "label": "Send Your Tender or Brief",
+                "href": "/contact"
+              }
+            },
+            {
+              "title": "Main Contractors and Fit-Out Partners",
+              "body": [
+                "Send drawings and quantities for a quote by room or line item."
+              ],
+              "link": {
+                "label": "Request a Quote",
+                "href": "/contact"
+              }
+            },
+            {
+              "title": "Facilities and Security Managers",
+              "body": [
+                "Replacing or topping up existing furniture? Send photos and quantities."
+              ],
+              "link": {
+                "label": "Ask About Replacements",
+                "href": "/contact"
+              }
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "type": "heading",
+          "title": "Why Defence Furniture Is Judged Differently",
+          "body": [
+            "Furniture in a defence facility is rarely bought for looks. It is bought to survive three things most offices never face together: continuous use, strict specifications and security restrictions. We build our quotes around these realities rather than treating a defence enquiry as a standard office order."
+          ]
+        },
+        {
+          "type": "cards",
+          "style": "features",
+          "items": [
+            {
+              "title": "Continuous Use",
+              "icon": "clock",
+              "body": [
+                "An operations desk may be occupied across shifts, so one chair can be used by several people in a day instead of one person for eight hours."
+              ]
+            },
+            {
+              "title": "Formal Specifications",
+              "icon": "grid",
+              "body": [
+                "Many defence buyers specify materials, finishes, fire behaviour and documentation in the tender, and expect a supplier to answer line by line."
+              ]
+            },
+            {
+              "title": "Security Rules",
+              "icon": "people",
+              "body": [
+                "Delivery, installation and even photography can be restricted, so a supplier needs to plan access and clearance early."
+              ]
+            },
+            {
+              "title": "Long Service Life",
+              "icon": "gem",
+              "body": [
+                "Replacement is costly and disruptive on a secure site, so lifetime cost matters more than purchase price."
+              ]
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "type": "heading",
+          "title": "Control and Operations Rooms",
+          "body": [
+            "Control rooms, command centres and operations rooms are the most demanding workstation environments. Operators watch several screens for long periods, often in dim light, and mistakes cost more than in a normal office. This is what we look at when we plan a control room workstation."
+          ]
+        },
+        {
+          "type": "cards",
+          "items": [
+            {
+              "title": "Screen Position",
+              "body": [
+                [
+                  "Screens should sit at a comfortable eye height and distance, and an operator should be able to see all of them without twisting. Our ",
+                  {
+                    "label": "Broad Power",
+                    "href": "/brands/broad-power"
+                  },
+                  " monitor arms come in single, dual and multi-monitor configurations with articulating and rotating adjustment, and desk-clamp or grommet mounting for different desk edges."
+                ]
+              ]
+            },
+            {
+              "title": "Cable Control",
+              "body": [
+                "A control room has many cables. Broad Power height-adjustable cable spines route and hide cabling vertically, and they keep cables tidy as desk height changes."
+              ]
+            },
+            {
+              "title": "Height Adjustment",
+              "body": [
+                [
+                  {
+                    "label": "Markant",
+                    "href": "/brands/markant"
+                  },
+                  " sit-stand desks (Matrix and MOx) have silent motors and programmable height presets, so operators can change posture across a long shift without disturbing the room."
+                ]
+              ]
+            },
+            {
+              "title": "Seating for Long Shifts",
+              "body": [
+                [
+                  "Our office brands cover task, operator and executive chairs with synchro-tilt mechanisms, adjustable lumbar support, armrests and seat depth adjustment on higher-tier models. ",
+                  {
+                    "label": "Merryfair",
+                    "href": "/brands/merryfair"
+                  },
+                  "’s range includes a category named 24/Seven, which we can review with you for round-the-clock use. See ",
+                  {
+                    "label": "Office Furniture",
+                    "href": "/office-furniture.php"
+                  },
+                  "."
+                ]
+              ]
+            },
+            {
+              "title": "Layout and Sightlines",
+              "body": [
+                "We plan desk positions around the video wall, the supervisor’s view and the walkways between operators."
+              ]
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "text": "We supply the desks, chairs, monitor arms and cable management. If your project needs purpose-built consoles, send the drawings and we will tell you what we can supply and what needs a specialist."
+        }
+      ],
+      [
+        {
+          "type": "heading",
+          "title": "Briefing, Training and Lecture Halls",
+          "body": [
+            "A defence site often needs rooms where many people sit for long periods: briefings, classroom training, conferences and ceremonies."
+          ]
+        },
+        {
+          "type": "cards",
+          "items": [
+            {
+              "title": "Fixed Seating",
+              "body": [
+                [
+                  "Fixed seating for permanent halls, supplied through our auditorium partners ",
+                  {
+                    "label": "Leadcom",
+                    "href": "/brands/leadcom"
+                  },
+                  " and ",
+                  {
+                    "label": "Audia Italia",
+                    "href": "/brands/audia-italia"
+                  },
+                  "."
+                ]
+              ]
+            },
+            {
+              "title": "Retractable Seating",
+              "body": [
+                "Telescopic seating where a hall must switch between seated and open-floor use, for example a training hall that also holds drills or events."
+              ],
+              "link": {
+                "label": "Telescopic Seating",
+                "href": "/telescopic-cinema-seating-manufacturer-dubai.php"
+              }
+            },
+            {
+              "title": "Stand Seating",
+              "body": [
+                [
+                  "Stand seating for parade grounds and sports fields through ",
+                  {
+                    "label": "Jwesys",
+                    "href": "/brands/jwesys"
+                  },
+                  " and Leadcom."
+                ]
+              ],
+              "link": {
+                "label": "Stadium Seating",
+                "href": "/stadium-seating.php"
+              }
+            },
+            {
+              "title": "Training Rooms",
+              "body": [
+                "Tablet-arm seats for classroom-style teaching, available in Leadcom configurations."
+              ]
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "text": [
+            "See ",
+            {
+              "label": "Auditorium & Stadium Seating",
+              "href": "/auditorium-seating.php"
+            },
+            " for details and projects."
+          ]
+        }
+      ],
+      [
+        {
+          "type": "heading",
+          "title": "Secure Storage",
+          "body": [
+            [
+              "Not everything can sit on an open shelf. Our ",
+              {
+                "label": "Safe Lockers",
+                "href": "/brands/safe-lockers"
+              },
+              " range covers eight categories of security storage."
+            ]
+          ]
+        },
+        {
+          "type": "cards",
+          "items": [
+            {
+              "title": "Fireproof Safes",
+              "body": [
+                "One-hour and two-hour fire-rated models, with digital password, key and combination lock options."
+              ]
+            },
+            {
+              "title": "Gun Safes",
+              "body": [
+                "Compact handgun safes and biometric quick-access boxes with fingerprint and digital combination locking."
+              ]
+            },
+            {
+              "title": "Business Safes",
+              "body": [
+                "TB-900, TB-670 and TB-608k for office and commercial cash handling."
+              ]
+            },
+            {
+              "title": "Vault Doors",
+              "body": [
+                "Including anti-theft security doors for bank-grade installations."
+              ]
+            },
+            {
+              "title": "Custom Safes",
+              "body": [
+                "DZ-1, DZ-2 and DZ-3 for specialised storage layouts and project-specific requirements."
+              ]
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "text": "If your site has an official security classification or accreditation requirement for storage, send it with your enquiry. We make no accreditation claim unless a product’s documents state it."
+        }
+      ],
+      [
+        {
+          "type": "heading",
+          "title": "Headquarters, Accommodation and Medical Rooms"
+        },
+        {
+          "type": "cards",
+          "items": [
+            {
+              "title": "Headquarters, Administration and Meeting Rooms",
+              "body": [
+                "Defence headquarters are offices with extra rules. We supply desks, workstations, executive and visitor seating, meeting tables, storage and front-desk furniture through the same brand partners we use for corporate clients."
+              ],
+              "link": {
+                "label": "Office Furniture",
+                "href": "/office-furniture.php"
+              }
+            },
+            {
+              "title": "Accommodation, Messes and Welfare Areas",
+              "body": [
+                "Living and dining areas take daily wear from many users. Send your layout and numbers, and we will quote furniture for rooms, shared areas and canteens. Where a product falls outside our brand partners’ ranges, we will say so instead of guessing."
+              ],
+              "link": {
+                "label": "Send Your Layout",
+                "href": "/contact"
+              }
+            },
+            {
+              "title": "Medical and Welfare Rooms",
+              "body": [
+                [
+                  "On-site clinics and sick bays need durable, cleanable furniture: beds, trolleys and clinical seating from ",
+                  {
+                    "label": "Nitrocare",
+                    "href": "/brands/nitrocare"
+                  },
+                  " and our other healthcare lines."
+                ]
+              ],
+              "link": {
+                "label": "Hospital Furniture",
+                "href": "/hospital-furniture.php"
+              }
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "type": "columns",
+          "columns": [
+            [
+              {
+                "type": "heading",
+                "eyebrow": "Your Brief",
+                "title": "What to Tell Us in Your Brief"
+              },
+              {
+                "type": "panel",
+                "blocks": [
+                  {
+                    "type": "checklist",
+                    "items": [
+                      "Tender or specification reference, and any standards named in it",
+                      "Rooms to furnish and their purpose (control room, hall, office, accommodation)",
+                      "Quantities and a room plan or drawings",
+                      "Fire, security and durability requirements",
+                      "Finish, colour and marking restrictions",
+                      "Delivery site, access rules and installer clearance",
+                      "Installation or supply-only",
+                      "Documents needed for your procurement file",
+                      "Required delivery date"
+                    ]
+                  }
+                ]
+              }
+            ],
+            [
+              {
+                "type": "heading",
+                "eyebrow": "Our Process",
+                "title": "How an Enquiry Works"
+              },
+              {
+                "type": "tags",
+                "items": [
+                  "Send your brief or tender. We review it against our brand partners’ ranges.",
+                  "We respond in writing with what we can supply, what we cannot, and any questions.",
+                  "You receive a quote by room or line item, matched to your specification.",
+                  "Details are confirmed before ordering: finishes, dimensions, fixing methods and documents.",
+                  "Delivery and installation are planned around your site’s access rules. Timelines vary by item and quantity, and we confirm them in the quote."
+                ]
+              }
+            ]
+          ]
+        }
+      ],
+      [
+        {
+          "type": "heading",
+          "title": "Choosing Furniture for a Defence Site: A Practical Guide"
+        },
+        {
+          "type": "table",
+          "columns": [
+            "Question",
+            "Why it matters",
+            "What to ask the supplier"
+          ],
+          "rows": [
+            [
+              "How many people use each seat per day?",
+              "Shared seats wear faster",
+              "Is the chair suited to multiple users in a day?"
+            ],
+            [
+              "Is the room dim or screen-heavy?",
+              "Glare and posture affect fatigue",
+              "Can monitors be positioned at the right height and angle?"
+            ],
+            [
+              "Are cables numerous?",
+              "Loose cables are a trip and clutter risk",
+              "How are they routed and hidden?"
+            ],
+            [
+              "Is the item fixed or movable?",
+              "Affects layout flexibility",
+              "How is it fixed, and can it be reconfigured?"
+            ],
+            [
+              "What is the delivery restriction?",
+              "Late clearance delays installation",
+              "What does installation need from us?"
+            ],
+            [
+              "What does the tender require in writing?",
+              "Missing documents can disqualify a bid",
+              "Which documents come with the product?"
+            ]
+          ]
+        }
+      ],
+      [
+        {
+          "type": "heading",
+          "title": "Common Mistakes in Defence Furniture Procurement"
+        },
+        {
+          "type": "checklist",
+          "items": [
+            "Buying a standard office chair for a 24-hour operations desk",
+            "Planning screens after the desks are fixed",
+            "Leaving cable routing to the end",
+            "Forgetting installer clearance and site access rules",
+            "Asking for documents after the order is placed",
+            "Choosing the lowest unit price and ignoring service life"
+          ]
+        },
+        {
+          "type": "buttons",
+          "items": [
+            {
+              "label": "Request a Military & Defence Quote",
+              "href": "/contact"
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "type": "heading",
+          "title": "Frequently Asked Questions",
+          "body": [
+            "Answers on control rooms, seating, secure storage, tenders and site access for defence facilities in the UAE."
+          ]
+        },
+        {
+          "type": "faq",
+          "items": [
+            {
+              "q": "Do you supply furniture for military and defence facilities?",
+              "a": "Send your brief or tender, and we will confirm in writing what we can supply."
+            },
+            {
+              "q": "What can you supply for a control or operations room?",
+              "a": "Desks, sit-stand desks, ergonomic chairs, and Broad Power monitor arms and cable management for multi-screen workstations. For purpose-built consoles, send drawings and we will confirm what we can supply."
+            },
+            {
+              "q": "Which chairs suit long shifts?",
+              "a": "Chairs with synchro-tilt, adjustable lumbar support, armrests and seat depth adjustment suit long shifts. We will recommend options from Cavaletti, Forma5, Merryfair, Bestuhl and Jwesys for your use."
+            },
+            {
+              "q": "Can desks change height during a shift?",
+              "a": "Yes. Markant sit-stand desks have silent motors and programmable height presets."
+            },
+            {
+              "q": "How do you keep cables under control?",
+              "a": "Broad Power cable spines route and hide cabling vertically, and they adjust with the desk height."
+            },
+            {
+              "q": "Can you supply multi-monitor setups?",
+              "a": "Yes. Broad Power monitor arms come in single, dual and multi-monitor configurations."
+            },
+            {
+              "q": "What seating do you offer for briefing halls?",
+              "a": "Fixed seating from Leadcom and Audia Italia, and retractable seating where a hall needs to convert."
+            },
+            {
+              "q": "Can you supply seating for parade grounds or stands?",
+              "a": "Yes. We supply stand seating through Jwesys and Leadcom."
+            },
+            {
+              "q": "Do you supply safes and vault doors?",
+              "a": "Yes. Safe Lockers covers fireproof safes, gun safes, business safes, vault doors and custom safes."
+            },
+            {
+              "q": "What fire ratings do your safes have?",
+              "a": "Fireproof models are available with one-hour and two-hour fire ratings."
+            },
+            {
+              "q": "Do your safes support fingerprint access?",
+              "a": "Fingerprint locking is available on several models, including gun safes."
+            },
+            {
+              "q": "Can you make a custom safe for our site?",
+              "a": "Yes. The DZ series covers custom-made safes for project-specific requirements."
+            },
+            {
+              "q": "Can you work to a government tender?",
+              "a": "Send the tender documents and we will tell you what we can quote against."
+            },
+            {
+              "q": "Do your products meet specific military standards?",
+              "a": "We do not claim any military standard on this page. Send the standard you need and we will check what documentation exists for each product."
+            },
+            {
+              "q": "Do you hold ISO certification?",
+              "a": "Furniconcepts holds ISO 9001:2015 certification covering how projects are scoped, manufactured and delivered."
+            },
+            {
+              "q": "Can you supply accommodation and mess furniture?",
+              "a": "Send your layout and quantities, and we will tell you what we can quote."
+            },
+            {
+              "q": "Is installation included?",
+              "a": "Tell us whether you need installation or supply only. We confirm this in your quote."
+            },
+            {
+              "q": "Can your installers work on restricted sites?",
+              "a": "Send your access and clearance requirements with the brief, and we will plan around them."
+            },
+            {
+              "q": "Can you replace or top up existing furniture?",
+              "a": "Send photos, quantities and the current model if you know it, and we will review."
+            },
+            {
+              "q": "Do you supply historic campaign furniture?",
+              "a": "No. Our range is for working facilities. Replica campaign furniture is a separate specialist category."
+            },
+            {
+              "q": "Do you serve Abu Dhabi, Dubai and other emirates?",
+              "a": "Send your delivery site and we will confirm."
+            },
+            {
+              "q": "How long does an order take?",
+              "a": "It depends on the items and quantity. We confirm the timeline in your quote."
+            },
+            {
+              "q": "What documents can you provide?",
+              "a": "Product documents vary by brand. Tell us what your file needs and we will confirm what we can provide."
+            },
+            {
+              "q": "How do I request a quote?",
+              "a": "Send the brief above through the contact form, email letstalk@furniconcepts.com or call +971 50 378 2215."
+            }
+          ]
+        }
+      ]
+    ],
+    "cta": {
+      "title": "Request a Military & Defence Quote",
+      "body": [
+        "Send your tender or brief. UAE +971 50 378 2215, letstalk@furniconcepts.com"
+      ],
+      "buttons": [
+        {
+          "label": "Send Your Tender or Brief",
+          "href": "/contact"
+        }
+      ]
+    }
+  },
+  {
     "path": "/office-furniture.php",
     "name": "Office Furniture",
     "hero": "/images/projects/cushman/banner.webp",

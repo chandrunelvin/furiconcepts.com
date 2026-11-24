@@ -48,6 +48,14 @@ export const CERTIFICATES = [
   },
   {
     group: 'safety',
+    title: 'bizSAFE STAR Certificate',
+    text: 'Awarded to Furniconcepts Pte. Ltd. by the Workplace Safety and Health Council, Singapore, the highest level of the bizSAFE programme for workplace safety and health management.',
+    meta: 'Cert No. E51222 · Valid to 19.08.2029',
+    ...doc('bizsafe-star'),
+    cover: '/images/certificates/bizsafe-star.jpg',
+  },
+  {
+    group: 'safety',
     title: 'HSE Management System Manual',
     text: 'Our group-wide Health, Safety & Environment manual, integrated with ISO 9001, 14001 and 45001, covering risk assessments, safe work procedures and method statements in Singapore, the UAE and India.',
     meta: 'FC-HSE-MAN-001 · Rev. 00 · 26 September 2026',

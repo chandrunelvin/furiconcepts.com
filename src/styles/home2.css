@@ -4012,26 +4012,3 @@
   .home2 .footer-col a{ font-size:13px; overflow-wrap:anywhere; }
   .home2 .footer-bottom{ flex-direction:row; align-items:center; gap:12px; padding-top:18px; font-size:12px; }
 }
-
-/* ---------- website launch countdown (LaunchCountdown.jsx) ---------- */
-.launch{position:fixed;inset:0;z-index:9999;display:grid;place-items:center;overflow:hidden;
-  background:radial-gradient(circle at 50% 45%,#eaf7f0 0%,#fff 55%);transition:opacity .8s ease,transform .8s cubic-bezier(.7,0,.3,1)}
-.launch.is-exit{opacity:0;transform:scale(1.06);pointer-events:none}
-.launch-confetti{position:absolute;inset:0;width:100%;height:100%;pointer-events:none}
-.launch-inner{position:relative;display:flex;flex-direction:column;align-items:center;gap:22px;padding:24px;text-align:center}
-.launch .launch-logo{width:min(340px,70vw);max-width:none;height:auto;animation:launch-fade .8s ease both}
-.launch-eyebrow{font-size:13px;font-weight:600;letter-spacing:.18em;text-transform:uppercase;color:#2f9e6e;animation:launch-fade .8s .15s ease both}
-.launch-dial{position:relative;width:min(260px,62vw);aspect-ratio:1;display:grid;place-items:center}
-.launch-dial svg{position:absolute;inset:0;width:100%;height:100%;transform:rotate(-90deg)}
-.launch-track{fill:none;stroke:#e2efe8;stroke-width:6}
-.launch-ring{fill:none;stroke:#2f9e6e;stroke-width:6;stroke-linecap:round;stroke-dasharray:339.3;transition:stroke-dashoffset .9s cubic-bezier(.4,0,.2,1)}
-.launch-number{font-size:clamp(96px,22vw,150px);font-weight:700;line-height:1;color:#16332a;font-variant-numeric:tabular-nums;animation:launch-tick 1s cubic-bezier(.2,.9,.3,1.3) both}
-.launch-live{animation:launch-pop .7s cubic-bezier(.2,.9,.3,1.4) both}
-.launch-live-title{font-size:clamp(48px,11vw,96px);font-weight:700;line-height:1.05;color:#16332a}
-.launch-live p{margin:14px 0 0;font-size:clamp(16px,2.4vw,20px);color:#4a5a54}
-.launch .launch-skip{position:absolute;right:24px;bottom:24px;padding:9px 18px;border:1px solid #cfe3d9;border-radius:999px;background:#fff;color:#16332a;font:inherit;font-size:14px;cursor:pointer}
-.launch .launch-skip:hover{border-color:#2f9e6e;color:#2f9e6e}
-@keyframes launch-tick{0%{opacity:0;transform:scale(1.8)}35%{opacity:1;transform:scale(.95)}55%{transform:scale(1)}100%{opacity:1;transform:scale(1)}}
-@keyframes launch-pop{0%{opacity:0;transform:scale(.3)}60%{opacity:1;transform:scale(1.12)}100%{transform:scale(1)}}
-@keyframes launch-fade{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:none}}
-@media (prefers-reduced-motion:reduce){.launch-number,.launch-live,.launch-logo,.launch-eyebrow{animation:none}}

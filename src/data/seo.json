@@ -4886,6 +4886,475 @@
    }
   ]
  },
+ "/marine-cruise-ship-furniture.php": {
+  "live": "/marine-cruise-ship-furniture.php",
+  "title": "Marine, Yacht & Cruise Ship Furniture Supplier UAE | Furniconcepts",
+  "meta": [
+   {
+    "name": "description",
+    "content": "Marine furniture for cruise ships, yachts and boats in the UAE. Deck seating, custom umbrellas, tables and cabin pieces in marine-grade stainless steel. Send your brief."
+   },
+   {
+    "name": "keywords",
+    "content": "marine furniture uae, marine furniture suppliers uae, cruise ship furniture supplier, marine grade outdoor furniture uae, yacht furniture dubai, custom yacht furniture abu dhabi, yacht refit furniture suppliers dubai, commercial marine seating uae"
+   },
+   {
+    "name": "robots",
+    "content": "index, follow"
+   },
+   {
+    "property": "og:type",
+    "content": "website"
+   },
+   {
+    "property": "og:title",
+    "content": "Marine, Yacht & Cruise Ship Furniture Supplier UAE | Furniconcepts"
+   },
+   {
+    "property": "og:description",
+    "content": "Marine furniture for cruise ships, yachts and boats in the UAE. Deck seating, custom umbrellas, tables and cabin pieces in marine-grade stainless steel. Send your brief."
+   },
+   {
+    "property": "og:site_name",
+    "content": "Furniconcepts"
+   },
+   {
+    "name": "twitter:card",
+    "content": "summary_large_image"
+   },
+   {
+    "name": "twitter:title",
+    "content": "Marine, Yacht & Cruise Ship Furniture Supplier UAE | Furniconcepts"
+   },
+   {
+    "name": "twitter:description",
+    "content": "Marine furniture for cruise ships, yachts and boats in the UAE. Deck seating, custom umbrellas, tables and cabin pieces in marine-grade stainless steel. Send your brief."
+   }
+  ],
+  "jsonld": [
+   {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+     {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://www.furniconcepts.com/"
+     },
+     {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Marine & Cruise Ship Furniture",
+      "item": "https://www.furniconcepts.com/marine-cruise-ship-furniture.php"
+     }
+    ]
+   },
+   {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "name": "Marine and Cruise Ship Furniture Supply",
+    "provider": {
+     "@type": "Organization",
+     "name": "Furniconcepts",
+     "url": "https://www.furniconcepts.com/",
+     "email": "letstalk@furniconcepts.com",
+     "telephone": "+971503782215"
+    },
+    "areaServed": {
+     "@type": "Country",
+     "name": "United Arab Emirates"
+    },
+    "url": "https://www.furniconcepts.com/marine-cruise-ship-furniture.php",
+    "description": "Marine furniture uses marine-grade stainless steel and salt-resistant finishes, and ship furniture must meet IMO and SOLAS safety requirements."
+   },
+   {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+     {
+      "@type": "Question",
+      "name": "What does marine grade mean for furniture?",
+      "acceptedAnswer": {
+       "@type": "Answer",
+       "text": "It means the materials and finishes are chosen to resist salt, moisture and UV. For metal frames, that usually means marine-grade stainless steel with a protective finish."
+      }
+     },
+     {
+      "@type": "Question",
+      "name": "Do you build to IMO and SOLAS requirements?",
+      "acceptedAnswer": {
+       "@type": "Answer",
+       "text": "Our ship furniture is designed to meet IMO and SOLAS safety requirements. Send your class society’s specification and we will confirm what applies."
+      }
+     },
+     {
+      "@type": "Question",
+      "name": "Do you supply yachts and small boats?",
+      "acceptedAnswer": {
+       "@type": "Answer",
+       "text": "Send your brief with drawings or photos. We will tell you clearly what we can build for your vessel."
+      }
+     },
+     {
+      "@type": "Question",
+      "name": "Can you make custom pieces?",
+      "acceptedAnswer": {
+       "@type": "Answer",
+       "text": "Yes. The Marlin Custom Cruise Umbrella is an example of our custom engineering. Share drawings for other pieces and we will review them."
+      }
+     },
+     {
+      "@type": "Question",
+      "name": "How do I choose between stainless steel and teak?",
+      "acceptedAnswer": {
+       "@type": "Answer",
+       "text": "Stainless steel suits salt-exposed frames and fittings. Teak suits decks and tables where a natural finish matters and maintenance is planned. Many vessels use both."
+      }
+     },
+     {
+      "@type": "Question",
+      "name": "Can you match furniture to existing deck fixings in a refit?",
+      "acceptedAnswer": {
+       "@type": "Answer",
+       "text": "Send photos and measurements of the current layout and we will review them."
+      }
+     },
+     {
+      "@type": "Question",
+      "name": "Can seating and umbrellas be quoted together?",
+      "acceptedAnswer": {
+       "@type": "Answer",
+       "text": "Yes. We can quote seating, tables and shade for the same deck in one enquiry."
+      }
+     },
+     {
+      "@type": "Question",
+      "name": "How are cushions and fabrics chosen?",
+      "acceptedAnswer": {
+       "@type": "Answer",
+       "text": "By area. Sun decks need UV-stable fabric, and wet areas need quick-drying materials. Tell us the area and we will advise."
+      }
+     },
+     {
+      "@type": "Question",
+      "name": "What should I send to get an accurate quote?",
+      "acceptedAnswer": {
+       "@type": "Answer",
+       "text": "Vessel type, drawings, quantities, standards, finishes, delivery port and target date."
+      }
+     },
+     {
+      "@type": "Question",
+      "name": "How long does a marine order take?",
+      "acceptedAnswer": {
+       "@type": "Answer",
+       "text": "It depends on the items and quantities. We confirm the timeline in your quote."
+      }
+     },
+     {
+      "@type": "Question",
+      "name": "Do you serve Abu Dhabi as well as Dubai?",
+      "acceptedAnswer": {
+       "@type": "Answer",
+       "text": "Send your delivery port and project location with your enquiry."
+      }
+     },
+     {
+      "@type": "Question",
+      "name": "How do I request a quote?",
+      "acceptedAnswer": {
+       "@type": "Answer",
+       "text": "Use the contact form, email letstalk@furniconcepts.com or call +971 50 378 2215."
+      }
+     }
+    ]
+   }
+  ]
+ },
+ "/military-defence-furniture.php": {
+  "live": "/military-defence-furniture.php",
+  "title": "Military & Defence Furniture Supplier UAE | Control Rooms, Secure Storage, Seating | Furniconcepts",
+  "meta": [
+   {
+    "name": "description",
+    "content": "Furniture for military, defence and security facilities in the UAE: control room workstations, ergonomic chairs, secure safes, briefing hall seating and accommodation. Send your tender or brief."
+   },
+   {
+    "name": "keywords",
+    "content": "military furniture uae, defence furniture supplier, control room furniture, command centre consoles, army barracks furniture, secure storage and safes, briefing hall seating"
+   },
+   {
+    "name": "robots",
+    "content": "index, follow"
+   },
+   {
+    "property": "og:type",
+    "content": "website"
+   },
+   {
+    "property": "og:title",
+    "content": "Military & Defence Furniture Supplier UAE | Control Rooms, Secure Storage, Seating | Furniconcepts"
+   },
+   {
+    "property": "og:description",
+    "content": "Furniture for military, defence and security facilities in the UAE: control room workstations, ergonomic chairs, secure safes, briefing hall seating and accommodation. Send your tender or brief."
+   },
+   {
+    "property": "og:site_name",
+    "content": "Furniconcepts"
+   },
+   {
+    "name": "twitter:card",
+    "content": "summary_large_image"
+   },
+   {
+    "name": "twitter:title",
+    "content": "Military & Defence Furniture Supplier UAE | Control Rooms, Secure Storage, Seating | Furniconcepts"
+   },
+   {
+    "name": "twitter:description",
+    "content": "Furniture for military, defence and security facilities in the UAE: control room workstations, ergonomic chairs, secure safes, briefing hall seating and accommodation. Send your tender or brief."
+   }
+  ],
+  "jsonld": [
+   {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+     {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://www.furniconcepts.com/"
+     },
+     {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Military & Defence Furniture",
+      "item": "https://www.furniconcepts.com/military-defence-furniture.php"
+     }
+    ]
+   },
+   {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "name": "Military and Defence Furniture Supply",
+    "serviceType": "Furniture supply for military, defence and security facilities",
+    "provider": {
+     "@type": "Organization",
+     "name": "Furniconcepts",
+     "url": "https://www.furniconcepts.com/",
+     "email": "letstalk@furniconcepts.com",
+     "telephone": "+971503782215"
+    },
+    "areaServed": {
+     "@type": "Country",
+     "name": "United Arab Emirates"
+    },
+    "url": "https://www.furniconcepts.com/military-defence-furniture.php",
+    "description": "Defence furniture is built for continuous use, strict specifications and secure sites. Furniconcepts supplies control room workstations, ergonomic seating, briefing hall seating and secure storage in the UAE."
+   },
+   {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+     {
+      "@type": "Question",
+      "name": "Do you supply furniture for military and defence facilities?",
+      "acceptedAnswer": {
+       "@type": "Answer",
+       "text": "Send your brief or tender, and we will confirm in writing what we can supply."
+      }
+     },
+     {
+      "@type": "Question",
+      "name": "What can you supply for a control or operations room?",
+      "acceptedAnswer": {
+       "@type": "Answer",
+       "text": "Desks, sit-stand desks, ergonomic chairs, and Broad Power monitor arms and cable management for multi-screen workstations. For purpose-built consoles, send drawings and we will confirm what we can supply."
+      }
+     },
+     {
+      "@type": "Question",
+      "name": "Which chairs suit long shifts?",
+      "acceptedAnswer": {
+       "@type": "Answer",
+       "text": "Chairs with synchro-tilt, adjustable lumbar support, armrests and seat depth adjustment suit long shifts. We will recommend options from Cavaletti, Forma5, Merryfair, Bestuhl and Jwesys for your use."
+      }
+     },
+     {
+      "@type": "Question",
+      "name": "Can desks change height during a shift?",
+      "acceptedAnswer": {
+       "@type": "Answer",
+       "text": "Yes. Markant sit-stand desks have silent motors and programmable height presets."
+      }
+     },
+     {
+      "@type": "Question",
+      "name": "How do you keep cables under control?",
+      "acceptedAnswer": {
+       "@type": "Answer",
+       "text": "Broad Power cable spines route and hide cabling vertically, and they adjust with the desk height."
+      }
+     },
+     {
+      "@type": "Question",
+      "name": "Can you supply multi-monitor setups?",
+      "acceptedAnswer": {
+       "@type": "Answer",
+       "text": "Yes. Broad Power monitor arms come in single, dual and multi-monitor configurations."
+      }
+     },
+     {
+      "@type": "Question",
+      "name": "What seating do you offer for briefing halls?",
+      "acceptedAnswer": {
+       "@type": "Answer",
+       "text": "Fixed seating from Leadcom and Audia Italia, and retractable seating where a hall needs to convert."
+      }
+     },
+     {
+      "@type": "Question",
+      "name": "Can you supply seating for parade grounds or stands?",
+      "acceptedAnswer": {
+       "@type": "Answer",
+       "text": "Yes. We supply stand seating through Jwesys and Leadcom."
+      }
+     },
+     {
+      "@type": "Question",
+      "name": "Do you supply safes and vault doors?",
+      "acceptedAnswer": {
+       "@type": "Answer",
+       "text": "Yes. Safe Lockers covers fireproof safes, gun safes, business safes, vault doors and custom safes."
+      }
+     },
+     {
+      "@type": "Question",
+      "name": "What fire ratings do your safes have?",
+      "acceptedAnswer": {
+       "@type": "Answer",
+       "text": "Fireproof models are available with one-hour and two-hour fire ratings."
+      }
+     },
+     {
+      "@type": "Question",
+      "name": "Do your safes support fingerprint access?",
+      "acceptedAnswer": {
+       "@type": "Answer",
+       "text": "Fingerprint locking is available on several models, including gun safes."
+      }
+     },
+     {
+      "@type": "Question",
+      "name": "Can you make a custom safe for our site?",
+      "acceptedAnswer": {
+       "@type": "Answer",
+       "text": "Yes. The DZ series covers custom-made safes for project-specific requirements."
+      }
+     },
+     {
+      "@type": "Question",
+      "name": "Can you work to a government tender?",
+      "acceptedAnswer": {
+       "@type": "Answer",
+       "text": "Send the tender documents and we will tell you what we can quote against."
+      }
+     },
+     {
+      "@type": "Question",
+      "name": "Do your products meet specific military standards?",
+      "acceptedAnswer": {
+       "@type": "Answer",
+       "text": "We do not claim any military standard on this page. Send the standard you need and we will check what documentation exists for each product."
+      }
+     },
+     {
+      "@type": "Question",
+      "name": "Do you hold ISO certification?",
+      "acceptedAnswer": {
+       "@type": "Answer",
+       "text": "Furniconcepts holds ISO 9001:2015 certification covering how projects are scoped, manufactured and delivered."
+      }
+     },
+     {
+      "@type": "Question",
+      "name": "Can you supply accommodation and mess furniture?",
+      "acceptedAnswer": {
+       "@type": "Answer",
+       "text": "Send your layout and quantities, and we will tell you what we can quote."
+      }
+     },
+     {
+      "@type": "Question",
+      "name": "Is installation included?",
+      "acceptedAnswer": {
+       "@type": "Answer",
+       "text": "Tell us whether you need installation or supply only. We confirm this in your quote."
+      }
+     },
+     {
+      "@type": "Question",
+      "name": "Can your installers work on restricted sites?",
+      "acceptedAnswer": {
+       "@type": "Answer",
+       "text": "Send your access and clearance requirements with the brief, and we will plan around them."
+      }
+     },
+     {
+      "@type": "Question",
+      "name": "Can you replace or top up existing furniture?",
+      "acceptedAnswer": {
+       "@type": "Answer",
+       "text": "Send photos, quantities and the current model if you know it, and we will review."
+      }
+     },
+     {
+      "@type": "Question",
+      "name": "Do you supply historic campaign furniture?",
+      "acceptedAnswer": {
+       "@type": "Answer",
+       "text": "No. Our range is for working facilities. Replica campaign furniture is a separate specialist category."
+      }
+     },
+     {
+      "@type": "Question",
+      "name": "Do you serve Abu Dhabi, Dubai and other emirates?",
+      "acceptedAnswer": {
+       "@type": "Answer",
+       "text": "Send your delivery site and we will confirm."
+      }
+     },
+     {
+      "@type": "Question",
+      "name": "How long does an order take?",
+      "acceptedAnswer": {
+       "@type": "Answer",
+       "text": "It depends on the items and quantity. We confirm the timeline in your quote."
+      }
+     },
+     {
+      "@type": "Question",
+      "name": "What documents can you provide?",
+      "acceptedAnswer": {
+       "@type": "Answer",
+       "text": "Product documents vary by brand. Tell us what your file needs and we will confirm what we can provide."
+      }
+     },
+     {
+      "@type": "Question",
+      "name": "How do I request a quote?",
+      "acceptedAnswer": {
+       "@type": "Answer",
+       "text": "Send the brief above through the contact form, email letstalk@furniconcepts.com or call +971 50 378 2215."
+      }
+     }
+    ]
+   }
+  ]
+ },
  "/office-furniture.php": {
   "live": "/office-furniture.php",
   "title": "Office & Workplace Furniture Suppliers in Dubai, India & Singapore | Furniconcepts",

@@ -50,6 +50,17 @@ const SOURCES = {
     ['worklyffe', ['lounge-seating']],
     ['merryfair', ['lounge-seating']],
   ],
+  '/military-defence-furniture.php': [
+    ['broad-power', ['monitor-arms', 'cable-management']],
+    ['markant', ['desks']],
+    ['merryfair', ['task-chairs']],
+    ['cavaletti', ['task'], null, { task: 'Task Chairs' }],
+    ['forma5', ['task-chairs', 'desks-and-workstations']],
+    ['leadcom', ['auditorium-seating', 'education-and-lecture']],
+    ['audia-italia', ['auditorium-seating']],
+    ['safe-lockers', ['fireproof-and-deposit-safes', 'vault-doors-and-custom']],
+    ['nitrocare', ['hospital-beds-and-baby-cots', 'examination-and-treatment']],
+  ],
   '/office-furniture.php': [
     ['cavaletti', ['office', 'task', 'executive', 'visitor', 'collaborative']],
     ['merryfair', ['task-chairs', 'executive-chairs', 'signature-chairs', 'contemporary-chairs', 'system-furniture', 'desking-elements']],

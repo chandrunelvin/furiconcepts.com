@@ -6,7 +6,6 @@ import { useStepRail } from '../lib/stepRail.js';
 import { prefersReducedMotion } from '../lib/scroll.js';
 import { Arrow, BRAND_MENU, Diagonal, SiteFooter, SiteHeader, SocialRow } from '../components/Home2Chrome.jsx';
 import { formatDate } from '../components/BlogParts.jsx';
-import LaunchCountdown from '../components/LaunchCountdown.jsx';
 import { ARTICLES as BLOG_ARTICLES } from '../data/blog.js';
 import { getBrand } from '../data/brands.js';
 import { TOP_CATEGORIES } from '../data/categories.js';
@@ -309,7 +308,6 @@ export default function Home2() {
 
   return (
     <div className="home2">
-      <LaunchCountdown />
       <SiteHeader />
 
       <section className="hero" id="top">
