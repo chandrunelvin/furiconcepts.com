@@ -64,7 +64,10 @@ function ProjectsSlider() {
       if (e.key === 'End') go(count - 1);
     };
     let startY = null;
-    const onTouchStart = (e) => { startY = e.touches[0].clientY; };
+    // a drag on the bar or the rail is not a swipe to the next project
+    const onTouchStart = (e) => {
+      startY = e.target.closest?.('.proj-progress, .proj-rail') ? null : e.touches[0].clientY;
+    };
     const onTouchEnd = (e) => {
       if (startY === null) return;
       const dy = startY - e.changedTouches[0].clientY;
@@ -144,9 +147,7 @@ function ProjectsSlider() {
             </button>
           ))}
         </div>
-        <div className="proj-progress" aria-hidden="true">
-          <span style={{ height: `${((index + 1) / count) * 100}%` }} />
-        </div>
+        <Scrubber index={index} count={count} onSeek={go} label={current.title} />
       </nav>
 
       <div className="proj-controls">
@@ -160,6 +161,56 @@ function ProjectsSlider() {
       <div className="proj-hint" aria-hidden="true">Scroll to explore · {current.title}</div>
       {/* this full-screen page has no footer, so it adds the WhatsApp button itself */}
       <WhatsAppFloat />
+    </div>
+  );
+}
+
+/**
+ * The bar beside the rail: shows how far through the projects you are, and
+ * its handle can be dragged (or the bar clicked) to jump to any project,
+ * all the way to the last one.
+ */
+function Scrubber({ index, count, onSeek, label }) {
+  const track = useRef(null);
+  const [dragging, setDragging] = useState(false);
+  const at = count > 1 ? index / (count - 1) : 0;
+
+  const seekTo = (clientY) => {
+    const box = track.current.getBoundingClientRect();
+    const f = Math.max(0, Math.min(1, (clientY - box.top) / box.height));
+    onSeek(Math.round(f * (count - 1)));
+  };
+  const onDown = (e) => {
+    e.preventDefault();
+    e.currentTarget.setPointerCapture(e.pointerId);
+    setDragging(true);
+    seekTo(e.clientY);
+  };
+  const onMove = (e) => { if (dragging) seekTo(e.clientY); };
+  const onUp = (e) => {
+    setDragging(false);
+    if (e.currentTarget.hasPointerCapture(e.pointerId)) e.currentTarget.releasePointerCapture(e.pointerId);
+  };
+
+  return (
+    <div
+      className={`proj-progress ${dragging ? 'is-dragging' : ''}`.trim()}
+      ref={track}
+      role="slider"
+      tabIndex={0}
+      aria-label="Scroll through projects"
+      aria-orientation="vertical"
+      aria-valuemin={1}
+      aria-valuemax={count}
+      aria-valuenow={index + 1}
+      aria-valuetext={`${index + 1} of ${count}: ${label}`}
+      onPointerDown={onDown}
+      onPointerMove={onMove}
+      onPointerUp={onUp}
+      onPointerCancel={onUp}
+    >
+      <span className="proj-progress-fill" style={{ height: `${at * 100}%` }} />
+      <span className="proj-progress-thumb" style={{ top: `${at * 100}%` }} />
     </div>
   );
 }
@@ -313,7 +364,7 @@ export default function Projects({ slug }) {
  */
 function ProjectLogo({ project, className = '', lazy = false }) {
   return (
-    <div className={`proj-logo ${project.logo ? '' : 'is-text'} ${className}`.trim()}>
+    <div className={`proj-logo ${project.logo ? '' : 'is-text'} ${project.logoWide ? 'is-wide' : ''} ${className}`.replace(/\s+/g, ' ').trim()}>
       {project.logo
         ? <img src={project.logo} alt={`${project.title} logo`} loading={lazy ? 'lazy' : undefined} />
         : <span>{project.title}</span>}

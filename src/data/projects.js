@@ -994,6 +994,35 @@ export const PROJECTS = [
       img('chevrolet-project', '06'),
     ],
   },
+  {
+    slug: 'fakeeh-jumeirah',
+    title: 'Fakeeh Health Jumeirah',
+    subtitle: '1st Avenue Mall, Dubai',
+    // the full sign lockup is wide and three lines deep, so it gets a bigger logo card
+    logoWide: true,
+    media: [
+      img('fakeeh-jumeirah', 'banner'),
+      img('fakeeh-jumeirah', '01'),
+      img('fakeeh-jumeirah', '02'),
+      img('fakeeh-jumeirah', '03'),
+      img('fakeeh-jumeirah', '04'),
+      img('fakeeh-jumeirah', '05'),
+      img('fakeeh-jumeirah', '06'),
+      img('fakeeh-jumeirah', '07'),
+      img('fakeeh-jumeirah', '08'),
+      img('fakeeh-jumeirah', '09'),
+      img('fakeeh-jumeirah', '10'),
+      img('fakeeh-jumeirah', '11'),
+      img('fakeeh-jumeirah', '12'),
+      img('fakeeh-jumeirah', '13'),
+      img('fakeeh-jumeirah', '14'),
+      img('fakeeh-jumeirah', '15'),
+      img('fakeeh-jumeirah', '16'),
+      img('fakeeh-jumeirah', '17'),
+      img('fakeeh-jumeirah', '18'),
+      img('fakeeh-jumeirah', '19'),
+    ],
+  },
 ];
 
 /**
@@ -1063,6 +1092,8 @@ const LOGOS = {
   axiom: project('axiom-global.png'),
   amazon: project('amazon-foods.png'),
   'easy-access': project('easy-access.png'),
+  // redrawn from the clinic's reception wall sign; the web only has the older teal mark
+  'fakeeh-jumeirah': project('fakeeh-health.webp'),
 };
 PROJECTS.forEach((p) => { if (LOGOS[p.slug]) p.logo = LOGOS[p.slug]; });
 

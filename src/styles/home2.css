@@ -2991,6 +2991,10 @@
   color:var(--green-darker);text-align:center;
 }
 @media(max-width:700px){ .home2 .proj-logo{ height:52px;padding:7px 12px;margin-bottom:14px; } }
+/* wide, multi-line lockups (e.g. Fakeeh Health Jumeirah) need more room to stay legible */
+.home2 .proj-logo.is-wide{ height:84px;max-width:300px; }
+.home2 .proj-logo.is-wide img{ max-width:270px; }
+@media(max-width:700px){ .home2 .proj-logo.is-wide{ height:68px;max-width:240px; } .home2 .proj-logo.is-wide img{ max-width:214px; } }
 .home2 .proj-num{ font-size:13px;font-weight:600;letter-spacing:2px;color:var(--green);margin-bottom:18px; }
 .home2 .proj-num span{ color:rgba(255,255,255,.55);font-weight:500; }
 .home2 .proj-title{
@@ -3037,8 +3041,28 @@
 .home2 .proj-rail button.is-active{ color:#fff;font-weight:700; }
 .home2 .proj-rail button.is-active::before{ width:18px; }
 .home2 .proj-rail button:focus-visible{ outline:2px solid var(--green);outline-offset:2px; }
-.home2 .proj-progress{ width:2px;background:rgba(255,255,255,.2);border-radius:2px;overflow:hidden; }
-.home2 .proj-progress span{ display:block;width:100%;background:var(--green);transition:height .6s cubic-bezier(.2,.8,.2,1); }
+/* draggable bar: a 2px line inside a wider grab area, with a round handle */
+.home2 .proj-progress{
+  position:relative;width:22px;margin:0 -10px;cursor:grab;touch-action:none;
+}
+.home2 .proj-progress::before{
+  content:'';position:absolute;left:50%;top:0;bottom:0;width:2px;transform:translateX(-50%);
+  background:rgba(255,255,255,.2);border-radius:2px;
+}
+.home2 .proj-progress-fill{
+  position:absolute;left:50%;top:0;width:2px;transform:translateX(-50%);border-radius:2px;
+  background:var(--green);transition:height .6s cubic-bezier(.2,.8,.2,1);
+}
+.home2 .proj-progress-thumb{
+  position:absolute;left:50%;width:14px;height:14px;border-radius:50%;
+  transform:translate(-50%,-50%);background:#fff;border:3px solid var(--green);
+  box-shadow:0 2px 8px rgba(0,0,0,.35);transition:top .6s cubic-bezier(.2,.8,.2,1),transform .2s;
+}
+.home2 .proj-progress:hover .proj-progress-thumb{ transform:translate(-50%,-50%) scale(1.2); }
+.home2 .proj-progress.is-dragging{ cursor:grabbing; }
+.home2 .proj-progress.is-dragging .proj-progress-thumb{ transform:translate(-50%,-50%) scale(1.3);transition:transform .2s; }
+.home2 .proj-progress.is-dragging .proj-progress-fill{ transition:none; }
+.home2 .proj-progress:focus-visible{ outline:2px solid var(--green);outline-offset:2px;border-radius:4px; }
 
 .home2 .proj-controls{
   position:fixed;right:40px;bottom:34px;z-index:5;display:flex;gap:10px;
