@@ -422,6 +422,8 @@ export const PROJECTS = [
   {
     slug: 'sharjah',
     title: 'Sharjah Archive Authority',
+    // the authority's lockup is wide and three lines deep, like Fakeeh's
+    logoWide: true,
     subtitle: 'Dubai',
     media: [
       img('sharjah', 'banner'),
@@ -1094,6 +1096,10 @@ const LOGOS = {
   'easy-access': project('easy-access.png'),
   // redrawn from the clinic's reception wall sign; the web only has the older teal mark
   'fakeeh-jumeirah': project('fakeeh-health.webp'),
+  // from saa.shj.ae (the dark version, for the white logo card)
+  sharjah: project('sharjah-archives-authority.svg'),
+  // redrawn from the KoDesk reception wall sign; kodesk.in's own logo files are broken
+  kodesk: project('kodesk.png'),
 };
 PROJECTS.forEach((p) => { if (LOGOS[p.slug]) p.logo = LOGOS[p.slug]; });
 
